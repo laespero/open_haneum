@@ -7,6 +7,13 @@ import { KR_MSG } from './messages.js';  // MSG import 추가
 import { JP_MSG } from './jp_messages.js';
 import 'dotenv/config';
 
+console.log('API Key:', process.env.OPENROUTER_API_KEY);
+
+if (!process.env.OPENROUTER_API_KEY) {
+    console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: OPENROUTER_API_KEY가 설정되지 않았습니다.');
+    console.warn('\x1b[33m%s\x1b[0m', '노래 추가 및 번역 기능을 사용하려면 .env 파일에 OPENROUTER_API_KEY를 설정해주세요.');
+}
+
 let MSG = KR_MSG;
 let lang = "kr";
 const input = process.argv[2]; 
@@ -34,11 +41,23 @@ const chatModel = "deepseek/deepseek-chat-v3-0324";
 // const chatModel = "google/gemini-2.5-pro-preview-03-25";
 // const chatModel = "deepseek-chat";
 
- 
-const openai = new OpenAI({
-   baseURL: 'https://openrouter.ai/api/v1',
-   apiKey: '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'
-});
+let openai;
+if (process.env.OPENROUTER_API_KEY) {
+    openai = new OpenAI({
+        baseURL: 'https://openrouter.ai/api/v1',
+        apiKey: process.env.OPENROUTER_API_KEY
+    });
+} else {
+    openai = {
+        chat: {
+            completions: {
+                create: async () => {
+                    throw new Error('API 키가 설정되지 않았습니다. .env 파일에 OPENROUTER_API_KEY를 설정해주세요.');
+                }
+            }
+        }
+    };
+}
 
 // JSON Schema 정의
 const lyricJsonSchema = {
