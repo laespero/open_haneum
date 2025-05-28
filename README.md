@@ -125,6 +125,19 @@ open-haneum/
 4. 번역이 완료되면 가사의 번역, 발음, 문법 분석 결과를 확인할 수 있습니다.
 5. 필요한 경우 수동으로 번역을 수정하거나 발음을 정정할 수 있습니다.
 
+### 노래 추가 방법
+![노래 추가 페이지](example_img/add-song.png)
+
+### 노래 상세 정보
+![노래 상세 정보](example_img/song-detail.png)
+
+### 가사 처리에 실패할 경우
+![노래 상세 정보 - 실패시](example_img/song-detail-fail.png)
+
+### 노래 보기
+![노래 보기](example_img/songview.png)
+
+
 ## 단축키
 
 가사 보기 페이지(`songView.ejs`)에서 사용할 수 있는 단축키입니다:
