@@ -1,0 +1,2437 @@
+{
+  "name": "touch",
+  "text": "Touch, touch, touch, touch, touch\nThought about you way too much, much, much, much, much\nOver, over thinking us, us, us, us, us\n'Cause you been so out of touch\nYou could have had my love\nBut you been so out of touch\nMonday I was dreaming bout ya\nTuesday I was waiting near the phone\nTwo days, wasn't hearing from ya\nYea, what can I say?\nOh, baby, I was getting bored\nThursday I was losing interest\nFriday you were out there in the cold\nWeekend you already missed it\nI was moving on ('cause you were moving too slow)\nSometimes I'm alone\nStare out my window\nAnd the moon makes you seem close tonight\nBut you been so out of touch, touch, touch, touch, touch\nThought about you way too much, much, much, much, much\nOver over thinking us, us, us, us, us\n'Cause you been so out of touch\nYou could have had my love\nBut you been so out of touch, touch, touch, touch, touch\nThought about you way too much, much, much, much, much\nYea, you went it messed it up, up, up, up, up\n'Cause you been so out of touch\nYou could have had my love\nBut you been so out of touch\nFirst you're gonna say you're sorry\nPromise you won't do it anymore\nCome up with a different story\nYea, what can I say?\nSay something I ain't heard before\nI'm too fun to waste my time\nToo young to waste one night\nSo here comes, some good advice\nIf I ever call again\nDon't press ignore\n'Cause sometimes I'm alone\nStare out my window\nAnd the moon makes you seem close tonight\nBut you been so out of touch, touch, touch, touch, touch\nThought about you way too much, much, much, much, much\nOver, over thinking us, us, us, us, us\n'Cause you been so out of touch\nYou could have had my love\nBut you been so out of touch, touch, touch, touch, touch\nThought about you way too much, much, much, much, much\nYea, you went it messed it up, up, up, up, up\n'Cause you been so out of touch\nYou could have had my love\nBut you been so out of touch",
+  "p1": [
+    "Touch, touch, touch, touch, touch",
+    "Thought about you way too much, much, much, much, much",
+    "Over, over thinking us, us, us, us, us",
+    "'Cause you been so out of touch",
+    "You could have had my love",
+    "But you been so out of touch",
+    "Monday I was dreaming bout ya",
+    "Tuesday I was waiting near the phone",
+    "Two days, wasn't hearing from ya",
+    "Yea, what can I say?",
+    "Oh, baby, I was getting bored",
+    "Thursday I was losing interest",
+    "Friday you were out there in the cold",
+    "Weekend you already missed it",
+    "I was moving on ('cause you were moving too slow)",
+    "Sometimes I'm alone",
+    "Stare out my window",
+    "And the moon makes you seem close tonight",
+    "But you been so out of touch, touch, touch, touch, touch",
+    "Over over thinking us, us, us, us, us",
+    "Yea, you went it messed it up, up, up, up, up",
+    "First you're gonna say you're sorry",
+    "Promise you won't do it anymore",
+    "Come up with a different story",
+    "Say something I ain't heard before",
+    "I'm too fun to waste my time",
+    "Too young to waste one night",
+    "So here comes, some good advice",
+    "If I ever call again",
+    "Don't press ignore",
+    "'Cause sometimes I'm alone"
+  ],
+  "contextText": [
+    {
+      "T0": "Touch, touch, touch, touch, touch",
+      "CX": "Touch, touch, touch, touch, touch Thought about you way too much, much, much, much, much"
+    },
+    {
+      "T0": "Thought about you way too much, much, much, much, much",
+      "CX": "Touch, touch, touch, touch, touch Thought about you way too much, much, much, much, much Over, over thinking us, us, us, us, us"
+    },
+    {
+      "T0": "Over, over thinking us, us, us, us, us",
+      "CX": "Thought about you way too much, much, much, much, much Over, over thinking us, us, us, us, us 'Cause you been so out of touch"
+    },
+    {
+      "T0": "'Cause you been so out of touch",
+      "CX": "Over, over thinking us, us, us, us, us 'Cause you been so out of touch You could have had my love"
+    },
+    {
+      "T0": "You could have had my love",
+      "CX": "'Cause you been so out of touch You could have had my love But you been so out of touch"
+    },
+    {
+      "T0": "But you been so out of touch",
+      "CX": "You could have had my love But you been so out of touch Monday I was dreaming bout ya"
+    },
+    {
+      "T0": "Monday I was dreaming bout ya",
+      "CX": "But you been so out of touch Monday I was dreaming bout ya Tuesday I was waiting near the phone"
+    },
+    {
+      "T0": "Tuesday I was waiting near the phone",
+      "CX": "Monday I was dreaming bout ya Tuesday I was waiting near the phone Two days, wasn't hearing from ya"
+    },
+    {
+      "T0": "Two days, wasn't hearing from ya",
+      "CX": "Tuesday I was waiting near the phone Two days, wasn't hearing from ya Yea, what can I say?"
+    },
+    {
+      "T0": "Yea, what can I say?",
+      "CX": "Two days, wasn't hearing from ya Yea, what can I say? Oh, baby, I was getting bored"
+    },
+    {
+      "T0": "Oh, baby, I was getting bored",
+      "CX": "Yea, what can I say? Oh, baby, I was getting bored Thursday I was losing interest"
+    },
+    {
+      "T0": "Thursday I was losing interest",
+      "CX": "Oh, baby, I was getting bored Thursday I was losing interest Friday you were out there in the cold"
+    },
+    {
+      "T0": "Friday you were out there in the cold",
+      "CX": "Thursday I was losing interest Friday you were out there in the cold Weekend you already missed it"
+    },
+    {
+      "T0": "Weekend you already missed it",
+      "CX": "Friday you were out there in the cold Weekend you already missed it I was moving on ('cause you were moving too slow)"
+    },
+    {
+      "T0": "I was moving on ('cause you were moving too slow)",
+      "CX": "Weekend you already missed it I was moving on ('cause you were moving too slow) Sometimes I'm alone"
+    },
+    {
+      "T0": "Sometimes I'm alone",
+      "CX": "I was moving on ('cause you were moving too slow) Sometimes I'm alone Stare out my window"
+    },
+    {
+      "T0": "Stare out my window",
+      "CX": "Sometimes I'm alone Stare out my window And the moon makes you seem close tonight"
+    },
+    {
+      "T0": "And the moon makes you seem close tonight",
+      "CX": "Stare out my window And the moon makes you seem close tonight But you been so out of touch, touch, touch, touch, touch"
+    },
+    {
+      "T0": "But you been so out of touch, touch, touch, touch, touch",
+      "CX": "And the moon makes you seem close tonight But you been so out of touch, touch, touch, touch, touch Over over thinking us, us, us, us, us"
+    },
+    {
+      "T0": "Over over thinking us, us, us, us, us",
+      "CX": "But you been so out of touch, touch, touch, touch, touch Over over thinking us, us, us, us, us Yea, you went it messed it up, up, up, up, up"
+    },
+    {
+      "T0": "Yea, you went it messed it up, up, up, up, up",
+      "CX": "Over over thinking us, us, us, us, us Yea, you went it messed it up, up, up, up, up First you're gonna say you're sorry"
+    },
+    {
+      "T0": "First you're gonna say you're sorry",
+      "CX": "Yea, you went it messed it up, up, up, up, up First you're gonna say you're sorry Promise you won't do it anymore"
+    },
+    {
+      "T0": "Promise you won't do it anymore",
+      "CX": "First you're gonna say you're sorry Promise you won't do it anymore Come up with a different story"
+    },
+    {
+      "T0": "Come up with a different story",
+      "CX": "Promise you won't do it anymore Come up with a different story Say something I ain't heard before"
+    },
+    {
+      "T0": "Say something I ain't heard before",
+      "CX": "Come up with a different story Say something I ain't heard before I'm too fun to waste my time"
+    },
+    {
+      "T0": "I'm too fun to waste my time",
+      "CX": "Say something I ain't heard before I'm too fun to waste my time Too young to waste one night"
+    },
+    {
+      "T0": "Too young to waste one night",
+      "CX": "I'm too fun to waste my time Too young to waste one night So here comes, some good advice"
+    },
+    {
+      "T0": "So here comes, some good advice",
+      "CX": "Too young to waste one night So here comes, some good advice If I ever call again"
+    },
+    {
+      "T0": "If I ever call again",
+      "CX": "So here comes, some good advice If I ever call again Don't press ignore"
+    },
+    {
+      "T0": "Don't press ignore",
+      "CX": "If I ever call again Don't press ignore 'Cause sometimes I'm alone"
+    },
+    {
+      "T0": "'Cause sometimes I'm alone",
+      "CX": "Don't press ignore 'Cause sometimes I'm alone"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "Touch, touch, touch, touch, touch",
+      "C0": "너에 대해 너무 많이 생각했어, 생각했어, 생각했어, 생각했어.",
+      "G0": "'Touch, touch, touch, touch, touch'는 반복 구조로 이루어진 문장으로, 강조를 통해 감정을 표현하는 방식입니다.",
+      "K0": "터치, 터치, 터치, 터치, 터치",
+      "R0": "터치, 터치, 터치, 터치, 터치",
+      "LI": [
+        {
+          "T1": "Touch",
+          "K1": "터치",
+          "R1": "터치",
+          "E1": "'Touch'는 접촉하거나 만지는 행위를 나타내는 동사이자 명사입니다.",
+          "T2": "touch",
+          "K2": "만지다",
+          "R2": "터치",
+          "XE": "Please don't touch the paintings.",
+          "XK": "그림을 만지지 말아 주세요.",
+          "XR": "플리즈 돈 터치 더 페인팅스"
+        }
+      ]
+    },
+    {
+      "T0": "Over, over thinking us, us, us, us, us",
+      "C0": "널 너무 많이 생각했어, 너무나도. 우리가 더 이상 멀어지다니.",
+      "G0": "'Over, over thinking us, us, us, us, us'는 주어(thought나 다른 대명사)가 생략되었지만, 앞 문장을 통해 생각을 연상하는 구문입니다. 'Over thinking'은 과도하게 생각하는 것을 의미하며, 반복적인 'us'는 관계를 나타냅니다.",
+      "K0": "우리를 너무 많이 생각했어, 너무나도.",
+      "R0": "오버, 오버 싱킹 어스, 어스, 어스, 어스, 어스",
+      "LI": [
+        {
+          "T1": "Over",
+          "K1": "너무",
+          "R1": "오버",
+          "E1": "'Over'는 무엇인가를 초과하거나 넘치는 상태를 표현하는 전치사입니다. 여기서는 '초과하여' 혹은 '과도하게'의 의미로 사용되었습니다.",
+          "T2": "Over",
+          "K2": "너무",
+          "R2": "오버",
+          "XE": "He worked over the weekend.",
+          "XK": "그는 주말 내내 일했다.",
+          "XR": "히 워크드 오버 더 위켄드"
+        },
+        {
+          "T1": "over thinking",
+          "K1": "과도한 생각",
+          "R1": "오버 싱킹",
+          "E1": "'Over thinking'은 무언가를 너무 깊게, 지나치게 생각하는 것을 의미합니다.",
+          "T2": "over think",
+          "K2": "과도하게 생각하다",
+          "R2": "오버 싱크",
+          "XE": "She tends to over think things.",
+          "XK": "그녀는 무언가를 지나치게 생각하는 경향이 있다.",
+          "XR": "쉬 텐즈 투 오버 싱크 씽스"
+        },
+        {
+          "T1": "us",
+          "K1": "우리",
+          "R1": "어스",
+          "E1": "'Us'는 화자와 상대방 또는 다른 사람들을 포함하는 복수 대명사입니다.",
+          "T2": "us",
+          "K2": "우리",
+          "R2": "어스",
+          "XE": "They gave us a gift.",
+          "XK": "그들은 우리에게 선물을 주었다.",
+          "XR": "데이 게이브 어스 어 기프트"
+        }
+      ]
+    },
+    {
+      "T0": "Come up with a different story",
+      "C0": "다시는 그러지 않겠다고 약속해. 다른 이야기를 생각해 내. 이전에 들어보지 못한 말을 해봐.",
+      "G0": "'Come up with a different story'는 동사구(come up with)와 명사구(a different story)로 구성되어 있으며, 새로운 이야기를 제안하라는 의미입니다.",
+      "K0": "다른 이야기를 생각해 내.",
+      "R0": "컴 업 윗 어 디퍼런트 스토리",
+      "LI": [
+        {
+          "T1": "Come up with",
+          "K1": "생각해 내다",
+          "R1": "컴 업 윗",
+          "E1": "'Come up with'는 새로운 아이디어나 계획 등을 떠올리거나 제시하는 행위를 나타내는 구동사입니다.",
+          "T2": "come up with",
+          "K2": "생각해 내다",
+          "R2": "컴 업 윗",
+          "XE": "Can you come up with a solution?",
+          "XK": "해결책을 생각해 낼 수 있니?",
+          "XR": "캔 유 컴 업 윗 어 솔루션"
+        },
+        {
+          "T1": "a",
+          "K1": "하나의",
+          "R1": "어",
+          "E1": "'A'는 단수 명사 앞에 쓰여 '하나의'라는 의미를 가진 부정관사입니다.",
+          "T2": "a",
+          "K2": "하나의",
+          "R2": "어",
+          "XE": "I saw a cat.",
+          "XK": "나는 고양이를 봤어.",
+          "XR": "아이 쏘 어 캣"
+        },
+        {
+          "T1": "different",
+          "K1": "다른",
+          "R1": "디퍼런트",
+          "E1": "'Different'는 '다른'을 의미하는 형용사로, 기존과는 다른 것을 나타냅니다.",
+          "T2": "different",
+          "K2": "다른",
+          "R2": "디퍼런트",
+          "XE": "This is a different approach.",
+          "XK": "이것은 다른 접근 방식이다.",
+          "XR": "디스 이즈 어 디퍼런트 어프로치"
+        },
+        {
+          "T1": "story",
+          "K1": "이야기",
+          "R1": "스토리",
+          "E1": "'Story'는 사건이나 상황을 설명한 이야기나 이야기의 내용을 의미하는 명사입니다.",
+          "T2": "story",
+          "K2": "이야기",
+          "R2": "스토리",
+          "XE": "He told an interesting story.",
+          "XK": "그는 흥미로운 이야기를 들려줬다.",
+          "XR": "히 톨드 언 인트러스팅 스토리"
+        }
+      ]
+    },
+    {
+      "T0": "Sometimes I'm alone",
+      "C0": "나는 옮기고 있었어 (왜냐면 너는 너무 느리게 움직이고 있었거든) 가끔씩 나는 혼자 있어 내 창밖을 응시해.",
+      "G0": "'Sometimes I'm alone'은 때때로(sometimes)라는 부사, 주어(I), 동사(be 동사의 현재형인 am), 보어(alone)로 구성된 간단한 문장입니다.",
+      "K0": "가끔씩 나는 혼자 있어.",
+      "R0": "섬타임즈 아임 얼론",
+      "LI": [
+        {
+          "T1": "Sometimes",
+          "K1": "때때로",
+          "R1": "섬타임즈",
+          "E1": "'Sometimes'는 특정한 상황이나 시간에 빈번하게 발생하는 것을 의미하는 부사입니다.",
+          "T2": "sometimes",
+          "K2": "때때로",
+          "R2": "섬타임즈",
+          "XE": "Sometimes, I go for a walk.",
+          "XK": "때때로, 나는 산책을 나가.",
+          "XR": "섬타임즈, 아이 고 포어 어 워크"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 주어(I)와 동사(be 동사의 현재형 am)를 포함한 형태입니다.",
+          "T2": "I am",
+          "K2": "나는",
+          "R2": "아이 앰",
+          "XE": "I'm very happy today.",
+          "XK": "나는 오늘 매우 행복해.",
+          "XR": "아임 베리 해피 투데이"
+        },
+        {
+          "T1": "alone",
+          "K1": "혼자",
+          "R1": "얼론",
+          "E1": "'Alone'은 주변에 다른 사람이 없고 자신만 있는 상태를 나타내는 형용사입니다.",
+          "T2": "alone",
+          "K2": "혼자",
+          "R2": "얼론",
+          "XE": "He felt alone in the new city.",
+          "XK": "그는 새로운 도시에서 혼자라고 느꼈다.",
+          "XR": "히 펠트 얼론 인 더 뉴 시티"
+        }
+      ]
+    },
+    {
+      "T0": "Thought about you way too much, much, much, much, much",
+      "C0": "계속, 계속 생각했어, 너를 너무 많이, 많이, 많이, 많이, 많이. 우리에 대해 과도하게 생각했어, 계속, 계속, 우리, 우리, 우리.",
+      "G0": "'Thought about you way too much'는 주어(생략된 'I' 또는 화자), 동사(thought), 전치사구(about you), 부사구(way too much)로 구성된 문장입니다. 이 문장은 화자가 상대에 대해 지나치게 많이 생각했음을 나타냅니다.",
+      "K0": "너를 너무 많이 생각했어, 정말 너무 많이.",
+      "R0": "쏘우트 어바웃 유 웨이 투 머치, 머치, 머치, 머치, 머치",
+      "LI": [
+        {
+          "T1": "Thought",
+          "K1": "생각했다",
+          "R1": "쏘우트",
+          "E1": "'Thought'는 'think'의 과거형으로, 어떤 것을 두뇌로 숙고하거나 깊이 생각하는 행위를 의미합니다.",
+          "T2": "think",
+          "K2": "생각하다",
+          "R2": "씽크",
+          "XE": "She thought about her future.",
+          "XK": "그녀는 자신의 미래에 대해 생각했다.",
+          "XR": "쉬 쏘우트 어바웃 허 퓨처"
+        },
+        {
+          "T1": "about",
+          "K1": "~대해서",
+          "R1": "어바웃",
+          "E1": "'About'는 특정 주제나 대상에 대해 논의되거나 고려될 때 쓰이는 전치사로, '~대해서'라는 의미를 갖습니다.",
+          "T2": "about",
+          "K2": "~대해서",
+          "R2": "어바웃",
+          "XE": "We talked about the movie.",
+          "XK": "우리는 영화에 대해서 이야기했다.",
+          "XR": "위 토크드 어바웃 더 무비"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 대명사로, 청자를 지칭할 때 사용되며 단수와 복수에 모두 사용될 수 있습니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I miss you.",
+          "XK": "너가 보고 싶어.",
+          "XR": "아이 미스 유"
+        },
+        {
+          "T1": "way",
+          "K1": "정말",
+          "R1": "웨이",
+          "E1": "'Way'는 부사로 사용될 때, 강조의 의미로 '정말' 또는 '몹시'라는 뜻을 가집니다.",
+          "T2": "way",
+          "K2": "방법",
+          "R2": "웨이",
+          "XE": "This task is way too difficult.",
+          "XK": "이 과제는 정말 너무 어렵다.",
+          "XR": "디스 태스크 이즈 웨이 투 디피컬트"
+        },
+        {
+          "T1": "too",
+          "K1": "너무",
+          "R1": "투",
+          "E1": "'Too'는 어떤 정도가 과도함을 나타내는 부사로, '너무'라는 의미를 가지고 있습니다.",
+          "T2": "too",
+          "K2": "너무",
+          "R2": "투",
+          "XE": "It's too cold outside.",
+          "XK": "밖은 너무 춥다.",
+          "XR": "이츠 투 콜드 아웃사이드"
+        },
+        {
+          "T1": "much",
+          "K1": "많이",
+          "R1": "머치",
+          "E1": "'Much'는 양을 나타내는 부사로, '많이'라는 의미를 가지고 있습니다.",
+          "T2": "much",
+          "K2": "많이",
+          "R2": "머치",
+          "XE": "I love you very much.",
+          "XK": "너를 정말 많이 사랑해.",
+          "XR": "아이 러브 유 베리 머치"
+        }
+      ]
+    },
+    {
+      "T0": "'Cause sometimes I'm alone",
+      "C0": "무시하지 마, 왜냐하면 때때로 나는 외로워.",
+      "G0": "'Cause sometimes I'm alone'은 접속사 (Cause), 부사구 (sometimes), 주어 (I), 동사 (am), 그리고 보어 (alone)로 이루어진 문장입니다. 'Cause'는 'because'의 축약형으로 이유를 설명할 때 사용됩니다.",
+      "K0": "왜냐하면 때때로 나는 외로워.",
+      "R0": "코즈 썸타임즈 아임 얼론",
+      "LI": [
+        {
+          "T1": "'Cause",
+          "K1": "왜냐하면",
+          "R1": "코즈",
+          "E1": "'Cause는  'because'의 축약형으로, 이유를 설명할 때 사용하는 접속사입니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비코즈",
+          "XE": "I stayed home 'cause it was raining.",
+          "XK": "비가 와서 집에 있었어.",
+          "XR": "아이 스테이드 홈 코즈 잇 워즈 레이닝"
+        },
+        {
+          "T1": "sometimes",
+          "K1": "때때로",
+          "R1": "썸타임즈",
+          "E1": "'Sometimes'는 불규칙적으로 발생하는 일을 표현하는 부사입니다.",
+          "T2": "sometimes",
+          "K2": "때때로",
+          "R2": "썸타임즈",
+          "XE": "I sometimes go for a walk in the evening.",
+          "XK": "나는 때때로 저녁에 산책하러 나가.",
+          "XR": "아이 썸타임즈 고우 포어 어 워크 인 더 이브닝"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는 ~이다",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로 주어 'I'와 동사 'am'을 합친 표현입니다.",
+          "T2": "I am",
+          "K2": "나는 ~이다",
+          "R2": "아이 엠",
+          "XE": "I'm happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아임 해피 투데이"
+        },
+        {
+          "T1": "alone",
+          "K1": "외로운",
+          "R1": "얼론",
+          "E1": "'Alone'는 물리적 또는 감정적으로 혼자인 상태를 나타내는 형용사입니다.",
+          "T2": "alone",
+          "K2": "외로운",
+          "R2": "얼론",
+          "XE": "She feels alone in a crowd.",
+          "XK": "그녀는 군중 속에서 외로움을 느낀다.",
+          "XR": "쉬 필즈 얼론 인 어 크라우드"
+        }
+      ]
+    },
+    {
+      "T0": "If I ever call again",
+      "C0": "여기 좋은 충고가 있어. 내가 다시 전화한다면 무시하지 마.",
+      "G0": "'If I ever call again'은 조건절(if 절)로 구성된 문장으로, 주어(I), 동사(call), 조건을 나타내는 부사(ever), 반복을 나타내는 부사(again)가 포함되어 있습니다.",
+      "K0": "내가 다시 전화한다면",
+      "R0": "이프 아이 에버 콜 어겐",
+      "LI": [
+        {
+          "T1": "If",
+          "K1": "만약",
+          "R1": "이프",
+          "E1": "'If'는 조건을 나타내는 접속사로, 어떤 상황이 발생할 경우를 가정하는 역할을 합니다.",
+          "T2": "if",
+          "K2": "만약",
+          "R2": "이프",
+          "XE": "If it rains, we will stay indoors.",
+          "XK": "만약 비가 오면, 우리는 실내에 있을 거야.",
+          "XR": "이프 잇 레인즈, 위 윌 스테이 인도어스"
+        },
+        {
+          "T1": "I",
+          "K1": "내가",
+          "R1": "아이",
+          "E1": "'I'는 화자를 주어로 하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "내가",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 것이다.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "ever",
+          "K1": "언젠가",
+          "R1": "에버",
+          "E1": "'Ever'는 시간의 무한함을 나타내는 부사로, 여기서는 어느 특정 시점을 가리키지 않고 모든 시간을 포함합니다.",
+          "T2": "ever",
+          "K2": "언젠가",
+          "R2": "에버",
+          "XE": "Have you ever been to Paris?",
+          "XK": "너는 파리에 가본 적 있니?",
+          "XR": "해브 유 에버 빈 투 페어리스?"
+        },
+        {
+          "T1": "call",
+          "K1": "전화하다",
+          "R1": "콜",
+          "E1": "'Call'은 전화하거나 소리쳐 부르는 행위를 나타내는 동사입니다.",
+          "T2": "call",
+          "K2": "전화하다",
+          "R2": "콜",
+          "XE": "I will call you later.",
+          "XK": "나중에 전화할게.",
+          "XR": "아이 윌 콜 유 레이터"
+        },
+        {
+          "T1": "again",
+          "K1": "다시",
+          "R1": "어겐",
+          "E1": "'Again'은 이전에 했던 행위를 반복하는 것을 나타내는 부사입니다.",
+          "T2": "again",
+          "K2": "다시",
+          "R2": "어겐",
+          "XE": "She read the book again.",
+          "XK": "그녀는 그 책을 다시 읽었다.",
+          "XR": "쉬 레드 더 북 어겐"
+        }
+      ]
+    },
+    {
+      "T0": "Stare out my window",
+      "C0": "가끔 나는 혼자야. 창문 밖을 바라봐. 오늘 밤은 달이 너를 가깝게 느끼게 해.",
+      "G0": "'Stare out my window'는 주어('I'가 생략됨), 동사(stare), 그리고 전치사 구(out my window)로 이루어진 문장 구조입니다. 'stare'는 집중해서 오랫동안 바라보는 행동을 나타냅니다.",
+      "K0": "창문 밖을 바라봐.",
+      "R0": "스테어 아웃 마이 윈도우",
+      "LI": [
+        {
+          "T1": "Stare",
+          "K1": "응시하다",
+          "R1": "스테어",
+          "E1": "'Stare'는 집중해서 오랫동안 한곳을 바라보는 동사입니다.",
+          "T2": "stare",
+          "K2": "응시하다",
+          "R2": "스테어",
+          "XE": "She would often stare out the window.",
+          "XK": "그녀는 자주 창밖을 응시하곤 했다.",
+          "XR": "쉬 우드 오픈 스테어 아웃 더 윈도우"
+        },
+        {
+          "T1": "out",
+          "K1": "밖으로",
+          "R1": "아웃",
+          "E1": "'Out'은 특정 장소 혹은 경계를 벗어나는 것을 나타내는 전치사입니다.",
+          "T2": "out",
+          "K2": "밖으로",
+          "R2": "아웃",
+          "XE": "He went out for a walk.",
+          "XK": "그는 산책을 나갔다.",
+          "XR": "히 웬트 아웃 포어 어 워크"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 화자의 소유를 나타내는 소유격 대명사입니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "window",
+          "K1": "창문",
+          "R1": "윈도우",
+          "E1": "'Window'는 집이나 건물의 외벽에 있는 유리로 된 부분으로, 바깥을 볼 수 있게 해줍니다.",
+          "T2": "window",
+          "K2": "창문",
+          "R2": "윈도우",
+          "XE": "I opened the window to let in some fresh air.",
+          "XK": "나는 신선한 공기를 들이기 위해 창문을 열었다.",
+          "XR": "아이 오픈드 더 윈도우 투 렛 인 썸 프레시 에어"
+        }
+      ]
+    },
+    {
+      "T0": "Yea, what can I say?",
+      "C0": "이틀 동안, 너한테서 아무 소식을 듣지 못했어. 그래, 내가 무슨 말을 할 수 있겠어? 아, 베이비, 나는 지루해지고 있었어.",
+      "G0": "'Yea, what can I say?'는 감탄사(Yea)와 의문문(what can I say?)로 이루어진 간단한 문장 구조입니다. 화자는 무언가 말하고자 하지만 적절한 말을 찾지 못하는 상황을 표현합니다.",
+      "K0": "그래, 내가 무슨 말을 할 수 있겠어?",
+      "R0": "예, 왓 캔 아이 세이?",
+      "LI": [
+        {
+          "T1": "Yea",
+          "K1": "그래",
+          "R1": "예",
+          "E1": "'Yea'는 긍정의 뜻을 나타내는 비격식 표현입니다. 보통 대화 중에 상대방의 말을 인정하거나 동의할 때 사용됩니다.",
+          "T2": "yea",
+          "K2": "그래",
+          "R2": "예",
+          "XE": "Yea, I know what you mean.",
+          "XK": "그래, 무슨 말인지 알아.",
+          "XR": "예, 아이 노우 왓 유 민"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 의문 대명사로, 어떤 정보나 설명을 요구할 때 사용됩니다. 여기서는 화자의 당혹감을 나타냅니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What are you doing?",
+          "XK": "뭐하고 있어?",
+          "XR": "왓 아 유 두잉?"
+        },
+        {
+          "T1": "can",
+          "K1": "~할 수 있다",
+          "R1": "캔",
+          "E1": "'Can'은 가능성을 나타내는 조동사로, 여기서는 화자가 말할 수 있는 가능성을 묻고 있습니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "Can you help me?",
+          "XK": "도와줄 수 있어?",
+          "XR": "캔 유 헬프 미?"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 주격 대명사로, 화자를 나타냅니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 말을 표현하거나 전달하는 행위를 의미하는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "What did you say?",
+          "XK": "뭐라고 했어?",
+          "XR": "왓 딛 유 세이?"
+        }
+      ]
+    },
+    {
+      "T0": "'Cause you been so out of touch",
+      "C0": "자꾸, 자꾸 우리를 생각해, 우리를, 우리를, 우리를, 우리를. 네가 너무 멀리 있었으니까 내 사랑을 가질 수 있었을 텐데.",
+      "G0": "'Cause you been so out of touch'는 종속접속사(because), 주어(you), 동사(been), 보어(so out of touch)로 구성된 문장입니다. 현재완료형으로, 주어가 오랜 시간 동안 어떠한 상태에 있었음을 나타냅니다.",
+      "K0": "네가 너무 오랫동안 연락이 안 됐으니까",
+      "R0": "'커즈 유 빈 소우 아웃 오브 터치",
+      "LI": [
+        {
+          "T1": "'Cause",
+          "K1": "왜냐하면",
+          "R1": "'커즈",
+          "E1": "'Cause'는 'because'의 축약형으로, 이유를 설명할 때 사용되는 접속사입니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비커즈",
+          "XE": "'Cause I'm happy.",
+          "XK": "왜냐하면 나는 행복하니까.",
+          "XR": "'커즈 아임 해피"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자가 청자를 지칭할 때 사용하는 대명사로, 상대를 직접 언급할 때 사용됩니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 나의 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "been",
+          "K1": "~했다",
+          "R1": "빈",
+          "E1": "'Been'은 'be' 동사의 과거분사 형태로, 현재완료형이나 과거완료형에서 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I have been there.",
+          "XK": "나는 거기에 가본적 있어.",
+          "XR": "아이 해브 빈 데어"
+        },
+        {
+          "T1": "so",
+          "K1": "너무",
+          "R1": "소우",
+          "E1": "'So'는 정도를 나타내는 부사로, 매우 강한 정도를 표현할 때 사용됩니다.",
+          "T2": "so",
+          "K2": "너무",
+          "R2": "소우",
+          "XE": "She is so beautiful.",
+          "XK": "그녀는 너무 아름다워.",
+          "XR": "쉬 이즈 소우 뷰티풀"
+        },
+        {
+          "T1": "out of touch",
+          "K1": "연락이 끊긴",
+          "R1": "아웃 오브 터치",
+          "E1": "'Out of touch'는 연락이 끊기거나, 소식이 없는 상태를 의미하는 표현입니다.",
+          "T2": "out of touch",
+          "K2": "연락이 끊긴",
+          "R2": "아웃 오브 터치",
+          "XE": "We have been out of touch for years.",
+          "XK": "우리는 몇 년 동안 연락이 끊겼어.",
+          "XR": "위 해브 빈 아웃 오브 터치 포어 이어즈"
+        }
+      ]
+    },
+    {
+      "T0": "So here comes, some good advice",
+      "C0": "하루를 허비할 나이는 아직 어려서 이제 좋은 충고가 다가와요. 내가 다시 전화를 걸면",
+      "G0": "'So here comes, some good advice'는 주어와 동사가 도치된 문장입니다. 주어('some good advice')와 동사('comes')가 도치되어, '여기 좋은 충고가 오다'라는 의미입니다.",
+      "K0": "이제 좋은 조언을 드리겠습니다",
+      "R0": "소 히어 컴즈, 섬 굿 어드바이스",
+      "LI": [
+        {
+          "T1": "So",
+          "K1": "그래서",
+          "R1": "소",
+          "E1": "'So'는 이전의 문맥을 이어받아 원인과 결과를 설명할 때 사용되는 접속사입니다.",
+          "T2": "so",
+          "K2": "그래서",
+          "R2": "소",
+          "XE": "So, what's the plan?",
+          "XK": "그래서, 계획이 뭐야?",
+          "XR": "소, 왓츠 더 플랜?"
+        },
+        {
+          "T1": "here",
+          "K1": "여기",
+          "R1": "히어",
+          "E1": "'Here'는 현재 위치를 나타내는 부사로, 가까운 거리에 있음을 의미합니다.",
+          "T2": "here",
+          "K2": "여기",
+          "R2": "히어",
+          "XE": "Please come here.",
+          "XK": "여기로 와 주세요.",
+          "XR": "플리즈 컴 히어"
+        },
+        {
+          "T1": "comes",
+          "K1": "오다",
+          "R1": "컴즈",
+          "E1": "'Comes'는 동사 'come'의 3인칭 단수 현재형으로, 주어가 복수일 때 사용됩니다.",
+          "T2": "come",
+          "K2": "오다",
+          "R2": "컴",
+          "XE": "The bus comes at 3 PM.",
+          "XK": "버스는 오후 3시에 와.",
+          "XR": "더 버스 컴즈 앳 쓰리 피엠"
+        },
+        {
+          "T1": "some",
+          "K1": "약간의",
+          "R1": "섬",
+          "E1": "'Some'은 수량을 나타내는 것으로, 정확한 양을 명시하지 않는 대신 적당히 많은 것을 의미합니다.",
+          "T2": "some",
+          "K2": "약간의",
+          "R2": "섬",
+          "XE": "Can I have some water?",
+          "XK": "물 좀 주실래요?",
+          "XR": "캔 아이 해브 섬 워터?"
+        },
+        {
+          "T1": "good",
+          "K1": "좋은",
+          "R1": "굿",
+          "E1": "'Good'는 긍정적인 성질이나 품질을 나타내는 형용사입니다.",
+          "T2": "good",
+          "K2": "좋은",
+          "R2": "굿",
+          "XE": "She has a good heart.",
+          "XK": "그녀는 착한 마음을 가졌어.",
+          "XR": "쉬 해즈 어 굿 하트"
+        },
+        {
+          "T1": "advice",
+          "K1": "충고",
+          "R1": "어드바이스",
+          "E1": "'Advice'는 도움이 되는 권고나 지도를 의미하는 명사입니다.",
+          "T2": "advice",
+          "K2": "충고",
+          "R2": "어드바이스",
+          "XE": "I need your advice on this matter.",
+          "XK": "이 문제에 대한 당신의 충고가 필요해요.",
+          "XR": "아이 니드 유어 어드바이스 온 디스 매터"
+        }
+      ]
+    },
+    {
+      "T0": "First you're gonna say you're sorry",
+      "C0": "그래, 너는 그것을 망쳐버렸어, 처음에는 미안하다고 말할 거야. 다시는 그러지 않겠다고 약속해",
+      "G0": "'First you're gonna say you're sorry'는 순서(First), 주어(you), 조동사(are gonna), 동사(say), 목적어(you're sorry)로 이루어진 문장입니다. 여기서는 화자가 상대방에게 무엇을 먼저 해야 할지 지시합니다.",
+      "K0": "먼저 너는 미안하다고 말할 거야.",
+      "R0": "퍼스트 유얼 거너 세이 유얼 쏘리",
+      "LI": [
+        {
+          "T1": "First",
+          "K1": "먼저",
+          "R1": "퍼스트",
+          "E1": "'First'는 순서를 나타내는 부사로, 어떤 일이 시작될 때 처음으로 해야 할 것을 의미합니다.",
+          "T2": "first",
+          "K2": "먼저",
+          "R2": "퍼스트",
+          "XE": "First, let's review the plan.",
+          "XK": "먼저, 계획을 검토하자.",
+          "XR": "퍼스트, 레츠 리뷰 더 플랜"
+        },
+        {
+          "T1": "you're",
+          "K1": "너는",
+          "R1": "유얼",
+          "E1": "'You're'는 'you are'의 축약형으로, 주어와 동사를 결합한 형태입니다.",
+          "T2": "you are",
+          "K2": "너는",
+          "R2": "유 얼",
+          "XE": "You're my best friend.",
+          "XK": "너는 내 제일 친한 친구야.",
+          "XR": "유얼 마이 베스트 프렌드"
+        },
+        {
+          "T1": "gonna",
+          "K1": "~할 것이다",
+          "R1": "거너",
+          "E1": "'Gonna'는 'going to'의 축약형으로, 미래에 일어날 일을 예고하거나 계획하는 것을 의미합니다.",
+          "T2": "going to",
+          "K2": "~할 것이다",
+          "R2": "고잉 투",
+          "XE": "I'm gonna finish my homework.",
+          "XK": "나는 숙제를 끝낼 거야.",
+          "XR": "아임 거너 피니쉬 마이 홈워크"
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 생각이나 의견, 감정을 말로 표현하는 행위를 의미하는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Please say something.",
+          "XK": "제발 무언가 말해 줘.",
+          "XR": "플리즈 세이 썸씽"
+        },
+        {
+          "T1": "you're sorry",
+          "K1": "미안하다고",
+          "R1": "유얼 쏘리",
+          "E1": "'You're sorry'는 '너는 미안하다'를 표현하는 말로 사과의 뜻을 전달하는 문장입니다.",
+          "T2": "you are sorry",
+          "K2": "너는 미안하다",
+          "R2": "유 얼 쏘리",
+          "XE": "She said she's sorry.",
+          "XK": "그녀는 미안하다고 말했다.",
+          "XR": "쉬 세드 쉬즈 쏘리"
+        }
+      ]
+    },
+    {
+      "T0": "Thursday I was losing interest",
+      "C0": "오, 자기야, 나는 점점 지루해지고 있었어. 목요일에는 관심을 잃어가고 있었지. 금요일에는 너가 추운 날씨 속에 있었어.",
+      "G0": "'Thursday I was losing interest'는 시간 부사(Thursday), 주어(I), 동사(was losing), 목적어(interest)로 구성된 문장으로, 특정 시점에서의 감정 변화를 설명합니다.",
+      "K0": "목요일에는 관심을 잃어가고 있었어.",
+      "R0": "서즈데이 아이 워즈 루징 인트레스트",
+      "LI": [
+        {
+          "T1": "Thursday",
+          "K1": "목요일",
+          "R1": "서즈데이",
+          "E1": "'Thursday'는 일주일의 다섯 번째 날을 나타내는 명사입니다.",
+          "T2": "Thursday",
+          "K2": "목요일",
+          "R2": "서즈데이",
+          "XE": "I have a meeting on Thursday.",
+          "XK": "나는 목요일에 회의가 있어.",
+          "XR": "아이 해브 어 미팅 온 서즈데이"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자 자신을 가리키는 1인칭 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "'Was'는 과거 시제를 나타내는 be 동사의 한 형태로, 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She was at home yesterday.",
+          "XK": "그녀는 어제 집에 있었어.",
+          "XR": "쉬 워즈 앳 홈 예스터데이"
+        },
+        {
+          "T1": "losing",
+          "K1": "잃는",
+          "R1": "루징",
+          "E1": "'Losing'은 'lose'의 현재분사로, 무엇을 잃어가는 상황을 나타냅니다.",
+          "T2": "lose",
+          "K2": "잃다",
+          "R2": "루즈",
+          "XE": "He is losing his keys all the time.",
+          "XK": "그는 항상 열쇠를 잃어버려.",
+          "XR": "히 이즈 루징 히즈 키즈 올 더 타임"
+        },
+        {
+          "T1": "interest",
+          "K1": "관심",
+          "R1": "인트레스트",
+          "E1": "'Interest'는 어떤 것에 대해 호기심이나 주의를 끌리는 상태를 의미하는 명사입니다.",
+          "T2": "interest",
+          "K2": "관심",
+          "R2": "인트레스트",
+          "XE": "She has an interest in photography.",
+          "XK": "그녀는 사진에 관심이 있어.",
+          "XR": "쉬 해즈 언 인트레스트 인 포토그래피"
+        }
+      ]
+    },
+    {
+      "T0": "Tuesday I was waiting near the phone",
+      "C0": "월요일에 나는 당신을 꿈꾸고 있었어. 화요일에 나는 전화기 옆에서 기다리고 있었어. 이틀 동안 당신에게서 아무 연락도 없었어.",
+      "G0": "'Tuesday I was waiting near the phone'는 주어(I), 시간 부사구(Tuesday), 동사(was waiting), 장소 부사구(near the phone)로 이루어진 문장 구조로, 특정 시간에 어떤 행동을 했는지를 설명하는 구문입니다.",
+      "K0": "화요일에 나는 전화기 옆에서 기다리고 있었어.",
+      "R0": "튜즈데이 아이 워즈 웨이팅 니어 더 폰",
+      "LI": [
+        {
+          "T1": "Tuesday",
+          "K1": "화요일",
+          "R1": "튜즈데이",
+          "E1": "'Tuesday'는 일주일의 두 번째 날을 나타내는 명사입니다.",
+          "T2": "Tuesday",
+          "K2": "화요일",
+          "R2": "튜즈데이",
+          "XE": "Tuesday is my busiest day of the week.",
+          "XK": "화요일은 내가 일주일 중 가장 바쁜 날이야.",
+          "XR": "튜즈데이 이즈 마이 비지스트 데이 오브 더 위크"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 단수 주어입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "'Was'는 과거 시제를 나타내는 be 동사의 한 형태로, 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She was happy yesterday.",
+          "XK": "그녀는 어제 행복했어.",
+          "XR": "쉬 워즈 해피 예스터데이"
+        },
+        {
+          "T1": "waiting",
+          "K1": "기다리는",
+          "R1": "웨이팅",
+          "E1": "'Waiting'은 누군가나 무엇인가를 기다리는 행위를 나타내는 동사입니다.",
+          "T2": "wait",
+          "K2": "기다리다",
+          "R2": "웨이트",
+          "XE": "I am waiting for the bus.",
+          "XK": "나는 버스를 기다리고 있어.",
+          "XR": "아이 엠 웨이팅 포어 더 버스"
+        },
+        {
+          "T1": "near",
+          "K1": "~의 근처에",
+          "R1": "니어",
+          "E1": "'Near'는 장소를 나타내며, 어느 것의 근처에 있음을 뜻합니다.",
+          "T2": "near",
+          "K2": "~의 근처에",
+          "R2": "니어",
+          "XE": "The store is near my house.",
+          "XK": "가게는 내 집 근처에 있어.",
+          "XR": "더 스토어 이즈 니어 마이 하우스"
+        },
+        {
+          "T1": "the phone",
+          "K1": "전화기",
+          "R1": "더 폰",
+          "E1": "'The phone'은 특정 전화기를 의미하는 명사구입니다.",
+          "T2": "phone",
+          "K2": "전화",
+          "R2": "폰",
+          "XE": "I can't find my phone.",
+          "XK": "나는 내 전화기를 찾을 수가 없어.",
+          "XR": "아이 캔트 파인드 마이 폰"
+        }
+      ]
+    },
+    {
+      "T0": "Oh, baby, I was getting bored",
+      "C0": "그래, 내가 무슨 말을 할 수 있을까? 오, 자기야, 나는 지루해지고 있었어. 목요일에 나는 흥미를 잃어가고 있었어.",
+      "G0": "'Oh, baby, I was getting bored'는 감탄사(Oh), 호칭(baby), 주어(I), 동사(getting bored), 서술 보어(bored)로 이루어진 문장입니다. 주어가 점점 지루해지는 과정을 설명하는 진행형 시제입니다.",
+      "K0": "오, 자기야, 지루해지고 있었어.",
+      "R0": "오, 베이비, 아이 워즈 게팅 볼드",
+      "LI": [
+        {
+          "T1": "Oh",
+          "K1": "오",
+          "R1": "오",
+          "E1": "'Oh'는 감탄사로, 놀라움이나 감동, 혹은 다른 강한 감정을 표현할 때 사용됩니다.",
+          "T2": "oh",
+          "K2": "오",
+          "R2": "오",
+          "XE": "Oh, I didn’t see you there!",
+          "XK": "오, 당신이 거기 있는 줄 몰랐어요!",
+          "XR": "오, 아이 디든트 씨 유 데어!"
+        },
+        {
+          "T1": "baby",
+          "K1": "자기야",
+          "R1": "베이비",
+          "E1": "'Baby'는 친밀한 관계에서 애정을 담아 상대를 부를 때 사용하는 표현입니다.",
+          "T2": "baby",
+          "K2": "아기",
+          "R2": "베이비",
+          "XE": "Good night, baby.",
+          "XK": "잘 자, 자기야.",
+          "XR": "굿 나잇, 베이비."
+        },
+        {
+          "T1": "I",
+          "K1": "나는",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 1인칭 단수 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아이 엠 해피 투데이."
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "'Was'는 과거 시제를 나타내는 be 동사의 한 형태입니다. 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She was smiling.",
+          "XK": "그녀는 웃고 있었다.",
+          "XR": "쉬 워즈 스마일링."
+        },
+        {
+          "T1": "getting",
+          "K1": "되고 있었다",
+          "R1": "게팅",
+          "E1": "'Getting'은 점점 ~이 되어가는 과정을 나타내는 동명사 형태입니다.",
+          "T2": "get",
+          "K2": "얻다",
+          "R2": "겟",
+          "XE": "He is getting tired.",
+          "XK": "그는 점점 피곤해지고 있다.",
+          "XR": "히 이즈 게팅 타이어드."
+        },
+        {
+          "T1": "bored",
+          "K1": "지루한",
+          "R1": "볼드",
+          "E1": "'Bored'는 지루함을 느끼는 상태를 나타내는 형용사입니다.",
+          "T2": "bored",
+          "K2": "지루한",
+          "R2": "볼드",
+          "XE": "The lecture was so boring that I got bored.",
+          "XK": "강의가 너무 지루해서 나는 지루해졌다.",
+          "XR": "더 렉처 워즈 소우 보링 댓 아이 갓 볼드."
+        }
+      ]
+    },
+    {
+      "T0": "Don't press ignore",
+      "C0": "내가 다시 전화를 하면 무시하지 마. 가끔은 내가 외로울 때가 있어.",
+      "G0": "'Don't press ignore'는 'Don't' (하지 마라), 'press' (누르다), 'ignore' (무시하다) 로 구성된 명령문으로, 특정 행동을 하지 말라는 의미를 가지고 있습니다.",
+      "K0": "무시하지 마.",
+      "R0": "돈트 프레스 이그노어",
+      "LI": [
+        {
+          "T1": "Don't",
+          "K1": "하지 마라",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 어떤 행동을 금지하거나 하지 말라는 명령을 나타냅니다.",
+          "T2": "do not",
+          "K2": "하지 마라",
+          "R2": "두 낫",
+          "XE": "Don't be late.",
+          "XK": "늦지 마라.",
+          "XR": "돈트 비 레이트"
+        },
+        {
+          "T1": "press",
+          "K1": "누르다",
+          "R1": "프레스",
+          "E1": "'Press'는 버튼이나 스위치를 누르는 동작을 표현하는 동사입니다.",
+          "T2": "press",
+          "K2": "누르다",
+          "R2": "프레스",
+          "XE": "Press the button to start.",
+          "XK": "시작하려면 버튼을 누르세요.",
+          "XR": "프레스 더 버튼 투 스타트"
+        },
+        {
+          "T1": "ignore",
+          "K1": "무시하다",
+          "R1": "이그노어",
+          "E1": "'Ignore'는 어떤 것에 주의를 기울이지 않거나 그 존재를 부정하는 행위를 나타내는 동사입니다.",
+          "T2": "ignore",
+          "K2": "무시하다",
+          "R2": "이그노어",
+          "XE": "He chose to ignore the warning.",
+          "XK": "그는 경고를 무시하기로 했다.",
+          "XR": "히 초즈 투 이그노어 더 워닝"
+        }
+      ]
+    },
+    {
+      "T0": "Promise you won't do it anymore",
+      "C0": "먼저 미안하다고 말할 거야. 더 이상 그렇게 하지 않겠다고 약속해. 다른 이야기를 만들어 내.",
+      "G0": "'Promise you won't do it anymore'는 명령문으로, 주어가 생략된 상태에서 'Promise' (약속해)라는 동사로 시작하여 목적어인 'you' (너)와 부정형 동사구 'won't do it anymore' (더 이상 그것을 하지 않다)로 구성되어 있습니다.",
+      "K0": "더 이상 그 일을 하지 않겠다고 약속해.",
+      "R0": "프라미스 유 원트 두 잇 애니모어",
+      "LI": [
+        {
+          "T1": "Promise",
+          "K1": "약속하다",
+          "R1": "프라미스",
+          "E1": "'Promise'는 미래에 어떤 행동을 할 것을 확실히 하겠다는 뜻으로 약속하는 행위를 의미하는 동사입니다.",
+          "T2": "promise",
+          "K2": "약속하다",
+          "R2": "프라미스",
+          "XE": "I promise to help you.",
+          "XK": "도와주겠다고 약속할게.",
+          "XR": "아이 프라미스 투 헬프 유"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 지칭하는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "won't",
+          "K1": "~하지 않을 것이다",
+          "R1": "원트",
+          "E1": "'Won't'는 'will not'의 축약형으로, 미래에 어떤 행동을 하지 않을 것을 나타냅니다.",
+          "T2": "will not",
+          "K2": "~하지 않을 것이다",
+          "R2": "윌 낫",
+          "XE": "He won't come to the party.",
+          "XK": "그는 파티에 오지 않을 거야.",
+          "XR": "히 원트 컴 투 더 파티"
+        },
+        {
+          "T1": "do",
+          "K1": "하다",
+          "R1": "두",
+          "E1": "'Do'는 어떤 행동이나 일을 실행하는 것을 의미하는 동사입니다.",
+          "T2": "do",
+          "K2": "하다",
+          "R2": "두",
+          "XE": "I need to do my homework.",
+          "XK": "나는 숙제를 해야 해.",
+          "XR": "아이 니드 투 두 마이 홈웍"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 3인칭 중성 대명사로, 앞서 언급된 또는 암시된 사물이나 상황을 지칭합니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "anymore",
+          "K1": "더 이상",
+          "R1": "애니모어",
+          "E1": "'Anymore'는 과거에 행해졌던 일이 이제는 더 이상 발생하지 않음을 나타내는 부사입니다.",
+          "T2": "anymore",
+          "K2": "더 이상",
+          "R2": "애니모어",
+          "XE": "I don't live there anymore.",
+          "XK": "나는 더 이상 거기 살지 않아.",
+          "XR": "아이 돈트 리브 데어 애니모어"
+        }
+      ]
+    },
+    {
+      "T0": "And the moon makes you seem close tonight",
+      "C0": "내 창문을 바라봐. 그리고 달이 오늘 밤 너를 가깝게 느끼게 해. 그러나 너는 너무 떨어져 있었어, 떨어져 있었어, 떨어져 있었어, 떨어져 있었어, 떨어져 있었어",
+      "G0": "'And the moon makes you seem close tonight'는 접속사(And), 주어(the moon), 동사(makes), 목적어(you), 보어(seem close tonight)로 이루어진 문장 구조로, 밤하늘 달의 영향을 묘사하는 문장입니다.",
+      "K0": "그리고 달이 오늘 밤 너를 가깝게 느끼게 해",
+      "R0": "앤드 더 문 메익스 유 씸 클로즈 투나잇",
+      "LI": [
+        {
+          "T1": "And",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 앞 문장과 뒤 문장을 연결하는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I like apples and oranges.",
+          "XK": "나는 사과와 오렌지를 좋아한다.",
+          "XR": "아이 라이크 애플스 앤드 오린지스"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지칭하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the roof.",
+          "XK": "고양이는 지붕 위에 있다.",
+          "XR": "더 캣 이즈 온 더 루프"
+        },
+        {
+          "T1": "moon",
+          "K1": "달",
+          "R1": "문",
+          "E1": "'Moon'은 지구의 위성을 의미하는 명사입니다.",
+          "T2": "moon",
+          "K2": "달",
+          "R2": "문",
+          "XE": "The moon is bright tonight.",
+          "XK": "오늘 밤 달이 밝다.",
+          "XR": "더 문 이즈 브라이트 투나잇"
+        },
+        {
+          "T1": "makes",
+          "K1": "만들다",
+          "R1": "메익스",
+          "E1": "'Makes'는 누군가나 무언가를 어떤 상태가 되게 하는 것을 의미하는 동사입니다.",
+          "T2": "make",
+          "K2": "만들다",
+          "R2": "메익",
+          "XE": "This song makes me happy.",
+          "XK": "이 노래는 나를 행복하게 한다.",
+          "XR": "디스 송 메익스 미 해피"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 두 번째 인칭 단수 및 복수를 나타내는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "seem",
+          "K1": "~처럼 보이다",
+          "R1": "씸",
+          "E1": "'Seem'은 어떤 것이 특정한 방식으로 보이거나 나타남을 의미하는 동사입니다.",
+          "T2": "seem",
+          "K2": "~처럼 보이다",
+          "R2": "씸",
+          "XE": "He seems tired.",
+          "XK": "그는 피곤해 보인다.",
+          "XR": "히 씸즈 타이어드"
+        },
+        {
+          "T1": "close",
+          "K1": "가까이",
+          "R1": "클로즈",
+          "E1": "'Close'는 물리적 거리나 관계가 가까움을 나타내는 형용사입니다.",
+          "T2": "close",
+          "K2": "가까이",
+          "R2": "클로즈",
+          "XE": "We are very close friends.",
+          "XK": "우리는 매우 가까운 친구야.",
+          "XR": "위 아 베리 클로즈 프렌즈"
+        },
+        {
+          "T1": "tonight",
+          "K1": "오늘 밤",
+          "R1": "투나잇",
+          "E1": "'Tonight'는 현재의 밤 시간을 나타내는 명사입니다.",
+          "T2": "tonight",
+          "K2": "오늘 밤",
+          "R2": "투나잇",
+          "XE": "Let's go to the party tonight.",
+          "XK": "오늘 밤 파티에 가자.",
+          "XR": "렛츠 고 투 더 파티 투나잇"
+        }
+      ]
+    },
+    {
+      "T0": "I was moving on ('cause you were moving too slow)",
+      "C0": "주말에 이미 놓쳤어. 나는 계속 나아가고 있었어 (네가 너무 느리게 움직였으니까) 가끔 나는 혼자가 돼.",
+      "G0": "'I was moving on ('cause you were moving too slow)'는 주어(I), 동사(was moving), 부사구(on), 이유를 나타내는 접속사(‘cause), 보어(you were moving too slow)로 이루어진 문장 구조입니다.",
+      "K0": "나는 계속 나아가고 있었어 (네가 너무 느리게 움직였으니까).",
+      "R0": "아이 워즈 무빙 온 ('코즈 유 워 무빙 투 슬로우)",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am learning Korean.",
+          "XK": "나는 한국어를 배우고 있어.",
+          "XR": "아이 엠 러닝 코리언"
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "‘Was’는 과거 시제를 나타내는 be 동사의 한 형태입니다. 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She was happy yesterday.",
+          "XK": "그녀는 어제 행복했어.",
+          "XR": "쉬 워즈 해피 예스터데이"
+        },
+        {
+          "T1": "moving",
+          "K1": "움직이는",
+          "R1": "무빙",
+          "E1": "‘Moving’은 ‘move’의 현재분사형으로, 진행 중인 동작을 나타냅니다.",
+          "T2": "move",
+          "K2": "움직이다",
+          "R2": "무브",
+          "XE": "The train is moving fast.",
+          "XK": "기차가 빠르게 움직이고 있어.",
+          "XR": "더 트레인 이즈 무빙 패스트"
+        },
+        {
+          "T1": "on",
+          "K1": "~위에",
+          "R1": "온",
+          "E1": "‘On’은 시간이나 위치, 상태를 나타내는 전치사입니다.",
+          "T2": "on",
+          "K2": "~위에",
+          "R2": "온",
+          "XE": "He put the book on the table.",
+          "XK": "그는 책을 테이블 위에 놓았다.",
+          "XR": "히 풋 더 북 온 더 테이블"
+        },
+        {
+          "T1": "'cause",
+          "K1": "왜냐하면",
+          "R1": "'코즈",
+          "E1": "'Cause'는 'because'의 줄임말로, 이유를 나타내는 접속사입니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비코즈",
+          "XE": "I stayed at home 'cause it was raining.",
+          "XK": "비가 와서 집에 있었어.",
+          "XR": "아이 스테이드 앳 홈 '코즈 잇 워즈 레이닝"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 상대방을 가리키는 주격 또는 목적격 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "were",
+          "K1": "~였다",
+          "R1": "워",
+          "E1": "'Were'는 과거 시제를 나타내는 be 동사의 한 형태로, 주어가 복수일 때 또는 you일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "They were happy.",
+          "XK": "그들은 행복했어.",
+          "XR": "데이 워 해피"
+        },
+        {
+          "T1": "moving",
+          "K1": "움직이는",
+          "R1": "무빙",
+          "E1": "‘Moving’은 ‘move’의 현재분사형으로, 진행 중인 동작을 나타냅니다.",
+          "T2": "move",
+          "K2": "움직이다",
+          "R2": "무브",
+          "XE": "The train is moving fast.",
+          "XK": "기차가 빠르게 움직이고 있어.",
+          "XR": "더 트레인 이즈 무빙 패스트"
+        },
+        {
+          "T1": "too",
+          "K1": "너무",
+          "R1": "투",
+          "E1": "'Too'는 정도를 나타내는 부사로, 지나침을 표현합니다.",
+          "T2": "too",
+          "K2": "너무",
+          "R2": "투",
+          "XE": "The soup is too hot.",
+          "XK": "수프가 너무 뜨거워.",
+          "XR": "더 수프 이즈 투 핫"
+        },
+        {
+          "T1": "slow",
+          "K1": "느린",
+          "R1": "슬로우",
+          "E1": "'Slow'는 속도를 나타내는 형용사로, 빠르지 않음을 의미합니다.",
+          "T2": "slow",
+          "K2": "느린",
+          "R2": "슬로우",
+          "XE": "He walks very slow.",
+          "XK": "그는 매우 천천히 걷는다.",
+          "XR": "히 웍스 베리 슬로우"
+        }
+      ]
+    },
+    {
+      "T0": "Over over thinking us, us, us, us, us",
+      "C0": "하지만 너는 너무 무심했어, 무심했어, 무심했어, 무심했어 무심했어 우리에 대해 생각을 너무 많이 했어, 많이 했어, 많이 했어, 많이 했어 그래, 네가 그걸 망쳐버렸어, 망쳐버렸어, 망쳐버렸어, 망쳐버렸어",
+      "G0": "'Over over thinking us, us, us, us, us'는 주어와 동사가 생략된 형태의 구문으로, 'Over over thinking'은 'us'를 수식하는 구문입니다. 이 문장은 누군가가 '우리'에 대해 과도하게 생각하는 행위를 강조하고 있습니다.",
+      "K0": "우리 사이를 너무 많이 생각해, 생각해, 생각해, 생각해, 생각해",
+      "R0": "오버 오버 씽킹 어스, 어스, 어스, 어스, 어스",
+      "LI": [
+        {
+          "T1": "Over",
+          "K1": "너무",
+          "R1": "오버",
+          "E1": "'Over'는 어떤 행동이나 상태가 과도하게 일어나는 것을 의미합니다.",
+          "T2": "over",
+          "K2": "너무",
+          "R2": "오버",
+          "XE": "She is over excited.",
+          "XK": "그녀는 너무 흥분해 있어.",
+          "XR": "쉬 이즈 오버 익사이티드"
+        },
+        {
+          "T1": "over thinking",
+          "K1": "과도한 생각",
+          "R1": "오버 씽킹",
+          "E1": "'Over thinking'은 어떤 것에 대해 과도하게 생각하는 행위를 뜻합니다.",
+          "T2": "over think",
+          "K2": "과도하게 생각하다",
+          "R2": "오버 씽크",
+          "XE": "He tends to over think everything.",
+          "XK": "그는 모든 것을 과도하게 생각하는 경향이 있어.",
+          "XR": "히 텐즈 투 오버 씽크 에브리씽"
+        },
+        {
+          "T1": "us",
+          "K1": "우리",
+          "R1": "어스",
+          "E1": "'Us'는 '우리' 또는 '우리들을' 의미하는 대명사입니다.",
+          "T2": "us",
+          "K2": "우리",
+          "R2": "어스",
+          "XE": "They are coming with us.",
+          "XK": "그들은 우리와 함께 올 거야.",
+          "XR": "데이 아 커밍 위드 어스"
+        }
+      ]
+    },
+    {
+      "T0": "Say something I ain't heard before",
+      "C0": "다른 이야기를 생각해내 봐. 전에 들어 본 적 없는 무언가를 말해줘. 나는 내 시간을 낭비하기에는 너무 재미있어.",
+      "G0": "'Say something I ain't heard before'는 명령문(Say something), 관계절(I ain't heard before)로 구성되어 있습니다. 청자에게 새로운 말을 해달라는 요청을 담고 있습니다.",
+      "K0": "전에 들어 본 적 없는 무언가를 말해줘.",
+      "R0": "세이 썸씽 아이 에인트 허드 비포어",
+      "LI": [
+        {
+          "T1": "Say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 무언가를 말하는 동사를 뜻합니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Please say your name.",
+          "XK": "이름을 말해 주세요.",
+          "XR": "플리즈 세이 유어 네임"
+        },
+        {
+          "T1": "something",
+          "K1": "무언가",
+          "R1": "썸씽",
+          "E1": "'Something'은 특정하지 않은 물건이나 사항을 가리키는 대명사입니다.",
+          "T2": "something",
+          "K2": "무언가",
+          "R2": "썸씽",
+          "XE": "She wants to tell you something.",
+          "XK": "그녀가 너에게 무언가를 말하고 싶어 해.",
+          "XR": "쉬 원츠 투 텔 유 썸씽"
+        },
+        {
+          "T1": "I",
+          "K1": "내가",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "내가",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "ain't",
+          "K1": "~이 아니다",
+          "R1": "에인트",
+          "E1": "'Ain't'은 비격식적인 부정형 표현으로, 'am not', 'is not', 'are not'을 대신해 사용됩니다.",
+          "T2": "am not",
+          "K2": "~이 아니다",
+          "R2": "앰 낫",
+          "XE": "She ain't coming to the party.",
+          "XK": "그녀는 파티에 오지 않을 거야.",
+          "XR": "쉬 에인트 커밍 투 더 파티"
+        },
+        {
+          "T1": "heard",
+          "K1": "들었다",
+          "R1": "허드",
+          "E1": "'Heard'는 'hear'의 과거 및 과거분사형으로, 소리를 들은 상태를 나타냅니다.",
+          "T2": "hear",
+          "K2": "듣다",
+          "R2": "히어",
+          "XE": "I heard a strange noise.",
+          "XK": "이상한 소리를 들었어.",
+          "XR": "아이 허드 어 스트레인지 노이즈"
+        },
+        {
+          "T1": "before",
+          "K1": "전에",
+          "R1": "비포",
+          "E1": "'Before'는 특정 시간보다 이전을 나타내는 부사입니다.",
+          "T2": "before",
+          "K2": "전에",
+          "R2": "비포",
+          "XE": "I have never seen this before.",
+          "XK": "이것을 전에 본 적이 없어.",
+          "XR": "아이 해브 네버 씬 디스 비포"
+        }
+      ]
+    },
+    {
+      "T0": "Yea, you went it messed it up, up, up, up, up",
+      "C0": "우리를 너무 많이 생각했어, 계속, 계속, 계속, 계속. 그래, 네가 망쳤어, 망쳤어, 망쳤어, 망쳤어. 처음에는 네가 미안하다고 말할 거야.",
+      "G0": "'Yea, you went it messed it up, up, up, up, up'는 주어(you), 동사(went), 목적어(it), 목적어(messed it up)으로 이루어진 문장입니다. 여기서 'messed it up'은 일을 망쳤다는 의미로 사용되었습니다.",
+      "K0": "그래, 네가 그걸 망쳐 버렸어, 망쳐 버렸어, 망쳐 버렸어, 망쳐 버렸어.",
+      "R0": "예, 유 웬트 잇 메스드 잇 업, 업, 업, 업, 업",
+      "LI": [
+        {
+          "T1": "Yea",
+          "K1": "그래",
+          "R1": "예",
+          "E1": "'Yea'는 긍정의 뜻을 나타내는 비격식 표현입니다. 'Yes'의 구어적 표현입니다.",
+          "T2": "yeah",
+          "K2": "그래",
+          "R2": "예",
+          "XE": "Yea, I think you're right.",
+          "XK": "그래, 네가 맞는 것 같아.",
+          "XR": "예, 아이 씽크 유아 라이트"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 대명사로, 여기서는 상대방을 지칭합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are amazing.",
+          "XK": "너는 놀라워.",
+          "XR": "유 아 아메이징"
+        },
+        {
+          "T1": "went",
+          "K1": "갔다",
+          "R1": "웬트",
+          "E1": "'Went'는 'go'의 과거형으로, 여기서는 단순 과거 시제를 나타냅니다.",
+          "T2": "go",
+          "K2": "가다",
+          "R2": "고",
+          "XE": "She went to the store.",
+          "XK": "그녀는 가게에 갔어.",
+          "XR": "쉬 웬트 투 더 스토어"
+        },
+        {
+          "T1": "it",
+          "K1": "그것을",
+          "R1": "잇",
+          "E1": "'It'는 일반적인 대명사로, 특정 사물이나 상황을 가리킵니다. 여기서는 구체적으로 언급된 사물을 나타냅니다.",
+          "T2": "it",
+          "K2": "그것을",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "messed",
+          "K1": "망쳤다",
+          "R1": "메스드",
+          "E1": "'Messed up'는 'mess up'의 과거형으로, 상황을 망치거나 어지럽히는 것을 의미합니다.",
+          "T2": "mess",
+          "K2": "망치다",
+          "R2": "메스",
+          "XE": "He messed up the project.",
+          "XK": "그는 프로젝트를 망쳤어.",
+          "XR": "히 메스드 업 더 프로젝트"
+        },
+        {
+          "T1": "it",
+          "K1": "그것을",
+          "R1": "잇",
+          "E1": "'It'는 일반적인 대명사로, 특정 사물이나 상황을 가리킵니다. 여기서는 구체적으로 언급된 사물을 나타냅니다.",
+          "T2": "it",
+          "K2": "그것을",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "up",
+          "K1": "위로",
+          "R1": "업",
+          "E1": "'Up'은 방향을 나타내는 부사로, 여기서는 반복적으로 강조하는 의미를 추가합니다.",
+          "T2": "up",
+          "K2": "위로",
+          "R2": "업",
+          "XE": "Look up at the sky.",
+          "XK": "하늘을 올려다봐.",
+          "XR": "룩 업 앳 더 스카이"
+        }
+      ]
+    },
+    {
+      "T0": "Two days, wasn't hearing from ya",
+      "C0": "화요일에 나는 전화기 근처에서 기다리고 있었어. 이틀 동안 네 소식을 듣지 못했어. 그래, 뭐라고 말할 수 있을까?",
+      "G0": "'Two days, wasn't hearing from ya'는 주어(시제 생략된 경험)와 동사구(wasn't hearing), 목적어(from ya)로 구성된 구조입니다. 주어가 경험을 나타내는 과거형 문장으로, '이틀 동안 소식을 듣지 못했다'는 의미를 전달합니다.",
+      "K0": "이틀 동안 네 소식을 듣지 못했어.",
+      "R0": "투 데이즈, 워즌 히어링 프럼 야",
+      "LI": [
+        {
+          "T1": "Two",
+          "K1": "둘",
+          "R1": "투",
+          "E1": "'Two'는 숫자 2를 나타내는 형용사입니다. 문장에서 시간이나 양을 나타낼 때 사용됩니다.",
+          "T2": "two",
+          "K2": "둘",
+          "R2": "투",
+          "XE": "I have two apples.",
+          "XK": "나는 두 개의 사과를 가지고 있어.",
+          "XR": "아이 해브 투 애플즈"
+        },
+        {
+          "T1": "days",
+          "K1": "일",
+          "R1": "데이즈",
+          "E1": "'Days'는 하루 또는 특정 기간을 나타내는 명사입니다. 복수형으로 사용되어 이 문맥에서는 '이틀'을 의미합니다.",
+          "T2": "day",
+          "K2": "일",
+          "R2": "데이",
+          "XE": "She worked for three days.",
+          "XK": "그녀는 삼 일 동안 일했다.",
+          "XR": "쉬 워크드 포 쓰리 데이즈"
+        },
+        {
+          "T1": "wasn't",
+          "K1": "~하지 않았다",
+          "R1": "워즌트",
+          "E1": "'Wasn't'는 'was not'의 축약형으로, 과거 시제에서 부정을 나타냅니다.",
+          "T2": "was not",
+          "K2": "~하지 않았다",
+          "R2": "워즈 낫",
+          "XE": "He wasn't there yesterday.",
+          "XK": "그는 어제 거기 없었다.",
+          "XR": "히 워즌트 데어 예스터데이"
+        },
+        {
+          "T1": "hearing",
+          "K1": "듣다",
+          "R1": "히어링",
+          "E1": "'Hearing'은 'hear'의 현재 진행형으로, '듣다'라는 의미를 갖는 동사입니다. 이 문맥에서는 '네 소식을 듣다'를 의미합니다.",
+          "T2": "hear",
+          "K2": "듣다",
+          "R2": "히어",
+          "XE": "I am hearing a strange noise.",
+          "XK": "나는 이상한 소리를 듣고 있어.",
+          "XR": "아이 엠 히어링 어 스트레인지 노이즈"
+        },
+        {
+          "T1": "from",
+          "K1": "~로부터",
+          "R1": "프럼",
+          "E1": "'From'은 출처나 기원을 나타내는 전치사로, 이 문맥에서는 '너로부터'의 의미를 전달합니다.",
+          "T2": "from",
+          "K2": "~로부터",
+          "R2": "프럼",
+          "XE": "This letter is from my friend.",
+          "XK": "이 편지는 내 친구로부터 온 거야.",
+          "XR": "디스 레터 이즈 프럼 마이 프렌드"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'를 비격식적으로 나타내는 표현입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "What are ya doing?",
+          "XK": "너 뭐 하고 있어?",
+          "XR": "왓 아 야 두잉?"
+        }
+      ]
+    },
+    {
+      "T0": "Friday you were out there in the cold",
+      "C0": "목요일에 난 점점 흥미를 잃어갔어. 금요일에 너는 추운 밖에 있었어. 주말에 너는 이미 그것을 놓쳤어.",
+      "G0": "'Friday you were out there in the cold'는 주어(you), 날짜(Firday), 위치(in the cold), 서술어(were out there)로 구성된 문장입니다. 과거 시제와 장소를 나타내고 있습니다.",
+      "K0": "금요일에 너는 추운 밖에 있었어.",
+      "R0": "프라이데이 유 워 아웃 데어 인 더 콜드",
+      "LI": [
+        {
+          "T1": "Friday",
+          "K1": "금요일",
+          "R1": "프라이데이",
+          "E1": "'Friday'는 한 주의 다섯 번째 날을 나타내는 명사입니다.",
+          "T2": "Friday",
+          "K2": "금요일",
+          "R2": "프라이데이",
+          "XE": "Let's meet on Friday.",
+          "XK": "금요일에 만나자.",
+          "XR": "렛츠 밋 온 프라이데이"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "were",
+          "K1": "~였다",
+          "R1": "워",
+          "E1": "'Were'는 과거 시제에서 'be' 동사의 복수형 및 2인칭 단수형 형태입니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "They were happy.",
+          "XK": "그들은 행복했다.",
+          "XR": "데이 워 해피"
+        },
+        {
+          "T1": "out",
+          "K1": "밖에",
+          "R1": "아웃",
+          "E1": "'Out'는 장소나 위치를 나타내는 전치사로 '밖에'를 의미합니다.",
+          "T2": "out",
+          "K2": "밖에",
+          "R2": "아웃",
+          "XE": "She went out.",
+          "XK": "그녀는 밖으로 나갔다.",
+          "XR": "쉬 웬트 아웃"
+        },
+        {
+          "T1": "there",
+          "K1": "거기에",
+          "R1": "데어",
+          "E1": "'There'는 특정 위치나 장소를 가리키는 부사입니다.",
+          "T2": "there",
+          "K2": "거기에",
+          "R2": "데어",
+          "XE": "He is there.",
+          "XK": "그는 거기에 있다.",
+          "XR": "히 이즈 데어"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 장소를 나타내는 전치사로 '~안에'를 의미합니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "The cat is in the box.",
+          "XK": "고양이는 상자 안에 있다.",
+          "XR": "더 캣 이즈 인 더 박스"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지정하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "I saw the car.",
+          "XK": "나는 그 차를 봤다.",
+          "XR": "아이 소 더 카"
+        },
+        {
+          "T1": "cold",
+          "K1": "추운",
+          "R1": "콜드",
+          "E1": "'Cold'는 낮은 온도를 나타내는 형용사로, '추운'을 의미합니다.",
+          "T2": "cold",
+          "K2": "추운",
+          "R2": "콜드",
+          "XE": "It is very cold today.",
+          "XK": "오늘은 매우 춥다.",
+          "XR": "잇 이즈 베리 콜드 투데이"
+        }
+      ]
+    },
+    {
+      "T0": "I'm too fun to waste my time",
+      "C0": "전에 들어본 적 없는 말을 해봐. 나는 내 시간을 낭비하기엔 너무 재밌어. 하룻밤을 낭비하기엔 너무 어려.",
+      "G0": "'I'm too fun to waste my time'는 주어(I), 동사(am), 서술어(too fun), 목적어(to waste my time)로 구성된 문장으로, 스스로를 너무 재미있다고 평가하며 시간을 낭비하기 싫다는 의미를 전달합니다.",
+      "K0": "나는 내 시간을 낭비하기엔 너무 재미있어.",
+      "R0": "아임 투 펀 투 웨이스트 마이 타임",
+      "LI": [
+        {
+          "T1": "I'm",
+          "K1": "나는 ~이다",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 주어 I와 be 동사 am의 결합입니다. 여기서는 주어 자신을 나타냅니다.",
+          "T2": "I am",
+          "K2": "나는 ~이다",
+          "R2": "아이 엠",
+          "XE": "I'm happy to see you.",
+          "XK": "널 만나서 기뻐.",
+          "XR": "아임 해피 투 시 유"
+        },
+        {
+          "T1": "too",
+          "K1": "너무",
+          "R1": "투",
+          "E1": "'Too'는 과도함을 나타내는 부사로, 여기서는 '재미있다'는 정도가 너무 크다는 것을 의미합니다.",
+          "T2": "too",
+          "K2": "너무",
+          "R2": "투",
+          "XE": "This coffee is too hot.",
+          "XK": "이 커피는 너무 뜨거워.",
+          "XR": "디스 커피 이즈 투 핫"
+        },
+        {
+          "T1": "fun",
+          "K1": "재미있는",
+          "R1": "펀",
+          "E1": "'Fun'은 즐거움이나 재미를 나타내는 형용사입니다. 여기서는 스스로를 묘사하는 데 사용되었습니다.",
+          "T2": "fun",
+          "K2": "재미있는",
+          "R2": "펀",
+          "XE": "The party was really fun.",
+          "XK": "파티는 정말 재미있었어.",
+          "XR": "더 파티 워즈 릴리 펀"
+        },
+        {
+          "T1": "to",
+          "K1": "~하기에",
+          "R1": "투",
+          "E1": "'To'는 여기서 동사의 목적을 나타내기 위한 전치사로 사용되었습니다.",
+          "T2": "to",
+          "K2": "~하기에",
+          "R2": "투",
+          "XE": "I need to go now.",
+          "XK": "지금 가야 해.",
+          "XR": "아이 니드 투 고 나우"
+        },
+        {
+          "T1": "waste",
+          "K1": "낭비하다",
+          "R1": "웨이스트",
+          "E1": "'Waste'는 시간이나 자원을 효과적으로 사용하지 않고 낭비하는 행위를 뜻하는 동사입니다.",
+          "T2": "waste",
+          "K2": "낭비하다",
+          "R2": "웨이스트",
+          "XE": "Don't waste your money on that.",
+          "XK": "그것에 돈을 낭비하지 마.",
+          "XR": "돈트 웨이스트 유어 머니 온 댓"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 소유격 대명사로, '나의'라는 의미를 가지고 있습니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "time",
+          "K1": "시간",
+          "R1": "타임",
+          "E1": "'Time'은 시간을 의미하는 명사로, 여기서는 개인의 시간을 지칭합니다.",
+          "T2": "time",
+          "K2": "시간",
+          "R2": "타임",
+          "XE": "What time is it?",
+          "XK": "지금 몇 시야?",
+          "XR": "왓 타임 이즈 잇"
+        }
+      ]
+    },
+    {
+      "T0": "Too young to waste one night",
+      "C0": "나는 내 시간을 낭비하기엔 너무 재미있어. 하룻밤을 낭비하기엔 너무 어려. 그래서 여기 좋은 조언이 있어.",
+      "G0": "'Too young to waste one night'은 주어가 생략된 상태로, '너무 어려서 ~할 수 없다'는 의미를 가진 구문입니다. 'Too ~ to ~' 구문은 '~하기에는 너무 ~하다'는 뜻을 나타냅니다.",
+      "K0": "하룻밤을 낭비하기엔 너무 어려.",
+      "R0": "투 영 투 웨이스트 원 나이트",
+      "LI": [
+        {
+          "T1": "Too",
+          "K1": "너무",
+          "R1": "투",
+          "E1": "'Too'는 정도가 과도함을 나타내는 부사로, '너무 ~해서 ~할 수 없다'는 의미로 쓰입니다.",
+          "T2": "too",
+          "K2": "너무",
+          "R2": "투",
+          "XE": "The coffee is too hot to drink.",
+          "XK": "커피가 너무 뜨거워서 마실 수가 없어.",
+          "XR": "더 커피 이즈 투 핫 투 드링크"
+        },
+        {
+          "T1": "young",
+          "K1": "어린",
+          "R1": "영",
+          "E1": "'Young'은 나이가 적음을 나타내는 형용사로, 이 구문에서는 '어린'의 의미로 사용됩니다.",
+          "T2": "young",
+          "K2": "어린",
+          "R2": "영",
+          "XE": "He is too young to drive.",
+          "XK": "그는 운전하기에 너무 어리다.",
+          "XR": "히 이즈 투 영 투 드라이브"
+        },
+        {
+          "T1": "to",
+          "K1": "~하기에",
+          "R1": "투",
+          "E1": "'To'는 동사 앞에 쓰여 목적을 나타내는 전치사로, '~하기에'의 의미로 쓰입니다.",
+          "T2": "to",
+          "K2": "~하기에",
+          "R2": "투",
+          "XE": "I'm too tired to continue.",
+          "XK": "나는 너무 피곤해서 계속할 수 없다.",
+          "XR": "아임 투 타이어드 투 컨티뉴"
+        },
+        {
+          "T1": "waste",
+          "K1": "낭비",
+          "R1": "웨이스트",
+          "E1": "'Waste'는 시간, 돈 등의 자원을 무가치하게 사용하는 것을 의미하는 동사입니다.",
+          "T2": "waste",
+          "K2": "낭비",
+          "R2": "웨이스트",
+          "XE": "Don't waste your time.",
+          "XK": "너의 시간을 낭비하지 마.",
+          "XR": "돈트 웨이스트 유어 타임"
+        },
+        {
+          "T1": "one",
+          "K1": "하나",
+          "R1": "원",
+          "E1": "'One'은 숫자 1을 나타내는 명사로, 여기서는 '하나의 밤'을 의미합니다.",
+          "T2": "one",
+          "K2": "하나",
+          "R2": "원",
+          "XE": "I have one sister.",
+          "XK": "나는 여동생이 한 명 있다.",
+          "XR": "아이 해브 원 시스터"
+        },
+        {
+          "T1": "night",
+          "K1": "밤",
+          "R1": "나이트",
+          "E1": "'Night'는 하루의 밤 시간을 나타내는 명사입니다.",
+          "T2": "night",
+          "K2": "밤",
+          "R2": "나이트",
+          "XE": "Good night!",
+          "XK": "안녕히 주무세요!",
+          "XR": "굿 나이트"
+        }
+      ]
+    },
+    {
+      "T0": "Monday I was dreaming bout ya",
+      "C0": "하지만 너는 너무 연락이 없었어. 월요일에 나는 너에 대해 꿈을 꾸고 있었어. 화요일에 나는 전화기 근처에서 기다리고 있었어.",
+      "G0": "'Monday I was dreaming bout ya'는 주어(Monday I), 동사(was dreaming), 목적어(bout ya)로 이루어진 문장 구조로, 어느 시점에 특정 행동을 하고 있었던 상태를 표현합니다.",
+      "K0": "월요일에 나는 너에 대해 꿈을 꾸고 있었어.",
+      "R0": "먼데이 아이 워즈 드리밍 바웃 야",
+      "LI": [
+        {
+          "T1": "Monday",
+          "K1": "월요일",
+          "R1": "먼데이",
+          "E1": "'Monday'는 일주일의 첫 번째 날을 가리키는 단어로, 월요일을 의미합니다.",
+          "T2": "Monday",
+          "K2": "월요일",
+          "R2": "먼데이",
+          "XE": "Monday is the start of the workweek.",
+          "XK": "월요일은 업무 주의 시작이야.",
+          "XR": "먼데이 이즈 더 스타트 오브 더 워크위크"
+        },
+        {
+          "T1": "I",
+          "K1": "나는",
+          "R1": "아이",
+          "E1": "'I'는 화자를 의미하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나는",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "'Was'는 과거 시제를 나타내는 be 동사의 한 형태입니다. 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She was happy yesterday.",
+          "XK": "그녀는 어제 행복했어.",
+          "XR": "쉬 워즈 해피 예스터데이"
+        },
+        {
+          "T1": "dreaming",
+          "K1": "꿈꾸다",
+          "R1": "드리밍",
+          "E1": "'Dreaming'은 잠을 자는 동안 시각적인 이미지를 떠올리는 행위를 나타내는 동사입니다.",
+          "T2": "dream",
+          "K2": "꿈꾸다",
+          "R2": "드림",
+          "XE": "She is always dreaming about the future.",
+          "XK": "그녀는 항상 미래에 대해 꿈꾸고 있어.",
+          "XR": "쉬 이즈 올웨이즈 드리밍 어바웃 더 퓨처"
+        },
+        {
+          "T1": "bout",
+          "K1": "대하여",
+          "R1": "바웃",
+          "E1": "'Bout'은 'about'의 비격식 표현으로, '~에 대해'라는 의미를 가집니다.",
+          "T2": "about",
+          "K2": "대하여",
+          "R2": "어바웃",
+          "XE": "Tell me bout your day.",
+          "XK": "네 하루에 대해 말해줘.",
+          "XR": "텔 미 바웃 유어 데이"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식 표현으로, 상대방을 의미합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "See ya tomorrow!",
+          "XK": "내일 봐!",
+          "XR": "씨 야 투모로우"
+        }
+      ]
+    },
+    {
+      "T0": "But you been so out of touch",
+      "C0": "넌 나의 사랑을 가질 수 있었어. 하지만 넌 그렇게 무관심했어. 월요일에 너를 꿈꿨어.",
+      "G0": "'But you been so out of touch'는 접속사(But), 주어(you), 동사(been so out of touch)로 이루어져 있습니다. 여기서 'been'은 현재완료 시제를 나타내며, 'so out of touch'는 특정 상태를 표현합니다.",
+      "K0": "하지만 넌 너무 무관심했어.",
+      "R0": "벗 유 빈 소우 아웃 오브 터치",
+      "LI": [
+        {
+          "T1": "But",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 반대 상황이나 조건을 제시할 때 사용하는 접속사입니다. 문장의 앞뒤의 내용을 대조할 때 사용됩니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I wanted to go, but I couldn't.",
+          "XK": "가고 싶었지만, 갈 수 없었어.",
+          "XR": "아이 원티드 투 고, 벗 아이 쿠든트"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 가리키는 대명사로, 이 문맥에서는 상대방을 의미합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "been",
+          "K1": "있었다",
+          "R1": "빈",
+          "E1": "'Been'은 비동사 'be'의 과거분사 형태로, 현재완료 시제에서 사용됩니다. 특정 시간이 지나면서 유지된 상태를 나타냅니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I have been there before.",
+          "XK": "나는 전에 거기에 가본 적이 있어.",
+          "XR": "아이 해브 빈 데어 비포어"
+        },
+        {
+          "T1": "so",
+          "K1": "너무",
+          "R1": "소우",
+          "E1": "'So'는 정도를 나타내는 부사로, 여기서는 '너무'의 의미로 사용됩니다.",
+          "T2": "so",
+          "K2": "너무",
+          "R2": "소우",
+          "XE": "She is so happy right now.",
+          "XK": "그녀는 지금 너무 행복해.",
+          "XR": "쉬 이즈 소우 해피 라이트 나우"
+        },
+        {
+          "T1": "out of touch",
+          "K1": "연락이 끊긴",
+          "R1": "아웃 오브 터치",
+          "E1": "'Out of touch'는 무관심하거나 연결이 끊어진 상태를 나타내는 표현입니다.",
+          "T2": "out of touch",
+          "K2": "연락이 끊긴",
+          "R2": "아웃 오브 터치",
+          "XE": "He has been out of touch with reality.",
+          "XK": "그는 현실과 동떨어져 있었어.",
+          "XR": "히 해즈 빈 아웃 오브 터치 위드 리얼리티"
+        }
+      ]
+    },
+    {
+      "T0": "Weekend you already missed it",
+      "C0": "금요일에 너는 밖에서 추위를 견디고 있었어. 주말에 너는 이미 그걸 놓쳤어. 나는 나아가고 있었어 (너는 너무 느렸거든).",
+      "G0": "'Weekend you already missed it'는 주어(Weekend)와 보어(you already missed it)로 이루어진 간단한 문장 구조로, 특정 시점(weekend)에 어떤 행동(you already missed it)이 이뤄졌음을 나타냅니다.",
+      "K0": "주말에 너는 이미 그걸 놓쳤어.",
+      "R0": "위크엔드 유 알레디 미스트 잇",
+      "LI": [
+        {
+          "T1": "Weekend",
+          "K1": "주말",
+          "R1": "위크엔드",
+          "E1": "'Weekend'는 일주일 중 토요일과 일요일을 포함하는 기간을 나타내는 명사입니다.",
+          "T2": "weekend",
+          "K2": "주말",
+          "R2": "위크엔드",
+          "XE": "What are your plans for the weekend?",
+          "XK": "주말에 무슨 계획 있어?",
+          "XR": "왓 아 유얼 플랜스 포어 더 위크엔드?"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 상대방을 지칭하는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "already",
+          "K1": "이미",
+          "R1": "알레디",
+          "E1": "'Already'는 특정 사건이 예상보다 일찍 이루어졌음을 나타내는 부사입니다.",
+          "T2": "already",
+          "K2": "이미",
+          "R2": "알레디",
+          "XE": "I already finished my homework.",
+          "XK": "나는 이미 숙제를 끝냈어.",
+          "XR": "아이 알레디 피니쉬드 마이 홈워크"
+        },
+        {
+          "T1": "missed",
+          "K1": "놓쳤다",
+          "R1": "미스트",
+          "E1": "'Missed'는 '놓쳤다'는 의미로, 특정 기회나 순간을 잡지 못했음을 나타내는 동사입니다.",
+          "T2": "miss",
+          "K2": "놓치다",
+          "R2": "미스",
+          "XE": "I missed the bus this morning.",
+          "XK": "나는 오늘 아침에 버스를 놓쳤어.",
+          "XR": "아이 미스트 더 버스 디스 모닝"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 앞선 문맥이나 상황에서 언급된 대상을 다시 지칭하는 3인칭 단수 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining outside.",
+          "XK": "밖에 비가 오고 있어.",
+          "XR": "잇 이즈 레이닝 아웃사이드"
+        }
+      ]
+    },
+    {
+      "T0": "But you been so out of touch, touch, touch, touch, touch",
+      "C0": "그리고 오늘 밤 달이 너를 가깝게 느껴지게 하지만 너는 너무 멀리 있는 것 같아, 터치, 터치, 터치, 터치, 터치. 우리에 대해 너무 많이 생각해, 우리, 우리, 우리, 우리, 우리",
+      "G0": "'But you been so out of touch, touch, touch, touch, touch'는 대명사(you), 조동사(been), 부사구(out of touch)로 구성되며, 여기서 반복된 'touch'는 원래 문장의 강조 효과를 줍니다.",
+      "K0": "하지만 너는 너무 멀리 있는 것 같아, 터치, 터치, 터치, 터치, 터치",
+      "R0": "벗 유 빈 소우 아웃 오브 터치, 터치, 터치, 터치, 터치",
+      "LI": [
+        {
+          "T1": "But",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 앞에 언급된 내용과 대조되는 내용을 제시할 때 사용하는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I wanted to go, but I was too tired.",
+          "XK": "나는 가고 싶었지만 너무 피곤했어.",
+          "XR": "아이 원티드 투 고, 벗 아이 워즈 투 타이어드"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 지칭하는 주어 또는 목적어 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "been",
+          "K1": "~이었다",
+          "R1": "빈",
+          "E1": "'Been'은 동사 'be'의 과거 완료형으로, 과거 어느 시점부터 현재까지의 상태를 나타냅니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I have been waiting for you.",
+          "XK": "나는 너를 기다리고 있었어.",
+          "XR": "아이 해브 빈 웨이팅 포 유"
+        },
+        {
+          "T1": "so",
+          "K1": "너무",
+          "R1": "소우",
+          "E1": "'So'는 정도를 강조할 때 사용하는 부사입니다.",
+          "T2": "so",
+          "K2": "너무",
+          "R2": "소우",
+          "XE": "She is so kind.",
+          "XK": "그녀는 정말 친절해.",
+          "XR": "쉬 이즈 소우 카인드"
+        },
+        {
+          "T1": "out of touch",
+          "K1": "연락이 끊긴",
+          "R1": "아웃 오브 터치",
+          "E1": "'Out of touch'는 연락이 끊기거나 소통이 부족한 상태를 나타내는 표현입니다.",
+          "T2": "out of touch",
+          "K2": "연락이 끊긴",
+          "R2": "아웃 오브 터치",
+          "XE": "We have been out of touch for years.",
+          "XK": "우리는 몇 년 동안 연락이 끊겼어.",
+          "XR": "위 해브 빈 아웃 오브 터치 포 이어스"
+        },
+        {
+          "T1": "touch",
+          "K1": "터치",
+          "R1": "터치",
+          "E1": "'Touch'는 접촉하거나 만지는 행위를 의미합니다. 여기서는 감정적인 거리를 비유적으로 나타냅니다.",
+          "T2": "touch",
+          "K2": "터치",
+          "R2": "터치",
+          "XE": "Can you touch the ceiling?",
+          "XK": "천장에 닿을 수 있니?",
+          "XR": "캔 유 터치 더 실링"
+        }
+      ]
+    },
+    {
+      "T0": "You could have had my love",
+      "C0": "'네가 너무 무관심했기 때문에 너는 내 사랑을 가질 수 있었어. 하지만 네가 너무 무관심했어",
+      "G0": "'You could have had my love'는 주어(You), 조동사(could), 완료형 동사구(have had), 목적어(my love)로 이루어진 문장 구조로, 특정 기회나 가능성을 표현하는 구문입니다.",
+      "K0": "네가 내 사랑을 가질 수 있었어.",
+      "R0": "유 쿠드 해브 해드 마이 러브",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자가 듣는 이를 가리키는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "could",
+          "K1": "~할 수 있었다",
+          "R1": "쿠드",
+          "E1": "'Could'는 'can'의 과거형이며, 가능성이나 능력을 표현하는 조동사입니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "She could swim very well.",
+          "XK": "그녀는 수영을 아주 잘할 수 있었어.",
+          "XR": "쉬 쿠드 스윔 베리 웰"
+        },
+        {
+          "T1": "have",
+          "K1": "가지다",
+          "R1": "해브",
+          "E1": "'Have'는 소유하거나 취득하는 것을 의미하는 동사입니다. 이 문장에서는 완료형을 형성하는 데 사용됩니다.",
+          "T2": "have",
+          "K2": "가지다",
+          "R2": "해브",
+          "XE": "I have a car.",
+          "XK": "나는 차를 가지고 있어.",
+          "XR": "아이 해브 어 카"
+        },
+        {
+          "T1": "had",
+          "K1": "가졌다",
+          "R1": "해드",
+          "E1": "'Had'는 'have'의 과거형이며, 완료형에서 사용되어 일어난 일을 나타냅니다.",
+          "T2": "have",
+          "K2": "가지다",
+          "R2": "해브",
+          "XE": "She had a wonderful time.",
+          "XK": "그녀는 멋진 시간을 보냈어.",
+          "XR": "쉬 해드 어 원더풀 타임"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 화자의 소유를 나타내는 소유 형용사입니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 나의 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑",
+          "R1": "러브",
+          "E1": "'Love'는 강한 애정이나 관심을 의미하는 명사입니다.",
+          "T2": "love",
+          "K2": "사랑",
+          "R2": "러브",
+          "XE": "Love is everything.",
+          "XK": "사랑이 전부야.",
+          "XR": "러브 이즈 에브리씽"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}

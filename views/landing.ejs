@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header id="hero" class="text-white text-center py-24 md:py-32 px-6 bg-gradient-to-r from-blue-600 to-indigo-600">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Haneum에서 어떤 외국어든 노래로 즐겁게 공부하세요.</h1>
+            <form action="/songs" method="get" class="flex flex-col sm:flex-row justify-center max-w-xl mx-auto">
+                <input type="search" name="q" placeholder="아티스트, 곡명, 또는 가사 일부를 입력하세요" required
+                       class="flex-grow px-5 py-4 rounded-full sm:rounded-r-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 sm:mb-0 text-lg">
+                <button type="submit"
+                        class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full sm:rounded-l-none transition duration-300 ease-in-out text-lg inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-search"></i> 노래 찾기
+                </button>
+            </form>
+            <div class="flex justify-center gap-4 mt-6">
+                <a href="/add-song" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out text-lg inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-plus"></i> 노래 추가하기
+                </a>
+                <a href="/songs" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out text-lg inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-list"></i> 전체 노래 보기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 주요 특징 섹션 -->
+        <!-- <section class="bg-white py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-3xl font-semibold text-center mb-12">Haneum만의 특별함</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+                   
+                    <div class="feature-item p-4">
+                        <i class="fas fa-mobile-alt text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">편리한 사용성</h3>
+                        <p class="text-gray-600">PC/모바일 어디서든 최적화된 화면, 직관적인 디자인</p>
+                    </div>
+                    <div class="feature-item p-4">
+                        <i class="fas fa-language text-4xl text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">다국어 지원</h3>
+                        <p class="text-gray-600">한국어, 영어, 일본어 등 다양한 언어의 가사 제공</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- 최근 추가된 노래 섹션 -->
+        <section class="py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-2xl font-semibold mb-6 pb-2 border-b-2 border-blue-600 inline-block">최근 추가된 노래</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <% latestSongs.slice(0, 20).forEach(song => { %>
+                        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                            <a href="/songs/<%= song.name %>" class="block">
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2 hover:text-blue-600 transition-colors">
+                                    <%= song.ori_name || song.name %>
+                                </h3>
+                                <p class="text-sm text-gray-600"><%= song.artist %></p>
+                                <% if (song.kor_name) { %>
+                                    <p class="text-sm text-gray-500 mt-1"><%= song.kor_name %></p>
+                                <% } %>
+                            </a>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-400 py-12 px-6 text-center">
+        <div class="container mx-auto max-w-6xl">
+            <!-- <nav class="mb-6">
+                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <li><a href="/about" class="hover:text-white transition duration-200">About Haneum</a></li>
+                    <li><a href="/contact" class="hover:text-white transition duration-200">문의하기</a></li>
+                    <li><a href="/privacy" class="hover:text-white transition duration-200">개인정보처리방침</a></li>
+                    <li><a href="/terms" class="hover:text-white transition duration-200">이용약관</a></li>
+                    <li><a href="/copyright" class="hover:text-white transition duration-200">저작권 안내</a></li>
+                </ul>
+            </nav> -->
+            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
+        </div>
+    </footer>
+</body>
+</html> 

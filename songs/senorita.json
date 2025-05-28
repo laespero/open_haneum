@@ -1,0 +1,2963 @@
+{
+  "name": "senorita",
+  "text": "I love it when you call me señorita\nI wish I could pretend I didn't need ya\nBut every touch is ooh, la-la-la\nIt's true, la-la-la\nOoh, I should be running\nOoh, you keep me coming for ya\nLand in Miami\nThe air was hot from summer rain\nSweat dripping off me\nBefore I even knew her name, la-la-la\nIt felt like ooh, la-la-la\nYeah, no\nSapphire moonlight\nWe danced for hours in the sand\nTequila Sunrise\nHer body fit right in my hands, la-la-la\nIt felt like ooh, la-la-la, yeah\nI love it when you call me señorita\nI wish I could pretend I didn't need ya\nBut every touch is ooh, la-la-la\nIt's true, la-la-la\nOoh, I should be running\nOoh, you know I love it when you call me señorita\nI wish it wasn't so damn hard to leave ya\nBut every touch is ooh, la-la-la\nIt's true, la-la-la\nOoh, I should be running\nOoh, you keep me coming for ya\nLocked in the hotel\nThere's just some things that never change\nYou say we're just friends\nBut friends don't know the way you taste, la-la-la\n'Cause you know it's been a long time coming\nDon't you let me fall, oh\nOoh, when your lips undress me\nHooked on your tongue\nOoh, love, your kiss is deadly\nDon't stop\nI love it when you call me señorita\nI wish I could pretend I didn't need ya\nBut every touch is ooh, la-la-la\nIt's true, la-la-la\nOoh, I should be running\nOoh, you know I love it when you call me señorita\nI wish it wasn't so damn hard to leave ya\nBut every touch is ooh, la-la-la\nIt's true, la-la-la (true, la-la)\nOoh, I should be running\nOoh, you keep me coming for ya\nAll along I've been coming for ya (for ya)\nAnd I hope it meant something to ya (ooh)\nCall my name, I'll be coming for ya\nComing for ya, coming for ya, coming for ya\nFor ya\nFor ya (oh, she loves it when I call)\nFor ya\nOoh, I should be running\nOoh, you keep me coming for ya",
+  "p1": [
+    "I love it when you call me señorita",
+    "I wish I could pretend I didn't need ya",
+    "But every touch is ooh, la-la-la",
+    "It's true, la-la-la",
+    "Ooh, I should be running",
+    "Ooh, you keep me coming for ya",
+    "Land in Miami",
+    "The air was hot from summer rain",
+    "Sweat dripping off me",
+    "Before I even knew her name, la-la-la",
+    "It felt like ooh, la-la-la",
+    "Yeah, no",
+    "Sapphire moonlight",
+    "We danced for hours in the sand",
+    "Tequila Sunrise",
+    "Her body fit right in my hands, la-la-la",
+    "It felt like ooh, la-la-la, yeah",
+    "Ooh, you know I love it when you call me señorita",
+    "I wish it wasn't so damn hard to leave ya",
+    "Locked in the hotel",
+    "There's just some things that never change",
+    "You say we're just friends",
+    "But friends don't know the way you taste, la-la-la",
+    "'Cause you know it's been a long time coming",
+    "Don't you let me fall, oh",
+    "Ooh, when your lips undress me",
+    "Hooked on your tongue",
+    "Ooh, love, your kiss is deadly",
+    "Don't stop",
+    "It's true, la-la-la (true, la-la)",
+    "All along I've been coming for ya (for ya)",
+    "And I hope it meant something to ya (ooh)",
+    "Call my name, I'll be coming for ya",
+    "Coming for ya, coming for ya, coming for ya",
+    "For ya",
+    "For ya (oh, she loves it when I call)"
+  ],
+  "contextText": [
+    {
+      "T0": "I love it when you call me señorita",
+      "CX": "I love it when you call me señorita I wish I could pretend I didn't need ya"
+    },
+    {
+      "T0": "I wish I could pretend I didn't need ya",
+      "CX": "I love it when you call me señorita I wish I could pretend I didn't need ya But every touch is ooh, la-la-la"
+    },
+    {
+      "T0": "But every touch is ooh, la-la-la",
+      "CX": "I wish I could pretend I didn't need ya But every touch is ooh, la-la-la It's true, la-la-la"
+    },
+    {
+      "T0": "It's true, la-la-la",
+      "CX": "But every touch is ooh, la-la-la It's true, la-la-la Ooh, I should be running"
+    },
+    {
+      "T0": "Ooh, I should be running",
+      "CX": "It's true, la-la-la Ooh, I should be running Ooh, you keep me coming for ya"
+    },
+    {
+      "T0": "Ooh, you keep me coming for ya",
+      "CX": "Ooh, I should be running Ooh, you keep me coming for ya Land in Miami"
+    },
+    {
+      "T0": "Land in Miami",
+      "CX": "Ooh, you keep me coming for ya Land in Miami The air was hot from summer rain"
+    },
+    {
+      "T0": "The air was hot from summer rain",
+      "CX": "Land in Miami The air was hot from summer rain Sweat dripping off me"
+    },
+    {
+      "T0": "Sweat dripping off me",
+      "CX": "The air was hot from summer rain Sweat dripping off me Before I even knew her name, la-la-la"
+    },
+    {
+      "T0": "Before I even knew her name, la-la-la",
+      "CX": "Sweat dripping off me Before I even knew her name, la-la-la It felt like ooh, la-la-la"
+    },
+    {
+      "T0": "It felt like ooh, la-la-la",
+      "CX": "Before I even knew her name, la-la-la It felt like ooh, la-la-la Yeah, no"
+    },
+    {
+      "T0": "Yeah, no",
+      "CX": "It felt like ooh, la-la-la Yeah, no Sapphire moonlight"
+    },
+    {
+      "T0": "Sapphire moonlight",
+      "CX": "Yeah, no Sapphire moonlight We danced for hours in the sand"
+    },
+    {
+      "T0": "We danced for hours in the sand",
+      "CX": "Sapphire moonlight We danced for hours in the sand Tequila Sunrise"
+    },
+    {
+      "T0": "Tequila Sunrise",
+      "CX": "We danced for hours in the sand Tequila Sunrise Her body fit right in my hands, la-la-la"
+    },
+    {
+      "T0": "Her body fit right in my hands, la-la-la",
+      "CX": "Tequila Sunrise Her body fit right in my hands, la-la-la It felt like ooh, la-la-la, yeah"
+    },
+    {
+      "T0": "It felt like ooh, la-la-la, yeah",
+      "CX": "Her body fit right in my hands, la-la-la It felt like ooh, la-la-la, yeah Ooh, you know I love it when you call me señorita"
+    },
+    {
+      "T0": "Ooh, you know I love it when you call me señorita",
+      "CX": "It felt like ooh, la-la-la, yeah Ooh, you know I love it when you call me señorita I wish it wasn't so damn hard to leave ya"
+    },
+    {
+      "T0": "I wish it wasn't so damn hard to leave ya",
+      "CX": "Ooh, you know I love it when you call me señorita I wish it wasn't so damn hard to leave ya Locked in the hotel"
+    },
+    {
+      "T0": "Locked in the hotel",
+      "CX": "I wish it wasn't so damn hard to leave ya Locked in the hotel There's just some things that never change"
+    },
+    {
+      "T0": "There's just some things that never change",
+      "CX": "Locked in the hotel There's just some things that never change You say we're just friends"
+    },
+    {
+      "T0": "You say we're just friends",
+      "CX": "There's just some things that never change You say we're just friends But friends don't know the way you taste, la-la-la"
+    },
+    {
+      "T0": "But friends don't know the way you taste, la-la-la",
+      "CX": "You say we're just friends But friends don't know the way you taste, la-la-la 'Cause you know it's been a long time coming"
+    },
+    {
+      "T0": "'Cause you know it's been a long time coming",
+      "CX": "But friends don't know the way you taste, la-la-la 'Cause you know it's been a long time coming Don't you let me fall, oh"
+    },
+    {
+      "T0": "Don't you let me fall, oh",
+      "CX": "'Cause you know it's been a long time coming Don't you let me fall, oh Ooh, when your lips undress me"
+    },
+    {
+      "T0": "Ooh, when your lips undress me",
+      "CX": "Don't you let me fall, oh Ooh, when your lips undress me Hooked on your tongue"
+    },
+    {
+      "T0": "Hooked on your tongue",
+      "CX": "Ooh, when your lips undress me Hooked on your tongue Ooh, love, your kiss is deadly"
+    },
+    {
+      "T0": "Ooh, love, your kiss is deadly",
+      "CX": "Hooked on your tongue Ooh, love, your kiss is deadly Don't stop"
+    },
+    {
+      "T0": "Don't stop",
+      "CX": "Ooh, love, your kiss is deadly Don't stop It's true, la-la-la (true, la-la)"
+    },
+    {
+      "T0": "It's true, la-la-la (true, la-la)",
+      "CX": "Don't stop It's true, la-la-la (true, la-la) All along I've been coming for ya (for ya)"
+    },
+    {
+      "T0": "All along I've been coming for ya (for ya)",
+      "CX": "It's true, la-la-la (true, la-la) All along I've been coming for ya (for ya) And I hope it meant something to ya (ooh)"
+    },
+    {
+      "T0": "And I hope it meant something to ya (ooh)",
+      "CX": "All along I've been coming for ya (for ya) And I hope it meant something to ya (ooh) Call my name, I'll be coming for ya"
+    },
+    {
+      "T0": "Call my name, I'll be coming for ya",
+      "CX": "And I hope it meant something to ya (ooh) Call my name, I'll be coming for ya Coming for ya, coming for ya, coming for ya"
+    },
+    {
+      "T0": "Coming for ya, coming for ya, coming for ya",
+      "CX": "Call my name, I'll be coming for ya Coming for ya, coming for ya, coming for ya For ya"
+    },
+    {
+      "T0": "For ya",
+      "CX": "Coming for ya, coming for ya, coming for ya For ya For ya (oh, she loves it when I call)"
+    },
+    {
+      "T0": "For ya (oh, she loves it when I call)",
+      "CX": "For ya For ya (oh, she loves it when I call)"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "Yeah, no",
+      "C0": "오, 라라라 같이 느껴졌어 (그래, 아니) 사파이어 달빛",
+      "G0": "'Yeah, no'는 일상적인 대화에서 긍정을 나타내는 'yeah'와 부정을 나타내는 'no'를 함께 사용하여, 망설임이나 복잡한 심경을 나타낼 수 있습니다.",
+      "K0": "그래, 아니",
+      "R0": "예, 노",
+      "LI": [
+        {
+          "T1": "Yeah",
+          "K1": "그래",
+          "R1": "예",
+          "E1": "'Yeah'는 비격식적인 긍정 응답으로, 'yes'의 구어체 표현입니다.",
+          "T2": "yeah",
+          "K2": "그래",
+          "R2": "예",
+          "XE": "Yeah, I agree with you.",
+          "XK": "그래, 네 말에 동의해.",
+          "XR": "예, 아이 어그리 위드 유"
+        },
+        {
+          "T1": "no",
+          "K1": "아니",
+          "R1": "노",
+          "E1": "'No'는 부정을 나타내는 단어로, 상대방의 말을 부정하거나 거부할 때 사용합니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노",
+          "XE": "No, I don't think so.",
+          "XK": "아니, 그렇게 생각하지 않아.",
+          "XR": "노, 아이 돈트 씽크 소"
+        }
+      ]
+    },
+    {
+      "T0": "Sapphire moonlight",
+      "C0": "그래, 아니야, 사파이어 달빛 우리는 모래 위에서 몇 시간 동안 춤을 췄어",
+      "G0": "'Sapphire moonlight'는 형용사 'Sapphire'와 명사 'moonlight'가 결합된 구문으로, '사파이어같이 푸른 달빛'이라는 의미를 지닙니다.",
+      "K0": "사파이어 달빛",
+      "R0": "사파이어 문라이트",
+      "LI": [
+        {
+          "T1": "Sapphire",
+          "K1": "사파이어",
+          "R1": "사파이어",
+          "E1": "'Sapphire'는 푸른색의 보석을 의미하는 명사입니다. 하지만 여기에선 형용사처럼 쓰여 '사파이어처럼 푸른'이라는 의미로 해석됩니다.",
+          "T2": "sapphire",
+          "K2": "사파이어",
+          "R2": "사파이어",
+          "XE": "Her eyes were the color of sapphire.",
+          "XK": "그녀의 눈은 사파이어 색이었다.",
+          "XR": "허 아이즈 워 더 컬러 오브 사파이어"
+        },
+        {
+          "T1": "moonlight",
+          "K1": "달빛",
+          "R1": "문라이트",
+          "E1": "'Moonlight'는 달에서 나오는 빛을 의미하는 명사입니다.",
+          "T2": "moonlight",
+          "K2": "달빛",
+          "R2": "문라이트",
+          "XE": "The garden looks enchanting under the moonlight.",
+          "XK": "정원은 달빛 아래서 황홀해 보인다.",
+          "XR": "더 가든 룩스 인챈팅 언더 더 문라이트"
+        }
+      ]
+    },
+    {
+      "T0": "Tequila Sunrise",
+      "C0": "우리는 모래에서 몇 시간 동안 춤을 췄어. 테킬라 선라이즈. 그녀의 몸은 내 손 안에 딱 맞았어, 라라라",
+      "G0": "'Tequila Sunrise'는 주어와 동사가 생략된 문구로, 단독으로 명사구로 사용되고 있습니다. 이는 메타포로 해석될 수 있으며 노래의 배경 혹은 분위기를 암시합니다.",
+      "K0": "테킬라 선라이즈",
+      "R0": "테킬라 선라이즈",
+      "LI": [
+        {
+          "T1": "Tequila",
+          "K1": "테킬라",
+          "R1": "테킬라",
+          "E1": "'Tequila'는 멕시코에서 유래된 알코올 음료입니다. 통상적으로 칵테일이나 술자리에서 많이 언급됩니다.",
+          "T2": "Tequila",
+          "K2": "테킬라",
+          "R2": "테킬라",
+          "XE": "I had a shot of tequila at the bar.",
+          "XK": "나는 바에서 테킬라 한 잔을 마셨어.",
+          "XR": "아이 해드 어 샷 오브 테킬라 앳 더 바"
+        },
+        {
+          "T1": "Sunrise",
+          "K1": "일출",
+          "R1": "선라이즈",
+          "E1": "'Sunrise'는 해가 떠오르는 시간을 의미하는 명사입니다.",
+          "T2": "Sunrise",
+          "K2": "일출",
+          "R2": "선라이즈",
+          "XE": "We watched the sunrise together.",
+          "XK": "우리는 함께 일출을 보았어.",
+          "XR": "위 워치드 더 선라이즈 투게더"
+        }
+      ]
+    },
+    {
+      "T0": "Land in Miami",
+      "C0": "오, 당신이 나를 계속 찾게 해요. 마이애미에 도착했어. 공기는 여름 비로 덥고 습했어.",
+      "G0": "'Land in Miami'는 주어가 생략된 명령형 문장입니다. 'Land'는 명령형 동사로 사용되고 있으며, 'Miami'는 도착지를 나타내는 명사입니다.",
+      "K0": "마이애미에 도착했어",
+      "R0": "랜드 인 마이애미",
+      "LI": [
+        {
+          "T1": "Land",
+          "K1": "도착하다",
+          "R1": "랜드",
+          "E1": "'Land'는 비행기가 착륙하거나 사람이 특정 장소에 도착할 때 사용하는 동사입니다.",
+          "T2": "land",
+          "K2": "착륙하다",
+          "R2": "랜드",
+          "XE": "The plane will land soon.",
+          "XK": "비행기가 곧 착륙할 거야.",
+          "XR": "더 플레인 윌 랜드 순"
+        },
+        {
+          "T1": "in",
+          "K1": "~에",
+          "R1": "인",
+          "E1": "'In'은 특정 장소나 시간 내를 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "~에",
+          "R2": "인",
+          "XE": "She is in the room.",
+          "XK": "그녀는 방 안에 있어.",
+          "XR": "쉬 이즈 인 더 룸"
+        },
+        {
+          "T1": "Miami",
+          "K1": "마이애미",
+          "R1": "마이애미",
+          "E1": "'Miami'는 미국 플로리다 주의 한 도시 이름입니다.",
+          "T2": "Miami",
+          "K2": "마이애미",
+          "R2": "마이애미",
+          "XE": "I love visiting Miami.",
+          "XK": "나는 마이애미 방문하는 걸 좋아해.",
+          "XR": "아이 러브 비지팅 마이애미"
+        }
+      ]
+    },
+    {
+      "T0": "For ya",
+      "C0": "널 위해 가고 있어, 널 위해 가고 있어, 널 위해 가고 있어. 널 위해. 널 위해 (오, 내가 부를 때 그녀는 좋아해)",
+      "G0": "'For ya'는 전치사(for)와 'you'의 축약형인 'ya'가 결합된 표현으로, '너를 위해'라는 의미입니다.",
+      "K0": "널 위해",
+      "R0": "포어 야",
+      "LI": [
+        {
+          "T1": "For",
+          "K1": "~을 위해",
+          "R1": "포어",
+          "E1": "'For'는 목적이나 이유를 나타내는 전치사입니다. 여기서는 '널 위해'라는 의미로 사용됩니다.",
+          "T2": "for",
+          "K2": "~을 위해",
+          "R2": "포어",
+          "XE": "This gift is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 기프트 이즈 포어 유"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식적인 표현으로, 일상 대화에서 종종 사용됩니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I got something for ya.",
+          "XK": "널 위해 뭔가를 가져왔어.",
+          "XR": "아이 갓 섬씽 포어 야"
+        }
+      ]
+    },
+    {
+      "T0": "Sweat dripping off me",
+      "C0": "여름비로 인해 공기는 뜨거웠다. 땀이 나에게서 흘러내렸다. 내가 그녀의 이름을 알기도 전에, 라라라",
+      "G0": "'Sweat dripping off me'는 주어(Sweat)와 현재분사 형태의 서술어(dripping off me)로 구성된 단문입니다. 땀이 흘러내리는 행동을 묘사하는 형식입니다.",
+      "K0": "땀이 나에게서 흘러내렸다",
+      "R0": "스웨트 드리핑 오프 미",
+      "LI": [
+        {
+          "T1": "Sweat",
+          "K1": "땀",
+          "R1": "스웨트",
+          "E1": "'Sweat'는 사람이 더운 날씨나 운동 등으로 인해 몸에서 분비되는 액체를 의미합니다.",
+          "T2": "sweat",
+          "K2": "땀",
+          "R2": "스웨트",
+          "XE": "He was covered in sweat after the workout.",
+          "XK": "운동 후 그는 땀으로 뒤덮여 있었다.",
+          "XR": "히 워즈 커버드 인 스웨트 애프터 더 워크아웃"
+        },
+        {
+          "T1": "dripping",
+          "K1": "흘러내리는",
+          "R1": "드리핑",
+          "E1": "'Dripping'은 액체가 한 방울씩 떨어지는 행위를 나타내는 현재분사 형태의 형용사입니다.",
+          "T2": "drip",
+          "K2": "떨어지다",
+          "R2": "드립",
+          "XE": "The faucet is dripping.",
+          "XK": "수도꼭지가 물방울을 떨어뜨리고 있다.",
+          "XR": "더 포셋 이즈 드리핑"
+        },
+        {
+          "T1": "off",
+          "K1": "~에서",
+          "R1": "오프",
+          "E1": "'Off'는 주로 떨어져 나가거나 분리되는 상태를 나타내는 전치사입니다.",
+          "T2": "off",
+          "K2": "~에서",
+          "R2": "오프",
+          "XE": "She jumped off the stairs.",
+          "XK": "그녀는 계단에서 뛰어내렸다.",
+          "XR": "쉬 점프드 오프 더 스테어즈"
+        },
+        {
+          "T1": "me",
+          "K1": "나",
+          "R1": "미",
+          "E1": "'Me'는 1인칭 대명사 'I'의 목적격 형태로, 주어가 아니라 동사나 전치사의 목적어로 사용됩니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "Can you help me?",
+          "XK": "나를 도와줄 수 있니?",
+          "XR": "캔 유 헬프 미"
+        }
+      ]
+    },
+    {
+      "T0": "It's true, la-la-la",
+      "C0": "하지만 모든 접촉이 오오, 라-라-라 그것은 사실이야, 라-라-라 오오, 나는 도망가야 해",
+      "G0": "'It's true, la-la-la'는 주어(It), 서술어(are), 서술어 보충어(true), 감탄사(la-la-la)로 구성되어 있습니다. 이 문장은 '사실이야'를 의미하며, 감탄사 'la-la-la'는 감정적 강조를 위해 사용됩니다.",
+      "K0": "사실이야, 라-라-라",
+      "R0": "잇츠 트루, 라-라-라",
+      "LI": [
+        {
+          "T1": "It",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 주어로서 경험이나 상황, 상태를 참조하는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 내리고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 be 동사의 현재형으로 주어가 3인칭 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She is a teacher.",
+          "XK": "그녀는 교사야.",
+          "XR": "쉬 이즈 어 티처"
+        },
+        {
+          "T1": "true",
+          "K1": "사실",
+          "R1": "트루",
+          "E1": "'True'는 어떤 상태나 진술이 사실임을 나타내는 형용사입니다.",
+          "T2": "true",
+          "K2": "사실",
+          "R2": "트루",
+          "XE": "The rumor is true.",
+          "XK": "그 소문은 사실이야.",
+          "XR": "더 루머 이즈 트루"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 감탄사로, 일반적으로 특정한 의미보다는 감정이나 노래의 리듬을 표현하기 위해 사용됩니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "He sang la-la-la.",
+          "XK": "그는 라-라-라를 불렀어.",
+          "XR": "히 상 라-라-라"
+        }
+      ]
+    },
+    {
+      "T0": "Ooh, I should be running",
+      "C0": "그건 사실이야, 라-라-라 오, 나는 도망쳐야 해 오, 네가 나를 네게로 붙잡아 두는 걸 계속하고 있어",
+      "G0": "'Ooh, I should be running'은 감탄사(Ooh), 주어(I), 조동사(should), 동사(run)의 구조로 이루어져 있으며, 주어가 특정한 행동을 해야 한다는 의미를 나타내는 문장입니다.",
+      "K0": "오, 나는 도망쳐야 해",
+      "R0": "오우, 아이 슈드 비 러닝",
+      "LI": [
+        {
+          "T1": "Ooh",
+          "K1": "오",
+          "R1": "오우",
+          "E1": "'Ooh'는 놀람이나 감탄을 나타내는 감탄사입니다.",
+          "T2": "Ooh",
+          "K2": "오",
+          "R2": "오우",
+          "XE": "Ooh, that's amazing!",
+          "XK": "오, 그거 멋지다!",
+          "XR": "오우, 댓츠 어메이징!"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 앰 해피."
+        },
+        {
+          "T1": "should",
+          "K1": "~해야 한다",
+          "R1": "슈드",
+          "E1": "'Should'는 권유, 의무 또는 강한 가능성을 나타내는 조동사입니다.",
+          "T2": "shall",
+          "K2": "~할 것이다",
+          "R2": "쉘",
+          "XE": "You should see a doctor.",
+          "XK": "너는 의사를 만나야 해.",
+          "XR": "유 슈드 씨 어 닥터."
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재, 상태를 나타내는 동사입니다. 이 문장에서는 진행형을 만들기 위한 형태로 사용되었습니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I will be there.",
+          "XK": "나는 거기 있을 거야.",
+          "XR": "아이 윌 비 데어."
+        },
+        {
+          "T1": "running",
+          "K1": "달리기",
+          "R1": "러닝",
+          "E1": "'Running'은 'run(달리다)'의 현재분사형으로, 진행형이나 명사로 사용됩니다.",
+          "T2": "run",
+          "K2": "달리다",
+          "R2": "런",
+          "XE": "She is running fast.",
+          "XK": "그녀는 빠르게 달리고 있다.",
+          "XR": "쉬 이즈 러닝 페스트."
+        }
+      ]
+    },
+    {
+      "T0": "You say we're just friends",
+      "C0": "절대 변하지 않는 것이 몇 가지 있어. 너는 우리가 그냥 친구라고 말해. 하지만 친구라면 네가 어떤 맛인지 모르겠지, 라라라.",
+      "G0": "'You say we're just friends'는 주어(You), 동사(say), 보어(we're just friends)로 이루어진 문장 구조로, 주어가 보어를 말하는 것으로 해설됩니다.",
+      "K0": "너는 우리가 그냥 친구라고 말해.",
+      "R0": "유 세이 위얼 저스트 프렌즈",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 가리키는 대명사로, 여기서는 화자가 상대방을 칭하는 말입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 최고의 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 어떤 내용을 말로 표현하는 행위를 나타내는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "What did you say?",
+          "XK": "뭐라고 말했어?",
+          "XR": "왓 디드 유 세이?"
+        },
+        {
+          "T1": "we're",
+          "K1": "우리는 ~이다",
+          "R1": "위얼",
+          "E1": "'We're'는 'we are'의 축약형으로, 주어가 '우리'인 상태를 나타냅니다.",
+          "T2": "we are",
+          "K2": "우리는 ~이다",
+          "R2": "위 아",
+          "XE": "We're going to the movies.",
+          "XK": "우리는 영화보러 갈 거야.",
+          "XR": "위얼 고잉 투 더 무비스"
+        },
+        {
+          "T1": "just",
+          "K1": "그냥",
+          "R1": "저스트",
+          "E1": "'Just'는 단순히 그렇다는 의미로, 어떤 행동이나 상태가 특별하지 않음을 강조합니다.",
+          "T2": "just",
+          "K2": "그냥",
+          "R2": "저스트",
+          "XE": "Just do it.",
+          "XK": "그냥 해.",
+          "XR": "저스트 두 잇"
+        },
+        {
+          "T1": "friends",
+          "K1": "친구",
+          "R1": "프렌즈",
+          "E1": "'Friends'는 서로 친구 관계인 사람들을 나타내는 명사입니다.",
+          "T2": "friend",
+          "K2": "친구",
+          "R2": "프렌드",
+          "XE": "They have been friends for years.",
+          "XK": "그들은 수년간 친구였어.",
+          "XR": "데이 해브 빈 프렌즈 포어 이어스"
+        }
+      ]
+    },
+    {
+      "T0": "We danced for hours in the sand",
+      "C0": "사파이어 달빛 아래 우리는 모래 위에서 몇 시간 동안 춤을 췄어, 테킬라 일출",
+      "G0": "'We danced for hours in the sand'는 주어(We), 동사(danced), 시간의 표현(for hours), 장소의 표현(in the sand)으로 구성된 문장입니다. 이 문장은 특정 시간을 언급하면서 과거에 특정 장소에서 지속적으로 했던 행동을 나타냅니다.",
+      "K0": "우리는 모래 위에서 몇 시간 동안 춤을 췄어.",
+      "R0": "위 댄스드 포 아워즈 인 더 샌드",
+      "LI": [
+        {
+          "T1": "We",
+          "K1": "우리",
+          "R1": "위",
+          "E1": "'We'는 화자와 청자를 포함한 복수 주어를 나타내는 대명사입니다. 여기서는 화자와 상대방을 의미합니다.",
+          "T2": "we",
+          "K2": "우리",
+          "R2": "위",
+          "XE": "We are friends.",
+          "XK": "우리는 친구야.",
+          "XR": "위 아 프렌즈"
+        },
+        {
+          "T1": "danced",
+          "K1": "춤췄다",
+          "R1": "댄스드",
+          "E1": "'Danced'는 'dance'의 과거형으로 춤을 추는 행위를 나타냅니다.",
+          "T2": "dance",
+          "K2": "춤추다",
+          "R2": "댄스",
+          "XE": "They danced together at the party.",
+          "XK": "그들은 파티에서 함께 춤을 췄어.",
+          "XR": "데이 댄스드 투게더 앳 더 파티"
+        },
+        {
+          "T1": "for hours",
+          "K1": "몇 시간 동안",
+          "R1": "포 아워즈",
+          "E1": "'For hours'는 시간의 길이를 나타내며, 몇 시간 동안 지속된 행동을 나타냅니다.",
+          "T2": "hour",
+          "K2": "시간",
+          "R2": "아월",
+          "XE": "She waited for hours.",
+          "XK": "그녀는 몇 시간 동안 기다렸어.",
+          "XR": "쉬 웨이티드 포 아워즈"
+        },
+        {
+          "T1": "in the sand",
+          "K1": "모래 위에서",
+          "R1": "인 더 샌드",
+          "E1": "'In the sand'는 특정 장소를 나타내며, 여기서는 모래 위에서의 활동을 의미합니다.",
+          "T2": "sand",
+          "K2": "모래",
+          "R2": "샌드",
+          "XE": "They built a castle in the sand.",
+          "XK": "그들은 모래 위에 성을 쌓았어.",
+          "XR": "데이 빌트 어 캐슬 인 더 샌드"
+        }
+      ]
+    },
+    {
+      "T0": "It felt like ooh, la-la-la",
+      "C0": "내가 그녀의 이름도 알기 전에, 오-라라라라. 그것은 오, 라라라처럼 느껴졌어. 그래, 아니야.",
+      "G0": "'It felt like ooh, la-la-la'는 주어(it), 동사(felt), 보어(like ooh, la-la-la)로 이루어진 문장 구조로, 특정 감정이나 경험을 표현하는 구문입니다.",
+      "K0": "그것은 오, 라라라처럼 느껴졌어.",
+      "R0": "잇 펠트 라이크 우, 라-라-라",
+      "LI": [
+        {
+          "T1": "It",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 상황이나 사물 등을 나타내는 대명사로, 여기서는 앞서 서술된 경험이나 감정을 지칭합니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining outside.",
+          "XK": "밖에 비가 내리고 있어.",
+          "XR": "잇 이즈 레이닝 아웃사이드"
+        },
+        {
+          "T1": "felt",
+          "K1": "느껴졌다",
+          "R1": "펠트",
+          "E1": "'Felt'는 감정이나 느낌을 나타내는 동사 'feel'의 과거형입니다.",
+          "T2": "feel",
+          "K2": "느끼다",
+          "R2": "필",
+          "XE": "She felt happy when she heard the news.",
+          "XK": "그녀는 그 소식을 들었을 때 행복을 느꼈어.",
+          "XR": "쉬 펠트 해피 웬 쉬 허드 더 뉴스"
+        },
+        {
+          "T1": "like",
+          "K1": "~처럼",
+          "R1": "라이크",
+          "E1": "'Like'는 유사성을 나타내는 전치사로, 특정한 감정이나 상황이 다른 것과 비슷함을 표현할 때 사용됩니다.",
+          "T2": "like",
+          "K2": "~처럼",
+          "R2": "라이크",
+          "XE": "He runs like a cheetah.",
+          "XK": "그는 치타처럼 달려.",
+          "XR": "히 런즈 라이크 어 치타"
+        },
+        {
+          "T1": "ooh, la-la-la",
+          "K1": "오, 라라라",
+          "R1": "우, 라-라-라",
+          "E1": "'Ooh, la-la-la'는 감탄사로 사용되며, 감정이나 놀라움, 감탄을 표현할 때 자주 사용되는 구어체 표현입니다.",
+          "T2": "ooh, la-la-la",
+          "K2": "오, 라라라",
+          "R2": "우, 라-라-라",
+          "XE": "Ooh, la-la-la, this dress is beautiful!",
+          "XK": "오, 라라라, 이 드레스 정말 아름다워!",
+          "XR": "우, 라-라-라, 디스 드레스 이즈 뷰티풀!"
+        }
+      ]
+    },
+    {
+      "T0": "Ooh, you keep me coming for ya",
+      "C0": "오, 나는 뛰어야 해. 오, 너는 나를 계속 부르고 있어. 마이애미에 도착해.",
+      "G0": "'Ooh, you keep me coming for ya'는 감탄사(Ooh), 주어(you), 동사(keep), 목적어(me coming) 및 부사구(for ya)로 이루어진 문장입니다. 'keep me coming'은 반복적인 행동을 유지시키는 의미를 담고 있습니다.",
+      "K0": "오, 너는 나를 계속 오게 해",
+      "R0": "오오, 유 킵 미 커밍 포 야",
+      "LI": [
+        {
+          "T1": "Ooh",
+          "K1": "오",
+          "R1": "오오",
+          "E1": "'Ooh'는 감탄사로, 놀라움이나 흥분 같은 강한 감정을 표현합니다.",
+          "T2": "Ooh",
+          "K2": "오",
+          "R2": "오오",
+          "XE": "Ooh, that's a great idea!",
+          "XK": "오, 그거 정말 좋은 생각이야!",
+          "XR": "오오, 댓즈 어 그레이트 아이디어!"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 지칭하는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "keep",
+          "K1": "유지하다",
+          "R1": "킵",
+          "E1": "'Keep'은 무언가를 계속 유지하거나 지속하는 것을 의미하는 동사입니다.",
+          "T2": "keep",
+          "K2": "유지하다",
+          "R2": "킵",
+          "XE": "Keep it up!",
+          "XK": "그대로 계속해!",
+          "XR": "킵 잇 업!"
+        },
+        {
+          "T1": "me",
+          "K1": "나",
+          "R1": "미",
+          "E1": "'Me'는 화자를 목적어로 사용하여 자신을 가리킵니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "He gave me a gift.",
+          "XK": "그는 나에게 선물을 주었어요.",
+          "XR": "히 게이브 미 어 기프트"
+        },
+        {
+          "T1": "coming",
+          "K1": "오다",
+          "R1": "커밍",
+          "E1": "'Coming'은 'come'의 현재분사형으로, 무언가가 다가오는 상태를 나타냅니다.",
+          "T2": "come",
+          "K2": "오다",
+          "R2": "컴",
+          "XE": "She is coming home.",
+          "XK": "그녀는 집에 오고 있어요.",
+          "XR": "쉬 이즈 커밍 홈"
+        },
+        {
+          "T1": "for ya",
+          "K1": "너를 위해",
+          "R1": "포 야",
+          "E1": "'For ya'는 'for you'의 비격식 표현으로, 무언가가 누구를 대상으로 하거나 위해 존재함을 나타냅니다.",
+          "T2": "for you",
+          "K2": "너를 위해",
+          "R2": "포 유",
+          "XE": "This is for ya.",
+          "XK": "이것은 너를 위한 것이야.",
+          "XR": "디스 이즈 포 야"
+        }
+      ]
+    },
+    {
+      "T0": "But every touch is ooh, la-la-la",
+      "C0": "널 필요로 하지 않는 척할 수 있었으면 좋겠어 하지만 모든 접촉은 '오, 라-라-라'. 정말이야, 라-라-라",
+      "G0": "'But every touch is ooh, la-la-la'는 주어(Every touch)와 동사(is), 보어(ooh, la-la-la)로 이루어진 문장입니다. 'But'은 앞 문장과의 대조를 나타내며, 'every touch'는 주어로써 모든 접촉을 의미하고, 'is'는 상태를 나타내는 동사입니다.",
+      "K0": "하지만 모든 손길은 '오, 라-라-라'",
+      "R0": "벗 에브리 터치 이즈 우, 라-라-라",
+      "LI": [
+        {
+          "T1": "But",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 앞 문장과 뒷 문장을 연결하여 대조를 나타내는 접속사로 사용됩니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I want to go, but I have to study.",
+          "XK": "가고 싶지만, 공부해야 해.",
+          "XR": "아이 원트 투 고, 벗 아이 해브 투 스터디"
+        },
+        {
+          "T1": "every",
+          "K1": "모든",
+          "R1": "에브리",
+          "E1": "'Every'는 모든 개체를 포함하는 형용사로, 여기서는 'every touch'가 모든 접촉을 의미합니다.",
+          "T2": "every",
+          "K2": "모든",
+          "R2": "에브리",
+          "XE": "He checks every detail.",
+          "XK": "그는 모든 세부 사항을 확인한다.",
+          "XR": "히 체크스 에브리 디테일"
+        },
+        {
+          "T1": "touch",
+          "K1": "손길",
+          "R1": "터치",
+          "E1": "'Touch'는 물질적으로 접촉하는 행위를 나타내는 명사입니다.",
+          "T2": "touch",
+          "K2": "접촉",
+          "R2": "터치",
+          "XE": "A gentle touch can be comforting.",
+          "XK": "부드러운 접촉은 위안이 될 수 있습니다.",
+          "XR": "어 젠틀 터치 캔 비 컴포팅"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제의 be 동사로, 주어의 상태를 나타냅니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She is a doctor.",
+          "XK": "그녀는 의사입니다.",
+          "XR": "쉬 이즈 어 닥터"
+        },
+        {
+          "T1": "ooh",
+          "K1": "오",
+          "R1": "우",
+          "E1": "'Ooh'는 감탄사로, 놀라움이나 감탄을 나타냅니다.",
+          "T2": "ooh",
+          "K2": "오",
+          "R2": "우",
+          "XE": "Ooh, that's amazing!",
+          "XK": "오, 저건 놀라워!",
+          "XR": "우, 댓츠 어메이징!"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 가사에서 자주 사용되는 소리로, 음악적인 리듬을 강조하기 위해 사용됩니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "She sang la-la-la to the tune.",
+          "XK": "그녀는 그 음에 맞춰 라-라-라를 불렀다.",
+          "XR": "쉬 생 라-라-라 투 더 튠"
+        }
+      ]
+    },
+    {
+      "T0": "The air was hot from summer rain",
+      "C0": "마이애미에 도착했어. 공기가 여름 비로 인해 뜨거웠어. 땀이 내 몸에서 뚝뚝 떨어졌어.",
+      "G0": "'The air was hot from summer rain'는 주어(The air), 동사(was), 보어(hot)와 부사구(from summer rain)로 구성된 문장입니다. 주어는 공기를 의미하고, 'was hot'은 공기가 뜨겁다라는 현재 상태를 나타내며, 'from summer rain'은 그 원인을 설명합니다.",
+      "K0": "여름 비로 공기가 뜨거웠어.",
+      "R0": "더 에어 워즈 핫 프럼 서머 레인",
+      "LI": [
+        {
+          "T1": "The",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사 앞에 붙여 그 명사를 특정화하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the roof.",
+          "XK": "그 고양이는 지붕 위에 있어.",
+          "XR": "더 캣 이즈 온 더 루프."
+        },
+        {
+          "T1": "air",
+          "K1": "공기",
+          "R1": "에어",
+          "E1": "'Air'는 우리가 호흡하는 기체를 의미하는 명사입니다.",
+          "T2": "air",
+          "K2": "공기",
+          "R2": "에어",
+          "XE": "The air is fresh today.",
+          "XK": "오늘 공기가 신선해.",
+          "XR": "더 에어 이즈 프레쉬 투데이."
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "'Was'는 'be' 동사의 과거형으로, 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "The weather was nice yesterday.",
+          "XK": "어제 날씨가 좋았어.",
+          "XR": "더 웨더 워즈 나이스 예스터데이."
+        },
+        {
+          "T1": "hot",
+          "K1": "뜨거운",
+          "R1": "핫",
+          "E1": "'Hot'는 '뜨겁다' 또는 '더운' 상태를 나타내는 형용사입니다.",
+          "T2": "hot",
+          "K2": "뜨거운",
+          "R2": "핫",
+          "XE": "The soup is hot.",
+          "XK": "수프가 뜨거워.",
+          "XR": "더 수프 이즈 핫."
+        },
+        {
+          "T1": "from",
+          "K1": "~로부터",
+          "R1": "프럼",
+          "E1": "'From'은 출처, 기원을 나타내는 전치사입니다.",
+          "T2": "from",
+          "K2": "~로부터",
+          "R2": "프럼",
+          "XE": "She is from Korea.",
+          "XK": "그녀는 한국 출신이야.",
+          "XR": "쉬 이즈 프럼 코리아."
+        },
+        {
+          "T1": "summer",
+          "K1": "여름",
+          "R1": "서머",
+          "E1": "'Summer'는 사계절 중 하나인 여름을 가리키는 명사입니다.",
+          "T2": "summer",
+          "K2": "여름",
+          "R2": "서머",
+          "XE": "I love summer vacations.",
+          "XK": "나는 여름 방학을 좋아해.",
+          "XR": "아이 러브 서머 베이케이숀스."
+        },
+        {
+          "T1": "rain",
+          "K1": "비",
+          "R1": "레인",
+          "E1": "'Rain'은 하늘에서 내리는 물방울, 즉 비를 의미하는 명사입니다.",
+          "T2": "rain",
+          "K2": "비",
+          "R2": "레인",
+          "XE": "The rain is heavy today.",
+          "XK": "오늘 비가 많이 와.",
+          "XR": "더 레인 이즈 헤비 투데이."
+        }
+      ]
+    },
+    {
+      "T0": "Before I even knew her name, la-la-la",
+      "C0": "땀이 나에게서 흘러내리고 있었어 그녀의 이름도 알기 전이었어, 라-라-라 그것은 '우', 라-라-라처럼 느껴졌어",
+      "G0": "'Before I even knew her name, la-la-la'는 시간 부사구(Before I even knew)와 주절(her name, la-la-la)로 이루어져 있습니다. 'Before'는 시간적 선행을 나타내고, 'I even knew her name'은 주어(I)와 동사(knew), 목적어(her name)의 구조를 가지고 있습니다. 'la-la-la'는 감탄사로 문장의 끝을 장식합니다.",
+      "K0": "그녀의 이름도 알기 전이었어, 라-라-라",
+      "R0": "비포어 아이 이븐 뉴 허 네임, 라-라-라",
+      "LI": [
+        {
+          "T1": "Before",
+          "K1": "~전에",
+          "R1": "비포어",
+          "E1": "'Before'는 특정 사건이나 시점보다 앞서 일어난 시간을 나타내는 전치사입니다.",
+          "T2": "before",
+          "K2": "~전에",
+          "R2": "비포어",
+          "XE": "I brushed my teeth before breakfast.",
+          "XK": "아침 식사 전에 이를 닦았어.",
+          "XR": "아이 브러쉬드 마이 티스 비포어 브렉퍼스트"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 일인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "even",
+          "K1": "심지어",
+          "R1": "이븐",
+          "E1": "'Even'은 예상 외의 사실을 강조할 때 사용되는 부사입니다.",
+          "T2": "even",
+          "K2": "심지어",
+          "R2": "이븐",
+          "XE": "She didn't even call me.",
+          "XK": "그녀는 심지어 전화도 안 했어.",
+          "XR": "쉬 디든트 이븐 콜 미"
+        },
+        {
+          "T1": "knew",
+          "K1": "알았다",
+          "R1": "뉴",
+          "E1": "'Knew'는 'know'(알다)의 과거형으로, 과거에 특정 사실을 알았다는 의미를 가집니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I knew the answer.",
+          "XK": "나는 답을 알았어.",
+          "XR": "아이 뉴 디 앤서"
+        },
+        {
+          "T1": "her",
+          "K1": "그녀의",
+          "R1": "허",
+          "E1": "'Her'는 여성을 나타내는 소유격 대명사로, '그녀의'라는 의미를 가집니다.",
+          "T2": "her",
+          "K2": "그녀의",
+          "R2": "허",
+          "XE": "This is her book.",
+          "XK": "이것은 그녀의 책이야.",
+          "XR": "디스 이즈 허 북"
+        },
+        {
+          "T1": "name",
+          "K1": "이름",
+          "R1": "네임",
+          "E1": "'Name'은 사람이나 물건의 고유한 명칭을 나타내는 명사입니다.",
+          "T2": "name",
+          "K2": "이름",
+          "R2": "네임",
+          "XE": "What is your name?",
+          "XK": "네 이름이 뭐야?",
+          "XR": "왓 이즈 유얼 네임"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 일반적으로 노래 가사나 음악에서 더미로 사용되는 멜로디 음절입니다. 특별한 의미는 없으며, 음악적 분위기를 조성하는 역할을 합니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "He sang la-la-la happily.",
+          "XK": "그는 행복하게 라-라-라 노래를 불렀어.",
+          "XR": "히 생 라-라-라 해필리"
+        }
+      ]
+    },
+    {
+      "T0": "I love it when you call me señorita",
+      "C0": "너가 나를 '세뇨리타'라고 부를 때를 사랑해. 내가 너를 필요로 하지 않는 척할 수 있기를 바라.",
+      "G0": "'I love it when you call me señorita'는 주어(I), 동사(love), it(목적어), 종속절(when you call me señorita)로 구성된 문장으로, 'when'을 사용하여 특정 행동이 일어날 때 느끼는 감정을 표현합니다.",
+      "K0": "네가 나를 '세뇨리타'라고 부를 때가 좋아.",
+      "R0": "아이 러브 잇 웬 유 콜 미 세뇨리타",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 단수형 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "'Love'는 어떤 것에 강한 감정적 애착을 가지는 동사입니다.",
+          "T2": "love",
+          "K2": "사랑",
+          "R2": "러브",
+          "XE": "She loves her family.",
+          "XK": "그녀는 가족을 사랑해.",
+          "XR": "쉬 러브즈 허 패밀리"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 특정한 사람이나 사물이 아닌, 이전에 언급된 대상을 가리키는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining outside.",
+          "XK": "밖에 비가 오고 있어.",
+          "XR": "잇 이즈 레이닝 아웃사이드"
+        },
+        {
+          "T1": "when",
+          "K1": "~할 때",
+          "R1": "웬",
+          "E1": "'When'은 특정 시간이나 상황을 나타내는 접속사입니다.",
+          "T2": "when",
+          "K2": "~할 때",
+          "R2": "웬",
+          "XE": "When I was a child, I liked to play outside.",
+          "XK": "어렸을 때 나는 밖에서 노는 것을 좋아했어.",
+          "XR": "웬 아이 워즈 어 차일드, 아이 라이크드 투 플레이 아웃사이드"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 단수 또는 복수형 주어 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "call",
+          "K1": "부르다",
+          "R1": "콜",
+          "E1": "'Call'은 소리내어 부르는 행동을 의미하는 동사입니다.",
+          "T2": "call",
+          "K2": "부르다",
+          "R2": "콜",
+          "XE": "Could you call my name?",
+          "XK": "내 이름을 불러줄래?",
+          "XR": "쿨드 유 콜 마이 네임?"
+        },
+        {
+          "T1": "me",
+          "K1": "나를",
+          "R1": "미",
+          "E1": "'Me'는 화자를 나타내는 단수형 목적어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "He gave me a gift.",
+          "XK": "그는 나에게 선물을 주었어.",
+          "XR": "히 게이브 미 어 기프트"
+        },
+        {
+          "T1": "señorita",
+          "K1": "아가씨",
+          "R1": "세뇨리타",
+          "E1": "'Señorita'는 스페인어로 '아가씨'를 의미하는 단어로, 주로 젊은 여성을 호칭할 때 사용됩니다.",
+          "T2": "señorita",
+          "K2": "아가씨",
+          "R2": "세뇨리타",
+          "XE": "Hola, señorita. ¿Cómo estás?",
+          "XK": "안녕하세요, 아가씨. 어떻게 지내세요?",
+          "XR": "올라, 세뇨리타. 코모 에스타스?"
+        }
+      ]
+    },
+    {
+      "T0": "But friends don't know the way you taste, la-la-la",
+      "C0": "너는 우리가 그저 친구일 뿐이라고 하지만, 친구들은 네가 어떤 맛인지 몰라, 라-라-라. 왜냐하면 오랜 시간이 흘렀거든.",
+      "G0": "'But friends don't know the way you taste'는 접속사(But), 주어(friends), 동사(don't know), 목적어(the way you taste)로 구성된 문장입니다. 'la-la-la'는 감탄사로서 의미를 강조합니다.",
+      "K0": "하지만 친구들은 네가 어떤 맛인지 몰라, 라-라-라.",
+      "R0": "벗 프렌즈 돈 노우 더 웨이 유 테이스트, 라-라-라",
+      "LI": [
+        {
+          "T1": "But",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'는 반대나 대조를 나타내는 접속사로, 앞 문장과 뒷 문장을 연결합니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I like coffee, but I love tea more.",
+          "XK": "나는 커피를 좋아하지만, 차를 더 좋아해.",
+          "XR": "아이 라이크 커피, 벗 아이 러브 티 모어."
+        },
+        {
+          "T1": "friends",
+          "K1": "친구들",
+          "R1": "프렌즈",
+          "E1": "'Friends'는 '친구'의 복수형으로, 여러 명의 친구를 의미합니다.",
+          "T2": "friend",
+          "K2": "친구",
+          "R2": "프렌드",
+          "XE": "She has many friends at school.",
+          "XK": "그녀는 학교에 많은 친구들이 있어.",
+          "XR": "쉬 해즈 매니 프렌즈 앳 스쿨."
+        },
+        {
+          "T1": "don't",
+          "K1": "~않다",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 부정을 나타내는 표현입니다.",
+          "T2": "do not",
+          "K2": "~않다",
+          "R2": "두 낫",
+          "XE": "I don't like spicy food.",
+          "XK": "나는 매운 음식을 좋아하지 않아.",
+          "XR": "아이 돈트 라이크 스파이시 푸드."
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 정보를 인식하거나 이해하는 것을 의미하는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I know her from work.",
+          "XK": "나는 그녀를 직장에서 알아.",
+          "XR": "아이 노우 허 프롬 워크."
+        },
+        {
+          "T1": "the way",
+          "K1": "방법",
+          "R1": "더 웨이",
+          "E1": "'The way'는 특정한 방식이나 방법을 의미하는 구입니다.",
+          "T2": "the way",
+          "K2": "방법",
+          "R2": "더 웨이",
+          "XE": "I like the way she sings.",
+          "XK": "나는 그녀가 노래 부르는 방식을 좋아해.",
+          "XR": "아이 라이크 더 웨이 쉬 싱즈."
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자가 듣는 사람을 지칭하는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드."
+        },
+        {
+          "T1": "taste",
+          "K1": "맛보다",
+          "R1": "테이스트",
+          "E1": "'Taste'는 음식을 입 안에 넣어서 그 맛을 느끼는 행위를 의미하는 동사입니다.",
+          "T2": "taste",
+          "K2": "맛보다",
+          "R2": "테이스트",
+          "XE": "Can you taste the difference?",
+          "XK": "차이를 맛볼 수 있니?",
+          "XR": "캔 유 테이스트 더 디퍼런스?"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 가사에서 주로 사용되는 감탄사로서, 여기서는 특별한 의미 없이 음악적 효과를 더합니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "He sang la-la-la during the chorus.",
+          "XK": "그는 후렴 부분에서 라-라-라를 불렀다.",
+          "XR": "히 생 라-라-라 듀링 더 코러스."
+        }
+      ]
+    },
+    {
+      "T0": "I wish I could pretend I didn't need ya",
+      "C0": "내가 너를 세뇨리타라고 부를 때 좋아해. 내가 너를 필요로 하지 않는 척할 수 있으면 좋겠어. 하지만 너의 모든 접촉은 '오, 라-라-라' 같아.",
+      "G0": "'I wish I could pretend I didn't need ya'는 주어(I), 소망(wish), 가능성(could), 동작(pretend), 부정(didn't need), 목적어(ya)로 이루어진 복합 문장 구조로, 원하는 상상을 표현하는 구문입니다.",
+      "K0": "나는 너를 필요로 하지 않는 척할 수 있으면 좋겠어.",
+      "R0": "아이 위시 아이 쿠드 프리텐드 아이 디든트 니드 야",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 뜻하는 일인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 암 고잉 투 더 스토어"
+        },
+        {
+          "T1": "wish",
+          "K1": "바라다",
+          "R1": "위시",
+          "E1": "'Wish'는 현실과 다른 것을 원하거나 바랄 때 사용하는 동사입니다.",
+          "T2": "wish",
+          "K2": "바라다",
+          "R2": "위시",
+          "XE": "I wish you a Merry Christmas.",
+          "XK": "즐거운 크리스마스가 되길 바라.",
+          "XR": "아이 위시 유 어 메리 크리스마스"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 뜻하는 일인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아이 앰 해피 투데이"
+        },
+        {
+          "T1": "could",
+          "K1": "~할 수 있다",
+          "R1": "쿠드",
+          "E1": "'Could'는 과거형 조동사로, 가능성을 나타내는 표현입니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "It could happen to anyone.",
+          "XK": "그건 누구에게나 일어날 수 있어.",
+          "XR": "잇 쿠드 해펀 투 애니원"
+        },
+        {
+          "T1": "pretend",
+          "K1": "척하다",
+          "R1": "프리텐드",
+          "E1": "'Pretend'는 실제로는 그렇지 않지만, 그런 것처럼 행동하는 것을 의미합니다.",
+          "T2": "pretend",
+          "K2": "척하다",
+          "R2": "프리텐드",
+          "XE": "Don't pretend to be someone you're not.",
+          "XK": "네가 아닌 사람인 척 하지 마.",
+          "XR": "돈 프리텐드 투 비 썸원 유얼 낫"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 뜻하는 일인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I need help.",
+          "XK": "나는 도움이 필요해.",
+          "XR": "아이 니드 헬프"
+        },
+        {
+          "T1": "didn't",
+          "K1": "~하지 않았다",
+          "R1": "디든트",
+          "E1": "'Didn't'는 과거형 부정을 나타내는 축약형입니다.",
+          "T2": "did not",
+          "K2": "~하지 않았다",
+          "R2": "디드 낫",
+          "XE": "I didn't see the movie.",
+          "XK": "나는 그 영화를 보지 않았어.",
+          "XR": "아이 디든트 씨 더 무비"
+        },
+        {
+          "T1": "need",
+          "K1": "필요하다",
+          "R1": "니드",
+          "E1": "'Need'는 어떤 것을 필요로 한다는 것을 나타내는 동사입니다.",
+          "T2": "need",
+          "K2": "필요하다",
+          "R2": "니드",
+          "XE": "I need a break.",
+          "XK": "나는 휴식이 필요해.",
+          "XR": "아이 니드 어 브레이크"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식 축약형이며, 대화체에서 주로 사용됩니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I'll see ya later.",
+          "XK": "나중에 봐.",
+          "XR": "아일 씨 야 레이터"
+        }
+      ]
+    },
+    {
+      "T0": "Ooh, you know I love it when you call me señorita",
+      "C0": "느낌이 마치 오오, 라라라, 그래 오, 네가 나를 세뇨리타라고 부를 때 내가 얼마나 좋아하는지 너도 알잖아 네게서 떠나는 게 이렇게 힘들지 않았으면 좋겠어.",
+      "G0": "'Ooh, you know I love it when you call me señorita'는 감탄사(Ooh), 주어(you), 동사(know), 종속절(I love it when you call me señorita)로 이루어진 문장입니다. 종속절은 'when' 절로, 주어(I)와 동사(love)로 다시 구성됩니다.",
+      "K0": "오, 네가 나를 세뇨리타라고 부를 때 내가 얼마나 좋아하는지 너도 알잖아.",
+      "R0": "우, 유 노우 아이 러브 잇 웬 유 콜 미 세뇨리타",
+      "LI": [
+        {
+          "T1": "Ooh",
+          "K1": "오",
+          "R1": "우",
+          "E1": "'Ooh'는 감탄사로, 감정적인 표현을 나타냅니다. 흔히 놀라움이나 기분 좋은 반응을 나타낼 때 사용됩니다.",
+          "T2": "ooh",
+          "K2": "오",
+          "R2": "우",
+          "XE": "Ooh, that's amazing!",
+          "XK": "오, 그거 정말 멋지다!",
+          "XR": "우, 댓츠 어메이징!"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 지칭하는 상대방을 의미하는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드."
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 사실이나 정보를 이해하거나 깨닫는 것을 의미하는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I know the answer.",
+          "XK": "나는 그 답을 알아.",
+          "XR": "아이 노우 디 앤서."
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 자기 자신을 지칭하는 대명사로, 문장의 주어 역할을 합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생이야.",
+          "XR": "아이 엠 어 스튜던트."
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "'Love'는 강한 호감이나 애정을 나타내는 동사입니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "I love you.",
+          "XK": "나는 너를 사랑해.",
+          "XR": "아이 러브 유."
+        },
+        {
+          "T1": "it",
+          "K1": "그것을",
+          "R1": "잇",
+          "E1": "'It'는 앞서 언급된 사물이나 상황을 지칭하는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것을",
+          "R2": "잇",
+          "XE": "She likes it.",
+          "XK": "그녀는 그것을 좋아해.",
+          "XR": "쉬 라이크스 잇."
+        },
+        {
+          "T1": "when",
+          "K1": "~할 때",
+          "R1": "웬",
+          "E1": "'When'은 시간이나 때를 나타내는 접속사로, 주절의 동작이 발생하는 시점을 제공합니다.",
+          "T2": "when",
+          "K2": "~할 때",
+          "R2": "웬",
+          "XE": "Call me when you arrive.",
+          "XK": "도착하면 나에게 전화해.",
+          "XR": "콜 미 웬 유 어라이브."
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 지칭하는 상대방을 의미하는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드."
+        },
+        {
+          "T1": "call",
+          "K1": "부르다",
+          "R1": "콜",
+          "E1": "'Call'은 소리 내어 이름을 부르거나 전화를 거는 행위를 나타내는 동사입니다.",
+          "T2": "call",
+          "K2": "부르다",
+          "R2": "콜",
+          "XE": "Call me later.",
+          "XK": "나중에 전화해.",
+          "XR": "콜 미 레이터."
+        },
+        {
+          "T1": "me",
+          "K1": "나를",
+          "R1": "미",
+          "E1": "'Me'는 화자 자신을 나타내는 목적격 대명사입니다.",
+          "T2": "me",
+          "K2": "나를",
+          "R2": "미",
+          "XE": "Give me the book.",
+          "XK": "그 책을 나에게 줘.",
+          "XR": "기브 미 더 북."
+        },
+        {
+          "T1": "señorita",
+          "K1": "세뇨리타",
+          "R1": "세뇨리타",
+          "E1": "'Señorita'는 스페인어로 '아가씨'를 의미하는 단어로, 영어에서도 사용됩니다.",
+          "T2": "señorita",
+          "K2": "세뇨리타",
+          "R2": "세뇨리타",
+          "XE": "Hola, señorita.",
+          "XK": "안녕하세요, 아가씨.",
+          "XR": "올라, 세뇨리타."
+        }
+      ]
+    },
+    {
+      "T0": "Coming for ya, coming for ya, coming for ya",
+      "C0": "내 이름을 불러, 내가 너에게 갈게. 너를 위해 가고 있어, 너를 위해 가고 있어, 너를 위해 가고 있어.",
+      "G0": "'Coming for ya, coming for ya, coming for ya'는 주어(생략된 주어 I), 동사(coming), 전치사(for), 목적어(ya)로 이루어진 반복된 구문으로, 특정 대상에게 다가가고 있음을 표현합니다.",
+      "K0": "너를 위해 가고 있어, 너를 위해 가고 있어, 너를 위해 가고 있어.",
+      "R0": "커밍 포 야, 커밍 포 야, 커밍 포 야",
+      "LI": [
+        {
+          "T1": "Coming",
+          "K1": "오고 있다",
+          "R1": "커밍",
+          "E1": "'Coming'은 방향성을 지닌 동사로, 화자나 다른 주체가 어떤 장소나 사람에게 다가가고 있음을 의미합니다.",
+          "T2": "come",
+          "K2": "오다",
+          "R2": "컴",
+          "XE": "I am coming to the party.",
+          "XK": "나는 파티에 가고 있어.",
+          "XR": "아이 엠 커밍 투 더 파티"
+        },
+        {
+          "T1": "for",
+          "K1": "~을 위해",
+          "R1": "포",
+          "E1": "'For'는 목적이나 대상을 나타내는 전치사로, 특정 목적이나 대상에 대한 동작을 명확히 합니다.",
+          "T2": "for",
+          "K2": "~을 위해",
+          "R2": "포",
+          "XE": "This gift is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 기프트 이즈 포 유"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식적인 표현으로, 대화나 노래 가사에서 자주 사용됩니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "See ya later.",
+          "XK": "나중에 봐.",
+          "XR": "씨 야 레이터"
+        }
+      ]
+    },
+    {
+      "T0": "Locked in the hotel",
+      "C0": "너를 떠나는 게 그렇게 힘들지 않았으면 좋겠어. 호텔에 갇혀있어. 절대 변하지 않는 것들이 있어.",
+      "G0": "'Locked in the hotel'은 주어가 생략된 문장으로, '호텔에 갇혀있다'는 상태를 나타내는 구문입니다.",
+      "K0": "호텔에 갇혀있어.",
+      "R0": "락드 인 더 호텔",
+      "LI": [
+        {
+          "T1": "Locked",
+          "K1": "갇힌",
+          "R1": "락드",
+          "E1": "'Locked'는 잠겨져 있거나 갇힌 상태를 설명하는 과거 분사 형태입니다.",
+          "T2": "lock",
+          "K2": "잠그다",
+          "R2": "락",
+          "XE": "He locked the door before leaving.",
+          "XK": "그는 떠나기 전에 문을 잠갔어.",
+          "XR": "히 락드 더 도어 비포어 리빙"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 어떤 것의 내부에 위치함을 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "The book is in the bag.",
+          "XK": "책은 가방 안에 있어.",
+          "XR": "더 북 이즈 인 더 백"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 명사를 가리키는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "She is the best student.",
+          "XK": "그녀는 최고로 잘하는 학생이야.",
+          "XR": "쉬 이즈 더 베스트 스튜던트"
+        },
+        {
+          "T1": "hotel",
+          "K1": "호텔",
+          "R1": "호텔",
+          "E1": "'Hotel'은 객실을 제공하는 상업적인 숙박 시설을 의미합니다.",
+          "T2": "hotel",
+          "K2": "호텔",
+          "R2": "호텔",
+          "XE": "They stayed in a luxury hotel.",
+          "XK": "그들은 럭셔리 호텔에 묵었어.",
+          "XR": "데이 스테이드 인 어 럭셔리 호텔"
+        }
+      ]
+    },
+    {
+      "T0": "Don't stop",
+      "C0": "오, 사랑이여, 너의 키스는 치명적이야. 멈추지 마. 맞아, 라-라-라 (맞아, 라-라)",
+      "G0": "'Don't stop' 문장은 주어가 생략된 명령문 형식으로, 'Stop'이라는 동사에 'Don't' 부정어를 붙여서 동작을 하지 말라는 의미를 전달합니다.",
+      "K0": "멈추지 마",
+      "R0": "돈트 스탑",
+      "LI": [
+        {
+          "T1": "Don't",
+          "K1": "~하지 마",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 줄임말로, 명령문에서 동작을 부정할 때 사용됩니다. 말하는 상대에게 어떤 행동을 하지 말라고 지시하는 표현입니다.",
+          "T2": "do not",
+          "K2": "~하지 마",
+          "R2": "두 낫",
+          "XE": "Don't touch that.",
+          "XK": "그거 만지지 마.",
+          "XR": "돈트 터치 댓"
+        },
+        {
+          "T1": "stop",
+          "K1": "멈추다",
+          "R1": "스탑",
+          "E1": "'Stop'은 어떤 행동이나 움직임을 멈추게 하거나 중단시키는 것을 의미하는 동사입니다.",
+          "T2": "stop",
+          "K2": "멈추다",
+          "R2": "스탑",
+          "XE": "Stop the car.",
+          "XK": "차를 멈춰.",
+          "XR": "스탑 더 카"
+        }
+      ]
+    },
+    {
+      "T0": "It's true, la-la-la (true, la-la)",
+      "C0": "멈추지 마, 그건 사실이야, 라-라-라 (사실이야, 라-라). 그 동안 내가 너를 찾아왔었어 (너를 위해).",
+      "G0": "'It's true, la-la-la (true, la-la)'는 주어(It), 동사(is)의 축약형, 보어(true)로 구성된 간단한 문장입니다. 여기서 'la-la-la'는 노래 가사에서 자주 나오는 의미 없는 가사입니다.",
+      "K0": "그건 사실이야, 라-라-라 (사실이야, 라-라).",
+      "R0": "잇츠 트루, 라-라-라 (트루, 라-라)",
+      "LI": [
+        {
+          "T1": "It",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 대명사로, 문맥상 앞에서 언급된 무언가를 가리킵니다. 여기서는 이전 문장에서 언급된 내용을 의미합니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "'s",
+          "K1": "~이다",
+          "R1": "즈",
+          "E1": "'s'는 동사 is의 축약형입니다. 주어가 3인칭 단수일 때 사용됩니다.",
+          "T2": "is",
+          "K2": "~이다",
+          "R2": "이즈",
+          "XE": "She is happy.",
+          "XK": "그녀는 행복하다.",
+          "XR": "쉬 이즈 해피"
+        },
+        {
+          "T1": "true",
+          "K1": "사실",
+          "R1": "트루",
+          "E1": "'True'는 형용사로, 어떤 것이 진실임을 나타냅니다.",
+          "T2": "true",
+          "K2": "사실",
+          "R2": "트루",
+          "XE": "This story is true.",
+          "XK": "이 이야기는 사실이다.",
+          "XR": "디스 스토리 이즈 트루"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 노래 가사에서 많이 쓰이는 의미 없는 소리입니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "We sang la-la-la all night.",
+          "XK": "우리는 밤새 라-라-라를 불렀다.",
+          "XR": "위 생 라-라-라 올 나이트"
+        },
+        {
+          "T1": "(true, la-la)",
+          "K1": "(사실이야, 라-라)",
+          "R1": "(트루, 라-라)",
+          "E1": "'True, la-la'는 앞에서 언급된 'true'와 'la-la'를 반복하여 강조한 표현입니다.",
+          "T2": "true, la-la",
+          "K2": "사실이야, 라-라",
+          "R2": "트루, 라-라",
+          "XE": "(True, la-la) It's going to be okay.",
+          "XK": "(사실이야, 라-라) 다 괜찮아질 거야.",
+          "XR": "(트루, 라-라) 잇츠 고잉 투 비 오케이"
+        }
+      ]
+    },
+    {
+      "T0": "Don't you let me fall, oh",
+      "C0": "너도 알다시피, 너무 오랜 시간이 흘렀어. 날 떨어뜨리지 마, 오. 오, 네 입술이 내 옷을 벗길 때",
+      "G0": "'Don't you let me fall, oh'는 명령문 형태로, 주어(you), 조동사(let), 목적어(me), 동사원형(fall)로 구성됩니다. 앞에 'Don't'가 붙어서 부정의 의미를 더합니다.",
+      "K0": "날 떨어뜨리지 마, 오",
+      "R0": "돈트 유 렛 미 폴, 오",
+      "LI": [
+        {
+          "T1": "Don't",
+          "K1": "~하지 마라",
+          "R1": "돈트",
+          "E1": "'Don't'는 do not의 축약형으로 명령문이나 권유문에서 부정 명령을 나타냅니다.",
+          "T2": "do",
+          "K2": "(~을) 하다",
+          "R2": "두",
+          "XE": "Don't go there.",
+          "XK": "거기 가지 마.",
+          "XR": "돈트 고 데어"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 단수 또는 복수 2인칭 대명사로, 여기서는 화자가 말을 거는 상대를 지칭합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 나의 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "let",
+          "K1": "허락하다",
+          "R1": "렛",
+          "E1": "'Let'는 허락이나 양보를 나타내는 동사입니다. 이 문맥에서는 '내가 떨어지지 않도록 해달라'는 의미를 담고 있습니다.",
+          "T2": "let",
+          "K2": "허락하다",
+          "R2": "렛",
+          "XE": "Let me go.",
+          "XK": "나를 놓아줘.",
+          "XR": "렛 미 고"
+        },
+        {
+          "T1": "me",
+          "K1": "나",
+          "R1": "미",
+          "E1": "'Me'는 화자 자신을 가리키는 1인칭 목적격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "She gave me a gift.",
+          "XK": "그녀가 나에게 선물을 줬어.",
+          "XR": "쉬 게이브 미 어 기프트"
+        },
+        {
+          "T1": "fall",
+          "K1": "떨어지다",
+          "R1": "폴",
+          "E1": "'Fall'은 중력에 의해 아래로 움직이는 것을 의미하는 동사입니다.",
+          "T2": "fall",
+          "K2": "떨어지다",
+          "R2": "폴",
+          "XE": "The leaves fall in autumn.",
+          "XK": "가을에는 나뭇잎이 떨어진다.",
+          "XR": "더 리브즈 폴 인 어텀"
+        },
+        {
+          "T1": "oh",
+          "K1": "오",
+          "R1": "오",
+          "E1": "'Oh'는 감탄이나 놀람을 나타내는 감탄사입니다.",
+          "T2": "oh",
+          "K2": "오",
+          "R2": "오",
+          "XE": "Oh, I didn't know that!",
+          "XK": "오, 몰랐어!",
+          "XR": "오, 아이 디든 노우 댓!"
+        }
+      ]
+    },
+    {
+      "T0": "Ooh, love, your kiss is deadly",
+      "C0": "네 혀에 중독됐어. 오, 사랑, 네 키스는 치명적이야. 멈추지 마.",
+      "G0": "'Ooh, love, your kiss is deadly'는 감탄사(Ooh), 부름(love), 주어(your kiss), 동사(is), 형용사 보어(deadly)로 이루어져 있으며, 상대방의 키스가 치명적인 영향을 준다는 것을 표현하는 구조입니다.",
+      "K0": "오, 사랑, 네 키스는 치명적이야.",
+      "R0": "오, 러브, 유어 키스 이즈 데들리",
+      "LI": [
+        {
+          "T1": "Ooh",
+          "K1": "오",
+          "R1": "오",
+          "E1": "'Ooh'는 놀라움이나 감탄을 나타내는 감탄사입니다.",
+          "T2": "ooh",
+          "K2": "오",
+          "R2": "오",
+          "XE": "Ooh, that looks amazing!",
+          "XK": "오, 저거 정말 멋지다!",
+          "XR": "오, 댓 룩스 어메이징!"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑",
+          "R1": "러브",
+          "E1": "'Love'는 사람이나 사물을 향한 깊은 애정을 나타내며, 여기서는 상대방을 부르는 표현으로 사용되었습니다.",
+          "T2": "love",
+          "K2": "사랑",
+          "R2": "러브",
+          "XE": "I love chocolate.",
+          "XK": "나는 초콜릿을 사랑해.",
+          "XR": "아이 러브 초콜릿."
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 대명사의 소유격 형태로, '너의' 또는 '너희의'라는 의미입니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your book?",
+          "XK": "이것이 너의 책이니?",
+          "XR": "이즈 디스 유어 북?"
+        },
+        {
+          "T1": "kiss",
+          "K1": "키스",
+          "R1": "키스",
+          "E1": "'Kiss'는 입술을 맞대는 행위를 나타내는 명사입니다.",
+          "T2": "kiss",
+          "K2": "키스",
+          "R2": "키스",
+          "XE": "Their kiss lasted a few seconds.",
+          "XK": "그들의 키스는 몇 초 동안 계속되었다.",
+          "XR": "데어 키스 래스티드 어 퓨 세컨즈."
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 주어가 단수일 때 사용하는 be 동사의 현재형입니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "He is a student.",
+          "XK": "그는 학생이다.",
+          "XR": "히 이즈 어 스튜던트."
+        },
+        {
+          "T1": "deadly",
+          "K1": "치명적인",
+          "R1": "데들리",
+          "E1": "'Deadly'는 생명을 앗아갈 만큼 위험한 상태를 나타내는 형용사입니다.",
+          "T2": "deadly",
+          "K2": "치명적인",
+          "R2": "데들리",
+          "XE": "The venom of this snake is deadly.",
+          "XK": "이 뱀의 독은 치명적이다.",
+          "XR": "더 베놈 오브 디스 스네이크 이즈 데들리."
+        }
+      ]
+    },
+    {
+      "T0": "Hooked on your tongue",
+      "C0": "오, 네 입술이 나를 벗겨낼 때 네 혀에 중독됐어 오, 사랑, 네 키스는 치명적이야",
+      "G0": "'Hooked on your tongue'는 주어 없음, 동사(hooked), 전치사구(on your tongue)로 이루어진 간단한 문장 구조로, 어떤 대상에 강하게 끌리거나 중독된 상태를 표현하는 구문입니다.",
+      "K0": "네 혀에 중독됐어",
+      "R0": "훅트 온 유어 텅",
+      "LI": [
+        {
+          "T1": "Hooked",
+          "K1": "중독된",
+          "R1": "훅트",
+          "E1": "'Hooked'는 무언가에 강하게 끌리거나 중독된 상태를 나타내는 형용사입니다.",
+          "T2": "hook",
+          "K2": "갈고리",
+          "R2": "훅",
+          "XE": "He's hooked on video games.",
+          "XK": "그는 비디오 게임에 중독됐어.",
+          "XR": "히즈 훅트 온 비디오 게임즈"
+        },
+        {
+          "T1": "on",
+          "K1": "~에",
+          "R1": "온",
+          "E1": "'On'은 어떤 대상에 붙어 있거나 영향을 받고 있는 상태를 나타내는 전치사입니다.",
+          "T2": "on",
+          "K2": "~에",
+          "R2": "온",
+          "XE": "The book is on the table.",
+          "XK": "책이 테이블 위에 있어.",
+          "XR": "더 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 소유격 대명사로, 청자에게 관련된 대상을 나타냅니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your pen?",
+          "XK": "이거 네 펜이야?",
+          "XR": "이즈 디스 유어 펜?"
+        },
+        {
+          "T1": "tongue",
+          "K1": "혀",
+          "R1": "텅",
+          "E1": "'Tongue'는 입안에 있는 근육 조직으로 음식을 맛보거나 말을 할 때 사용하는 신체 부위입니다.",
+          "T2": "tongue",
+          "K2": "혀",
+          "R2": "텅",
+          "XE": "He burned his tongue on the hot soup.",
+          "XK": "그는 뜨거운 수프에 혀를 데었다.",
+          "XR": "히 번드 히즈 텅 온 더 핫 수프"
+        }
+      ]
+    },
+    {
+      "T0": "It felt like ooh, la-la-la, yeah",
+      "C0": "그녀의 몸이 내 손에 꼭 맞았어, 라-라-라. 오, 라-라-라 같은 느낌이었어, 응. 오, 내가 세뇨리타라고 불러줄 때 넌 내가 얼마나 좋아하는지 알잖아.",
+      "G0": "'It felt like ooh, la-la-la, yeah'는 주어(it), 동사(felt), 보어(like ooh, la-la-la, yeah)로 이루어진 단순 문장입니다. 여기서 'it'은 앞서 언급된 상황을 지칭하며, 'felt like'는 감정이나 느낌을 표현하는 구문입니다.",
+      "K0": "오, 라-라-라 같은 느낌이었어, 응.",
+      "R0": "잇 펠트 라이크 우, 라-라-라, 예",
+      "LI": [
+        {
+          "T1": "It",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 특정 대상이나 상황을 가리키는 삼인칭 중성 대명사입니다. 여기서는 앞서 언급된 상황을 의미합니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining outside.",
+          "XK": "밖에 비가 오고 있어.",
+          "XR": "잇 이즈 레이닝 아웃사이드"
+        },
+        {
+          "T1": "felt",
+          "K1": "느꼈다",
+          "R1": "펠트",
+          "E1": "'Felt'는 'feel'의 과거형으로, 감각이나 감정을 경험하다를 의미합니다.",
+          "T2": "feel",
+          "K2": "느끼다",
+          "R2": "필",
+          "XE": "She felt happy after the exam.",
+          "XK": "그녀는 시험 후 행복을 느꼈다.",
+          "XR": "쉬 펠트 해피 애프터 더 이그잼"
+        },
+        {
+          "T1": "like",
+          "K1": "~같은",
+          "R1": "라이크",
+          "E1": "'Like'는 비교나 유사성을 나타내는 전치사입니다.",
+          "T2": "like",
+          "K2": "~같은",
+          "R2": "라이크",
+          "XE": "He runs like the wind.",
+          "XK": "그는 바람처럼 달린다.",
+          "XR": "히 런즈 라이크 더 윈드"
+        },
+        {
+          "T1": "ooh",
+          "K1": "오",
+          "R1": "우",
+          "E1": "'Ooh'는 감탄사로, 깜짝 놀라거나 감동을 받을 때 사용하는 표현입니다.",
+          "T2": "ooh",
+          "K2": "오",
+          "R2": "우",
+          "XE": "Ooh, that's amazing!",
+          "XK": "오, 그거 대단해!",
+          "XR": "우, 댓츠 어메이징!"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 노래나 리듬을 표현하는 의성어입니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "She sang la-la-la.",
+          "XK": "그녀는 라-라-라라고 노래했다.",
+          "XR": "쉬 생 라-라-라"
+        },
+        {
+          "T1": "yeah",
+          "K1": "응",
+          "R1": "예",
+          "E1": "'Yeah'는 긍정의 뜻을 나타내는 비격식 표현입니다.",
+          "T2": "yeah",
+          "K2": "그래",
+          "R2": "예",
+          "XE": "Yeah, I know what you mean.",
+          "XK": "그래, 무슨 말인지 알아.",
+          "XR": "예, 아이 노우 왓 유 민"
+        }
+      ]
+    },
+    {
+      "T0": "There's just some things that never change",
+      "C0": "호텔에 갇혀 있어. 변치 않는 몇 가지 것들이 있어. 네가 우린 그냥 친구라고 말해.",
+      "G0": "'There's just some things that never change'는 주어(there), 조동사(is), 명사구(some things that never change)로 이루어진 문장 구조로, 존재를 나타내는 구문입니다.",
+      "K0": "변치 않는 몇 가지 것들이 있어.",
+      "R0": "데얼즈 저스트 섬 씽스 댓 네버 체인지",
+      "LI": [
+        {
+          "T1": "There's",
+          "K1": "~이 있다",
+          "R1": "데얼즈",
+          "E1": "'There is'의 축약형으로, 존재를 나타내는 표현입니다.",
+          "T2": "there is",
+          "K2": "~이 있다",
+          "R2": "데얼 이즈",
+          "XE": "There's a book on the table.",
+          "XK": "테이블 위에 책이 있다.",
+          "XR": "데얼즈 어 북 온 더 테이블"
+        },
+        {
+          "T1": "just",
+          "K1": "단지",
+          "R1": "저스트",
+          "E1": "'Just'는 어떤 것을 강조하거나 한정할 때 사용하는 부사입니다.",
+          "T2": "just",
+          "K2": "단지",
+          "R2": "저스트",
+          "XE": "I just arrived.",
+          "XK": "나는 방금 도착했어.",
+          "XR": "아이 저스트 어라이브드"
+        },
+        {
+          "T1": "some",
+          "K1": "몇몇의",
+          "R1": "섬",
+          "E1": "'Some'은 불특정 다수를 나타내는 형용사로, '몇몇의'라는 의미를 가지고 있습니다.",
+          "T2": "some",
+          "K2": "몇몇의",
+          "R2": "섬",
+          "XE": "She has some friends.",
+          "XK": "그녀는 몇몇 친구들이 있어.",
+          "XR": "쉬 해즈 섬 프렌즈"
+        },
+        {
+          "T1": "things",
+          "K1": "것들",
+          "R1": "씽스",
+          "E1": "'Things'는 구체적이거나 추상적인 사물이나 상황을 가리키는 명사입니다.",
+          "T2": "thing",
+          "K2": "것",
+          "R2": "씽",
+          "XE": "I have many things to do.",
+          "XK": "나는 할 일이 많아.",
+          "XR": "아이 해브 메니 씽스 투 두"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시 대명사이자, 명사절을 이끄는 접속사로도 사용됩니다.",
+          "T2": "that",
+          "K2": "그",
+          "R2": "댓",
+          "XE": "That is my house.",
+          "XK": "저것은 내 집이다.",
+          "XR": "댓 이즈 마이 하우스"
+        },
+        {
+          "T1": "never",
+          "K1": "절대",
+          "R1": "네버",
+          "E1": "'Never'는 어떤 일이 일어나지 않음을 나타내는 부정 부사입니다.",
+          "T2": "never",
+          "K2": "절대",
+          "R2": "네버",
+          "XE": "I never lie.",
+          "XK": "나는 절대 거짓말하지 않아.",
+          "XR": "아이 네버 라이"
+        },
+        {
+          "T1": "change",
+          "K1": "변하다",
+          "R1": "체인지",
+          "E1": "'Change'는 형태나 상태가 달라지는 것을 의미하는 동사입니다.",
+          "T2": "change",
+          "K2": "변하다",
+          "R2": "체인지",
+          "XE": "Seasons change with time.",
+          "XK": "계절은 시간과 함께 변한다.",
+          "XR": "시즌스 체인지 위드 타임"
+        }
+      ]
+    },
+    {
+      "T0": "Call my name, I'll be coming for ya",
+      "C0": "그리고 나는 그것이 당신에게 의미가 있기를 바랍니다 (오) 내 이름을 불러, 나는 당신을 위해 갈 거야 당신을 위해, 당신을 위해, 당신을 위해 갈 거야",
+      "G0": "'Call my name, I'll be coming for ya'는 두 개의 절로 구성된 문장입니다. 첫 번째 절은 'Call my name'으로 명령문 형태의 주절이고, 두 번째 절은 'I'll be coming for ya'로 미래형을 사용하여 어떤 의도를 전달합니다.",
+      "K0": "내 이름을 불러, 나는 당신을 위해 갈 거야",
+      "R0": "콜 마이 네임, 아일 비 커밍 포어 야",
+      "LI": [
+        {
+          "T1": "Call",
+          "K1": "부르다",
+          "R1": "콜",
+          "E1": "'Call'은 누군가를 부르거나 전화하는 행위를 나타내는 동사입니다.",
+          "T2": "call",
+          "K2": "부르다",
+          "R2": "콜",
+          "XE": "Call me when you get there.",
+          "XK": "도착하면 전화해.",
+          "XR": "콜 미 웬 유 겟 데어"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 소유격으로, 화자 자신에게 속한 것을 가리킬 때 사용됩니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 나의 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "name",
+          "K1": "이름",
+          "R1": "네임",
+          "E1": "'Name'은 사람 또는 사물의 고유한 명칭을 나타내는 명사입니다.",
+          "T2": "name",
+          "K2": "이름",
+          "R2": "네임",
+          "XE": "What's your name?",
+          "XK": "너의 이름은 뭐니?",
+          "XR": "왓츠 유어 네임"
+        },
+        {
+          "T1": "I'll",
+          "K1": "나는 ~할 것이다",
+          "R1": "아일",
+          "E1": "'I'll'은 'I will'의 축약형으로, 미래에 대한 화자의 의지를 나타냅니다.",
+          "T2": "I will",
+          "K2": "나는 ~할 것이다",
+          "R2": "아이 윌",
+          "XE": "I'll help you with that.",
+          "XK": "내가 그것을 도와줄게.",
+          "XR": "아일 헬프 유 윗 댓"
+        },
+        {
+          "T1": "be coming",
+          "K1": "올 것이다",
+          "R1": "비 커밍",
+          "E1": "'Be coming'은 미래 시제를 나타내는 표현으로, 어떤 일이 가까운 미래에 일어날 것을 말합니다.",
+          "T2": "come",
+          "K2": "오다",
+          "R2": "컴",
+          "XE": "She will be coming soon.",
+          "XK": "그녀는 곧 올 거야.",
+          "XR": "쉬 윌 비 커밍 순"
+        },
+        {
+          "T1": "for",
+          "K1": "~을 위해",
+          "R1": "포어",
+          "E1": "'For'는 어떤 목적이나 대상을 나타내기 위해 사용하는 전치사입니다.",
+          "T2": "for",
+          "K2": "~을 위해",
+          "R2": "포어",
+          "XE": "This gift is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 기프트 이즈 포어 유"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 구어체 표현입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I'll be there for ya.",
+          "XK": "너를 위해 거기에 있을게.",
+          "XR": "아일 비 데어 포어 야"
+        }
+      ]
+    },
+    {
+      "T0": "Ooh, when your lips undress me",
+      "C0": "내가 넘어지게 하지 마, 오오, 네 입술이 나를 벗길 때, 네 혀에 빠져있어",
+      "G0": "'Ooh, when your lips undress me'는 감탄사(Ooh), 종속접속사(when), 주어(your lips), 동사(undress), 목적어(me)로 구성된 문장 구조로, 특정 상황에서 일어나는 동작을 설명하는 구문입니다.",
+      "K0": "오오, 네 입술이 나를 벗길 때",
+      "R0": "우, 웬 유어 립스 언드레스 미",
+      "LI": [
+        {
+          "T1": "Ooh",
+          "K1": "오",
+          "R1": "우",
+          "E1": "'Ooh'는 감탄사로, 놀람이나 감탄을 나타냅니다.",
+          "T2": "ooh",
+          "K2": "오",
+          "R2": "우",
+          "XE": "Ooh, this is amazing!",
+          "XK": "오, 이거 대단해!",
+          "XR": "우, 디스 이즈 어메이징!"
+        },
+        {
+          "T1": "when",
+          "K1": "때",
+          "R1": "웬",
+          "E1": "'When'은 시간이나 조건을 나타낼 때 사용하는 종속접속사입니다.",
+          "T2": "when",
+          "K2": "때",
+          "R2": "웬",
+          "XE": "Call me when you arrive.",
+          "XK": "도착하면 나에게 전화해.",
+          "XR": "콜 미 웬 유 어라이브."
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 소유격 대명사로, '너의' 또는 '당신의'를 의미합니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your book?",
+          "XK": "이거 네 책이야?",
+          "XR": "이즈 디스 유어 북?"
+        },
+        {
+          "T1": "lips",
+          "K1": "입술",
+          "R1": "립스",
+          "E1": "'Lips'는 입의 가장자리 부분을 의미하는 명사입니다.",
+          "T2": "lip",
+          "K2": "입술",
+          "R2": "립",
+          "XE": "She put on some red lipstick on her lips.",
+          "XK": "그녀는 입술에 빨간 립스틱을 발랐다.",
+          "XR": "쉬 푸트 온 섬 레드 립스틱 온 허 립스."
+        },
+        {
+          "T1": "undress",
+          "K1": "벗기다",
+          "R1": "언드레스",
+          "E1": "'Undress'는 옷을 벗기는 동작을 나타내는 동사입니다.",
+          "T2": "undress",
+          "K2": "벗기다",
+          "R2": "언드레스",
+          "XE": "She began to undress him slowly.",
+          "XK": "그녀는 그를 천천히 벗기기 시작했다.",
+          "XR": "쉬 비갠 투 언드레스 힘 슬로울리."
+        },
+        {
+          "T1": "me",
+          "K1": "나를",
+          "R1": "미",
+          "E1": "'Me'는 화자를 목적어로 사용할 때 쓰는 대명사입니다.",
+          "T2": "me",
+          "K2": "나를",
+          "R2": "미",
+          "XE": "Can you hear me?",
+          "XK": "내 말 들리니?",
+          "XR": "캔 유 히어 미?"
+        }
+      ]
+    },
+    {
+      "T0": "I wish it wasn't so damn hard to leave ya",
+      "C0": "오, 당신이 나를 세뇨리타라고 부를 때 사랑하는 거 알잖아. 당신을 떠나는 것이 그렇게나 힘들지 않았으면 좋겠어. 호텔에 갇혀서",
+      "G0": "'I wish it wasn't so damn hard to leave ya'는 주어(I), 바람(wish), 동사 부정문(it wasn't so damn hard), 목적어(to leave ya)로 이루어진 문장 구조로, 화자의 아쉬움이나 바람을 표현하는 구문입니다. 여기서는 'it'을 통해 주어를 다시 언급하며, 부사(so damn hard)로 동사의 정도를 묘사합니다.",
+      "K0": "당신을 떠나는 것이 그렇게나 힘들지 않았으면 좋겠어",
+      "R0": "아이 위시 잇 워즌트 소 댐 하드 투 리브 야",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 일인칭 단수 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "wish",
+          "K1": "바라다",
+          "R1": "위시",
+          "E1": "'Wish'는 무엇인가를 바라는 소망을 표현하는 동사입니다.",
+          "T2": "wish",
+          "K2": "바라다",
+          "R2": "위시",
+          "XE": "I wish you a Merry Christmas.",
+          "XK": "메리 크리스마스 되길 바래.",
+          "XR": "아이 위시 유 어 메리 크리스마스"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 특정 상황이나 사물을 지칭하는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "wasn't",
+          "K1": "~이 아니었다",
+          "R1": "워즌트",
+          "E1": "'Wasn't'는 'was not'의 축약형으로, 과거 시제에서의 부정을 나타냅니다.",
+          "T2": "was not",
+          "K2": "~이 아니었다",
+          "R2": "워즈 낫",
+          "XE": "She wasn't there.",
+          "XK": "그녀는 거기에 없었어.",
+          "XR": "쉬 워즌트 데어"
+        },
+        {
+          "T1": "so",
+          "K1": "너무",
+          "R1": "소",
+          "E1": "'So'는 정도를 강조하는 부사로 여기서는 '너무'의 의미로 쓰였습니다.",
+          "T2": "so",
+          "K2": "너무",
+          "R2": "소",
+          "XE": "It was so cold.",
+          "XK": "너무 추웠어.",
+          "XR": "잇 워즈 소 콜드"
+        },
+        {
+          "T1": "damn",
+          "K1": "지독히",
+          "R1": "댐",
+          "E1": "'Damn'은 강한 감정을 표현할 때 사용하는 비격식적 강조 형용사입니다.",
+          "T2": "damn",
+          "K2": "지독히",
+          "R2": "댐",
+          "XE": "It's so damn hot today.",
+          "XK": "오늘 너무 지독히 더워.",
+          "XR": "잇츠 소 댐 핫 투데이"
+        },
+        {
+          "T1": "hard",
+          "K1": "어려운",
+          "R1": "하드",
+          "E1": "'Hard'는 난이도를 나타내는 형용사로, '적은 노력으로는 달성하기 어려운'이라는 뜻입니다.",
+          "T2": "hard",
+          "K2": "어려운",
+          "R2": "하드",
+          "XE": "This problem is hard.",
+          "XK": "이 문제는 어려워요.",
+          "XR": "디스 프라블럼 이즈 하드"
+        },
+        {
+          "T1": "to leave",
+          "K1": "떠나다",
+          "R1": "투 리브",
+          "E1": "'To leave'는 떠나는 행위를 의미하는 동사구입니다.",
+          "T2": "leave",
+          "K2": "떠나다",
+          "R2": "리브",
+          "XE": "I have to leave now.",
+          "XK": "이제 떠나야 해.",
+          "XR": "아이 해브 투 리브 나우"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식적 표현으로, 친근함을 나타냅니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I miss ya.",
+          "XK": "난 네가 그리워.",
+          "XR": "아이 미스 야"
+        }
+      ]
+    },
+    {
+      "T0": "All along I've been coming for ya (for ya)",
+      "C0": "사실이야, 라-라-라 (사실이야, 라-라-라) 내내 너를 위해 왔어 (너를 위해) 그리고 이것이 너에게 의미 있었기를 바래 (오)",
+      "G0": "'All along I've been coming for ya'는 주어(I), 동사(have been coming), 목적어(for ya)로 이루어진 현재완료진행형 시제의 문장입니다. 과거부터 현재까지 지속적인 행동을 나타냅니다.",
+      "K0": "내내 너를 위해 왔어 (너를 위해)",
+      "R0": "올 얼롱 아이브 빈 커밍 포어 야 (포어 야)",
+      "LI": [
+        {
+          "T1": "All along",
+          "K1": "내내",
+          "R1": "올 얼롱",
+          "E1": "'All along'은 특정 기간 동안 내내라는 의미를 가지고 있으며, 계속해서 일어나는 상황을 나타냅니다.",
+          "T2": "along",
+          "K2": "~을 따라서",
+          "R2": "얼롱",
+          "XE": "She knew all along that he was lying.",
+          "XK": "그녀는 그가 거짓말을 하고 있었다는 것을 내내 알고 있었어.",
+          "XR": "쉬 뉴 올 얼롱 댓 히 워즈 라잉."
+        },
+        {
+          "T1": "I've",
+          "K1": "나는 ~했다",
+          "R1": "아이브",
+          "E1": "'I've'는 'I have'의 축약형으로, 현재완료형 시제를 나타내며 과거부터 현재까지의 상황을 표현합니다.",
+          "T2": "I have",
+          "K2": "나는 ~했다",
+          "R2": "아이 해브",
+          "XE": "I've been here before.",
+          "XK": "나는 여기에 전에 와본 적이 있어.",
+          "XR": "아이브 빈 히어 비포어."
+        },
+        {
+          "T1": "been",
+          "K1": "~이었다",
+          "R1": "빈",
+          "E1": "'Been'은 'to be' 동사의 과거분사형으로, 현재완료형 시제에서 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I have been busy all day.",
+          "XK": "나는 하루 종일 바빴어.",
+          "XR": "아이 해브 빈 비지 올 데이."
+        },
+        {
+          "T1": "coming",
+          "K1": "오다",
+          "R1": "커밍",
+          "E1": "'Coming'은 'come'의 현재분사형으로 현재진행형 또는 현재완료진행형 시제에서 사용됩니다.",
+          "T2": "come",
+          "K2": "오다",
+          "R2": "컴",
+          "XE": "She is coming now.",
+          "XK": "그녀는 지금 오고 있어.",
+          "XR": "쉬 이즈 커밍 나우."
+        },
+        {
+          "T1": "for ya",
+          "K1": "너를 위해",
+          "R1": "포어 야",
+          "E1": "'For ya'는 'for you'의 비격식 표현으로, 상대방을 위해서라는 의미를 나타냅니다.",
+          "T2": "for you",
+          "K2": "너를 위해",
+          "R2": "포어 유",
+          "XE": "This is for ya.",
+          "XK": "이건 너를 위하는 거야.",
+          "XR": "디스 이즈 포어 야."
+        }
+      ]
+    },
+    {
+      "T0": "'Cause you know it's been a long time coming",
+      "C0": "하지만 친구들은 네가 어떻게 맛을 내는지 몰라, 라-라-라. 네가 알다시피, 오랜 시간이 걸렸어. 나를 실망시키지 마, 오.",
+      "G0": "'Cause you know it's been a long time coming'은 접속사('Cause), 주어(you), 동사(know), 목적어(it's been a long time coming)로 이루어진 복합 문장 구조입니다. 'long time coming'은 오래 기다려 온 것을 의미합니다.",
+      "K0": "네가 알다시피, 오랜 시간이 걸렸어.",
+      "R0": "'커즈 유 노우 잇즈 빈 어 롱 타임 커밍",
+      "LI": [
+        {
+          "T1": "'Cause",
+          "K1": "'왜냐하면'",
+          "R1": "커즈",
+          "E1": "'Cause'는 'because'의 준말로, 이유를 설명할 때 사용됩니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비커즈",
+          "XE": "I'm staying home 'cause it's raining.",
+          "XK": "비가 오기 때문에 집에 있을 거야.",
+          "XR": "아임 스테잉 홈 커즈 잇즈 레이닝"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 대명사로 상대방을 가리킵니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 사실, 정보 등을 인지하거나 이해하는 것을 의미하는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "Do you know the answer?",
+          "XK": "너는 답을 아니?",
+          "XR": "두 유 노우 디 앤서"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것은",
+          "R1": "잇즈",
+          "E1": "'It's'는 'it is'의 축약형으로, 주어가 'it'일 때 사용됩니다.",
+          "T2": "it is",
+          "K2": "그것은 이다",
+          "R2": "잇 이즈",
+          "XE": "It's a beautiful day.",
+          "XK": "아름다운 날이야.",
+          "XR": "잇즈 어 뷰티풀 데이"
+        },
+        {
+          "T1": "been",
+          "K1": "있었다",
+          "R1": "빈",
+          "E1": "'Been'은 'be' 동사의 과거분사 형태로, 완료 시제에서 사용됩니다.",
+          "T2": "be",
+          "K2": "이다",
+          "R2": "비",
+          "XE": "I've been here before.",
+          "XK": "여기에 전에 와본 적 있어.",
+          "XR": "아이브 빈 히어 비포어"
+        },
+        {
+          "T1": "a",
+          "K1": "하나의",
+          "R1": "어",
+          "E1": "'A'는 단수 명사 앞에 쓰이는 부정관사로, 특정하지 않은 하나의 것을 의미합니다.",
+          "T2": "a",
+          "K2": "하나의",
+          "R2": "어",
+          "XE": "I have a pen.",
+          "XK": "나는 펜 하나를 가지고 있어.",
+          "XR": "아이 해브 어 펜"
+        },
+        {
+          "T1": "long",
+          "K1": "긴",
+          "R1": "롱",
+          "E1": "'Long'은 길이나 시간을 나타내는 형용사 또는 부사로, 이 문맥에서는 긴 시간을 의미합니다.",
+          "T2": "long",
+          "K2": "긴",
+          "R2": "롱",
+          "XE": "This is a long road.",
+          "XK": "이것은 긴 도로야.",
+          "XR": "디스 이즈 어 롱 로드"
+        },
+        {
+          "T1": "time",
+          "K1": "시간",
+          "R1": "타임",
+          "E1": "'Time'은 시간을 나타내는 명사입니다.",
+          "T2": "time",
+          "K2": "시간",
+          "R2": "타임",
+          "XE": "What time is it?",
+          "XK": "지금 몇 시야?",
+          "XR": "왓 타임 이즈 잇"
+        },
+        {
+          "T1": "coming",
+          "K1": "오는 것",
+          "R1": "커밍",
+          "E1": "'Coming'은 'come' 동사의 현재분사 형태로, 이 문맥에서는 미래에 올 것을 의미합니다.",
+          "T2": "come",
+          "K2": "오다",
+          "R2": "컴",
+          "XE": "He is coming to the party.",
+          "XK": "그는 파티에 올 거야.",
+          "XR": "히 이즈 커밍 투 더 파티"
+        }
+      ]
+    },
+    {
+      "T0": "For ya (oh, she loves it when I call)",
+      "C0": "널 위해 (아, 그녀는 내가 부를 때 그것을 좋아해)",
+      "G0": "'For ya'는 'for you'의 구어체 표현으로, 목적 또는 수신인을 나타내는 전치사구입니다. 'she loves it when I call'는 주어(she), 동사(loves), 목적어(it), 시간절(when I call)을 포함한 복잡한 문장 구조로, 특정 조건 하에서의 감정 상태를 설명합니다.",
+      "K0": "널 위해 (아, 그녀는 내가 부를 때 그것을 좋아해)",
+      "R0": "포어 야 (오, 쉬 러브즈 잇 웬 아이 콜)",
+      "LI": [
+        {
+          "T1": "For",
+          "K1": "~를 위해",
+          "R1": "포어",
+          "E1": "'For'는 특정 대상이나 목적을 지칭할 때 사용하는 전치사입니다.",
+          "T2": "for",
+          "K2": "~를 위해",
+          "R2": "포어",
+          "XE": "This gift is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 기프트 이즈 포어 유"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 구어체 표현으로, 친근하게 상대를 부를 때 사용합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "How are ya?",
+          "XK": "어떻게 지내?",
+          "XR": "하우 아 야?"
+        },
+        {
+          "T1": "oh,",
+          "K1": "아,",
+          "R1": "오,",
+          "E1": "'Oh'는 놀람, 감탄, 또는 다른 강한 감정을 표현할 때 사용하는 감탄사입니다.",
+          "T2": "oh",
+          "K2": "아",
+          "R2": "오",
+          "XE": "Oh, I see!",
+          "XK": "아, 알겠어!",
+          "XR": "오, 아이 씨!"
+        },
+        {
+          "T1": "she",
+          "K1": "그녀",
+          "R1": "쉬",
+          "E1": "'She'는 3인칭 여성 주어를 지칭하는 대명사입니다.",
+          "T2": "she",
+          "K2": "그녀",
+          "R2": "쉬",
+          "XE": "She is my best friend.",
+          "XK": "그녀는 나의 가장 친한 친구야.",
+          "XR": "쉬 이즈 마이 베스트 프렌드"
+        },
+        {
+          "T1": "loves",
+          "K1": "사랑하다",
+          "R1": "러브즈",
+          "E1": "'Loves'는 'love'의 3인칭 단수 현재형으로, 강한 애정을 표현하는 동사입니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "He loves playing basketball.",
+          "XK": "그는 농구 하는 것을 사랑해.",
+          "XR": "히 러브즈 플레이잉 배스킷볼"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 3인칭 중성 대명사로, 앞서 언급한 명사나 상황을 가리키는 데 사용됩니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "I found it.",
+          "XK": "내가 그것을 발견했어.",
+          "XR": "아이 파운드 잇"
+        },
+        {
+          "T1": "when",
+          "K1": "~할 때",
+          "R1": "웬",
+          "E1": "'When'는 시간이나 조건을 나타내는 접속사입니다.",
+          "T2": "when",
+          "K2": "~할 때",
+          "R2": "웬",
+          "XE": "Call me when you arrive.",
+          "XK": "도착하면 내게 전화해.",
+          "XR": "콜 미 웬 유 어라이브"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자가 자신을 지칭할 때 사용하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "call",
+          "K1": "부르다",
+          "R1": "콜",
+          "E1": "'Call'는 누구를 특정 이름이나 말로 부르거나 전화를 걸 때 사용하는 동사입니다.",
+          "T2": "call",
+          "K2": "부르다",
+          "R2": "콜",
+          "XE": "Can you call me later?",
+          "XK": "나중에 전화해줄 수 있어?",
+          "XR": "캔 유 콜 미 레이터?"
+        }
+      ]
+    },
+    {
+      "T0": "Her body fit right in my hands, la-la-la",
+      "C0": "'테킬라 선라이즈' 그녀의 몸은 내 손에 꼭 맞았지, 라-라-라. 그 느낌이 마치 오오, 라-라-라, 그래",
+      "G0": "'Her body fit right in my hands, la-la-la'는 주어(Her body), 동사(fit), 목적어(right in my hands)로 이루어진 문장 구조로, 주어와 목적어 간의 관계를 기술하며 'la-la-la'라는 의성어를 추가하여 감정적인 분위기를 전달하고 있습니다.",
+      "K0": "그녀의 몸은 내 손에 딱 맞았어, 라-라-라",
+      "R0": "허 바디 핏 라이트 인 마이 핸즈, 라-라-라",
+      "LI": [
+        {
+          "T1": "Her",
+          "K1": "그녀의",
+          "R1": "허",
+          "E1": "'Her'는 여성 대상을 가리키는 소유 대명사로서, 뒤에 나오는 명사 'body'를 수식합니다.",
+          "T2": "she",
+          "K2": "그녀",
+          "R2": "쉬",
+          "XE": "Her car is parked outside.",
+          "XK": "그녀의 차는 밖에 주차되어 있어.",
+          "XR": "허 카 이즈 파크드 아웃사이드"
+        },
+        {
+          "T1": "body",
+          "K1": "몸",
+          "R1": "바디",
+          "E1": "'Body'는 사람이나 동물의 전체적인 신체를 의미하는 명사입니다.",
+          "T2": "body",
+          "K2": "몸",
+          "R2": "바디",
+          "XE": "He has a strong body.",
+          "XK": "그는 강한 몸을 가지고 있어.",
+          "XR": "히 해즈 어 스트롱 바디"
+        },
+        {
+          "T1": "fit",
+          "K1": "딱 맞다",
+          "R1": "핏",
+          "E1": "'Fit'는 어떤 것이 다른 것에 정확하게 들어맞는다는 의미의 동사입니다.",
+          "T2": "fit",
+          "K2": "딱 맞다",
+          "R2": "핏",
+          "XE": "These shoes fit me well.",
+          "XK": "이 신발들은 나에게 잘 맞아.",
+          "XR": "디즈 슈즈 핏 미 웰"
+        },
+        {
+          "T1": "right",
+          "K1": "정확히",
+          "R1": "라이트",
+          "E1": "'Right'는 위치나 시간을 표현할 때 '정확히'라는 의미로 쓰입니다.",
+          "T2": "right",
+          "K2": "정확히",
+          "R2": "라이트",
+          "XE": "The store is right next to the school.",
+          "XK": "가게는 학교 바로 옆에 있어.",
+          "XR": "더 스토어 이즈 라이트 넥스트 투 더 스쿨"
+        },
+        {
+          "T1": "in",
+          "K1": "~에",
+          "R1": "인",
+          "E1": "'In'은 위치나 상태를 나타내는 전치사로, 특정 장소나 공간 안을 의미합니다.",
+          "T2": "in",
+          "K2": "~에",
+          "R2": "인",
+          "XE": "She is in the room.",
+          "XK": "그녀는 방 안에 있어.",
+          "XR": "쉬 이즈 인 더 룸"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 화자를 기준으로 소유를 나타내는 소유 대명사로, 뒤에 나오는 명사 'hands'를 수식합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "hands",
+          "K1": "손",
+          "R1": "핸즈",
+          "E1": "'Hands'는 사람의 손을 나타내는 명사로, 주로 물체를 잡거나 만지는 동작을 할 때 사용됩니다.",
+          "T2": "hand",
+          "K2": "손",
+          "R2": "핸드",
+          "XE": "Wash your hands before eating.",
+          "XK": "식사 전에 손을 씻어라.",
+          "XR": "워시 유어 핸즈 비포어 이팅"
+        },
+        {
+          "T1": "la-la-la",
+          "K1": "라-라-라",
+          "R1": "라-라-라",
+          "E1": "'La-la-la'는 감정이나 분위기를 표현하기 위해 사용하는 의성어로서, 특별한 의미 없이 감정을 강조합니다.",
+          "T2": "la-la-la",
+          "K2": "라-라-라",
+          "R2": "라-라-라",
+          "XE": "He hummed a tune, la-la-la.",
+          "XK": "그는 멜로디를 흥얼거렸다, 라-라-라.",
+          "XR": "히 흠드 어 튠, 라-라-라"
+        }
+      ]
+    },
+    {
+      "T0": "And I hope it meant something to ya (ooh)",
+      "C0": "내내 너를 향해 달려왔어 (너를 위해) 그리고 나는 그게 너에게 무언가를 의미했기를 바래 (오오) 내 이름을 불러, 너를 위해 달려갈게",
+      "G0": "'And I hope it meant something to ya'는 주어(I), 동사(hope), 목적어(it meant something)가 포함된 구조로, 'ya'는 'you'를 비격식적으로 주소하는 표현입니다.",
+      "K0": "그리고 나는 그것이 너에게 어떤 의미가 있기를 바래 (오오)",
+      "R0": "앤드 아이 호프 잇 민트 섬씽 투 야 (오오)",
+      "LI": [
+        {
+          "T1": "And",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 문장이나 구를 연결하는 접속사로, 이 경우 앞 문장과 연결하는 역할을 합니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I went to the store and bought some groceries.",
+          "XK": "나는 가게에 가서 식료품을 샀어.",
+          "XR": "아이 웬트 투 더 스토어 앤드 보우트 썸 그로서리즈"
+        },
+        {
+          "T1": "I",
+          "K1": "나는",
+          "R1": "아이",
+          "E1": "'I'는 화자를 지칭하는 1인칭 대명사로, 문장의 주어로 사용됩니다.",
+          "T2": "I",
+          "K2": "나는",
+          "R2": "아이",
+          "XE": "I am reading a book.",
+          "XK": "나는 책을 읽고 있어.",
+          "XR": "아이 앰 리딩 어 북"
+        },
+        {
+          "T1": "hope",
+          "K1": "바라다",
+          "R1": "호프",
+          "E1": "'Hope'는 어떤 일이 일어나기를 바라는 마음을 나타내는 동사입니다.",
+          "T2": "hope",
+          "K2": "바라다",
+          "R2": "호프",
+          "XE": "I hope you have a great day.",
+          "XK": "네가 좋은 하루를 보내길 바래.",
+          "XR": "아이 호프 유 해브 어 그레이트 데이"
+        },
+        {
+          "T1": "it",
+          "K1": "그것은",
+          "R1": "잇",
+          "E1": "'It'는 특정한 사물이나 상황을 지칭하는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것은",
+          "R2": "잇",
+          "XE": "It is raining outside.",
+          "XK": "밖에 비가 내리고 있어.",
+          "XR": "잇 이즈 레이닝 아웃사이드"
+        },
+        {
+          "T1": "meant",
+          "K1": "의미했다",
+          "R1": "민트",
+          "E1": "'Meant'는 'mean'의 과거형으로, 어떤 의미를 가졌다는 뜻입니다.",
+          "T2": "mean",
+          "K2": "의미하다",
+          "R2": "민",
+          "XE": "What he said meant a lot to me.",
+          "XK": "그가 한 말은 나에게 큰 의미가 있었어.",
+          "XR": "왓 히 새드 민트 어 랏 투 미"
+        },
+        {
+          "T1": "something",
+          "K1": "무엇인가",
+          "R1": "섬씽",
+          "E1": "'Something'은 특정하지 않은 어떤 것을 의미하는 대명사입니다.",
+          "T2": "something",
+          "K2": "무엇인가",
+          "R2": "섬씽",
+          "XE": "There's something in the box.",
+          "XK": "상자 안에 무엇인가가 있다.",
+          "XR": "데얼즈 섬씽 인 더 박스"
+        },
+        {
+          "T1": "to",
+          "K1": "~에게",
+          "R1": "투",
+          "E1": "'To'는 방향이나 대상을 나타내는 전치사로, 이 문맥에서는 상대방을 지칭합니다.",
+          "T2": "to",
+          "K2": "~에게",
+          "R2": "투",
+          "XE": "I gave the book to him.",
+          "XK": "나는 책을 그에게 주었어.",
+          "XR": "아이 게이브 더 북 투 힘"
+        },
+        {
+          "T1": "ya",
+          "K1": "너에게",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식 표현으로, 주로 구어체에서 사용됩니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I'll see ya later.",
+          "XK": "나중에 봐.",
+          "XR": "알 씨 야 레이터"
+        },
+        {
+          "T1": "(ooh)",
+          "K1": "(오오)",
+          "R1": "(오오)",
+          "E1": "'Ooh'는 감탄사로, 주로 놀람이나 감탄을 표현할 때 사용됩니다.",
+          "T2": "ooh",
+          "K2": "오오",
+          "R2": "오오",
+          "XE": "Ooh, that's interesting.",
+          "XK": "오오, 그거 흥미롭다.",
+          "XR": "오오, 댓츠 인터레스팅"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}

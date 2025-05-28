@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= song.name %> - <%= song.artist %> 가사 - Haneum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-6xl px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
+            <form action="/songs" method="get" class="w-full max-w-xl ml-8">
+                <div class="flex">
+                    <input type="search" name="q" placeholder="노래 검색..." 
+                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="container mx-auto max-w-4xl px-4 py-8">
+        <!-- 곡 정보 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2"><%= song.ori_name || song.name %></h1>
+            <p class="text-xl text-gray-600 mb-4"><%= song.artist %></p>
+            <% if (song.kor_name) { %>
+                <p class="text-gray-500">한글 제목: <%= song.kor_name %></p>
+            <% } %>
+            <% if (song.eng_name) { %>
+                <p class="text-gray-500">영문 제목: <%= song.eng_name %></p>
+            <% } %>
+        </div>
+
+        <!-- 가사 섹션 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6">가사</h2>
+            <div class="space-y-6">
+                <% if (Array.isArray(song.translatedLines) && song.translatedLines.length > 0) { %>
+                    <% song.translatedLines.forEach(line => { %>
+                        <div class="border-b border-gray-100 pb-4 last:border-b-0">
+                            <div class="space-y-2">
+                                <% if (line.R0) { %>
+                                    <div class="text-gray-600"><%= line.R0 %></div>
+                                <% } %>
+                                <% if (line.T0) { %>
+                                    <div class="text-gray-800 font-medium"><%= line.T0 %></div>
+                                <% } %>
+                                <% if (line.K0) { %>
+                                    <div class="text-gray-700"><%= line.K0 %></div>
+                                <% } %>
+                            </div>
+                            <div class="mt-4 flex space-x-2">
+                                <!-- <form action="/retry-line/<%= song.name %>" method="post" class="inline">
+                                    <input type="hidden" name="originalLine" value="<%= line.T0 %>">
+                                    <button type="submit" 
+                                            class="px-3 py-1.5 bg-green-500 text-white text-sm rounded-md hover:bg-green-600 transition-colors">
+                                        다시 번역하기
+                                    </button>
+                                </form> -->
+                                <form action="/correct-with-message/<%= song.name %>" method="post" class="inline">
+                                    <input type="hidden" name="originalLine" value="<%= line.O0?line.O0:line.T0 %>">
+                                    <textarea name="correctionMessage" 
+                                              placeholder="수정 요청 메시지를 입력하세요" 
+                                              rows="1" 
+                                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"></textarea>
+                                    <button type="submit" 
+                                            class="mt-2 px-3 py-1.5 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors">
+                                        수정 요청하기
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <p class="text-gray-500 italic">아직 번역된 내용이 없습니다.</p>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- 액션 버튼들 -->
+        <div class="flex space-x-4 mb-8">
+            <form action="/translate/<%= song.name %>" method="post">
+                <button type="submit" 
+                        class="px-4 py-2 bg-indigo-500 text-white text-sm rounded-md hover:bg-indigo-600 transition-colors">
+                    번역하기
+                </button>
+            </form>
+            
+            <form action="/songview/<%= song.name %>" method="get">
+                <button type="submit" 
+                        class="px-4 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors">
+                    보기
+                </button>
+            </form>
+        </div>
+
+        <!-- 실패한 문장들 -->
+        <% if (Array.isArray(song.failedLines) && song.failedLines.length > 0) { %>
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">번역에 실패한 문장들</h2>
+                <ul class="space-y-2 mb-4">
+                    <% song.failedLines.forEach(function(context) { %>
+                        <li class="text-gray-600"><%= JSON.stringify(context) %></li>
+                    <% }); %>
+                </ul>
+                <form action="/retry-translation/<%= song.name %>" method="post">
+                    <button type="submit" 
+                            class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-md hover:bg-yellow-600 transition-colors">
+                        실패한 문장 다시 번역하기
+                    </button>
+                </form>
+            </div>
+        <% } %>
+
+        <!-- 뒤로 가기 링크 -->
+        <div class="text-center">
+            <a href="/songs" 
+               class="inline-block px-4 py-2 text-blue-600 hover:text-blue-800 transition-colors text-sm">
+                ← 노래 목록으로 돌아가기
+            </a>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-400 py-8 px-6 text-center mt-12">
+        <div class="container mx-auto max-w-6xl">
+            <!-- <nav class="mb-6">
+                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <li><a href="/about" class="hover:text-white transition duration-200">About Haneum</a></li>
+                    <li><a href="/contact" class="hover:text-white transition duration-200">문의하기</a></li>
+                    <li><a href="/privacy" class="hover:text-white transition duration-200">개인정보처리방침</a></li>
+                    <li><a href="/terms" class="hover:text-white transition duration-200">이용약관</a></li>
+                    <li><a href="/copyright" class="hover:text-white transition duration-200">저작권 안내</a></li>
+                </ul>
+            </nav> -->
+            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
+        </div>
+    </footer>
+</body>
+</html> 

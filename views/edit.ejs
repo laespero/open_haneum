@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>노래 수정</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>노래 수정</h1>
+    <form action="/update" method="post">
+        <input type="hidden" name="originalTitle" value="<%= song.name %>">
+
+        <label for="title">URL 제목 (영문, 공백 없이):</label>
+        <input type="text" id="title" name="title" value="<%= song.name %>" required>
+
+        <label for="vid">영상 주소:</label>
+        <input type="text" id="vid" name="vid" value="<%= song.vid %>">
+
+        <label for="text">노래 가사:</label>
+        <textarea id="text" name="text" required><%= song.text %></textarea>
+        
+        <input type="submit" value="저장">
+    </form>
+    <a href="/songs">노래 목록으로 돌아가기</a>
+
+    <script>
+    // URL 제목 유효성 검사 함수
+    function validateTitle(title) {
+        // 빈 문자열 체크
+        if (!title || title.trim() === '') {
+            return {
+                isValid: false,
+                error: '제목을 입력해주세요.'
+            };
+        }
+
+        // 길이 체크 (최대 100자)
+        if (title.length > 100) {
+            return {
+                isValid: false,
+                error: '제목은 100자를 초과할 수 없습니다.'
+            };
+        }
+
+        // 영문, 숫자, 하이픈, 언더스코어만 허용
+        const validPattern = /^[a-zA-Z0-9-_]+$/;
+        if (!validPattern.test(title)) {
+            return {
+                isValid: false,
+                error: '제목은 영문, 숫자, 하이픈(-), 언더스코어(_)만 사용할 수 있습니다.'
+            };
+        }
+
+        return {
+            isValid: true,
+            title: title.trim()
+        };
+    }
+
+    // 폼 제출 시 유효성 검사
+    document.querySelector('form').addEventListener('submit', function(e) {
+        const titleInput = document.getElementById('title');
+        const validation = validateTitle(titleInput.value);
+        
+        if (!validation.isValid) {
+            e.preventDefault();
+            alert(validation.error);
+            titleInput.focus();
+            return false;
+        }
+    });
+
+    // 실시간 유효성 검사
+    document.getElementById('title').addEventListener('input', function(e) {
+        const validation = validateTitle(this.value);
+        if (!validation.isValid) {
+            this.setCustomValidity(validation.error);
+        } else {
+            this.setCustomValidity('');
+        }
+    });
+    </script>
+</body>
+</html>

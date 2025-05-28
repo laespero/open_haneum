@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title><%= song.name %> 상세 정보</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center"><%= song.name %> 상세 정보</h1>
+        
+        <!-- 가사 섹션 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">가사</h2>
+            <pre class="whitespace-pre-wrap text-gray-600 font-mono"><%= song.text %></pre>
+        </div>
+
+        <!-- 중복 제거된 가사 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">중복 제거된 가사</h2>
+            <% if (Array.isArray(song.p1) && song.p1.length > 0) { %>
+                <ul class="space-y-2">
+                    <% song.p1.forEach(function(line) { %>
+                        <li class="text-gray-600"><%= line %></li>
+                    <% }); %>
+                </ul>
+            <% } else { %>
+                <p class="text-gray-500 italic">중복 제거된 가사가 없습니다.</p>
+            <% } %>
+        </div>
+
+        <!-- 번역된 내용 -->
+        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-700 mb-4">번역된 내용</h2>
+            <% if (Array.isArray(song.translatedLines) && song.translatedLines.length > 0) { %>
+                <div class="space-y-6">
+                    <% song.p1.forEach(function(originalLine) { 
+                        const translation = song.translatedLines.find(t => t.T0 === originalLine ||  t.O0 === originalLine);
+                    %>
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
+                            <div class="space-y-2">
+                                <div class="text-base text-gray-700">
+                                    <%= translation && translation.R0 ? translation.R0 : '<span class="text-red-500 italic">ERR</span>' %>
+                                </div>
+                                <div class="text-base text-gray-700">
+                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.R1).join(' ')) : '<span class="text-red-500 italic">ERR</span>' %>
+                                </div>
+                                <div class="text-base text-gray-700">
+                                    <%= translation && translation.T0 ? translation.T0 : '<span class="text-red-500 italic">ERR</span>' %>
+                                </div>
+                                <div class="text-base text-gray-700">
+                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.T1).join(' ')) : '<span class="text-red-500 italic">ERR</span>' %>
+                                </div>
+                                <div class="text-base text-gray-700">
+                                    <%= translation && translation.K0 ? translation.K0 : '<span class="text-red-500 italic">ERR</span>' %>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 space-y-3">
+                                <form class="retry-form" action="/retry-line/<%= song.name %>" method="post">
+                                    <input type="hidden" name="originalLine" value="<%= originalLine %>">
+                                    <button type="submit" 
+                                            class="px-3 py-1.5 bg-green-500 text-white text-sm rounded-md hover:bg-green-600 transition-colors duration-200">
+                                        다시 번역하기
+                                    </button>
+                                </form>
+                                
+                                <form class="correct-with-message" action="/correct-with-message/<%= song.name %>" method="post">
+                                    <input type="hidden" name="originalLine" value="<%= originalLine %>">
+                                    <textarea name="correctionMessage" 
+                                              placeholder="수정 요청 메시지를 입력하세요" 
+                                              rows="2" 
+                                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"></textarea>
+                                    <button type="submit" 
+                                            class="mt-2 px-3 py-1.5 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors duration-200">
+                                        메시지로 수정하기
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
+            <% } else { %>
+                <p class="text-gray-500 italic">아직 번역된 내용이 없습니다.</p>
+            <% } %>
+        </div>
+
+        <!-- 액션 버튼들 -->
+        <div class="flex space-x-3 mb-6">
+            <form action="/translate/<%= song.name %>" method="post">
+                <button type="submit" 
+                        class="px-4 py-2 bg-indigo-500 text-white text-sm rounded-md hover:bg-indigo-600 transition-colors duration-200">
+                    번역하기
+                </button>
+            </form>
+            
+            <form action="/songview/<%= song.name %>" method="get">
+                <button type="submit" 
+                        class="px-4 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors duration-200">
+                    보기
+                </button>
+            </form>
+        </div>
+
+        <!-- 실패한 문장들 -->
+        <% if (Array.isArray(song.failedLines) && song.failedLines.length > 0) { %>
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">번역에 실패한 문장들</h2>
+                <ul class="space-y-2 mb-4">
+                    <% song.failedLines.forEach(function(context) { %>
+                        <li class="text-gray-600"><%= JSON.stringify(context) %></li>
+                    <% }); %>
+                </ul>
+                <form action="/retry-translation/<%= song.name %>" method="post">
+                    <button type="submit" 
+                            class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-md hover:bg-yellow-600 transition-colors duration-200">
+                        실패한 문장 다시 번역하기
+                    </button>
+                </form>
+            </div>
+        <% } %>
+
+        <!-- 뒤로 가기 링크 -->
+        <div class="text-center">
+            <a href="/songs" 
+               class="inline-block px-4 py-2 text-blue-600 hover:text-blue-800 transition-colors duration-200 text-sm">
+                ← 노래 목록으로 돌아가기
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "full-song",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "japan": "node server.js jp",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/generative-ai": "^0.23.0",
+    "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "hangul-js": "^0.2.6",
+    "html-to-text": "^9.0.5",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.63.0"
+  }
+}

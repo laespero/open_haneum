@@ -1,0 +1,1113 @@
+{
+  "name": "reflection",
+  "text": "Look at me, I will never pass for a perfect bride\nOr a perfect daughter\nCan it be I'm not meant to play this part?\nNow I see that if I were truly to be myself\nI would break my family's heart\nWho is that girl I see\nStaring straight back at me?\nWhy is my reflection someone I don't know?\nSomehow, I cannot hide\nWho I am, though I've tried\nWhen will my reflection show who I am inside?\nWhen will my reflection show who I am inside?",
+  "p1": [
+    "Look at me, I will never pass for a perfect bride",
+    "Or a perfect daughter",
+    "Can it be I'm not meant to play this part?",
+    "Now I see that if I were truly to be myself",
+    "I would break my family's heart",
+    "Who is that girl I see",
+    "Staring straight back at me?",
+    "Why is my reflection someone I don't know?",
+    "Somehow, I cannot hide",
+    "Who I am, though I've tried",
+    "When will my reflection show who I am inside?"
+  ],
+  "contextText": [
+    {
+      "T0": "Look at me, I will never pass for a perfect bride",
+      "CX": "Look at me, I will never pass for a perfect bride Or a perfect daughter"
+    },
+    {
+      "T0": "Or a perfect daughter",
+      "CX": "Look at me, I will never pass for a perfect bride Or a perfect daughter Can it be I'm not meant to play this part?"
+    },
+    {
+      "T0": "Can it be I'm not meant to play this part?",
+      "CX": "Or a perfect daughter Can it be I'm not meant to play this part? Now I see that if I were truly to be myself"
+    },
+    {
+      "T0": "Now I see that if I were truly to be myself",
+      "CX": "Can it be I'm not meant to play this part? Now I see that if I were truly to be myself I would break my family's heart"
+    },
+    {
+      "T0": "I would break my family's heart",
+      "CX": "Now I see that if I were truly to be myself I would break my family's heart Who is that girl I see"
+    },
+    {
+      "T0": "Who is that girl I see",
+      "CX": "I would break my family's heart Who is that girl I see Staring straight back at me?"
+    },
+    {
+      "T0": "Staring straight back at me?",
+      "CX": "Who is that girl I see Staring straight back at me? Why is my reflection someone I don't know?"
+    },
+    {
+      "T0": "Why is my reflection someone I don't know?",
+      "CX": "Staring straight back at me? Why is my reflection someone I don't know? Somehow, I cannot hide"
+    },
+    {
+      "T0": "Somehow, I cannot hide",
+      "CX": "Why is my reflection someone I don't know? Somehow, I cannot hide Who I am, though I've tried"
+    },
+    {
+      "T0": "Who I am, though I've tried",
+      "CX": "Somehow, I cannot hide Who I am, though I've tried When will my reflection show who I am inside?"
+    },
+    {
+      "T0": "When will my reflection show who I am inside?",
+      "CX": "Who I am, though I've tried When will my reflection show who I am inside?"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "Or a perfect daughter",
+      "C0": "날 봐, 나는 절대 완벽한 신부나 완벽한 딸로 보이지 않을 거야. 내가 이 역할을 하지 않도록 운명 지어진 건가?",
+      "G0": "'Or a perfect daughter'에서 'Or'는 앞문장을 부정한 후 또 다른 가능성을 제시하고, 'a perfect daughter'는 완벽한 딸을 의미하는 명사구입니다.",
+      "K0": "또는 완벽한 딸",
+      "R0": "오얼 어 퍼펙트 도러",
+      "LI": [
+        {
+          "T1": "Or",
+          "K1": "또는",
+          "R1": "오얼",
+          "E1": "'Or'는 둘 이상의 선택지 중 하나를 선택할 수 있음을 나타내는 접속사입니다.",
+          "T2": "or",
+          "K2": "또는",
+          "R2": "오얼",
+          "XE": "Would you like coffee or tea?",
+          "XK": "커피나 차 중 어떤 걸 원하세요?",
+          "XR": "우드 유 라이크 커피 오얼 티?"
+        },
+        {
+          "T1": "a",
+          "K1": "하나의",
+          "R1": "어",
+          "E1": "'A'는 단수 명사 앞에 쓰여 정해지지 않은 단일 대상을 나타내는 부정관사입니다.",
+          "T2": "a",
+          "K2": "하나의",
+          "R2": "어",
+          "XE": "I saw a cat on the street.",
+          "XK": "나는 거리에서 고양이 한 마리를 보았어.",
+          "XR": "아이 소 어 캣 온 더 스트리트"
+        },
+        {
+          "T1": "perfect",
+          "K1": "완벽한",
+          "R1": "퍼펙트",
+          "E1": "'Perfect'는 결점이나 흠이 없는 상태를 의미하는 형용사입니다.",
+          "T2": "perfect",
+          "K2": "완벽한",
+          "R2": "퍼펙트",
+          "XE": "She has perfect timing.",
+          "XK": "그녀는 완벽한 타이밍을 가지고 있어.",
+          "XR": "쉬 해즈 퍼펙트 타이밍"
+        },
+        {
+          "T1": "daughter",
+          "K1": "딸",
+          "R1": "도러",
+          "E1": "'Daughter'는 사람의 여자 자녀를 의미하는 명사입니다.",
+          "T2": "daughter",
+          "K2": "딸",
+          "R2": "도러",
+          "XE": "My daughter loves to read.",
+          "XK": "내 딸은 읽기를 좋아해.",
+          "XR": "마이 도러 러브즈 투 리드"
+        }
+      ]
+    },
+    {
+      "T0": "Who is that girl I see",
+      "C0": "나는 가족의 마음을 아프게 할 것이다. 내가 보는 저 소녀는 누구인가? 나를 똑바로 바라보는?",
+      "G0": "'Who is that girl I see'는 의문사(Who), 동사(is), 지시 대명사(that), 명사(girl), 관계 대명사(I), 동사(see)로 이루어진 문장입니다. 이는 화자가 보고 있는 소녀의 정체를 묻는 형태의 문장입니다.",
+      "K0": "내가 보는 저 소녀는 누구인가?",
+      "R0": "후 이즈 댓 걸 아이 시",
+      "LI": [
+        {
+          "T1": "Who",
+          "K1": "누구",
+          "R1": "후",
+          "E1": "'Who'는 사람을 가리킬 때 사용하는 의문사입니다. 질문을 시작할 때 쓰이며, 사람의 정체를 물을 때 사용합니다.",
+          "T2": "who",
+          "K2": "누구",
+          "R2": "후",
+          "XE": "Who are you?",
+          "XK": "너는 누구니?",
+          "XR": "후 아 유?"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 be 동사의 한 형태로, 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She is a student.",
+          "XK": "그녀는 학생이다.",
+          "XR": "쉬 이즈 어 스튜던트"
+        },
+        {
+          "T1": "that",
+          "K1": "저",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시 대명사입니다. 여기서는 화자가 보고 있는 소녀를 가리킵니다.",
+          "T2": "that",
+          "K2": "저",
+          "R2": "댓",
+          "XE": "Do you see that car?",
+          "XK": "저 차 보이니?",
+          "XR": "두 유 시 댓 카?"
+        },
+        {
+          "T1": "girl",
+          "K1": "소녀",
+          "R1": "걸",
+          "E1": "'Girl'은 젊은 여성 또는 소녀를 가리키는 명사입니다.",
+          "T2": "girl",
+          "K2": "소녀",
+          "R2": "걸",
+          "XE": "The girl is playing outside.",
+          "XK": "그 소녀는 밖에서 놀고 있다.",
+          "XR": "더 걸 이즈 플레이잉 아웃사이드"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 의미하는 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the market.",
+          "XK": "나는 시장에 가고 있다.",
+          "XR": "아이 엠 고잉 투 더 마켓"
+        },
+        {
+          "T1": "see",
+          "K1": "보다",
+          "R1": "시",
+          "E1": "'See'는 시각적으로 인식하는 행위를 나타내는 동사입니다.",
+          "T2": "see",
+          "K2": "보다",
+          "R2": "시",
+          "XE": "Can you see that?",
+          "XK": "저게 보이니?",
+          "XR": "캔 유 시 댓?"
+        }
+      ]
+    },
+    {
+      "T0": "Somehow, I cannot hide",
+      "C0": "왜 내 반사된 모습이 내가 모르는 사람일까? 어떤 식으로든, 나는 숨길 수 없어 내가 누구인지, 노력했어도",
+      "G0": "'Somehow, I cannot hide'는 주어(I), 부사(사), 동사(cannot hide)로 이루어져 있습니다. 'somehow'는 '어떤 식으로든'이라는 의미의 부사이며, 'cannot'은 '할 수 없다'는 뜻의 조동사로, 'hide'는 '숨기다'라는 동사입니다.",
+      "K0": "어떤 식으로든, 나는 숨길 수 없어",
+      "R0": "섬하우, 아이 캔낫 하이드",
+      "LI": [
+        {
+          "T1": "Somehow",
+          "K1": "어떤 식으로든",
+          "R1": "섬하우",
+          "E1": "'Somehow'는 특정한 방식이 명확하지 않음을 나타내는 부사입니다. 즉, 정확한 방법은 모르지만 어떤 식으로든 행동이나 상황이 발생할 때 사용합니다.",
+          "T2": "somehow",
+          "K2": "어떤 식으로든",
+          "R2": "섬하우",
+          "XE": "We will manage to finish it somehow.",
+          "XK": "어떻게든 그걸 마칠 수 있을 거야.",
+          "XR": "위 윌 매니지 투 피니시 잇 섬하우"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 단수 주어로, 화자를 의미합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "cannot",
+          "K1": "~할 수 없다",
+          "R1": "캔낫",
+          "E1": "'Cannot'는 '할 수 없다'는 뜻의 조동사입니다. 어떤 행동을 할 능력이나 여건이 안 될 때 사용합니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "I cannot swim well.",
+          "XK": "나는 수영을 잘 못 해.",
+          "XR": "아이 캔낫 스윔 웰"
+        },
+        {
+          "T1": "hide",
+          "K1": "숨기다",
+          "R1": "하이드",
+          "E1": "'Hide'는 사람이나 물건을 보이지 않게 숨기는 행위를 뜻하는 동사입니다.",
+          "T2": "hide",
+          "K2": "숨기다",
+          "R2": "하이드",
+          "XE": "He tried to hide the truth.",
+          "XK": "그는 진실을 숨기려고 했다.",
+          "XR": "히 트라이드 투 하이드 더 트루쓰"
+        }
+      ]
+    },
+    {
+      "T0": "I would break my family's heart",
+      "C0": "이제 내가 진정으로 나 자신이 된다면 가족의 마음을 아프게 할 것이라는 걸 알겠어. 저기에 보이는 저 소녀가 누구지?",
+      "G0": "'I would break my family's heart'는 주어(I), 조동사(would), 동사(break), 소유격(my family's)과 목적어(heart)로 구성된 문장입니다. 여기서 조동사 'would'는 가정법을 사용하여 어떠한 상황이 발생할 경우 일어날 결과를 나타냅니다.",
+      "K0": "나는 가족의 마음을 아프게 할 거야.",
+      "R0": "아이 우드 브레이크 마이 패밀리즈 하트",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 가고 있어.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "would",
+          "K1": "~할 것이다",
+          "R1": "우드",
+          "E1": "'Would'는 가정법을 표현하는 조동사로, 어떤 조건 하에서 발생할 가능성이 있는 일을 나타냅니다.",
+          "T2": "would",
+          "K2": "~할 것이다",
+          "R2": "우드",
+          "XE": "He would come if he could.",
+          "XK": "그는 올 수 있으면 올 거야.",
+          "XR": "히 우드 컴 이프 히 쿠드"
+        },
+        {
+          "T1": "break",
+          "K1": "깨다",
+          "R1": "브레이크",
+          "E1": "'Break'는 물리적으로 무엇인가를 깨거나 손상시키는 행위를 말합니다. 여기서는 '마음을 아프게 하다'의 의미로 사용되었습니다.",
+          "T2": "break",
+          "K2": "깨다",
+          "R2": "브레이크",
+          "XE": "Break the glass carefully.",
+          "XK": "유리를 조심히 깨.",
+          "XR": "브레이크 더 글래스 케어풀리"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 소유격 대명사로, 소유하는 대상을 나타냅니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 나의 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "family's",
+          "K1": "가족의",
+          "R1": "패밀리즈",
+          "E1": "'Family's'는 소유격으로, 가족이 소유하거나 관련된 것을 나타냅니다.",
+          "T2": "family",
+          "K2": "가족",
+          "R2": "패밀리",
+          "XE": "My family's support is very important to me.",
+          "XK": "나의 가족의 지지가 나에게 매우 중요해.",
+          "XR": "마이 패밀리즈 서포트 이즈 베리 임포턴트 투 미"
+        },
+        {
+          "T1": "heart",
+          "K1": "마음",
+          "R1": "하트",
+          "E1": "'Heart'는 몸의 장기인 심장을 의미하지만, 문맥에 따라 감정이나 마음을 뜻하기도 합니다.",
+          "T2": "heart",
+          "K2": "마음",
+          "R2": "하트",
+          "XE": "She has a kind heart.",
+          "XK": "그녀는 마음씨가 착하다.",
+          "XR": "쉬 해즈 어 카인드 하트"
+        }
+      ]
+    },
+    {
+      "T0": "Can it be I'm not meant to play this part?",
+      "C0": "혹은 완벽한 딸이 될 수 있을까? 내가 이 역할을 맡기로 되어 있지 않다는 것일까? 이제 내가 진정으로 나 자신이 된다면",
+      "G0": "'Can it be I'm not meant to play this part?'는 의문문 구조로, 'Can it be' (그럴 수 있을까)와 'I'm not meant to play this part'(나는 이 역할을 맡기로 되어 있지 않다)의 결합으로 이루어진 문장입니다. 이는 화자의 의구심을 나타냅니다.",
+      "K0": "내가 이 역할을 맡기로 되어 있지 않다는 것일까?",
+      "R0": "캔 잇 비 아임 낫 민트 투 플레이 디스 파트?",
+      "LI": [
+        {
+          "T1": "Can",
+          "K1": "~할 수 있다",
+          "R1": "캔",
+          "E1": "'Can'은 능력을 나타내거나 허락을 구하는 조동사입니다. 여기서는 가능성을 묻는 역할을 합니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "Can you help me?",
+          "XK": "도와줄 수 있어?",
+          "XR": "캔 유 헬프 미?"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 문맥에 따라 특정 대상을 가리키는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재, 상태, 특성을 나타내는 동사입니다. 여기서는 'can'과 결합되어 가능성을 나타냅니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "To be or not to be.",
+          "XK": "사는 것인가 죽는 것인가.",
+          "XR": "투 비 오 낫 투 비"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 주어와 동사를 결합하여 사용합니다.",
+          "T2": "I am",
+          "K2": "나는 ~이다",
+          "R2": "아이 엠",
+          "XE": "I'm a student.",
+          "XK": "나는 학생이야.",
+          "XR": "아임 어 스튜던트"
+        },
+        {
+          "T1": "not",
+          "K1": "~이 아니다",
+          "R1": "낫",
+          "E1": "'Not'은 부정어로, 문장 내에서 동사나 그 외 요소를 부정합니다.",
+          "T2": "not",
+          "K2": "~이 아니다",
+          "R2": "낫",
+          "XE": "I am not happy.",
+          "XK": "나는 행복하지 않아.",
+          "XR": "아이 엠 낫 해피"
+        },
+        {
+          "T1": "meant",
+          "K1": "의도된",
+          "R1": "민트",
+          "E1": "'Meant'는 'mean'의 과거분사 형태로, 어떤 목적이나 의도를 나타냅니다.",
+          "T2": "mean",
+          "K2": "의도하다",
+          "R2": "민",
+          "XE": "She was meant to be here.",
+          "XK": "그녀는 여기 오기로 되어 있었다.",
+          "XR": "쉬 워즈 민트 투 비 히어"
+        },
+        {
+          "T1": "to",
+          "K1": "~하기 위해",
+          "R1": "투",
+          "E1": "'To'는 부정사를 형성하며, 동사의 목적을 나타냅니다.",
+          "T2": "to",
+          "K2": "~하기 위해",
+          "R2": "투",
+          "XE": "I want to eat.",
+          "XK": "나는 먹고 싶다.",
+          "XR": "아이 원트 투 잇"
+        },
+        {
+          "T1": "play",
+          "K1": "연기하다",
+          "R1": "플레이",
+          "E1": "'Play'는 특정 역할을 맡아 행동하는 것을 의미합니다.",
+          "T2": "play",
+          "K2": "연기하다",
+          "R2": "플레이",
+          "XE": "He likes to play guitar.",
+          "XK": "그는 기타 치는 것을 좋아해.",
+          "XR": "히 라이크스 투 플레이 기타"
+        },
+        {
+          "T1": "this",
+          "K1": "이",
+          "R1": "디스",
+          "E1": "'This'는 가까이 있는 사람이나 물건을 가리키는 지시 대명사입니다.",
+          "T2": "this",
+          "K2": "이",
+          "R2": "디스",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "part",
+          "K1": "역할",
+          "R1": "파트",
+          "E1": "'Part'는 어떤 전체 중의 일부분을 의미하며, 여기서는 맡은 역할을 뜻합니다.",
+          "T2": "part",
+          "K2": "역할",
+          "R2": "파트",
+          "XE": "He got the main part in the play.",
+          "XK": "그는 연극에서 주인공 역할을 맡았어.",
+          "XR": "히 갓 더 메인 파트 인 더 플레이"
+        }
+      ]
+    },
+    {
+      "T0": "Now I see that if I were truly to be myself",
+      "C0": "내가 이 역할을 하도록 운명 지어진 것이 아닐까? 이제 난 내가 진정으로 나 자신이 된다면 우리 가족의 마음을 아프게 할 거라는 걸 알게 되었어.",
+      "G0": "'Now I see that if I were truly to be myself'는 주어(I), 동사(see), 조건 구문(if I were to be myself)로 이루어진 문장 구조로, 현재 상황에 대한 인식을 표현합니다.",
+      "K0": "이제 내가 진정으로 나 자신이 된다면",
+      "R0": "나우 아이 씨 댓 이프 아이 월 트룰리 투 비 마이셀프",
+      "LI": [
+        {
+          "T1": "Now",
+          "K1": "이제",
+          "R1": "나우",
+          "E1": "'Now'는 현재를 나타내는 부사입니다.",
+          "T2": "now",
+          "K2": "이제",
+          "R2": "나우",
+          "XE": "Now we can start the meeting.",
+          "XK": "이제 우리는 회의를 시작할 수 있습니다.",
+          "XR": "나우 위 캔 스타트 더 미팅"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 단수 주어입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 앰 고잉 투 더 스토어"
+        },
+        {
+          "T1": "see",
+          "K1": "보다",
+          "R1": "씨",
+          "E1": "'See'는 시각적으로 인지하는 행위를 나타내는 동사입니다.",
+          "T2": "see",
+          "K2": "보다",
+          "R2": "씨",
+          "XE": "I see the mountains in the distance.",
+          "XK": "나는 멀리 있는 산을 본다.",
+          "XR": "아이 씨 더 마운틴즈 인 더 디스턴스"
+        },
+        {
+          "T1": "that",
+          "K1": "그것",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시 대명사입니다.",
+          "T2": "that",
+          "K2": "그것",
+          "R2": "댓",
+          "XE": "That is my bag.",
+          "XK": "저것은 내 가방이야.",
+          "XR": "댓 이즈 마이 백"
+        },
+        {
+          "T1": "if",
+          "K1": "만약 ~라면",
+          "R1": "이프",
+          "E1": "'If'는 조건을 나타내는 접속사입니다.",
+          "T2": "if",
+          "K2": "만약 ~라면",
+          "R2": "이프",
+          "XE": "If it rains, we will stay inside.",
+          "XK": "비가 오면 우리는 실내에 있을 것이다.",
+          "XR": "이프 잇 레인즈, 위 윌 스테이 인사이드"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 단수 주어입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 앰 해피"
+        },
+        {
+          "T1": "were",
+          "K1": "~였었다",
+          "R1": "월",
+          "E1": "'Were'는 비동사(be)의 과거형으로, 조건문에서 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "If I were you, I would do it.",
+          "XK": "내가 너라면, 그걸 할 거야.",
+          "XR": "이프 아이 웨어 유, 아이 월드 두 잇"
+        },
+        {
+          "T1": "truly",
+          "K1": "진정으로",
+          "R1": "트룰리",
+          "E1": "'Truly'는 진정한 방식으로를 의미하는 부사입니다.",
+          "T2": "true",
+          "K2": "진정한",
+          "R2": "트루",
+          "XE": "She truly cares about you.",
+          "XK": "그녀는 정말로 너를 신경 써.",
+          "XR": "쉬 트룰리 케어즈 어바웃 유"
+        },
+        {
+          "T1": "to be",
+          "K1": "되다",
+          "R1": "투 비",
+          "E1": "'To be'는 존재나 상태를 나타내는 구문입니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "To be or not to be, that is the question.",
+          "XK": "존재하느냐 아니냐, 그것이 문제로다.",
+          "XR": "투 비 오어 낫 투 비, 댓 이즈 더 퀘스쳔"
+        },
+        {
+          "T1": "myself",
+          "K1": "나 자신",
+          "R1": "마이셀프",
+          "E1": "'Myself'는 화자 자신을 나타내는 재귀 대명사입니다.",
+          "T2": "myself",
+          "K2": "나 자신",
+          "R2": "마이셀프",
+          "XE": "I will do it myself.",
+          "XK": "내가 직접 할 거야.",
+          "XR": "아이 윌 두 잇 마이셀프"
+        }
+      ]
+    },
+    {
+      "T0": "When will my reflection show who I am inside?",
+      "C0": "내가 누구인지 알아보려고 했지만, 내가 누구인지 내면을 보여줄 때가 언제일까?",
+      "G0": "'When will my reflection show who I am inside?'는 의문문 구조로, 주어(my reflection), 동사(show), 목적어(who I am inside), 부사절(when will)로 이루어져 있습니다.",
+      "K0": "나의 내면을 비추는 모습이 언제 드러날까?",
+      "R0": "웬 윌 마이 리플렉션 쇼 후 아이 엠 인사이드?",
+      "LI": [
+        {
+          "T1": "When",
+          "K1": "언제",
+          "R1": "웬",
+          "E1": "'When'은 시간이나 시점을 묻는 의문사로 문장 전체의 시간 정보를 궁금할 때 사용됩니다.",
+          "T2": "when",
+          "K2": "언제",
+          "R2": "웬",
+          "XE": "When will you arrive?",
+          "XK": "넌 언제 도착할 거야?",
+          "XR": "웬 윌 유 어라이브?"
+        },
+        {
+          "T1": "will",
+          "K1": "~할 것이다",
+          "R1": "윌",
+          "E1": "'Will'은 미래를 나타내기 위해 사용되는 조동사로, 의지나 예측을 표현합니다.",
+          "T2": "will",
+          "K2": "~할 것이다",
+          "R2": "윌",
+          "XE": "I will be there tomorrow.",
+          "XK": "내일 거기 있을게.",
+          "XR": "아이 윌 비 데어 투모로우"
+        },
+        {
+          "T1": "my",
+          "K1": "내",
+          "R1": "마이",
+          "E1": "'My'는 소유격 대명사로, 나의 소유임을 나타냅니다.",
+          "T2": "my",
+          "K2": "내",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이건 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "reflection",
+          "K1": "반사된 모습",
+          "R1": "리플렉션",
+          "E1": "'Reflection'은 거울이나 물에 비친 모습을 말합니다.",
+          "T2": "reflection",
+          "K2": "반사된 모습",
+          "R2": "리플렉션",
+          "XE": "I see my reflection in the mirror.",
+          "XK": "거울 속에서 내 반사된 모습을 본다.",
+          "XR": "아이 씨 마이 리플렉션 인 더 미러"
+        },
+        {
+          "T1": "show",
+          "K1": "보여주다",
+          "R1": "쇼",
+          "E1": "'Show'는 무엇을 나타내거나 드러내는 동사입니다.",
+          "T2": "show",
+          "K2": "보여주다",
+          "R2": "쇼",
+          "XE": "Can you show me the way?",
+          "XK": "길을 알려줄 수 있어?",
+          "XR": "캔 유 쇼 미 더 웨이?"
+        },
+        {
+          "T1": "who",
+          "K1": "누구",
+          "R1": "후",
+          "E1": "'Who'는 사람에 대해 질문할 때 사용되는 의문사입니다.",
+          "T2": "who",
+          "K2": "누구",
+          "R2": "후",
+          "XE": "Who is that?",
+          "XK": "저 사람 누구야?",
+          "XR": "후 이즈 댓?"
+        },
+        {
+          "T1": "I",
+          "K1": "나는",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나는",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생이다.",
+          "XR": "아이 엠 어 스튜던트"
+        },
+        {
+          "T1": "am",
+          "K1": "~이다",
+          "R1": "엠",
+          "E1": "'Am'은 be 동사의 현재형으로 주어가 '나'일 때 사용합니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "inside",
+          "K1": "내면",
+          "R1": "인사이드",
+          "E1": "'Inside'는 무언가의 내부를 나타내는 전치사나 부사입니다.",
+          "T2": "inside",
+          "K2": "내면",
+          "R2": "인사이드",
+          "XE": "It's warm inside.",
+          "XK": "안은 따뜻해.",
+          "XR": "잇츠 웜 인사이드"
+        }
+      ]
+    },
+    {
+      "T0": "Staring straight back at me?",
+      "C0": "내가 보는 저 여자 누구지? 나를 똑바로 쳐다봐? 왜 내 반영이 내가 모르는 사람이지?",
+      "G0": "'Staring straight back at me?'는 동명사(staring)로 시작하여 주어(me)와 전치사구(straight back at)를 포함한 의문문입니다. 이 문장은 주어가 объект를 바라보는 시선을 묘사합니다.",
+      "K0": "날 똑바로 쳐다보고 있는 거야?",
+      "R0": "스태어링 스트레이트 백 앳 미?",
+      "LI": [
+        {
+          "T1": "Staring",
+          "K1": "응시하다",
+          "R1": "스태어링",
+          "E1": "'Staring'은 누구나 무언가를 집중해서 바라볼 때 사용되는 단어로, 고정된 시선을 의미합니다.",
+          "T2": "stare",
+          "K2": "응시하다",
+          "R2": "스태어",
+          "XE": "She was staring at the painting for hours.",
+          "XK": "그녀는 몇 시간 동안 그 그림을 응시하고 있었다.",
+          "XR": "쉬 워즈 스태어링 앳 더 페인팅 포어 아워즈"
+        },
+        {
+          "T1": "straight",
+          "K1": "똑바로",
+          "R1": "스트레이트",
+          "E1": "'Straight'는 구부러짐 없이 곧은 상태를 의미하며, 여기서는 방향을 얘기하는 부사로 사용되었습니다.",
+          "T2": "straight",
+          "K2": "똑바로",
+          "R2": "스트레이트",
+          "XE": "Please look straight ahead.",
+          "XK": "똑바로 앞을 보세요.",
+          "XR": "플리즈 룩 스트레이트 어헤드"
+        },
+        {
+          "T1": "back",
+          "K1": "뒤로",
+          "R1": "백",
+          "E1": "'Back'은 위치나 방향을 나타내며, 여기서는 주어(me)로부터 뒤 또는 다시로 해석됩니다.",
+          "T2": "back",
+          "K2": "뒤로",
+          "R2": "백",
+          "XE": "He glanced back at the house.",
+          "XK": "그는 집을 힐끗 뒤돌아보았다.",
+          "XR": "히 글랜스드 백 앳 더 하우스"
+        },
+        {
+          "T1": "at",
+          "K1": "~에",
+          "R1": "앳",
+          "E1": "'At'는 위치나 방향을 나타내는 전치사로, 특정한 점이나 위치를 가리킬 때 사용됩니다.",
+          "T2": "at",
+          "K2": "~에",
+          "R2": "앳",
+          "XE": "She is looking at the picture.",
+          "XK": "그녀는 그림을 보고 있다.",
+          "XR": "쉬 이즈 루킹 앳 더 픽처"
+        },
+        {
+          "T1": "me",
+          "K1": "나를",
+          "R1": "미",
+          "E1": "'Me'는 화자를 나타내는 목적격 대명사로, 문장에서 동사의 목적어나 전치사의 목적어로 사용됩니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "Can you hear me?",
+          "XK": "나 들리니?",
+          "XR": "캔 유 히어 미?"
+        }
+      ]
+    },
+    {
+      "T0": "Look at me, I will never pass for a perfect bride",
+      "C0": "날 봐, 나는 결코 완벽한 신부가 될 수 없을 거야 또 완벽한 딸도 될 수 없을 거야",
+      "G0": "'Look at me, I will never pass for a perfect bride'는 명령문(Look at me)과 주절(I will never pass for a perfect bride)로 나뉘는 문장입니다. 주절은 주어(I), 부정어(never), 동사(pass), 전치사(for), 목적어(a perfect bride)로 구성됩니다.",
+      "K0": "날 봐, 나는 결코 완벽한 신부가 될 수 없을 거야",
+      "R0": "룩 앳 미, 아이 윌 네버 패스 포어 어 퍼펙트 브라이드",
+      "LI": [
+        {
+          "T1": "Look",
+          "K1": "보다",
+          "R1": "룩",
+          "E1": "'Look'은 눈으로 무엇을 인지하거나 보는 행위를 나타내는 동사입니다.",
+          "T2": "look",
+          "K2": "보다",
+          "R2": "룩",
+          "XE": "Look at the stars.",
+          "XK": "별들을 봐.",
+          "XR": "룩 앳 더 스타즈"
+        },
+        {
+          "T1": "at",
+          "K1": "~에",
+          "R1": "앳",
+          "E1": "'At'은 위치, 시간을 나타내는 전치사로 사용됩니다. 여기서 'Look at me'는 상대에게 주의와 시선을 자신에게 돌리라고 요청하는 표현입니다.",
+          "T2": "at",
+          "K2": "~에",
+          "R2": "앳",
+          "XE": "She is at the park.",
+          "XK": "그녀는 공원에 있어.",
+          "XR": "쉬 이즈 앳 더 파크"
+        },
+        {
+          "T1": "me",
+          "K1": "나",
+          "R1": "미",
+          "E1": "'Me'는 '나'를 의미하는 대명사로, 문장에서 목적격으로 쓰입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "Give me the book.",
+          "XK": "나에게 책을 줘.",
+          "XR": "기브 미 더 북"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 주어로 쓰이는 대명사로, 문장에서 화자를 나타냅니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생입니다.",
+          "XR": "아이 엠 어 스투던트"
+        },
+        {
+          "T1": "will",
+          "K1": "~할 것이다",
+          "R1": "윌",
+          "E1": "'Will'은 미래 시제를 나타내는 조동사로, 앞으로 일어날 일을 표현합니다.",
+          "T2": "will",
+          "K2": "~할 것이다",
+          "R2": "윌",
+          "XE": "I will go to the market.",
+          "XK": "나는 시장에 갈 것이다.",
+          "XR": "아이 윌 고 투 더 마켓"
+        },
+        {
+          "T1": "never",
+          "K1": "결코 ~하지 않다",
+          "R1": "네버",
+          "E1": "'Never'는 '한 번도 ~하지 않았다'라는 의미로, 강력한 부정을 나타내는 부사입니다.",
+          "T2": "never",
+          "K2": "결코 ~하지 않다",
+          "R2": "네버",
+          "XE": "I will never give up.",
+          "XK": "나는 절대 포기하지 않을 것이다.",
+          "XR": "아이 윌 네버 기브 업"
+        },
+        {
+          "T1": "pass",
+          "K1": "통과하다",
+          "R1": "패스",
+          "E1": "'Pass'는 시험이나 검사를 통과하거나 어떤 상태를 인정받는 것을 의미하는 동사입니다.",
+          "T2": "pass",
+          "K2": "통과하다",
+          "R2": "패스",
+          "XE": "You need to pass the exam.",
+          "XK": "너는 시험을 통과해야 해.",
+          "XR": "유 니드 투 패스 디 이그잼"
+        },
+        {
+          "T1": "for",
+          "K1": "~을 위해",
+          "R1": "포어",
+          "E1": "'For'는 목적이나 대상을 나타내는 전치사입니다. 여기서는 특정 기준을 나타내고 있습니다.",
+          "T2": "for",
+          "K2": "~을 위해",
+          "R2": "포어",
+          "XE": "This gift is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 기프트 이즈 포어 유"
+        },
+        {
+          "T1": "a",
+          "K1": "하나의",
+          "R1": "어",
+          "E1": "'A'는 단수를 나타내는 부정관사로, 특정하지 않은 하나의 대상을 가리킵니다.",
+          "T2": "a",
+          "K2": "하나의",
+          "R2": "어",
+          "XE": "I have a cat.",
+          "XK": "나는 고양이가 하나 있어.",
+          "XR": "아이 해브 어 캣"
+        },
+        {
+          "T1": "perfect",
+          "K1": "완벽한",
+          "R1": "퍼펙트",
+          "E1": "'Perfect'는 결점이나 부족함이 없는 상태를 나타내는 형용사입니다.",
+          "T2": "perfect",
+          "K2": "완벽한",
+          "R2": "퍼펙트",
+          "XE": "It was a perfect day.",
+          "XK": "완벽한 하루였어.",
+          "XR": "잇 워즈 어 퍼펙트 데이"
+        },
+        {
+          "T1": "bride",
+          "K1": "신부",
+          "R1": "브라이드",
+          "E1": "'Bride'는 결혼식에서 결혼하는 여성, 즉 신부를 의미하는 명사입니다.",
+          "T2": "bride",
+          "K2": "신부",
+          "R2": "브라이드",
+          "XE": "She looked beautiful as a bride.",
+          "XK": "그녀는 신부로서 아름다워 보였다.",
+          "XR": "쉬 룩드 뷰티풀 애즈 어 브라이드"
+        }
+      ]
+    },
+    {
+      "T0": "Who I am, though I've tried",
+      "C0": "어떻게든, 나는 내가 누구인지를 숨길 수 없어. 내가 누구인지 나의 반영이 언제 내 안의 모습을 보여줄까?",
+      "G0": "'Who I am, though I've tried'는 주어('I'), 동사('have tried'), 목적어('Who I am')로 구성된 문장으로, 'Who I am'은 의문사절로, 주어가 되는 부분을 설명합니다.",
+      "K0": "내가 누구인지, 노력했지만 숨길 수 없어",
+      "R0": "후 아이 엠, 도우 아이브 트라이드",
+      "LI": [
+        {
+          "T1": "Who",
+          "K1": "누구",
+          "R1": "후",
+          "E1": "'Who'는 사람을 나타내는 의문사로, 여기서는 '누구인지'를 묻는 역할을 합니다.",
+          "T2": "who",
+          "K2": "누구",
+          "R2": "후",
+          "XE": "Who is she?",
+          "XK": "그녀는 누구야?",
+          "XR": "후 이즈 쉬?"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 의미하는 일인칭 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생이다.",
+          "XR": "아이 엠 어 스튜던트"
+        },
+        {
+          "T1": "am",
+          "K1": "~이다",
+          "R1": "엠",
+          "E1": "'Am'은 주어가 'I'일 때 사용하는 be 동사의 현재형입니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I am happy.",
+          "XK": "나는 행복하다.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "though",
+          "K1": "~에도 불구하고",
+          "R1": "도우",
+          "E1": "'Though'는 역접의 의미를 나타내며, 앞뒤 문장을 연결하여 반대되는 의미를 전합니다.",
+          "T2": "though",
+          "K2": "~에도 불구하고",
+          "R2": "도우",
+          "XE": "Though it was raining, we went out.",
+          "XK": "비가 왔음에도 불구하고, 우리는 나갔다.",
+          "XR": "도우 잇 워즈 레이닝, 위 웬트 아웃"
+        },
+        {
+          "T1": "I've",
+          "K1": "내가 ~했다",
+          "R1": "아이브",
+          "E1": "'I've'는 'I have'의 축약형으로 현재완료 시제를 나타냅니다.",
+          "T2": "have",
+          "K2": "가지다",
+          "R2": "해브",
+          "XE": "I've finished my homework.",
+          "XK": "내가 숙제를 다 끝냈다.",
+          "XR": "아이브 피니쉬드 마이 홈워크"
+        },
+        {
+          "T1": "tried",
+          "K1": "노력했다",
+          "R1": "트라이드",
+          "E1": "'Tried'는 'try'의 과거형 및 과거분사형으로, 어떤 일을 시도하거나 노력한 경험을 나타냅니다.",
+          "T2": "try",
+          "K2": "시도하다",
+          "R2": "트라이",
+          "XE": "She tried to open the door.",
+          "XK": "그녀는 문을 열려고 노력했다.",
+          "XR": "쉬 트라이드 투 오픈 더 도어"
+        }
+      ]
+    },
+    {
+      "T0": "Why is my reflection someone I don't know?",
+      "C0": "정면으로 나를 되돌아보며? 왜 내 모습이 내가 모르는 누군가인가? 어떻게든, 숨길 수가 없어.",
+      "G0": "'Why is my reflection someone I don't know?'는 의문사(Why), 주어(my reflection), 동사(is), 보어(someone I don't know)로 이루어진 의문문 구조입니다. 여기서 'someone I don't know'는 주어 'my reflection'을 설명하는 관계절입니다.",
+      "K0": "왜 내 모습이 내가 모르는 누군가인가?",
+      "R0": "와이 이즈 마이 리플렉션 섬원 아이 돈트 노우?",
+      "LI": [
+        {
+          "T1": "Why",
+          "K1": "왜",
+          "R1": "와이",
+          "E1": "'Why'는 이유를 묻는 의문사로, 어떤 사건이나 상태의 원인을 질문할 때 사용합니다.",
+          "T2": "why",
+          "K2": "왜",
+          "R2": "와이",
+          "XE": "Why are you late?",
+          "XK": "왜 늦었어?",
+          "XR": "와이 아 유 레이트?"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 주어가 단수일 때 사용되는 be 동사의 현재형입니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She is a student.",
+          "XK": "그녀는 학생이다.",
+          "XR": "쉬 이즈 어 스튜던트."
+        },
+        {
+          "T1": "my",
+          "K1": "내",
+          "R1": "마이",
+          "E1": "'My'는 첫인칭 소유격 대명사로, 소유를 나타냅니다.",
+          "T2": "my",
+          "K2": "내",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이건 내 책이야.",
+          "XR": "디스 이즈 마이 북."
+        },
+        {
+          "T1": "reflection",
+          "K1": "반사된 모습",
+          "R1": "리플렉션",
+          "E1": "'Reflection'은 빛이나 이미지를 반사하는 것을 의미합니다. 특히 거울이나 물에 비치는 모습을 의미합니다.",
+          "T2": "reflection",
+          "K2": "반사된 모습",
+          "R2": "리플렉션",
+          "XE": "She saw her reflection in the mirror.",
+          "XK": "그녀는 거울에서 자신의 모습을 보았다.",
+          "XR": "쉬 소 허 리플렉션 인 더 미러."
+        },
+        {
+          "T1": "someone",
+          "K1": "누군가",
+          "R1": "섬원",
+          "E1": "'Someone'은 특정하지 않은 사람을 지칭할 때 사용되는 대명사입니다.",
+          "T2": "someone",
+          "K2": "누군가",
+          "R2": "섬원",
+          "XE": "I met someone new today.",
+          "XK": "오늘 새로운 누군가를 만났어.",
+          "XR": "아이 멧 섬원 뉴 투데이."
+        },
+        {
+          "T1": "I",
+          "K1": "내가",
+          "R1": "아이",
+          "E1": "'I'는 첫인칭 주격 대명사로, 화자를 지칭합니다.",
+          "T2": "I",
+          "K2": "내가",
+          "R2": "아이",
+          "XE": "I am a teacher.",
+          "XK": "나는 선생님이다.",
+          "XR": "아이 앰 어 티처."
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 않다",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 동사에 부정의 의미를 추가합니다.",
+          "T2": "do not",
+          "K2": "~하지 않다",
+          "R2": "두 낫",
+          "XE": "I don't like spinach.",
+          "XK": "나는 시금치를 좋아하지 않아.",
+          "XR": "아이 돈트 라익 스피니치."
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 어떤 정보나 사실에 대해 인지하는 것을 의미하는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "Do you know her name?",
+          "XK": "그녀의 이름을 아세요?",
+          "XR": "두 유 노우 허 네임?"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}
