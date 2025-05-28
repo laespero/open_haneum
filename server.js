@@ -264,6 +264,28 @@ app.get('/songs/:title', (req, res) => {
             res.send('노래 불러오기 중 오류 발생');
         } else {
             const songData = JSON.parse(data);
+            
+            // contextText와 translatedLines가 모두 존재하는 경우에만 정렬 시도
+            if (songData.contextText && songData.translatedLines) {
+                try {
+                    // contextText의 순서를 기준으로 translatedLines 정렬
+                    const sortedTranslatedLines = songData.contextText
+                        .map(context => {
+                            // T0 또는 O0와 일치하는 번역된 라인 찾기
+                            const translatedLine = songData.translatedLines.find(
+                                line => line.T0 === context.T0 || line.O0 === context.T0
+                            );
+                            return translatedLine || { T0: context.T0, K0: "번역 없음" };
+                        })
+                        .filter(line => line); // null이나 undefined 제거
+                    
+                    songData.translatedLines = sortedTranslatedLines;
+                } catch (error) {
+                    console.error('정렬 중 오류 발생:', error);
+                    // 정렬 실패 시 원본 데이터 유지
+                }
+            }
+            
             res.render('lyrics', { song: songData });
         }
     });

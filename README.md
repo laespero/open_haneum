@@ -28,6 +28,12 @@
 ### 러시아어 가사 분석
 ![러시아어 가사 예시](example_img/russian_example.png)
 
+### 프랑스어 가사 분석
+![프랑스어 가사 예시](example_img/french_example.png)
+
+### 독일어 가사 분석
+![독일어 가사 예시](example_img/german_example.png)
+
 ## 기술 스택
 
 - **Backend**: Node.js, Express.js
