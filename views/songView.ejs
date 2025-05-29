@@ -471,7 +471,7 @@
 
     <% let searchQuery = locals.searchQuery || ''; %>
     <div class="song-info-header">
-        <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 노래 목록으로 돌아가기</a>
+        <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 수정 페이지로 돌아가기</a>
         
         <h1><%= song.name %></h1>
         <% if (song.ori_name) { %>

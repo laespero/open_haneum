@@ -853,7 +853,11 @@ function toContextObj(sentences) {
 app.get('/', (req, res) => {
     // 최근 추가된 노래 20개를 가져옵니다
     const latestSongs = songCache
-        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+        .sort((a, b) => {
+            const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
+            const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
+            return dateB - dateA;
+        })
         .slice(0, 20);
 
     res.render('landing', {

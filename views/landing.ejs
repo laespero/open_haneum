@@ -67,6 +67,17 @@
                                 <% if (song.kor_name) { %>
                                     <p class="text-sm text-gray-500 mt-1"><%= song.kor_name %></p>
                                 <% } %>
+                                <p class="text-xs text-gray-400 mt-2">
+                                    <% if (song.createdAt) { %>
+                                        <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        }) %>
+                                    <% } else { %>
+                                        날짜 정보 없음
+                                    <% } %>
+                                </p>
                             </a>
                         </div>
                     <% }); %>

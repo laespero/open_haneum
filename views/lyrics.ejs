@@ -36,6 +36,12 @@
             <% if (song.eng_name) { %>
                 <p class="text-gray-500">영문 제목: <%= song.eng_name %></p>
             <% } %>
+            <div class="mt-4">
+                <a href="/songview/<%= song.name %>" 
+                   class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg transition duration-300 ease-in-out">
+                    <i class="fas fa-chart-bar mr-2"></i>분석 결과 보기
+                </a>
+            </div>
         </div>
 
         <!-- 가사 섹션 -->
