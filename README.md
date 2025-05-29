@@ -130,9 +130,10 @@ open-haneum/
 ![노래 상세 정보](example_img/song-detail.png)
 
 ### 번역에 실패할 경우, "실패한 문장 다시 번역하기"를 클릭
+![노래 상세 정보 - 실패시](example_img/song-detail-fail.png)
+
 - 문장이 짧을 수록 실패없이 더 잘 처리되는 경향이 있습니다.
 - 긴 문장은 개행을 해서 두 줄로 나누는 것이 좋습니다.
-![노래 상세 정보 - 실패시](example_img/song-detail-fail.png)
 
 ### 노래 보기
 ![노래 보기](example_img/songview.png)
