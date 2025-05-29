@@ -46,7 +46,7 @@
 
 1. 저장소 클론
 ```bash
-git clone https://github.com/yourusername/open-haneum.git
+git clone https://github.com/laespero/open-haneum.git
 cd open-haneum
 ```
 
@@ -109,8 +109,6 @@ open-haneum/
 - `POST /translate/:title`: 가사 번역
 - `POST /retry-translation/:title`: 번역 재시도
 - `POST /retry-line/:title`: 특정 라인 재번역
-- `POST /correct-hangul/:title`: 한글 발음 정정
-- `POST /correct-every-hangul/:title`: 모든 한글 발음 정정
 
 ### API
 - `GET /api/songs/:title/translated`: 번역된 가사 조회
@@ -119,10 +117,10 @@ open-haneum/
 
 ## 사용 방법
 
-1. 메인 페이지에서 "가사 추가" 버튼을 클릭하여 새 가사를 추가합니다.
-2. 가사 제목, 원문, 번역, 유튜브 링크 등을 입력합니다.
+1. 메인 페이지에서 "노래 추가" 버튼을 클릭하여 새 노래를 추가합니다.
+2. 노래 제목, 원문, 번역, 유튜브 링크 등을 입력합니다.
 3. "번역하기" 버튼을 클릭하여 AI 번역을 시작합니다.
-4. 번역이 완료되면 가사의 번역, 발음, 문법 분석 결과를 확인할 수 있습니다.
+4. 번역이 완료되면 노래 가사의 번역, 발음, 문법 분석 결과를 확인할 수 있습니다.
 5. 필요한 경우 수동으로 번역을 수정하거나 발음을 정정할 수 있습니다.
 
 ### 노래 추가 방법
@@ -131,7 +129,9 @@ open-haneum/
 ### 노래 상세 정보
 ![노래 상세 정보](example_img/song-detail.png)
 
-### 가사 처리에 실패할 경우
+### 번역에 실패할 경우, "실패한 문장 다시 번역하기"를 클릭
+- 문장이 짧을 수록 실패없이 더 잘 처리되는 경향이 있습니다.
+- 긴 문장은 개행을 해서 두 줄로 나누는 것이 좋습니다.
 ![노래 상세 정보 - 실패시](example_img/song-detail-fail.png)
 
 ### 노래 보기
@@ -162,5 +162,5 @@ open-haneum/
 이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
 ## 연락처
-프로젝트 관리자: rnnwkals1@naver.com
-해당 프로젝트에 기여하고 싶으신 경우 연락 주시면, 제가 아는 선에서 성심껏 답변드리겠습니다.
+- 프로젝트 관리자: rnnwkals1@naver.com
+- 해당 프로젝트에 기여하고 싶으신 경우 연락 주시면, 제가 아는 선에서 성심껏 답변드리겠습니다.
