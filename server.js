@@ -146,8 +146,6 @@ async function refreshSongCache() {
             const data = await fs.promises.readFile(filePath, 'utf8');
             const stats = await fs.promises.stat(filePath);
             const songData = JSON.parse(data);
-            // 파일의 수정 시간을 createdAt으로 사용
-            songData.createdAt = stats.mtime.toISOString();
             return songData;
         }));
         console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했습니다.`);
