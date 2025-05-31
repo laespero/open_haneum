@@ -21,6 +21,7 @@
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
+    "glob": "^11.0.2",
     "hangul-js": "^0.2.6",
     "html-to-text": "^9.0.5",
     "node-fetch": "^3.3.2",

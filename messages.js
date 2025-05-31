@@ -156,6 +156,7 @@ When you transcribe 'yòu/yǒu/yóu/yōu', always write it as '요우'.
 When you transcribe 'bié/biè', always write it as '비에'.
 When you transcribe 'biǎn/biàn/biān', always write it as '비엔'.
 When you transcribe 'diǎn/diàn/diān', always write it as '디엔'.
+When you transcribe 'tiān/tián/tiǎn/tiàn', always write it as '티엔'.
 When you transcribe 'gěi', always write it as '게이'.
 When you transcribe 'yān/yǎn/yán/yàn', always write it as '옌'.
 When you transcribe 'céng/cèng/cēng', always write it as '청'.

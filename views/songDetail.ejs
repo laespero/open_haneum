@@ -40,19 +40,19 @@
                         <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
                             <div class="space-y-2">
                                 <div class="text-base text-gray-700">
-                                    <%= translation && translation.R0 ? translation.R0 : '<span class="text-red-500 italic">ERR</span>' %>
+                                    <%= translation && translation.R0 ? translation.R0 : '데이터를 찾을 수 없습니다.' %>
                                 </div>
                                 <div class="text-base text-gray-700">
-                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.R1).join(' ')) : '<span class="text-red-500 italic">ERR</span>' %>
+                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.R1).join(' ')) : '데이터를 찾을 수 없습니다.' %>
                                 </div>
                                 <div class="text-base text-gray-700">
-                                    <%= translation && translation.T0 ? translation.T0 : '<span class="text-red-500 italic">ERR</span>' %>
+                                    <%= translation && translation.T0 ? translation.T0 : '데이터를 찾을 수 없습니다.' %>
                                 </div>
                                 <div class="text-base text-gray-700">
-                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.T1).join(' ')) : '<span class="text-red-500 italic">ERR</span>' %>
+                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.T1).join(' ')) : '데이터를 찾을 수 없습니다.' %>
                                 </div>
                                 <div class="text-base text-gray-700">
-                                    <%= translation && translation.K0 ? translation.K0 : '<span class="text-red-500 italic">ERR</span>' %>
+                                    <%= translation && translation.K0 ? translation.K0 : '데이터를 찾을 수 없습니다.' %>
                                 </div>
                             </div>
                             
@@ -97,7 +97,7 @@
             <form action="/songview/<%= song.name %>" method="get">
                 <button type="submit" 
                         class="px-4 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors duration-200">
-                    보기
+                    결과 보기
                 </button>
             </form>
         </div>

@@ -63,9 +63,24 @@ OPENROUTER_API_KEY=your_open_router_api_key
 ```
 
 4. 서버 실행
+
+**개발 환경:**
+
+개발 중에는 코드가 변경될 때마다 서버를 자동으로 재시작해주는 `nodemon`을 사용하는 것이 편리합니다.
+
+```bash
+npm run dev
+```
+위 명령은 `nodemon server.js`를 실행합니다.
+
+**프로덕션 환경:**
+애플리케이션 시작:
 ```bash
 npm start
 ```
+위 명령은 `node server.js` 명령을 실행합니다.
+
+서버가 시작되면 웹 브라우저에서 `http://localhost:3000`로 접속하여 확인할 수 있습니다.
 
 ## 프로젝트 구조
 

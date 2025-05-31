@@ -32,12 +32,10 @@ else {
 
 const app = express();
 app.use(cors())
-// const chatModel = "openrouter/auto";
-// const chatModel = "deepseek/deepseek-chat";
 
 const chatModel = "deepseek/deepseek-chat-v3-0324";
-//const chatModel = "qwen/qwen3-235b-a22b";
 
+// const chatModel = "openrouter/auto";
 // const chatModel = "google/gemini-2.5-pro-preview-03-25";
 // const chatModel = "deepseek-chat";
 
@@ -58,74 +56,6 @@ if (process.env.OPENROUTER_API_KEY) {
         }
     };
 }
-
-// JSON Schema 정의
-const lyricJsonSchema = {
-    name: "lyric_analysis",  // 스키마 이름 (원하는 것으로 지정 가능)
-    strict: true,            // true로 설정 시, 스키마에 정의되지 않은 속성 반환 불가
-    schema: {
-      type: "object",
-      properties: {
-        T0: {
-          type: "string",
-          description: "Lyrics to process"
-        },
-        C0: {
-          type: "string",
-          description: "Please translate the surrounding context (CX) into Korean."
-        },
-        G0: {
-          type: "string",
-          description: "Please explain the sentence structure of T0 in Korean."
-        },
-        K0: {
-          type: "string",
-          description: "Considering the context, please translate T0 into natural Korean."
-        },
-        I0: {
-          type: "string",
-          description: "Please transcribe the pronunciation of T0 in IPA."
-        },
-        R0: {
-          type: "string",
-          description: "Pronunciation of T0 according to 외래어 표기법."
-        },
-        LI: {
-          type: "array",
-          description: "List of morphological units to analyze",
-          items: {
-            type: "object",
-            properties: {
-              T1: { type: "string" },
-              K1: { type: "string" },
-              I1: { type: "string" },
-              R1: { type: "string" },
-              E1: { type: "string" },
-  
-              T2: { type: "string" },
-              K2: { type: "string" },
-              I2: { type: "string" },
-              R2: { type: "string" },
-  
-              XE: { type: "string" },
-              XK: { type: "string" },
-              XI: { type: "string" },
-              XR: { type: "string" }
-            },
-            required: [
-              "T1", "K1", "I1", "R1",
-              "E1", "T2", "K2", "I2",
-              "R2", "XE", "XK", "XI", "XR"
-            ],
-            additionalProperties: false
-          }
-        }
-      },
-      required: ["T0","C0","G0","K0","I0","R0","LI"],
-      additionalProperties: false
-    }
-  };
-  
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

@@ -736,7 +736,7 @@
           "XE": "時間があるなら行こう。",
           "XK": "시간이 있다면 가자.",
           "XI": "jikan ga aru nara ikou",
-          "XR": "지칸 가 아루나라 이코우"
+          "XR": "지칸 가 아루나라 이코오"
         }
       ],
       "O0": "<span class=\"ruby\"><span class=\"rb\">入</span><span class=\"rt\">い</span></span>れ<span class=\"ruby\"><span class=\"rb\">替</span><span class=\"rt\">か</span></span>えられるのなら"
@@ -2958,7 +2958,6 @@
           "XI": "watashi ga ikimasu",
           "XR": "와타시 가 이키마스"
         },
-
         {
           "T1": "美しい",
           "K1": "아름다운",

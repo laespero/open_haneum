@@ -902,14 +902,14 @@ ${a}
             World.isShort = isShort;
             World.slideIdx = 0;
             if(isShort){
-                document.querySelector(".song-info-header").style.display = "none";
-                document.querySelector("header").style.display = "none";
+                if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "none";
+                if(document.querySelector("header")) document.querySelector("header").style.display = "none";
                 //document.querySelector("#printer").style.padding = "0";
                 
             }
             else{
-                document.querySelector(".song-info-header").style.display = "block";
-                document.querySelector("header").style = "";
+                if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "block";
+                if(document.querySelector("header")) document.querySelector("header").style.display = "block";
                 //document.querySelector("#printer").style = "";
             }
             reRenderAll();
