@@ -450,6 +450,10 @@
         .print-container .print-number{
             padding-top: 5px;
         }
+        .expl-text{
+            font-size: 16px !important;
+            margin: 12px;
+        }
     
     </style>
 </head>
@@ -1366,7 +1370,7 @@ ${printerContent}
             catch (e) { console.error("Error applying ruby: ", e); }
             
             
-            let aStr = `<h3>${World.isIpa && currentData.I0 ? currentData.I0 : currentData.R0 || ''}</h3><h2>${t0Str || ''}</h2><h3>${rdot(currentData.K0 || '')}</h3>` + ((World.isExplHide||World.isBlog)? '' : `<p>${currentData.G0 || ''}</p>`);
+            let aStr = `<h3>${World.isIpa && currentData.I0 ? currentData.I0 : currentData.R0 || ''}</h3><h2>${t0Str || ''}</h2><h3>${rdot(currentData.K0 || '')}</h3>` + ((World.isExplHide||World.isBlog)? '' : `<div class="expl-text">${currentData.G0 || ''}</div>`);
             let bStr = '';
             const trStr = r => `<tr>${r}</tr>`;
 
