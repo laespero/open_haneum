@@ -8,9 +8,11 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');
         body {
             margin: 0;
             padding: 0;
+            font-family: "Noto Sans JP", sans-serif; /* 기본 폰트 설정 */
         }
 
         /* 헤더 스타일 추가 */
@@ -90,6 +92,7 @@
             font-size: 18px;
             width: 100%;
             text-align: center;
+            font-family: sans-serif;
         }
 
         #sentence-view{
@@ -165,6 +168,7 @@
             margin: 0px;
             font-size: 21px;
             font-weight: 600;
+            font-family: "Noto Sans JP", sans-serif; /* 폰트 설정 */
         }
         .class-sentence-view h3 {
             margin: 0px;
@@ -196,6 +200,7 @@
         .word-text{
             font-size: 20px;
             font-weight: 500;
+            font-family: "Noto Sans JP", sans-serif; /* 폰트 설정 */
         }
         .word-box {
             border: solid 1px #f0f0f0;
@@ -307,6 +312,7 @@
 
             .ex-sentence{
                 font-size: 19px;
+                font-family: "Noto Sans JP", sans-serif; /* 폰트 설정 */
             }
             
         }
@@ -1177,11 +1183,8 @@ ${a}
                         World.isSlideTimesVaild = true;
                     }
                     set_mode("scroll");
-                    if(isJP||lang==="jp") setFont("JP");
-                    else setFont("SC");
-
-
-
+                    if(isJP||lang==="jp") setFont("JP"); 
+                    else setFont("SC"); 
 
                 })
                 .catch(error => {
@@ -1208,7 +1211,6 @@ ${a}
                         font-family: "Noto Sans JP", sans-serif;                    
                     }                
                 `;
-                styleEle.innerHTML = `@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');`+classStyle;
                 
                 document.head.appendChild(styleEle);
             }
@@ -1217,21 +1219,20 @@ ${a}
                 const classStyle = `
                     *{
                       /* font-family: "Noto Sans KR", sans-serif; */
-                      font-family: "Noto Sans SC", sans-serif;
+                      font-family: "Noto Sans JP", sans-serif;
                     }
                     .class-sentence-view h2 {
-                        font-family: "Noto Sans SC", sans-serif;
+                        font-family: "Noto Sans JP", sans-serif;
                         font-weight: 500;
                         font-size: 23px;                        
                     }
                     .word-text{
-                        font-family: "Noto Sans SC", sans-serif;          
+                        font-family: "Noto Sans JP", sans-serif;          
                     }   
                     .ex-sentence{
-                        font-family: "Noto Sans SC", sans-serif;                    
+                        font-family: "Noto Sans JP", sans-serif;                    
                     }                
                 `;
-                styleEle.innerHTML = `@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');`+classStyle;
                 
                 document.head.appendChild(styleEle);
             }
@@ -1241,9 +1242,7 @@ ${a}
                     *{
                       font-family: "Noto Sans KR", sans-serif;
                     }               
-                `;
-                styleEle.innerHTML = `@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');`+classStyle;
-                
+                `;                
                 document.head.appendChild(styleEle);                
             }
         }
