@@ -8,13 +8,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "japan": "node server.js jp",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "pro-start": "pm2 start server.js",
+    "pro-stop": "pm2 stop server.js",
+    "pro-restart": "pm2 restart server.js",
+    "pro-logs": "pm2 logs server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.1",
-    "@google/generative-ai": "^0.23.0",
     "body-parser": "^1.20.3",
     "cheerio": "^1.0.0",
     "cors": "^2.8.5",
