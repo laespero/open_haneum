@@ -11,7 +11,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');
         * {
             font-family: "Noto Sans JP", sans-serif; /* 기본 폰트 설정 */
-            font-weight: 500;
+            font-weight: 400;
+        }
+        body{
+            margin: 0;
+            padding: 0;
         }
 
         /* 헤더 스타일 추가 */
@@ -139,7 +143,7 @@
         .morpheme-table th {
             /* background-color: #4fcfff; */
             /* color: #fff; */
-            font-weight: 500;
+            font-weight: 400;
         }
         .controls {
             padding: 20px;
@@ -165,12 +169,12 @@
         .class-sentence-view h2 {
             margin: 0px;
             font-size: 21px;
-            font-weight: 500;
+            font-weight: 400;
         }
         .class-sentence-view h3 {
             margin: 0px;
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
         }
         p {
             /* color: #191919; */
@@ -196,7 +200,7 @@
         }
         .word-text{
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 400;
         }
         .word-box {
             border: solid 1px #f0f0f0;
@@ -842,7 +846,7 @@ ${a}
             mode : "init",
             slideIdx : 0,
             isIpa : false,
-            isExplHide : false, 
+            isExplHide : true, 
             isShort : false,
             isSlideTimesVaild : false,
             isSimple : false,
@@ -902,6 +906,7 @@ ${a}
                     }
                 }
             }
+            document.body.style.zIndex = 1;
         }
 
         function set_isShort(isShort){
@@ -1198,7 +1203,7 @@ ${a}
                     }
                     .class-sentence-view h2 {
                         font-family: "Noto Sans JP", sans-serif;
-                        font-weight: 500;
+                        font-weight: 400;
                         font-size: 23px;                        
                     }
                     .word-text{
@@ -1219,7 +1224,7 @@ ${a}
                     }
                     .class-sentence-view h2 {
                         font-family: "Noto Sans SC", sans-serif;
-                        font-weight: 500;
+                        font-weight: 400;
                         font-size: 23px;                        
                     }
                     .word-text{
@@ -1242,7 +1247,10 @@ ${a}
                 document.head.appendChild(styleEle);                
             }
             document.body.style.zIndex = 1;
+            document.body.style.zoom = 1.0000001;
+            setTimeout(function(){document.body.style.zoom = 1;},50); //allow some time to flush the css buffer.
         }
+
         updateDataFromServer();
 
 

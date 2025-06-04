@@ -7,11 +7,16 @@ import { KR_MSG } from './messages.js';  // MSG import 추가
 import { JP_MSG } from './jp_messages.js';
 import 'dotenv/config';
 
-console.log('API Key:', process.env.OPENROUTER_API_KEY);
+// 사용자가 API 제공자를 선택할 수 있는 변수
+// 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
+const API_PROVIDER_CHOICE = 'openrouter'; 
 
-if (!process.env.OPENROUTER_API_KEY) {
-    console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: OPENROUTER_API_KEY가 설정되지 않았습니다.');
-    console.warn('\x1b[33m%s\x1b[0m', '노래 추가 및 번역 기능을 사용하려면 .env 파일에 OPENROUTER_API_KEY를 설정해주세요.');
+console.log('OPENROUTER API Key:', process.env.OPENROUTER_API_KEY);
+console.log('DeepSeek API Key:', process.env.DEEPSEEK_API_KEY);
+
+if (!process.env.OPENROUTER_API_KEY && !process.env.DEEPSEEK_API_KEY) {
+    console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY가 설정되지 않았습니다.');
+    console.warn('\x1b[33m%s\x1b[0m', '노래 추가 및 번역 기능을 사용하려면 .env 파일에 OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY를 설정해주세요.');
 }
 
 let MSG = KR_MSG;
@@ -33,29 +38,81 @@ else {
 const app = express();
 app.use(cors())
 
-const chatModel = "deepseek/deepseek-chat-v3-0324";
+let chatModel;
+//const chatModel = "deepseek/deepseek-chat-v3-0324";
+//chatModel = "deepseek/deepseek-chat";
 
 // const chatModel = "openrouter/auto";
 // const chatModel = "google/gemini-2.5-pro-preview-03-25";
 // const chatModel = "deepseek-chat";
 
 let openai;
-if (process.env.OPENROUTER_API_KEY) {
-    openai = new OpenAI({
-        baseURL: 'https://openrouter.ai/api/v1',
-        apiKey: process.env.OPENROUTER_API_KEY
-    });
-} else {
+let initializationLog = "";
+let isUsingDeepSeekDirectly = false; // DeepSeek 직접 사용 여부 플래그
+
+if (API_PROVIDER_CHOICE === 'deepseek') {
+    if (process.env.DEEPSEEK_API_KEY) {
+        initializationLog = "설정(API_PROVIDER_CHOICE='deepseek')에 따라 DeepSeek API를 사용합니다.";
+        openai = new OpenAI({
+            baseURL: 'https://api.deepseek.com',
+            apiKey: process.env.DEEPSEEK_API_KEY
+        });
+        chatModel = "deepseek-chat";
+        isUsingDeepSeekDirectly = true;
+    } else {
+        initializationLog = "⚠️ 경고: API_PROVIDER_CHOICE='deepseek'으로 설정되었으나 DEEPSEEK_API_KEY가 없습니다. API 기능이 제한됩니다.";
+    }
+} else if (API_PROVIDER_CHOICE === 'openrouter') {
+    if (process.env.OPENROUTER_API_KEY) {
+        initializationLog = "설정(API_PROVIDER_CHOICE='openrouter')에 따라 OpenRouter API를 사용합니다.";
+        openai = new OpenAI({
+            baseURL: 'https://openrouter.ai/api/v1',
+            apiKey: process.env.OPENROUTER_API_KEY
+        });
+        chatModel = "deepseek/deepseek-chat";
+        isUsingDeepSeekDirectly = false;
+    } else {
+        initializationLog = "⚠️ 경고: API_PROVIDER_CHOICE='openrouter'으로 설정되었으나 OPENROUTER_API_KEY가 없습니다. API 기능이 제한됩니다.";
+    }
+} else { // 'auto' 또는 다른 값일 경우 자동 선택 로직
+    if (API_PROVIDER_CHOICE !== 'auto') {
+        console.log(`알 수 없는 API_PROVIDER_CHOICE 값 ('${API_PROVIDER_CHOICE}') 입니다. 자동 선택 모드로 동작합니다.`);
+    }
+    initializationLog = "자동 선택 모드: ";
+    if (process.env.DEEPSEEK_API_KEY) {
+        initializationLog += "DeepSeek API를 사용합니다.";
+        openai = new OpenAI({
+            baseURL: 'https://api.deepseek.com',
+            apiKey: process.env.DEEPSEEK_API_KEY
+        });
+        chatModel = "deepseek-chat";
+        isUsingDeepSeekDirectly = true;
+    } else if (process.env.OPENROUTER_API_KEY) {
+        initializationLog += "OpenRouter API를 사용합니다 (DeepSeek 키 부재).";
+        openai = new OpenAI({
+            baseURL: 'https://openrouter.ai/api/v1',
+            apiKey: process.env.OPENROUTER_API_KEY
+        });
+        chatModel = "deepseek/deepseek-chat";
+        isUsingDeepSeekDirectly = false;
+    } else {
+        initializationLog += "⚠️ 경고: 사용 가능한 API 키가 없습니다. .env 파일에 키를 설정해주세요. API 기능이 제한됩니다.";
+        isUsingDeepSeekDirectly = false; // 추가: API 사용 불가 시 false
+    }
+}
+
+if (!openai || !openai.chat) { // openai 객체가 제대로 초기화되지 않은 경우
     openai = {
         chat: {
             completions: {
                 create: async () => {
-                    throw new Error('API 키가 설정되지 않았습니다. .env 파일에 OPENROUTER_API_KEY를 설정해주세요.');
+                    throw new Error(`API 클라이언트가 초기화되지 않았습니다. 원인: ${initializationLog}`);
                 }
             }
         }
     };
 }
+console.log(initializationLog);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -71,13 +128,18 @@ let songCache = [];  // 노래 데이터를 저장할 캐시
 async function refreshSongCache() {
     try {
         const files = await fs.promises.readdir('songs');
-        songCache = await Promise.all(files.map(async file => {
+        const songPromises = files.map(async file => {
             const filePath = `songs/${file}`;
-            const data = await fs.promises.readFile(filePath, 'utf8');
-            const stats = await fs.promises.stat(filePath);
-            const songData = JSON.parse(data);
-            return songData;
-        }));
+            try {
+                const data = await fs.promises.readFile(filePath, 'utf8');
+                const songData = JSON.parse(data);
+                return songData;
+            } catch (parseErr) {
+                console.error(`'${filePath}' 파일 처리 중 오류 발생:`, parseErr);
+                return null; // 오류 발생 시 null 반환
+            }
+        });
+        songCache = (await Promise.all(songPromises)).filter(song => song !== null); // null이 아닌 것만 필터링
         console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했습니다.`);
     } catch (err) {
         console.error('노래 데이터 로드 중 오류 발생:', err);
@@ -319,8 +381,9 @@ app.post('/translate/:title', async (req, res) => {
                     if(japanData.jp !== japanData.pr) alpha += `\n한글 발음을 적을 때, 다음을 그대로 사용할 것. "${japanData.pr}"`;
                     console.log(alpha);
                 }
-                const completion = await openai.chat.completions.create({
-                    model: chatModel,
+
+                const requestBody = {
+                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                     max_tokens: 8192,
                     temperature:0.5,
                     messages: [
@@ -329,14 +392,19 @@ app.post('/translate/:title', async (req, res) => {
                     ],
                     response_format: { 
                         type: "json_object" 
-                    },
-                    provider: {
+                    }
+                };
+
+                if (!isUsingDeepSeekDirectly) {
+                    requestBody.provider = {
                         ignore: [
                             'InferenceNet',
                             'Together'
                         ]
-                    }
-                });
+                    };
+                }
+
+                const completion = await openai.chat.completions.create(requestBody);
 
                 const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
                 console.log(translatedLine.substring(0,100));
@@ -415,8 +483,8 @@ app.post('/retry-translation/:title', async (req, res) => {
 
         const translationPromises = songData.failedLines.map(async (context) => {
             try {
-                const completion = await openai.chat.completions.create({
-                    model: chatModel,
+                const requestBody = {
+                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                     max_tokens: 8192,
                     messages: [
                         { role: "system", content: MSG },
@@ -424,13 +492,18 @@ app.post('/retry-translation/:title', async (req, res) => {
                     ],
                     response_format: { 
                         type: "json_object" 
-                    },
-                    provider: {
+                    }
+                };
+
+                if (!isUsingDeepSeekDirectly) {
+                    requestBody.provider = {
                         ignore: [
                             'InferenceNet'
                         ]
-                    }
-                });
+                    };
+                }
+
+                const completion = await openai.chat.completions.create(requestBody);
 
                 const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
                 const parsedResult = JSON.parse(translatedLine);
@@ -471,21 +544,25 @@ app.post('/retry-line/:title', async (req, res) => {
     }
 
     try {
-        const completion = await openai.chat.completions.create({
-            model: chatModel,
+        const requestBody = {
+            model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
             max_tokens: 8192,
             temperature: 0.2,
             messages: [
                 { role: "system", content: MSG },
                 { role: 'user', content: JSON.stringify(thatLine) },
             ],
-            response_format: { type: "json_object" },
-            provider: {
+            response_format: { type: "json_object" }
+        };
+
+        if (!isUsingDeepSeekDirectly) {
+            requestBody.provider = {
                 ignore: [
                     'InferenceNet'
                 ]
-            }
-        });
+            };
+        }
+        const completion = await openai.chat.completions.create(requestBody);
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
@@ -520,7 +597,7 @@ app.post('/correct-hangul/:title', async (req, res) => {
 
     try {
         const completion = await openai.chat.completions.create({
-            model: "google/gemini-2.0-flash-001",
+            model: isUsingDeepSeekDirectly ? "deepseek-chat" : "google/gemini-2.0-flash-001",
             max_tokens: 8192,
             temperature: 0,
             messages: [
@@ -565,21 +642,26 @@ app.post('/correct-with-message/:title', async (req, res) => {
     }
 
     try {
-        const completion = await openai.chat.completions.create({
-            model: 'openai/gpt-4.1',
+        const requestBody = {
+            model: isUsingDeepSeekDirectly ? "deepseek-chat" : 'openai/gpt-4o',
             max_tokens: 8192,
             temperature: 0.2,
             messages: [
                 { role: "system", content: MSG },
                 { role: 'user', content: JSON.stringify(thatLine) + "\n\n" + req.body.correctionMessage },
             ],
-            response_format: { type: "json_object" },
-            provider: {
+            response_format: { type: "json_object" }
+        };
+
+        if (!isUsingDeepSeekDirectly) {
+            requestBody.provider = {
                 ignore: [
                     'InferenceNet'
                 ]
-            }
-        });
+            };
+        }
+
+        const completion = await openai.chat.completions.create(requestBody);
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
@@ -614,7 +696,7 @@ app.post('/correct-every-hangul/:title', async (req, res) => {
         const translationPromises = songData.translatedLines.map(async (context) => {
             try {
                 const completion = await openai.chat.completions.create({
-                    model: "google/gemini-2.0-flash-001",
+                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : "google/gemini-2.0-flash-001",
                     max_tokens: 8192,
                     temperature:0.2,
                     messages: [
@@ -734,7 +816,7 @@ app.post('/auto-fill-names', async (req, res) => {
     
     try {
         const completion = await openai.chat.completions.create({
-            model: "google/gemini-2.0-flash-001",
+            model: isUsingDeepSeekDirectly ? "deepseek-chat" : "google/gemini-2.0-flash-001",
             messages: [
                 {
                     role: "system",
