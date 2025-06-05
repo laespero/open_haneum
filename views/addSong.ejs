@@ -200,6 +200,43 @@
             console.error('Error:', error);
         }
     });
+
+    // 유튜브 URL에서 영상 ID 추출 로직
+    document.getElementById('vid').addEventListener('input', function() {
+        const url = this.value;
+        let videoId = '';
+
+        // 케이스 1: youtu.be/ 다음 11자리 (모바일)
+        const mobileRegex = /youtu\.be\/([^\?&\/]{11})/;
+        const mobileMatch = url.match(mobileRegex);
+        if (mobileMatch && mobileMatch[1]) {
+            videoId = mobileMatch[1];
+        } else {
+            // 케이스 2: youtube.com/watch?v= 다음 11자리 (웹)
+            const webRegex = /watch\?v=([^\?&\/]{11})/;
+            const webMatch = url.match(webRegex);
+            if (webMatch && webMatch[1]) {
+                videoId = webMatch[1];
+            } else if (url.length === 11 && /^[a-zA-Z0-9_-]+$/.test(url)) {
+                // 이미 11자리 ID인 경우
+                videoId = url;
+            }
+        }
+        
+        // 추출된 ID가 있으면 해당 ID로 값을 변경하고, 아니면 원래 입력값을 유지하도록 처리할 수 있습니다.
+        // 여기서는 추출된 ID가 있을 경우에만 값을 변경합니다.
+        if (videoId) {
+            this.value = videoId;
+            this.setCustomValidity(''); // 성공 시 유효성 메시지 초기화
+        } else {
+            // ID 추출 실패 시 사용자에게 알림
+            if (url.trim() !== '') { // 입력값이 비어있지 않을 때만 메시지 표시
+                this.setCustomValidity('유효한 유튜브 URL 형식이 아니거나, 11자리 영상 ID를 입력해주세요.');
+            } else {
+                this.setCustomValidity(''); // 입력값이 비면 메시지 없음
+            }
+        }
+    });
     </script>
 </body>
 </html>

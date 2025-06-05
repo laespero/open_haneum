@@ -403,37 +403,37 @@
       "G0": "이 문장은 '振り解く'라는 동사와 'ように'라는 조동사로 구성되어 있습니다. '振り解く'는 '흔들어 해제하다', '떨쳐내다'라는 의미를 가지며, 'ように'는 '~듯이', '~처럼'이라는 의미로 앞의 동작을 비유적으로 표현합니다. 전체적으로 '떨쳐내듯이'라는 의미로, 어떤 것을 강하게 거부하거나 벗어나려는 느낌을 전달합니다.",
       "K0": "떨쳐내듯이",
       "I0": "furihodoku youni",
-      "R0": "후리호도쿠 요우니",
+      "R0": "후리 호도쿠 요오 니",
       "LI": [
         {
           "T1": "振り解く",
           "K1": "떨쳐내다",
           "I1": "furihodoku",
-          "R1": "후리호도쿠",
+          "R1": "후리 호도쿠",
           "E1": "'흔들어 해제하다' 또는 '떨쳐내다'라는 의미의 동사로, 어떤 것에서 벗어나거나 거부하는 행위를 나타냅니다.",
           "T2": "振り解く",
           "K2": "떨쳐내다",
           "I2": "furihodoku",
-          "R2": "후리호도쿠",
+          "R2": "후리 호도쿠",
           "XE": "彼は悩みを振り解いた。",
           "XK": "그는 고민을 떨쳐냈다.",
           "XI": "kare wa nayami o furihodoita",
-          "XR": "카레 와 나야미 오 후리호도이타"
+          "XR": "카레 와 나야미 오 후리 호도이타"
         },
         {
           "T1": "ように",
           "K1": "~듯이",
           "I1": "youni",
-          "R1": "요우니",
+          "R1": "요오 니",
           "E1": "앞의 동작을 비유적으로 표현하는 조동사로, '~처럼', '~듯이'라는 의미를 가집니다.",
           "T2": "ように",
           "K2": "~듯이",
           "I2": "youni",
-          "R2": "요우니",
+          "R2": "요오 니",
           "XE": "鳥のように飛びたい。",
           "XK": "새처럼 날고 싶다.",
           "XI": "tori no youni tobitai",
-          "XR": "토리 노 요우니 토비타이"
+          "XR": "토리 노 요오 니 토비타이"
         }
       ],
       "O0": "振り解くように"
@@ -444,7 +444,7 @@
       "G0": "이 문장은 주어(心が) + 동사(擦り切れて)로 구성되어 있습니다. '心が'는 '마음이'를 의미하며, '擦り切れて'는 '닳아 없어지다'라는 의미의 동사입니다. 전체적으로 마음이 닳아 없어지는 상태를 표현하고 있습니다.",
       "K0": "마음이 닳아 없어져서",
       "I0": "kokoro ga surikirete",
-      "R0": "코코로 가 스리키레테",
+      "R0": "코코로 가 스리 키레테",
       "LI": [
         {
           "T1": "心",
@@ -480,16 +480,16 @@
           "T1": "擦り切れて",
           "K1": "닳아 없어져서",
           "I1": "surikirete",
-          "R1": "스리키레테",
+          "R1": "스리 키레테",
           "E1": "'닳아 없어지다'라는 의미의 동사 '擦り切れる'의 연결형입니다.",
           "T2": "擦り切れる",
           "K2": "닳아 없어지다",
           "I2": "surikireru",
-          "R2": "스리키레루",
+          "R2": "스리 키레루",
           "XE": "靴底が擦り切れた。",
           "XK": "구두 밑창이 닳아 없어졌다.",
           "XI": "kutsu zoko ga surikireta",
-          "XR": "쿠츠 조코 가 스리키레타"
+          "XR": "쿠츠 조코 가 스리 키레타"
         }
       ],
       "O0": "心が擦り切れて"
@@ -571,7 +571,7 @@
           "XE": "雨が降っている。",
           "XK": "비가 오고 있다.",
           "XI": "ame ga futte iru",
-          "XR": "아메 가 풋테 이루"
+          "XR": "아메 가 훗테 이루"
         },
         {
           "T1": "多",
@@ -612,7 +612,7 @@
       "G0": "이 문장은 주어(誰もが) + 동사(走っている)로 구성되어 있습니다. '誰もが'는 '모두가'라는 의미로, '走っている'은 '달리고 있다'라는 현재 진행형 동사입니다. 전체적으로 '모두가 달리고 있다'라는 의미를 전달합니다.",
       "K0": "모두가 달리고 있어.",
       "I0": "dare mo ga hashitte iru",
-      "R0": "다레 모 가 핫싯테 이루",
+      "R0": "다레 모 가 하싯테 이루",
       "LI": [
         {
           "T1": "誰もが",
@@ -633,7 +633,7 @@
           "T1": "走って",
           "K1": "달려",
           "I1": "hashitte",
-          "R1": "핫싯테",
+          "R1": "하싯테",
           "E1": "'달리다'라는 동사의 연용형(て形)으로, '달려서' 또는 '달리고'라는 의미입니다.",
           "T2": "走る",
           "K2": "달리다",
@@ -642,7 +642,7 @@
           "XE": "公園を走っている。",
           "XK": "공원을 달리고 있다.",
           "XI": "kouen o hashitte iru",
-          "XR": "코우엔 오 핫싯테 이루"
+          "XR": "코우엔 오 하싯테 이루"
         },
         {
           "T1": "いる",
@@ -851,22 +851,22 @@
       "G0": "이 문장은 '綺麗事だって'와 '言われても' 두 부분으로 구성되어 있습니다. '綺麗事だって'는 '아름다운 말이라고'라는 의미로, 'だって'는 '라고 해도'라는 뜻의 접속사 역할을 합니다. '言われても'는 '말해져도'라는 수동형 표현으로, 전체적으로 '아름다운 말이라고 해도'라는 의미를 전달합니다.",
       "K0": "아름다운 말이라고 해도",
       "I0": "kireigoto datte iwarete mo",
-      "R0": "키레이고토 닷테 이와레테 모",
+      "R0": "키레이 고토 닷테 이와레테 모",
       "LI": [
         {
           "T1": "綺麗事",
           "K1": "아름다운 말",
           "I1": "kireigoto",
-          "R1": "키레이고토",
+          "R1": "키레이 고토",
           "E1": "겉으로만 아름답거나 이상적인 말을 의미하는 명사입니다.",
           "T2": "綺麗事",
           "K2": "아름다운 말",
           "I2": "kireigoto",
-          "R2": "키레이고토",
+          "R2": "키레이 고토",
           "XE": "綺麗事ばかり言うな。",
           "XK": "아름다운 말만 하지 마.",
           "XI": "kireigoto bakari iu na",
-          "XR": "키레이고토 바카리 이우 나"
+          "XR": "키레이 고토 바카리 이우 나"
         },
         {
           "T1": "だって",
@@ -905,15 +905,15 @@
       "T0": "恐れない 人はいない",
       "C0": "언제나 파란색 하나면 돼. 두려워하지 않는 사람은 없어. 떨림을 쫓아오는",
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절 '恐れない'는 '두려워하지 않는'이라는 의미의 형용사적 표현입니다. 두 번째 절 '人はいない'는 '사람은 없다'라는 의미로, 주어(人) + 조사(は) + 동사(いない)로 이루어져 있습니다. 전체적으로 '두려워하지 않는 사람은 없다'라는 의미를 전달합니다.",
-      "K0": "두려워하지 않는 사람은 없다.",
+      "K0": "두려워하지 않는 사람은 없어.",
       "I0": "osorenai hito wa inai",
-      "R0": "오소레나이 히토 와 이나이",
+      "R0": "오소레 나이 히토 와 이나이",
       "LI": [
         {
           "T1": "恐れない",
           "K1": "두려워하지 않는",
           "I1": "osorenai",
-          "R1": "오소레나이",
+          "R1": "오소레 나이",
           "E1": "'두렵다'라는 의미의 동사 '恐れる'의 부정형으로, '두려워하지 않는'이라는 뜻입니다.",
           "T2": "恐れる",
           "K2": "두려워하다",
@@ -922,7 +922,7 @@
           "XE": "彼は失敗を恐れない。",
           "XK": "그는 실패를 두려워하지 않는다.",
           "XI": "kare wa shippai o osorenai",
-          "XR": "카레 와 싯파이 오 오소레나이"
+          "XR": "카레 와 싯파이 오 오소레 나이"
         },
         {
           "T1": "人",
@@ -1501,7 +1501,7 @@
       "G0": "이 문장은 'いつだって'(언제나) + '青一色で'(푸른색 한 가지로) + 'いい'(좋다)로 구성되어 있습니다. 'いつだって'는 시간의 제약 없음을 강조하는 부사구이며, '青一色で'는 '푸른색 한 가지로'라는 의미의 명사구입니다. 'いい'는 긍정적인 평가를 나타내는 형용사로, 전체적으로 '언제나 푸른색 한 가지면 충분하다'는 의미를 전달합니다.",
       "K0": "언제나 푸른색 한 가지면 돼.",
       "I0": "itsu datte ao iro de ii",
-      "R0": "이츠 닷테 아오 이로 데 이이",
+      "R0": "이츠 닷테 아오 잇쇼쿠 데 이이",
       "LI": [
         {
           "T1": "いつだって",
@@ -1522,16 +1522,16 @@
           "T1": "青一色",
           "K1": "푸른색 한 가지",
           "I1": "ao iro",
-          "R1": "아오 이로",
+          "R1": "아오 잇쇼쿠",
           "E1": "'푸른색'을 의미하는 명사로, 여기서는 '한 가지 색'이라는 의미로 사용되었습니다.",
           "T2": "青一色",
           "K2": "푸른색 한 가지",
           "I2": "ao iro",
-          "R2": "아오 이로",
+          "R2": "아오 잇쇼쿠",
           "XE": "空は青一色だった。",
           "XK": "하늘은 푸른색 한 가지뿐이었다.",
           "XI": "sora wa ao iro datta",
-          "XR": "소라 와 아오 이로 닷타"
+          "XR": "소라 와 아오 잇쇼쿠 닷타"
         },
         {
           "T1": "で",
@@ -1658,7 +1658,7 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 부분 'いいんだ'는 '괜찮아'라는 의미의 감탄사적 표현이며, 두 번째 부분 '夢見る空は'는 '꿈꾸는 하늘은'이라는 주어를 나타냅니다. 전체적으로는 꿈꾸는 하늘에 대한 긍정적인 태도를 표현하고 있습니다.",
       "K0": "괜찮아, 꿈꾸는 하늘은",
       "I0": "iinda yumemiru sora wa",
-      "R0": "이인다 유메미루 소라 와",
+      "R0": "이인다 유메 미루 소라 와",
       "LI": [
         {
           "T1": "いいんだ",
@@ -1679,16 +1679,16 @@
           "T1": "夢見る",
           "K1": "꿈꾸는",
           "I1": "yumemiru",
-          "R1": "유메미루",
+          "R1": "유메 미루",
           "E1": "'꿈을 꾸다'라는 의미의 동사로, 여기서는 현재 진행형으로 사용되어 '꿈꾸는'이라는 의미를 가집니다.",
           "T2": "夢見る",
           "K2": "꿈꾸다",
           "I2": "yumemiru",
-          "R2": "유메미루",
+          "R2": "유메 미루",
           "XE": "彼は夢見る少年だ。",
           "XK": "그는 꿈꾸는 소년이야.",
           "XI": "kare wa yumemiru shounen da",
-          "XR": "카레 와 유메미루 쇼우넨 다"
+          "XR": "카레 와 유메 미루 쇼우넨 다"
         },
         {
           "T1": "空",
@@ -1957,7 +1957,7 @@
       "G0": "이 문장은 '痛みを(아픔을)' + '抱き締めて(껴안고)' + '進め(나아가라)'로 구성되어 있습니다. '痛みを'는 목적어로 '아픔을'을 의미하며, '抱き締めて'는 동사 '抱き締める(껴안다)'의 연용형으로 '껴안고'라는 뜻입니다. '進め'는 동사 '進む(나아가다)'의 명령형으로 '나아가라'를 의미합니다. 전체적으로 아픔을 안고 앞으로 나아가라는 강한 의지를 표현하는 문장입니다.",
       "K0": "아픔을 안고 나아가라.",
       "I0": "itami o dakishimete susume",
-      "R0": "이타미 오 다키시메테 스스메",
+      "R0": "이타미 오 다키 시메테 스스메",
       "LI": [
         {
           "T1": "痛み",
@@ -1993,16 +1993,16 @@
           "T1": "抱き締めて",
           "K1": "껴안고",
           "I1": "dakishimete",
-          "R1": "다키시메테",
+          "R1": "다키 시메테",
           "E1": "동사 '抱き締める'의 연용형으로, '단단히 껴안다'는 의미입니다.",
           "T2": "抱き締める",
           "K2": "껴안다",
           "I2": "dakishimeru",
-          "R2": "다키시메루",
+          "R2": "다키 시메루",
           "XE": "彼女を抱き締めた。",
           "XK": "그녀를 껴안았다.",
           "XI": "kanojo o dakishimeta",
-          "XR": "카노조 오 다키시메타"
+          "XR": "카노조 오 다키 시메타"
         },
         {
           "T1": "進め",
@@ -2286,22 +2286,22 @@
       "G0": "이 문장은 '追いかけて来る'(쫓아오는)라는 동사구와 '震えを'(떨림을)라는 목적어로 구성되어 있습니다. '追いかけて来る'는 '追いかける'(쫓다)의 연용형에 '来る'(오다)가 결합된 형태로, '쫓아오는'이라는 의미를 나타냅니다. '震えを'는 '震え'(떨림)에 목적격 조사 'を'가 붙은 형태로, 문장에서 목적어 역할을 합니다. 전체적으로 '쫓아오는 떨림을'이라는 의미를 전달합니다.",
       "K0": "쫓아오는 떨림을",
       "I0": "oikakete kuru furue wo",
-      "R0": "오이카케테 쿠루 후루에 오",
+      "R0": "오이 카케테 쿠루 후루에 오",
       "LI": [
         {
           "T1": "追いかけて",
           "K1": "쫓아서",
           "I1": "oikakete",
-          "R1": "오이카케테",
+          "R1": "오이 카케테",
           "E1": "'追いかける'(쫓다)의 연용형으로, '~하면서'라는 의미를 더합니다.",
           "T2": "追いかける",
           "K2": "쫓다",
           "I2": "oikakeru",
-          "R2": "오이카케루",
+          "R2": "오이 카케루",
           "XE": "彼は私を追いかけてきた。",
           "XK": "그는 나를 쫓아왔다.",
           "XI": "kare wa watashi o oikakete kita",
-          "XR": "카레 와 와타시 오 오이카케테 키타"
+          "XR": "카레 와 와타시 오 오이 카케테 키타"
         },
         {
           "T1": "来る",
@@ -2372,7 +2372,7 @@
           "XE": "たとえ雨が降っても行きます。",
           "XK": "비록 비가 와도 갈 거야.",
           "XI": "tatoe ame ga futte mo ikimasu",
-          "XR": "타토에 아메 가 풋테 모 이키마스"
+          "XR": "타토에 아메 가 훗테 모 이키마스"
         },
         {
           "T1": "口",
@@ -2682,20 +2682,20 @@
     },
     {
       "T0": "産声のように遠く響け",
-      "C0": "아아 시끄럽고 서툴게, 출생의 울음소리처럼 멀리 울려퍼져라, 있는 그대로의 모습으로",
-      "G0": "이 문장은 비유적 표현을 사용한 명령문입니다. '産声のように'는 '출생의 울음소리처럼'이라는 의미로 비유적 표현이며, '遠く響け'는 '멀리 울려퍼져라'라는 명령형 문장입니다. 전체적으로 자연스럽고 순수한 상태에서 강렬하게 메시지를 전달하라는 의미를 담고 있습니다.",
-      "K0": "출생의 울음소리처럼 멀리 울려퍼져라",
+      "C0": "아아 시끄럽고 서툴게, 첫 울음소리처럼 멀리 울려퍼져라, 있는 그대로의 모습으로",
+      "G0": "이 문장은 비유적 표현을 사용한 명령문입니다. '産声のように'는 '첫 울음소리처럼'이라는 의미로 비유적 표현이며, '遠く響け'는 '멀리 울려퍼져라'라는 명령형 문장입니다. 전체적으로 자연스럽고 순수한 상태에서 강렬하게 메시지를 전달하라는 의미를 담고 있습니다.",
+      "K0": "첫 울음소리처럼 멀리 울려퍼져라",
       "I0": "ubugoe no you ni tooku hibike",
       "R0": "우부고에 노 요오니 토오쿠 히비케",
       "LI": [
         {
           "T1": "産声",
-          "K1": "출생의 울음소리",
+          "K1": "첫 울음소리",
           "I1": "ubugoe",
           "R1": "우부고에",
           "E1": "아기가 태어날 때 내는 첫 울음소리를 의미하는 명사입니다.",
           "T2": "産声",
-          "K2": "출생의 울음소리",
+          "K2": "첫 울음소리",
           "I2": "ubugoe",
           "R2": "우부고에",
           "XE": "赤ちゃんの産声が聞こえた",
@@ -2862,7 +2862,7 @@
           "XE": "雨が降っても行く。",
           "XK": "비가 와도 갈 거야.",
           "XI": "ame ga futte mo iku",
-          "XR": "아메 가 풋테 모 이쿠"
+          "XR": "아메 가 훗테 모 이쿠"
         }
       ],
       "O0": "無駄な事だって言われても"
@@ -3150,48 +3150,48 @@
           "XE": "雨が降っているが、出かける。",
           "XK": "비가 오지만 나갈 거야.",
           "XI": "ame ga futte iru ga, dekakeru",
-          "XR": "아메 가 풋테 이루 가, 데카케루"
+          "XR": "아메 가 훗테 이루 가, 데카케루"
         }
       ],
       "O0": "正直者は馬鹿をみるが"
     },
     {
       "T0": "聞こえないように",
-      "C0": "삐걱삐걱 소리나는 소리가 들리지 않도록 큰 소리로 노래하자",
-      "G0": "이 문장은 '聞こえない' (들리지 않다)와 'ように' (~하도록)로 구성된 부사절입니다. '聞こえない'은 동사 '聞こえる' (들리다)의 부정형이며, 'ように'는 목적이나 희망을 나타내는 조사입니다. 전체적으로 '들리지 않도록'이라는 의미로, 어떤 소리를 들리지 않게 하기 위한 목적을 나타냅니다.",
+      "C0": "삐걱거리는 소리가 들리지 않도록 큰 소리로 노래하자",
+      "G0": "이 문장은 'ように'라는 표현을 사용하여 '들리지 않도록'이라는 목적을 나타내고 있습니다. '聞こえない'는 '들리지 않다'라는 의미의 부정형 동사입니다. 전체적으로 어떤 소리가 들리지 않게 하기 위해 특정 행동을 하려는 의도를 나타냅니다.",
       "K0": "들리지 않도록",
-      "I0": "kikoenai you ni",
-      "R0": "키코에나이 요우 니",
+      "I0": "kikoenai yō ni",
+      "R0": "키코에 나이 요오 니",
       "LI": [
         {
           "T1": "聞こえない",
           "K1": "들리지 않다",
           "I1": "kikoenai",
-          "R1": "키코에나이",
-          "E1": "동사 '聞こえる' (들리다)의 부정형으로, 소리가 들리지 않음을 나타냅니다.",
+          "R1": "키코에 나이",
+          "E1": "소리가 들리지 않는 상태를 나타내는 부정형 동사입니다.",
           "T2": "聞こえる",
           "K2": "들리다",
           "I2": "kikoeru",
           "R2": "키코에루",
-          "XE": "彼の声が聞こえない。",
-          "KX": "그의 목소리가 들리지 않아.",
-          "XI": "kare no koe ga kikoenai",
-          "XR": "카레 노 코에 가 키코에나이"
+          "XE": "音楽が聞こえない。",
+          "XK": "음악이 들리지 않는다.",
+          "XI": "ongaku ga kikoenai",
+          "XR": "온가쿠 가 키코에 나이"
         },
         {
           "T1": "ように",
           "K1": "~하도록",
-          "I1": "you ni",
-          "R1": "요우 니",
-          "E1": "목적이나 희망을 나타내는 조사로, '~하도록'이라는 의미입니다.",
+          "I1": "yō ni",
+          "R1": "요오 니",
+          "E1": "어떤 목적이나 의도를 나타내는 표현으로, '~하도록'이라는 의미를 가집니다.",
           "T2": "ように",
           "K2": "~하도록",
-          "I2": "you ni",
-          "R2": "요우 니",
-          "XE": "早く着くように急いだ。",
-          "KX": "빨리 도착하도록 서두렀다.",
-          "XI": "hayaku tsuku you ni isoida",
-          "XR": "하야쿠 츠쿠 요우 니 이소이다"
+          "I2": "yō ni",
+          "R2": "요오 니",
+          "XE": "忘れないようにメモする。",
+          "XK": "잊지 않도록 메모한다.",
+          "XI": "wasurenai yō ni memo suru",
+          "XR": "와스레 나이 요오 니 메모 스루"
         }
       ],
       "O0": "聞こえないように"
@@ -3202,7 +3202,7 @@
       "G0": "이 문장은 주어(努力) + 조사(は) + 서술어(実りづらい) + 접속조사(が)로 구성되어 있습니다. '努力'은 '노력'을 의미하며, 'は'는 주제를 나타내는 조사입니다. '実りづらい'는 '결실을 맺기 어렵다'라는 의미로, 'が'는 대조를 나타내는 접속조사입니다. 전체적으로 노력이 결실을 맺기 어렵다는 것을 인정하면서도, 그럼에도 불구하고 노력해야 한다는 의미를 담고 있습니다.",
       "K0": "노력은 결실을 맺기 어렵지만",
       "I0": "doryoku wa minorizurai ga",
-      "R0": "도료쿠 와 미노리즈라이 가",
+      "R0": "도료쿠 와 미노리 즈라이 가",
       "LI": [
         {
           "T1": "努力",
@@ -3238,16 +3238,16 @@
           "T1": "実りづらい",
           "K1": "결실을 맺기 어려운",
           "I1": "minorizurai",
-          "R1": "미노리즈라이",
+          "R1": "미노리 즈라이",
           "E1": "결과를 얻기 어렵다는 의미의 형용사입니다.",
           "T2": "実りづらい",
           "K2": "결실을 맺기 어려운",
           "I2": "minorizurai",
-          "R2": "미노리즈라이",
+          "R2": "미노리 즈라이",
           "XE": "この仕事は実りづらい。",
           "XK": "이 일은 결실을 맺기 어렵다.",
           "XI": "kono shigoto wa minorizurai",
-          "XR": "코노 시고토 와 미노리즈라이"
+          "XR": "코노 시고토 와 미노리 즈라이"
         },
         {
           "T1": "が",
@@ -3268,5 +3268,6 @@
       "O0": "努力は実りづらいが"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>が<span class=\"ruby\"><span class=\"rb\">擦</span><span class=\"rt\">す</span></span>り<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>れて<br>\nギシギシと<span class=\"ruby\"><span class=\"rb\">軋</span><span class=\"rt\">きし</span></span>む<span class=\"ruby\"><span class=\"rb\">音</span><span class=\"rt\">おと</span></span>が<br>\n<span class=\"ruby\"><span class=\"rb\">聞</span><span class=\"rt\">き</span></span>こえないように<br>\n<span class=\"ruby\"><span class=\"rb\">大</span><span class=\"rt\">おお</span></span>きな<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>で<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>おう<br>\n<span class=\"ruby\"><span class=\"rb\">理不尽</span><span class=\"rt\">りふじん</span></span>が<span class=\"ruby\"><span class=\"rb\">多</span><span class=\"rt\">おお</span></span>すぎて<br>\nいつの<span class=\"ruby\"><span class=\"rb\">間</span><span class=\"rt\">ま</span></span>にかそれに<span class=\"ruby\"><span class=\"rb\">慣</span><span class=\"rt\">な</span></span>れて<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>は<span class=\"ruby\"><span class=\"rb\">自由</span><span class=\"rt\">じゆう</span></span>だと<br>\nもう<span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れてしまいそう<br>\nああ うるさく つたなく<br>\n<span class=\"ruby\"><span class=\"rb\">産声</span><span class=\"rt\">うぶごえ</span></span>のように<span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">響</span><span class=\"rt\">ひび</span></span>け<br>\nあるがままの<span class=\"ruby\"><span class=\"rb\">姿</span><span class=\"rt\">すがた</span></span>で<br>\n<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>のままで<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">い</span></span>きさせて<br>\n<span class=\"ruby\"><span class=\"rb\">決</span><span class=\"rt\">けっ</span></span>して<span class=\"ruby\"><span class=\"rb\">楽</span><span class=\"rt\">らく</span></span>ではないが<br>\nきっと<span class=\"ruby\"><span class=\"rb\">人生</span><span class=\"rt\">じんせい</span></span>は<span class=\"ruby\"><span class=\"rb\">素晴</span><span class=\"rt\">すば</span></span>らしい<br>\n<span class=\"ruby\"><span class=\"rb\">青</span><span class=\"rt\">あお</span></span>くさい<br>\nなんて<span class=\"ruby\"><span class=\"rb\">青</span><span class=\"rt\">あお</span></span>くさい<br>\n<span class=\"ruby\"><span class=\"rb\">綺麗事</span><span class=\"rt\">きれいごと</span></span>だって<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>われても<br>\nいいんだ <span class=\"ruby\"><span class=\"rb\">夢見</span><span class=\"rt\">ゆめみ</span></span>る<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>は<br>\nいつだって<span class=\"ruby\"><span class=\"rb\">青一色</span><span class=\"rt\">あおいっしょく</span></span>でいい<br>\n<span class=\"ruby\"><span class=\"rb\">恐</span><span class=\"rt\">おそ</span></span>れない <span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>はいない<br>\n<span class=\"ruby\"><span class=\"rb\">追</span><span class=\"rt\">お</span></span>いかけて<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">く</span></span>る<span class=\"ruby\"><span class=\"rb\">震</span><span class=\"rt\">ふる</span></span>えを<br>\n<span class=\"ruby\"><span class=\"rb\">振</span><span class=\"rt\">ふ</span></span>り<span class=\"ruby\"><span class=\"rb\">解</span><span class=\"rt\">ほど</span></span>くように<br>\n<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>もが<span class=\"ruby\"><span class=\"rb\">走</span><span class=\"rt\">はし</span></span>っている<br>\n<span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>がさ <span class=\"ruby\"><span class=\"rb\">繊細</span><span class=\"rt\">せんさい</span></span>で<br>\nでもとても<span class=\"ruby\"><span class=\"rb\">残酷</span><span class=\"rt\">ざんこく</span></span>だって<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span><br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>もそうだと<br>\n<span class=\"ruby\"><span class=\"rb\">実</span><span class=\"rt\">じつ</span></span>はもう<span class=\"ruby\"><span class=\"rb\">知</span><span class=\"rt\">し</span></span>っている<br>\nああ <span class=\"ruby\"><span class=\"rb\">嫌</span><span class=\"rt\">いや</span></span>だ <span class=\"ruby\"><span class=\"rb\">悲</span><span class=\"rt\">かな</span></span>しいね<br>\n<span class=\"ruby\"><span class=\"rb\">痛</span><span class=\"rt\">いた</span></span>みを<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">だ</span></span>き<span class=\"ruby\"><span class=\"rb\">締</span><span class=\"rt\">し</span></span>めて<span class=\"ruby\"><span class=\"rb\">進</span><span class=\"rt\">すす</span></span>め<br>\nあるがままの<span class=\"ruby\"><span class=\"rb\">姿</span><span class=\"rt\">すがた</span></span>で<br>\n<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>のままで<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">い</span></span>きさせて<br>\n<span class=\"ruby\"><span class=\"rb\">正直者</span><span class=\"rt\">しょうじきもの</span></span>は<span class=\"ruby\"><span class=\"rb\">馬鹿</span><span class=\"rt\">ばか</span></span>を<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>るが<br>\nきっと<span class=\"ruby\"><span class=\"rb\">人生</span><span class=\"rt\">じんせい</span></span>は<span class=\"ruby\"><span class=\"rb\">素晴</span><span class=\"rt\">すば</span></span>らしい<br>\n<span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">くだ</span></span>らない<br>\nなんて<span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">くだ</span></span>らない<br>\n<span class=\"ruby\"><span class=\"rb\">無駄</span><span class=\"rt\">むだ</span></span>な<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span>だって<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>われても<br>\nいいんだ <span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">した</span></span>を<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>ないで<br>\nひたすら<span class=\"ruby\"><span class=\"rb\">登</span><span class=\"rt\">のぼ</span></span>って<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>けたらいい<br>\n<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>が<span class=\"ruby\"><span class=\"rb\">擦</span><span class=\"rt\">す</span></span>り<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>れて<br>\nギシギシと<span class=\"ruby\"><span class=\"rb\">軋</span><span class=\"rt\">きし</span></span>む<span class=\"ruby\"><span class=\"rb\">音</span><span class=\"rt\">おと</span></span>が<br>\n<span class=\"ruby\"><span class=\"rb\">聞</span><span class=\"rt\">き</span></span>こえないように<br>\n<span class=\"ruby\"><span class=\"rb\">大</span><span class=\"rt\">おお</span></span>きな<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>で<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>おう<br>\nあるがままの<span class=\"ruby\"><span class=\"rb\">姿</span><span class=\"rt\">すがた</span></span>で<br>\n<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>のままで<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">い</span></span>きさせて<br>\n<span class=\"ruby\"><span class=\"rb\">努力</span><span class=\"rt\">どりょく</span></span>は<span class=\"ruby\"><span class=\"rb\">実</span><span class=\"rt\">みの</span></span>りづらいが<br>\nきっと<span class=\"ruby\"><span class=\"rb\">人生</span><span class=\"rt\">じんせい</span></span>は<span class=\"ruby\"><span class=\"rb\">素晴</span><span class=\"rt\">すば</span></span>らしい<br>\n<span class=\"ruby\"><span class=\"rb\">泥</span><span class=\"rt\">どろ</span></span>くさい<br>\nなんて<span class=\"ruby\"><span class=\"rb\">泥</span><span class=\"rt\">どろ</span></span>くさい<br>\nだからこそ<span class=\"ruby\"><span class=\"rb\">綺麗</span><span class=\"rt\">きれい</span></span>な<span class=\"ruby\"><span class=\"rb\">綺麗</span><span class=\"rt\">きれい</span></span>な<span class=\"ruby\"><span class=\"rb\">虹</span><span class=\"rt\">にじ</span></span>を<br>\n<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>つける<span class=\"ruby\"><span class=\"rb\">権利</span><span class=\"rt\">けんり</span></span>がある<br>\n<span class=\"ruby\"><span class=\"rb\">音</span><span class=\"rt\">おと</span></span>がさ <span class=\"ruby\"><span class=\"rb\">外</span><span class=\"rt\">はず</span></span>れても<br>\nたとえ<span class=\"ruby\"><span class=\"rb\">口塞</span><span class=\"rt\">くちふさ</span></span>がれても<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>は<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>だと<br>\n<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>の<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>で<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>おう<br>\n<span class=\"ruby\"><span class=\"rb\">代</span><span class=\"rt\">か</span></span>わりはいないと<br>\n<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>の<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>で<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>おう<br>"
 }

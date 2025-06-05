@@ -168,22 +168,22 @@
       "G0": "이 문장은 두 개의 구로 구성되어 있습니다. 첫 번째 구는 'いつまでも'로 '언제까지라도'라는 의미로, 시간의 무한함을 나타냅니다. 두 번째 구는 'いっそどこまでも'로 '차라리 어디까지라도'라는 의미로, 공간의 무한함을 나타냅니다. 두 구 모두 '~までも'라는 표현을 사용하여 끝없는 지속을 강조하고 있습니다.",
       "K0": "언제까지라도 차라리 어디까지라도",
       "I0": "itsumademo issodokomademo",
-      "R0": "이츠마데모 잇소도코마데모",
+      "R0": "이츠 마데모 잇소 도코 마데모",
       "LI": [
         {
           "T1": "いつまでも",
           "K1": "언제까지라도",
           "I1": "itsumademo",
-          "R1": "이츠마데모",
+          "R1": "이츠 마데모",
           "E1": "시간의 끝없는 지속을 나타내는 부사구입니다. '언제까지라도'라는 의미로, 시간의 무한함을 강조합니다.",
           "T2": "いつまでも",
           "K2": "언제까지라도",
           "I2": "itsumademo",
-          "R2": "이츠마데모",
+          "R2": "이츠 마데모",
           "XE": "いつまでも君を愛してる。",
           "XK": "언제까지라도 너를 사랑할 거야.",
           "XI": "itsumademo kimi wo aishiteru",
-          "XR": "이츠마데모 키미 오 아이시테루"
+          "XR": "이츠 마데모 키미 오 아이시테루"
         },
         {
           "T1": "いっそ",
@@ -204,16 +204,16 @@
           "T1": "どこまでも",
           "K1": "어디까지라도",
           "I1": "dokomademo",
-          "R1": "도코마데모",
+          "R1": "도코 마데모",
           "E1": "공간의 끝없는 지속을 나타내는 부사구입니다. '어디까지라도'라는 의미로, 공간의 무한함을 강조합니다.",
           "T2": "どこまでも",
           "K2": "어디까지라도",
           "I2": "dokomademo",
-          "R2": "도코마데모",
+          "R2": "도코 마데모",
           "XE": "どこまでも君と一緒に行きたい。",
           "XK": "어디까지라도 너와 함께 가고 싶어.",
           "XI": "dokomademo kimi to issho ni ikitai",
-          "XR": "도코마데모 키미 토 잇쇼 니 이키타이"
+          "XR": "도코 마데모 키미 토 잇쇼 니 이키타이"
         }
       ],
       "O0": "いつまでも いっそどこまでも"
@@ -654,7 +654,7 @@
       "G0": "이 문장은 목적을 나타내는 종속절로 구성되어 있습니다. 'どこへ行っても'는 '어디로 가도'라는 의미로 장소의 제한 없음을 나타내며, 'お互いを見つけられるように'는 '서로를 찾을 수 있도록'이라는 목적을 표현합니다. 전체적으로 어디에 있든 서로를 찾을 수 있기를 바라는 마음을 담고 있습니다.",
       "K0": "어디로 가도 서로를 찾을 수 있도록",
       "I0": "doko e ittemo o-tagai o mitsukerareru you ni",
-      "R0": "도코 에 잇테모 오타가이 오 미츠케라레루 요우 니",
+      "R0": "도코 에 잇테모 오타가이 오 미츠케 라레루 요우 니",
       "LI": [
         {
           "T1": "どこへ",
@@ -684,7 +684,7 @@
           "XE": "雨が降っても行きます。",
           "XK": "비가 와도 갈 거야.",
           "XI": "ame ga futtemo ikimasu",
-          "XR": "아메 가 풋테모 이키마스"
+          "XR": "아메 가 훗테모 이키마스"
         },
         {
           "T1": "お互いを",
@@ -705,7 +705,7 @@
           "T1": "見つけられる",
           "K1": "찾을 수 있는",
           "I1": "mitsukerareru",
-          "R1": "미츠케라레루",
+          "R1": "미츠케 라레루",
           "E1": "동사 '見つける(찾다)'의 가능형으로 '찾을 수 있다'는 의미를 나타냅니다.",
           "T2": "見つける",
           "K2": "찾다",
@@ -714,7 +714,7 @@
           "XE": "ここで宝物を見つけられる。",
           "XK": "여기서 보물을 찾을 수 있어.",
           "XI": "koko de takaramono o mitsukerareru",
-          "XR": "코코 데 타카라모노 오 미츠케라레루"
+          "XR": "코코 데 타카라모노 오 미츠케 라레루"
         },
         {
           "T1": "ように",
@@ -811,7 +811,7 @@
       "G0": "이 문장은 '언제나 눈을 피하지 말고'라는 의미로, 부정 명령문입니다. 'いつだって'는 '언제나', '目を逸らさないで'는 '눈을 피하지 말고'라는 뜻입니다. 전체적으로 상대방에게 진실을 마주보고 직시하라는 메시지를 담고 있습니다.",
       "K0": "언제나 눈을 피하지 말고",
       "I0": "itsu datte me o sorasanai de",
-      "R0": "이츠 닷테 메 오 소라사나이 데",
+      "R0": "이츠 닷테 메 오 소라사 나이 데",
       "LI": [
         {
           "T1": "いつだって",
@@ -862,7 +862,7 @@
           "T1": "逸らさないで",
           "K1": "피하지 말고",
           "I1": "sorasanai de",
-          "R1": "소라사나이 데",
+          "R1": "소라사 나이 데",
           "E1": "'피하다'라는 동사의 부정 명령형으로, '피하지 말고'라는 의미입니다.",
           "T2": "逸らす",
           "K2": "피하다",
@@ -871,7 +871,7 @@
           "XE": "視線を逸らさないで。",
           "XK": "시선을 피하지 말고.",
           "XI": "shisen o sorasanai de",
-          "XR": "시센 오 소라사나이 데"
+          "XR": "시센 오 소라사 나이 데"
         },
         {
           "T1": "で",
@@ -1286,13 +1286,13 @@
       "G0": "이 문장은 '抑えきれぬ'(억제할 수 없는) + '想い'(마음) + '歌いまってる'(노래하고 있어) + 'から'(때문에)로 구성되어 있습니다. '抑えきれぬ'는 '억제할 수 없는'이라는 의미의 형용사로, '想い'는 '마음'을 나타내는 명사입니다. '歌いまってる'은 '노래하고 있다'는 의미의 동사구이며, 'から'는 이유를 나타내는 접속조사입니다. 전체적으로 '억제할 수 없는 마음을 노래하고 있기 때문에'라는 의미를 전달합니다.",
       "K0": "억제할 수 없는 마음을 노래하고 있어.",
       "I0": "osaekirenu omoi utaimatteru kara",
-      "R0": "오사에키레누 오모이 우타이맛테루 카라",
+      "R0": "오사에 키레누 오모이 우타이 맛테루 카라",
       "LI": [
         {
           "T1": "抑えきれぬ",
           "K1": "억제할 수 없는",
           "I1": "osaekirenu",
-          "R1": "오사에키레누",
+          "R1": "오사에 키레누",
           "E1": "'억제할 수 없는'이라는 의미의 형용사로, 강한 감정이나 충동을 참을 수 없음을 표현합니다.",
           "T2": "抑える",
           "K2": "억제하다",
@@ -1301,7 +1301,7 @@
           "XE": "彼の怒りは抑えきれなかった。",
           "XK": "그의 분노는 억제할 수 없었다.",
           "XI": "kare no ikari wa osaekirenakatta",
-          "XR": "카레 노 이카리 와 오사에키레나캇타"
+          "XR": "카레 노 이카리 와 오사에 키레나캇타"
         },
         {
           "T1": "想い",
@@ -1322,7 +1322,7 @@
           "T1": "歌いまってる",
           "K1": "노래하고 있어",
           "I1": "utaimatteru",
-          "R1": "우타이맛테루",
+          "R1": "우타이 맛테루",
           "E1": "'노래하고 있다'는 의미의 동사로, 현재 진행형을 나타냅니다.",
           "T2": "歌う",
           "K2": "노래하다",
@@ -1720,7 +1720,7 @@
       "G0": "이 문장은 '今までくれた愛に(지금까지 주신 사랑에)'라는 목적어와 '応えられるように(보답할 수 있도록)'이라는 목적을 나타내는 부사절로 구성되어 있습니다. '今まで'는 '지금까지', 'くれた'는 '주신', '愛'는 '사랑', 'に'는 '~에', '応えられる'는 '보답할 수 있는', 'ように'는 '~도록'을 의미합니다. 전체적으로 지금까지 받은 사랑에 보답하고 싶다는 마음을 표현한 문장입니다.",
       "K0": "지금까지 주신 사랑에 보답할 수 있도록",
       "I0": "ima made kureta ai ni kotaerareru you ni",
-      "R0": "이마 마데 쿠레타 아이 니 코타에라레루 요우 니",
+      "R0": "이마 마데 쿠레타 아이 니 코타에 라레루 요우 니",
       "LI": [
         {
           "T1": "今まで",
@@ -1753,10 +1753,10 @@
           "XR": "하하 가 푸레젠토 오 쿠레타"
         },
         {
-          "T1": "愛",
-          "K1": "사랑",
-          "I1": "ai",
-          "R1": "아이",
+          "T1": "もの",
+          "K1": "것",
+          "I1": "mono",
+          "R1": "모노",
           "E1": "사랑을 의미하는 명사입니다.",
           "T2": "愛",
           "K2": "사랑",
@@ -1786,7 +1786,7 @@
           "T1": "応えられる",
           "K1": "보답할 수 있는",
           "I1": "kotaerareru",
-          "R1": "코타에라레루",
+          "R1": "코타에 라레루",
           "E1": "동사 '応える'의 가능형으로, '보답할 수 있다'는 의미입니다.",
           "T2": "応える",
           "K2": "보답하다",
@@ -1795,7 +1795,7 @@
           "XE": "期待に応えられるよう頑張ります。",
           "XK": "기대에 보답할 수 있도록 노력하겠습니다.",
           "XI": "kitai ni kotaerareru you ni ganbarimasu",
-          "XR": "키타이 니 코타에라레루 요우 니 간바리마스"
+          "XR": "키타이 니 코타에 라레루 요우 니 간바리마스"
         },
         {
           "T1": "ように",
@@ -1821,22 +1821,22 @@
       "G0": "이 문장은 '抑えきれぬ想い(억제할 수 없는 마음)'를 '抱き(품고)' '待っている(기다리고 있다)'는 내용으로, 'から(때문에)'로 끝나며 앞의 문장과의 인과 관계를 나타냅니다. 동사 '待っている'는 '~ている' 형태로 지속 상태를 나타내며, '抱き'는 동사의 연용형으로 부사적 역할을 합니다. 전체적으로 억제할 수 없는 강렬한 감정을 품고 기다리고 있는 상황을 표현합니다.",
       "K0": "억제할 수 없는 마음을 품고 기다리고 있어서",
       "I0": "osaekirenu omoi daki matteiru kara",
-      "R0": "오사에키레누 오모이 다키 맛테이루 카라",
+      "R0": "오사에 키레누 오모이 이다키 맛테이루 카라",
       "LI": [
         {
           "T1": "抑えきれぬ",
           "K1": "억제할 수 없는",
           "I1": "osaekirenu",
-          "R1": "오사에키레누",
+          "R1": "오사에 키레누",
           "E1": "'抑える(억제하다)'의 가능 부정형 'きれない'의 문어체 변형으로, '억제할 수 없는'이라는 뜻을 가진 형용사적 표현입니다.",
           "T2": "抑えきれない",
           "K2": "억제할 수 없는",
           "I2": "osaekirenai",
-          "R2": "오사에키레나이",
+          "R2": "오사에 키레나이",
           "XE": "抑えきれぬ感情が爆発した。",
           "XK": "억제할 수 없는 감정이 폭발했다.",
           "XI": "osaekirenu kanjou ga bakuhatsu shita.",
-          "XR": "오사에키레누 칸조우 가 바쿠하츠 시타."
+          "XR": "오사에 키레누 칸조우 가 바쿠하츠 시타."
         },
         {
           "T1": "想い",
@@ -1857,16 +1857,16 @@
           "T1": "抱き",
           "K1": "품고",
           "I1": "daki",
-          "R1": "다키",
+          "R1": "이다키",
           "E1": "'抱く(안다, 품다)'의 연용형으로, 여기서는 마음을 품고 있다는 의미의 부사적 용법입니다.",
           "T2": "抱く",
           "K2": "안다",
           "I2": "daku",
-          "R2": "다쿠",
+          "R2": "이다쿠",
           "XE": "希望を抱き生きる。",
           "XK": "희망을 품고 살아간다.",
           "XI": "kibou o daki ikiru.",
-          "XR": "키보우 오 다키 이키루."
+          "XR": "키보우 오 이다키 이키루."
         },
         {
           "T1": "待っている",
@@ -1982,7 +1982,7 @@
           "XE": "雨が降っている。",
           "XK": "비가 오고 있다.",
           "XI": "ame ga futte iru",
-          "XR": "아메 가 풋테 이루"
+          "XR": "아메 가 훗테 이루"
         },
         {
           "T1": "月",
@@ -2068,13 +2068,13 @@
       "G0": "이 문장은 '抑えきれぬ想い'라는 명사구와 '抱き待ってるから'라는 동사구로 구성되어 있습니다. '抑えきれぬ'는 '억누를 수 없는'이라는 의미의 형용사로, '想い'는 '마음'을 나타냅니다. '抱き'는 '품고'라는 의미의 동사로, '待ってる'은 '기다리고 있다'는 의미입니다. 'から'는 이유나 원인을 나타내는 조사로, '~때문에' 또는 '~해서'로 해석할 수 있습니다. 전체적으로 '억누를 수 없는 마음을 품고 기다리고 있어'라는 의미를 전달합니다.",
       "K0": "억누를 수 없는 마음을 품고 기다리고 있어.",
       "I0": "osaekirenu omoi daki matteru kara",
-      "R0": "오사에키레누 오모이 다키 맛테루 카라",
+      "R0": "오사에 키레누 오모이 이다키 맛테루 카라",
       "LI": [
         {
           "T1": "抑えきれぬ",
           "K1": "억누를 수 없는",
           "I1": "osaekirenu",
-          "R1": "오사에키레누",
+          "R1": "오사에 키레누",
           "E1": "'억누르다'라는 동사의 부정형으로, '억누를 수 없는'이라는 의미를 나타냅니다. 강한 감정이나 욕구를 억누를 수 없음을 표현할 때 사용됩니다.",
           "T2": "抑える",
           "K2": "억누르다",
@@ -2083,7 +2083,7 @@
           "XE": "彼の怒りを抑えきれなかった。",
           "XK": "그의 분노를 억누를 수 없었다.",
           "XI": "kare no ikari o osaekirenakatta",
-          "XR": "카레 노 이카리 오 오사에키레나캇타"
+          "XR": "카레 노 이카리 오 오사에 키레나캇타"
         },
         {
           "T1": "想い",
@@ -2104,12 +2104,12 @@
           "T1": "抱き",
           "K1": "품고",
           "I1": "daki",
-          "R1": "다키",
+          "R1": "이다키",
           "E1": "'抱く'라는 동사의 연용형으로, '품다' 또는 '안다'라는 의미입니다. 여기서는 마음을 품고 있다는 의미로 사용되었습니다.",
           "T2": "抱く",
           "K2": "품다",
           "I2": "daku",
-          "R2": "다쿠",
+          "R2": "이다쿠",
           "XE": "彼は夢を抱いている。",
           "XK": "그는 꿈을 품고 있다.",
           "XI": "kare wa yume o daite iru",
@@ -2300,7 +2300,7 @@
           "XE": "雨が降っています。",
           "XK": "비가 오고 있습니다.",
           "XI": "ame ga futte imasu",
-          "XR": "아메 가 풋테 이마스"
+          "XR": "아메 가 훗테 이마스"
         },
         {
           "T1": "ここ",
@@ -2502,7 +2502,7 @@
       "G0": "이 문장은 '대신에'라는 의미의 '代わりに'로 시작하여, 그 뒤에 세 가지 명사 '安らぎ(안락)', '癒し(치유)', '静寂(고요)'가 'と(와)'로 연결되어 있습니다. 마지막에 목적격 조사 'を'가 붙어 있어, 이 세 가지를 목적으로 하는 문장임을 나타냅니다. 전체적으로 '대신에 안락과 치유와 고요를'이라는 의미로, 무언가를 대체하는 내용을 담고 있습니다.",
       "K0": "대신에 안락과 치유와 고요를",
       "I0": "kawari ni yasuragi to iyashi to seijaku o",
-      "R0": "카와리 니 야스라기 토 이야시 토 세이자쿠 오",
+      "R0": "카와리 니 야스라기 토 이야시 토 세이쟈쿠 오",
       "LI": [
         {
           "T1": "代わりに",
@@ -2583,16 +2583,16 @@
           "T1": "静寂",
           "K1": "고요",
           "I1": "seijaku",
-          "R1": "세이자쿠",
+          "R1": "세이쟈쿠",
           "E1": "조용하고 고요한 상태를 의미하는 명사입니다.",
           "T2": "静寂",
           "K2": "고요",
           "I2": "seijaku",
-          "R2": "세이자쿠",
+          "R2": "세이쟈쿠",
           "XE": "夜の静寂が好きだ。",
           "XK": "밤의 고요를 좋아한다.",
           "XI": "yoru no seijaku ga suki da",
-          "XR": "요루 노 세이자쿠 가 스키 다"
+          "XR": "요루 노 세이쟈쿠 가 스키 다"
         },
         {
           "T1": "を",
@@ -3223,5 +3223,6 @@
       "O0": "その光無しじゃ輝けやしない"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "rubyData": "あなたは<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span><span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じ<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>の<span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">した</span></span><br>\n<span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>れた<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>で<span class=\"ruby\"><span class=\"rb\">思</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>を<span class=\"ruby\"><span class=\"rb\">紡</span><span class=\"rt\">つむ</span></span>ぐ<br>\n<span class=\"ruby\"><span class=\"rb\">抑</span><span class=\"rt\">おさ</span></span>えきれぬ<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">いだ</span></span>き<span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>ってるから<br>\nあなたがここへ<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">帰</span><span class=\"rt\">かえ</span></span>るまで<br>\n<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>までの<span class=\"ruby\"><span class=\"rb\">他</span><span class=\"rt\">ほか</span></span>の<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>とも<span class=\"ruby\"><span class=\"rb\">違</span><span class=\"rt\">ちが</span></span>う<br>\nあなたは<span class=\"ruby\"><span class=\"rb\">太陽</span><span class=\"rt\">たいよう</span></span> <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>が<span class=\"ruby\"><span class=\"rb\">月</span><span class=\"rt\">つき</span></span>だとするなら<br>\nその<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span><span class=\"ruby\"><span class=\"rb\">無</span><span class=\"rt\">な</span></span>しじゃ<span class=\"ruby\"><span class=\"rb\">輝</span><span class=\"rt\">かがや</span></span>けやしない<br>\n<span class=\"ruby\"><span class=\"rb\">代</span><span class=\"rt\">か</span></span>わりに<span class=\"ruby\"><span class=\"rb\">安</span><span class=\"rt\">やす</span></span>らぎと<span class=\"ruby\"><span class=\"rb\">癒</span><span class=\"rt\">いや</span></span>しと<span class=\"ruby\"><span class=\"rb\">静寂</span><span class=\"rt\">せいじゃく</span></span>を<br>\nねぇ なんで? あぁ そこまで<br>\n<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>せるものもないのに <span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>してくれる<span class=\"ruby\"><span class=\"rb\">意味</span><span class=\"rt\">いみ</span></span>を<br>\nいつだって<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>がそばに<span class=\"ruby\"><span class=\"rb\">居</span><span class=\"rt\">い</span></span>たくて<br>\n<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>までくれた<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">もの</span></span>に<span class=\"ruby\"><span class=\"rb\">応</span><span class=\"rt\">こた</span></span>えられるように<br>\nあなたは<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span><span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じ<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>の<span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">した</span></span><br>\n<span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>れた<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>で<span class=\"ruby\"><span class=\"rb\">思</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>を<span class=\"ruby\"><span class=\"rb\">紡</span><span class=\"rt\">つむ</span></span>ぐ<br>\n<span class=\"ruby\"><span class=\"rb\">抑</span><span class=\"rt\">おさ</span></span>えきれぬ<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">いだ</span></span>き<span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>ってるから<br>\nあなたがここへ<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">帰</span><span class=\"rt\">かえ</span></span>るまで<br>\n<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>までは<span class=\"ruby\"><span class=\"rb\">交</span><span class=\"rt\">まじ</span></span>わることのない<br>\n<span class=\"ruby\"><span class=\"rb\">新</span><span class=\"rt\">あたら</span></span>しい<span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>を<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>に<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>せてくれたあなたと<br>\nいつまでも いっそどこまでも<br>\n<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>を<span class=\"ruby\"><span class=\"rb\">閉</span><span class=\"rt\">と</span></span>じるその<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span>まで<span class=\"ruby\"><span class=\"rb\">赤</span><span class=\"rt\">あか</span></span>い<span class=\"ruby\"><span class=\"rb\">糸</span><span class=\"rt\">いと</span></span>を<br>\nねぇ まって まだ<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで<br>\nあなたを<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>うほどに<span class=\"ruby\"><span class=\"rb\">苦</span><span class=\"rt\">くる</span></span>しくなる<span class=\"ruby\"><span class=\"rb\">意味</span><span class=\"rt\">いみ</span></span>を<br>\nいつだって<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>を<span class=\"ruby\"><span class=\"rb\">逸</span><span class=\"rt\">そ</span></span>らさないで<br>\nどこへ<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>ってもお<span class=\"ruby\"><span class=\"rb\">互</span><span class=\"rt\">たが</span></span>いを<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>つけられるように<br>\nあなたは<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span><span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じ<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>の<span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">した</span></span><br>\n<span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>れた<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>で<span class=\"ruby\"><span class=\"rb\">思</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>を<span class=\"ruby\"><span class=\"rb\">紡</span><span class=\"rt\">つむ</span></span>ぐ<br>\n<span class=\"ruby\"><span class=\"rb\">抑</span><span class=\"rt\">おさ</span></span>えきれぬ<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">いだ</span></span>き<span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>っているから<br>\nあなたがここへ<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">帰</span><span class=\"rt\">かえ</span></span>るまで<br>\n<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">う</span></span>まれ<span class=\"ruby\"><span class=\"rb\">落</span><span class=\"rt\">お</span></span>ちた<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span> <span class=\"ruby\"><span class=\"rb\">半分</span><span class=\"rt\">はんぶん</span></span>だけ<span class=\"ruby\"><span class=\"rb\">欠</span><span class=\"rt\">か</span></span>けた<span class=\"ruby\"><span class=\"rb\">命</span><span class=\"rt\">いのち</span></span><br>\n<span class=\"ruby\"><span class=\"rb\">泣</span><span class=\"rt\">な</span></span>き<span class=\"ruby\"><span class=\"rb\">喚</span><span class=\"rt\">わめ</span></span>いたんだ <span class=\"ruby\"><span class=\"rb\">満</span><span class=\"rt\">み</span></span>たされぬ<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>かに<br>\n<span class=\"ruby\"><span class=\"rb\">記憶</span><span class=\"rt\">きおく</span></span>などなくともわかってたんだ<br>\n<span class=\"ruby\"><span class=\"rb\">手繰</span><span class=\"rt\">たぐ</span></span>り<span class=\"ruby\"><span class=\"rb\">寄</span><span class=\"rt\">よ</span></span>せた<span class=\"ruby\"><span class=\"rb\">糸</span><span class=\"rt\">いと</span></span>の<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>に<span class=\"ruby\"><span class=\"rb\">答</span><span class=\"rt\">こた</span></span>えを<br>\n<span class=\"ruby\"><span class=\"rb\">私</span><span class=\"rt\">わたし</span></span>は<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span><span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じ<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>の<span class=\"ruby\"><span class=\"rb\">下</span><span class=\"rt\">した</span></span><br>\n<span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>れた<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>で<span class=\"ruby\"><span class=\"rb\">思</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>を<span class=\"ruby\"><span class=\"rb\">叫</span><span class=\"rt\">さけ</span></span>ぶ<br>\n<span class=\"ruby\"><span class=\"rb\">抑</span><span class=\"rt\">おさ</span></span>えきれぬ<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>いまってるから<br>\nあなたがここへ<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">帰</span><span class=\"rt\">かえ</span></span>るまで<br>\nまた2<span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ふたり</span></span>で<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>えるその<span class=\"ruby\"><span class=\"rb\">瞬間</span><span class=\"rt\">しゅんかん</span></span>を<br>\nここで<span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>っているから<br>"
 }
