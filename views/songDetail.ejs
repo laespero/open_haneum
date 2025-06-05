@@ -87,12 +87,14 @@
 
         <!-- 액션 버튼들 -->
         <div class="flex space-x-3 mb-6">
+            <% if (!Array.isArray(song.translatedLines) || song.translatedLines.length === 0) { %>            
             <form action="/translate/<%= song.name %>" method="post">
                 <button type="submit" 
                         class="px-4 py-2 bg-indigo-500 text-white text-sm rounded-md hover:bg-indigo-600 transition-colors duration-200">
                     번역하기
                 </button>
             </form>
+            <% } %>
             
             <form action="/songview/<%= song.name %>" method="get">
                 <button type="submit" 
