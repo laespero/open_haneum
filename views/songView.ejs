@@ -1247,8 +1247,6 @@ ${a}
                 document.head.appendChild(styleEle);                
             }
             document.body.style.zIndex = 1;
-            document.body.style.zoom = 1.0000001;
-            setTimeout(function(){document.body.style.zoom = 1;},50); //allow some time to flush the css buffer.
         }
 
         updateDataFromServer();

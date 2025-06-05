@@ -70,13 +70,14 @@
                                         다시 번역하기
                                     </button>
                                 </form> -->
-                                <form action="/correct-with-message/<%= song.name %>" method="post" class="inline">
+                                <form action="/correct-with-message/<%= song.name %>" method="post" class="inline disable-on-submit">
                                     <input type="hidden" name="originalLine" value="<%= line.O0?line.O0:line.T0 %>">
                                     <textarea name="correctionMessage" 
                                               placeholder="수정 요청 메시지를 입력하세요" 
                                               rows="1" 
                                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"></textarea>
-                                    <button type="submit" 
+                                    <button type="submit"
+                                            data-processing-text="수정 요청중..."
                                             class="mt-2 px-3 py-1.5 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors">
                                         수정 요청하기
                                     </button>
@@ -93,8 +94,9 @@
         <!-- 액션 버튼들 -->
         <div class="flex space-x-4 mb-8">
             <% if (!Array.isArray(song.translatedLines) || song.translatedLines.length === 0) { %>                        
-            <form action="/translate/<%= song.name %>" method="post">
-                <button type="submit" 
+            <form action="/translate/<%= song.name %>" method="post" class="disable-on-submit">
+                <button type="submit"
+                        data-processing-text="번역중..."
                         class="px-4 py-2 bg-indigo-500 text-white text-sm rounded-md hover:bg-indigo-600 transition-colors">
                     번역하기
                 </button>
@@ -118,8 +120,9 @@
                         <li class="text-gray-600"><%= JSON.stringify(context) %></li>
                     <% }); %>
                 </ul>
-                <form action="/retry-translation/<%= song.name %>" method="post">
-                    <button type="submit" 
+                <form action="/retry-translation/<%= song.name %>" method="post" class="disable-on-submit">
+                    <button type="submit"
+                            data-processing-text="다시 번역중..."
                             class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-md hover:bg-yellow-600 transition-colors">
                         실패한 문장 다시 번역하기
                     </button>
@@ -151,5 +154,18 @@
             <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
         </div>
     </footer>
+    <script>
+        document.querySelectorAll('.disable-on-submit').forEach(form => {
+            form.addEventListener('submit', function(event) {
+                const button = form.querySelector('button[type="submit"]');
+                if (button) {
+                    button.disabled = true;
+                    const processingText = button.getAttribute('data-processing-text') || '처리중...';
+                    button.textContent = processingText;
+                    button.classList.add('opacity-50', 'cursor-wait');
+                }
+            });
+        });
+    </script>
 </body>
 </html> 
