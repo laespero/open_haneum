@@ -1,0 +1,2800 @@
+{
+  "name": "heavy_is_the_crown",
+  "text": "It's pourin' in, you're laid on the floor again\nOne knock at the door and then\nWe both know how the story ends\nYou can't win if your white flag's out\nwhen the war begins\nAimin' so high but swingin' so low\nTryin' to catch fire but feelin' so cold\nHold it inside and hope it won't show\nI'm sayin' it's not, but inside, I know\nToday's gonna be the day you notice\n'Cause I'm tired of explainin' what the joke is\nThis is what you asked for, heavy is the crown\nFire in the sunrise, ashes rainin' down\nTry to hold it in, but it keeps bleedin' out\nThis is what you asked for, heavy is the\nHeavy is the crown\nTurn to run, now look what it's become\nOutnumbered, ten to one\nBack then should've bit your tongue\n'Cause there's no turnin' back this path\nonce it's begun\nYou're already on that list\nSay you don't want what you can't resist\nWavin' that sword when the pen won't miss\nWatch it all fallin' apart like this\nThis is what you asked for, heavy is the crown\nFire in the sunrise, ashes rainin' down\nTry to hold it in, but it keeps bleedin' out\nThis is what you asked for, heavy is the\nHeavy is the crown\nToday's gonna be the day you notice\n'Cause I'm tired of explainin' what the joke is\nThis is what you asked for\nThis is what you asked for, heavy is the crown\nFire in the sunrise, ashes rainin' down\nTry to hold it in but it keeps bleedin' out\nThis is what you asked for, heavy is the\nHeavy is the crown\nHeavy is the crown\nHeavy is the, heavy is the crown",
+  "p1": [
+    "It's pourin' in, you're laid on the floor again",
+    "One knock at the door and then",
+    "We both know how the story ends",
+    "You can't win if your white flag's out",
+    "when the war begins",
+    "Aimin' so high but swingin' so low",
+    "Tryin' to catch fire but feelin' so cold",
+    "Hold it inside and hope it won't show",
+    "I'm sayin' it's not, but inside, I know",
+    "Today's gonna be the day you notice",
+    "'Cause I'm tired of explainin' what the joke is",
+    "This is what you asked for, heavy is the crown",
+    "Fire in the sunrise, ashes rainin' down",
+    "Try to hold it in, but it keeps bleedin' out",
+    "This is what you asked for, heavy is the",
+    "Heavy is the crown",
+    "Turn to run, now look what it's become",
+    "Outnumbered, ten to one",
+    "Back then should've bit your tongue",
+    "'Cause there's no turnin' back this path",
+    "once it's begun",
+    "You're already on that list",
+    "Say you don't want what you can't resist",
+    "Wavin' that sword when the pen won't miss",
+    "Watch it all fallin' apart like this",
+    "This is what you asked for",
+    "Try to hold it in but it keeps bleedin' out",
+    "Heavy is the, heavy is the crown"
+  ],
+  "contextText": [
+    {
+      "T0": "It's pourin' in, you're laid on the floor again",
+      "CX": "It's pourin' in, you're laid on the floor again One knock at the door and then"
+    },
+    {
+      "T0": "One knock at the door and then",
+      "CX": "It's pourin' in, you're laid on the floor again One knock at the door and then We both know how the story ends"
+    },
+    {
+      "T0": "We both know how the story ends",
+      "CX": "One knock at the door and then We both know how the story ends You can't win if your white flag's out"
+    },
+    {
+      "T0": "You can't win if your white flag's out",
+      "CX": "We both know how the story ends You can't win if your white flag's out when the war begins"
+    },
+    {
+      "T0": "when the war begins",
+      "CX": "You can't win if your white flag's out when the war begins Aimin' so high but swingin' so low"
+    },
+    {
+      "T0": "Aimin' so high but swingin' so low",
+      "CX": "when the war begins Aimin' so high but swingin' so low Tryin' to catch fire but feelin' so cold"
+    },
+    {
+      "T0": "Tryin' to catch fire but feelin' so cold",
+      "CX": "Aimin' so high but swingin' so low Tryin' to catch fire but feelin' so cold Hold it inside and hope it won't show"
+    },
+    {
+      "T0": "Hold it inside and hope it won't show",
+      "CX": "Tryin' to catch fire but feelin' so cold Hold it inside and hope it won't show I'm sayin' it's not, but inside, I know"
+    },
+    {
+      "T0": "I'm sayin' it's not, but inside, I know",
+      "CX": "Hold it inside and hope it won't show I'm sayin' it's not, but inside, I know Today's gonna be the day you notice"
+    },
+    {
+      "T0": "Today's gonna be the day you notice",
+      "CX": "I'm sayin' it's not, but inside, I know Today's gonna be the day you notice 'Cause I'm tired of explainin' what the joke is"
+    },
+    {
+      "T0": "'Cause I'm tired of explainin' what the joke is",
+      "CX": "Today's gonna be the day you notice 'Cause I'm tired of explainin' what the joke is This is what you asked for, heavy is the crown"
+    },
+    {
+      "T0": "This is what you asked for, heavy is the crown",
+      "CX": "'Cause I'm tired of explainin' what the joke is This is what you asked for, heavy is the crown Fire in the sunrise, ashes rainin' down"
+    },
+    {
+      "T0": "Fire in the sunrise, ashes rainin' down",
+      "CX": "This is what you asked for, heavy is the crown Fire in the sunrise, ashes rainin' down Try to hold it in, but it keeps bleedin' out"
+    },
+    {
+      "T0": "Try to hold it in, but it keeps bleedin' out",
+      "CX": "Fire in the sunrise, ashes rainin' down Try to hold it in, but it keeps bleedin' out This is what you asked for, heavy is the"
+    },
+    {
+      "T0": "This is what you asked for, heavy is the",
+      "CX": "Try to hold it in, but it keeps bleedin' out This is what you asked for, heavy is the Heavy is the crown"
+    },
+    {
+      "T0": "Heavy is the crown",
+      "CX": "This is what you asked for, heavy is the Heavy is the crown Turn to run, now look what it's become"
+    },
+    {
+      "T0": "Turn to run, now look what it's become",
+      "CX": "Heavy is the crown Turn to run, now look what it's become Outnumbered, ten to one"
+    },
+    {
+      "T0": "Outnumbered, ten to one",
+      "CX": "Turn to run, now look what it's become Outnumbered, ten to one Back then should've bit your tongue"
+    },
+    {
+      "T0": "Back then should've bit your tongue",
+      "CX": "Outnumbered, ten to one Back then should've bit your tongue 'Cause there's no turnin' back this path"
+    },
+    {
+      "T0": "'Cause there's no turnin' back this path",
+      "CX": "Back then should've bit your tongue 'Cause there's no turnin' back this path once it's begun"
+    },
+    {
+      "T0": "once it's begun",
+      "CX": "'Cause there's no turnin' back this path once it's begun You're already on that list"
+    },
+    {
+      "T0": "You're already on that list",
+      "CX": "once it's begun You're already on that list Say you don't want what you can't resist"
+    },
+    {
+      "T0": "Say you don't want what you can't resist",
+      "CX": "You're already on that list Say you don't want what you can't resist Wavin' that sword when the pen won't miss"
+    },
+    {
+      "T0": "Wavin' that sword when the pen won't miss",
+      "CX": "Say you don't want what you can't resist Wavin' that sword when the pen won't miss Watch it all fallin' apart like this"
+    },
+    {
+      "T0": "Watch it all fallin' apart like this",
+      "CX": "Wavin' that sword when the pen won't miss Watch it all fallin' apart like this This is what you asked for"
+    },
+    {
+      "T0": "This is what you asked for",
+      "CX": "Watch it all fallin' apart like this This is what you asked for Try to hold it in but it keeps bleedin' out"
+    },
+    {
+      "T0": "Try to hold it in but it keeps bleedin' out",
+      "CX": "This is what you asked for Try to hold it in but it keeps bleedin' out Heavy is the, heavy is the crown"
+    },
+    {
+      "T0": "Heavy is the, heavy is the crown",
+      "CX": "Try to hold it in but it keeps bleedin' out Heavy is the, heavy is the crown"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "Outnumbered, ten to one",
+      "C0": "도망치려고 했을 때, 그것이 어떻게 되었는지 보라. 열 대 하나로 적에게 숫적으로 밀렸다. 그때는 침묵했어야 했다.",
+      "G0": "Outnumbered, ten to one'은 주어가 생략된 수동태 구조로, 숫적으로 열 대 하나로 밀렸다는 상황을 묘사합니다.",
+      "K0": "10대 1로 완전히 밀렸어",
+      "R0": "아웃넘버드, 텐 투 원",
+      "LI": [
+        {
+          "T1": "Outnumbered",
+          "K1": "숫적으로 열세인",
+          "R1": "아웃넘버드",
+          "E1": "'Outnumbered'는 '숫적으로 더 많은'이라는 뜻을 가진 'outnumber'의 과거 분사형으로, 주로 수동태로 사용되어 상대방보다 수적으로 밀리는 상황을 설명합니다.",
+          "T2": "outnumber",
+          "K2": "숫자가 더 많다",
+          "R2": "아웃넘버",
+          "XE": "They were outnumbered by the enemy forces.",
+          "XK": "그들은 적군에게 숫적으로 열세였다.",
+          "XR": "데이 워 아웃넘버드 바이 디 에너미 포스즈"
+        },
+        {
+          "T1": "ten",
+          "K1": "10",
+          "R1": "텐",
+          "E1": "'Ten'은 숫자 10을 나타내는 단어로, 이 문장에서 명사의 역할을 합니다.",
+          "T2": "ten",
+          "K2": "10",
+          "R2": "텐",
+          "XE": "She bought ten apples from the market.",
+          "XK": "그녀는 시장에서 사과 열 개를 샀다.",
+          "XR": "쉬 봇 텐 애플즈 프롬 더 마켓"
+        },
+        {
+          "T1": "to",
+          "K1": "~대",
+          "R1": "투",
+          "E1": "'To'는 두 숫자 사이의 비율을 나타낼 때 사용됩니다. 여기서는 '열 대 하나'의 비율을 설명합니다.",
+          "T2": "to",
+          "K2": "~대",
+          "R2": "투",
+          "XE": "The score was five to three.",
+          "XK": "점수는 5 대 3이었다.",
+          "XR": "더 스코어 워즈 파이브 투 쓰리"
+        },
+        {
+          "T1": "one",
+          "K1": "1",
+          "R1": "원",
+          "E1": "'One'은 숫자 1을 나타내는 단어로, 이 문장에서 명사의 역할을 합니다.",
+          "T2": "one",
+          "K2": "1",
+          "R2": "원",
+          "XE": "I have one sister.",
+          "XK": "나는 여동생이 한 명 있다.",
+          "XR": "아이 해브 원 시스터"
+        }
+      ]
+    },
+    {
+      "T0": "when the war begins",
+      "C0": "전쟁이 시작될 때 흰 깃발을 내밀면 이길 수 없어. 높이 겨누다가 낮게 휘두르는 중",
+      "G0": "'When the war begins'는 시간 부사절을 나타내는 구조로, 'when'(접속사), 'the war'(주어), 'begins'(동사)로 구성된 문장입니다.",
+      "K0": "전쟁이 시작될 때",
+      "R0": "웬 더 워 비긴즈",
+      "LI": [
+        {
+          "T1": "when",
+          "K1": "~할 때",
+          "R1": "웬",
+          "E1": "'When'은 시간 접속사로, 특정한 시간이나 사건이 일어날 때를 나타냅니다.",
+          "T2": "when",
+          "K2": "~할 때",
+          "R2": "웬",
+          "XE": "Call me when you arrive.",
+          "XK": "도착하면 전화해.",
+          "XR": "콜 미 웬 유 어라이브"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 명사를 가리킬 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the roof.",
+          "XK": "그 고양이가 지붕 위에 있어.",
+          "XR": "더 캣 이즈 온 더 루프"
+        },
+        {
+          "T1": "war",
+          "K1": "전쟁",
+          "R1": "워",
+          "E1": "'War'는 국가나 집단 사이의 무력 충돌이나 싸움을 의미하는 명사입니다.",
+          "T2": "war",
+          "K2": "전쟁",
+          "R2": "워",
+          "XE": "The war lasted for five years.",
+          "XK": "그 전쟁은 5년 동안 지속되었어.",
+          "XR": "더 워 라스티드 포어 파이브 이어스"
+        },
+        {
+          "T1": "begins",
+          "K1": "시작하다",
+          "R1": "비긴즈",
+          "E1": "'Begins'는 시작을 의미하는 동사 'begin'의 현재형입니다. 주어가 3인칭 단수일 때 사용됩니다.",
+          "T2": "begin",
+          "K2": "시작하다",
+          "R2": "비긴",
+          "XE": "The meeting begins at 10 AM.",
+          "XK": "회의는 오전 10시에 시작해.",
+          "XR": "더 미팅 비긴즈 앳 텐 에이엠"
+        }
+      ]
+    },
+    {
+      "T0": "One knock at the door and then",
+      "C0": "비가 쏟아지고, 너는 다시 바닥에 누워 있어. 문을 한 번 두드리더니 그 후 우리는 둘 다 이 이야기가 어떻게 끝날지 알고 있어.",
+      "G0": "'One knock at the door and then'는 명사구(one knock)와 전치사구(at the door)로 구성된 구문이며, 'and then'이라는 접속사가 뒤따라서 다음에 무언가가 발생한다는 의미를 전달합니다.",
+      "K0": "문을 한 번 두드리더니",
+      "R0": "원 낙 앳 더 도어 앤 덴",
+      "LI": [
+        {
+          "T1": "One",
+          "K1": "하나",
+          "R1": "원",
+          "E1": "'One'은 수를 나타내는 명사로 여기서는 '한 번'을 의미합니다.",
+          "T2": "one",
+          "K2": "하나",
+          "R2": "원",
+          "XE": "One apple a day keeps the doctor away.",
+          "XK": "하루에 사과 하나는 의사를 멀리한다.",
+          "XR": "원 애플 어 데이 킵스 더 닥터 어웨이"
+        },
+        {
+          "T1": "knock",
+          "K1": "두드리다",
+          "R1": "낙",
+          "E1": "'Knock'는 문 등을 주먹으로 두드리는 행위를 의미하는 동사입니다.",
+          "T2": "knock",
+          "K2": "두드리다",
+          "R2": "낙",
+          "XE": "Please knock before entering.",
+          "XK": "들어오기 전에 두드려 주세요.",
+          "XR": "플리즈 낙 비포 엔터링"
+        },
+        {
+          "T1": "at",
+          "K1": "~에서",
+          "R1": "앳",
+          "E1": "'At'은 장소나 시간을 나타내는 전치사로, 여기서는 '문에서'를 의미합니다.",
+          "T2": "at",
+          "K2": "~에서",
+          "R2": "앳",
+          "XE": "Meet me at the station.",
+          "XK": "역에서 만나자.",
+          "XR": "밋 미 앳 더 스테이션"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지정할 때 사용하는 정관사로, 청자와 화자가 둘 다 알고 있는 대상을 나타냅니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The sun is shining.",
+          "XK": "해가 빛나고 있어.",
+          "XR": "더 선 이즈 샤이닝"
+        },
+        {
+          "T1": "door",
+          "K1": "문",
+          "R1": "도어",
+          "E1": "'Door'는 건물이나 방의 출입구를 의미하는 명사입니다.",
+          "T2": "door",
+          "K2": "문",
+          "R2": "도어",
+          "XE": "Close the door, please.",
+          "XK": "문을 닫아 주세요.",
+          "XR": "클로즈 더 도어, 플리즈"
+        },
+        {
+          "T1": "and",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 두 개 이상의 항목을 연결할 때 사용하는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "She likes apples and oranges.",
+          "XK": "그녀는 사과와 오렌지를 좋아해.",
+          "XR": "쉬 라이크스 애플스 앤드 오렌지스"
+        },
+        {
+          "T1": "then",
+          "K1": "그 후에",
+          "R1": "덴",
+          "E1": "'Then'은 시간의 흐름을 나타내며, 이전 사건 이후에 발생하는 일을 나타냅니다.",
+          "T2": "then",
+          "K2": "그 후에",
+          "R2": "덴",
+          "XE": "We ate dinner and then watched a movie.",
+          "XK": "우리는 저녁을 먹고 그 후에 영화를 봤어.",
+          "XR": "위 에이트 디너 앤 덴 왓치드 어 무비"
+        }
+      ]
+    },
+    {
+      "T0": "You're already on that list",
+      "C0": "일단 시작되면, 너는 이미 그 목록에 올라 있어. 네가 저항할 수 없는 것을 원하지 않는다고 말해 봐.",
+      "G0": "'You're already on that list'는 주어(You), 동사구(are already on), 보어(that list)로 이루어진 문장구조입니다. 현재의 상태나 위치를 표현하는 구문으로, 특정 목록에 이미 포함된 상태를 의미합니다.",
+      "K0": "너는 이미 그 목록에 올라 있어.",
+      "R0": "유어 얼레디 온 댓 리스트",
+      "LI": [
+        {
+          "T1": "You're",
+          "K1": "너는",
+          "R1": "유어",
+          "E1": "'You're'는 'You are'의 축약형입니다.",
+          "T2": "you are",
+          "K2": "너는",
+          "R2": "유 아",
+          "XE": "You're my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유어 마이 베스트 프렌드"
+        },
+        {
+          "T1": "already",
+          "K1": "이미",
+          "R1": "얼레디",
+          "E1": "'Already'는 행위가 기대보다 일찍 혹은 상상보다 먼저 발생했음을 나타내는 부사입니다.",
+          "T2": "already",
+          "K2": "이미",
+          "R2": "얼레디",
+          "XE": "She's already gone.",
+          "XK": "그녀는 이미 떠났어.",
+          "XR": "쉬즈 얼레디 곤"
+        },
+        {
+          "T1": "on",
+          "K1": "~에",
+          "R1": "온",
+          "E1": "'On'은 위치를 나타내는 전치사로, 특정 목록이나 위치에 포함되어 있음을 나타냅니다.",
+          "T2": "on",
+          "K2": "~에",
+          "R2": "온",
+          "XE": "The book is on the table.",
+          "XK": "책이 테이블 위에 있어.",
+          "XR": "더 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시형용사로, 앞서 언급한 것을 가리킬 때 사용합니다.",
+          "T2": "that",
+          "K2": "그",
+          "R2": "댓",
+          "XE": "I like that car.",
+          "XK": "나는 그 차가 좋아.",
+          "XR": "아이 라이크 댓 카"
+        },
+        {
+          "T1": "list",
+          "K1": "목록",
+          "R1": "리스트",
+          "E1": "'List'는 갈림목 또는 항목들을 나열한 목록을 의미하는 명사입니다.",
+          "T2": "list",
+          "K2": "목록",
+          "R2": "리스트",
+          "XE": "Please write your name on the list.",
+          "XK": "목록에 너의 이름을 적어 주세요.",
+          "XR": "플리즈 라이트 유어 네임 온 더 리스트"
+        }
+      ]
+    },
+    {
+      "T0": "Back then should've bit your tongue",
+      "C0": "숫자에서 열 대 하나로 밀렸어. 그때는 혀를 깨물었어야 했어. 왜냐하면 이 길에서 돌아갈 수 없거든.",
+      "G0": "'Back then should've bit your tongue'는 주어가 생략된 구조로, 'should have'는 과거에 그렇지 않았던 행동을 후회하는 표현입니다. 'bit your tongue'은 말하지 말았어야 했다는 의미입니다.",
+      "K0": "그때는 혀를 깨물었어야 했어.",
+      "R0": "백 덴 슈드브 빗 유어 텅",
+      "LI": [
+        {
+          "T1": "Back then",
+          "K1": "그때는",
+          "R1": "백 덴",
+          "E1": "'Back then'은 과거의 특정 시점을 가리킵니다.",
+          "T2": "back then",
+          "K2": "그때는",
+          "R2": "백 덴",
+          "XE": "Back then, we didn't have smartphones.",
+          "XK": "그때는 우리는 스마트폰이 없었어.",
+          "XR": "백 덴, 위 디던트 해브 스마트폰즈"
+        },
+        {
+          "T1": "should've",
+          "K1": "~했어야 했다",
+          "R1": "슈드브",
+          "E1": "'Should've'는 'should have'의 축약형으로, 과거에 어떤 행동을 했어야 했다는 후회를 나타냅니다.",
+          "T2": "should have",
+          "K2": "~했어야 했다",
+          "R2": "슈드 해브",
+          "XE": "You should've called me.",
+          "XK": "너는 나에게 전화했어야 했어.",
+          "XR": "유 슈드브 콜드 미"
+        },
+        {
+          "T1": "bit",
+          "K1": "깨물었다",
+          "R1": "빗",
+          "E1": "'Bit'는 'bite'의 과거형으로, 무언가를 깨무는 행위를 의미합니다.",
+          "T2": "bite",
+          "K2": "깨물다",
+          "R2": "바이트",
+          "XE": "He bit into the apple.",
+          "XK": "그는 사과를 깨물었다.",
+          "XR": "히 빗 인투 디 애플"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 소유격 대명사로, 상대방이 소유한 것을 가리킵니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your book?",
+          "XK": "이것은 너의 책이니?",
+          "XR": "이즈 디스 유어 북?"
+        },
+        {
+          "T1": "tongue",
+          "K1": "혀",
+          "R1": "텅",
+          "E1": "'Tongue'는 입안의 혀를 나타내는 명사입니다.",
+          "T2": "tongue",
+          "K2": "혀",
+          "R2": "텅",
+          "XE": "He bit his tongue while eating.",
+          "XK": "그는 먹다가 혀를 깨물었다.",
+          "XR": "히 빗 히스 텅 와일 이팅"
+        }
+      ]
+    },
+    {
+      "T0": "Aimin' so high but swingin' so low",
+      "C0": "전쟁이 시작될 때 목표는 높지만, 매우 낮게 흔들려. 불을 붙이려고 하지만, 매우 차갑게 느껴져",
+      "G0": "'Aimin' so high but swingin' so low'는 주어가 생략된 상태로, 목표(aimin' so high)와 반대되는 상태(swingin' so low)를 나타내는 병렬 구문입니다.",
+      "K0": "목표는 높지만, 아주 낮은 곳에서 흔들려",
+      "R0": "에이민 소우 하이 벗 스윙인 소우 로우",
+      "LI": [
+        {
+          "T1": "Aimin'",
+          "K1": "목표하다",
+          "R1": "에이민",
+          "E1": "Aimin'은 aiming의 축약형으로, 목표를 겨냥하거나 목표를 정함을 의미합니다.",
+          "T2": "aim",
+          "K2": "목표하다",
+          "R2": "에임",
+          "XE": "She is aimin' to become a doctor.",
+          "XK": "그녀는 의사가 되는 것을 목표로 하고 있어.",
+          "XR": "쉬 이즈 에이민 투 비컴 어 닥터"
+        },
+        {
+          "T1": "so",
+          "K1": "아주",
+          "R1": "소우",
+          "E1": "'So'는 정도를 나타내는 부사로, 어떤 상태가 매우 높거나 강할 때 사용됩니다.",
+          "T2": "so",
+          "K2": "아주",
+          "R2": "소우",
+          "XE": "She was so happy with her results.",
+          "XK": "그녀는 자신의 성과에 매우 기뻐했어.",
+          "XR": "쉬 워즈 소우 해피 윗 허 리절츠"
+        },
+        {
+          "T1": "high",
+          "K1": "높은",
+          "R1": "하이",
+          "E1": "'High'는 높이 또는 높은 상태를 나타내는 형용사입니다.",
+          "T2": "high",
+          "K2": "높은",
+          "R2": "하이",
+          "XE": "The mountain is very high.",
+          "XK": "그 산은 매우 높아.",
+          "XR": "더 마운튼 이즈 베리 하이"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'는 대조나 반대를 나타내는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I wanted to go, but I couldn't.",
+          "XK": "가고 싶었지만, 갈 수 없었어.",
+          "XR": "아이 원티드 투 고, 벗 아이 쿠든트"
+        },
+        {
+          "T1": "swingin'",
+          "K1": "흔들리다",
+          "R1": "스윙인",
+          "E1": "Swingin'는 swinging의 축약형으로, 흔들리거나 움직임을 나타내는 동사입니다.",
+          "T2": "swing",
+          "K2": "흔들다",
+          "R2": "스윙",
+          "XE": "The children are swingin' on the swings.",
+          "XK": "아이들은 그네에서 흔들리고 있어.",
+          "XR": "더 칠드런 아 스윙인 온 더 스윙스"
+        },
+        {
+          "T1": "so",
+          "K1": "아주",
+          "R1": "소우",
+          "E1": "'So'는 정도를 나타내는 부사로, 어떤 상태가 매우 높거나 강할 때 사용됩니다.",
+          "T2": "so",
+          "K2": "아주",
+          "R2": "소우",
+          "XE": "She was so happy with her results.",
+          "XK": "그녀는 자신의 성과에 매우 기뻐했어.",
+          "XR": "쉬 워즈 소우 해피 윗 허 리절츠"
+        },
+        {
+          "T1": "low",
+          "K1": "낮은",
+          "R1": "로우",
+          "E1": "'Low'는 낮은 위치나 상태를 나타내는 형용사입니다.",
+          "T2": "low",
+          "K2": "낮은",
+          "R2": "로우",
+          "XE": "The ceiling is very low.",
+          "XK": "천장이 매우 낮아.",
+          "XR": "더 실링 이즈 베리 로우"
+        }
+      ]
+    },
+    {
+      "T0": "Hold it inside and hope it won't show",
+      "C0": "불을 붙이려고 노력하지만 너무 추워, 안에 숨기고 드러나지 않길 바라 나는 아니라고 말하지만, 속으로는 알아",
+      "G0": "'Hold it inside and hope it won't show'는 명령문 구조로, 'Hold'는 동사, 'it inside'는 명령의 목적지, 'hope it won't show'는 희망하거나 기대하는 내용을 나타내는 부가 구문입니다.",
+      "K0": "마음속에 숨기고 그것이 드러나지 않기를 바라",
+      "R0": "홀드 잇 인사이드 앤드 호프 잇 원트 쇼우",
+      "LI": [
+        {
+          "T1": "hold",
+          "K1": "유지하다",
+          "R1": "홀드",
+          "E1": "'Hold'는 어떤 것을 붙들거나 유지하는 행위를 나타내는 동사입니다. 여기서는 감정을 마음속에 간직하는 것을 의미합니다.",
+          "T2": "hold",
+          "K2": "유지하다",
+          "R2": "홀드",
+          "XE": "Hold your breath and count to ten.",
+          "XK": "숨을 참고 열까지 세어봐.",
+          "XR": "홀드 유어 브레스 앤드 카운트 투 텐"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 특정한 사물이나 상황을 대명사로 나타내는 단어입니다. 여기서는 화자의 감정이나 생각을 가리킵니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It's raining outside.",
+          "XK": "밖에 비가 내리고 있어.",
+          "XR": "잇츠 레이닝 아웃사이드"
+        },
+        {
+          "T1": "inside",
+          "K1": "안에",
+          "R1": "인사이드",
+          "E1": "'Inside'는 내부를 의미하는 전치사입니다. 여기서는 감정을 내부에 숨기는 것을 의미합니다.",
+          "T2": "inside",
+          "K2": "안에",
+          "R2": "인사이드",
+          "XE": "Please stay inside the house.",
+          "XK": "집 안에 머물러 주세요.",
+          "XR": "플리즈 스테이 인사이드 더 하우스"
+        },
+        {
+          "T1": "and",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 두 문장을 연결하는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "She bought apples and oranges.",
+          "XK": "그녀는 사과와 오렌지를 샀어요.",
+          "XR": "쉬 보트 애플스 앤드 오렌지스"
+        },
+        {
+          "T1": "hope",
+          "K1": "바라다",
+          "R1": "호프",
+          "E1": "'Hope'는 어떤 일이 일어나기를 바라는 감정을 나타내는 동사입니다.",
+          "T2": "hope",
+          "K2": "바라다",
+          "R2": "호프",
+          "XE": "I hope you have a great day.",
+          "XK": "당신이 멋진 하루를 보내길 바랍니다.",
+          "XR": "아이 호프 유 해브 어 그레이트 데이"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "위에서 설명한 대명사 'it'와 같으며, 이 문맥에서는 감정을 가리킵니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is what it is.",
+          "XK": "그건 어쩔 수 없어.",
+          "XR": "잇 이즈 왓 잇 이즈"
+        },
+        {
+          "T1": "won't",
+          "K1": "~하지 않을 것이다",
+          "R1": "원트",
+          "E1": "'Won't'는 'will not'의 줄임말로, 미래에 어떤 일이 발생하지 않을 것임을 나타내는 조동사입니다.",
+          "T2": "will not",
+          "K2": "~하지 않을 것이다",
+          "R2": "윌 낫",
+          "XE": "I won't be able to come tonight.",
+          "XK": "오늘 밤에 못 올 것 같아.",
+          "XR": "아이 원트 비 에이블 투 컴 투나잇"
+        },
+        {
+          "T1": "show",
+          "K1": "드러나다",
+          "R1": "쇼우",
+          "E1": "'Show'는 보여 주거나 드러내는 행위를 나타내는 동사입니다. 여기서는 감정이 겉으로 드러나는 것을 의미합니다.",
+          "T2": "show",
+          "K2": "드러나다",
+          "R2": "쇼우",
+          "XE": "Her true feelings started to show.",
+          "XK": "그녀의 진짜 감정이 드러나기 시작했다.",
+          "XR": "허 트루 필링스 스타티드 투 쇼우"
+        }
+      ]
+    },
+    {
+      "T0": "once it's begun",
+      "C0": "왜냐하면 이 길이 한 번 시작되면 되돌릴 수 없기 때문이야. 너는 이미 그 목록에 있어.",
+      "G0": "'Once it's begun'은 '한 번 그것이 시작되면'이라는 의미로, 시간 부사절 (once)과 주어(its), 동사(begun)로 이루어진 문장 구조입니다. 여기서 'it'은 이전 문장에서 언급된 상황을 나타내고, 'begun'은 'begin'의 과거 분사형입니다.",
+      "K0": "한번 시작되면",
+      "R0": "원스 잇츠 비건",
+      "LI": [
+        {
+          "T1": "once",
+          "K1": "한번",
+          "R1": "원스",
+          "E1": "'Once'는 '한번' 또는 '어느 때'의 의미를 가지는 부사로, 여기서는 시간 부사절을 시작하는 역할을 합니다.",
+          "T2": "once",
+          "K2": "한번",
+          "R2": "원스",
+          "XE": "Once you start, you can't stop.",
+          "XK": "일단 시작하면 멈출 수 없어.",
+          "XR": "원스 유 스타트, 유 캔트 스탑"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것이",
+          "R1": "잇츠",
+          "E1": "'It's'는 'it is'의 축약형으로, 여기서 'it'은 앞서 언급된 상황을 의미합니다.",
+          "T2": "it is",
+          "K2": "그것이",
+          "R2": "잇 이즈",
+          "XE": "It's a beautiful day.",
+          "XK": "오늘은 아름다운 날이야.",
+          "XR": "잇츠 어 뷰티풀 데이"
+        },
+        {
+          "T1": "begun",
+          "K1": "시작된",
+          "R1": "비건",
+          "E1": "'Begun'은 동사 'begin'의 과거 분사 형태로, '시작된'을 의미합니다.",
+          "T2": "begin",
+          "K2": "시작하다",
+          "R2": "비긴",
+          "XE": "The movie had begun before we arrived.",
+          "XK": "우리가 도착했을 때 영화가 이미 시작됐다.",
+          "XR": "더 무비 해드 비건 비포어 위 어라이브드"
+        }
+      ]
+    },
+    {
+      "T0": "Heavy is the crown",
+      "C0": "이것은 네가 요구한 것이야, 왕관은 무거워. 도망치려고 해봐, 이제 그것이 어떻게 되었는지 봐.",
+      "G0": "'Heavy is the crown'은 주어(Heavy), 동사(is), 보어(the crown)로 이루어진 간단한 문장 구조로, 명사 'heavy'가 주어 역할을 하고 'the crown'이 보어 역할을 하여 상대적인 무게감을 표현합니다.",
+      "K0": "왕관은 무겁다.",
+      "R0": "헤비 이즈 더 크라운",
+      "LI": [
+        {
+          "T1": "Heavy",
+          "K1": "무거운",
+          "R1": "헤비",
+          "E1": "'Heavy'는 물체나 무게가 크거나 무겁다는 의미를 가진 형용사입니다. 여기서는 왕관의 무게감을 비유적으로 표현하고 있습니다.",
+          "T2": "heavy",
+          "K2": "무거운",
+          "R2": "헤비",
+          "XE": "The box is too heavy to lift.",
+          "XK": "상자는 너무 무거워서 들 수 없어.",
+          "XR": "더 박스 이즈 투 헤비 투 리프트"
+        },
+        {
+          "T1": "is",
+          "K1": "이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 be 동사의 한 형태로, 주어와 보어를 연결합니다. 여기서는 '무겁다'는 상태를 나타냅니다.",
+          "T2": "be",
+          "K2": "이다",
+          "R2": "비",
+          "XE": "She is a teacher.",
+          "XK": "그녀는 교사이다.",
+          "XR": "쉬 이즈 어 티처"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지칭하는 정관사로, 앞서 언급되었거나 이미 알고 있는 대상을 가리킵니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The car is parked outside.",
+          "XK": "그 차는 밖에 주차되어 있어.",
+          "XR": "더 카 이즈 파크드 아웃사이드"
+        },
+        {
+          "T1": "crown",
+          "K1": "왕관",
+          "R1": "크라운",
+          "E1": "'Crown'은 왕이나 여왕이 머리에 쓰는 장식용 물품이나 지위, 권위를 상징하는 의미를 가집니다.",
+          "T2": "crown",
+          "K2": "왕관",
+          "R2": "크라운",
+          "XE": "The king wore a golden crown.",
+          "XK": "왕은 황금 왕관을 썼다.",
+          "XR": "더 킹 워어 어 골든 크라운"
+        }
+      ]
+    },
+    {
+      "T0": "Try to hold it in but it keeps bleedin' out",
+      "C0": "이게 네가 원하던 거야. 억지로 참아보려 하지만 계속 피가 나는구나. 무겁다, 무거운 왕관.",
+      "G0": "'Try to hold it in but it keeps bleedin' out'은 주어가 생략된 명령문으로, '억지로 참아보려고 노력하지만 계속 피가 난다'는 의미를 가지고 있습니다. 중간에 'but'이라는 접속사를 이용해 두 절을 연결하고 있습니다.",
+      "K0": "억지로 참아보려고 하지만 계속 피가 나.",
+      "R0": "트라이 투 홀드 잇 인 벗 잇 킵스 블리딘 아웃",
+      "LI": [
+        {
+          "T1": "Try",
+          "K1": "노력하다",
+          "R1": "트라이",
+          "E1": "'Try'는 어떤 목표를 달성하려고 노력하는 행위를 표현하는 동사입니다.",
+          "T2": "try",
+          "K2": "노력하다",
+          "R2": "트라이",
+          "XE": "I will try to finish my homework.",
+          "XK": "내 숙제를 끝내려고 노력할게.",
+          "XR": "아이 윌 트라이 투 피니시 마이 홈웍"
+        },
+        {
+          "T1": "to",
+          "K1": "~하기 위해",
+          "R1": "투",
+          "E1": "'To'는 동사 앞에 붙어 목적을 나타내는 부정사입니다.",
+          "T2": "to",
+          "K2": "~하기 위해",
+          "R2": "투",
+          "XE": "I went to the store to buy milk.",
+          "XK": "나는 우유를 사기 위해 상점에 갔어.",
+          "XR": "아이 웬트 투 더 스토어 투 바이 밀크"
+        },
+        {
+          "T1": "hold",
+          "K1": "잡다",
+          "R1": "홀드",
+          "E1": "'Hold'는 손을 잡거나 물체를 붙잡는 행위를 나타내는 동사입니다.",
+          "T2": "hold",
+          "K2": "잡다",
+          "R2": "홀드",
+          "XE": "Can you hold this for a second?",
+          "XK": "이거 잠깐 잡아줄래?",
+          "XR": "캔 유 홀드 디스 포어 세컨드"
+        },
+        {
+          "T1": "it",
+          "K1": "그것을",
+          "R1": "잇",
+          "E1": "'It'은 앞서 말한 상황이나 사물을 가리키는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것을",
+          "R2": "잇",
+          "XE": "Where is it?",
+          "XK": "그것은 어디에 있어?",
+          "XR": "웨어 이즈 잇"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 무엇의 내부에 있는 상태를 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "Put it in the box.",
+          "XK": "그것을 상자 안에 넣어.",
+          "XR": "풋 잇 인 더 박스"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 두 개의 절을 대조적으로 연결하는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I want to go, but I can't.",
+          "XK": "가고 싶지만 갈 수 없어.",
+          "XR": "아이 원트 투 고, 벗 아이 캔트"
+        },
+        {
+          "T1": "it",
+          "K1": "그것이",
+          "R1": "잇",
+          "E1": "'It'은 앞서 말한 상황이나 사물을 가리키는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것이",
+          "R2": "잇",
+          "XE": "Where is it?",
+          "XK": "그것은 어디에 있어?",
+          "XR": "웨어 이즈 잇"
+        },
+        {
+          "T1": "keeps",
+          "K1": "계속",
+          "R1": "킵스",
+          "E1": "'Keeps'는 'keep'의 현재형으로, 어떤 동작이나 상태가 지속되는 것을 의미합니다.",
+          "T2": "keep",
+          "K2": "지속하다",
+          "R2": "킵",
+          "XE": "She keeps calling me.",
+          "XK": "그녀는 계속 나에게 전화를 해.",
+          "XR": "쉬 킵스 콜링 미"
+        },
+        {
+          "T1": "bleedin'",
+          "K1": "피를 흘리다",
+          "R1": "블리딘",
+          "E1": "Bleedin'은 bleeding의 비격식 표기로, 피를 흘리는 상태를 의미합니다.",
+          "T2": "bleeding",
+          "K2": "피를 흘리다",
+          "R2": "블리딩",
+          "XE": "His arm is bleeding.",
+          "XK": "그의 팔이 피를 흘리고 있어.",
+          "XR": "히즈 암 이즈 블리딩"
+        },
+        {
+          "T1": "out",
+          "K1": "밖으로",
+          "R1": "아웃",
+          "E1": "'Out'은 어떤 것의 외부를 나타내는 부사입니다.",
+          "T2": "out",
+          "K2": "밖으로",
+          "R2": "아웃",
+          "XE": "Let's go out.",
+          "XK": "나가자.",
+          "XR": "레츠 고 아웃"
+        }
+      ]
+    },
+    {
+      "T0": "'Cause I'm tired of explainin' what the joke is",
+      "C0": "오늘이 네가 알아차리는 날이 될 거야. 왜냐면 난 농담이 뭔지 설명하는 것에 지쳤거든. 이게 네가 요청한 거야. 왕관은 무겁다.",
+      "G0": "'Cause I'm tired of explainin' what the joke is'는 접속사(Cause), 주어(I), 상태 동사(am), 보어(tired of explainin' what the joke is)로 구성된 문장으로, 이유를 나타내는 구조입니다.",
+      "K0": "왜냐면 농담을 설명하는 것에 지쳤거든.",
+      "R0": "커즈 아임 타이어드 오브 익스플레이닌 왓 더 조크 이즈",
+      "LI": [
+        {
+          "T1": "'Cause",
+          "K1": "왜냐면",
+          "R1": "커즈",
+          "E1": "'Cause'는 'Because'의 축약형으로, 이유나 원인을 나타내는 접속사입니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비커즈",
+          "XE": "I didn't go out 'cause it was raining.",
+          "XK": "비가 와서 밖에 나가지 않았어.",
+          "XR": "아이 디든트 고우 아웃 커즈 잇 워즈 레이닝"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 주어(I)와 현재 상태를 나타내는 be 동사(am)를 합친 형태입니다.",
+          "T2": "I am",
+          "K2": "나는",
+          "R2": "아이 엠",
+          "XE": "I'm happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아임 해피 투데이"
+        },
+        {
+          "T1": "tired",
+          "K1": "지친",
+          "R1": "타이어드",
+          "E1": "'Tired'는 피곤하거나 지친 상태를 나타내는 형용사입니다.",
+          "T2": "tired",
+          "K2": "지친",
+          "R2": "타이어드",
+          "XE": "He felt tired after the long trip.",
+          "XK": "그는 긴 여행 후에 지쳤다.",
+          "XR": "히 펠트 타이어드 애프터 더 롱 트립"
+        },
+        {
+          "T1": "of",
+          "K1": "~의",
+          "R1": "오브",
+          "E1": "'Of'는 소유 또는 관련을 나타내는 전치사입니다.",
+          "T2": "of",
+          "K2": "~의",
+          "R2": "오브",
+          "XE": "A friend of mine.",
+          "XK": "내 친구 중 한 명.",
+          "XR": "어 프렌드 오브 마인"
+        },
+        {
+          "T1": "explainin'",
+          "K1": "설명하는 것",
+          "R1": "익스플레이닌",
+          "E1": "'Explainin''은 'explaining'의 비격식적 표현으로, 어떤 것에 대해 설명하는 행위를 나타내는 동명사입니다.",
+          "T2": "explaining",
+          "K2": "설명하는 것",
+          "R2": "익스플레이닝",
+          "XE": "She is good at explainin' things.",
+          "XK": "그녀는 사물을 설명하는 데 능숙해.",
+          "XR": "쉬 이즈 굿 앳 익스플레이닝 띵스"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 무엇을 나타내는 의문사 또는 관계대명사로 사용됩니다. 여기서는 질문의 형태로 사용됩니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What is your name?",
+          "XK": "당신의 이름은 무엇입니까?",
+          "XR": "왓 이즈 유어 네임?"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 대상을 가리키는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The book is on the table.",
+          "XK": "그 책은 테이블 위에 있다.",
+          "XR": "더 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "joke",
+          "K1": "농담",
+          "R1": "조크",
+          "E1": "'Joke'는 재미있게 하기 위해 하는 말이나 행동을 의미하는 명사입니다.",
+          "T2": "joke",
+          "K2": "농담",
+          "R2": "조크",
+          "XE": "He told a funny joke.",
+          "XK": "그는 재미있는 농담을 했다.",
+          "XR": "히 톨드 어 퍼니 조크"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재시제를 나타내는 be 동사의 한 형태로, 주어가 3인칭 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "The sky is blue.",
+          "XK": "하늘이 파랗다.",
+          "XR": "더 스카이 이즈 블루"
+        }
+      ]
+    },
+    {
+      "T0": "We both know how the story ends",
+      "C0": "한 번 문을 두드리고 나면 우리는 둘 다 이야기가 어떻게 끝날지 알아. 백기를 들고 있으면 이길 수 없어.",
+      "G0": "'We both know how the story ends'는 주어(We both), 동사(know), 목적어(how the story ends)로 이루어진 문장으로, 이야기가 어떻게 끝나는지에 대해 서로 모두 알고 있다는 의미입니다.",
+      "K0": "우리 둘 다 이야기가 어떻게 끝나는지 알아.",
+      "R0": "위 보스 노우 하우 더 스토리 엔즈",
+      "LI": [
+        {
+          "T1": "We",
+          "K1": "우리",
+          "R1": "위",
+          "E1": "'We'는 화자와 청자를 포함한 복수 주어를 나타내는 대명사입니다. 여기서는 화자와 상대방을 의미합니다.",
+          "T2": "we",
+          "K2": "우리",
+          "R2": "위",
+          "XE": "We are going to the park.",
+          "XK": "우리는 공원에 갈 거야.",
+          "XR": "위 아 고잉 투 더 파크"
+        },
+        {
+          "T1": "both",
+          "K1": "양쪽 모두",
+          "R1": "보스",
+          "E1": "'Both'는 두 개의 주체를 모두 포함하는 뜻을 가진 형용사 또는 부사입니다.",
+          "T2": "both",
+          "K2": "양쪽 모두",
+          "R2": "보스",
+          "XE": "Both of them are correct.",
+          "XK": "그들 둘 다 맞아.",
+          "XR": "보스 오브 뎀 아 코렉트"
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 지식이나 정보를 인지하고 있는 상태를 나타내는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I know the answer.",
+          "XK": "나는 답을 알아.",
+          "XR": "아이 노우 디 앤서"
+        },
+        {
+          "T1": "how",
+          "K1": "어떻게",
+          "R1": "하우",
+          "E1": "'How'는 방식이나 방법을 묻거나 설명할 때 사용되는 의문사입니다.",
+          "T2": "how",
+          "K2": "어떻게",
+          "R2": "하우",
+          "XE": "How do you do that?",
+          "XK": "그걸 어떻게 해?",
+          "XR": "하우 두 유 두 댓?"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지정할 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The book is on the table.",
+          "XK": "그 책은 탁자 위에 있어.",
+          "XR": "더 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "story",
+          "K1": "이야기",
+          "R1": "스토리",
+          "E1": "'Story'는 사건이나 일련의 사건을 설명하는 명사입니다.",
+          "T2": "story",
+          "K2": "이야기",
+          "R2": "스토리",
+          "XE": "This is a true story.",
+          "XK": "이건 실화야.",
+          "XR": "디스 이즈 어 츄 스토리"
+        },
+        {
+          "T1": "ends",
+          "K1": "끝나다",
+          "R1": "엔즈",
+          "E1": "'Ends'는 끝나다의 의미를 가지며, 여기서는 이야기의 결말을 의미합니다.",
+          "T2": "end",
+          "K2": "끝",
+          "R2": "엔드",
+          "XE": "All good things must come to an end.",
+          "XK": "모든 좋은 것들은 반드시 끝이 있어.",
+          "XR": "올 굿 띵즈 머스트 컴 투 언 엔드"
+        }
+      ]
+    },
+    {
+      "T0": "You can't win if your white flag's out",
+      "C0": "우리 둘 다 어떻게 이야기가 끝나는지 알고 있어. 전쟁이 시작될 때, 네가 백기를 들고 있다면 승리할 수 없어.",
+      "G0": "'You can't win if your white flag's out'는 주어(You), 동사(can't win), 조건절(if your white flag's out)로 구성된 문장으로, 특정 조건 하에서는 어떤 결과를 얻을 수 없음을 표현합니다.",
+      "K0": "백기를 들고 있다면 이길 수 없어.",
+      "R0": "유 캔트 윈 이프 유얼 화이트 플래그스 아웃",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You should try again.",
+          "XK": "다시 시도해봐.",
+          "XR": "유 슈드 트라이 어겐"
+        },
+        {
+          "T1": "can't",
+          "K1": "~할 수 없다",
+          "R1": "캔트",
+          "E1": "'Can't'는 'cannot'의 축약형으로, 특정 행위나 결과를 수행할 수 없음을 의미합니다.",
+          "T2": "cannot",
+          "K2": "~할 수 없다",
+          "R2": "캐낫",
+          "XE": "I can't do it.",
+          "XK": "나는 그것을 할 수 없어.",
+          "XR": "아이 캔트 두 잇"
+        },
+        {
+          "T1": "win",
+          "K1": "이기다",
+          "R1": "윈",
+          "E1": "'Win'은 경쟁이나 대회에서 승리하는 것을 뜻하는 동사입니다.",
+          "T2": "win",
+          "K2": "이기다",
+          "R2": "윈",
+          "XE": "She wants to win the game.",
+          "XK": "그녀는 게임에서 이기고 싶어한다.",
+          "XR": "쉬 원츠 투 윈 더 게임"
+        },
+        {
+          "T1": "if",
+          "K1": "만약 ~라면",
+          "R1": "이프",
+          "E1": "'If'는 조건절을 이끄는 접속사로, 어떤 조건 하에서 결과가 일어난다는 것을 의미합니다.",
+          "T2": "if",
+          "K2": "만약 ~라면",
+          "R2": "이프",
+          "XE": "If it rains, we will stay inside.",
+          "XK": "비가 오면, 우리는 안에 있을 거야.",
+          "XR": "이프 잇 레인즈, 위 윌 스테이 인사이드"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 2인칭 소유격 대명사로, 청자가 소유한 것을 나타냅니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your book?",
+          "XK": "이것은 너의 책이니?",
+          "XR": "이즈 디스 유어 북?"
+        },
+        {
+          "T1": "white",
+          "K1": "흰",
+          "R1": "화이트",
+          "E1": "'White'는 색깔을 나타내는 형용사로, 여기서 'white flag'는 항복을 의미합니다.",
+          "T2": "white",
+          "K2": "흰",
+          "R2": "화이트",
+          "XE": "The snow is white.",
+          "XK": "눈은 하얗다.",
+          "XR": "더 스노우 이즈 화이트"
+        },
+        {
+          "T1": "flag's",
+          "K1": "깃발이",
+          "R1": "플래그스",
+          "E1": "'Flag's'는 'flag is'의 축약형입니다.",
+          "T2": "flag is",
+          "K2": "깃발이",
+          "R2": "플래그 이즈",
+          "XE": "The flag's colors are red, white, and blue.",
+          "XK": "깃발의 색깔은 빨강, 흰색, 그리고 파랑이다.",
+          "XR": "더 플래그스 컬러즈 아 레드, 화이트, 앤 블루."
+        },
+        {
+          "T1": "out",
+          "K1": "나온",
+          "R1": "아웃",
+          "E1": "'Out'는 '밖으로' 혹은 '나온' 상태를 나타내는 부사입니다. 여기서는 깃발이 펄럭이고 있는 상태를 의미합니다.",
+          "T2": "out",
+          "K2": "나온",
+          "R2": "아웃",
+          "XE": "The cat is out of the bag.",
+          "XK": "고양이가 가방에서 나왔어.",
+          "XR": "더 캣 이즈 아웃 오브 더 백."
+        }
+      ]
+    },
+    {
+      "T0": "Watch it all fallin' apart like this",
+      "C0": "펜이 빗나가지 않을 때 그 칼을 휘두른다. 이 모든 것이 이렇게 무너지는 것을 봐. 이것이 네가 원하던 바야.",
+      "G0": "'Watch it all fallin' apart like this'는 명령문 형태로, 주어(you)가 생략된 상태에서 동사(watch)와 목적어(it all fallin' apart like this)로 구성됩니다. 이는 어떤 상황이 무너지는 것을 지켜보라는 의미입니다.",
+      "K0": "이 모든 것이 이렇게 무너지는 것을 지켜봐.",
+      "R0": "왓치트 올 폴린 어파트 라이크 디스",
+      "LI": [
+        {
+          "T1": "Watch",
+          "K1": "지켜보다",
+          "R1": "왓치",
+          "E1": "'Watch'는 무언가를 주의 깊게 지켜보는 행위를 의미하는 동사입니다.",
+          "T2": "watch",
+          "K2": "지켜보다",
+          "R2": "왓치",
+          "XE": "Watch the stars in the sky.",
+          "XK": "하늘의 별들을 지켜봐.",
+          "XR": "왓치 더 스타즈 인 더 스카이"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 어떤 특정한 대상을 가리키는 대명사로 사용됩니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is a beautiful day.",
+          "XK": "정말 아름다운 날이야.",
+          "XR": "잇 이즈 어 뷰티풀 데이"
+        },
+        {
+          "T1": "all",
+          "K1": "모두",
+          "R1": "올",
+          "E1": "'All'은 전체를 의미하는 부사 혹은 형용사로 사용됩니다.",
+          "T2": "all",
+          "K2": "모두",
+          "R2": "올",
+          "XE": "All the stars in the sky are beautiful.",
+          "XK": "하늘의 모든 별들이 아름다워.",
+          "XR": "올 더 스타즈 인 더 스카이 아 뷰티풀"
+        },
+        {
+          "T1": "fallin'",
+          "K1": "떨어지다",
+          "R1": "폴린",
+          "E1": "'Fallin''은 'falling'의 구어체 표현으로, 무언가가 아래로 떨어지거나 무너지는 것을 의미합니다.",
+          "T2": "fall",
+          "K2": "떨어지다",
+          "R2": "폴",
+          "XE": "Leaves are fallin' from the trees.",
+          "XK": "나무에서 잎이 떨어지고 있어.",
+          "XR": "리브즈 아 폴린 프롬 더 트리즈"
+        },
+        {
+          "T1": "apart",
+          "K1": "떨어져",
+          "R1": "어파트",
+          "E1": "'Apart'는 떨어져 있거나 분리된 상태를 의미하는 부사입니다.",
+          "T2": "apart",
+          "K2": "떨어져",
+          "R2": "어파트",
+          "XE": "They live apart from each other.",
+          "XK": "그들은 서로 떨어져 산다.",
+          "XR": "데이 리브 어파트 프롬 이치 아더"
+        },
+        {
+          "T1": "like",
+          "K1": "~처럼",
+          "R1": "라이크",
+          "E1": "'Like'는 비교를 나타내는 전치사로, 어떤 것이 다른 것과 유사하거나 비슷한 상태를 의미합니다.",
+          "T2": "like",
+          "K2": "~처럼",
+          "R2": "라이크",
+          "XE": "She sings like an angel.",
+          "XK": "그녀는 천사처럼 노래를 불러.",
+          "XR": "쉬 씽즈 라이크 언 엔젤"
+        },
+        {
+          "T1": "this",
+          "K1": "이것",
+          "R1": "디스",
+          "E1": "'This'는 현재 시점에서 가까운 것을 가리키는 지시 대명사입니다.",
+          "T2": "this",
+          "K2": "이것",
+          "R2": "디스",
+          "XE": "This is my favorite book.",
+          "XK": "이것은 내가 가장 좋아하는 책이야.",
+          "XR": "디스 이즈 마이 페이버릿 북"
+        }
+      ]
+    },
+    {
+      "T0": "Say you don't want what you can't resist",
+      "C0": "넌 이미 그 목록에 올라 있어. 네가 저항할 수 없는 것을 원하지 않는다고 말해. 펜이 놓치지 않을 때 그 칼을 휘두르면서.",
+      "G0": "\"Say you don't want what you can't resist\"는 주어(you), 동사(Say), 목적어(you don't want what you can't resist)로 구성된 명령문입니다. 문장 전체는 상대방에게 특정한 것을 원하지 않는다고 말하도록 지시하도록 되어 있습니다.",
+      "K0": "네가 저항할 수 없는 것을 원하지 않는다고 말해",
+      "R0": "세이 유 돈트 원트 왓 유 캐니트 리지스트",
+      "LI": [
+        {
+          "T1": "Say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 특정한 말을 하도록 지시하거나 전달하는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Please say hello to your mother for me.",
+          "XK": "제 대신 어머님께 안부 전해주세요.",
+          "XR": "플리즈 세이 헬로우 투 유어 마더 포 미"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 단수 혹은 복수의 청자를 가리키는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 않다",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 부정 명령문이나 부정문을 만들 때 사용됩니다.",
+          "T2": "do not",
+          "K2": "~하지 않다",
+          "R2": "두 낫",
+          "XE": "Don't be late.",
+          "XK": "늦지 마.",
+          "XR": "돈트 비 레이트"
+        },
+        {
+          "T1": "want",
+          "K1": "원하다",
+          "R1": "원트",
+          "E1": "'Want'는 필요하거나 바라는 것을 나타내는 동사입니다.",
+          "T2": "want",
+          "K2": "원하다",
+          "R2": "원트",
+          "XE": "I want a new car.",
+          "XK": "난 새 차를 원해.",
+          "XR": "아이 원트 어 뉴 카"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'는 질문할 때나 명사절을 이끌 때 사용되는 대명사입니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What are you doing?",
+          "XK": "너 뭐 하고 있니?",
+          "XR": "왓 아 유 두잉?"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 단수 혹은 복수의 청자를 가리키는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "can't",
+          "K1": "~할 수 없다",
+          "R1": "캔트",
+          "E1": "'Can't'는 'cannot'의 축약형으로, 할 수 없음을 나타냅니다.",
+          "T2": "cannot",
+          "K2": "~할 수 없다",
+          "R2": "캐놋",
+          "XE": "I can't swim.",
+          "XK": "나는 수영을 할 수 없어.",
+          "XR": "아이 캔트 스윔"
+        },
+        {
+          "T1": "resist",
+          "K1": "저항하다",
+          "R1": "리지스트",
+          "E1": "'Resist'는 어떤 것을 거부하거나 맞서는 것을 나타내는 동사입니다.",
+          "T2": "resist",
+          "K2": "저항하다",
+          "R2": "리지스트",
+          "XE": "She couldn't resist the temptation.",
+          "XK": "그녀는 유혹에 저항할 수 없었다.",
+          "XR": "쉬 쿠든트 리지스트 더 템테이션"
+        }
+      ]
+    },
+    {
+      "T0": "It's pourin' in, you're laid on the floor again",
+      "C0": "밖에는 비가 쏟아지고, 너는 다시 바닥에 누워 있어. 문을 노크하고 나서",
+      "G0": "'It's pourin' in, you're laid on the floor again'는 두 개의 독립된 절로 구성된 복합문입니다. 첫 번째 절은 현재진행형 시제('It's pourin' in')와 두 번째 절은 수동형 구조('you're laid')로 되어 있습니다.",
+      "K0": "비가 쏟아지고 있어, 너는 다시 바닥에 누워 있어.",
+      "R0": "잇츠 포어린 인, 유어 레이드 온 더 플로어 어겐",
+      "LI": [
+        {
+          "T1": "It's",
+          "K1": "그것은",
+          "R1": "잇츠",
+          "E1": "'It's'는 'It is'의 축약형입니다. 여기서 'it'은 날씨를 가리킵니다.",
+          "T2": "It is",
+          "K2": "그것은",
+          "R2": "잇 이즈",
+          "XE": "It's a sunny day.",
+          "XK": "맑은 날입니다.",
+          "XR": "잇츠 어 서니 데이"
+        },
+        {
+          "T1": "pourin'",
+          "K1": "쏟아지는",
+          "R1": "포어린",
+          "E1": "Pourin'은 pouring의 축약형으로, 비가 쏟아지는 행위를 묘사합니다. ",
+          "T2": "pouring",
+          "K2": "쏟아지는",
+          "R2": "포어링",
+          "XE": "The rain is pouring down.",
+          "XK": "비가 쏟아지고 있습니다.",
+          "XR": "더 레인 이즈 포어링 다운"
+        },
+        {
+          "T1": "in",
+          "K1": "안으로",
+          "R1": "인",
+          "E1": "'In'은 어떤 장소나 공간 안을 나타냅니다. 여기서는 비가 안으로 쏟아지는 것을 의미합니다.",
+          "T2": "in",
+          "K2": "안에",
+          "R2": "인",
+          "XE": "Come in, please.",
+          "XK": "들어오세요.",
+          "XR": "컴 인, 플리즈"
+        },
+        {
+          "T1": "you're",
+          "K1": "너는",
+          "R1": "유어",
+          "E1": "'You're'는 'You are'의 축약형입니다.",
+          "T2": "You are",
+          "K2": "너는",
+          "R2": "유 아",
+          "XE": "You're my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유어 마이 베스트 프렌드"
+        },
+        {
+          "T1": "laid",
+          "K1": "누워진",
+          "R1": "레이드",
+          "E1": "'Laid'는 'lay'의 과거분사로, 여기서는 수동태로 쓰여서 어떤 대상이 누워 있는 상태를 나타냅니다.",
+          "T2": "lay",
+          "K2": "눕다",
+          "R2": "레이",
+          "XE": "He laid down on the bed.",
+          "XK": "그는 침대에 누웠다.",
+          "XR": "히 레이드 다운 온 더 베드"
+        },
+        {
+          "T1": "on",
+          "K1": "~위에",
+          "R1": "온",
+          "E1": "'On'은 어떤 표면 위에 있는 상태를 나타내는 전치사입니다.",
+          "T2": "on",
+          "K2": "~위에",
+          "R2": "온",
+          "XE": "The book is on the table.",
+          "XK": "책은 테이블 위에 있습니다.",
+          "XR": "더 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 대상을 지칭하는 정관사입니다. 이 문맥에서는 'the floor'를 가리킵니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The car is red.",
+          "XK": "그 차는 빨간색입니다.",
+          "XR": "더 카 이즈 레드"
+        },
+        {
+          "T1": "floor",
+          "K1": "바닥",
+          "R1": "플로어",
+          "E1": "'Floor'는 건물이나 방의 바닥을 의미하는 명사입니다.",
+          "T2": "floor",
+          "K2": "바닥",
+          "R2": "플로어",
+          "XE": "She swept the floor.",
+          "XK": "그녀는 바닥을 쓸었습니다.",
+          "XR": "쉬 스웁트 더 플로어"
+        },
+        {
+          "T1": "again",
+          "K1": "다시",
+          "R1": "어겐",
+          "E1": "'Again'은 반복된 행동을 나타내는 부사입니다.",
+          "T2": "again",
+          "K2": "다시",
+          "R2": "어겐",
+          "XE": "Let's try again.",
+          "XK": "다시 시도해 봅시다.",
+          "XR": "렛츠 트라이 어겐"
+        }
+      ]
+    },
+    {
+      "T0": "Tryin' to catch fire but feelin' so cold",
+      "C0": "매우 높은 목표를 향하고 있지만, 매우 낮은 성과를 낼 때 불을 잡으려 노력하지만 너무 춥게 느껴지는 것. 그것을 숨기고 드러나지 않기를 바라는 상황.",
+      "G0": "'Tryin' to catch fire but feelin' so cold'는 주어가 생략된 비격식 표현으로, 현재 진행형 구조에서 두 가지 상반된 감정을 설명합니다. 'Tryin' to catch fire'는 열정을 불러일으키려는 시도를, 'feelin' so cold'는 이와 반대로 감정적으로 냉정한 상태를 나타냅니다.",
+      "K0": "불을 잡으려고 노력하지만 너무 춥게 느껴져",
+      "R0": "트라인 투 캐치 파이어 벗 필링 소 콜드",
+      "LI": [
+        {
+          "T1": "Tryin'",
+          "K1": "노력하는 중",
+          "R1": "트라인",
+          "E1": "'Tryin''은 'trying'의 비격식 형태입니다. 무언가를 시도하거나 노력하고 있는 상태를 나타냅니다.",
+          "T2": "trying",
+          "K2": "노력",
+          "R2": "트라잉",
+          "XE": "He's tryin' to learn the new language.",
+          "XK": "그는 새로운 언어를 배우려고 노력 중이야.",
+          "XR": "히즈 트라인 투 런 더 뉴 랭귀지"
+        },
+        {
+          "T1": "to",
+          "K1": "~하려고",
+          "R1": "투",
+          "E1": "'To'는 동작의 목적을 나타내는 전치사로, 뒤에 동사 원형이 옵니다.",
+          "T2": "to",
+          "K2": "~하려고",
+          "R2": "투",
+          "XE": "She wants to travel around the world.",
+          "XK": "그녀는 세계를 여행하고 싶어해.",
+          "XR": "쉬 원츠 투 트래블 어라운드 더 월드"
+        },
+        {
+          "T1": "catch",
+          "K1": "잡다",
+          "R1": "캐치",
+          "E1": "'Catch'는 무언가를 붙잡거나 달성하려는 행위를 의미하는 동사입니다.",
+          "T2": "catch",
+          "K2": "잡다",
+          "R2": "캐치",
+          "XE": "He managed to catch the ball.",
+          "XK": "그는 공을 잡는 데 성공했어.",
+          "XR": "히 매니지드 투 캐치 더 볼"
+        },
+        {
+          "T1": "fire",
+          "K1": "불",
+          "R1": "파이어",
+          "E1": "'Fire'는 실제 불이나 열정을 나타내는 명사입니다. 이 문맥에서는 비유적으로 열정을 의미합니다.",
+          "T2": "fire",
+          "K2": "불",
+          "R2": "파이어",
+          "XE": "The fire in the fireplace was warm.",
+          "XK": "벽난로 속 불은 따뜻했어.",
+          "XR": "더 파이어 인 더 파이어플레이스 워즈 웜"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'는 앞의 내용과 반대되거나 대조되는 상황을 연결하는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "She is smart but lazy.",
+          "XK": "그녀는 똑똑하지만 게을러.",
+          "XR": "쉬 이즈 스마트 벗 레이지"
+        },
+        {
+          "T1": "feelin'",
+          "K1": "느끼는 중",
+          "R1": "필링",
+          "E1": "'Feelin''은 'feeling'의 비격식 형태입니다. 특정 감정을 느끼고 있는 상태를 의미합니다.",
+          "T2": "feeling",
+          "K2": "느낌",
+          "R2": "필링",
+          "XE": "She's feelin' down today.",
+          "XK": "그녀는 오늘 기분이 안 좋아.",
+          "XR": "쉬즈 필링 다운 투데이"
+        },
+        {
+          "T1": "so",
+          "K1": "매우",
+          "R1": "소",
+          "E1": "'So'는 다른 단어를 강조하여 매우 높은 정도를 나타내는 부사입니다.",
+          "T2": "so",
+          "K2": "매우",
+          "R2": "소",
+          "XE": "He is so tired.",
+          "XK": "그는 매우 피곤해.",
+          "XR": "히 이즈 소 타이어드"
+        },
+        {
+          "T1": "cold",
+          "K1": "차가운",
+          "R1": "콜드",
+          "E1": "'Cold'는 온도가 낮거나 감정적으로 냉정한 상태를 나타내는 형용사입니다. 여기서는 감정적인 상태를 표현합니다.",
+          "T2": "cold",
+          "K2": "차가운",
+          "R2": "콜드",
+          "XE": "The water is cold.",
+          "XK": "물은 차가워.",
+          "XR": "더 워터 이즈 콜드"
+        }
+      ]
+    },
+    {
+      "T0": "Try to hold it in, but it keeps bleedin' out",
+      "C0": "일출에 불이 타오르고, 재가 내려앉아. 억지로 참아보려 하지만, 계속 피가 흘러나와. 이게 네가 원했던 거야, 무겁지.",
+      "G0": "'Try to hold it in, but it keeps bleedin' out'는 주어(you, 생략됨), 동사(try), 목적어(to hold it in), 접속사(but), 주어(it), 동사(keeps bleedin' out)로 구성된 문장입니다. 여기서 'try to hold it in'은 억지로 감정을 참으려 하는 것을 의미하고, 'it keeps bleeding out'은 참으려고 애써도 계속 드러난다는 의미입니다.",
+      "K0": "억지로 참아보려 하지만, 계속 피가 흘러나와.",
+      "R0": "트라이 투 홀드 잇 인, 벗 잇 킵스 블리딩 아웃",
+      "LI": [
+        {
+          "T1": "Try",
+          "K1": "시도하다",
+          "R1": "트라이",
+          "E1": "'Try'는 어떤 일이나 행동을 수행하려고 노력하는 것을 의미하는 동사입니다.",
+          "T2": "try",
+          "K2": "시도하다",
+          "R2": "트라이",
+          "XE": "Try to finish your homework.",
+          "XK": "숙제를 끝내려고 노력해.",
+          "XR": "트라이 투 피니시 유어 홈워크"
+        },
+        {
+          "T1": "to",
+          "K1": "~하기 위해",
+          "R1": "투",
+          "E1": "'To'는 동사 앞에 붙어 그 동사를 목적이나 방향을 나타내는 부정사로 만드는 역할을 합니다.",
+          "T2": "to",
+          "K2": "~하기 위해",
+          "R2": "투",
+          "XE": "I want to go home.",
+          "XK": "나는 집에 가고 싶어.",
+          "XR": "아이 원트 투 고 홈"
+        },
+        {
+          "T1": "hold",
+          "K1": "잡다",
+          "R1": "홀드",
+          "E1": "'Hold'는 손에 어떤 것을 잡거나 제자리에 고정시키는 것을 의미하는 동사입니다.",
+          "T2": "hold",
+          "K2": "잡다",
+          "R2": "홀드",
+          "XE": "Can you hold my bag?",
+          "XK": "내 가방을 잡아줄 수 있니?",
+          "XR": "캔 유 홀드 마이 백?"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 앞서 언급된 구체적인 대상을 지칭하는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 어떤 물체나 장소의 내부를 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "Put the book in the bag.",
+          "XK": "책을 가방에 넣어.",
+          "XR": "풋 더 북 인 더 백"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 앞 문장과 대조되는 내용을 이어주는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I want to go, but I can't.",
+          "XK": "난 가고 싶지만, 갈 수 없어.",
+          "XR": "아이 원트 투 고, 벗 아이 캔트"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 앞서 언급된 구체적인 대상을 지칭하는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It was a good day.",
+          "XK": "좋은 하루였어.",
+          "XR": "잇 워즈 어 굿 데이"
+        },
+        {
+          "T1": "keeps",
+          "K1": "계속",
+          "R1": "킵스",
+          "E1": "'Keeps'는 어떤 행위나 상황이 지속됨을 나타내는 동사입니다.",
+          "T2": "keep",
+          "K2": "유지하다",
+          "R2": "킵",
+          "XE": "He keeps changing his mind.",
+          "XK": "그는 계속 마음을 바꿔.",
+          "XR": "히 킵스 체인지잉 히즈 마인드"
+        },
+        {
+          "T1": "bleedin'",
+          "K1": "피가 나는",
+          "R1": "블리딩",
+          "E1": "Bleedin'은 bleeding의 비격식 표기로, 피를 흘리는 상태를 의미합니다.",
+          "T2": "bleed",
+          "K2": "피를 흘리다",
+          "R2": "블리드",
+          "XE": "His nose started bleedin' suddenly.",
+          "XK": "그의 코에서 갑자기 피가 나기 시작했어.",
+          "XR": "히즈 노우즈 스타티드 블리딩 서던리"
+        },
+        {
+          "T1": "out",
+          "K1": "밖으로",
+          "R1": "아웃",
+          "E1": "'Out'은 어떤 공간이나 장소의 외부를 나타내는 부사입니다.",
+          "T2": "out",
+          "K2": "밖으로",
+          "R2": "아웃",
+          "XE": "She looked out the window.",
+          "XK": "그녀는 창 밖을 내다봤다.",
+          "XR": "쉬 룩드 아웃 더 윈도우"
+        }
+      ]
+    },
+    {
+      "T0": "I'm sayin' it's not, but inside, I know",
+      "C0": "속으로 담고, 겉으로 드러나지 않기를 바라. 나는 아니라고 말하지만, 속으로는 알고 있어. 오늘 네가 알아차리는 날이 될 거야.",
+      "G0": "'I'm sayin' it's not, but inside, I know'는 주어(I), 동사(am sayin'), 목적어(it's not)와 주어(I), 동사(know)로 이루어진 두 개의 절이 접속사 'but'으로 연결된 구조입니다. 첫 절은 행위의 부정을 나타내고 두 번째 절은 내적 인식을 나타냅니다.",
+      "K0": "나는 아니라고 말하지만, 속으로는 알고 있어.",
+      "R0": "아임 세잉 이츠 낫, 벗 인사이드, 아이 노우",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자가 자신을 지칭하는 단수 주어를 나타내는 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생이다.",
+          "XR": "아이 엠 어 스튜던트"
+        },
+        {
+          "T1": "am sayin'",
+          "K1": "말하고 있다",
+          "R1": "앰 세잉",
+          "E1": "'Am sayin''은 현재 진행형으로 '말하고 있는 중'이라는 의미를 가진 동사 구문입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "I am saying the truth.",
+          "XK": "나는 진실을 말하고 있다.",
+          "XR": "아이 엠 세잉 더 트루스"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것은",
+          "R1": "이츠",
+          "E1": "'It's'는 'it is'의 축약형으로, 주어와 동사를 단축시켜 표현한 것입니다.",
+          "T2": "it is",
+          "K2": "그것은",
+          "R2": "잇 이즈",
+          "XE": "It's a beautiful day.",
+          "XK": "아름다운 날이다.",
+          "XR": "이츠 어 뷰티풀 데이"
+        },
+        {
+          "T1": "not",
+          "K1": "아니다",
+          "R1": "낫",
+          "E1": "'Not'은 부정을 나타내는 부사로 명제나 동작의 반대를 나타낼 때 사용됩니다.",
+          "T2": "not",
+          "K2": "아니다",
+          "R2": "낫",
+          "XE": "She is not coming to the party.",
+          "XK": "그녀는 파티에 오지 않는다.",
+          "XR": "쉬 이즈 낫 커밍 투 더 파티"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 대조를 나타내는 접속사로, 앞 문장과 반대되는 내용을 소개할 때 사용됩니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I like running, but I am tired.",
+          "XK": "나는 달리기를 좋아하지만 피곤하다.",
+          "XR": "아이 라이크 러닝, 벗 아이 엠 타이어드"
+        },
+        {
+          "T1": "inside",
+          "K1": "속으로",
+          "R1": "인사이드",
+          "E1": "'Inside'는 내부를 나타내는 전치사로, 물리적 또는 감정적인 범위 내에서의 상태를 나타냅니다.",
+          "T2": "inside",
+          "K2": "속으로",
+          "R2": "인사이드",
+          "XE": "Inside the box, there is a surprise.",
+          "XK": "상자 안에는 놀라움이 있다.",
+          "XR": "인사이드 더 박스, 데어 이즈 어 서프라이즈"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자가 자신을 지칭하는 단수 주어를 나타내는 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I felt a sense of accomplishment.",
+          "XK": "나는 성취감을 느꼈다.",
+          "XR": "아이 펠트 어 센스 오브 어컴플리시먼트"
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 인지나 사실을 알고 있는 상태를 나타내는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I know the answer.",
+          "XK": "나는 답을 안다.",
+          "XR": "아이 노우 더 앤서"
+        }
+      ]
+    },
+    {
+      "T0": "Fire in the sunrise, ashes rainin' down",
+      "C0": "이것이 바로 네가 원한 거야, 왕관은 무겁지. 일출 속 불길, 재가 내리고 있어. 참고 견디려고 하지만, 계속 피가 나는구나.",
+      "G0": "'Fire in the sunrise, ashes rainin' down'는 주어(Fire in the sunrise)와 보어(ashes rainin' down)로 구성된 문장입니다. 일출 속의 불길과 하늘에서 내리는 재를 묘사하는 시적인 표현입니다.",
+      "K0": "일출 속 불길, 재가 내리고 있어",
+      "R0": "파이어 인 더 선라이즈, 애시즈 레이닌 다운",
+      "LI": [
+        {
+          "T1": "Fire",
+          "K1": "불길",
+          "R1": "파이어",
+          "E1": "'Fire'는 일반적으로 열과 빛을 동반하는 연소 상태를 의미하며, 이 문맥에서는 강렬한 사건이나 감정을 상징할 수도 있습니다.",
+          "T2": "fire",
+          "K2": "불",
+          "R2": "파이어",
+          "XE": "The fire destroyed the forest.",
+          "XK": "불길이 숲을 파괴했다.",
+          "XR": "더 파이어 디스트로이드 더 포레스트"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 장소나 시간의 내부를 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "She put the book in her bag.",
+          "XK": "그녀는 가방 안에 책을 넣었다.",
+          "XR": "쉬 풋 더 북 인 허 백"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 명사를 특정할 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the roof.",
+          "XK": "그 고양이는 지붕 위에 있다.",
+          "XR": "더 캣 이즈 온 더 루프"
+        },
+        {
+          "T1": "sunrise",
+          "K1": "일출",
+          "R1": "선라이즈",
+          "E1": "'Sunrise'는 해가 떠오르는 아침의 첫 빛을 뜻하는 단어입니다.",
+          "T2": "sunrise",
+          "K2": "일출",
+          "R2": "선라이즈",
+          "XE": "We woke up early to see the sunrise.",
+          "XK": "우리는 일출을 보기 위해 일찍 일어났다.",
+          "XR": "위 워크 업 얼리 투 씨 더 선라이즈"
+        },
+        {
+          "T1": "ashes",
+          "K1": "재",
+          "R1": "애시즈",
+          "E1": "'Ashes'는 불에 탄 후 남는 잔여물로, 주로 연소 후 남는 가루 형태를 가리킵니다.",
+          "T2": "ash",
+          "K2": "재",
+          "R2": "애시",
+          "XE": "The room was covered in ashes after the fire.",
+          "XK": "불이 난 후 방이 재로 덮였다.",
+          "XR": "더 룸 워즈 커버드 인 애시즈 애프터 더 파이어"
+        },
+        {
+          "T1": "rainin'",
+          "K1": "내리는",
+          "R1": "레이닌",
+          "E1": "Rainin'은 raining의 구어체 표현으로, 비가 내리는 것을 뜻합니다. 여기서는 재가 내리는 것을 묘사합니다.",
+          "T2": "rain",
+          "K2": "비가 내리다",
+          "R2": "레인",
+          "XE": "It's raining heavily outside.",
+          "XK": "밖에 비가 많이 내리고 있어.",
+          "XR": "잇츠 레이닝 헤빌리 아웃사이드"
+        },
+        {
+          "T1": "down",
+          "K1": "아래로",
+          "R1": "다운",
+          "E1": "'Down'은 아래로의 움직임을 나타내는 부사입니다.",
+          "T2": "down",
+          "K2": "아래로",
+          "R2": "다운",
+          "XE": "The ball rolled down the hill.",
+          "XK": "공이 언덕 아래로 굴러갔다.",
+          "XR": "더 볼 롤드 다운 더 힐"
+        }
+      ]
+    },
+    {
+      "T0": "Today's gonna be the day you notice",
+      "C0": "나는 아니라고 말하고 있지만, 속으로는 알아. 오늘은 네가 알아차릴 날이 될 거야. 왜 농담인지 설명하는 데 지쳤기 때문이야.",
+      "G0": "'Today's gonna be the day you notice'는 주어(Today's), 조동사(be), 동사(notice), 목적어(day you notice)로 구성된 문장입니다. 여기서 'gonna'는 'going to'의 줄임말로 미래의 계획이나 예정을 나타냅니다.",
+      "K0": "오늘은 네가 알아차릴 날이 될 거야",
+      "R0": "투데이즈 거너 비 더 데이 유 노티스",
+      "LI": [
+        {
+          "T1": "Today's",
+          "K1": "오늘은",
+          "R1": "투데이즈",
+          "E1": "'Today's'는 'Today is'의 축약형으로, 오늘이 어떤 특정한 날임을 나타내는 표현입니다.",
+          "T2": "Today",
+          "K2": "오늘",
+          "R2": "투데이",
+          "XE": "Today's weather is nice.",
+          "XK": "오늘 날씨가 좋습니다.",
+          "XR": "투데이즈 웨더 이즈 나이스"
+        },
+        {
+          "T1": "gonna",
+          "K1": "~할 것이다",
+          "R1": "거너",
+          "E1": "'Gonna'는 'going to'의 줄임말로, 미래에 일어날 일을 예고하는 표현입니다.",
+          "T2": "going to",
+          "K2": "~할 것이다",
+          "R2": "고잉 투",
+          "XE": "I'm gonna go tomorrow.",
+          "XK": "내일 갈 거야.",
+          "XR": "아임 거너 고 투모로우"
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재를 나타내는 동사로, 여기서는 미래의 상태를 설명하는 데 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "He will be happy.",
+          "XK": "그는 행복할 것이다.",
+          "XR": "히 윌 비 해피"
+        },
+        {
+          "T1": "the day",
+          "K1": "그 날",
+          "R1": "더 데이",
+          "E1": "'The day'는 특정한 날을 지칭하는 명사 구입니다.",
+          "T2": "day",
+          "K2": "날",
+          "R2": "데이",
+          "XE": "That was the day everything changed.",
+          "XK": "그날 모든 것이 변했다.",
+          "XR": "댓 워즈 더 데이 에브리띵 체인지드"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 대명사로, 문맥에 따라 의미가 달라질 수 있습니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are very kind.",
+          "XK": "너는 매우 친절하다.",
+          "XR": "유 아 베리 카인드"
+        },
+        {
+          "T1": "notice",
+          "K1": "알아차리다",
+          "R1": "노티스",
+          "E1": "'Notice'는 무언가를 인식하거나 알아차리는 행위를 의미하는 동사입니다.",
+          "T2": "notice",
+          "K2": "알아차리다",
+          "R2": "노티스",
+          "XE": "Did you notice anything strange?",
+          "XK": "무언가 이상한 것을 알아차렸나요?",
+          "XR": "디드 유 노티스 애니띵 스트레인지?"
+        }
+      ]
+    },
+    {
+      "T0": "This is what you asked for, heavy is the",
+      "C0": "참으려고 애쓰지만 계속 피가 흘러나와. 이게 네가 원했던 거잖아, 무거운 건 왕관이니까.",
+      "G0": "'This is what you asked for, heavy is the'는 주어(This), 동사(is), 목적어(what you asked for), 보어(heavy is the)로 이루어진 문장 구조로, 상대방이 원한 것이 무엇인지를 강조하는 구문입니다.",
+      "K0": "이게 네가 원했던 거잖아, 왕관은 무거운 법이지.",
+      "R0": "디스 이즈 왓 유 애스크드 포어, 헤비 이즈 더",
+      "LI": [
+        {
+          "T1": "This",
+          "K1": "이것",
+          "R1": "디스",
+          "E1": "'This'는 가까운 위치나 앞서 언급한 대상을 가리키는 지시 대명사입니다.",
+          "T2": "this",
+          "K2": "이것",
+          "R2": "디스",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 be 동사의 한 형태입니다. 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She is an engineer.",
+          "XK": "그녀는 엔지니어이다.",
+          "XR": "쉬 이즈 앤 엔지니어"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 대상이나 내용을 묻거나 설명할 때 사용하는 의문 대명사입니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What is your name?",
+          "XK": "너의 이름은 무엇이니?",
+          "XR": "왓 이즈 유어 네임?"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 지칭하는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "asked for",
+          "K1": "요구했다",
+          "R1": "애스크드 포어",
+          "E1": "'Asked for'는 무언가를 요구했거나 요청했음을 나타내는 표현입니다.",
+          "T2": "ask for",
+          "K2": "요구하다",
+          "R2": "애스크 포어",
+          "XE": "She asked for help.",
+          "XK": "그녀는 도움을 요청했다.",
+          "XR": "쉬 애스크 포어 헬프"
+        },
+        {
+          "T1": "heavy",
+          "K1": "무거운",
+          "R1": "헤비",
+          "E1": "'Heavy'는 무게가 많이 나가는 상태를 나타내는 형용사입니다.",
+          "T2": "heavy",
+          "K2": "무거운",
+          "R2": "헤비",
+          "XE": "The box is heavy.",
+          "XK": "상자가 무겁다.",
+          "XR": "더 박스 이즈 헤비"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 be 동사의 한 형태입니다. 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "The sky is blue.",
+          "XK": "하늘이 파랗다.",
+          "XR": "더 스카이 이즈 블루"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 명사 앞에 붙여 특정한 대상을 가리킬 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Open the door.",
+          "XK": "문을 열어.",
+          "XR": "오픈 더 도어"
+        }
+      ]
+    },
+    {
+      "T0": "Turn to run, now look what it's become",
+      "C0": "무겁다 왕관. 달아날 생각을 하다가, 이제 그것이 어떻게 변했는지 보라. 열 대 일의 압도적인 수에 밀려.",
+      "G0": "'Turn to run, now look what it's become'은 명령형 구문(Turn to run)과 현재의 변화를 묘사하는 동사구(now look what it's become)로 이루어져 있습니다.",
+      "K0": "달아날 생각을 하다가, 이제 그것이 어떻게 변했는지 보라.",
+      "R0": "턴 투 런, 나우 룩 왓 잇즈 비컴",
+      "LI": [
+        {
+          "T1": "Turn",
+          "K1": "돌다; 변화하다",
+          "R1": "턴",
+          "E1": "'Turn'은 방향을 바꾸거나 특정 행동을 시작하는 것을 의미하는 동사입니다. 여기서는 'run' (달리다)와 함께 쓰여 행동의 변화를 나타냅니다.",
+          "T2": "turn",
+          "K2": "돌다; 변화하다",
+          "R2": "턴",
+          "XE": "Turn the knob to open the door.",
+          "XK": "문을 열려면 손잡이를 돌리세요.",
+          "XR": "턴 더 놉 투 오픈 더 도어"
+        },
+        {
+          "T1": "to",
+          "K1": "~로; ~하기 위해",
+          "R1": "투",
+          "E1": "'To'는 동사 앞에서 목적 또는 방향을 나타내는 전치사입니다.",
+          "T2": "to",
+          "K2": "~로; ~하기 위해",
+          "R2": "투",
+          "XE": "Go to the store.",
+          "XK": "가게로 가라.",
+          "XR": "고 투 더 스토어"
+        },
+        {
+          "T1": "run",
+          "K1": "뛰다; 도망치다",
+          "R1": "런",
+          "E1": "'Run'은 빠르게 걷는 행동을 나타내며, 이 문맥에서는 도망치는 것을 의미합니다.",
+          "T2": "run",
+          "K2": "뛰다; 도망치다",
+          "R2": "런",
+          "XE": "Run as fast as you can.",
+          "XK": "가능한 한 빨리 뛰어.",
+          "XR": "런 애즈 페스트 애즈 유 캔"
+        },
+        {
+          "T1": "now",
+          "K1": "지금",
+          "R1": "나우",
+          "E1": "'Now'는 현재 시점을 나타내는 부사입니다.",
+          "T2": "now",
+          "K2": "지금",
+          "R2": "나우",
+          "XE": "Now is the time to act.",
+          "XK": "지금이 행동할 때다.",
+          "XR": "나우 이즈 더 타임 투 액트"
+        },
+        {
+          "T1": "look",
+          "K1": "보다; 살펴보다",
+          "R1": "룩",
+          "E1": "'Look'은 무언가를 보는 행동을 나타내는 동사입니다.",
+          "T2": "look",
+          "K2": "보다; 살펴보다",
+          "R2": "룩",
+          "XE": "Look at the stars.",
+          "XK": "별들을 보라.",
+          "XR": "룩 앳 더 스타즈"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 질문 또는 특정 대상을 가리킬 때 사용하는 대명사입니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What are you doing?",
+          "XK": "무엇을 하고 있니?",
+          "XR": "왓 아 유 두잉?"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것이",
+          "R1": "잇즈",
+          "E1": "'It's'는 'it is' 또는 'it has'의 축약형입니다. 여기서는 'it has'의 의미로, 무엇이 된 상태를 나타냅니다.",
+          "T2": "it has",
+          "K2": "그것이",
+          "R2": "잇 해즈",
+          "XE": "It's been a long day.",
+          "XK": "긴 하루였다.",
+          "XR": "잇즈 빈 어 롱 데이"
+        },
+        {
+          "T1": "become",
+          "K1": "~이 되다",
+          "R1": "비컴",
+          "E1": "'Become'은 어떤 상태나 상황으로 변화하는 것을 의미하는 동사입니다.",
+          "T2": "become",
+          "K2": "~이 되다",
+          "R2": "비컴",
+          "XE": "She has become a doctor.",
+          "XK": "그녀는 의사가 되었다.",
+          "XR": "쉬 해즈 비컴 어 닥터"
+        }
+      ]
+    },
+    {
+      "T0": "Heavy is the, heavy is the crown",
+      "C0": "참으려고 해도 계속 피가 나, 무거운 것은, 무거운 것은 왕관이다",
+      "G0": "'Heavy is the, heavy is the crown'은 문장 구조상 주어(heavy), 동사(is), 보어(the crown)로 이루어져 있습니다. 이 문장은 왕관의 무거움을 강조하여 강조법을 사용하고 있습니다.",
+      "K0": "무거운 것은, 무거운 것은 왕관이다",
+      "R0": "헤비 이즈 더, 헤비 이즈 더 크라운",
+      "LI": [
+        {
+          "T1": "Heavy",
+          "K1": "무거운",
+          "R1": "헤비",
+          "E1": "'Heavy'는 무게가 많이 나가는 것을 의미하는 형용사입니다. 물리적 무게뿐만 아니라 심리적 부담을 나타낼 때도 사용됩니다.",
+          "T2": "heavy",
+          "K2": "무거운",
+          "R2": "헤비",
+          "XE": "The box is very heavy.",
+          "XK": "상자는 매우 무겁다.",
+          "XR": "더 박스 이즈 베리 헤비"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 be 동사의 형태로, 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "She is a teacher.",
+          "XK": "그녀는 선생님이다.",
+          "XR": "쉬 이즈 어 티처"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 사람, 장소, 사물을 나타내는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is sleeping.",
+          "XK": "그 고양이는 자고 있다.",
+          "XR": "더 캣 이즈 슬리핑"
+        },
+        {
+          "T1": "crown",
+          "K1": "왕관",
+          "R1": "크라운",
+          "E1": "'Crown'은 왕이나 여왕이 머리에 쓰는 장식품을 의미하는 명사입니다. 여기서는 권력과 책임을 은유적으로 나타내기 위해 사용되었습니다.",
+          "T2": "crown",
+          "K2": "왕관",
+          "R2": "크라운",
+          "XE": "The king wore a golden crown.",
+          "XK": "왕은 금으로 된 왕관을 썼다.",
+          "XR": "더 킹 워 어 골든 크라운"
+        }
+      ]
+    },
+    {
+      "T0": "This is what you asked for",
+      "C0": "이 모든 것이 이렇게 무너지는 것을 지켜봐. 이게 바로 네가 원했던 거야. 참아보려 했지만 계속 새어나오기만 해.",
+      "G0": "'This is what you asked for'는 주어(This), 동사(is), 보어(what you asked for)로 이루어진 주어-동사-보어(SVC) 구조의 문장입니다. 여기서 'what you asked for'는 명사절로, 보어로 기능합니다.",
+      "K0": "이게 바로 네가 원했던 거야.",
+      "R0": "디스 이즈 왓 유 애스크드 포",
+      "LI": [
+        {
+          "T1": "This",
+          "K1": "이것",
+          "R1": "디스",
+          "E1": "'This'는 화자 가까이에 있는 사물이나 상황을 가리키는 지시 대명사입니다.",
+          "T2": "this",
+          "K2": "이것",
+          "R2": "디스",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "is",
+          "K1": "이다",
+          "R1": "이즈",
+          "E1": "'Is'는 동사 'be'의 현재형으로, 주어와 같은 것을 나타낼 때 사용됩니다.",
+          "T2": "be",
+          "K2": "이다",
+          "R2": "비",
+          "XE": "He is a teacher.",
+          "XK": "그는 선생님이다.",
+          "XR": "히 이즈 어 티처"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 명사절을 이끄는 관계 대명사로, 여기서는 '너가 원했던 것'을 의미합니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What you said is true.",
+          "XK": "네가 말한 것이 사실이다.",
+          "XR": "왓 유 세드 이즈 트루"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자의 청자를 지칭하는 인칭 대명사로, 여기서는 목적격으로 사용되었습니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "I saw you at the park.",
+          "XK": "나는 너를 공원에서 봤어.",
+          "XR": "아이 소우 유 엣 더 파크"
+        },
+        {
+          "T1": "asked",
+          "K1": "요청했다",
+          "R1": "애스크드",
+          "E1": "'Asked'는 'ask'의 과거형으로, 질문하거나 요청하는 행위를 나타냅니다.",
+          "T2": "ask",
+          "K2": "요청하다",
+          "R2": "애스크",
+          "XE": "He asked for help.",
+          "XK": "그는 도움을 요청했다.",
+          "XR": "히 애스크드 포 헬프"
+        },
+        {
+          "T1": "for",
+          "K1": "~을 위하여",
+          "R1": "포",
+          "E1": "'For'는 목적이나 대상을 나타내는 전치사로, 여기서는 목적을 의미합니다.",
+          "T2": "for",
+          "K2": "~을 위하여",
+          "R2": "포",
+          "XE": "This present is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 프레젠트 이즈 포 유"
+        }
+      ]
+    },
+    {
+      "T0": "'Cause there's no turnin' back this path",
+      "C0": "당신은 말을 삼켰어야 했어. 왜냐하면 이 길은 한 번 시작되면 되돌릴 수 없기 때문이야.",
+      "G0": "'Cause there's no turnin' back this path'는 'because(이유의 접속사)'의 축약형인 'Cause', 주어 'there', 동사 'is', 부정어 'no', 동명사 'turnin' back', 목적어 'this path'로 이루어진 문장입니다.",
+      "K0": "왜냐하면 이 길은 되돌릴 수 없기 때문이야.",
+      "R0": "'코즈 데어즈 노 터닝 백 디스 패쓰",
+      "LI": [
+        {
+          "T1": "'Cause",
+          "K1": "왜냐하면",
+          "R1": "코즈",
+          "E1": "'Cause'는 'because'의 축약형으로, 원인을 설명할 때 사용합니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비코즈",
+          "XE": "'Cause I was late, I missed the bus.",
+          "XK": "내가 늦었기 때문에, 버스를 놓쳤어.",
+          "XR": "코즈 아이 워즈 레이트, 아이 미스드 더 버스"
+        },
+        {
+          "T1": "there's",
+          "K1": "~가 있다",
+          "R1": "데어즈",
+          "E1": "'There's'는 'there is'의 축약형으로, 어떤 것이 존재함을 나타냅니다.",
+          "T2": "there is",
+          "K2": "~가 있다",
+          "R2": "데어 이즈",
+          "XE": "There's a book on the table.",
+          "XK": "테이블 위에 책이 있어.",
+          "XR": "데어즈 어 북 온 더 테이블"
+        },
+        {
+          "T1": "no",
+          "K1": "아니",
+          "R1": "노",
+          "E1": "'No'는 부정어로서 어떤 것이 존재하지 않거나 허용되지 않음을 나타냅니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노",
+          "XE": "No one is here.",
+          "XK": "여기 아무도 없어.",
+          "XR": "노 원 이즈 히어"
+        },
+        {
+          "T1": "turnin'",
+          "K1": "되돌아가는",
+          "R1": "터닝",
+          "E1": "'Turnin''은 'turning'의 축약형으로, 되돌아가거나 방향을 바꾸는 행위를 뜻합니다.",
+          "T2": "turning",
+          "K2": "되돌아가는",
+          "R2": "터닝",
+          "XE": "There's no turnin' back now.",
+          "XK": "이제 되돌릴 수 없어.",
+          "XR": "데어즈 노 터닝 백 나우"
+        },
+        {
+          "T1": "back",
+          "K1": "뒤",
+          "R1": "백",
+          "E1": "'Back'은 시간을 되돌리거나 원래 상태로 복귀하는 것을 의미합니다.",
+          "T2": "back",
+          "K2": "뒤",
+          "R2": "백",
+          "XE": "Look back at your memories.",
+          "XK": "너의 기억을 되돌아봐.",
+          "XR": "룩 백 앳 유어 메모리즈"
+        },
+        {
+          "T1": "this",
+          "K1": "이",
+          "R1": "디스",
+          "E1": "'This'는 가까운 대상을 지시하는 대명사입니다.",
+          "T2": "this",
+          "K2": "이",
+          "R2": "디스",
+          "XE": "This is my favorite book.",
+          "XK": "이것은 내가 가장 좋아하는 책이야.",
+          "XR": "디스 이즈 마이 페이버릿 북"
+        },
+        {
+          "T1": "path",
+          "K1": "길",
+          "R1": "패쓰",
+          "E1": "'Path'는 길이나 경로를 나타내는 명사입니다.",
+          "T2": "path",
+          "K2": "길",
+          "R2": "패쓰",
+          "XE": "Follow the path to the house.",
+          "XK": "집으로 향하는 길을 따라가.",
+          "XR": "팔로우 더 패쓰 투 더 하우스"
+        }
+      ]
+    },
+    {
+      "T0": "Wavin' that sword when the pen won't miss",
+      "C0": "너는 견딜 수 없는 것을 원하지 않는다고 말해. 펜이 놓치지 않으면 그 검을 흔들어봐. 이런 식으로 모든 것이 무너져 가는 것을 지켜봐.",
+      "G0": "'Wavin' that sword when the pen won't miss'는 주어(생략됨), 현재 분사구문(wavin' that sword), 접속사(when), 주어나 조동사(be 동사 생략됨), 부정 부사(won't), 동사(miss)로 구성된 문장입니다. 여기서는 검을 휘두르지만, 펜으로 해결할 수 없는 상황을 비유적으로 표현합니다.",
+      "K0": "펜이 놓치지 않으면 그 검을 흔들어봐.",
+      "R0": "웨이빈 댓 소드 웬 더 펜 원트 미스",
+      "LI": [
+        {
+          "T1": "Wavin'",
+          "K1": "흔들다",
+          "R1": "웨이빈",
+          "E1": "'Wavin''은 'Wave'의 현재 분사로, 물체를 이리저리 움직이는 행위를 나타냅니다.",
+          "T2": "Wave",
+          "K2": "흔들다",
+          "R2": "웨이브",
+          "XE": "She was wavin' at me from across the street.",
+          "XK": "그녀는 길 건너에서 나에게 손을 흔들고 있었다.",
+          "XR": "쉬 워즈 웨이빈 앳 미 프롬 어크로스 더 스트리트"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시 대명사입니다. 여기서는 '검(sword)'을 나타냅니다.",
+          "T2": "that",
+          "K2": "그",
+          "R2": "댓",
+          "XE": "I can't believe that happened.",
+          "XK": "그 일이 일어났다는 것을 믿을 수 없어.",
+          "XR": "아이 캔트 빌리브 댓 해픈드"
+        },
+        {
+          "T1": "sword",
+          "K1": "검",
+          "R1": "소드",
+          "E1": "'Sword'는 칼날이 있는 무기를 의미합니다.",
+          "T2": "sword",
+          "K2": "검",
+          "R2": "소드",
+          "XE": "He drew his sword from its sheath.",
+          "XK": "그는 검집에서 검을 뽑았다.",
+          "XR": "히 드류 히즈 소드 프롬 잇츠 쉬스"
+        },
+        {
+          "T1": "when",
+          "K1": "~할 때",
+          "R1": "웬",
+          "E1": "'When'은 시간 접속사로, 특정한 시점이나 사건을 연결합니다.",
+          "T2": "when",
+          "K2": "~할 때",
+          "R2": "웬",
+          "XE": "Call me when you get home.",
+          "XK": "집에 도착하면 전화해.",
+          "XR": "콜 미 웬 유 겟 홈"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 명사를 가리키기 위해 사용되는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The book on the table is mine.",
+          "XK": "책상 위의 그 책은 내 거야.",
+          "XR": "더 북 온 더 테이블 이즈 마인"
+        },
+        {
+          "T1": "pen",
+          "K1": "펜",
+          "R1": "펜",
+          "E1": "'Pen'은 글씨를 쓰는 도구를 의미합니다.",
+          "T2": "pen",
+          "K2": "펜",
+          "R2": "펜",
+          "XE": "He wrote his name with a blue pen.",
+          "XK": "그는 파란 펜으로 자신의 이름을 썼다.",
+          "XR": "히 로트 히즈 네임 윋 어 블루 펜"
+        },
+        {
+          "T1": "won't",
+          "K1": "~하지 않을 것이다",
+          "R1": "원트",
+          "E1": "'Won't'는 'will not'의 축약형으로, 미래에 어떤 일이 일어나지 않을 것을 나타냅니다.",
+          "T2": "will not",
+          "K2": "~하지 않을 것이다",
+          "R2": "윌 낫",
+          "XE": "I won't be late to the party.",
+          "XK": "파티에 늦지 않을 거야.",
+          "XR": "아이 원트 비 레이트 투 더 파티"
+        },
+        {
+          "T1": "miss",
+          "K1": "놓치다",
+          "R1": "미스",
+          "E1": "'Miss'는 기회를 놓치거나 목표를 맞추지 못하는 경우를 의미합니다.",
+          "T2": "miss",
+          "K2": "놓치다",
+          "R2": "미스",
+          "XE": "Don't miss the bus.",
+          "XK": "버스를 놓치지 마.",
+          "XR": "돈트 미스 더 버스"
+        }
+      ]
+    },
+    {
+      "T0": "This is what you asked for, heavy is the crown",
+      "C0": "농담의 의미를 설명하는 데 지쳤기 때문에, 이게 네가 원하는 거야, 무거운 왕관이야. 해가 떠오를 때 불길이 치솟고, 재가 내려앉고 있어.",
+      "G0": "'This is what you asked for, heavy is the crown'은 'This'가 주어, 'is'가 동사, 'what you asked for'가 목적어 역할을 하는 명사절, 'heavy is the crown'이 보어로 이루어진 문장 구조입니다. 주어와 동사가 명사절을 통해 연결되어 있으며, 병치 구조로 보어 부분이 형성되어 있습니다.",
+      "K0": "이게 네가 원한 거야, 왕관은 무거운 법이지.",
+      "R0": "디스 이즈 왓 유 애스크드 포어, 헤비 이즈 더 크라운",
+      "LI": [
+        {
+          "T1": "This",
+          "K1": "이것",
+          "R1": "디스",
+          "E1": "'This'는 화자가 가리키고 있는 특정한 대상을 나타내는 지시 대명사입니다.",
+          "T2": "this",
+          "K2": "이것",
+          "R2": "디스",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 동사로, 주어와 목적어 또는 보어를 연결하는 역할을 합니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "He is a student.",
+          "XK": "그는 학생이야.",
+          "XR": "히 이즈 어 스튜던트"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 명사절을 이끄는 관계 대명사로, 여기서는 'you asked for'를 꾸며줍니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "I know what you did.",
+          "XK": "네가 한 일을 알아.",
+          "XR": "아이 노우 왓 유 디드"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "asked for",
+          "K1": "요구했다",
+          "R1": "애스크드 포어",
+          "E1": "'Asked for'는 무언가를 요구했거나 요청했음을 나타내는 표현입니다.",
+          "T2": "ask for",
+          "K2": "요구하다",
+          "R2": "애스크 포어",
+          "XE": "She asked for help.",
+          "XK": "그녀는 도움을 요청했다.",
+          "XR": "쉬 애스크 포어 헬프"
+        },
+        {
+          "T1": "heavy",
+          "K1": "무거운",
+          "R1": "헤비",
+          "E1": "'Heavy'는 크기나 무게가 무거운 것을 나타내는 형용사입니다.",
+          "T2": "heavy",
+          "K2": "무거운",
+          "R2": "헤비",
+          "XE": "The bag is heavy.",
+          "XK": "가방이 무거워.",
+          "XR": "더 백 이즈 헤비"
+        },
+        {
+          "T1": "is",
+          "K1": "~이다",
+          "R1": "이즈",
+          "E1": "'Is'는 현재 시제를 나타내는 동사로, 주어와 목적어 또는 보어를 연결하는 역할을 합니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 명사 앞에 붙여 그 명사가 이미 언급되었거나 잘 알려진 것을 나타내는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the table.",
+          "XK": "그 고양이가 테이블 위에 있다.",
+          "XR": "더 캣 이즈 온 더 테이블"
+        },
+        {
+          "T1": "crown",
+          "K1": "왕관",
+          "R1": "크라운",
+          "E1": "'Crown'은 왕이나 여왕이 머리에 쓰는 머리 장식 또는 상징적인 의미로 사용되는 경우가 있습니다.",
+          "T2": "crown",
+          "K2": "왕관",
+          "R2": "크라운",
+          "XE": "He wore a golden crown.",
+          "XK": "그는 황금 왕관을 썼다.",
+          "XR": "히 워어 어 골든 크라운"
+        }
+      ]
+    },
+    {
+      "T0": "Back then should've bit your tongue",
+      "C0": "숫자에서 열 대 하나로 밀렸어. 그때는 혀를 깨물었어야 했어. 왜냐하면 이 길에서 돌아갈 수 없거든.",
+      "G0": "'Back then should've bit your tongue'는 주어가 생략된 구조로, 'should have'는 과거에 그렇지 않았던 행동을 후회하는 표현입니다. 'bit your tongue'은 말하지 말았어야 했다는 의미입니다.",
+      "K0": "그때는 혀를 깨물었어야 했어.",
+      "R0": "백 덴 슈드브 빗 유어 텅",
+      "LI": [
+        {
+          "T1": "Back then",
+          "K1": "그때는",
+          "R1": "백 덴",
+          "E1": "'Back then'은 과거의 특정 시점을 가리킵니다.",
+          "T2": "back then",
+          "K2": "그때는",
+          "R2": "백 덴",
+          "XE": "Back then, we didn't have smartphones.",
+          "XK": "그때는 우리는 스마트폰이 없었어.",
+          "XR": "백 덴, 위 디던트 해브 스마트폰즈"
+        },
+        {
+          "T1": "should've",
+          "K1": "~했어야 했다",
+          "R1": "슈드브",
+          "E1": "'Should've'는 'should have'의 축약형으로, 과거에 어떤 행동을 했어야 했다는 후회를 나타냅니다.",
+          "T2": "should have",
+          "K2": "~했어야 했다",
+          "R2": "슈드 해브",
+          "XE": "You should've called me.",
+          "XK": "너는 나에게 전화했어야 했어.",
+          "XR": "유 슈드브 콜드 미"
+        },
+        {
+          "T1": "bit",
+          "K1": "깨물었다",
+          "R1": "빗",
+          "E1": "'Bit'는 'bite'의 과거형으로, 무언가를 깨무는 행위를 의미합니다.",
+          "T2": "bite",
+          "K2": "깨물다",
+          "R2": "바이트",
+          "XE": "He bit into the apple.",
+          "XK": "그는 사과를 깨물었다.",
+          "XR": "히 빗 인투 디 애플"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 소유격 대명사로, 상대방이 소유한 것을 가리킵니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your book?",
+          "XK": "이것은 너의 책이니?",
+          "XR": "이즈 디스 유어 북?"
+        },
+        {
+          "T1": "tongue",
+          "K1": "혀",
+          "R1": "텅",
+          "E1": "'Tongue'는 입안의 혀를 나타내는 명사입니다.",
+          "T2": "tongue",
+          "K2": "혀",
+          "R2": "텅",
+          "XE": "He bit his tongue while eating.",
+          "XK": "그는 먹다가 혀를 깨물었다.",
+          "XR": "히 빗 히스 텅 와일 이팅"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}

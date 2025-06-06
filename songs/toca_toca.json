@@ -1,0 +1,1220 @@
+{
+  "name": "toca_toca",
+  "text": "Oh, you said, \"No, no, no\"\nI said, \"No, no, no, no\"\nYou say, \"Take me home\"\nI say, \"Dom Perignon\"\nYou said, \"No, no, no\"\nI said, \"No, no, no, no\"\nNo, no, no, no\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nOh, and I wanna say \"rain on me forever\"\nRivers of champagne, celebrate together\nOh, and I wanna say \"rain on me forever\"\nRivers of champagne, celebrate together\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nToca, toca, toca\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nI see your eyes every day and every night\nAnd I, I wanna hold you, love you 'til the end of time\nStay over night 'cause I want you in my life\nAnd I, I wanna love you, I will never make you cry\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nHasta la vida loca, loca, loca, loca\nTe encanta la música, te toca, toca, toca\nToca, toca, toca\nToca, toca, toca",
+  "p1": [
+    "Oh, you said, \"No, no, no\"",
+    "I said, \"No, no, no, no\"",
+    "You say, \"Take me home\"",
+    "I say, \"Dom Perignon\"",
+    "You said, \"No, no, no\"",
+    "No, no, no, no",
+    "Hasta la vida loca, loca, loca, loca",
+    "Te encanta la música, te toca, toca, toca",
+    "Oh, and I wanna say \"rain on me forever\"",
+    "Rivers of champagne, celebrate together",
+    "Toca, toca, toca",
+    "I see your eyes every day and every night",
+    "And I, I wanna hold you, love you 'til the end of time",
+    "Stay over night 'cause I want you in my life",
+    "And I, I wanna love you, I will never make you cry"
+  ],
+  "contextText": [
+    {
+      "T0": "Oh, you said, \"No, no, no\"",
+      "CX": "Oh, you said, \"No, no, no\" I said, \"No, no, no, no\""
+    },
+    {
+      "T0": "I said, \"No, no, no, no\"",
+      "CX": "Oh, you said, \"No, no, no\" I said, \"No, no, no, no\" You say, \"Take me home\""
+    },
+    {
+      "T0": "You say, \"Take me home\"",
+      "CX": "I said, \"No, no, no, no\" You say, \"Take me home\" I say, \"Dom Perignon\""
+    },
+    {
+      "T0": "I say, \"Dom Perignon\"",
+      "CX": "You say, \"Take me home\" I say, \"Dom Perignon\" You said, \"No, no, no\""
+    },
+    {
+      "T0": "You said, \"No, no, no\"",
+      "CX": "I say, \"Dom Perignon\" You said, \"No, no, no\" No, no, no, no"
+    },
+    {
+      "T0": "No, no, no, no",
+      "CX": "You said, \"No, no, no\" No, no, no, no Hasta la vida loca, loca, loca, loca"
+    },
+    {
+      "T0": "Hasta la vida loca, loca, loca, loca",
+      "CX": "No, no, no, no Hasta la vida loca, loca, loca, loca Te encanta la música, te toca, toca, toca"
+    },
+    {
+      "T0": "Te encanta la música, te toca, toca, toca",
+      "CX": "Hasta la vida loca, loca, loca, loca Te encanta la música, te toca, toca, toca Oh, and I wanna say \"rain on me forever\""
+    },
+    {
+      "T0": "Oh, and I wanna say \"rain on me forever\"",
+      "CX": "Te encanta la música, te toca, toca, toca Oh, and I wanna say \"rain on me forever\" Rivers of champagne, celebrate together"
+    },
+    {
+      "T0": "Rivers of champagne, celebrate together",
+      "CX": "Oh, and I wanna say \"rain on me forever\" Rivers of champagne, celebrate together Toca, toca, toca"
+    },
+    {
+      "T0": "Toca, toca, toca",
+      "CX": "Rivers of champagne, celebrate together Toca, toca, toca I see your eyes every day and every night"
+    },
+    {
+      "T0": "I see your eyes every day and every night",
+      "CX": "Toca, toca, toca I see your eyes every day and every night And I, I wanna hold you, love you 'til the end of time"
+    },
+    {
+      "T0": "And I, I wanna hold you, love you 'til the end of time",
+      "CX": "I see your eyes every day and every night And I, I wanna hold you, love you 'til the end of time Stay over night 'cause I want you in my life"
+    },
+    {
+      "T0": "Stay over night 'cause I want you in my life",
+      "CX": "And I, I wanna hold you, love you 'til the end of time Stay over night 'cause I want you in my life And I, I wanna love you, I will never make you cry"
+    },
+    {
+      "T0": "And I, I wanna love you, I will never make you cry",
+      "CX": "Stay over night 'cause I want you in my life And I, I wanna love you, I will never make you cry"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "You said, \"No, no, no\"",
+      "C0": "나는 말했어, \"돔 페리뇽\" 너는 말했어, \"아니, 아니, 아니\" 아니, 아니, 아니, 아니",
+      "G0": "'You said, \"No, no, no\"'는 주어(You), 과거 시제 동사(said), 인용문으로 이루어진 간단한 문장 구조를 가지며, 인용문 안에 부정적인 대답을 포함하고 있습니다.",
+      "K0": "너는 말했어, \"아니, 아니, 아니\"",
+      "R0": "유 세드, \"노우, 노우, 노우\"",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 나타내는 대명사로, 여기서는 상대방을 가리킵니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "said",
+          "K1": "말했다",
+          "R1": "세드",
+          "E1": "'Said'는 'say'의 과거형으로, 말을 했다는 과거의 행위를 나타냅니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "He said he would come.",
+          "XK": "그는 올 거라고 말했어.",
+          "XR": "히 세드 히 우드 컴"
+        },
+        {
+          "T1": "No",
+          "K1": "아니",
+          "R1": "노우",
+          "E1": "'No'는 부정적인 대답을 나타내는 감탄사입니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노우",
+          "XE": "No, I don't want to go.",
+          "XK": "아니, 나는 가고 싶지 않아.",
+          "XR": "노우, 아이 돈트 원트 투 고우"
+        }
+      ]
+    },
+    {
+      "T0": "I say, \"Dom Perignon\"",
+      "C0": "너는 '나를 집에 데려다줘'라고 말해. 나는 '돔 페리뇽'이라고 말해. 너는 '아니, 아니, 아니'라고 말했지.",
+      "G0": "'I say, \"Dom Perignon\"'은 주어(I), 동사(say), 목적어(Dom Perignon)로 이루어진 직설적인 문장입니다. 여기서 동사 say는 발화를 나타내며, 인용 부호 안의 내용이 발화의 구체적인 내용입니다.",
+      "K0": "나는 '돔 페리뇽'이라고 말해.",
+      "R0": "아이 세이, '돔 페리뇽'",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 지칭하는 주어로, 일인칭 단수 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 어떤 말을 표현하거나 전달하는 행위를 의미하는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "What did you say?",
+          "XK": "뭐라고 말했어?",
+          "XR": "왓 디드 유 세이?"
+        },
+        {
+          "T1": "Dom Perignon",
+          "K1": "돔 페리뇽",
+          "R1": "돔 페리뇽",
+          "E1": "'Dom Perignon'은 유명한 프랑스 샴페인 브랜드로 고급스러운 이미지를 갖고 있습니다.",
+          "T2": "Dom Perignon",
+          "K2": "돔 페리뇽",
+          "R2": "돔 페리뇽",
+          "XE": "He ordered a bottle of Dom Perignon.",
+          "XK": "그는 돔 페리뇽 한 병을 주문했어.",
+          "XR": "히 오더드 어 바틀 오브 돔 페리뇽"
+        }
+      ]
+    },
+    {
+      "T0": "Toca, toca, toca",
+      "C0": "샴페인 강, 함께 축하해 Toca, toca, toca 나는 매일 밤 너의 눈을 본다",
+      "G0": "'Toca, toca, toca'는 반복형 명령문으로, 주로 라틴 음악에서 사용되며, 연주나 음악을 시작하라는 지시를 의미합니다.",
+      "K0": "연주해, 연주해, 연주해",
+      "R0": "토카, 토카, 토카",
+      "LI": [
+        {
+          "T1": "Toca",
+          "K1": "연주해",
+          "R1": "토카",
+          "E1": "'Toca'는 스페인어 동사 'tocar'의 명령형으로, '연주하다' 또는 '만지다'를 의미합니다. 이 문맥에서는 음악을 연주하라고 요청하는 의미로 사용되었습니다.",
+          "T2": "tocar",
+          "K2": "연주하다",
+          "R2": "토카르",
+          "XE": "Toca la guitarra.",
+          "XK": "기타를 연주해.",
+          "XR": "토카 라 기타라"
+        },
+        {
+          "T1": "toca",
+          "K1": "연주해",
+          "R1": "토카",
+          "E1": "'Toca'는 같은 형태가 반복되어 사용됨으로써 주제를 강조하고 있습니다.",
+          "T2": "tocar",
+          "K2": "연주하다",
+          "R2": "토카르",
+          "XE": "Toca la batería.",
+          "XK": "드럼을 연주해.",
+          "XR": "토카 라 바테리아"
+        },
+        {
+          "T1": "toca",
+          "K1": "연주해",
+          "R1": "토카",
+          "E1": "'Toca'는 셋째 사용에서 또한 반복적으로 사용되며, 음악 연주를 계속 진행하라는 의미를 강하게 전달하고 있습니다.",
+          "T2": "tocar",
+          "K2": "연주하다",
+          "R2": "토카르",
+          "XE": "Toca el piano.",
+          "XK": "피아노를 연주해.",
+          "XR": "토카 엘 피아노"
+        }
+      ]
+    },
+    {
+      "T0": "No, no, no, no",
+      "C0": "너가 말했어, \"아니, 아니, 아니\" 아니, 아니, 아니, 아니 엉망인 인생까지, 미쳤어, 미쳤어, 미쳤어",
+      "G0": "'No, no, no, no'는 단일 단어를 반복하여 강한 부정의 의미를 나타내는 간단한 문장입니다. 이 문장은 감정을 강조하는 데 사용됩니다.",
+      "K0": "아니, 아니, 아니, 아니",
+      "R0": "노, 노, 노, 노",
+      "LI": [
+        {
+          "T1": "No",
+          "K1": "아니",
+          "R1": "노",
+          "E1": "'No'는 반대나 부정을 나타내는 표현으로, 어떤 제안이나 질문에 대해 거부하거나 동의하지 않을 때 사용됩니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노",
+          "XE": "No, I don't want to go.",
+          "XK": "아니, 나는 가고 싶지 않아.",
+          "XR": "노, 아이 돈트 원트 투 고."
+        }
+      ]
+    },
+    {
+      "T0": "Hasta la vida loca, loca, loca, loca",
+      "C0": "아니, 아니, 아니, 아니 미친 삶까지, 미친, 미친, 미친, 미친 너는 음악을 좋아해, 널 사로잡아, 사로잡아, 사로잡아.",
+      "G0": "'Hasta la vida loca, loca, loca, loca'는 구문으로, '미친 삶까지'로 해석될 수 있으며, 끝나지 않는 미친 삶을 강조하는 반복된 용어 'loca, loca, loca, loca'가 포함되어 있습니다.",
+      "K0": "미친 삶까지, 미친, 미친, 미친, 미친",
+      "R0": "아스타 라 비다 로카, 로카, 로카, 로카",
+      "LI": [
+        {
+          "T1": "Hasta",
+          "K1": "~까지",
+          "R1": "아스타",
+          "E1": "'Hasta'는 스페인어로 '~까지'라는 의미를 가지며, 장소나 시간을 한정하는 표현입니다.",
+          "T2": "hasta",
+          "K2": "~까지",
+          "R2": "아스타",
+          "XE": "Hasta mañana.",
+          "XK": "내일 만나요.",
+          "XR": "아스타 마냐나"
+        },
+        {
+          "T1": "la",
+          "K1": "그",
+          "R1": "라",
+          "E1": "'La'는 스페인어에서 정관사로 사용되어 특정 명사를 지칭할 때 사용합니다. 여성 단수 명사 앞에 위치합니다.",
+          "T2": "la",
+          "K2": "그",
+          "R2": "라",
+          "XE": "La casa es grande.",
+          "XK": "그 집은 크다.",
+          "XR": "라 카사 에스 그란데"
+        },
+        {
+          "T1": "vida",
+          "K1": "삶",
+          "R1": "비다",
+          "E1": "'Vida'는 스페인어로 '삶' 또는 '생명'을 의미하는 명사입니다.",
+          "T2": "vida",
+          "K2": "삶",
+          "R2": "비다",
+          "XE": "La vida es bella.",
+          "XK": "삶은 아름답다.",
+          "XR": "라 비다 에스 베야"
+        },
+        {
+          "T1": "loca",
+          "K1": "미친",
+          "R1": "로카",
+          "E1": "'Loca'는 스페인어로 '미친'을 의미하는 형용사 'loco'의 여성형입니다. 이 경우 미친 일을 묘사합니다.",
+          "T2": "loca",
+          "K2": "미친",
+          "R2": "로카",
+          "XE": "Ella está loca.",
+          "XK": "그녀는 미쳤다.",
+          "XR": "에야 에스타 로카"
+        }
+      ]
+    },
+    {
+      "T0": "Rivers of champagne, celebrate together",
+      "C0": "오, 그리고 나는 \"내 위에 영원히 비가 내려\"라고 말하고 싶어. 샴페인 강, 함께 축하하자. 토카, 토카, 토카.",
+      "G0": "'Rivers of champagne, celebrate together'는 주어(rivers of champagne)와 동사구(celebrate together)로 이루어진 단순 문장 구조로, 축제의 분위기를 표현합니다.",
+      "K0": "샴페인 강, 함께 축하하자.",
+      "R0": "리버즈 오브 샴페인, 셀러브레이트 투게더",
+      "LI": [
+        {
+          "T1": "Rivers",
+          "K1": "강들",
+          "R1": "리버즈",
+          "E1": "'Rivers'는 강의 복수형으로, 많은 강들을 의미합니다.",
+          "T2": "river",
+          "K2": "강",
+          "R2": "리버",
+          "XE": "The rivers flow into the sea.",
+          "XK": "강들은 바다로 흘러간다.",
+          "XR": "더 리버즈 플로우 인투 더 시"
+        },
+        {
+          "T1": "of",
+          "K1": "~의",
+          "R1": "오브",
+          "E1": "'Of'는 소유나 연결을 나타내는 전치사입니다.",
+          "T2": "of",
+          "K2": "~의",
+          "R2": "오브",
+          "XE": "The cover of the book is red.",
+          "XK": "그 책의 표지는 빨간색이다.",
+          "XR": "더 커버 오브 더 북 이즈 레드"
+        },
+        {
+          "T1": "champagne",
+          "K1": "샴페인",
+          "R1": "샴페인",
+          "E1": "'Champagne'은 프랑스에서 유래한 발포성 포도주의 종류입니다.",
+          "T2": "champagne",
+          "K2": "샴페인",
+          "R2": "샴페인",
+          "XE": "They toasted with glasses of champagne.",
+          "XK": "그들은 샴페인 잔을 들며 건배했다.",
+          "XR": "데이 토스티드 위드 글래시즈 오브 샴페인"
+        },
+        {
+          "T1": "celebrate",
+          "K1": "축하하다",
+          "R1": "셀러브레이트",
+          "E1": "'Celebrate'는 어떤 특별한 일을 기념하거나 축하하기 위해 사람들과 함께 즐기는 행위를 의미하는 동사입니다.",
+          "T2": "celebrate",
+          "K2": "축하하다",
+          "R2": "셀러브레이트",
+          "XE": "We celebrate birthdays with a cake.",
+          "XK": "우리는 케이크로 생일을 축하한다.",
+          "XR": "위 셀러브레이트 버스데이스 위드 어 케이크"
+        },
+        {
+          "T1": "together",
+          "K1": "함께",
+          "R1": "투게더",
+          "E1": "'Together'는 두 명 이상의 사람들이 모임이나 활동에 참여하는 것을 의미하는 부사입니다.",
+          "T2": "together",
+          "K2": "함께",
+          "R2": "투게더",
+          "XE": "Let's study together.",
+          "XK": "함께 공부하자.",
+          "XR": "레츠 스터디 투게더"
+        }
+      ]
+    },
+    {
+      "T0": "I said, \"No, no, no, no\"",
+      "C0": "오, 네가 말했어, \"안돼, 안돼, 안돼\" 나는 말했어, \"안돼, 안돼, 안돼, 안돼\" 네가 말했어, \"집에 데려다 줘\"",
+      "G0": "'I said, \"No, no, no, no\"'은 주어(I), 동사(said), 직접 인용(",
+      "No, no, no, no": ").'으로 구성된 문장입니다. 주어와 동사가 ",
+      "으로 표시된 직접 인용 문장 전체를 포함하고 있습니다.' 'said'는 과거 시제를 나타내며, 인용된 부분은 현재형입니다. 이는 화자가 과거의 발언을 회상하는 구조입니다. direct quote (\"No, no, no, no\")를 포함하는 간단한 문장입니다. 'said'는 과거 시제를 나타내며, 인용된 부분은 현재형입니다. 이는 화자가 과거의 발언을 회상하는 구조입니다.까지 포함된 더 복잡한 문장 구조입니다. 주어(I)와 동사(said)가 주요 구성 요소이고, ": "",
+      "K0": "나는 말했어, \"안돼, 안돼, 안돼, 안돼\"",
+      "R0": "아이 세드, \"노, 노, 노, 노\"",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 첫 번째 인칭 대명사입니다. 영어에서 주어로 자주 사용됩니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "said",
+          "K1": "말했다",
+          "R1": "세드",
+          "E1": "'Said'는 'say'의 과거형으로, 말을 하다 또는 발언하다를 의미하는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "He said he would be late.",
+          "XK": "그는 늦을 거라고 말했다.",
+          "XR": "히 세드 히 우드 비 레이트"
+        },
+        {
+          "T1": "No",
+          "K1": "안돼",
+          "R1": "노",
+          "E1": "'No'는 부정의 의미를 나타내는 단어로, 어떤 제안이나 부탁을 거절할 때 사용됩니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노",
+          "XE": "No, I don't want that.",
+          "XK": "아니, 난 그거 원하지 않아.",
+          "XR": "노, 아이 돈트 원트 댓"
+        },
+        {
+          "T1": "no",
+          "K1": "안돼",
+          "R1": "노",
+          "E1": "'No'는 부정이나 거절을 표하는 단어로 문장이나 구절의 앞이나 뒤에 위치할 수 있습니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노",
+          "XE": "No, it's not possible.",
+          "XK": "아니, 그건 불가능해.",
+          "XR": "노, 잇츠 낫 파서블"
+        }
+      ]
+    },
+    {
+      "T0": "Oh, and I wanna say \"rain on me forever\"",
+      "C0": "음악을 사랑해, 음악이 너를 건드려, 건드려, 건드려 오, 그리고 나는 '나에게 영원히 비를 내려'라고 말하고 싶어 샴페인 강, 함께 축하해",
+      "G0": "'Oh, and I wanna say \"rain on me forever\"'는 감탄사(Oh), 접속사(and), 주어(I), 동사(wanna say), 직접 인용한 문장(\"rain on me forever\")로 이루어진 구조입니다.",
+      "K0": "오, 그리고 나는 '나에게 영원히 비를 내려'라고 말하고 싶어",
+      "R0": "오, 앤드 아이 워너 세이 '레인 온 미 포레버'",
+      "LI": [
+        {
+          "T1": "Oh",
+          "K1": "오",
+          "R1": "오",
+          "E1": "'Oh'는 놀람, 감탄, 감정 등을 표현하는 감탄사입니다.",
+          "T2": "oh",
+          "K2": "오",
+          "R2": "오",
+          "XE": "Oh, I didn't know that!",
+          "XK": "오, 나는 몰랐어!",
+          "XR": "오, 아이 디든 노우 댓!"
+        },
+        {
+          "T1": "and",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 두 문장이나 구를 연결하는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I have a cat and a dog.",
+          "XK": "나는 고양이와 개를 키워요.",
+          "XR": "아이 해브 어 캣 앤드 어 도그."
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 주격 대명사로, 화자를 나타냅니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생입니다.",
+          "XR": "아이 엠 어 스튜던트."
+        },
+        {
+          "T1": "wanna",
+          "K1": "원하다",
+          "R1": "워너",
+          "E1": "'Wanna'는 'want to'의 축약형으로, 비격식 표현입니다.",
+          "T2": "want to",
+          "K2": "원하다",
+          "R2": "원투",
+          "XE": "I wanna go to the park.",
+          "XK": "나는 공원에 가고 싶어.",
+          "XR": "아이 워너 고 투 더 파크."
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 무언가를 말하거나 표현하는 행위를 나타내는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Can you say that again?",
+          "XK": "다시 한 번 말해줄 수 있어?",
+          "XR": "캔 유 세이 댓 어게인?"
+        },
+        {
+          "T1": "rain on me",
+          "K1": "나에게 비를 내리다",
+          "R1": "레인 온 미",
+          "E1": "'Rain on me'는 비유적 표현으로, 어떤 일이 몰아닥치는 상황을 의미할 수 있습니다.",
+          "T2": "rain on me",
+          "K2": "나에게 비를 내리다",
+          "R2": "레인 온 미",
+          "XE": "Let the blessings rain on me.",
+          "XK": "축복이 나에게 비처럼 내리게 해 주세요.",
+          "XR": "렛더 블레싱스 레인 온 미."
+        },
+        {
+          "T1": "forever",
+          "K1": "영원히",
+          "R1": "포레버",
+          "E1": "'Forever'는 끝없이 지속되는 기간을 의미하는 부사입니다.",
+          "T2": "forever",
+          "K2": "영원히",
+          "R2": "포레버",
+          "XE": "I will love you forever.",
+          "XK": "나는 너를 영원히 사랑할 거야.",
+          "XR": "아이 윌 러브 유 포레버."
+        }
+      ]
+    },
+    {
+      "T0": "I see your eyes every day and every night",
+      "C0": "터치, 터치, 터치 나는 매일 밤낮으로 너의 눈을 봐 그리고 나는, 나는 너를 안고 사랑하고 싶어 영원히",
+      "G0": "'I see your eyes every day and every night'는 주어(I), 동사(see), 직접목적어(your eyes) 및 부사구(every day and every night)로 구성되어 있는 문장입니다. 이는 주어가 매일 밤낮으로 어떤 행동을 반복적으로 한다는 것을 나타냅니다.",
+      "K0": "나는 매일 밤낮으로 너의 눈을 봐",
+      "R0": "아이 시 유어 아이즈 에브리 데이 앤 에브리 나잇",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 단수 주어를 나타내는 대명사입니다. 문장에서 주체가 되는 존재를 지칭합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게로 가고 있어.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "see",
+          "K1": "보다",
+          "R1": "시",
+          "E1": "'See'는 눈으로 인식하는 행위를 나타내는 동사입니다.",
+          "T2": "see",
+          "K2": "보다",
+          "R2": "시",
+          "XE": "Can you see the stars?",
+          "XK": "별들이 보이니?",
+          "XR": "캔 유 시 더 스타즈?"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 소유를 나타내는 대명사로, 상대방이 소유한 것을 의미합니다. 여기서는 '너의 눈'을 의미합니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your pen?",
+          "XK": "이 펜이 네 거야?",
+          "XR": "이즈 디스 유어 펜?"
+        },
+        {
+          "T1": "eyes",
+          "K1": "눈",
+          "R1": "아이즈",
+          "E1": "'Eyes'는 시각을 담당하는 신체부위를 의미하는 명사입니다.",
+          "T2": "eye",
+          "K2": "눈",
+          "R2": "아이",
+          "XE": "She closed her eyes.",
+          "XK": "그녀는 눈을 감았다.",
+          "XR": "쉬 클로즈드 허 아이즈"
+        },
+        {
+          "T1": "every",
+          "K1": "매",
+          "R1": "에브리",
+          "E1": "'Every'는 각각 혹은 모든 것을 나타내는 형용사로, 여기서는 '매일'과 '매일 밤'을 의미합니다.",
+          "T2": "every",
+          "K2": "매",
+          "R2": "에브리",
+          "XE": "He reads a book every week.",
+          "XK": "그는 매주 책을 읽어.",
+          "XR": "히 리즈 어 북 에브리 위크"
+        },
+        {
+          "T1": "day",
+          "K1": "날",
+          "R1": "데이",
+          "E1": "'Day'는 24시간 동안의 주기 혹은 낮 시간을 의미하는 명사입니다.",
+          "T2": "day",
+          "K2": "날",
+          "R2": "데이",
+          "XE": "She spends her day reading.",
+          "XK": "그녀는 그녀의 하루를 읽으면서 보낸다.",
+          "XR": "쉬 스펜즈 허 데이 리딩"
+        },
+        {
+          "T1": "and",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 연결사로, 두 가지 이상의 요소를 연결하는 역할을 합니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "We went to the park and the beach.",
+          "XK": "우리는 공원과 해변에 갔어.",
+          "XR": "위 웬트 투 더 파크 앤드 더 비치"
+        },
+        {
+          "T1": "every night",
+          "K1": "매일 밤",
+          "R1": "에브리 나잇",
+          "E1": "'Every night'는 매일 밤을 의미하는 표현입니다.",
+          "T2": "night",
+          "K2": "밤",
+          "R2": "나잇",
+          "XE": "She studies every night.",
+          "XK": "그녀는 매일 밤 공부한다.",
+          "XR": "쉬 스터디즈 에브리 나잇"
+        }
+      ]
+    },
+    {
+      "T0": "Te encanta la música, te toca, toca, toca",
+      "C0": "미친 듯이 살다가, 살다 보면 정말 많은 일들이 벌어지지. 넌 음악을 좋아해, 너를 감동시켜, 감동시켜, 감동시켜. 오, 그리고 나는 \"영원히 나에게 비를 내려줘\"라고 말하고 싶어.",
+      "G0": "'Te encanta la música, te toca, toca, toca'는 주어에서는 'Te'가 생략된 상태로, 주어(너), 동사(encanta, toca), 목적어(la música)가 포함된 문장 구조입니다.",
+      "K0": "넌 음악을 좋아해, 너를 감동시켜, 감동시켜, 감동시켜.",
+      "R0": "떼 앙깐따 라 무지까, 떼 토카, 토카, 토카",
+      "LI": [
+        {
+          "T1": "Te",
+          "K1": "너를",
+          "R1": "떼",
+          "E1": "'Te'는 이 문장에서 간접목적어로 사용되어 '너에게, 너를'의 의미를 전달합니다.",
+          "T2": "tú",
+          "K2": "너",
+          "R2": "뚜",
+          "XE": "Te amo.",
+          "XK": "너를 사랑해.",
+          "XR": "떼 아모"
+        },
+        {
+          "T1": "encanta",
+          "K1": "매료시키다",
+          "R1": "앙깐따",
+          "E1": "'Encanta'는 'encantar'의 현재형으로, 좋아하거나 매료된다는 뜻입니다.",
+          "T2": "encantar",
+          "K2": "매료시키다",
+          "R2": "앙깐따르",
+          "XE": "Me encanta esta canción.",
+          "XK": "이 노래가 정말 마음에 들어.",
+          "XR": "메 앙깐따 에스따 깐시온"
+        },
+        {
+          "T1": "la",
+          "K1": "그",
+          "R1": "라",
+          "E1": "'La'는 여성 단수 명사를 받는 정관사로 여기서는 '음악'을 지칭합니다.",
+          "T2": "la",
+          "K2": "그",
+          "R2": "라",
+          "XE": "La casa es grande.",
+          "XK": "그 집은 크다.",
+          "XR": "라 까사 에스 그란대"
+        },
+        {
+          "T1": "música",
+          "K1": "음악",
+          "R1": "무지까",
+          "E1": "'Música'는 '음악'을 의미하는 명사입니다.",
+          "T2": "música",
+          "K2": "음악",
+          "R2": "무지까",
+          "XE": "Me gusta la música clásica.",
+          "XK": "나는 클래식 음악을 좋아해.",
+          "XR": "메 구스따 라 무지까 클래시까"
+        },
+        {
+          "T1": "te",
+          "K1": "너를",
+          "R1": "떼",
+          "E1": "이 문장에서 다시 'te'가 사용됩니다. '너를'이라는 의미로, 직접목적어로 쓰였으며 감동의 대상입니다.",
+          "T2": "tú",
+          "K2": "너",
+          "R2": "뚜",
+          "XE": "Te veo mañana.",
+          "XK": "내일 봐.",
+          "XR": "떼 베오 마냐나"
+        },
+        {
+          "T1": "toca",
+          "K1": "감동시키다",
+          "R1": "토카",
+          "E1": "'Toca'는 동사 'tocar'의 현재형으로, '만지다, 감동시키다'의 의미를 가지고 있습니다. 여기서는 문맥상 감동시키다는 뜻입니다.",
+          "T2": "tocar",
+          "K2": "만지다, 감동시키다",
+          "R2": "토카르",
+          "XE": "La música me toca el corazón.",
+          "XK": "음악이 내 마음을 감동시킨다.",
+          "XR": "라 무지까 메 토카 엘 꼬라손"
+        }
+      ]
+    },
+    {
+      "T0": "Oh, you said, \"No, no, no\"",
+      "C0": "오, 너는 '아니, 아니, 아니'라고 말했어. 나는 '아니, 아니, 아니, 아니'라고 말했어.",
+      "G0": "'Oh, you said, \"No, no, no\"'는 감탄사(Oh)로 시작하고, 주어(you), 동사(said), 직접 인용(",
+      "No, no, no": "로 서술된 구조입니다. 문장 내 에서 감정의 강도를 강조하고 있습니다.",
+      "K0": "오, 너는 '아니, 아니, 아니'라고 말했어.",
+      "R0": "오, 유 세드, '노, 노, 노'",
+      "LI": [
+        {
+          "T1": "Oh",
+          "K1": "오",
+          "R1": "오",
+          "E1": "'Oh'는 놀람, 감탄, 또는 다른 감정을 표현하는 감탄사입니다.",
+          "T2": "oh",
+          "K2": "오",
+          "R2": "오",
+          "XE": "Oh, I didn't see you there!",
+          "XK": "오, 거기 있는 너를 못 봤어!",
+          "XR": "오, 아이 디든 시 유 데어!"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 말하는 사람이 청자를 직접 지칭하는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are very kind.",
+          "XK": "너는 정말 친절해.",
+          "XR": "유 아 베리 카인드"
+        },
+        {
+          "T1": "said",
+          "K1": "말했다",
+          "R1": "세드",
+          "E1": "'Said'는 동사 'say'의 과거형으로, 어떤 말을 표현했음을 나타냅니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "She said she would be late.",
+          "XK": "그녀는 늦을 것이라고 말했다.",
+          "XR": "쉬 세드 쉬 우드 비 레이트"
+        },
+        {
+          "T1": "No, no, no",
+          "K1": "아니, 아니, 아니",
+          "R1": "노, 노, 노",
+          "E1": "'No'는 부정을 나타내는 단어이며, 여기서는 반복하여 강조하고 있습니다.",
+          "T2": "no",
+          "K2": "아니",
+          "R2": "노",
+          "XE": "No, I don't want any.",
+          "XK": "아니, 나는 원하지 않아.",
+          "XR": "노, 아이 도운트 원트 애니"
+        }
+      ]
+    },
+    {
+      "T0": "You say, \"Take me home\"",
+      "C0": "나는 '안돼, 안돼, 안돼, 안돼'라고 말했어. 네가 '집에 데려가 줘'라고 말했어. 나는 '돔 페리뇽'이라고 말했어.",
+      "G0": "'You say, \"Take me home\"'는 주어(You), 동사(say), 목적어(Take me home)로 이루어진 구조로, 따옴표 안에 직접화법을 사용하여 상대방의 말을 인용하는 형태입니다.",
+      "K0": "네가 '집에 데려가 줘'라고 말했어.",
+      "R0": "유 세이, 테이크 미 홈",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자가 상대방을 지칭하는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 누군가가 어떤 말을 한다는 것을 나타내는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Please say something.",
+          "XK": "무엇이든 말해 주세요.",
+          "XR": "플리즈 세이 섬씽"
+        },
+        {
+          "T1": "Take",
+          "K1": "데려가다",
+          "R1": "테이크",
+          "E1": "'Take'는 어떤 대상을 이동시키거나 데려간다는 의미의 동사입니다.",
+          "T2": "take",
+          "K2": "데려가다",
+          "R2": "테이크",
+          "XE": "Can you take me to the airport?",
+          "XK": "공항에 데려다 줄 수 있나요?",
+          "XR": "캔 유 테이크 미 투 디 에어포트?"
+        },
+        {
+          "T1": "me",
+          "K1": "나",
+          "R1": "미",
+          "E1": "'Me'는 화자 자신을 가리키는 1인칭 대명사입니다.",
+          "T2": "me",
+          "K2": "나",
+          "R2": "미",
+          "XE": "Give me that book.",
+          "XK": "그 책을 내게 줘.",
+          "XR": "기브 미 댓 북"
+        },
+        {
+          "T1": "home",
+          "K1": "집",
+          "R1": "홈",
+          "E1": "'Home'은 사람이 사는 거주지를 의미하는 명사입니다.",
+          "T2": "home",
+          "K2": "집",
+          "R2": "홈",
+          "XE": "Let's go home.",
+          "XK": "집에 가자.",
+          "XR": "렛츠 고 홈"
+        }
+      ]
+    },
+    {
+      "T0": "And I, I wanna hold you, love you 'til the end of time",
+      "C0": "매일 밤낮으로 너의 눈을 보고 있어 그리고 나는 너를 안고 사랑하고 싶어, 시간의 끝까지 말이야. 밤새 있도록 있어줘, 왜냐면 내 삶에 네가 필요하거든.",
+      "G0": "'And I, I wanna hold you, love you 'til the end of time'는 주어(I), 동사 구문(wanna hold, wanna love), 목적어(you), 그리고 부사 구문('til the end of time)로 구성된 문장으로, 화자가 상대방과 함께하고 싶은 열망을 표현하고 있습니다.",
+      "K0": "그리고 나는 너를 안고 사랑하고 싶어, 시간의 끝까지.",
+      "R0": "앤드 아이, 아이 워너 홀드 유, 러브 유 틸 디 엔드 오브 타임",
+      "LI": [
+        {
+          "T1": "And",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 두 문장이나 구를 연결하는 접속사로, 앞의 내용에서 이어지는 문장을 시작할 때 자주 사용됩니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I want to go to the park, and I want to play soccer.",
+          "XK": "나는 공원에 가고 싶어, 그리고 축구를 하고 싶어.",
+          "XR": "아이 원트 투 고 투 더 파크, 앤드 아이 원트 투 플레이 사커"
+        },
+        {
+          "T1": "I",
+          "K1": "나는",
+          "R1": "아이",
+          "E1": "'I'는 화자를 지칭하는 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나는",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "wanna",
+          "K1": "~하고 싶다",
+          "R1": "워너",
+          "E1": "'Wanna'는 'want to'의 축약형으로, 비격식적인 표현입니다.",
+          "T2": "want to",
+          "K2": "~하고 싶다",
+          "R2": "원트 투",
+          "XE": "I wanna eat pizza.",
+          "XK": "나는 피자를 먹고 싶어.",
+          "XR": "아이 워너 잇 피자"
+        },
+        {
+          "T1": "hold",
+          "K1": "안다",
+          "R1": "홀드",
+          "E1": "'Hold'는 손이나 팔로 무언가를 감싸는 행위를 나타내는 동사입니다.",
+          "T2": "hold",
+          "K2": "안다",
+          "R2": "홀드",
+          "XE": "Can you hold my hand?",
+          "XK": "내 손을 잡아줄 수 있어?",
+          "XR": "캔 유 홀드 마이 핸드?"
+        },
+        {
+          "T1": "you",
+          "K1": "너를",
+          "R1": "유",
+          "E1": "'You'는 대명사로서, 문맥에 따라 대상이 화자가 될 수도 있고, 청자가 될 수도 있습니다. 여기서는 청자를 의미합니다.",
+          "T2": "you",
+          "K2": "너를",
+          "R2": "유",
+          "XE": "I see you.",
+          "XK": "나는 너를 본다.",
+          "XR": "아이 시 유"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "'Love'는 감정적 애착을 가진 대상을 좋아하거나 감정을 표현할 때 쓰이는 동사입니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "I love my family.",
+          "XK": "나는 내 가족을 사랑해.",
+          "XR": "아이 러브 마이 패밀리"
+        },
+        {
+          "T1": "you",
+          "K1": "너를",
+          "R1": "유",
+          "E1": "'You'는 대명사로서, 문맥에 따라 대상이 화자가 될 수도 있고, 청자가 될 수도 있습니다. 여기서는 청자를 의미합니다.",
+          "T2": "you",
+          "K2": "너를",
+          "R2": "유",
+          "XE": "I see you.",
+          "XK": "나는 너를 본다.",
+          "XR": "아이 시 유"
+        },       
+        {
+          "T1": "'til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til'는 'until'의 축약형으로, 흔히 비격식체에서 사용됩니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Wait until I come back.",
+          "XK": "내가 돌아올 때까지 기다려줘.",
+          "XR": "웨이트 언틸 아이 컴 백"
+        },
+        {
+          "T1": "the end of time",
+          "K1": "시간의 끝",
+          "R1": "디 엔드 오브 타임",
+          "E1": "'The end of time'은 시간의 마지막을 의미하며, 영원함을 표현할 때 주로 사용됩니다.",
+          "T2": "end of time",
+          "K2": "시간의 끝",
+          "R2": "엔드 오브 타임",
+          "XE": "I will love you until the end of time.",
+          "XK": "나는 너를 시간의 끝까지 사랑할 거야.",
+          "XR": "아이 윌 러브 유 언틸 디 엔드 오브 타임"
+        }
+      ]
+    },
+    {
+      "T0": "And I, I wanna love you, I will never make you cry",
+      "C0": "밤새 머물러줘, 왜냐하면 나는 너를 내 인생에서 원하기 때문에. 그리고 나, 난 널 사랑하고 싶어, 널 울리지 않을 거야.",
+      "G0": "'And I, I wanna love you, I will never make you cry'는 두 개의 독립된 절로 구성된 문장입니다. 첫 번째 절은 'And I, I wanna love you'로, 주어(I)와 동사(wanna love, want to love)의 구조를 가지며, 두 번째 절은 'I will never make you cry'로 주어(I)와 동사(will never make)의 구조를 가집니다.",
+      "K0": "그리고 나, 난 널 사랑하고 싶어, 널 울리지 않을 거야.",
+      "R0": "앤드 아이, 아이 워너 러브 유, 아이 윌 네버 메이크 유 크라이",
+      "LI": [
+        {
+          "T1": "And",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 추가적인 정보를 덧붙일 때 사용하는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I like apples and oranges.",
+          "XK": "나는 사과와 오렌지를 좋아해.",
+          "XR": "아이 라이크 애플즈 앤드 오렌지즈"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 주격 대명사로, 문장에서 주어의 역할을 합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "wanna",
+          "K1": "~하고 싶어",
+          "R1": "워너",
+          "E1": "'Wanna'는 'want to'의 구어체 표현으로, 원하는 행동이나 상태를 나타냅니다.",
+          "T2": "want to",
+          "K2": "~하고 싶어",
+          "R2": "원트 투",
+          "XE": "I wanna go home.",
+          "XK": "집에 가고 싶어.",
+          "XR": "아이 워너 고 홈"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "'Love'는 어떤 대상에 매우 강한 애정을 느끼는 상태를 나타내는 동사입니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "She loves her family deeply.",
+          "XK": "그녀는 가족을 깊이 사랑해.",
+          "XR": "쉬 러브즈 허 패밀리 딥리"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 2인칭 대명사로, 문장에서 상대방을 지칭할 때 사용합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 주격 대명사로, 문장에서 주어의 역할을 합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "will",
+          "K1": "~할 것이다",
+          "R1": "윌",
+          "E1": "'Will'은 미래 시제를 나타내는 조동사로, 앞으로 일어날 일을 예측하거나 의도를 표현할 때 사용됩니다.",
+          "T2": "will",
+          "K2": "~할 것이다",
+          "R2": "윌",
+          "XE": "I will call you tomorrow.",
+          "XK": "내가 내일 너에게 전화할게.",
+          "XR": "아이 윌 콜 유 투모로우"
+        },
+        {
+          "T1": "never",
+          "K1": "절대 ~않다",
+          "R1": "네버",
+          "E1": "'Never'는 어떤 일이 결코 일어나지 않음을 의미하는 부사입니다.",
+          "T2": "never",
+          "K2": "절대 ~않다",
+          "R2": "네버",
+          "XE": "I will never forget your kindness.",
+          "XK": "나는 당신의 친절을 절대 잊지 않을 것입니다.",
+          "XR": "아이 윌 네버 포겟 유얼 카인드니스"
+        },
+        {
+          "T1": "make",
+          "K1": "만들다",
+          "R1": "메이크",
+          "E1": "'Make'는 어떤 것을 창조하거나 특정한 상태로 이끄는 행위를 나타내는 동사입니다.",
+          "T2": "make",
+          "K2": "만들다",
+          "R2": "메이크",
+          "XE": "Can you make a cake?",
+          "XK": "케이크를 만들 수 있나요?",
+          "XR": "캔 유 메이크 어 케이크"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 2인칭 대명사로, 문장에서 상대방을 지칭할 때 사용합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "cry",
+          "K1": "울다",
+          "R1": "크라이",
+          "E1": "'Cry'는 눈물을 흘리는 행위를 나타내는 동사입니다.",
+          "T2": "cry",
+          "K2": "울다",
+          "R2": "크라이",
+          "XE": "She began to cry tears of joy.",
+          "XK": "그녀는 기쁨의 눈물을 흘리기 시작했다.",
+          "XR": "쉬 비간 투 크라이 티어즈 오브 조이"
+        }
+      ]
+    },
+    {
+      "T0": "Stay over night 'cause I want you in my life",
+      "C0": "그리고 나는 너를 붙잡고 사랑하고 싶어, 영원히 함께 할 때까지 밤새도록 머물러줘, 내 삶에 네가 필요해. 그리고 나는 너를 사랑하고 싶어, 절대 너를 울리지 않을거야.",
+      "G0": "'Stay over night 'cause I want you in my life'는 명령문 'Stay over night'와 이유를 나타내는 'cause I want you in my life'로 구성되어 있습니다.",
+      "K0": "밤새도록 머물러줘, 내 삶에 네가 필요해",
+      "R0": "스테이 오버 나이트 커즈 아이 원트 유 인 마이 라이프",
+      "LI": [
+        {
+          "T1": "Stay",
+          "K1": "머물다",
+          "R1": "스테이",
+          "E1": "'Stay'는 한 장소에 계속 머무르는 것을 의미하는 동사입니다.",
+          "T2": "stay",
+          "K2": "머물다",
+          "R2": "스테이",
+          "XE": "Please stay a little longer.",
+          "XK": "조금 더 있으세요.",
+          "XR": "플리즈 스테이 어 리틀 롱거"
+        },
+        {
+          "T1": "over",
+          "K1": "~동안",
+          "R1": "오버",
+          "E1": "'Over'는 특정 기간 동안을 의미하는 전치사입니다. 여기서는 밤새도록을 의미합니다.",
+          "T2": "over",
+          "K2": "~동안",
+          "R2": "오버",
+          "XE": "We talked over dinner.",
+          "XK": "우리는 저녁 식사 동안 대화를 나눴다.",
+          "XR": "위 톡트 오버 디너"
+        },
+        {
+          "T1": "night",
+          "K1": "밤",
+          "R1": "나이트",
+          "E1": "'Night'는 하루 중 해가 진 이후부터 아침 해가 뜰 때까지의 시간을 의미하는 명사입니다.",
+          "T2": "night",
+          "K2": "밤",
+          "R2": "나이트",
+          "XE": "It gets cold at night.",
+          "XK": "밤에는 날씨가 추워진다.",
+          "XR": "잇 겟츠 콜드 앳 나이트"
+        },
+        {
+          "T1": "'cause",
+          "K1": "왜냐하면",
+          "R1": "커즈",
+          "E1": "'Cause'는 'because'의 축약형으로, 이유를 설명할 때 사용합니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비커즈",
+          "XE": "I'm late 'cause I missed the bus.",
+          "XK": "버스를 놓쳐서 늦었어.",
+          "XR": "아이 엠 레이트 커즈 아이 미스트 더 버스"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 주어로 하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "want",
+          "K1": "원하다",
+          "R1": "원트",
+          "E1": "'Want'는 어떤 것을 바라는 마음이나 필요로 하는 상태를 나타내는 동사입니다.",
+          "T2": "want",
+          "K2": "원하다",
+          "R2": "원트",
+          "XE": "I want some water.",
+          "XK": "물 좀 주세요.",
+          "XR": "아이 원트 썸 워터"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 대화 상대를 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "in",
+          "K1": "~에",
+          "R1": "인",
+          "E1": "'In'은 장소, 시간, 상태 등을 나타내는 전치사로, 어떤 것의 내부나 범위 내를 의미합니다.",
+          "T2": "in",
+          "K2": "~에",
+          "R2": "인",
+          "XE": "He is in the room.",
+          "XK": "그는 방에 있어.",
+          "XR": "히 이즈 인 더 룸"
+        },
+        {
+          "T1": "my",
+          "K1": "내",
+          "R1": "마이",
+          "E1": "'My'는 화자의 소유를 나타내는 1인칭 소유격 대명사입니다.",
+          "T2": "my",
+          "K2": "내",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "life",
+          "K1": "삶",
+          "R1": "라이프",
+          "E1": "'Life'는 생명, 존재, 생활 등을 의미하는 명사입니다.",
+          "T2": "life",
+          "K2": "삶",
+          "R2": "라이프",
+          "XE": "Life is beautiful.",
+          "XK": "삶은 아름다워.",
+          "XR": "라이프 이즈 뷰티풀"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}

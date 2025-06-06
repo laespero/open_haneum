@@ -1,0 +1,3535 @@
+{
+  "name": "birds_of_a_feather",
+  "text": "I want you to stay\n'Til I'm in the grave\n'Til I rot away, dead and buried\n'Til I'm in the casket you carry\nIf you go, I'm going too, uh\n'Cause it was always you, alright\nAnd if I'm turning blue, please don't save me\nNothing left to lose without my baby\nBirds of a feather, we should stick together, I know\nI said I'd never think I wasn't better alone\nCan't change the weather, might not be forever\nBut if it's forever, it's even better\nAnd I don't know what I'm crying for\nI don't think I could love you more\nIt might not be long, but baby, I\nI'll love you 'til the day that I die\n'Til the day that I die\n'Til the light leaves my eyes\n'Til the day that I die\nI want you to see, hm\nHow you look to me, hm\nYou wouldn't believe if I told ya\nYou would keep the compliments I throw ya\nBut you're so full of shit, uh\nTell me it's a bit, oh\nSay you don't see it, your mind's polluted\nSay you wanna quit, don't be stupid\nAnd I don't know what I'm crying for\nI don't think I could love you more\nMight not be long, but baby, I\nDon't wanna say goodbye\nBirds of a feather, we should stick together, I know ('til the day that I die)\nI said I'd never think I wasn't better alone ('til the light leaves my eyes)\nCan't change the weather, might not be forever ('til the day that I die)\nBut if it's forever, it's even better\nI knew you in another life\nYou had that same look in your eyes\nI love you, don't act so surprised",
+  "p1": [
+    "I want you to stay",
+    "'Til I'm in the grave",
+    "'Til I rot away, dead and buried",
+    "'Til I'm in the casket you carry",
+    "If you go, I'm going too, uh",
+    "'Cause it was always you, alright",
+    "And if I'm turning blue, please don't save me",
+    "Nothing left to lose without my baby",
+    "Birds of a feather, we should stick together, I know",
+    "I said I'd never think I wasn't better alone",
+    "Can't change the weather, might not be forever",
+    "But if it's forever, it's even better",
+    "And I don't know what I'm crying for",
+    "I don't think I could love you more",
+    "It might not be long, but baby, I",
+    "I'll love you 'til the day that I die",
+    "'Til the day that I die",
+    "'Til the light leaves my eyes",
+    "I want you to see, hm",
+    "How you look to me, hm",
+    "You wouldn't believe if I told ya",
+    "You would keep the compliments I throw ya",
+    "But you're so full of shit, uh",
+    "Tell me it's a bit, oh",
+    "Say you don't see it, your mind's polluted",
+    "Say you wanna quit, don't be stupid",
+    "Might not be long, but baby, I",
+    "Don't wanna say goodbye",
+    "Birds of a feather, we should stick together, I know ('til the day that I die)",
+    "I said I'd never think I wasn't better alone ('til the light leaves my eyes)",
+    "Can't change the weather, might not be forever ('til the day that I die)",
+    "I knew you in another life",
+    "You had that same look in your eyes",
+    "I love you, don't act so surprised"
+  ],
+  "contextText": [
+    {
+      "T0": "I want you to stay",
+      "CX": "I want you to stay 'Til I'm in the grave"
+    },
+    {
+      "T0": "'Til I'm in the grave",
+      "CX": "I want you to stay 'Til I'm in the grave 'Til I rot away, dead and buried"
+    },
+    {
+      "T0": "'Til I rot away, dead and buried",
+      "CX": "'Til I'm in the grave 'Til I rot away, dead and buried 'Til I'm in the casket you carry"
+    },
+    {
+      "T0": "'Til I'm in the casket you carry",
+      "CX": "'Til I rot away, dead and buried 'Til I'm in the casket you carry If you go, I'm going too, uh"
+    },
+    {
+      "T0": "If you go, I'm going too, uh",
+      "CX": "'Til I'm in the casket you carry If you go, I'm going too, uh 'Cause it was always you, alright"
+    },
+    {
+      "T0": "'Cause it was always you, alright",
+      "CX": "If you go, I'm going too, uh 'Cause it was always you, alright And if I'm turning blue, please don't save me"
+    },
+    {
+      "T0": "And if I'm turning blue, please don't save me",
+      "CX": "'Cause it was always you, alright And if I'm turning blue, please don't save me Nothing left to lose without my baby"
+    },
+    {
+      "T0": "Nothing left to lose without my baby",
+      "CX": "And if I'm turning blue, please don't save me Nothing left to lose without my baby Birds of a feather, we should stick together, I know"
+    },
+    {
+      "T0": "Birds of a feather, we should stick together, I know",
+      "CX": "Nothing left to lose without my baby Birds of a feather, we should stick together, I know I said I'd never think I wasn't better alone"
+    },
+    {
+      "T0": "I said I'd never think I wasn't better alone",
+      "CX": "Birds of a feather, we should stick together, I know I said I'd never think I wasn't better alone Can't change the weather, might not be forever"
+    },
+    {
+      "T0": "Can't change the weather, might not be forever",
+      "CX": "I said I'd never think I wasn't better alone Can't change the weather, might not be forever But if it's forever, it's even better"
+    },
+    {
+      "T0": "But if it's forever, it's even better",
+      "CX": "Can't change the weather, might not be forever But if it's forever, it's even better And I don't know what I'm crying for"
+    },
+    {
+      "T0": "And I don't know what I'm crying for",
+      "CX": "But if it's forever, it's even better And I don't know what I'm crying for I don't think I could love you more"
+    },
+    {
+      "T0": "I don't think I could love you more",
+      "CX": "And I don't know what I'm crying for I don't think I could love you more It might not be long, but baby, I"
+    },
+    {
+      "T0": "It might not be long, but baby, I",
+      "CX": "I don't think I could love you more It might not be long, but baby, I I'll love you 'til the day that I die"
+    },
+    {
+      "T0": "I'll love you 'til the day that I die",
+      "CX": "It might not be long, but baby, I I'll love you 'til the day that I die 'Til the day that I die"
+    },
+    {
+      "T0": "'Til the day that I die",
+      "CX": "I'll love you 'til the day that I die 'Til the day that I die 'Til the light leaves my eyes"
+    },
+    {
+      "T0": "'Til the light leaves my eyes",
+      "CX": "'Til the day that I die 'Til the light leaves my eyes I want you to see, hm"
+    },
+    {
+      "T0": "I want you to see, hm",
+      "CX": "'Til the light leaves my eyes I want you to see, hm How you look to me, hm"
+    },
+    {
+      "T0": "How you look to me, hm",
+      "CX": "I want you to see, hm How you look to me, hm You wouldn't believe if I told ya"
+    },
+    {
+      "T0": "You wouldn't believe if I told ya",
+      "CX": "How you look to me, hm You wouldn't believe if I told ya You would keep the compliments I throw ya"
+    },
+    {
+      "T0": "You would keep the compliments I throw ya",
+      "CX": "You wouldn't believe if I told ya You would keep the compliments I throw ya But you're so full of shit, uh"
+    },
+    {
+      "T0": "But you're so full of shit, uh",
+      "CX": "You would keep the compliments I throw ya But you're so full of shit, uh Tell me it's a bit, oh"
+    },
+    {
+      "T0": "Tell me it's a bit, oh",
+      "CX": "But you're so full of shit, uh Tell me it's a bit, oh Say you don't see it, your mind's polluted"
+    },
+    {
+      "T0": "Say you don't see it, your mind's polluted",
+      "CX": "Tell me it's a bit, oh Say you don't see it, your mind's polluted Say you wanna quit, don't be stupid"
+    },
+    {
+      "T0": "Say you wanna quit, don't be stupid",
+      "CX": "Say you don't see it, your mind's polluted Say you wanna quit, don't be stupid Might not be long, but baby, I"
+    },
+    {
+      "T0": "Might not be long, but baby, I",
+      "CX": "Say you wanna quit, don't be stupid Might not be long, but baby, I Don't wanna say goodbye"
+    },
+    {
+      "T0": "Don't wanna say goodbye",
+      "CX": "Might not be long, but baby, I Don't wanna say goodbye Birds of a feather, we should stick together, I know ('til the day that I die)"
+    },
+    {
+      "T0": "Birds of a feather, we should stick together, I know ('til the day that I die)",
+      "CX": "Don't wanna say goodbye Birds of a feather, we should stick together, I know ('til the day that I die) I said I'd never think I wasn't better alone ('til the light leaves my eyes)"
+    },
+    {
+      "T0": "I said I'd never think I wasn't better alone ('til the light leaves my eyes)",
+      "CX": "Birds of a feather, we should stick together, I know ('til the day that I die) I said I'd never think I wasn't better alone ('til the light leaves my eyes) Can't change the weather, might not be forever ('til the day that I die)"
+    },
+    {
+      "T0": "Can't change the weather, might not be forever ('til the day that I die)",
+      "CX": "I said I'd never think I wasn't better alone ('til the light leaves my eyes) Can't change the weather, might not be forever ('til the day that I die) I knew you in another life"
+    },
+    {
+      "T0": "I knew you in another life",
+      "CX": "Can't change the weather, might not be forever ('til the day that I die) I knew you in another life You had that same look in your eyes"
+    },
+    {
+      "T0": "You had that same look in your eyes",
+      "CX": "I knew you in another life You had that same look in your eyes I love you, don't act so surprised"
+    },
+    {
+      "T0": "I love you, don't act so surprised",
+      "CX": "You had that same look in your eyes I love you, don't act so surprised"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "I want you to stay",
+      "C0": "내가 무덤에 갈 때까지 머물길 원해.",
+      "G0": "'I want you to stay'는 주어(I), 동사(want), 목적어(you)와 그 목적어에 대한 보어(to stay)로 구성된 문장입니다. 여기서 'want'는 'you to stay'라는 동작을 희망하는 것을 표현합니다.",
+      "K0": "나는 네가 머물기를 원해.",
+      "R0": "아이 원트 유 투 스테이",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 지칭하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "want",
+          "K1": "원하다",
+          "R1": "원트",
+          "E1": "'Want'는 특정한 바람이나 욕구를 나타내는 동사입니다.",
+          "T2": "want",
+          "K2": "원하다",
+          "R2": "원트",
+          "XE": "I want a new phone.",
+          "XK": "나는 새 휴대폰을 원해.",
+          "XR": "아이 원트 어 뉴 폰"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 지칭하는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "to stay",
+          "K1": "머물다",
+          "R1": "투 스테이",
+          "E1": "'To stay'는 머무는 행위를 나타내는 부정사 형태입니다.",
+          "T2": "stay",
+          "K2": "머물다",
+          "R2": "스테이",
+          "XE": "She decided to stay.",
+          "XK": "그녀는 머물기로 결정했다.",
+          "XR": "쉬 디사이디드 투 스테이"
+        }
+      ]
+    },
+    {
+      "T0": "'Til I'm in the casket you carry",
+      "C0": "내가 썩어 없어질 때까지, 죽고 묻힐 때까지, 네가 운반하는 관 속에 있을 때까지, 네가 가면 나도 같이 갈 거야, 어",
+      "G0": "'Til I'm in the casket you carry'는 'til (until)로 시작하며 시간의 경계를 나타내는 절로, 주어(I)와 동사(am), 전치사구(in the casket you carry)로 이루어져 있습니다. 이는 미래에 특정 조건이 충족될 때까지의 상태를 설명합니다.",
+      "K0": "네가 운반하는 관 속에 있을 때까지",
+      "R0": "틸 아임 인 더 캐스킷 유 캐리",
+      "LI": [
+        {
+          "T1": "'Til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til은 until의 축약형으로 특정 시점까지의 기간을 나타냅니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "We have to wait 'til the end of the show.",
+          "XK": "우리는 쇼가 끝날 때까지 기다려야 해.",
+          "XR": "위 해브 투 웨이트 틸 디 엔드 오브 더 쇼"
+        },
+        {
+          "T1": "I'm",
+          "K1": "내가",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 'I'는 주어, 'am'은 be 동사의 현재 형태입니다.",
+          "T2": "I am",
+          "K2": "나는 ~이다",
+          "R2": "아이 엠",
+          "XE": "I'm happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아임 해피 투데이"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 전치사로, 물리적인 위치나 상태를 나타냅니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "The keys are in the drawer.",
+          "XK": "열쇠는 서랍 안에 있어.",
+          "XR": "더 키즈 아 인 더 드로어"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지칭하는 정관사로 쓰입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The sun is shining.",
+          "XK": "해가 빛나고 있다.",
+          "XR": "더 선 이즈 샤이닝"
+        },
+        {
+          "T1": "casket",
+          "K1": "관",
+          "R1": "캐스킷",
+          "E1": "'Casket'은 시신을 넣는 관을 의미하는 명사입니다.",
+          "T2": "casket",
+          "K2": "관",
+          "R2": "캐스킷",
+          "XE": "The casket was adorned with flowers.",
+          "XK": "관은 꽃으로 장식되었다.",
+          "XR": "더 캐스킷 워즈 어도른드 위드 플라워즈"
+        },
+        {
+          "T1": "you",
+          "K1": "네가",
+          "R1": "유",
+          "E1": "'You'는 두 번째 인칭 대명사로, 청자 혹은 청자 그룹을 지칭합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "carry",
+          "K1": "나르다",
+          "R1": "캐리",
+          "E1": "'Carry'는 물리적으로 들어서 이동시키는 행위를 나타내는 동사입니다.",
+          "T2": "carry",
+          "K2": "나르다",
+          "R2": "캐리",
+          "XE": "Can you carry this box for me?",
+          "XK": "이 상자 좀 나르겠어?",
+          "XR": "캔 유 캐리 디스 박스 포 미?"
+        }
+      ]
+    },
+    {
+      "T0": "Don't wanna say goodbye",
+      "C0": "길지 않을지도 모르지만, 자기가, 나는 작별 인사를 하고 싶지 않아. 같은 깃털을 가진 새들처럼, 우리는 함께 있어야 해, 알아 ('내가 죽는 날까지').",
+      "G0": "'Don't wanna say goodbye'는 주어가 생략된 명령문 형태로, 'Do not want to say goodbye'의 축약 형태입니다. 부정어(Don't), 동사 원형(wanna, say), 목적어(goodbye)로 구성되며, 화자의 의지를 표현합니다.",
+      "K0": "작별 인사를 하고 싶지 않아",
+      "R0": "돈 워너 세이 굿바이",
+      "LI": [
+        {
+          "T1": "Don't",
+          "K1": "~하지 마라",
+          "R1": "돈",
+          "E1": "'Don't'는 'do not'의 축약 형태로, 명령문에서 부정의 의미를 나타냅니다.",
+          "T2": "do not",
+          "K2": "~하지 마라",
+          "R2": "두 낫",
+          "XE": "Don't open the door.",
+          "XK": "문 열지 마.",
+          "XR": "돈 오픈 더 도어"
+        },
+        {
+          "T1": "wanna",
+          "K1": "~하고 싶어",
+          "R1": "워너",
+          "E1": "'Wanna'는 'want to'의 구어체 축약 형태로, '~하고 싶다'는 의미를 나타냅니다.",
+          "T2": "want to",
+          "K2": "~하고 싶다",
+          "R2": "원트 투",
+          "XE": "I wanna eat ice cream.",
+          "XK": "나는 아이스크림을 먹고 싶어.",
+          "XR": "아이 워너 이트 아이스 크림"
+        },
+        {
+          "T1": "say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 특정한 말을 표현하거나 전하는 동작을 의미합니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Please say hello to her.",
+          "XK": "그녀에게 안부 전해줘.",
+          "XR": "플리즈 세이 헬로우 투 허"
+        },
+        {
+          "T1": "goodbye",
+          "K1": "안녕 (작별 인사)",
+          "R1": "굿바이",
+          "E1": "'Goodbye'는 헤어질 때 사용하는 인사말로, '안녕' 또는 '작별 인사'를 의미합니다.",
+          "T2": "goodbye",
+          "K2": "안녕 (작별 인사)",
+          "R2": "굿바이",
+          "XE": "She waved and said goodbye.",
+          "XK": "그녀는 손을 흔들며 작별 인사를 했어.",
+          "XR": "쉬 웨이브드 앤드 세드 굿바이"
+        }
+      ]
+    },
+    {
+      "T0": "'Til I'm in the grave",
+      "C0": "내가 무덤에 들어가기까지, 내가 썩어 없어지고 묻힐 때까지 머물러 주길 원해.",
+      "G0": "'Til I'm in the grave'는 'until'의 축약형을 사용하여 '내가 무덤에 들어갈 때까지'라는 시간을 나타내는 부사절입니다. 주어(I), 동사(am), 전치사구(in the grave)로 구성됩니다.",
+      "K0": "내가 무덤에 들어갈 때까지",
+      "R0": "틸 아임 인 더 그레이브",
+      "LI": [
+        {
+          "T1": "'Til",
+          "K1": "까지",
+          "R1": "틸",
+          "E1": "'Til'은 'until'의 축약형으로, 특정 시간이나 사건이 발생할 때까지를 의미합니다.",
+          "T2": "until",
+          "K2": "까지",
+          "R2": "언틸",
+          "XE": "Wait 'til the end.",
+          "XK": "끝날 때까지 기다려.",
+          "XR": "웨이트 틸 더 엔드"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 1인칭 단수 주어와 동사 'be'의 현재형입니다.",
+          "T2": "I am",
+          "K2": "나는",
+          "R2": "아이 엠",
+          "XE": "I'm happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아임 해피 투데이"
+        },
+        {
+          "T1": "in",
+          "K1": "안에",
+          "R1": "인",
+          "E1": "'In'은 전치사로, 무언가의 내부나 특정 장소를 나타냅니다.",
+          "T2": "in",
+          "K2": "안에",
+          "R2": "인",
+          "XE": "She is in the room.",
+          "XK": "그녀는 방 안에 있어.",
+          "XR": "쉬 이즈 인 더 룸"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 명사를 가리키는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The sun is shining.",
+          "XK": "해가 빛나고 있어.",
+          "XR": "더 썬 이즈 샤이닝"
+        },
+        {
+          "T1": "grave",
+          "K1": "무덤",
+          "R1": "그레이브",
+          "E1": "'Grave'는 사람의 시신을 매장하는 곳인 무덤을 의미하는 명사입니다.",
+          "T2": "grave",
+          "K2": "무덤",
+          "R2": "그레이브",
+          "XE": "He visited the grave of his ancestors.",
+          "XK": "그는 조상의 무덤을 방문했다.",
+          "XR": "히 비지티드 더 그레이브 오브 히즈 앤세스터스"
+        }
+      ]
+    },
+    {
+      "T0": "'Til the light leaves my eyes",
+      "C0": "내가 죽는 날까지 'Til the light leaves my eyes 네가 보길 원해, 흠",
+      "G0": "'Til the light leaves my eyes'는 전치사 'til' (until의 축약형)과 주어(the light), 동사(leaves), 목적어(my eyes)로 구성된 문장입니다. 이는 시간의 경과를 표현하고 있으며, 대개 생명이 끝나는 순간을 의미합니다.",
+      "K0": "빛이 내 눈을 떠날 때까지",
+      "R0": "틸 더 라이트 리브즈 마이 아이즈",
+      "LI": [
+        {
+          "T1": "'Til",
+          "K1": "까지",
+          "R1": "틸",
+          "E1": "'Til'은 'until'의 축약형으로, 특정 시점이나 사건이 발생하기 전까지의 기간을 나타냅니다.",
+          "T2": "until",
+          "K2": "까지",
+          "R2": "언틸",
+          "XE": "Stay here 'til I come back.",
+          "XK": "내가 돌아올 때까지 여기 있어.",
+          "XR": "스테이 히어 '틸 아이 컴 백"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지칭할 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The book is on the table.",
+          "XK": "그 책은 테이블 위에 있어.",
+          "XR": "더 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "light",
+          "K1": "빛",
+          "R1": "라이트",
+          "E1": "'Light'는 물리적으로 빛을 의미하거나, 상징적으로 생명이나 희망을 나타낼 때 사용됩니다.",
+          "T2": "light",
+          "K2": "빛",
+          "R2": "라이트",
+          "XE": "The room was filled with light.",
+          "XK": "방이 빛으로 가득 찼다.",
+          "XR": "더 룸 워즈 필드 위드 라이트"
+        },
+        {
+          "T1": "leaves",
+          "K1": "떠나다",
+          "R1": "리브즈",
+          "E1": "'Leaves'는 'leave'의 3인칭 단수형으로, 어떤 장소나 사람을 떠나는 행동을 의미합니다.",
+          "T2": "leave",
+          "K2": "떠나다",
+          "R2": "리브",
+          "XE": "She always leaves early.",
+          "XK": "그녀는 항상 일찍 떠난다.",
+          "XR": "쉬 올웨이즈 리브즈 얼리"
+        },
+        {
+          "T1": "my",
+          "K1": "내",
+          "R1": "마이",
+          "E1": "'My'는 화자 본인을 가리키는 소유격 대명사입니다.",
+          "T2": "my",
+          "K2": "내",
+          "R2": "마이",
+          "XE": "This is my house.",
+          "XK": "여기가 내 집이야.",
+          "XR": "디스 이즈 마이 하우스"
+        },
+        {
+          "T1": "eyes",
+          "K1": "눈",
+          "R1": "아이즈",
+          "E1": "'Eyes'는 시감각 기관인 눈을 의미합니다. 복수 형태로 사용됩니다.",
+          "T2": "eye",
+          "K2": "눈",
+          "R2": "아이",
+          "XE": "She has beautiful eyes.",
+          "XK": "그녀는 아름다운 눈을 가졌다.",
+          "XR": "쉬 해즈 뷰티풀 아이즈"
+        }
+      ]
+    },
+    {
+      "T0": "Tell me it's a bit, oh",
+      "C0": "하지만 너는 정말 헛소리를 하고 있어, 어 좀 장난이라고 말해줘, 오 네가 그걸 못 본다고 말해줘, 네 마음이 오염된 거야",
+      "G0": "'Tell me it's a bit, oh'는 명령문으로, '나에게 말해줘'라는 주어(Tell me)와 '그게 조금이라도 있는지'를 나타내는 목적어(it's a bit)을 포함하고 있습니다.",
+      "K0": "좀 장난이라고 말해줘, 오",
+      "R0": "텔 미 잇츠 어 빗, 오",
+      "LI": [
+        {
+          "T1": "Tell",
+          "K1": "말하다",
+          "R1": "텔",
+          "E1": "'Tell'은 다른 사람에게 정보를 전달하는 동사로, 여기서는 명령문의 형태로 사용되어 화자가 상대방에게 어떤 말을 해달라고 요청하는 의미를 가집니다.",
+          "T2": "tell",
+          "K2": "말하다",
+          "R2": "텔",
+          "XE": "Tell me the truth.",
+          "XK": "진실을 말해줘.",
+          "XR": "텔 미 더 트루스"
+        },
+        {
+          "T1": "me",
+          "K1": "나에게",
+          "R1": "미",
+          "E1": "'Me'는 화자를 나타내는 목적격 대명사로, 동사의 받아들이는 대상을 가리킵니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "Please pass me the salt.",
+          "XK": "소금을 나에게 건네줘.",
+          "XR": "플리즈 패스 미 더 솔트"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것은",
+          "R1": "잇츠",
+          "E1": "'It's'는 'It is'의 축약형으로, 주어와 동사를 포함한 짧은 표현입니다.",
+          "T2": "It is",
+          "K2": "그것은 ~이다",
+          "R2": "잇 이즈",
+          "XE": "It's raining outside.",
+          "XK": "밖에 비가 오고 있어.",
+          "XR": "잇츠 레이닝 아웃사이드"
+        },
+        {
+          "T1": "a bit",
+          "K1": "조금",
+          "R1": "어 빗",
+          "E1": "'A bit'은 작은 양이나 정도를 나타내는 표현으로, 여기서는 상황을 축소해서 말하는 경우입니다.",
+          "T2": "bit",
+          "K2": "조금",
+          "R2": "빗",
+          "XE": "I'm a bit tired.",
+          "XK": "나는 조금 피곤해.",
+          "XR": "아임 어 빗 타이어드"
+        },
+        {
+          "T1": "oh",
+          "K1": "오",
+          "R1": "오",
+          "E1": "'Oh'는 감탄사를 나타내며, 화자의 놀람이나 감정적인 반응을 나타냅니다.",
+          "T2": "oh",
+          "K2": "오",
+          "R2": "오",
+          "XE": "Oh, I see what you mean.",
+          "XK": "오, 무슨 말인지 알겠어.",
+          "XR": "오, 아이 씨 왓 유 민"
+        }
+      ]
+    },
+    {
+      "T0": "You wouldn't believe if I told ya",
+      "C0": "너가 나를 어떻게 보든지, 흠 너는 내가 말해도 믿지 않을 거야 너는 내가 던지는 칭찬을 계속 받을 거야",
+      "G0": "'You wouldn't believe if I told ya'는 주어(You), 조동사(다시 조정된 would not), 동사(believe), 종속절(if I told ya)로 이루어진 문장입니다. 조건문으로, 어떤 상황이 일어났을 때의 반응을 표현합니다.",
+      "K0": "내가 말해도 너는 믿지 않을 거야",
+      "R0": "유 우든트 빌리브 이프 아이 톨드 야",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 상대방을 가리키는 단수 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "wouldn't",
+          "K1": "~하지 않을 것이다",
+          "R1": "우든트",
+          "E1": "'Wouldn't'는 'would not'의 축약형으로, 어떤 상황이나 행동이 일어나지 않을 것을 표현합니다.",
+          "T2": "would not",
+          "K2": "~하지 않을 것이다",
+          "R2": "우드 낫",
+          "XE": "He wouldn't go to the party.",
+          "XK": "그는 파티에 가지 않을 것이다.",
+          "XR": "히 우든트 고 투 더 파티"
+        },
+        {
+          "T1": "believe",
+          "K1": "믿다",
+          "R1": "빌리브",
+          "E1": "'Believe'는 어떤 사실이나 진실을 받아들이거나 확신하는 행위를 나타내는 동사입니다.",
+          "T2": "believe",
+          "K2": "믿다",
+          "R2": "빌리브",
+          "XE": "I believe in you.",
+          "XK": "나는 너를 믿어.",
+          "XR": "아이 빌리브 인 유"
+        },
+        {
+          "T1": "if",
+          "K1": "만약",
+          "R1": "이프",
+          "E1": "'If'는 조건문을 도입하는 접속사로, 어떤 상황이 일어날 경우를 가정합니다.",
+          "T2": "if",
+          "K2": "만약",
+          "R2": "이프",
+          "XE": "If it rains, we will stay home.",
+          "XK": "비가 내리면, 우리는 집에 있을 것이다.",
+          "XR": "이프 잇 레인즈, 위 윌 스테이 홈"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 단수 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "told",
+          "K1": "말했다",
+          "R1": "톨드",
+          "E1": "'Told'는 'tell'의 과거 형태로, 말을 하거나 전달하는 행위를 나타냅니다.",
+          "T2": "tell",
+          "K2": "말하다",
+          "R2": "텔",
+          "XE": "She told me a secret.",
+          "XK": "그녀는 나에게 비밀을 말했다.",
+          "XR": "쉬 톨드 미 어 시크릿"
+        },
+        {
+          "T1": "ya",
+          "K1": "너",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식적 표현으로, 구어체에서 자주 사용됩니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "What do ya want?",
+          "XK": "뭘 원해?",
+          "XR": "왓 두 야 원트?"
+        }
+      ]
+    },
+    {
+      "T0": "Can't change the weather, might not be forever ('til the day that I die)",
+      "C0": "나는 혼자인 것이 더 낫다고 생각한 적이 없다고 말했어 ('내 눈에서 빛이 사라질 때까지). 날씨를 바꿀 수 없고, 영원하지 않을 수도 있어 ('내가 죽는 날까지). 나는 다른 삶에서 너를 알았어.",
+      "G0": "'Can't change the weather, might not be forever'는 주어가 생략된 두 개의 독립된 절로 구성되어 있으며, 첫 번째 절은 '날씨를 바꿀 수 없다'는 뜻이고, 두 번째 절은 '영원하지 않을 수도 있다'는 뜻입니다.",
+      "K0": "날씨를 바꿀 수 없고, 영원하지 않을 수도 있어 (내가 죽는 날까지).",
+      "R0": "캔트 체인지 더 웨더, 마이트 낫 비 포에버 (틸 더 데이 댓 아이 다이)",
+      "LI": [
+        {
+          "T1": "Can't",
+          "K1": "~할 수 없다",
+          "R1": "캔트",
+          "E1": "'Can't'는 'cannot'의 축약형으로, 능력이나 가능성을 부정하는 표현입니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "I can't swim.",
+          "XK": "나는 수영할 수 없어.",
+          "XR": "아이 캔트 스윔"
+        },
+        {
+          "T1": "change",
+          "K1": "바꾸다",
+          "R1": "체인지",
+          "E1": "'Change'는 어떤 것을 다른 것으로 바꾸거나 새로운 상태로 바꾸는 동사입니다.",
+          "T2": "change",
+          "K2": "바꾸다",
+          "R2": "체인지",
+          "XE": "We need to change our plan.",
+          "XK": "우리 계획을 바꿔야 해.",
+          "XR": "위 니드 투 체인지 아워 플랜"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 대상을 지칭하는 정관사로, 이미 언급되었거나 잘 알려진 대상을 가리킬 때 사용됩니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the mat.",
+          "XK": "그 고양이가 매트 위에 있다.",
+          "XR": "더 캣 이즈 온 더 매트"
+        },
+        {
+          "T1": "weather",
+          "K1": "날씨",
+          "R1": "웨더",
+          "E1": "'Weather'는 대기의 상태를 나타내는 명사로, 기온, 강수, 바람 등으로 구성됩니다.",
+          "T2": "weather",
+          "K2": "날씨",
+          "R2": "웨더",
+          "XE": "The weather is sunny today.",
+          "XK": "오늘 날씨가 맑다.",
+          "XR": "더 웨더 이즈 서니 투데이"
+        },
+        {
+          "T1": "might",
+          "K1": "~할지도 모른다",
+          "R1": "마이트",
+          "E1": "'Might'는 가능성을 나타내는 조동사로, 'may'보다 덜 확실한 경우에 사용됩니다.",
+          "T2": "might",
+          "K2": "~할지도 모른다",
+          "R2": "마이트",
+          "XE": "It might rain tomorrow.",
+          "XK": "내일 비가 올지도 몰라.",
+          "XR": "잇 마이트 레인 투모로우"
+        },
+        {
+          "T1": "not",
+          "K1": "아니다",
+          "R1": "낫",
+          "E1": "'Not'은 부정의 의미를 전달하는 부사로, 동사 앞에 위치합니다.",
+          "T2": "not",
+          "K2": "아니다",
+          "R2": "낫",
+          "XE": "He is not coming.",
+          "XK": "그는 오지 않을 거야.",
+          "XR": "히 이즈 낫 커밍"
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재, 상태, 소속을 나타내는 동사로 다양한 형태(be, am, is, are, was, were)를 가집니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I want to be a teacher.",
+          "XK": "나는 선생님이 되고 싶어.",
+          "XR": "아이 원트 투 비 어 티처"
+        },
+        {
+          "T1": "forever",
+          "K1": "영원히",
+          "R1": "포에버",
+          "E1": "'Forever'는 영원히 계속되는 상태를 나타내는 부사입니다.",
+          "T2": "forever",
+          "K2": "영원히",
+          "R2": "포에버",
+          "XE": "I will love you forever.",
+          "XK": "나는 너를 영원히 사랑할 거야.",
+          "XR": "아이 윌 러브 유 포에버"
+        },
+        {
+          "T1": "'til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til'은 'until'의 축약형으로, 시간의 흐름을 나타내는 접속사입니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Wait until I come back.",
+          "XK": "내가 돌아올 때까지 기다려.",
+          "XR": "웨잇 언틸 아이 컴 백"
+        },
+        {
+          "T1": "the day",
+          "K1": "그 날",
+          "R1": "더 데이",
+          "E1": "'The day'는 특정 날짜나 시점을 나타내는 표현입니다.",
+          "T2": "day",
+          "K2": "날",
+          "R2": "데이",
+          "XE": "The day was sunny.",
+          "XK": "그날은 맑았어.",
+          "XR": "더 데이 워즈 서니"
+        },
+        {
+          "T1": "that",
+          "K1": "그것",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시 대명사입니다. 여기서는 앞서 언급된 행동을 의미합니다.",
+          "T2": "that",
+          "K2": "그것",
+          "R2": "댓",
+          "XE": "That is what I mean.",
+          "XK": "그게 내가 말하는 거야.",
+          "XR": "댓 이즈 왓 아이 민"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "die",
+          "K1": "죽다",
+          "R1": "다이",
+          "E1": "'Die'는 생명이 끝나는 것을 의미하는 동사입니다.",
+          "T2": "die",
+          "K2": "죽다",
+          "R2": "다이",
+          "XE": "All living things will eventually die.",
+          "XK": "모든 생물은 결국 죽어.",
+          "XR": "올 리빙 띵즈 윌 이벤추얼리 다이"
+        }
+      ]
+    },
+    {
+      "T0": "And I don't know what I'm crying for",
+      "C0": "하지만 만약 그것이 영원하다면, 그것은 더 좋을 거야. 그리고 나는 내가 왜 우는지 모르겠어. 난 당신을 더 사랑할 수 있을 거라고 생각지 않아.",
+      "G0": "'And I don't know what I'm crying for'는 접속사(And), 주어(I), 부정 동사(don't know), 의문사(what), 현재 진행형 동사(am crying for)로 구성된 문장입니다.",
+      "K0": "그리고 나는 내가 왜 우는지 모르겠어.",
+      "R0": "앤드 아이 돈트 노우 왓 아임 크라잉 포어",
+      "LI": [
+        {
+          "T1": "And",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 두 개의 문장이나 요소를 연결하는 접속사로, 앞서 언급된 내용을 보충하거나 추가할 때 사용됩니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "She likes apples, and he likes oranges.",
+          "XK": "그녀는 사과를 좋아하고, 그는 오렌지를 좋아해.",
+          "XR": "쉬 라이크스 애플스, 앤드 히 라이크스 오렌지스."
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 주어로 나타내는 대명사입니다. 주로 한 사람을 가리킵니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am learning to speak Korean.",
+          "XK": "나는 한국어를 배우고 있어.",
+          "XR": "아이 엠 러닝 투 스피크 코리언."
+        },
+        {
+          "T1": "don't know",
+          "K1": "모르다",
+          "R1": "돈트 노우",
+          "E1": "'Don't know'는 'do not know'의 축약형으로, 어떤 사실을 알지 못함을 나타내는 동사 표현입니다.",
+          "T2": "do not know",
+          "K2": "모르다",
+          "R2": "두 낫 노우",
+          "XE": "I don't know the answer.",
+          "XK": "나는 답을 모르겠어.",
+          "XR": "아이 돈트 노우 디 앤서"
+        },
+        {
+          "T1": "what",
+          "K1": "무엇",
+          "R1": "왓",
+          "E1": "'What'은 질문을 하거나 무엇을 지칭할 때 사용하는 의문사입니다.",
+          "T2": "what",
+          "K2": "무엇",
+          "R2": "왓",
+          "XE": "What is your name?",
+          "XK": "당신의 이름은 무엇인가요?",
+          "XR": "왓 이즈 유어 네임?"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는 ~하고 있다",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 주어 'I'와 be 동사의 현재형 'am'을 결합한 형태입니다.",
+          "T2": "I am",
+          "K2": "나는 ~이다",
+          "R2": "아이 엠",
+          "XE": "I'm going to the store.",
+          "XK": "나는 가게에 가고 있어.",
+          "XR": "아임 고잉 투 더 스토어."
+        },
+        {
+          "T1": "crying",
+          "K1": "울고 있다",
+          "R1": "크라잉",
+          "E1": "'Crying'은 'cry'의 현재 진행형으로, 눈물을 흘리며 소리를 내는 행동을 나타내는 동사입니다.",
+          "T2": "cry",
+          "K2": "울다",
+          "R2": "크라이",
+          "XE": "The baby is crying.",
+          "XK": "아기가 울고 있어.",
+          "XR": "더 베이비 이즈 크라잉."
+        },
+        {
+          "T1": "for",
+          "K1": "~위해",
+          "R1": "포어",
+          "E1": "'For'는 목적을 나타내는 전치사로, 어떤 행동의 이유나 목적을 설명할 때 사용됩니다.",
+          "T2": "for",
+          "K2": "~위해",
+          "R2": "포어",
+          "XE": "This gift is for you.",
+          "XK": "이 선물은 너를 위한 거야.",
+          "XR": "디스 기프트 이즈 포어 유."
+        }
+      ]
+    },
+    {
+      "T0": "Birds of a feather, we should stick together, I know",
+      "C0": "잃을 것이 없었어, 내 아기가 없다면. 'Birds of a feather, we should stick together, I know'. 혼자가 더 낫다고 생각하지 않겠다고 말했었지.",
+      "G0": "'Birds of a feather, we should stick together, I know'는 하나의 독립된 주절과 두 개의 부사절로 이루어진 복합문입니다. 'Birds of a feather'는 비유적 표현으로, '우리는 같은 무리의 사람들이다'라는 의미를 담고 있습니다. 'We should stick together'는 의무를 나타내는 조동사 'should'와 기본 동사 'stick'의 결합으로, '우리는 함께 있어야 한다'를 의미합니다. 'I know'는 화자가 이 사실을 확신하고 있음을 나타냅니다.",
+      "K0": "'같은 깃털을 가진 새들'처럼, 우리는 함께 있어야 해, 나는 알아.",
+      "R0": "벌즈 오브 어 페더, 위 슈드 스틱 투게더, 아이 노우",
+      "LI": [
+        {
+          "T1": "Birds",
+          "K1": "새들",
+          "R1": "벌즈",
+          "E1": "'Birds'는 동물인 새들을 의미하는 명사입니다.",
+          "T2": "bird",
+          "K2": "새",
+          "R2": "버드",
+          "XE": "Birds are singing in the morning.",
+          "XK": "새들이 아침에 노래하고 있어.",
+          "XR": "벌즈 아 싱잉 인 더 모닝"
+        },
+        {
+          "T1": "of",
+          "K1": "~의",
+          "R1": "오브",
+          "E1": "'Of'는 소유 또는 속성을 나타내는 전치사입니다.",
+          "T2": "of",
+          "K2": "~의",
+          "R2": "오브",
+          "XE": "The color of the sky is blue.",
+          "XK": "하늘의 색은 파란색이다.",
+          "XR": "더 컬러 오브 더 스카이 이즈 블루"
+        },
+        {
+          "T1": "a feather",
+          "K1": "깃털",
+          "R1": "어 페더",
+          "E1": "깃털을 의미하는 명사입니다. 'Birds of a feather'는 같은 성향이나 특징을 가진 사람들을 의미합니다.",
+          "T2": "feather",
+          "K2": "깃털",
+          "R2": "페더",
+          "XE": "This bird has beautiful feathers.",
+          "XK": "이 새는 아름다운 깃털을 가지고 있어.",
+          "XR": "디스 버드 해즈 뷰티풀 페더즈"
+        },
+        {
+          "T1": "we",
+          "K1": "우리",
+          "R1": "위",
+          "E1": "'We'는 화자와 청자를 포함한 복수 주어를 나타내는 대명사입니다. 여기서는 화자와 상대방을 의미합니다.",
+          "T2": "we",
+          "K2": "우리",
+          "R2": "위",
+          "XE": "We are going to the park.",
+          "XK": "우리는 공원에 갈 거야.",
+          "XR": "위 아 고잉 투 더 파크"
+        },
+        {
+          "T1": "should",
+          "K1": "~해야 한다",
+          "R1": "슈드",
+          "E1": "'Should'는 의무나 제안을 나타내는 조동사입니다.",
+          "T2": "should",
+          "K2": "~해야 한다",
+          "R2": "슈드",
+          "XE": "You should see a doctor.",
+          "XK": "의사를 봐야 해.",
+          "XR": "유 슈드 시 어 닥터"
+        },
+        {
+          "T1": "stick together",
+          "K1": "함께 있어야 해",
+          "R1": "스틱 투게더",
+          "E1": "'Stick together'는 서로 떨어지지 않고 긴밀하게 함께 있음을 의미하는 표현입니다.",
+          "T2": "stick",
+          "K2": "붙다",
+          "R2": "스틱",
+          "XE": "Friends should stick together.",
+          "XK": "친구들은 함께 있어야 한다.",
+          "XR": "프렌즈 슈드 스틱 투게더"
+        },
+        {
+          "T1": "I know",
+          "K1": "나는 알아",
+          "R1": "아이 노우",
+          "E1": "'I know'는 화자가 어떤 사실을 알고 있음을 나타내는 표현입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I know the answer.",
+          "XK": "나는 답을 알고 있어.",
+          "XR": "아이 노우 디 앤서"
+        }
+      ]
+    },
+    {
+      "T0": "But if it's forever, it's even better",
+      "C0": "날씨는 바꿀 수 없지만, 영원하지 않을지도 몰라. 하지만 만약 그것이 영원하다면, 더 좋을 거야. 그리고 나는 왜 내가 울고 있는지 모르겠어.",
+      "G0": "'But if it's forever, it's even better'는 접속사(But), 조건절(if it's forever), 주어(it), 동사(is), 보어(even better)로 이루어져 있습니다. 조건절을 포함한 복문 구조로, 조건이 충족되었을 때 결과가 더 좋다는 의미를 전달합니다.",
+      "K0": "하지만 만약 그것이 영원하다면, 더 좋을 거야.",
+      "R0": "벗 이프 잇츠 포에버, 잇츠 이븐 베러",
+      "LI": [
+        {
+          "T1": "But",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'는 앞에 언급된 구문과 반대되는 내용을 소개할 때 사용하는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I wanted to go, but I was busy.",
+          "XK": "나는 가고 싶었지만, 바빴어.",
+          "XR": "아이 원티드 투 고우, 벗 아이 워즈 비지"
+        },
+        {
+          "T1": "if",
+          "K1": "~라면",
+          "R1": "이프",
+          "E1": "'If'는 조건을 나타내는 접속사로, 조건절을 이끄는 역할을 합니다.",
+          "T2": "if",
+          "K2": "~라면",
+          "R2": "이프",
+          "XE": "If it rains, we will cancel the picnic.",
+          "XK": "비가 온다면, 소풍을 취소할 거야.",
+          "XR": "이프 잇 레인즈, 위 윌 캔슬 더 피크닉"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것이",
+          "R1": "잇츠",
+          "E1": "'It's'는 'it is'의 축약형으로, 여기서 주어(it)와 동사(is)를 포함합니다.",
+          "T2": "it is",
+          "K2": "그것이",
+          "R2": "잇 이즈",
+          "XE": "It's a beautiful day.",
+          "XK": "아름다운 날이야.",
+          "XR": "잇츠 어 뷰티풀 데이"
+        },
+        {
+          "T1": "forever",
+          "K1": "영원히",
+          "R1": "포에버",
+          "E1": "'Forever'는 시간이 무한히 지속됨을 의미하는 부사입니다.",
+          "T2": "forever",
+          "K2": "영원히",
+          "R2": "포에버",
+          "XE": "I will love you forever.",
+          "XK": "나는 너를 영원히 사랑할 거야.",
+          "XR": "아이 윌 러브 유 포에버"
+        },
+        {
+          "T1": "it's",
+          "K1": "그것이",
+          "R1": "잇츠",
+          "E1": "'It's'는 'it is'의 축약형으로, 여기서 주어(it)와 동사(is)를 포함합니다.",
+          "T2": "it is",
+          "K2": "그것이",
+          "R2": "잇 이즈",
+          "XE": "It's a beautiful day.",
+          "XK": "아름다운 날이야.",
+          "XR": "잇츠 어 뷰티풀 데이"
+        },
+        {
+          "T1": "even",
+          "K1": "더",
+          "R1": "이븐",
+          "E1": "'Even'은 비교급을 강조할 때 사용하는 부사로, 어떤 기준보다 더 나음을 표현합니다.",
+          "T2": "even",
+          "K2": "더",
+          "R2": "이븐",
+          "XE": "This cake is even better than the last one.",
+          "XK": "이 케이크는 이전 것보다 더 맛있어.",
+          "XR": "디스 케이크 이즈 이븐 베러 댄 더 라스트 원"
+        },
+        {
+          "T1": "better",
+          "K1": "더 좋은",
+          "R1": "베러",
+          "E1": "'Better'는 'good'의 비교급 형태로 '더 좋은'이라는 의미를 갖습니다.",
+          "T2": "good",
+          "K2": "좋은",
+          "R2": "굿",
+          "XE": "Practice makes you better.",
+          "XK": "연습은 너를 더 좋게 만들어.",
+          "XR": "프랙티스 메익스 유 베러"
+        }
+      ]
+    },
+    {
+      "T0": "I want you to see, hm",
+      "C0": "'Til the light leaves my eyes I want you to see, hm How you look to me, hm",
+      "G0": "'I want you to see, hm'는 주어 (I), 동사 (want), 목적어 (you to see)로 구성된 간단한 문장입니다. 이 문장은 화자가 상대방에게 어떤 것을 보길 바라는 의도를 나타냅니다.",
+      "K0": "네가 보길 바래, 음",
+      "R0": "아이 원트 유 투 시, 음",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자가 자신을 가리킬 때 사용하는 1인칭 단수 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "want",
+          "K1": "원하다",
+          "R1": "원트",
+          "E1": "'Want'는 무언가를 바라거나 희망하는 느낌을 표현하는 동사입니다.",
+          "T2": "want",
+          "K2": "원하다",
+          "R2": "원트",
+          "XE": "I want a new car.",
+          "XK": "나는 새 차를 원해.",
+          "XR": "아이 원트 어 뉴 카"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 대화 상대를 가리키는 2인칭 단수 주어 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "to see",
+          "K1": "보다",
+          "R1": "투 시",
+          "E1": "'To see'는 시각적 행위를 표현하는 동사 'see'의 원형이 포함된 구문으로, 목적이나 의도를 나타낼 때 사용됩니다.",
+          "T2": "see",
+          "K2": "보다",
+          "R2": "시",
+          "XE": "I want to see the movie.",
+          "XK": "나는 그 영화를 보고 싶어.",
+          "XR": "아이 원트 투 시 더 무비"
+        },
+        {
+          "T1": "hm",
+          "K1": "음",
+          "R1": "음",
+          "E1": "'Hm'은 대화 중 생각에 잠기거나 말을 이어가기 전에 사용하는 감탄사입니다.",
+          "T2": "hm",
+          "K2": "음",
+          "R2": "음",
+          "XE": "Hm, let me think about it.",
+          "XK": "음, 생각해볼게.",
+          "XR": "음, 렛 미 띵크 어바웃 잇"
+        }
+      ]
+    },
+    {
+      "T0": "And if I'm turning blue, please don't save me",
+      "C0": "'항상 너였기 때문에, 괜찮아. 만약 내가 파랗게 변하고 있다면, 제발 구하지 마. 내 아기 없이 잃을 것이 없어.'",
+      "G0": "'And if I'm turning blue, please don't save me'는 조건문(if I'm turning blue)과 명령문(please don't save me)로 구성된 복합 문장입니다. 조건문은 '내가 파랗게 변하면'이라는 상황을 표시하고, 뒤에 명령문은 '제발 구하지 마'라는 요청을 나타내고 있습니다.",
+      "K0": "만약 내가 파랗게 변하고 있다면, 제발 구하지 마.",
+      "R0": "앤드 이프 아임 터닝 블루, 플리즈 돈트 세이브 미",
+      "LI": [
+        {
+          "T1": "And",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 앞서 나온 문장이나 구와 현재 문장을 연결하는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "He likes coffee and tea.",
+          "XK": "그는 커피와 차를 좋아해.",
+          "XR": "히 라이크스 커피 앤드 티"
+        },
+        {
+          "T1": "if",
+          "K1": "만약",
+          "R1": "이프",
+          "E1": "'If'는 조건을 나타내는 접속사로, 뒤에 조건절을 이끌어 옵니다.",
+          "T2": "if",
+          "K2": "만약",
+          "R2": "이프",
+          "XE": "If it rains, we will stay inside.",
+          "XK": "비가 오면, 우리는 안에 있을 거야.",
+          "XR": "이프 잇 레인즈, 위 윌 스테이 인사이드"
+        },
+        {
+          "T1": "I'm",
+          "K1": "나는",
+          "R1": "아임",
+          "E1": "'I'm'은 'I am'의 축약형으로, 주어 'I'와 동사 'am'을 결합하여 현재 상태를 나타냅니다.",
+          "T2": "am",
+          "K2": "~이다",
+          "R2": "앰",
+          "XE": "I'm happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아임 해피 투데이"
+        },
+        {
+          "T1": "turning",
+          "K1": "변하고 있다",
+          "R1": "터닝",
+          "E1": "'Turning'은 'turn'의 현재분사형으로, 바뀌거나 변화하는 과정을 나타냅니다.",
+          "T2": "turn",
+          "K2": "변하다",
+          "R2": "턴",
+          "XE": "The leaves are turning yellow.",
+          "XK": "나뭇잎들이 노랗게 변하고 있어.",
+          "XR": "더 리브스 아 터닝 옐로우"
+        },
+        {
+          "T1": "blue",
+          "K1": "파랗게",
+          "R1": "블루",
+          "E1": "'Blue'는 색깔을 나타내며, 여기서는 추운 상태 또는 숨막혀 파랗게 변하는 상황을 의미할 수 있습니다.",
+          "T2": "blue",
+          "K2": "파란색",
+          "R2": "블루",
+          "XE": "The sky is blue.",
+          "XK": "하늘이 파란색이야.",
+          "XR": "더 스카이 이즈 블루"
+        },
+        {
+          "T1": "please",
+          "K1": "제발",
+          "R1": "플리즈",
+          "E1": "'Please'는 정중한 요청이나 간청을 할 때 사용하는 단어입니다.",
+          "T2": "please",
+          "K2": "제발",
+          "R2": "플리즈",
+          "XE": "Please, help me.",
+          "XK": "제발, 도와줘.",
+          "XR": "플리즈, 헬프 미"
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 마",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 명령형 문장에서 부정을 나타냅니다.",
+          "T2": "do not",
+          "K2": "~하지 마",
+          "R2": "두 낫",
+          "XE": "Don't go there.",
+          "XK": "거기 가지 마.",
+          "XR": "돈트 고우 데어"
+        },
+        {
+          "T1": "save",
+          "K1": "구하다",
+          "R1": "세이브",
+          "E1": "'Save'는 위험에서 구출하거나 도움을 주는 행위를 의미하는 동사입니다.",
+          "T2": "save",
+          "K2": "구하다",
+          "R2": "세이브",
+          "XE": "He tried to save her life.",
+          "XK": "그는 그녀의 생명을 구하려고 했어.",
+          "XR": "히 트라이드 투 세이브 허 라이프"
+        },
+        {
+          "T1": "me",
+          "K1": "나를",
+          "R1": "미",
+          "E1": "'Me'는 화자를 나타내는 대명사의 목적격 형태입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "She gave me a gift.",
+          "XK": "그녀가 나에게 선물을 주었어.",
+          "XR": "쉬 게이브 미 어 기프트"
+        }
+      ]
+    },
+    {
+      "T0": "You had that same look in your eyes",
+      "C0": "나는, 다른 삶에서 너를 알았어. 너는 같은 눈빛을 가지고 있었어. 나는 너를 사랑해, 그렇게 놀라지 마.",
+      "G0": "'You had that same look in your eyes'는 주어(You), 동사(had), 형용사구 및 목적어(that same look in your eyes)로 구성된 문장으로, 'have'의 과거형인 'had'를 사용하여 과거의 상태를 나타냅니다.",
+      "K0": "너는 같은 눈빛을 가지고 있었어.",
+      "R0": "유 해드 댓 세임 룩 인 유어 아이즈",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자가 청자를 지칭할 때 사용하는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "had",
+          "K1": "~했다",
+          "R1": "해드",
+          "E1": "'Had'는 'have'의 과거형으로, 과거에 소유하거나 상태를 나타낼 때 사용합니다.",
+          "T2": "have",
+          "K2": "가지다",
+          "R2": "해브",
+          "XE": "I had a dog when I was young.",
+          "XK": "내가 어렸을 때 개를 키웠어.",
+          "XR": "아이 해드 어 독 웬 아이 워즈 영"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리킬 때 사용하는 지시 대명사입니다.",
+          "T2": "that",
+          "K2": "그",
+          "R2": "댓",
+          "XE": "That is my favorite book.",
+          "XK": "그것은 내가 가장 좋아하는 책이야.",
+          "XR": "댓 이즈 마이 페이버릿 북"
+        },
+        {
+          "T1": "same",
+          "K1": "같은",
+          "R1": "세임",
+          "E1": "'Same'은 동일한 것을 나타내는 형용사입니다.",
+          "T2": "same",
+          "K2": "같은",
+          "R2": "세임",
+          "XE": "We have the same shoes.",
+          "XK": "우리는 같은 신발을 가지고 있어.",
+          "XR": "위 해브 더 세임 슈즈"
+        },
+        {
+          "T1": "look",
+          "K1": "눈빛",
+          "R1": "룩",
+          "E1": "'Look'는 일반적으로 '보다'라는 의미의 동사이지만, 여기서는 '표정'이나 '눈빛'을 의미하는 명사로 사용되었습니다.",
+          "T2": "look",
+          "K2": "눈빛",
+          "R2": "룩",
+          "XE": "She gave me a strange look.",
+          "XK": "그녀는 나에게 이상한 눈빛을 주었다.",
+          "XR": "쉬 게이브 미 어 스트레인지 룩"
+        },
+        {
+          "T1": "in",
+          "K1": "~안에",
+          "R1": "인",
+          "E1": "'In'은 위치를 나타내는 전치사로, '어디 안에'를 의미합니다.",
+          "T2": "in",
+          "K2": "~안에",
+          "R2": "인",
+          "XE": "The keys are in the drawer.",
+          "XK": "열쇠는 서랍 안에 있어.",
+          "XR": "더 키즈 아 인 더 드로어"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 청자의 소유물을 나타내는 소유격 대명사입니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Is this your bag?",
+          "XK": "이것이 너의 가방이니?",
+          "XR": "이즈 디스 유어 백"
+        },
+        {
+          "T1": "eyes",
+          "K1": "눈",
+          "R1": "아이즈",
+          "E1": "'Eyes'는 시각기관을 나타내는 명사입니다.",
+          "T2": "eye",
+          "K2": "눈",
+          "R2": "아이",
+          "XE": "Her eyes are blue.",
+          "XK": "그녀의 눈은 파란색이야.",
+          "XR": "허 아이즈 아 블루"
+        }
+      ]
+    },
+    {
+      "T0": "Say you don't see it, your mind's polluted",
+      "C0": "그게 보이지 않는다고 말해, 네 마음은 오염됐어",
+      "G0": "'Say you don't see it, your mind's polluted'는 명령문(Say)으로 시작되며, 종속절(you don't see it)과 독립절(your mind's polluted)이 이어지는 복문 구조입니다. 여기서 화자는 상대에게 보이지 않는다고 말하도록 요구하고, 그 이유를 그의 마음이 오염되었다고 설명합니다.",
+      "K0": "그게 보이지 않는다고 말해, 네 마음은 오염됐어.",
+      "R0": "세이 유 돈트 씨 잇, 유어 마인즈 폴루티드",
+      "LI": [
+        {
+          "T1": "Say",
+          "K1": "말하다",
+          "R1": "세이",
+          "E1": "'Say'는 단순히 말을 하는 행위를 나타내는 동사입니다. 여기서는 명령문으로 사용됩니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "Please say something.",
+          "XK": "뭔가 말해줘.",
+          "XR": "플리즈 세이 썸띵"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 2인칭 대명사로 상대방을 지칭합니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 않다",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 어떤 행동을 부정할 때 사용됩니다.",
+          "T2": "do not",
+          "K2": "~하지 않다",
+          "R2": "두 낫",
+          "XE": "Don't worry about it.",
+          "XK": "그것에 대해 걱정하지 마.",
+          "XR": "돈트 워리 어바웃 잇"
+        },
+        {
+          "T1": "see",
+          "K1": "보다",
+          "R1": "씨",
+          "E1": "'See'는 시각적 인식을 나타내는 동사입니다. 여기에서는 특정 것을 인지하지 못하는 상태를 의미합니다.",
+          "T2": "see",
+          "K2": "보다",
+          "R2": "씨",
+          "XE": "I can see the stars.",
+          "XK": "나는 별들을 볼 수 있어.",
+          "XR": "아이 캔 씨 더 스타즈"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 앞서 언급된 대상이나 상황을 가리키는 지시 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 오고 있어.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "your",
+          "K1": "너의",
+          "R1": "유어",
+          "E1": "'Your'는 소유를 나타내는 2인칭 대명사입니다. 여기서는 상대방의 마음을 가리킵니다.",
+          "T2": "your",
+          "K2": "너의",
+          "R2": "유어",
+          "XE": "Your book is on the table.",
+          "XK": "너의 책이 탁자 위에 있어.",
+          "XR": "유어 북 이즈 온 더 테이블"
+        },
+        {
+          "T1": "mind's",
+          "K1": "마음은",
+          "R1": "마인즈",
+          "E1": "'Mind's'는 'mind is'의 축약형으로, 주어가 단수일 때 사용됩니다. 여기서는 마음이나 정신을 의미합니다.",
+          "T2": "mind",
+          "K2": "마음",
+          "R2": "마인드",
+          "XE": "Her mind is very sharp.",
+          "XK": "그녀의 마음은 매우 날카로워.",
+          "XR": "허 마인드 이즈 베리 샤프"
+        },
+        {
+          "T1": "polluted",
+          "K1": "오염되다",
+          "R1": "폴루티드",
+          "E1": "'Polluted'는 'pollute'의 과거 분사형으로, 오염된 상태를 나타냅니다.",
+          "T2": "pollute",
+          "K2": "오염시키다",
+          "R2": "폴루트",
+          "XE": "The river is polluted.",
+          "XK": "강이 오염되었어.",
+          "XR": "더 리버 이즈 폴루티드"
+        }
+      ]
+    },
+    {
+      "T0": "Can't change the weather, might not be forever",
+      "C0": "나는 혼자가 더 낫다고 생각했다고 말했어. 날씨는 바꿀 수 없고, 영원하지 않을 수도 있어. 그러나 그것이 영원하다면, 오히려 더 좋을 거야.",
+      "G0": "'Can't change the weather, might not be forever'는 주어 없이 동사(cannot change)와 명사(the weather), 그리고 주어 없이 조동사와 보어(might not be forever)로 이루어진 구문입니다. 각 절이 콤마로 분리되어 있습니다.",
+      "K0": "날씨는 바꿀 수 없고, 영원하지 않을 수도 있어.",
+      "R0": "캔트 체인지 더 웨더, 마이트 낫 비 포에버",
+      "LI": [
+        {
+          "T1": "Can't",
+          "K1": "~할 수 없다",
+          "R1": "캔트",
+          "E1": "'Can't'는 'cannot'의 축약형으로, 상대적으로 흔히 쓰입니다. '할 수 없다'는 의미를 나타냅니다.",
+          "T2": "cannot",
+          "K2": "~할 수 없다",
+          "R2": "캐넛",
+          "XE": "I can't swim.",
+          "XK": "나는 수영을 할 수 없어.",
+          "XR": "아이 캔트 스윔"
+        },
+        {
+          "T1": "change",
+          "K1": "바꾸다",
+          "R1": "체인지",
+          "E1": "'Change'는 어떤 것을 다른 상태나 모습으로 바꾸는 것을 의미하는 동사입니다.",
+          "T2": "change",
+          "K2": "바꾸다",
+          "R2": "체인지",
+          "XE": "Please change your clothes.",
+          "XK": "옷을 갈아입어 주세요.",
+          "XR": "플리즈 체인지 유어 클로즈"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 대상을 가리킬 때 사용하는 정관사로, 앞에서 언급된 명사나 이미 알려진 대상을 가리킵니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The book on the table is mine.",
+          "XK": "탁자 위의 책은 내 것이다.",
+          "XR": "더 북 온 더 테이블 이즈 마인"
+        },
+        {
+          "T1": "weather",
+          "K1": "날씨",
+          "R1": "웨더",
+          "E1": "'Weather'는 기후 조건을 나타내는 명사로, 햇빛, 비, 바람 등을 포함합니다.",
+          "T2": "weather",
+          "K2": "날씨",
+          "R2": "웨더",
+          "XE": "The weather is nice today.",
+          "XK": "오늘 날씨가 좋아.",
+          "XR": "더 웨더 이즈 나이스 투데이"
+        },
+        {
+          "T1": "might",
+          "K1": "~일지도 모른다",
+          "R1": "마이트",
+          "E1": "'Might'는 가능성을 나타내는 조동사로, '할지도 모른다'는 뜻을 가지고 있습니다.",
+          "T2": "might",
+          "K2": "~일지도 모른다",
+          "R2": "마이트",
+          "XE": "It might rain tomorrow.",
+          "XK": "내일 비가 올지도 몰라.",
+          "XR": "잇 마이트 레인 투모로우"
+        },
+        {
+          "T1": "not",
+          "K1": "아니다",
+          "R1": "낫",
+          "E1": "'Not'는 부정형으로, 문장에서 동사나 조동사의 의미를 부정하는 역할을 합니다.",
+          "T2": "not",
+          "K2": "아니다",
+          "R2": "낫",
+          "XE": "This is not a drill.",
+          "XK": "이것은 드릴이 아니다.",
+          "XR": "디스 이즈 낫 어 드릴"
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재, 상태, 성질 등을 나타내는 동사로, 여러 가지 형태로 변형됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I want to be a doctor.",
+          "XK": "나는 의사가 되고 싶어.",
+          "XR": "아이 원트 투 비 어 닥터"
+        },
+        {
+          "T1": "forever",
+          "K1": "영원히",
+          "R1": "포에버",
+          "E1": "'Forever'는 시간의 지속을 표현하는 부사로, 끝없이 계속되는 상태를 의미합니다.",
+          "T2": "forever",
+          "K2": "영원히",
+          "R2": "포에버",
+          "XE": "I will love you forever.",
+          "XK": "난 널 영원히 사랑할 거야.",
+          "XR": "아이 윌 러브 유 포에버"
+        }
+      ]
+    },
+    {
+      "T0": "I'll love you 'til the day that I die",
+      "C0": "그것이 오래 가지 않을 수도 있겠지만, 베이비, 난 내가 죽는 날까지 널 사랑할 거야. 내가 죽는 날까지.",
+      "G0": "'I'll love you 'til the day that I die'는 주어(I), 동사(love), 목적어(you), 시간 부사구('til the day that I die)로 이루어진 문장입니다. 여기서 'til은 until의 줄임말로, 특정 시점까지의 의미를 나타냅니다. 종속절 'that I die'는 'the day'를 수식합니다.",
+      "K0": "난 내가 죽는 날까지 널 사랑할 거야.",
+      "R0": "아일 러브 유 틸 더 데이 댓 아이 다이",
+      "LI": [
+        {
+          "T1": "I'll",
+          "K1": "나는 ~할 것이다",
+          "R1": "아일",
+          "E1": "'I'll'은 'I will'의 축약형으로, 미래에 어떤 일을 할 것임을 나타내는 표현입니다.",
+          "T2": "I will",
+          "K2": "나는 ~할 것이다",
+          "R2": "아이 윌",
+          "XE": "I'll be there for you.",
+          "XK": "너를 위해 거기 있을게.",
+          "XR": "아일 비 데어 포어 유"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "동사 'love'는 강한 애정이나 감정을 표현하는 단어입니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "I love my family.",
+          "XK": "나는 내 가족을 사랑해.",
+          "XR": "아이 러브 마이 패밀리"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 가리키는 대명사로, 영어에서 2인칭 단수 및 복수 형태 모두를 나타냅니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "'til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'til'은 'until'의 축약형으로, 시간의 경계를 나타낼 때 사용됩니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Stay with me 'til morning.",
+          "XK": "아침까지 나와 함께 있어줘.",
+          "XR": "스테이 위드 미 틸 모닝"
+        },
+        {
+          "T1": "the day",
+          "K1": "그 날",
+          "R1": "더 데이",
+          "E1": "'The day'는 특정한 하루를 가리키는 표현으로, 여기서는 '내가 죽는 날'이라는 의미로 사용됩니다.",
+          "T2": "day",
+          "K2": "날",
+          "R2": "데이",
+          "XE": "I remember the day we met.",
+          "XK": "우리가 만난 날을 기억해.",
+          "XR": "아이 리멤버 더 데이 위 멧"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상을 지시하는 지시사로, 여기서는 'the day'를 수식하는 종속절을 연결하는 접속사로 쓰였습니다.",
+          "T2": "that",
+          "K2": "그",
+          "R2": "댓",
+          "XE": "This is the book that I told you about.",
+          "XK": "이것이 내가 너에게 말한 책이야.",
+          "XR": "디스 이즈 더 북 댓 아이 톨드 유 어바웃"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자 자신을 가리키는 1인칭 단수 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "die",
+          "K1": "죽다",
+          "R1": "다이",
+          "E1": "'Die'는 생명을 잃는 행위를 나타내는 동사입니다.",
+          "T2": "die",
+          "K2": "죽다",
+          "R2": "다이",
+          "XE": "Plants die without water.",
+          "XK": "식물은 물 없이는 죽는다.",
+          "XR": "플랜츠 다이 위다웃 워터"
+        }
+      ]
+    },
+    {
+      "T0": "I said I'd never think I wasn't better alone ('til the light leaves my eyes)",
+      "C0": "비슷한 사람들이 모여야 한다고 했지, 알겠어 ('내가 죽는 날까지) 나는 말했어, 혼자 있는 게 더 낫다고 생각하지 않을 거라고 ('내 눈에서 빛이 사라질 때까지) 날씨는 바꿀 수 없고, 영원할 수도 없지 ('내가 죽는 날까지)",
+      "G0": "'I said I'd never think I wasn't better alone'은 주어(I), 과거 동사(said), 종속절(that I'd never think), 보어(I wasn't better alone)로 구성된 문장입니다. 주절과 종속절이 결합한 형태로서, 화자가 혼자 있는 것이 낫다는 것을 절대로 생각하지 않겠다고 말하는 상황을 나타냅니다.",
+      "K0": "혼자 있는 게 더 낫다고 절대 생각하지 않을 거라고 말했어 (내 눈에서 빛이 사라질 때까지)",
+      "R0": "아이 세드 아이드 네버 띵크 아이 워즌트 베러 얼론 (틸 더 라잇 리브즈 마이 아이즈)",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 자신을 가리키는 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "said",
+          "K1": "말했다",
+          "R1": "세드",
+          "E1": "'Said'는 'say'의 과거형으로, 말하다를 의미하며 과거에 언급한 내용을 나타낼 때 사용합니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "She said she would come.",
+          "XK": "그녀는 온다고 말했어.",
+          "XR": "쉬 세드 쉬 우드 컴"
+        },
+        {
+          "T1": "I'd",
+          "K1": "나는 ~할 것이다",
+          "R1": "아이드",
+          "E1": "'I'd'는 'I would'의 축약형으로, 화자의 미래 행동이나 의도를 표현합니다.",
+          "T2": "I would",
+          "K2": "나는 ~할 것이다",
+          "R2": "아이 우드",
+          "XE": "I'd like to go there someday.",
+          "XK": "언젠가 거기에 가보고 싶어요.",
+          "XR": "아이드 라잌 투 고 데어 썸데이"
+        },
+        {
+          "T1": "never",
+          "K1": "결코 ~않다",
+          "R1": "네버",
+          "E1": "'Never'는 단 한 번도 일어나지 않음을 나타내는 부정 부사입니다.",
+          "T2": "never",
+          "K2": "결코 ~않다",
+          "R2": "네버",
+          "XE": "I have never seen such a thing.",
+          "XK": "나는 그런 것을 본 적이 없다.",
+          "XR": "아이 해브 네버 씬 써치 어 띵"
+        },
+        {
+          "T1": "think",
+          "K1": "생각하다",
+          "R1": "띵크",
+          "E1": "'Think'는 특정한 생각이나 의견을 가지는 행위를 나타내는 동사입니다.",
+          "T2": "think",
+          "K2": "생각하다",
+          "R2": "띵크",
+          "XE": "I think it's a good idea.",
+          "XK": "나는 그것이 좋은 생각이라고 생각한다.",
+          "XR": "아이 띵크 잇츠 어 굿 아이디어"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 자신을 가리키는 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "wasn't",
+          "K1": "~지 않았다",
+          "R1": "워즌트",
+          "E1": "'Wasn't'는 'was not'의 축약형으로, 과거에 어떤 상태가 아니었음을 나타냅니다.",
+          "T2": "was not",
+          "K2": "~지 않았다",
+          "R2": "워즈 낫",
+          "XE": "He wasn't at home yesterday.",
+          "XK": "그는 어제 집에 없었어.",
+          "XR": "히 워즌트 앳 홈 예스터데이"
+        },
+        {
+          "T1": "better",
+          "K1": "더 나은",
+          "R1": "베러",
+          "E1": "'Better'는 'good'의 비교급으로, 더 나은 상태나 질을 의미합니다.",
+          "T2": "good",
+          "K2": "좋은",
+          "R2": "굿",
+          "XE": "This is better than the last one.",
+          "XK": "이것은 지난번 것보다 낫다.",
+          "XR": "디스 이즈 베러 댄 더 라스트 원"
+        },
+        {
+          "T1": "alone",
+          "K1": "혼자",
+          "R1": "얼론",
+          "E1": "'Alone'은 다른 사람 없이 혼자인 상태를 나타내는 형용사입니다.",
+          "T2": "alone",
+          "K2": "혼자",
+          "R2": "얼론",
+          "XE": "She likes to be alone sometimes.",
+          "XK": "그녀는 가끔 혼자 있는 것을 좋아한다.",
+          "XR": "쉬 라이크스 투 비 얼론 썸타임스"
+        },
+        {
+          "T1": "'til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til'은 'until'의 축약형으로, 시간의 경계를 나타내는 전치사입니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Wait 'til I come back.",
+          "XK": "내가 돌아올 때까지 기다려.",
+          "XR": "웨잇 틸 아이 컴 백"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 지칭할 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Please pass me the book.",
+          "XK": "그 책을 저에게 건네 주세요.",
+          "XR": "플리즈 패스 미 더 북"
+        },
+        {
+          "T1": "light",
+          "K1": "빛",
+          "R1": "라잇",
+          "E1": "'Light'는 자연 또는 인공의 빛을 의미하는 명사입니다.",
+          "T2": "light",
+          "K2": "빛",
+          "R2": "라잇",
+          "XE": "The light is very bright.",
+          "XK": "그 빛은 매우 밝다.",
+          "XR": "더 라잇 이즈 베리 브라이트"
+        },
+        {
+          "T1": "leaves",
+          "K1": "떠나다",
+          "R1": "리브즈",
+          "E1": "'Leaves'는 'leave'의 3인칭 단수 현재형으로, 떠나다를 의미합니다.",
+          "T2": "leave",
+          "K2": "떠나다",
+          "R2": "리브",
+          "XE": "She leaves for work at 8 AM.",
+          "XK": "그녀는 오전 8시에 출근한다.",
+          "XR": "쉬 리브즈 포어 워크 앳 에잍 에이엠"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 소유 대명사로, 화자 자신이 소유한 것을 나타냅니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이다.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "eyes",
+          "K1": "눈",
+          "R1": "아이즈",
+          "E1": "'Eyes'는 시각 기관을 의미하는 명사입니다.",
+          "T2": "eye",
+          "K2": "눈",
+          "R2": "아이",
+          "XE": "Her eyes are very beautiful.",
+          "XK": "그녀의 눈은 매우 아름답다.",
+          "XR": "허 아이즈 아 베리 뷰티풀"
+        }
+      ]
+    },
+    {
+      "T0": "How you look to me, hm",
+      "C0": "내가 말하면 믿지 않을 거야. 넌 내가 바라보는 널 봐줬으면 해, 음.",
+      "G0": "'How you look to me, hm'는 의문사(How), 주어(you), 동사(look), 전치사(to), 목적어(me)로 이루어져 있으며, 상대방이 화자에게 어떻게 보이는지를 묻는 표현입니다.",
+      "K0": "네가 내게 어떻게 보이는지, 음",
+      "R0": "하우 유 룩 투 미, 음",
+      "LI": [
+        {
+          "T1": "How",
+          "K1": "어떻게",
+          "R1": "하우",
+          "E1": "'How'는 방식이나 상태를 묻는 의문사로, 여기서는 '어떻게'의 의미로 사용됩니다.",
+          "T2": "how",
+          "K2": "어떻게",
+          "R2": "하우",
+          "XE": "How do you do that?",
+          "XK": "그걸 어떻게 해요?",
+          "XR": "하우 두 유 두 댓?"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 가리키는 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "Are you okay?",
+          "XK": "너 괜찮아?",
+          "XR": "아 유 오케이?"
+        },
+        {
+          "T1": "look",
+          "K1": "보다",
+          "R1": "룩",
+          "E1": "'Look'는 눈으로 무언가를 보는 행위를 나타내는 동사입니다.",
+          "T2": "look",
+          "K2": "보다",
+          "R2": "룩",
+          "XE": "Look at the sky.",
+          "XK": "하늘을 보세요.",
+          "XR": "룩 앳 더 스카이"
+        },
+        {
+          "T1": "to",
+          "K1": "~에게",
+          "R1": "투",
+          "E1": "'To'는 방향이나 대상을 나타내는 전치사로, 여기서는 '나에게'의 의미를 갖습니다.",
+          "T2": "to",
+          "K2": "~에게",
+          "R2": "투",
+          "XE": "Give the book to me.",
+          "XK": "책을 나에게 주세요.",
+          "XR": "기브 더 북 투 미"
+        },
+        {
+          "T1": "me",
+          "K1": "나",
+          "R1": "미",
+          "E1": "'Me'는 말을 하는 자신을 가리키는 대명사입니다.",
+          "T2": "me",
+          "K2": "나",
+          "R2": "미",
+          "XE": "Tell me the truth.",
+          "XK": "내게 진실을 말해봐.",
+          "XR": "텔 미 더 트루쓰"
+        },
+        {
+          "T1": "hm",
+          "K1": "음",
+          "R1": "음",
+          "E1": "'Hm'은 생각이나 망설임, 이해를 나타내는 감탄사입니다.",
+          "T2": "hm",
+          "K2": "음",
+          "R2": "음",
+          "XE": "Hm, let me think about it.",
+          "XK": "음, 생각해볼게요.",
+          "XR": "음, 렛 미 띵크 어바웃 잇"
+        }
+      ]
+    },
+    {
+      "T0": "If you go, I'm going too, uh",
+      "C0": "'네가 가는 한, 나는 항상 따라갈게. 네가 가면 나도 갈게, 어. 왜냐하면 항상 너였잖아, 알겠어'",
+      "G0": "'If you go, I'm going too, uh'는 종속 접속사(if), 주어(you), 동사(go), 주어(I), 동사(am going), 부사(too)로 이루어진 복문입니다. 'If' 절이 조건을 제시하고, 주절이 그에 대한 반응을 나타내고 있습니다.",
+      "K0": "네가 가면, 나도 갈게, 어",
+      "R0": "이프 유 고, 아임 고잉 투, 어",
+      "LI": [
+        {
+          "T1": "If",
+          "K1": "만약",
+          "R1": "이프",
+          "E1": "'If'는 조건을 나타내는 접속사로, 어떤 일이 발생할 경우를 가정할 때 사용됩니다.",
+          "T2": "if",
+          "K2": "만약",
+          "R2": "이프",
+          "XE": "If it rains, we will stay at home.",
+          "XK": "비가 오면, 우리는 집에 있을 거야.",
+          "XR": "이프 잇 레인즈, 위 윌 스테이 엣 홈"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 화자가 상대방을 지칭할 때 사용하는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 나의 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "go",
+          "K1": "가다",
+          "R1": "고",
+          "E1": "'Go'는 장소를 옮기거나 이동하는 행동을 나타내는 동사입니다.",
+          "T2": "go",
+          "K2": "가다",
+          "R2": "고",
+          "XE": "I go to school every day.",
+          "XK": "나는 매일 학교에 간다.",
+          "XR": "아이 고 투 스쿨 에브리 데이"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자 스스로를 지칭할 때 사용하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I love ice cream.",
+          "XK": "나는 아이스크림을 좋아해.",
+          "XR": "아이 러브 아이스크림"
+        },
+        {
+          "T1": "am",
+          "K1": "~이다/있다",
+          "R1": "앰",
+          "E1": "'Am'은 주어가 1인칭 단수일 때 사용하는 현재 시제의 Be 동사입니다.",
+          "T2": "be",
+          "K2": "~이다/있다",
+          "R2": "비",
+          "XE": "I am happy today.",
+          "XK": "나는 오늘 행복해.",
+          "XR": "아이 앰 해피 투데이"
+        },
+        {
+          "T1": "going",
+          "K1": "가는 중",
+          "R1": "고잉",
+          "E1": "'Going'은 'go'의 현재 진행형으로, 현재 어떤 행동을 하고 있음을 나타냅니다.",
+          "T2": "go",
+          "K2": "가다",
+          "R2": "고",
+          "XE": "She is going to the park.",
+          "XK": "그녀는 공원에 가고 있다.",
+          "XR": "쉬 이즈 고잉 투 더 파크"
+        },
+        {
+          "T1": "too",
+          "K1": "또한",
+          "R1": "투",
+          "E1": "'Too'는 어떤 것에 더해 또 다른 것을 덧붙일 때 사용하는 부사입니다.",
+          "T2": "too",
+          "K2": "또한",
+          "R2": "투",
+          "XE": "I like pizza, and she likes pizza too.",
+          "XK": "나는 피자를 좋아하고, 그녀도 피자를 좋아해.",
+          "XR": "아이 라이크 피자, 앤드 쉬 라이크스 피자 투"
+        },
+        {
+          "T1": "uh",
+          "K1": "어",
+          "R1": "어",
+          "E1": "'Uh'는 생각을 잠시 멈추거나 말을 이어가면서 하는 소리로, 일상 대화에서 자주 사용됩니다.",
+          "T2": "uh",
+          "K2": "어",
+          "R2": "어",
+          "XE": "Uh, can you repeat that?",
+          "XK": "저기, 다시 말해줄래?",
+          "XR": "어, 캔 유 리핏 댓?"
+        }
+      ]
+    },
+    {
+      "T0": "'Til the day that I die",
+      "C0": "내가 죽는 날까지 너를 사랑할게.",
+      "G0": "'Til the day that I die'는 전치사('til), 명사구(the day that I die)로 구성된 문장으로, 특정 시점까지의 지속을 나타냅니다. 여기서 'til은 until의 축약형입니다.",
+      "K0": "내가 죽는 날까지",
+      "R0": "틸 더 데이 댓 아이 다이",
+      "LI": [
+        {
+          "T1": "'Til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til'은 'until'의 축약형으로, 특정 시점이나 사건까지의 지속을 표현합니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Wait 'til I come back.",
+          "XK": "내가 돌아올 때까지 기다려.",
+          "XR": "웨이트 틸 아이 컴 백"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정 명사를 가리킬 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The cat is on the roof.",
+          "XK": "그 고양이는 지붕 위에 있어.",
+          "XR": "더 캣 이즈 온 더 루프"
+        },
+        {
+          "T1": "day",
+          "K1": "날",
+          "R1": "데이",
+          "E1": "'Day'는 24시간 동안의 기간을 나타내는 명사입니다.",
+          "T2": "day",
+          "K2": "날",
+          "R2": "데이",
+          "XE": "It was a sunny day.",
+          "XK": "좋은 날이었다.",
+          "XR": "잇 워즈 어 서니 데이"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 다른 명사를 설명하여 특정 상황을 지시하는 관계 대명사입니다.",
+          "T2": "that",
+          "K2": "그",
+          "R2": "댓",
+          "XE": "The book that you gave me is interesting.",
+          "XK": "네가 준 책은 재미있어.",
+          "XR": "더 북 댓 유 게이브 미 이즈 인트레스팅"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 1인칭 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 앰 해피"
+        },
+        {
+          "T1": "die",
+          "K1": "죽다",
+          "R1": "다이",
+          "E1": "'Die'는 생명을 잃는 행위를 나타내는 동사입니다.",
+          "T2": "die",
+          "K2": "죽다",
+          "R2": "다이",
+          "XE": "Plants die without water.",
+          "XK": "식물은 물 없이 죽는다.",
+          "XR": "플랜츠 다이 위다우트 워터"
+        }
+      ]
+    },
+    {
+      "T0": "But you're so full of shit, uh",
+      "C0": "내가 던진 칭찬을 계속 받곤 했지. 하지만 너는 정말 헛소리만 해, 어. 농담이라고 말해줘, 오.",
+      "G0": "'But you're so full of shit'는 주어(you), 동사(be), 보어(full of shit)로 이루어진 문장 구조로, 상대방이 거짓이나 헛소리로 가득 차 있다고 표현하는 문장입니다.",
+      "K0": "하지만 너는 정말 헛소리만 해, 어.",
+      "R0": "벗 유어 쏘 풀 오브 싯, 어",
+      "LI": [
+        {
+          "T1": "But",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 문장의 두 부분을 대조하거나 반대되는 내용을 연결하는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I wanted to go out, but it started to rain.",
+          "XK": "나는 나가고 싶었지만, 비가 오기 시작했어.",
+          "XR": "아이 원티드 투 고 아웃, 벗 잇 스타티드 투 레인"
+        },
+        {
+          "T1": "you're",
+          "K1": "너는",
+          "R1": "유어",
+          "E1": "'You're'는 'you are'의 축약형으로, 이를 통해 주어와 서술어를 빠르게 연결할 수 있습니다.",
+          "T2": "you are",
+          "K2": "너는",
+          "R2": "유 아",
+          "XE": "You're my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유어 마이 베스트 프렌드"
+        },
+        {
+          "T1": "so",
+          "K1": "정말",
+          "R1": "쏘",
+          "E1": "'So'는 정도를 강조하는 부사로, 뒤에 오는 형용사나 부사를 강조합니다.",
+          "T2": "so",
+          "K2": "정말",
+          "R2": "쏘",
+          "XE": "I'm so happy today.",
+          "XK": "오늘 정말 행복해.",
+          "XR": "아임 쏘 해피 투데이"
+        },
+        {
+          "T1": "full of",
+          "K1": "~로 가득 찬",
+          "R1": "풀 오브",
+          "E1": "'Full of'는 특정한 것으로 가득 차 있음을 의미하는 구문입니다.",
+          "T2": "full",
+          "K2": "가득 찬",
+          "R2": "풀",
+          "XE": "The room was full of people.",
+          "XK": "방은 사람들로 가득 차 있었다.",
+          "XR": "더 룸 워즈 풀 오브 피플"
+        },
+        {
+          "T1": "shit",
+          "K1": "헛소리",
+          "R1": "싯",
+          "E1": "'Shit'는 비속어로, 여기서는 거짓말이나 가치 없는 말을 의미합니다.",
+          "T2": "shit",
+          "K2": "헛소리",
+          "R2": "싯",
+          "XE": "Don't talk that shit to me.",
+          "XK": "나에게 그런 헛소리 하지 마.",
+          "XR": "돈트 토크 댓 싯 투 미"
+        },
+        {
+          "T1": "uh",
+          "K1": "어",
+          "R1": "어",
+          "E1": "'Uh'는 대화 중 말을 잠시 멈추거나 주저할 때 사용하는 음성언어입니다.",
+          "T2": "uh",
+          "K2": "어",
+          "R2": "어",
+          "XE": "Uh, I'm not sure about this.",
+          "XK": "어, 이거 잘 모르겠어.",
+          "XR": "어, 아이엠 낫 슈어 어바웃 디스"
+        }
+      ]
+    },
+    {
+      "T0": "Say you wanna quit, don't be stupid",
+      "C0": "네가 그것을 보지 못한다고 말하고, 네 마음이 오염되었다고 말해봐. 네가 그만두고 싶다고 말해봐, 어리석지 않게 행동해. 오래걸리지 않을 수도 있지만, 베이비, 나는",
+      "G0": "'Say you wanna quit, don't be stupid'는 명령문으로, 주어는 생략돼 있으나 상대방에게 특정 행동을 지시하는 구조입니다. 이는 'Say' 다음에 절이 이어지고, 이어서 부정적인 조언이 제시됩니다.",
+      "K0": "네가 그만두고 싶다고 말해봐. 어리석게 굴지 말고.",
+      "R0": "쎄이 유 워너 큇, 돈트 비 스튜피드",
+      "LI": [
+        {
+          "T1": "Say",
+          "K1": "말해",
+          "R1": "쎄이",
+          "E1": "'Say'는 말하거나 표현하는 행위를 나타내는 동사입니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "쎄이",
+          "XE": "Say what you mean.",
+          "XK": "네가 무슨 말을 하고 싶은지 말해봐.",
+          "XR": "쎄이 왓 유 민"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "wanna",
+          "K1": "~하고 싶다",
+          "R1": "워너",
+          "E1": "'Wanna'는 'want to'의 비격식 축약형으로, '~하고 싶다'는 뜻입니다.",
+          "T2": "want to",
+          "K2": "~하고 싶다",
+          "R2": "원트 투",
+          "XE": "I wanna go home.",
+          "XK": "집에 가고 싶어.",
+          "XR": "아이 워너 고 홈"
+        },
+        {
+          "T1": "quit",
+          "K1": "그만두다",
+          "R1": "큇",
+          "E1": "'Quit'는 어떤 활동을 중단하거나 그만두는 것을 의미하는 동사입니다.",
+          "T2": "quit",
+          "K2": "그만두다",
+          "R2": "큇",
+          "XE": "She decided to quit her job.",
+          "XK": "그녀는 그녀의 일을 그만두기로 결심했다.",
+          "XR": "쉬 디사이디드 투 큇 허 잡"
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 말다",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 어떤 행위를 하지 말라는 명령문에서 주로 사용됩니다.",
+          "T2": "do not",
+          "K2": "~하지 말다",
+          "R2": "두 낫",
+          "XE": "Don't forget your umbrella.",
+          "XK": "우산을 잊지 마.",
+          "XR": "돈트 포겟 유어 엠브렐라"
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재를 나타내는 동사로, 여기서는 상태를 설명하는 데 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "Just be yourself.",
+          "XK": "그냥 너 자신이 되어라.",
+          "XR": "저스트 비 유어셀프"
+        },
+        {
+          "T1": "stupid",
+          "K1": "어리석은",
+          "R1": "스튜피드",
+          "E1": "'Stupid'는 지능이나 판단력이 부족한, 어리석은 행동이나 사람을 묘사하는 형용사입니다.",
+          "T2": "stupid",
+          "K2": "어리석은",
+          "R2": "스튜피드",
+          "XE": "That was a stupid mistake.",
+          "XK": "그건 어리석은 실수였어.",
+          "XR": "댓 워즈 어 스튜피드 미스테이크"
+        }
+      ]
+    },
+    {
+      "T0": "I love you, don't act so surprised",
+      "C0": "당신의 눈빛이 똑같았어요. 나는 당신을 사랑해, 그렇게 놀란 척하지 마세요.",
+      "G0": "'I love you, don't act so surprised'는 주절(I love you)과 명령문(don't act so surprised)으로 구성된 문장으로, 주절에서는 주어(I)와 동사(love), 목적어(you)로 이루어져 있고, 명령문에서는 부정어(don't), 동사(act), 보어(so surprised)로 이루어져 있습니다.",
+      "K0": "나는 당신을 사랑해, 그렇게 놀란 척하지 마.",
+      "R0": "아이 러브 유, 돈트 액트 소 서프라이즈드",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자가 자신을 가리킬 때 사용하는 1인칭 주어 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "'Love'는 강한 애정을 의미하는 동사로, 감정이나 감정을 표현할 때 사용됩니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "They love each other very much.",
+          "XK": "그들은 서로를 매우 사랑해.",
+          "XR": "데이 러브 이치 아더 베리 머치"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 듣는 사람을 가리키는 2인칭 주어 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 마라",
+          "R1": "돈트",
+          "E1": "'Don't'는 명령문에서 동사 앞에 붙여 부정을 나타내는 표현으로, '~하지 마라'라는 의미입니다.",
+          "T2": "do not",
+          "K2": "~하지 마라",
+          "R2": "두 낫",
+          "XE": "Don't forget to call me.",
+          "XK": "나에게 전화하는 거 잊지 마.",
+          "XR": "돈트 포겟 투 콜 미"
+        },
+        {
+          "T1": "act",
+          "K1": "행동하다",
+          "R1": "액트",
+          "E1": "'Act'는 특정한 방식으로 행동하거나 반응하는 것을 의미하는 동사입니다.",
+          "T2": "act",
+          "K2": "행동하다",
+          "R2": "액트",
+          "XE": "You should act responsibly.",
+          "XK": "책임감 있게 행동해야 해.",
+          "XR": "유 슈드 액트 리스판서블리"
+        },
+        {
+          "T1": "so",
+          "K1": "그렇게",
+          "R1": "소",
+          "E1": "'So'는 정도를 나타내는 부사로, 매우 또는 그렇게라는 의미로 쓰입니다.",
+          "T2": "so",
+          "K2": "그렇게",
+          "R2": "소",
+          "XE": "She was so tired after the trip.",
+          "XK": "그녀는 여행 후에 매우 피곤했어.",
+          "XR": "쉬 워즈 소 타이어드 애프터 더 트립"
+        },
+        {
+          "T1": "surprised",
+          "K1": "놀란",
+          "R1": "서프라이즈드",
+          "E1": "'Surprised'는 예상하지 못한 일을 겪어서 놀란 상태를 나타내는 형용사입니다.",
+          "T2": "surprise",
+          "K2": "놀라다",
+          "R2": "서프라이즈",
+          "XE": "He looked surprised when he saw the gift.",
+          "XK": "그는 선물을 보고 놀란 표정을 지었다.",
+          "XR": "히 룩드 서프라이즈드 웬 히 소 더 기프트"
+        }
+      ]
+    },
+    {
+      "T0": "I don't think I could love you more",
+      "C0": "왜 내가 울고 있는지 모르겠어. 나는 당신을 더 사랑할 수 없을 것 같아요. 오래 걸리진 않을 거예요, 하지만 여보, 나는",
+      "G0": "'I don't think I could love you more'는 주어(I), 부정 동사(don't think), 조동사(could), 동사(love), 목적어(you), 부사(more)로 이루어진 문장으로, 화자의 감정을 표현하는 문장 구조입니다.",
+      "K0": "당신을 더 사랑할 수는 없을 것 같아.",
+      "R0": "아이 돈트 씽크 아이 쿠드 러브 유 모어",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 1인칭 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생이야.",
+          "XR": "아이 엠 어 스튜던트"
+        },
+        {
+          "T1": "don't",
+          "K1": "~하지 않는다",
+          "R1": "돈트",
+          "E1": "'Don't'는 'do not'의 축약형으로, 평서문에서 부정을 나타내는 데 사용됩니다.",
+          "T2": "do not",
+          "K2": "~하지 않는다",
+          "R2": "두 낫",
+          "XE": "I don't like eating fish.",
+          "XK": "나는 생선 먹는 것을 좋아하지 않아.",
+          "XR": "아이 돈트 라잌 이팅 피쉬"
+        },
+        {
+          "T1": "think",
+          "K1": "생각하다",
+          "R1": "씽크",
+          "E1": "'Think'는 어떤 의견이나 믿음을 가지는 행위를 나타내는 동사입니다.",
+          "T2": "think",
+          "K2": "생각하다",
+          "R2": "씽크",
+          "XE": "I think you are right.",
+          "XK": "내 생각에 너가 맞아.",
+          "XR": "아이 씽크 유 아 라잇"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 1인칭 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am a student.",
+          "XK": "나는 학생이야.",
+          "XR": "아이 엠 어 스튜던트"
+        },
+        {
+          "T1": "could",
+          "K1": "~할 수 있었다",
+          "R1": "쿧",
+          "E1": "'Could'는 과거 시제의 'can'으로, 능력이나 가능성을 나타낼 때 사용됩니다.",
+          "T2": "can",
+          "K2": "~할 수 있다",
+          "R2": "캔",
+          "XE": "I could play the piano when I was younger.",
+          "XK": "어릴 때 나는 피아노를 칠 수 있었어.",
+          "XR": "아이 쿧 플레이 더 피아노 웬 아이 워즈 영거"
+        },
+        {
+          "T1": "love",
+          "K1": "사랑하다",
+          "R1": "러브",
+          "E1": "'Love'는 깊은 애정을 나타내는 동사입니다.",
+          "T2": "love",
+          "K2": "사랑하다",
+          "R2": "러브",
+          "XE": "I love my family.",
+          "XK": "나는 내 가족을 사랑해.",
+          "XR": "아이 러브 마이 패밀리"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 상대방을 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "more",
+          "K1": "더",
+          "R1": "모어",
+          "E1": "'More'는 양이나 정도가 더 많거나 큼을 나타내는 부사 또는 형용사입니다.",
+          "T2": "more",
+          "K2": "더",
+          "R2": "모어",
+          "XE": "I need more time.",
+          "XK": "나는 시간이 더 필요해.",
+          "XR": "아이 니드 모어 타임"
+        }
+      ]
+    },
+    {
+      "T0": "I knew you in another life",
+      "C0": "날씨는 바꿀 수 없고, 영원히 이어지지 않을 수도 있어 (내가 죽는 날까지). 나는 다른 생에서 너를 알았어. 네 눈에는 같은 표정이 있었어.",
+      "G0": "'I knew you in another life'는 주어(I), 동사(knew), 목적어(you), 전치사구(in another life)로 이루어진 단문형 구조로, 과거의 삶에서의 인연을 이야기하는 문장입니다.",
+      "K0": "나는 다른 생에서 너를 알았어.",
+      "R0": "아이 뉴 유 인 어나더 라이프",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 가리키는 1인칭 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "knew",
+          "K1": "알았다",
+          "R1": "뉴",
+          "E1": "'Knew'는 '알다'라는 뜻의 동사 'know'의 과거형입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I knew the answer.",
+          "XK": "나는 정답을 알았다.",
+          "XR": "아이 뉴 더 앤서"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "in",
+          "K1": "~에서",
+          "R1": "인",
+          "E1": "'In'은 장소나 시간을 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "~에서",
+          "R2": "인",
+          "XE": "I live in the city.",
+          "XK": "나는 도시에서 산다.",
+          "XR": "아이 리브 인 더 시티"
+        },
+        {
+          "T1": "another",
+          "K1": "또 다른",
+          "R1": "어나더",
+          "E1": "'Another'는 '또 다른'이라는 의미의 형용사입니다.",
+          "T2": "another",
+          "K2": "또 다른",
+          "R2": "어나더",
+          "XE": "Can I have another piece?",
+          "XK": "다른 조각 하나 더 줄 수 있니?",
+          "XR": "캔 아이 해브 어나더 피스?"
+        },
+        {
+          "T1": "life",
+          "K1": "삶",
+          "R1": "라이프",
+          "E1": "'Life'는 생명 또는 삶을 의미하는 명사입니다.",
+          "T2": "life",
+          "K2": "삶",
+          "R2": "라이프",
+          "XE": "Life is beautiful.",
+          "XK": "삶은 아름다워.",
+          "XR": "라이프 이즈 뷰티풀"
+        }
+      ]
+    },
+    {
+      "T0": "Might not be long, but baby, I",
+      "C0": "그만두고 싶다고 말하지마, 바보야. 오래 걸리지 않을 거야, 하지만 자기야, 나는 작별 인사를 하고 싶지 않아.",
+      "G0": "'Might not be long, but baby, I'는 주어(I), 조동사(might), 부정(not), 형용사(long), 접속사(but), 호칭(baby) 등의 구성 요소로 이루어진 문장입니다. 전체적으로는 자신이 하고 싶은 말을 시작하기 전에 길잡이 역할을 하는 문장입니다.",
+      "K0": "오래 걸리지 않을 수도 있어, 하지만 자기야, 나는",
+      "R0": "마잇 낫 비 롱, 벗 베이비, 아이",
+      "LI": [
+        {
+          "T1": "might",
+          "K1": "~일지도 모른다",
+          "R1": "마잇",
+          "E1": "'Might'는 가능성을 나타내는 조동사로, 주어가 어떤 행동을 할 가능성을 표현할 때 사용됩니다.",
+          "T2": "might",
+          "K2": "~일지도 모른다",
+          "R2": "마잇",
+          "XE": "It might rain later.",
+          "XK": "나중에 비가 올지도 몰라.",
+          "XR": "잇 마잇 레인 레이터"
+        },
+        {
+          "T1": "not",
+          "K1": "~아니다",
+          "R1": "낫",
+          "E1": "'Not'은 부정의 의미를 나타내는 부사로, 동사나 형용사를 부정할 때 사용됩니다.",
+          "T2": "not",
+          "K2": "~아니다",
+          "R2": "낫",
+          "XE": "I do not like this.",
+          "XK": "나는 이걸 좋아하지 않아.",
+          "XR": "아이 두 낫 라이크 디스"
+        },
+        {
+          "T1": "be",
+          "K1": "~이다",
+          "R1": "비",
+          "E1": "'Be'는 존재나 상태를 나타내는 동사로, 다양한 시제와 함께 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "You will be fine.",
+          "XK": "너는 괜찮을 거야.",
+          "XR": "유 윌 비 파인"
+        },
+        {
+          "T1": "long",
+          "K1": "긴",
+          "R1": "롱",
+          "E1": "'Long'은 길이나 시간을 나타내는 형용사입니다. 이 문맥에서는 시간이 많이 걸리지 않는다는 의미를 가집니다.",
+          "T2": "long",
+          "K2": "긴",
+          "R2": "롱",
+          "XE": "She has long hair.",
+          "XK": "그녀는 긴 머리카락을 가지고 있다.",
+          "XR": "쉬 해즈 롱 헤어"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'은 대조나 예외를 나타내는 접속사로 앞 문장의 내용과 대조되는 내용을 연결합니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I want to go, but I can't.",
+          "XK": "나는 가고 싶지만, 갈 수 없어.",
+          "XR": "아이 원트 투 고, 벗 아이 캔트"
+        },
+        {
+          "T1": "baby",
+          "K1": "자기(호칭)",
+          "R1": "베이비",
+          "E1": "'Baby'는 연인을 애정 가득하게 부를 때 사용하는 호칭입니다.",
+          "T2": "baby",
+          "K2": "자기(호칭)",
+          "R2": "베이비",
+          "XE": "I love you, baby.",
+          "XK": "사랑해, 자기.",
+          "XR": "아이 러브 유, 베이비"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 자기를 가리키는 1인칭 주격 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        }
+      ]
+    },
+    {
+      "T0": "'Cause it was always you, alright",
+      "C0": "네가 가면 나도 갈 거야, 왜냐하면 항상 너였으니까, 알겠어 그리고 내가 파랗게 변하면 제발 날 구하지 마",
+      "G0": "'Cause it was always you, alright'는 이유를 나타내는 접속사('Cause)와 주어(it), 동사(was), 보어(always you), 감탄사(alright)로 구성된 문장입니다.",
+      "K0": "왜냐하면 항상 너였으니까, 알겠어",
+      "R0": "코즈 잇 워즈 올웨이즈 유, 얼라이트",
+      "LI": [
+        {
+          "T1": "'Cause",
+          "K1": "왜냐하면",
+          "R1": "코즈",
+          "E1": "'Cause'는 'because'의 줄임말로, 이유를 나타내는 접속사입니다.",
+          "T2": "because",
+          "K2": "왜냐하면",
+          "R2": "비코즈",
+          "XE": "I stayed home 'cause it was raining.",
+          "XK": "비가 와서 집에 있었어.",
+          "XR": "아이 스테이드 홈 코즈 잇 워즈 레이닝"
+        },
+        {
+          "T1": "it",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'은 특정한 사물이나 상황을 가리킬 때 사용되는 대명사입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is important to stay hydrated.",
+          "XK": "수분을 충분히 섭취하는 것이 중요합니다.",
+          "XR": "잇 이즈 임포턴트 투 스테이 하이드레이티드"
+        },
+        {
+          "T1": "was",
+          "K1": "~였다",
+          "R1": "워즈",
+          "E1": "'Was'는 과거 시제를 나타내는 be 동사의 과거형으로, 주어가 단수일 때 사용됩니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "The weather was nice yesterday.",
+          "XK": "어제 날씨가 좋았어.",
+          "XR": "더 웨더 워즈 나이스 예스터데이"
+        },
+        {
+          "T1": "always",
+          "K1": "항상",
+          "R1": "올웨이즈",
+          "E1": "'Always'는 언제나, 항상이라는 뜻의 부사로, 빈번히 발생하는 행동이나 상태를 나타냅니다.",
+          "T2": "always",
+          "K2": "항상",
+          "R2": "올웨이즈",
+          "XE": "She always arrives early.",
+          "XK": "그녀는 언제나 일찍 도착합니다.",
+          "XR": "쉬 올웨이즈 어라이브즈 얼리"
+        },
+        {
+          "T1": "you",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 대명사로, 단수 및 복수 모두를 지칭할 수 있습니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my best friend.",
+          "XK": "너는 내 가장 친한 친구야.",
+          "XR": "유 아 마이 베스트 프렌드"
+        },
+        {
+          "T1": "alright",
+          "K1": "알겠어",
+          "R1": "얼라이트",
+          "E1": "'Alright'는 동의나 안심을 표현하는 감탄사로, 'all right'의 축약 형태입니다.",
+          "T2": "alright",
+          "K2": "알겠어",
+          "R2": "얼라이트",
+          "XE": "Alright, I'll do it.",
+          "XK": "알겠어, 내가 할게.",
+          "XR": "얼라이트, 아일 두 잇"
+        }
+      ]
+    },
+    {
+      "T0": "Nothing left to lose without my baby",
+      "C0": "그리고 내가 파랗게 변하고 있다면, 제발 날 구하지 말아줘. 나의 아기 없이 남은 것은 아무것도 없어. 같은 깃털을 가진 새들처럼, 우리는 함께 있어야 해, 나는 알아.",
+      "G0": "'Nothing left to lose without my baby'는 주어(Nothing), 동사(left), 부사구(to lose), 부사구(without my baby)로 구성된 문장으로, 무언가가 아무것도 남지 않았다'는 의미를 전달합니다.",
+      "K0": "내 사랑이 없다면, 나는 더 잃을 게 없어",
+      "R0": "너띵 래프트 투 루즈 윗아웃 마이 베이비",
+      "LI": [
+        {
+          "T1": "Nothing",
+          "K1": "아무것도",
+          "R1": "너띵",
+          "E1": "'Nothing'은 존재하지 않거나 유효하지 않은 무언가를 가리키는 단어로, 무를 의미합니다.",
+          "T2": "nothing",
+          "K2": "아무것도",
+          "R2": "너띵",
+          "XE": "Nothing can stop us now.",
+          "XK": "이제 우리를 막을 것은 아무것도 없어.",
+          "XR": "너띵 캔 스탑 어스 나우"
+        },
+        {
+          "T1": "left",
+          "K1": "남았다",
+          "R1": "래프트",
+          "E1": "'Left'는 남아 있는 상황을 나타내는 동사입니다. 여기서는 '아무것도 남지 않았다'는 의미로 사용됩니다.",
+          "T2": "leave",
+          "K2": "남기다",
+          "R2": "리브",
+          "XE": "Only crumbs were left on the plate.",
+          "XK": "접시에 빵 부스러기만 남았어.",
+          "XR": "온리 크럼즈 워 래프트 온 더 플레이트"
+        },
+        {
+          "T1": "to",
+          "K1": "~하기 위해",
+          "R1": "투",
+          "E1": "'To'는 목적을 나타내는 전치사로 여기서는 'lose'와 함께 '잃기 위해'의 의미로 사용됩니다.",
+          "T2": "to",
+          "K2": "~하기 위해",
+          "R2": "투",
+          "XE": "She came to see you.",
+          "XK": "그녀는 너를 보러 왔어.",
+          "XR": "쉬 케임 투 씨 유"
+        },
+        {
+          "T1": "lose",
+          "K1": "잃다",
+          "R1": "루즈",
+          "E1": "'Lose'는 무언가를 잃거나 놓치는 행위를 나타내는 동사입니다.",
+          "T2": "lose",
+          "K2": "잃다",
+          "R2": "루즈",
+          "XE": "He doesn't want to lose his keys.",
+          "XK": "그는 그의 열쇠를 잃는 것을 원하지 않는다.",
+          "XR": "히 더즌트 원트 투 루즈 히즈 키즈"
+        },
+        {
+          "T1": "without",
+          "K1": "~없이",
+          "R1": "윗아웃",
+          "E1": "'Without'는 부재를 나타내는 전치사로, 여기서는 'my baby'와 함께 '내 아기 없이'의 의미로 사용됩니다.",
+          "T2": "without",
+          "K2": "~없이",
+          "R2": "윗아웃",
+          "XE": "She can't live without her phone.",
+          "XK": "그녀는 핸드폰 없이 살 수 없어.",
+          "XR": "쉬 캔트 리브 윗아웃 허 폰"
+        },
+        {
+          "T1": "my",
+          "K1": "나의",
+          "R1": "마이",
+          "E1": "'My'는 소유 대명사로, 화자가 소유하는 것을 나타냅니다.",
+          "T2": "my",
+          "K2": "나의",
+          "R2": "마이",
+          "XE": "This is my book.",
+          "XK": "이것은 내 책이야.",
+          "XR": "디스 이즈 마이 북"
+        },
+        {
+          "T1": "baby",
+          "K1": "사랑아",
+          "R1": "베이비",
+          "E1": "'Baby'는 어린 아기나 친근하게 부르는 말로도 사용됩니다. 여기서는 사랑하는 사람을 의미하는 비유적 표현입니다.",
+          "T2": "baby",
+          "K2": "아기",
+          "R2": "베이비",
+          "XE": "The baby is sleeping.",
+          "XK": "아기가 자고 있어.",
+          "XR": "더 베이비 이즈 슬리핑"
+        }
+      ]
+    },
+    {
+      "T0": "It might not be long, but baby, I",
+      "C0": "네가 길지 않을 수도 있지만, 사랑아, 나는 네가 죽는 날까지 너를 사랑할 거야.",
+      "G0": "'It might not be long, but baby, I'는 주어(It), 조동사(might), 부정어(not), 형용사(long), 접속사(but), 호칭(baby), 주어(I)로 이루어져 있으며, 주절과 종속절을 연결하는 문장 구조입니다.",
+      "K0": "그게 길지 않을 수도 있지만, 사랑아, 나는",
+      "R0": "잇 마잇 낫 비 롱, 벗 베이비, 아이",
+      "LI": [
+        {
+          "T1": "It",
+          "K1": "그것",
+          "R1": "잇",
+          "E1": "'It'는 명확하지 않은 대상을 가리킬 때 사용하는 3인칭 단수 주어입니다.",
+          "T2": "it",
+          "K2": "그것",
+          "R2": "잇",
+          "XE": "It is raining.",
+          "XK": "비가 온다.",
+          "XR": "잇 이즈 레이닝"
+        },
+        {
+          "T1": "might",
+          "K1": "~일지도 모른다",
+          "R1": "마잇",
+          "E1": "'Might'는 가능성을 나타내는 조동사로, 현재의 불확실한 상황을 표현합니다.",
+          "T2": "might",
+          "K2": "~일지도 모른다",
+          "R2": "마잇",
+          "XE": "It might rain later.",
+          "XK": "나중에 비가 올지도 몰라.",
+          "XR": "잇 마잇 레인 레이러"
+        },
+        {
+          "T1": "not",
+          "K1": "아니다",
+          "R1": "낫",
+          "E1": "'Not'는 문장을 부정하는 부사입니다.",
+          "T2": "not",
+          "K2": "아니다",
+          "R2": "낫",
+          "XE": "I do not like it.",
+          "XK": "나는 그것을 좋아하지 않는다.",
+          "XR": "아이 두 낫 라이크 잇"
+        },
+        {
+          "T1": "be",
+          "K1": "이다",
+          "R1": "비",
+          "E1": "'Be'는 존재나 상태를 나타내는 동사입니다. 문맥에 따라 의미가 달라질 수 있습니다.",
+          "T2": "be",
+          "K2": "이다",
+          "R2": "비",
+          "XE": "He wants to be a doctor.",
+          "XK": "그는 의사가 되고 싶어 한다.",
+          "XR": "히 원츠 투 비 어 닥터"
+        },
+        {
+          "T1": "long",
+          "K1": "길다",
+          "R1": "롱",
+          "E1": "'Long'은 시간이나 거리가 길다는 의미를 나타내는 형용사입니다.",
+          "T2": "long",
+          "K2": "길다",
+          "R2": "롱",
+          "XE": "The movie was very long.",
+          "XK": "그 영화는 매우 길었다.",
+          "XR": "더 무비 워즈 베리 롱"
+        },
+        {
+          "T1": "but",
+          "K1": "하지만",
+          "R1": "벗",
+          "E1": "'But'는 대조적인 내용을 연결할 때 사용하는 접속사입니다.",
+          "T2": "but",
+          "K2": "하지만",
+          "R2": "벗",
+          "XE": "I like apples, but I don't like oranges.",
+          "XK": "나는 사과는 좋아하지만, 오렌지는 좋아하지 않는다.",
+          "XR": "아이 라이크 애플즈, 벗 아이 돈트 라이크 오렌지즈"
+        },
+        {
+          "T1": "baby",
+          "K1": "사랑아",
+          "R1": "베이비",
+          "E1": "'Baby'는 연인을 애정 어리게 부를 때 사용하는 단어입니다.",
+          "T2": "baby",
+          "K2": "사랑아",
+          "R2": "베이비",
+          "XE": "Come here, baby.",
+          "XK": "여기 와, 사랑아.",
+          "XR": "컴 히어, 베이비"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 단수 주어로, 화자를 의미합니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 가고 있다.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        }
+      ]
+    },
+    {
+      "T0": "'Til I rot away, dead and buried",
+      "C0": "내가 무덤에 들어갈 때까지, 내가 썩어 없어져서 죽고 묻힐 때까지, 네가 들고 가는 관에 들어갈 때까지",
+      "G0": "'Til I rot away, dead and buried'는 시간의 한계를 나타내는 접속사('til)와 조건을 나타내는 절(I rot away, dead and buried)로 이루어진 구조입니다. 이 표현은 특정 시점까지 지속되는 상태를 의미합니다.",
+      "K0": "내가 썩어 없어져서 죽고 묻힐 때까지",
+      "R0": "틸 아이 롯 어웨이, 데드 앤드 베리드",
+      "LI": [
+        {
+          "T1": "'Til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til'은 'Until'의 줄임말로, 어떤 사건이나 상태가 특정 시점까지 계속됨을 의미합니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Wait here 'til I come back.",
+          "XK": "내가 돌아올 때까지 여기서 기다려.",
+          "XR": "웨이트 히어 틸 아이 컴 백"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자가 자기 자신을 지칭하는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I like to read books.",
+          "XK": "나는 책 읽는 것을 좋아해.",
+          "XR": "아이 라이크 투 리드 북스"
+        },
+        {
+          "T1": "rot",
+          "K1": "썩다",
+          "R1": "롯",
+          "E1": "'Rot'는 유기물이 부패하여 분해되는 과정을 나타내는 동사입니다.",
+          "T2": "rot",
+          "K2": "썩다",
+          "R2": "롯",
+          "XE": "The fruit will rot if you leave it out too long.",
+          "XK": "과일을 너무 오래 두면 썩을 거야.",
+          "XR": "더 프룻 윌 롯 이프 유 리브 잇 아웃 투 롱"
+        },
+        {
+          "T1": "away",
+          "K1": "떨어져",
+          "R1": "어웨이",
+          "E1": "'Away'는 멀리 떨어진 위치를 나타내는 부사로, 물리적 거리나 심리적 거리를 의미합니다.",
+          "T2": "away",
+          "K2": "떨어져",
+          "R2": "어웨이",
+          "XE": "The cat ran away from the dog.",
+          "XK": "고양이는 개에게서 도망쳤어.",
+          "XR": "더 캣 란 어웨이 프롬 더 도그"
+        },
+        {
+          "T1": "dead",
+          "K1": "죽은",
+          "R1": "데드",
+          "E1": "'Dead'는 생물의 생명이 끝난 상태를 나타내는 형용사입니다.",
+          "T2": "dead",
+          "K2": "죽은",
+          "R2": "데드",
+          "XE": "The plant is dead because it hasn't been watered.",
+          "XK": "식물은 물을 주지 않아서 죽었어.",
+          "XR": "더 플랜트 이즈 데드 비커즈 잇 해즌트 빈 워터드"
+        },
+        {
+          "T1": "and",
+          "K1": "그리고",
+          "R1": "앤드",
+          "E1": "'And'는 문장이나 단어를 연결하는 접속사로, 두 가지 이상을 나열할 때 사용됩니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I have a cat and a dog.",
+          "XK": "나는 고양이와 개를 키워.",
+          "XR": "아이 해브 어 캣 앤드 어 도그"
+        },
+        {
+          "T1": "buried",
+          "K1": "묻힌",
+          "R1": "베리드",
+          "E1": "'Buried'는 흙 속에 넣어 가리는 행위를 나타내는 과거형 및 과거분사형 동사입니다. 여기서는 죽어서 묻힌 상태를 의미합니다.",
+          "T2": "bury",
+          "K2": "묻다",
+          "R2": "베리",
+          "XE": "The treasure was buried in the sand.",
+          "XK": "보물은 모래 속에 묻혀 있었어.",
+          "XR": "더 트레저 워즈 베리드 인 더 샌드"
+        }
+      ]
+    },
+    {
+      "T0": "You would keep the compliments I throw ya",
+      "C0": "내가 너에게 말하면 믿지 않을 거야. 내가 너에게 던지는 칭찬을 너는 계속 가지고 있을 거야. 하지만 너는 정말 거짓말쟁이야, 어.",
+      "G0": "'You would keep the compliments I throw ya'는 주어(You), 조동사(would), 동사(keep), 목적어(the compliments), 관계절(I throw ya)로 이루어진 문장 구조입니다. 주어가 가정적인 상황에서 어떤 행동을 지속적으로 할 것임을 나타냅니다.",
+      "K0": "내가 너에게 던지는 칭찬을 너는 간직할 거야.",
+      "R0": "유 우드 킵 더 컴플리먼츠 아이 쓰로우 야",
+      "LI": [
+        {
+          "T1": "You",
+          "K1": "너",
+          "R1": "유",
+          "E1": "'You'는 청자를 가리키는 2인칭 대명사입니다.",
+          "T2": "you",
+          "K2": "너",
+          "R2": "유",
+          "XE": "You are my friend.",
+          "XK": "너는 내 친구야.",
+          "XR": "유 아 마이 프렌드"
+        },
+        {
+          "T1": "would",
+          "K1": "~할 것이다",
+          "R1": "우드",
+          "E1": "'Would'는 상황을 가정할 때나 예측된 동작을 나타내는 조동사입니다.",
+          "T2": "would",
+          "K2": "~할 것이다",
+          "R2": "우드",
+          "XE": "I would go if I were you.",
+          "XK": "내가 너라면 갈 거야.",
+          "XR": "아이 우드 고 이프 아이 워 유"
+        },
+        {
+          "T1": "keep",
+          "K1": "유지하다",
+          "R1": "킵",
+          "E1": "'Keep'는 어떤 상태나 동작을 유지하거나 간직하는 것을 의미하는 동사입니다.",
+          "T2": "keep",
+          "K2": "유지하다",
+          "R2": "킵",
+          "XE": "Please keep this secret.",
+          "XK": "이 비밀을 꼭 지켜줘.",
+          "XR": "플리즈 킵 디스 시크릿"
+        },
+        {
+          "T1": "the compliments",
+          "K1": "칭찬",
+          "R1": "더 컴플리먼츠",
+          "E1": "'Compliments'는 칭찬이나 칭찬의 말을 의미하는 명사입니다.",
+          "T2": "compliment",
+          "K2": "칭찬",
+          "R2": "컴플리먼트",
+          "XE": "She received many compliments on her dress.",
+          "XK": "그녀는 드레스에 대한 많은 칭찬을 받았어.",
+          "XR": "쉬 리시브드 매니 컴플리먼츠 온 허 드레스"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 화자를 나타내는 1인칭 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am happy.",
+          "XK": "나는 행복해.",
+          "XR": "아이 엠 해피"
+        },
+        {
+          "T1": "throw",
+          "K1": "던지다",
+          "R1": "쓰로우",
+          "E1": "'Throw'는 물체를 던지는 동작을 나타내는 동사입니다. 여기서는 칭찬을 주는 것을 비유적으로 표현하고 있습니다.",
+          "T2": "throw",
+          "K2": "던지다",
+          "R2": "쓰로우",
+          "XE": "Can you throw me the ball?",
+          "XK": "공을 나에게 던질 수 있니?",
+          "XR": "캔 유 쓰로우 미 더 볼?"
+        },
+        {
+          "T1": "ya",
+          "K1": "너에게",
+          "R1": "야",
+          "E1": "'Ya'는 'you'의 비격식 표현으로, 주로 구어체에서 사용됩니다.",
+          "T2": "you",
+          "K2": "너에게",
+          "R2": "유",
+          "XE": "I'll see ya later.",
+          "XK": "나중에 봐.",
+          "XR": "아일 씨 야 레이터"
+        }
+      ]
+    },
+    {
+      "T0": "I said I'd never think I wasn't better alone",
+      "C0": "같은 깃털의 새들, 우리는 함께 있어야 해, 알아 나는 혼자가 더 낫지 않다고 생각하지 않겠다고 말했어. 날씨는 바꿀 수 없고, 영원하지 않을 수도 있어",
+      "G0": "'I said I'd never think I wasn't better alone'은 주어(I), 동사(said), 목적어(that I'd never think I wasn't better alone)로 이루어진 복문입니다. 부정형과 과거 시제가 사용된 복잡한 구조로, 주어가 과거에 했던 선언을 전달하고 있습니다.",
+      "K0": "나는 혼자가 더 낫지 않다고 생각하지 않겠다고 말했어",
+      "R0": "아이 세드 아이드 네버 씽크 아이 워즌트 베터 얼론",
+      "LI": [
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 1인칭 단수 주어를 나타내는 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "said",
+          "K1": "말했다",
+          "R1": "세드",
+          "E1": "'Said'는 동사 'say'의 과거형으로, 어떤 말을 표현했음을 나타냅니다.",
+          "T2": "say",
+          "K2": "말하다",
+          "R2": "세이",
+          "XE": "She said she was happy.",
+          "XK": "그녀는 행복하다고 말했다.",
+          "XR": "쉬 세드 쉬 워즈 해피"
+        },
+        {
+          "T1": "I'd",
+          "K1": "나는 ~할 것이다",
+          "R1": "아이드",
+          "E1": "'I'd'는 'I'와 'would'가 축약된 형태로, 특정한 미래의 행동이나 의도를 나타냅니다.",
+          "T2": "I would",
+          "K2": "나는 ~할 것이다",
+          "R2": "아이 우드",
+          "XE": "I'd go if I could.",
+          "XK": "갈 수 있다면 갈 건데.",
+          "XR": "아이드 고 이프 아이 쿠드"
+        },
+        {
+          "T1": "never",
+          "K1": "절대",
+          "R1": "네버",
+          "E1": "'Never'는 전혀~않다는 의미를 가진 부사로, 부정을 강조합니다.",
+          "T2": "never",
+          "K2": "절대",
+          "R2": "네버",
+          "XE": "I will never forget.",
+          "XK": "나는 절대 잊지 않을 거야.",
+          "XR": "아이 윌 네버 포겟"
+        },
+        {
+          "T1": "think",
+          "K1": "생각하다",
+          "R1": "씽크",
+          "E1": "'Think'는 어떤 것을 내적으로 숙고하거나 판단하는 행위를 나타내는 동사입니다.",
+          "T2": "think",
+          "K2": "생각하다",
+          "R2": "씽크",
+          "XE": "I think it's a good idea.",
+          "XK": "그것은 좋은 생각인 것 같아.",
+          "XR": "아이 씽크 잇츠 어 굿 아이디어"
+        },
+        {
+          "T1": "I",
+          "K1": "내가",
+          "R1": "아이",
+          "E1": "'I'는 문장에서 '나'를 나타내는 주어로 사용됩니다.",
+          "T2": "I",
+          "K2": "내가",
+          "R2": "아이",
+          "XE": "I made a decision.",
+          "XK": "내가 결정을 내렸어.",
+          "XR": "아이 메이드 어 디시전"
+        },
+        {
+          "T1": "wasn't",
+          "K1": "~하지 않았다",
+          "R1": "워즌트",
+          "E1": "'Wasn't'는 'was not'의 축약 형태로, 부정의 의미를 가진 과거 시제입니다.",
+          "T2": "was not",
+          "K2": "~하지 않았다",
+          "R2": "워즈 낫",
+          "XE": "He wasn't there.",
+          "XK": "그는 거기 있지 않았어.",
+          "XR": "히 워즌트 데어"
+        },
+        {
+          "T1": "better",
+          "K1": "더 나은",
+          "R1": "베터",
+          "E1": "'Better'는 'good'의 비교급 형태로, 더 높은 질이나 상태를 나타냅니다.",
+          "T2": "good",
+          "K2": "좋은",
+          "R2": "굿",
+          "XE": "This is better than that.",
+          "XK": "이게 저것보다 더 나아.",
+          "XR": "디스 이즈 베터 덴 댓"
+        },
+        {
+          "T1": "alone",
+          "K1": "혼자",
+          "R1": "얼론",
+          "E1": "'Alone'은 홀로 있는 상태를 나타내는 형용사입니다.",
+          "T2": "alone",
+          "K2": "혼자",
+          "R2": "얼론",
+          "XE": "She likes to be alone.",
+          "XK": "그녀는 혼자 있는 것을 좋아해.",
+          "XR": "쉬 라이크스 투 비 얼론"
+        }
+      ]
+    },
+    {
+      "T0": "Birds of a feather, we should stick together, I know ('til the day that I die)",
+      "C0": "안녕을 말하고 싶지 않아. 깃털이 같은 새들처럼, 우리는 함께 있어야 한다는 것을 알아 ('내가 죽는 날까지). 나는 혼자가 더 낫다고 생각하지 않겠다고 말했어 ('내 눈에서 빛이 사라질 때까지).",
+      "G0": "'Birds of a feather, we should stick together, I know'는 비유적 표현입니다. 주어(Birds of a feather), 부사절(we should stick together), 그리고 주어(I)와 동사(know)로 이루어진 복합 문장입니다. 'Birds of a feather'는 같은 성향이나 특징을 가진 사람들을 의미합니다.",
+      "K0": "깃털이 같은 새들처럼, 우리는 함께 있어야 해, 나는 알아 (내가 죽는 날까지).",
+      "R0": "벌즈 오브 어 페더, 위 슈드 스틱 투게더, 아이 노우 (틸 더 데이 댓 아이 다이)",
+      "LI": [
+        {
+          "T1": "Birds",
+          "K1": "새들",
+          "R1": "벌즈",
+          "E1": "'Birds'는 하늘을 나는 동물을 의미하는 명사입니다. 여기서는 비유적으로 사용되었습니다.",
+          "T2": "bird",
+          "K2": "새",
+          "R2": "버드",
+          "XE": "The birds are singing outside.",
+          "XK": "새들이 밖에서 노래하고 있다.",
+          "XR": "더 벌즈 아 싱잉 아웃사이드"
+        },
+        {
+          "T1": "of",
+          "K1": "~의",
+          "R1": "오브",
+          "E1": "'Of'는 소유나 관련성을 나타내는 전치사입니다.",
+          "T2": "of",
+          "K2": "~의",
+          "R2": "오브",
+          "XE": "The color of the sky is blue.",
+          "XK": "하늘의 색깔은 파란색이다.",
+          "XR": "더 컬러 오브 더 스카이 이즈 블루"
+        },
+        {
+          "T1": "a",
+          "K1": "하나의",
+          "R1": "어",
+          "E1": "'A'는 단수 명사 앞에 붙여서 하나임을 나타내는 부정관사입니다.",
+          "T2": "a",
+          "K2": "하나의",
+          "R2": "어",
+          "XE": "I have a book.",
+          "XK": "나는 책 한 권을 가지고 있다.",
+          "XR": "아이 해브 어 북"
+        },
+        {
+          "T1": "feather",
+          "K1": "깃털",
+          "R1": "페더",
+          "E1": "깃털을 의미하는 명사입니다. 'Birds of a feather'는 같은 성향이나 특징을 가진 사람들을 의미합니다.",
+          "T2": "feather",
+          "K2": "깃털",
+          "R2": "페더",
+          "XE": "The bird's feather was bright yellow.",
+          "XK": "그 새의 깃털은 밝은 노란색이었다.",
+          "XR": "더 벌즈 페더 워즈 브라이트 옐로"
+        },
+        {
+          "T1": "we",
+          "K1": "우리",
+          "R1": "위",
+          "E1": "'We'는 화자와 청자를 포함한 복수 주어를 나타내는 대명사입니다.",
+          "T2": "we",
+          "K2": "우리",
+          "R2": "위",
+          "XE": "We are going to the park.",
+          "XK": "우리는 공원에 갈 거야.",
+          "XR": "위 아 고잉 투 더 파크"
+        },
+        {
+          "T1": "should",
+          "K1": "~해야 한다",
+          "R1": "슈드",
+          "E1": "'Should'는 조동사로서 권장이나 의무를 나타냅니다.",
+          "T2": "shall",
+          "K2": "~일 것이다",
+          "R2": "셸",
+          "XE": "You should see a doctor.",
+          "XK": "너는 병원에 가봐야 해.",
+          "XR": "유 슈드 시 어 닥터"
+        },
+        {
+          "T1": "stick",
+          "K1": "붙다",
+          "R1": "스틱",
+          "E1": "'Stick'은 물리적으로 붙거나 정서적으로 단단히 결합하는 것을 의미하는 동사입니다.",
+          "T2": "stick",
+          "K2": "붙다",
+          "R2": "스틱",
+          "XE": "The sticker will stick to the wall.",
+          "XK": "스티커는 벽에 붙을 것이다.",
+          "XR": "더 스티커 윌 스틱 투 더 월"
+        },
+        {
+          "T1": "together",
+          "K1": "함께",
+          "R1": "투게더",
+          "E1": "'Together'는 동반, 동시에, 또는 함께라는 의미를 가진 부사입니다.",
+          "T2": "together",
+          "K2": "함께",
+          "R2": "투게더",
+          "XE": "We finished the project together.",
+          "XK": "우리는 프로젝트를 함께 끝냈다.",
+          "XR": "위 피니쉬드 더 프로젝트 투게더"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 자기를 지칭하는 일인칭 단수 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am going to the store.",
+          "XK": "나는 가게에 갈 거야.",
+          "XR": "아이 엠 고잉 투 더 스토어"
+        },
+        {
+          "T1": "know",
+          "K1": "알다",
+          "R1": "노우",
+          "E1": "'Know'는 정보를 이해하거나 인지하는 것을 뜻하는 동사입니다.",
+          "T2": "know",
+          "K2": "알다",
+          "R2": "노우",
+          "XE": "I know the answer.",
+          "XK": "나는 답을 알고 있다.",
+          "XR": "아이 노우 더 앤서"
+        },
+        {
+          "T1": "'til",
+          "K1": "~까지",
+          "R1": "틸",
+          "E1": "'Til'은 'until'의 축약형으로, 특정 시간이나 사건까지의 기간을 나타냅니다.",
+          "T2": "until",
+          "K2": "~까지",
+          "R2": "언틸",
+          "XE": "Wait here 'til I come back.",
+          "XK": "내가 돌아올 때까지 여기서 기다려.",
+          "XR": "웨잇 히어 '틸 아이 컴 백"
+        },
+        {
+          "T1": "the",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'The'는 특정한 대상을 지칭할 때 사용하는 정관사입니다.",
+          "T2": "the",
+          "K2": "그",
+          "R2": "더",
+          "XE": "The sun is shining.",
+          "XK": "해가 빛나고 있다.",
+          "XR": "더 선 이즈 샤이닝"
+        },
+        {
+          "T1": "day",
+          "K1": "날",
+          "R1": "데이",
+          "E1": "'Day'는 24시간을 주기로 한 시간을 나타내는 명사입니다.",
+          "T2": "day",
+          "K2": "날",
+          "R2": "데이",
+          "XE": "It was a sunny day.",
+          "XK": "화창한 날이었다.",
+          "XR": "잇 워즈 어 써니 데이"
+        },
+        {
+          "T1": "that",
+          "K1": "그",
+          "R1": "댓",
+          "E1": "'That'은 특정 대상이나 상황을 가리키는 지시 대명사입니다.",
+          "T2": "that",
+          "K2": "그것",
+          "R2": "댓",
+          "XE": "That is amazing.",
+          "XK": "그것은 놀랍다.",
+          "XR": "댓 이즈 어메이징"
+        },
+        {
+          "T1": "I",
+          "K1": "나",
+          "R1": "아이",
+          "E1": "'I'는 자기를 지칭하는 일인칭 단수 대명사입니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "I am studying.",
+          "XK": "나는 공부하고 있다.",
+          "XR": "아이 엠 스터디잉"
+        },
+        {
+          "T1": "die",
+          "K1": "죽다",
+          "R1": "다이",
+          "E1": "'Die'는 생명을 잃거나 종말을 맞이하는 의미를 가진 동사입니다.",
+          "T2": "die",
+          "K2": "죽다",
+          "R2": "다이",
+          "XE": "Plants need water to live, or else they will die.",
+          "XK": "식물은 살기 위해 물이 필요하다, 그렇지 않으면 죽을 것이다.",
+          "XR": "플랜츠 니드 워터 투 리브, 오 엘스 데이 윌 다이"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}

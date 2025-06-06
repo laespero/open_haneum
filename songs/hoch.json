@@ -1,0 +1,2751 @@
+{
+  "name": "hoch",
+  "text": "La, la la la la, ey\nIch war in den Hills von L.A.\nZwischen den größten Legenden der Welt\nIch war am Hafen Marseilles\nAß den Fisch dort direkt aus der See\nIch war am Herzen Ugandas\nGenoss die Wärme der Nächte Kampalas\nBin durch die Hügel gewandert\nAuf dem irischen Wicklow bei Dublin\nUnd ich guck' schon wieder auf mein Handy\nDenn mein Kopf ist bei dir\nMann, wann seh' ich dich endlich?\nIch schick' 'n Herz in Rot zu dir\nEs gibt 194 Länder, ich will jedes davon seh'n\nSechseinhalb Tausend Sprachen\nIch versuch' sie zu versteh'n\nDie ganze Welt voll Abenteuer\nWill so viel wie's geht erleben\nAber dich, Baby, dich, nur dich\nGibt's halt einmal für mich\nIch trank Wein in Florenz\nUnter den Bäum'n der Toskana\nMann, ich war feiern in Krakau\nUnd bin fast daheim in Warschau\nIch lag wach am Big Apple\nSang mit Chör'n in Manhattan\nCamino Francés war die Rettung\nKonnt' mich auf spanischen Pfaden entdecken\nUnd ich guck' schon wieder auf mein Handy\nDenn mein Kopf ist bei dir\nMann, wann seh' ich dich endlich?\nIch schick' 'n Herz in Rot zu dir\nEs gibt 194 Länder, ich will jedes davon seh'n\nSechseinhalb Tausend Sprachen\nIch versuch' sie zu versteh'n\nDie ganze Welt voll Abenteuer\nWill so viel wie's geht erleben\nAber dich, Baby, dich, nur dich\nGibt's halt einmal für mich\nDie ganze Welt voll Abenteuer\nWill so viel wie's geht erleben\nAber dich, Baby, dich, nur dich\nGibt's halt einmal für mich\nUnd schon wieder penn' ich ein\nMit dem Handy in der Hand\nDoch heute schlaf' ich gut, denn ich weiß\nMorgen kommst du hier an\nEs gibt 194 Länder, ich will jedes davon seh'n\nSechseinhalb Tausend Sprachen\nIch versuch' sie zu versteh'n\nDie ganze Welt voll Abenteuer\nWill so viel wie's geht erleben\nAber dich, Baby, dich, nur dich\nGibt's halt einmal für mich\nDie ganze Welt voll Abenteuer\nWill so viel wie's geht erleben\nAber dich, Baby, dich, nur dich\nGibt's halt einmal für mich",
+  "p1": [
+    "La, la la la la, ey",
+    "Ich war in den Hills von L.A.",
+    "Zwischen den größten Legenden der Welt",
+    "Ich war am Hafen Marseilles",
+    "Aß den Fisch dort direkt aus der See",
+    "Ich war am Herzen Ugandas",
+    "Genoss die Wärme der Nächte Kampalas",
+    "Bin durch die Hügel gewandert",
+    "Auf dem irischen Wicklow bei Dublin",
+    "Und ich guck' schon wieder auf mein Handy",
+    "Denn mein Kopf ist bei dir",
+    "Mann, wann seh' ich dich endlich?",
+    "Ich schick' 'n Herz in Rot zu dir",
+    "Es gibt 194 Länder, ich will jedes davon seh'n",
+    "Sechseinhalb Tausend Sprachen",
+    "Ich versuch' sie zu versteh'n",
+    "Die ganze Welt voll Abenteuer",
+    "Will so viel wie's geht erleben",
+    "Aber dich, Baby, dich, nur dich",
+    "Gibt's halt einmal für mich",
+    "Ich trank Wein in Florenz",
+    "Unter den Bäum'n der Toskana",
+    "Mann, ich war feiern in Krakau",
+    "Und bin fast daheim in Warschau",
+    "Ich lag wach am Big Apple",
+    "Sang mit Chör'n in Manhattan",
+    "Camino Francés war die Rettung",
+    "Konnt' mich auf spanischen Pfaden entdecken",
+    "Und schon wieder penn' ich ein",
+    "Mit dem Handy in der Hand",
+    "Doch heute schlaf' ich gut, denn ich weiß",
+    "Morgen kommst du hier an"
+  ],
+  "contextText": [
+    {
+      "T0": "La, la la la la, ey",
+      "CX": "La, la la la la, ey Ich war in den Hills von L.A."
+    },
+    {
+      "T0": "Ich war in den Hills von L.A.",
+      "CX": "La, la la la la, ey Ich war in den Hills von L.A. Zwischen den größten Legenden der Welt"
+    },
+    {
+      "T0": "Zwischen den größten Legenden der Welt",
+      "CX": "Ich war in den Hills von L.A. Zwischen den größten Legenden der Welt Ich war am Hafen Marseilles"
+    },
+    {
+      "T0": "Ich war am Hafen Marseilles",
+      "CX": "Zwischen den größten Legenden der Welt Ich war am Hafen Marseilles Aß den Fisch dort direkt aus der See"
+    },
+    {
+      "T0": "Aß den Fisch dort direkt aus der See",
+      "CX": "Ich war am Hafen Marseilles Aß den Fisch dort direkt aus der See Ich war am Herzen Ugandas"
+    },
+    {
+      "T0": "Ich war am Herzen Ugandas",
+      "CX": "Aß den Fisch dort direkt aus der See Ich war am Herzen Ugandas Genoss die Wärme der Nächte Kampalas"
+    },
+    {
+      "T0": "Genoss die Wärme der Nächte Kampalas",
+      "CX": "Ich war am Herzen Ugandas Genoss die Wärme der Nächte Kampalas Bin durch die Hügel gewandert"
+    },
+    {
+      "T0": "Bin durch die Hügel gewandert",
+      "CX": "Genoss die Wärme der Nächte Kampalas Bin durch die Hügel gewandert Auf dem irischen Wicklow bei Dublin"
+    },
+    {
+      "T0": "Auf dem irischen Wicklow bei Dublin",
+      "CX": "Bin durch die Hügel gewandert Auf dem irischen Wicklow bei Dublin Und ich guck' schon wieder auf mein Handy"
+    },
+    {
+      "T0": "Und ich guck' schon wieder auf mein Handy",
+      "CX": "Auf dem irischen Wicklow bei Dublin Und ich guck' schon wieder auf mein Handy Denn mein Kopf ist bei dir"
+    },
+    {
+      "T0": "Denn mein Kopf ist bei dir",
+      "CX": "Und ich guck' schon wieder auf mein Handy Denn mein Kopf ist bei dir Mann, wann seh' ich dich endlich?"
+    },
+    {
+      "T0": "Mann, wann seh' ich dich endlich?",
+      "CX": "Denn mein Kopf ist bei dir Mann, wann seh' ich dich endlich? Ich schick' 'n Herz in Rot zu dir"
+    },
+    {
+      "T0": "Ich schick' 'n Herz in Rot zu dir",
+      "CX": "Mann, wann seh' ich dich endlich? Ich schick' 'n Herz in Rot zu dir Es gibt 194 Länder, ich will jedes davon seh'n"
+    },
+    {
+      "T0": "Es gibt 194 Länder, ich will jedes davon seh'n",
+      "CX": "Ich schick' 'n Herz in Rot zu dir Es gibt 194 Länder, ich will jedes davon seh'n Sechseinhalb Tausend Sprachen"
+    },
+    {
+      "T0": "Sechseinhalb Tausend Sprachen",
+      "CX": "Es gibt 194 Länder, ich will jedes davon seh'n Sechseinhalb Tausend Sprachen Ich versuch' sie zu versteh'n"
+    },
+    {
+      "T0": "Ich versuch' sie zu versteh'n",
+      "CX": "Sechseinhalb Tausend Sprachen Ich versuch' sie zu versteh'n Die ganze Welt voll Abenteuer"
+    },
+    {
+      "T0": "Die ganze Welt voll Abenteuer",
+      "CX": "Ich versuch' sie zu versteh'n Die ganze Welt voll Abenteuer Will so viel wie's geht erleben"
+    },
+    {
+      "T0": "Will so viel wie's geht erleben",
+      "CX": "Die ganze Welt voll Abenteuer Will so viel wie's geht erleben Aber dich, Baby, dich, nur dich"
+    },
+    {
+      "T0": "Aber dich, Baby, dich, nur dich",
+      "CX": "Will so viel wie's geht erleben Aber dich, Baby, dich, nur dich Gibt's halt einmal für mich"
+    },
+    {
+      "T0": "Gibt's halt einmal für mich",
+      "CX": "Aber dich, Baby, dich, nur dich Gibt's halt einmal für mich Ich trank Wein in Florenz"
+    },
+    {
+      "T0": "Ich trank Wein in Florenz",
+      "CX": "Gibt's halt einmal für mich Ich trank Wein in Florenz Unter den Bäum'n der Toskana"
+    },
+    {
+      "T0": "Unter den Bäum'n der Toskana",
+      "CX": "Ich trank Wein in Florenz Unter den Bäum'n der Toskana Mann, ich war feiern in Krakau"
+    },
+    {
+      "T0": "Mann, ich war feiern in Krakau",
+      "CX": "Unter den Bäum'n der Toskana Mann, ich war feiern in Krakau Und bin fast daheim in Warschau"
+    },
+    {
+      "T0": "Und bin fast daheim in Warschau",
+      "CX": "Mann, ich war feiern in Krakau Und bin fast daheim in Warschau Ich lag wach am Big Apple"
+    },
+    {
+      "T0": "Ich lag wach am Big Apple",
+      "CX": "Und bin fast daheim in Warschau Ich lag wach am Big Apple Sang mit Chör'n in Manhattan"
+    },
+    {
+      "T0": "Sang mit Chör'n in Manhattan",
+      "CX": "Ich lag wach am Big Apple Sang mit Chör'n in Manhattan Camino Francés war die Rettung"
+    },
+    {
+      "T0": "Camino Francés war die Rettung",
+      "CX": "Sang mit Chör'n in Manhattan Camino Francés war die Rettung Konnt' mich auf spanischen Pfaden entdecken"
+    },
+    {
+      "T0": "Konnt' mich auf spanischen Pfaden entdecken",
+      "CX": "Camino Francés war die Rettung Konnt' mich auf spanischen Pfaden entdecken Und schon wieder penn' ich ein"
+    },
+    {
+      "T0": "Und schon wieder penn' ich ein",
+      "CX": "Konnt' mich auf spanischen Pfaden entdecken Und schon wieder penn' ich ein Mit dem Handy in der Hand"
+    },
+    {
+      "T0": "Mit dem Handy in der Hand",
+      "CX": "Und schon wieder penn' ich ein Mit dem Handy in der Hand Doch heute schlaf' ich gut, denn ich weiß"
+    },
+    {
+      "T0": "Doch heute schlaf' ich gut, denn ich weiß",
+      "CX": "Mit dem Handy in der Hand Doch heute schlaf' ich gut, denn ich weiß Morgen kommst du hier an"
+    },
+    {
+      "T0": "Morgen kommst du hier an",
+      "CX": "Doch heute schlaf' ich gut, denn ich weiß Morgen kommst du hier an"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "La, la la la la, ey",
+      "C0": "라, 라 라 라 라, 에이. 나는 L.A.의 언덕에 있었어.",
+      "G0": "'La, la la la la, ey'는 반복적인 음절로 구성된 짧은 구문입니다. 노래의 멜로디를 따라가며 감정을 표현하고자 하는 문장 구조입니다.",
+      "K0": "라, 라 라 라 라, 에이.",
+      "R0": "라, 라 라 라 라, 에이",
+      "LI": [
+        {
+          "T1": "La",
+          "K1": "라",
+          "R1": "라",
+          "E1": "'La'는 노래에서 감정을 표현하기 위해 주로 사용되는 음절로, 특별한 의미를 지니지 않을 수 있습니다.",
+          "T2": "La",
+          "K2": "라",
+          "R2": "라",
+          "XE": "La la la, I love to sing.",
+          "XK": "라 라 라, 노래 부르는 걸 좋아해.",
+          "XR": "라 라 라, 아이 러브 투 싱"
+        },
+        {
+          "T1": "ey",
+          "K1": "에이",
+          "R1": "에이",
+          "E1": "'Ey'는 상대방의 주의를 끌기 위해 사용하는 비격식적인 표현입니다. 여기서는 감정을 강조하기 위해 사용되었습니다.",
+          "T2": "hey",
+          "K2": "이봐",
+          "R2": "헤이",
+          "XE": "Hey, come here!",
+          "XK": "이봐, 여기 와!",
+          "XR": "헤이, 컴 히어"
+        }
+      ]
+    },
+    {
+      "T0": "Aber dich, Baby, dich, nur dich",
+      "C0": "할 수 있는 만큼 많은 것을 경험하고 싶어 하지만 너, 베이비, 너, 오직 너만 있다면 나에게는 그게 전부야.",
+      "G0": "'Aber dich, Baby, dich, nur dich'는 주어(너), 직접적인 강조(오직 너), 감정 표현(사랑의 대상)이 결합된 구조로, 애정과 그리움을 표현하는 언어입니다.",
+      "K0": "하지만 너, 베이비, 너, 오직 너만 있어.",
+      "R0": "아버 딕, 베이비, 딕, 누르 딕",
+      "LI": [
+        {
+          "T1": "Aber",
+          "K1": "하지만",
+          "R1": "아버",
+          "E1": "'Aber'는 어떤 내용을 부정하거나 대비하는 의미로 사용되는 접속사입니다.",
+          "T2": "aber",
+          "K2": "하지만",
+          "R2": "아버",
+          "XE": "Ich möchte kommen, aber ich habe keine Zeit.",
+          "XK": "오고 싶지만 시간이 없어요.",
+          "XR": "이히 모흐테 코멘, 아버 이흐 하베 카이네 차이트"
+        },
+        {
+          "T1": "dich",
+          "K1": "너를",
+          "R1": "딕",
+          "E1": "'Dich'는 대명사로, 상대방을 지칭하는 형태입니다. 여기서는 사랑하는 상대를 의미합니다.",
+          "T2": "du",
+          "K2": "너",
+          "R2": "두",
+          "XE": "Ich sehe dich.",
+          "XK": "나는 너를 봐.",
+          "XR": "이히 제에 딕"
+        },
+        {
+          "T1": "Baby",
+          "K1": "베이비",
+          "R1": "베이비",
+          "E1": "'Baby'는 애정 어린 호칭으로, 사랑하는 이에게 부르는 말입니다.",
+          "T2": "baby",
+          "K2": "베이비",
+          "R2": "베이비",
+          "XE": "Hey baby, how are you?",
+          "XK": "이봐 베이비, 어떻게 지내?",
+          "XR": "헤이 베이비, 하우 아 유?"
+        },
+        {
+          "T1": "nur",
+          "K1": "오직",
+          "R1": "누르",
+          "E1": "'Nur'는 제한이나 강조의 의미를 나타내며, '오직'이라는 의미에서 사용됩니다.",
+          "T2": "nur",
+          "K2": "오직",
+          "R2": "누르",
+          "XE": "Ich möchte nur dich sehen.",
+          "XK": "나는 오직 너만 보고 싶어.",
+          "XR": "이히 모흐테 누르 딕 제엥"
+        },
+        {
+          "T1": "dich",
+          "K1": "너를",
+          "R1": "딕",
+          "E1": "'Dich'는 대명사로, 상대방을 지칭하는 형태입니다. 여기서는 사랑하는 상대를 의미합니다.",
+          "T2": "du",
+          "K2": "너",
+          "R2": "두",
+          "XE": "Wo bist du?",
+          "XK": "너 어디 있어?",
+          "XR": "보 비스트 두?"
+        }
+      ]
+    },
+    {
+      "T0": "Ich versuch' sie zu versteh'n",
+      "C0": "세천오백 개 언어 나는 그녀를 이해하려고 해. 온 세상이 모험으로 가득 차 있어.",
+      "G0": "'Ich versuch' sie zu versteh'n'는 주어(Ich), 동사(versuch'), 목적어(sie), 보어(zu versteh'n)로 이루어진 문장 구조로, 화자의 시도를 표현하는 구문입니다.",
+      "K0": "나는 그녀를 이해하려고 해.",
+      "R0": "이히 베어슥 지 투 페어슈테인",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나는",
+          "R1": "이히",
+          "E1": "'Ich'는 1인칭 단수 주어를 나타내는 대명사로, 화자를 의미합니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich bin müde.",
+          "XK": "나는 피곤해.",
+          "XR": "이히 빈 뮈데"
+        },
+        {
+          "T1": "versuch'",
+          "K1": "시도하다",
+          "R1": "베어슥",
+          "E1": "'Versuch'는 무엇인가를 시도하는 행위를 나타내는 동사입니다.",
+          "T2": "versuchen",
+          "K2": "시도하다",
+          "R2": "베어수힌",
+          "XE": "Ich versuche, meine Hausaufgaben zu machen.",
+          "XK": "나는 숙제를 하려고 해.",
+          "XR": "이히 베어수힌, 마이네 하우사우프가벤 추 마헨"
+        },
+        {
+          "T1": "sie",
+          "K1": "그녀를",
+          "R1": "지",
+          "E1": "'Sie'는 3인칭 단수 여성 대명사로, 여기서는 특정 대상을 의미합니다.",
+          "T2": "sie",
+          "K2": "그녀",
+          "R2": "지",
+          "XE": "Sie ist meine Freundin.",
+          "XK": "그녀는 내 친구야.",
+          "XR": "지 이스트 마이네 프렌딘"
+        },
+        {
+          "T1": "zu",
+          "K1": "로",
+          "R1": "추",
+          "E1": "'Zu'는 방향이나 목적을 나타내는 전치사로, 불완전한 동사 구조로 사용됩니다.",
+          "T2": "zu",
+          "K2": "로",
+          "R2": "추",
+          "XE": "Ich gehe zu der Schule.",
+          "XK": "나는 학교로 가.",
+          "XR": "이히 게에 추 데어 슐레"
+        },
+        {
+          "T1": "versteh'n",
+          "K1": "이해하다",
+          "R1": "페어슈테인",
+          "E1": "'Verstehn'은 어떤 것을 이해하는 행위를 나타내는 동사입니다.",
+          "T2": "verstehen",
+          "K2": "이해하다",
+          "R2": "베어슈테헨",
+          "XE": "Kannst du das verstehen?",
+          "XK": "너는 이걸 이해할 수 있어?",
+          "XR": "칸스트 두 다스 페어슈테헨?"
+        }
+      ]
+    },
+    {
+      "T0": "Die ganze Welt voll Abenteuer",
+      "C0": "모든 세계는 모험으로 가득 차 있다.",
+      "G0": "'Die ganze Welt voll Abenteuer'는 주어(Die ganze Welt), 보어(voll Abenteuer)로 구성된 간단한 문장 구조로, 전 세계가 모험으로 가득 차 있음을 표현합니다.",
+      "K0": "모든 세계는 모험으로 가득 차 있다.",
+      "R0": "디 간젤레 벨트 폴 아벤튀어",
+      "LI": [
+        {
+          "T1": "Die",
+          "K1": "그, 이",
+          "R1": "디",
+          "E1": "'Die'는 독일어의 정관사로, 특정 대상을 지칭할 때 사용됩니다.",
+          "T2": "die",
+          "K2": "그, 이",
+          "R2": "디",
+          "XE": "Die Blumen sind schön.",
+          "XK": "그 꽃들은 아름답다.",
+          "XR": "디 블루멘 친 슈넨"
+        },
+        {
+          "T1": "ganze",
+          "K1": "전체의, 모든",
+          "R1": "간쯔",
+          "E1": "'Ganze'는 전체나 모든 것을 의미하는 형용사로, 여기서는 '전부'라는 의미로 쓰입니다.",
+          "T2": "ganze",
+          "K2": "전체의, 모든",
+          "R2": "간쯔",
+          "XE": "Die ganze Familie ist hier.",
+          "XK": "온 가족이 여기 있다.",
+          "XR": "디 간제 패밀리 이스트 히어"
+        },
+        {
+          "T1": "Welt",
+          "K1": "세계",
+          "R1": "벨트",
+          "E1": "'Welt'는 지구 또는 세상을 나타내는 명사입니다.",
+          "T2": "Welt",
+          "K2": "세계",
+          "R2": "벨트",
+          "XE": "Die Welt ist groß.",
+          "XK": "세계는 크다.",
+          "XR": "디 벨트 이스트 그로스"
+        },
+        {
+          "T1": "voll",
+          "K1": "~로 가득 찬",
+          "R1": "폴",
+          "E1": "'Voll'은 무엇인가가 가득 차 있음을 나타내는 형용사입니다.",
+          "T2": "voll",
+          "K2": "~로 가득 찬",
+          "R2": "폴",
+          "XE": "Die Tasse ist voll.",
+          "XK": "컵이 가득 차 있다.",
+          "XR": "디 타세 이스트 폴"
+        },
+        {
+          "T1": "Abenteuer",
+          "K1": "모험",
+          "R1": "아벤튜어",
+          "E1": "'Abenteuer'는 새로운 경험이나 위험을 동반하는 모험을 나타내는 명사입니다.",
+          "T2": "Abenteuer",
+          "K2": "모험",
+          "R2": "아벤튜어",
+          "XE": "Ein Abenteuer im Dschungel.",
+          "XK": "정글에서의 모험.",
+          "XR": "인 아벤튜어 임 정글"
+        }
+      ]
+    },
+    {
+      "T0": "Ich trank Wein in Florenz",
+      "C0": "나를 위해서는 그냥 그런 일이 있어. 나는 피렌체에서 포도를 마셨다. 토스카나의 나무 아래서.",
+      "G0": "'Ich trank Wein in Florenz'는 주어(Ich), 동사(trank), 목적어(Wein), 장소(in Florenz)로 이루어진 간단한 문장 구조로, 특정 장소에서의 과거 경험을 서술하는 구문입니다.",
+      "K0": "나는 피렌체에서 포도를 마셨다.",
+      "R0": "이히 트랭크 바인 인 플로렌츠",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 1인칭 단수 주어를 나타내는 대명사로, 화자를 의미합니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich gehe nach Hause.",
+          "XK": "나는 집에 간다.",
+          "XR": "이히 게에 나흐 하우세"
+        },
+        {
+          "T1": "trank",
+          "K1": "마셨다",
+          "R1": "트랑크",
+          "E1": "'Trank'는 'trinken'의 과거형으로, 마시는 행동을 나타냅니다.",
+          "T2": "trinken",
+          "K2": "마시다",
+          "R2": "트링켄",
+          "XE": "Ich trinke Wasser.",
+          "XK": "나는 물을 마신다.",
+          "XR": "이히 트링크 바서"
+        },
+        {
+          "T1": "Wein",
+          "K1": "포도주",
+          "R1": "바인",
+          "E1": "'Wein'은 포도의 발효로 만들어진 음료인 포도주를 나타내는 명사입니다.",
+          "T2": "Wein",
+          "K2": "포도주",
+          "R2": "바인",
+          "XE": "Ich liebe guten Wein.",
+          "XK": "나는 좋은 포도주를 좋아한다.",
+          "XR": "이히 리베 구텐 바인"
+        },
+        {
+          "T1": "in",
+          "K1": "에서",
+          "R1": "인",
+          "E1": "'In'은 장소나 공간의 안을 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "에서",
+          "R2": "인",
+          "XE": "Ich bin in der Schule.",
+          "XK": "나는 학교에 있다.",
+          "XR": "이히 빈 인 더 슐레"
+        },
+        {
+          "T1": "Florenz",
+          "K1": "피렌체",
+          "R1": "플로렌츠",
+          "E1": "'Florenz'는 이탈리아의 도시인 피렌체를 의미하는 고유 명사입니다.",
+          "T2": "Florenz",
+          "K2": "피렌체",
+          "R2": "플로렌츠",
+          "XE": "Ich besuche Florenz im Sommer.",
+          "XK": "나는 여름에 피렌체를 방문한다.",
+          "XR": "이히 베주흐 플로렌츠 임 소머"
+        }
+      ]
+    },
+    {
+      "T0": "Camino Francés war die Rettung",
+      "C0": "맨해튼에서 노래와 함께 코르니 들으며, 카미노 프란세스가 나의 구원이었어. 스페인 길 위에서 나 자신을 발견할 수 있었어.",
+      "G0": "'Camino Francés war die Rettung'는 주어(Camino Francés), 동사(war), 보어(die Rettung)로 구성된 문장으로, 'Camino Francés'가 주어로서 '구원'이라는 보어로 연결되는 단순한 구조입니다.",
+      "K0": "카미노 프란세스가 나의 구원이었어.",
+      "R0": "카미노 프란세스 바르 디 레툰",
+      "LI": [
+        {
+          "T1": "Camino Francés",
+          "K1": "카미노 프란세스",
+          "R1": "카미노 프란세스",
+          "E1": "'Camino Francés'는 스페인의 한 순례 루트를 의미합니다. 프랑스 길이라고도 알려져 있습니다.",
+          "T2": "Camino Francés",
+          "K2": "카미노 프란세스",
+          "R2": "카미노 프란세스",
+          "XE": "The Camino Francés is a popular pilgrimage route in Spain.",
+          "XK": "카미노 프란세스는 스페인에서 인기 있는 순례 경로입니다.",
+          "XR": "더 카미노 프란세스 이즈 어 팝 유러 필그리미지 루트 인 스페인"
+        },
+        {
+          "T1": "war",
+          "K1": "~였다",
+          "R1": "바르",
+          "E1": "'War'는 독일어에서 'be 동사의 과거 형태'로, 주어가 단수일 때 사용됩니다.",
+          "T2": "sein",
+          "K2": "~이다",
+          "R2": "자인",
+          "XE": "Er war ein guter Lehrer.",
+          "XK": "그는 좋은 선생님이었다.",
+          "XR": "에어 바르 아인 구터 레레르"
+        },
+        {
+          "T1": "die Rettung",
+          "K1": "구원",
+          "R1": "디 레툰",
+          "E1": "'Die Rettung'은 '구원'을 의미하며, 여기서는 구체적인 도움이나 구조를 가리킵니다.",
+          "T2": "retten",
+          "K2": "구하다",
+          "R2": "레트 텐",
+          "XE": "Sie haben mir das Leben gerettet.",
+          "XK": "그들이 내 목숨을 구해주었어.",
+          "XR": "지 하벤 미르 다스 리벤 레테트"
+        }
+      ]
+    },
+    {
+      "T0": "Mit dem Handy in der Hand",
+      "C0": "휴대폰을 손에 들고",
+      "G0": "'Mit dem Handy in der Hand'는 'Handy'라는 명사에 'mit' 전치사가 결합하여, '손에 휴대폰을 들고 있는 상태'를 나타내는 표현입니다.",
+      "K0": "휴대폰을 손에 들고",
+      "R0": "미트 덴 핸디 인 더 핸드",
+      "LI": [
+        {
+          "T1": "Mit",
+          "K1": "With",
+          "R1": "미트",
+          "E1": "'Mit'는 독일어에서 '함께' 또는 '가지고'를 의미하는 전치사입니다.",
+          "T2": "mit",
+          "K2": "함께",
+          "R2": "미트",
+          "XE": "Mit Freunden macht es mehr Spaß.",
+          "XK": "친구들과 함께하면 더 재밌어.",
+          "XR": "미트 프론든 마크트 엣 메어 스파스"
+        },
+        {
+          "T1": "dem",
+          "K1": "그",
+          "R1": "뎀",
+          "E1": "'Dem'은 독일어의 정관사로 단수 masculine noun 또는 neuter noun 앞에 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "데어",
+          "XE": "Ich sehe den Mann.",
+          "XK": "나는 그 남자를 본다.",
+          "XR": "이히 제 댄 만"
+        },
+        {
+          "T1": "Handy",
+          "K1": "휴대폰",
+          "R1": "핸디",
+          "E1": "'Handy'는 휴대폰을 의미하는 독일어로, 일상에서 널리 사용되는 단어입니다.",
+          "T2": "Handy",
+          "K2": "휴대폰",
+          "R2": "핸디",
+          "XE": "Ich habe ein neues Handy gekauft.",
+          "XK": "나는 새 휴대폰을 샀다.",
+          "XR": "이히 하베 아인 노이 에스 핸디 가우프트"
+        },
+        {
+          "T1": "in",
+          "K1": "속에",
+          "R1": "인",
+          "E1": "'In'은 '안에' 또는 '속에'를 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "안에",
+          "R2": "인",
+          "XE": "Die Bücher sind in der Tasche.",
+          "XK": "책들이 가방 안에 있다.",
+          "XR": "디 뷔허 있다 인 더 타슈"
+        },
+        {
+          "T1": "der",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'Der'는 독일어의 정관사로 단수 masculine noun 앞에 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Ich habe den Hund.",
+          "XK": "나는 그 개를 가지고 있다.",
+          "XR": "이히 하베 덴 헌트"
+        },
+        {
+          "T1": "Hand",
+          "K1": "손",
+          "R1": "핸드",
+          "E1": "'Hand'는 사람의 손을 의미하는 명사입니다.",
+          "T2": "Hand",
+          "K2": "손",
+          "R2": "핸드",
+          "XE": "Sie hat ihre Hand gehoben.",
+          "XK": "그녀는 손을 들어올렸다.",
+          "XR": "지 해트 이레 핸드 게호벤"
+        }
+      ]
+    },
+    {
+      "T0": "Und schon wieder penn' ich ein",
+      "C0": "스페인 길에서 나를 발견할 수 있었고, 그리고 다시 잠이 들어.",
+      "G0": "'Und schon wieder penn' ich ein'는 주어(ich), 동사(penn'), 보어(ein)로 이루어진 구문으로, '나는 다시 잠이 들고 있다'는 의미로, 과거의 반복적인 행동이나 상태를 표현합니다.",
+      "K0": "그리고 나는 다시 잠이 들고 있어.",
+      "R0": "운드 숀 비더 펜 아이흐 아인",
+      "LI": [
+        {
+          "T1": "Und",
+          "K1": "그리고",
+          "R1": "운드",
+          "E1": "'Und'는 두 가지 이상의 내용을 이어주는 접속사로, 번역하면 '그리고'입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "Ich gehe ins Kino und danach essen.",
+          "XK": "나는 영화관에 가고 그 후에 저녁을 먹어.",
+          "XR": "이히 게에 인스 키노 운드 다나흐 에센"
+        },
+        {
+          "T1": "schon",
+          "K1": "이미",
+          "R1": "숀",
+          "E1": "'Schon'은 어떤 상태나 일이 이미 발생했음을 나타내는 부사로 번역하면 '이미'입니다.",
+          "T2": "already",
+          "K2": "이미",
+          "R2": "얼레디",
+          "XE": "Ich habe schon gegessen.",
+          "XK": "나는 이미 저녁을 먹었어.",
+          "XR": "이히 하베 숀 게겐센"
+        },
+        {
+          "T1": "wieder",
+          "K1": "다시",
+          "R1": "비더",
+          "E1": "'Wieder'는 어떤 동작이나 상태가 재발생함을 나타내는 부사로, '다시'로 해석됩니다.",
+          "T2": "again",
+          "K2": "다시",
+          "R2": "어게인",
+          "XE": "Ich möchte das wiederholen.",
+          "XK": "나는 그것을 다시 하고 싶어.",
+          "XR": "이히 뫼흐트 다스 비더홀렌"
+        },
+        {
+          "T1": "penn'",
+          "K1": "잠이 들다",
+          "R1": "펜",
+          "E1": "'Penn''은 습관적으로 잠이 드는 행위를 나타내는 구어체 동사입니다.",
+          "T2": "pennen",
+          "K2": "잠이 들다",
+          "R2": "펜",
+          "XE": "Ich penn immer nach dem Essen.",
+          "XK": "나는 항상 식사 후에 잠들어.",
+          "XR": "이히 펜 임머 나흐 뎀 에센"
+        },
+        {
+          "T1": "ich",
+          "K1": "나는",
+          "R1": "이흐",
+          "E1": "'Ich'는 1인칭 단수 주어로 '나는'이라는 의미로 사용됩니다.",
+          "T2": "I",
+          "K2": "나",
+          "R2": "아이",
+          "XE": "Ich bin müde.",
+          "XK": "나는 피곤해.",
+          "XR": "이히 빈 뮈데"
+        },
+        {
+          "T1": "ein",
+          "K1": "하나의",
+          "R1": "아인",
+          "E1": "'Ein'은 부정관사로, 어떤 불특정 대상을 나타낼 때 사용됩니다.",
+          "T2": "a",
+          "K2": "하나의",
+          "R2": "어",
+          "XE": "Ich sehe ein Hund.",
+          "XK": "나는 개 하나를 봐.",
+          "XR": "이히 제헤 아인 헌드"
+        }
+      ]
+    },
+    {
+      "T0": "Denn mein Kopf ist bei dir",
+      "C0": "그리고 나는 다시 내 핸드폰을 보고 있어. 내 머리는 너에게 있어. 맨, 언제 너를 드디어 볼 수 있어?",
+      "G0": "'Denn mein Kopf ist bei dir'는 주어(mein Kopf), 동사(ist), 보어(bei dir)로 구성되어 있으며, 화자의 감정인 누구와 함께하고 있는지를 나타내는 구조입니다.",
+      "K0": "내 머리는 너에게 있어.",
+      "R0": "덴 마인 코프 이스트 바이 디어",
+      "LI": [
+        {
+          "T1": "Denn",
+          "K1": "왜냐하면",
+          "R1": "덴",
+          "E1": "'Denn'은 이유를 설명할 때 쓰이는 접속사입니다. 주로 앞서 언급한 내용을 명확히 하는 역할을 합니다.",
+          "T2": "denn",
+          "K2": "왜냐하면",
+          "R2": "덴",
+          "XE": "Ich mache das, denn es ist wichtig.",
+          "XK": "나는 그것을 하는데, 왜냐하면 중요하니까.",
+          "XR": "이히 마헤 다스, 덴 에스 이스트 비흐틱"
+        },
+        {
+          "T1": "mein",
+          "K1": "내",
+          "R1": "마인",
+          "E1": "'Mein'은 소유를 나타내는 대명사로, 화자의 소유를 나타냅니다.",
+          "T2": "mein",
+          "K2": "내",
+          "R2": "마인",
+          "XE": "Mein Name ist Peter.",
+          "XK": "내 이름은 피터야.",
+          "XR": "마인 나메 이스트 피터"
+        },
+        {
+          "T1": "Kopf",
+          "K1": "머리",
+          "R1": "코프",
+          "E1": "'Kopf'는 사람의 머리를 의미하는 명사로, 여기서는 감정의 상징으로도 해석될 수 있습니다.",
+          "T2": "Kopf",
+          "K2": "머리",
+          "R2": "코프",
+          "XE": "Er hat den Kopf verletzt.",
+          "XK": "그는 머리를 다쳤다.",
+          "XR": "에어 하트 덴 코프 밸레르트"
+        },
+        {
+          "T1": "ist",
+          "K1": "~이다",
+          "R1": "이스트",
+          "E1": "'Ist'는 동사 'sein(이다)'의 현재형으로, 존재를 나타냅니다.",
+          "T2": "sein",
+          "K2": "~이다",
+          "R2": "자인",
+          "XE": "Das ist ein Stuhl.",
+          "XK": "저건 의자야.",
+          "XR": "다스 이스트 아인 슈흘"
+        },
+        {
+          "T1": "bei",
+          "K1": "옆에",
+          "R1": "바이",
+          "E1": "'Bei'는 장소를 나타내는 전치사로, 일반적으로 '곁에'라는 의미로 사용됩니다.",
+          "T2": "bei",
+          "K2": "옆에",
+          "R2": "바이",
+          "XE": "Ich bin bei dir.",
+          "XK": "나는 너 옆에 있어.",
+          "XR": "이히 빈 바이 디어"
+        },
+        {
+          "T1": "dir",
+          "K1": "너에게",
+          "R1": "디어",
+          "E1": "'Dir'는 2인칭 대칭으로, '너에게'라는 의미를 나타냅니다.",
+          "T2": "du",
+          "K2": "너",
+          "R2": "두",
+          "XE": "Ich gebe dir das Buch.",
+          "XK": "나는 너에게 책을 줄게.",
+          "XR": "이히 게베 디어 다스 부흐"
+        }
+      ]
+    },
+    {
+      "T0": "Auf dem irischen Wicklow bei Dublin",
+      "C0": "더블린의 아일랜드 윅클로에서.",
+      "G0": "'Auf dem irischen Wicklow bei Dublin'은 전치사구로 구성되어 있으며, '아일랜드의 윅클로'라는 장소를 지칭하는 문구입니다.",
+      "K0": "더블린의 아일랜드 윅클로에서.",
+      "R0": "아우프 덴 이리셴 윅클로 바이 더블린",
+      "LI": [
+        {
+          "T1": "Auf",
+          "K1": "~에서",
+          "R1": "아우프",
+          "E1": "'Auf'는 특정 장소나 방향을 나타내는 전치사입니다.",
+          "T2": "auf",
+          "K2": "~에서",
+          "R2": "아우프",
+          "XE": "Auf dem Tisch liegt ein Buch.",
+          "XK": "테이블 위에 책이 있다.",
+          "XR": "아우프 뎀 티시크 리익트 아인 부흐"
+        },
+        {
+          "T1": "dem",
+          "K1": "그",
+          "R1": "뎀",
+          "E1": "'Dem'은 정관사 'der'의 탈격 형태로, masculine 명사와 함께 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "데어",
+          "XE": "Der Hund läuft im Park.",
+          "XK": "그 개가 공원에서 뛰고 있다.",
+          "XR": "데어 훔드 뢰프트 임 파크"
+        },
+        {
+          "T1": "irischen",
+          "K1": "아일랜드의",
+          "R1": "이리셴",
+          "E1": "'Irischen'은 'irisch'의 형용사적 형태로, 아일랜드와 관련된 것을 의미합니다.",
+          "T2": "irisch",
+          "K2": "아일랜드의",
+          "R2": "이리시",
+          "XE": "Das Treffen hat einen irischen Charakter.",
+          "XK": "그 회의는 아일랜드적인 특성을 가지고 있다.",
+          "XR": "다스 트레펜 하트 아이넨 이리셴 카락터"
+        },
+        {
+          "T1": "Wicklow",
+          "K1": "윅클로",
+          "R1": "윅클로",
+          "E1": "'Wicklow'는 아일랜드 더블린 근처에 위치한 산맥의 이름으로, 자연 경관이 아름답습니다.",
+          "T2": "Wicklow",
+          "K2": "윅클로",
+          "R2": "윅클로",
+          "XE": "Ich möchte nach Wicklow reisen.",
+          "XK": "윅클로에 여행가고 싶어.",
+          "XR": "이히 모흐테 나흐 윅클로 라이젠"
+        },
+        {
+          "T1": "bei",
+          "K1": "~의 근처에",
+          "R1": "바이",
+          "E1": "'Bei'는 특정 장소의 근처에 존재함을 나타내는 전치사입니다.",
+          "T2": "bei",
+          "K2": "~의 근처에",
+          "R2": "바이",
+          "XE": "Ich wohne bei meinen Eltern.",
+          "XK": "나는 부모님 집 근처에 산다.",
+          "XR": "이히 보흔 바이 마이넨 엘턴"
+        },
+        {
+          "T1": "Dublin",
+          "K1": "더블린",
+          "R1": "더블린",
+          "E1": "'Dublin'은 아일랜드의 수도로, 문화와 역사로 가득한 도시입니다.",
+          "T2": "Dublin",
+          "K2": "더블린",
+          "R2": "더블린",
+          "XE": "Dublin ist sehr schön.",
+          "XK": "더블린은 매우 아름답다.",
+          "XR": "더블린 이스트 제어 쇼엔"
+        }
+      ]
+    },
+    {
+      "T0": "Morgen kommst du hier an",
+      "C0": "하지만 오늘 나는 잘 잔다, 왜냐하면 내일 너가 여기 도착할 거니까.",
+      "G0": "'Morgen kommst du hier an'은 주어(du), 동사(kommst), 부사(morgen), 장소(hern)으로 이루어진 문장 구조로, 미래의 행위에 대한 예고를 나타냅니다.",
+      "K0": "내일 너가 여기 도착할 거야.",
+      "R0": "모르겐 커스트 두 히어 안",
+      "LI": [
+        {
+          "T1": "Morgen",
+          "K1": "내일",
+          "R1": "모르겐",
+          "E1": "'Morgen'은 시간 개념으로 '내일'을 의미하는 명사입니다.",
+          "T2": "Morgen",
+          "K2": "내일",
+          "R2": "모르겐",
+          "XE": "Morgen ist ein neuer Tag.",
+          "XK": "내일은 새로운 날이다.",
+          "XR": "모르겐 이스트 아인 노이어 폭"
+        },
+        {
+          "T1": "kommst",
+          "K1": "오다/도착하다",
+          "R1": "콤스트",
+          "E1": "'Kommst'는 'kommen'의 2인칭 단수 형태로, '오다' 또는 '도착하다'는 뜻입니다.",
+          "T2": "kommen",
+          "K2": "오다/도착하다",
+          "R2": "콤멘",
+          "XE": "Wann kommst du?",
+          "XK": "너 언제 오니?",
+          "XR": "반 콤스트 두?"
+        },
+        {
+          "T1": "du",
+          "K1": "너",
+          "R1": "두",
+          "E1": "'Du'는 독일어의 2인칭 단수 대명사로, 상대방을 친근하게 부를 때 사용됩니다.",
+          "T2": "du",
+          "K2": "너",
+          "R2": "두",
+          "XE": "Du bist mein Freund.",
+          "XK": "너는 내 친구야.",
+          "XR": "두 비스트 마인 프로인데"
+        },
+        {
+          "T1": "hier",
+          "K1": "여기",
+          "R1": "히어",
+          "E1": "'Hier'는 장소를 나타내는 부사로, '여기'를 의미합니다.",
+          "T2": "hier",
+          "K2": "여기",
+          "R2": "히어",
+          "XE": "Komm hier.",
+          "XK": "여기로 와.",
+          "XR": "콤 히어"
+        },
+        {
+          "T1": "an",
+          "K1": "(여기) 도착하다",
+          "R1": "안",
+          "E1": "'An'은 장소에 도착하거나 닿는 것을 나타내는 전치사입니다.",
+          "T2": "an",
+          "K2": "(여기) 도착하다",
+          "R2": "안",
+          "XE": "Ich komme an.",
+          "XK": "나는 도착해.",
+          "XR": "익 커메 안"
+        }
+      ]
+    },
+    {
+      "T0": "Mann, ich war feiern in Krakau",
+      "C0": "토스카나의 나무들 아래에서, 이봐, 나는 크라코프에서 파티를 했어. 그리고 거의 바르샤바에 집에 도착했어.",
+      "G0": "'Mann, ich war feiern in Krakau'는 감정이나 경험을 표현하는 문장으로, 'Mann'은 친근하게 부르는 표현이고, 'ich war feiern'은 '나는 파티를 했다'는 의미로 과거의 한 경험을 언급하고 있습니다.",
+      "K0": "이봐, 나는 크라코프에서 파티를 했어.",
+      "R0": "맨, 이히 바르 파이언 인 크라카우",
+      "LI": [
+        {
+          "T1": "Mann",
+          "K1": "이봐",
+          "R1": "맨",
+          "E1": "'Mann'은 친근하게 상대방을 부를 때 사용하는 표현으로, 영어의 'man'과 유사하게 사용됩니다.",
+          "T2": "Mann",
+          "K2": "남자",
+          "R2": "맨",
+          "XE": "Mann, wie geil ist das denn?",
+          "XK": "이봐, 이거 얼마나 멋져?",
+          "XR": "맨, 비 게일 이스트 다스 덴?"
+        },
+        {
+          "T1": "ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 첫 번째 인칭 단수 주어를 나타내는 대명사입니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich habe ein Buch gelesen.",
+          "XK": "나는 책을 읽었어.",
+          "XR": "이히 하베 아인 부흐 게레젠."
+        },
+        {
+          "T1": "war",
+          "K1": "~였다",
+          "R1": "바르",
+          "E1": "'War'는 과거 시제의 be 동사로, 주어가 남성 단수일 때 사용됩니다.",
+          "T2": "sein",
+          "K2": "~이다",
+          "R2": "자인",
+          "XE": "Er war müde.",
+          "XK": "그는 피곤했어.",
+          "XR": "에어 바르 뮈데."
+        },
+        {
+          "T1": "feiern",
+          "K1": "파티하다",
+          "R1": "파이언",
+          "E1": "'Feiern'은 기념일이나 특별한 일을 축하하는 행위를 의미하는 동사입니다.",
+          "T2": "feiern",
+          "K2": "축하하다",
+          "R2": "파이언",
+          "XE": "Wir feiern deinen Geburtstag.",
+          "XK": "우리는 너의 생일을 축하해.",
+          "XR": "비어 파이언 다이넨 게부어츠타그."
+        },
+        {
+          "T1": "in",
+          "K1": "안에",
+          "R1": "인",
+          "E1": "'In'은 장소나 위치를 나타내는 전치사로 '~ 안에'라는 의미를 가집니다.",
+          "T2": "in",
+          "K2": "안에",
+          "R2": "인",
+          "XE": "Ich bin in der Schule.",
+          "XK": "나는 학교에 있어.",
+          "XR": "이히 빈 인 데어 슐레."
+        },
+        {
+          "T1": "Krakau",
+          "K1": "크라코프",
+          "R1": "크라카우",
+          "E1": "'Krakau'는 폴란드의 도시 이름으로, 유서 깊은 문화와 역사로 유명합니다.",
+          "T2": "Krakau",
+          "K2": "크라코프",
+          "R2": "크라카우",
+          "XE": "Krakau ist schön im Sommer.",
+          "XK": "크라코프는 여름에 아름다워.",
+          "XR": "크라카우 이스트 쇤 임 zommer."
+        }
+      ]
+    },
+    {
+      "T0": "Gibt's halt einmal für mich",
+      "C0": "하지만 너, 베이비, 너, 오직 너만이 나를 위해 존재해. 나는 피렌체에서 와인을 마셨어.",
+      "G0": "'Gibt's halt einmal für mich'는 주어(Gibt's), 동사(halBt), 목적어(einmal für mich)로 이루어진 문장 구조로, 특정한 것을 소유하고 싶다는 의미를 나타냅니다.",
+      "K0": "너는 나를 위해 단 한 번 존재해.",
+      "R0": "기브츠 할트 아인말 퓌어 미히",
+      "LI": [
+        {
+          "T1": "Gibt's",
+          "K1": "있다",
+          "R1": "기브츠",
+          "E1": "'Gibt's'는 'geben'의 구어체 형태로, 어떤 것이 존재하거나 주어지는 것을 의미합니다.",
+          "T2": "geben",
+          "K2": "주다",
+          "R2": "게벤",
+          "XE": "Gibt's einen Grund dafür?",
+          "XK": "그에 대한 이유가 있어?",
+          "XR": "기브츠 아이넌 그론드 다피르?"
+        },
+        {
+          "T1": "halt",
+          "K1": "그냥",
+          "R1": "할트",
+          "E1": "'Halt'는 여기서 덧붙이거나 상황을 강조하는 의미로 쓰이는 부사입니다.",
+          "T2": "halt",
+          "K2": "그냥",
+          "R2": "할트",
+          "XE": "Das ist halt so.",
+          "XK": "그냥 그런 거야.",
+          "XR": "다스 이스트 할트 소."
+        },
+        {
+          "T1": "einmal",
+          "K1": "한 번",
+          "R1": "아인말",
+          "E1": "'Einmal'은 한 번의 의미로, 특별한 경우나 상황을 강조할 때 사용됩니다.",
+          "T2": "einmal",
+          "K2": "한 번",
+          "R2": "아인말",
+          "XE": "Komm einmal vorbei.",
+          "XK": "한 번 들러봐.",
+          "XR": "콤 아인말 포르바이."
+        },
+        {
+          "T1": "für",
+          "K1": "~을 위해",
+          "R1": "퓌어",
+          "E1": "'Für'는 목적이나 대상을 나타내는 전치사입니다.",
+          "T2": "für",
+          "K2": "~을 위해",
+          "R2": "퓌어",
+          "XE": "Das ist für dich.",
+          "XK": "이건 너를 위한 거야.",
+          "XR": "다스 이스트 퓌어 디히."
+        },
+        {
+          "T1": "mich",
+          "K1": "나를",
+          "R1": "미히",
+          "E1": "'Mich'는 'ich'의 목적격 형태로, 화자 자신을 가리킵니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich liebe dich.",
+          "XK": "나는 너를 사랑해.",
+          "XR": "이히 리베 디히."
+        }
+      ]
+    },
+    {
+      "T0": "Ich war am Herzen Ugandas",
+      "C0": "나는 우간다의 심장부에 있었다.",
+      "G0": "'Ich war am Herzen Ugandas'는 주어(Ich), 동사(war), 전치사(am), 목적어(Herzen Ugandas)로 이루어진 구조의 문장으로, 과거에 특정 장소에 있었음을 나타냅니다.",
+      "K0": "나는 우간다의 심장부에 있었다.",
+      "R0": "이히 바르 암 헤르첸 우간다스",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나는",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 1인칭 단수를 나타내는 대명사로, 화자를 의미합니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich liebe dich.",
+          "XK": "나는 당신을 사랑해.",
+          "XR": "이히 리베 디히"
+        },
+        {
+          "T1": "war",
+          "K1": "~였다",
+          "R1": "바르",
+          "E1": "'War'는 독일어 동사 'sein'의 과거형으로, 주어가 단수일 때 사용됩니다.",
+          "T2": "sein",
+          "K2": "~이다",
+          "R2": "자인",
+          "XE": "Ich war müde.",
+          "XK": "나는 피곤했다.",
+          "XR": "이히 바르 뮈데"
+        },
+        {
+          "T1": "am",
+          "K1": "의",
+          "R1": "암",
+          "E1": "'Am'은 전치사 'an'과 정관사 'dem'의 축약형으로, 특정 장소를 나타내는 표현입니다.",
+          "T2": "an dem",
+          "K2": "의",
+          "R2": "안 뎀",
+          "XE": "Ich bin am Bahnhof.",
+          "XK": "나는 기차역에 있다.",
+          "XR": "이히 빈 암 반호프"
+        },
+        {
+          "T1": "Herzen",
+          "K1": "심장",
+          "R1": "헤르첸",
+          "E1": "'Herzen'은 'Herz'의 복수형으로, 보통 '심장'이라는 의미를 가집니다.",
+          "T2": "Herz",
+          "K2": "심장",
+          "R2": "헤르츠",
+          "XE": "Er hat ein großes Herz.",
+          "XK": "그는 큰 심장을 가지고 있다.",
+          "XR": "에르 하트 아인 그로세스 헤르츠"
+        },
+        {
+          "T1": "Ugandas",
+          "K1": "우간다의",
+          "R1": "우간다스",
+          "E1": "'Ugandas'는 '우간다'의 소유격 형식으로, 해당 지역을 나타냅니다.",
+          "T2": "Uganda",
+          "K2": "우간다",
+          "R2": "우간다",
+          "XE": "Uganda is located in East Africa.",
+          "XK": "우간다는 동아프리카에 위치해 있다.",
+          "XR": "우간다 이즈 로케이티드 인 이스트 아프리카"
+        }
+      ]
+    },
+    {
+      "T0": "Ich war am Hafen Marseilles",
+      "C0": "세계에서 가장 큰 전설들 사이에서 나는 마르세유 항구에 있었어. 나는 거기서 바다에서 직접 생선을 먹었어.",
+      "G0": "'Ich war am Hafen Marseilles'는 주어(Ich), 동사(war), 장소(am Hafen Marseilles)로 간단히 구성된 문장입니다. 과거에 특정 장소에 있었음을 나타냅니다.",
+      "K0": "나는 마르세유 항구에 있었어.",
+      "R0": "이히 바르 암 하펀 마르셀",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나는",
+          "R1": "이히",
+          "E1": "'Ich'는 1인칭 단수 주어로 화자를 나타내는 대명사입니다.",
+          "T2": "ich",
+          "K2": "나는",
+          "R2": "이히",
+          "XE": "Ich liebe Schokolade.",
+          "XK": "나는 초콜릿을 좋아해.",
+          "XR": "이히 리베 쇼콜라데"
+        },
+        {
+          "T1": "war",
+          "K1": "~였다",
+          "R1": "바르",
+          "E1": "'War'는 과거 시제를 나타내는 'sein' 동사의 굴절형으로, 주어가 '~였다'는 의미입니다.",
+          "T2": "sein",
+          "K2": "~이다",
+          "R2": "자인",
+          "XE": "Er war müde.",
+          "XK": "그는 피곤했어.",
+          "XR": "에어 바르 뮈데"
+        },
+        {
+          "T1": "am",
+          "K1": "에서",
+          "R1": "암",
+          "E1": "'Am'은 'an dem'의 축약형으로 장소를 나타낼 때 쓰이는 전치사입니다.",
+          "T2": "an",
+          "K2": "~에",
+          "R2": "안",
+          "XE": "Wir treffen uns am Bahnhof.",
+          "XK": "우리는 기차역에서 만날 거야.",
+          "XR": "비어 트레프펜 uns 암 반호프"
+        },
+        {
+          "T1": "Hafen",
+          "K1": "항구",
+          "R1": "하펀",
+          "E1": "'Hafen'은 배가 드나드는 장소인 항구를 뜻하는 명사입니다.",
+          "T2": "Hafen",
+          "K2": "항구",
+          "R2": "하펀",
+          "XE": "Der Hafen ist voll von Schiffen.",
+          "XK": "항구는 배들로 가득 차 있어.",
+          "XR": "데어 하펀 이스트 폴 폰 시펜"
+        },
+        {
+          "T1": "Marseilles",
+          "K1": "마르세유",
+          "R1": "마르셀",
+          "E1": "'Marseilles'는 프랑스 남부에 위치한 도시로, 중요한 역사적 항구 도시입니다.",
+          "T2": "Marseille",
+          "K2": "마르세유",
+          "R2": "마르셀",
+          "XE": "Ich besuche Marseille nächsten Sommer.",
+          "XK": "나는 다음 여름에 마르세유를 방문할 거야.",
+          "XR": "이히 베주체 마르세유 네흐스트 소머"
+        }
+      ]
+    },
+    {
+      "T0": "Ich lag wach am Big Apple",
+      "C0": "그리고 나는 바르샤바에서 거의 집에 다 와 있어. 나는 빅 애플에서 깨어 있었다. 맨해튼에서 합창단과 함께 노래했다.",
+      "G0": "'Ich lag wach am Big Apple'은 주어(I), 동사(lag wach), 전치사구(am Big Apple)로 구성된 문장입니다. 이는 화자가 사건 또는 상황 속에서 깨어 있었음을 나타냅니다.",
+      "K0": "나는 빅 애플에서 깨어 있었다.",
+      "R0": "이히 락 바흐 아인 빅 애플",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어로 '나'를 의미하는 주어로, 화자를 가리킵니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich gehe ins Kino.",
+          "XK": "나는 영화관에 가.",
+          "XR": "이히 게에 인스 키노"
+        },
+        {
+          "T1": "lag",
+          "K1": "~이었다",
+          "R1": "락",
+          "E1": "'Lag'는 동사 'liegen'의 과거형으로, '~에 있다', '~에 눕다'라는 의미를 가집니다.",
+          "T2": "liegen",
+          "K2": "눕다",
+          "R2": "리겐",
+          "XE": "Ich liege auf dem Sofa.",
+          "XK": "나는 소파에 누워 있어.",
+          "XR": "이히 리게 아우프 뎀 소파"
+        },
+        {
+          "T1": "wach",
+          "K1": "깨어",
+          "R1": "바흐",
+          "E1": "'Wach'는 '깨어있다', 또는 '잠이 안 오다'라는 형용사이며, 상태를 묘사합니다.",
+          "T2": "wach",
+          "K2": "깨어",
+          "R2": "바흐",
+          "XE": "Ich bin wach.",
+          "XK": "나는 깨어 있어.",
+          "XR": "이히 빈 바흐"
+        },
+        {
+          "T1": "am",
+          "K1": "에서",
+          "R1": "암",
+          "E1": "'Am'은 'an dem'의 축약형으로, '어디에'를 나타내는 전치사입니다.",
+          "T2": "an",
+          "K2": "~에",
+          "R2": "안",
+          "XE": "Ich war am Strand.",
+          "XK": "나는 해변에 있었어.",
+          "XR": "이히 바르 암 슈트란드"
+        },
+        {
+          "T1": "Big Apple",
+          "K1": "빅 애플",
+          "R1": "빅 애플",
+          "E1": "'Big Apple'은 미국 뉴욕시를 나타내는 친숙한 이름입니다.",
+          "T2": "Big Apple",
+          "K2": "빅 애플",
+          "R2": "빅 애플",
+          "XE": "Big Apple is known for its skyline.",
+          "XK": "빅 애플은 스카이라인으로 유명해.",
+          "XR": "빅 애플 이즈 노운 포어 잇스 스카이라인"
+        }
+      ]
+    },
+    {
+      "T0": "Unter den Bäum'n der Toskana",
+      "C0": "나는 피렌체에서 와인을 마셨어. 토스카나의 나무들 아래에서. 친구야, 나는 크라쿠프에서 즐겁게 지냈어.",
+      "G0": "'Unter den Bäum'n der Toskana'는 '토스카나의 나무들 아래에서'라는 의미로, 장소를 묘사하는 구문입니다. 이는 특정한 위치를 설명하며 그 아래에서 이루어진 활동을 암시합니다.",
+      "K0": "토스카나의 나무들 아래에서.",
+      "R0": "운터 덴 바윰'앤 더 토스카나",
+      "LI": [
+        {
+          "T1": "Unter",
+          "K1": "아래",
+          "R1": "운터",
+          "E1": "'Unter'는 위치를 나타내는 전치사로, 아래에 있는 상태를 의미합니다.",
+          "T2": "unter",
+          "K2": "아래",
+          "R2": "운터",
+          "XE": "Die Katze sitzt unter dem Tisch.",
+          "XK": "고양이가 탁자 아래에 앉아있어.",
+          "XR": "디 카체 시트 운터 뎀 티시"
+        },
+        {
+          "T1": "den",
+          "K1": "그",
+          "R1": "든",
+          "E1": "'Den'은 특정 남성 단수 명사 앞에 오는 정관사로, 대상을 구체적으로 지칭할 때 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Ich sehe den Mann.",
+          "XK": "나는 그 남자를 봐.",
+          "XR": "이흐 제 헤 덴 만"
+        },
+        {
+          "T1": "Bäum'n",
+          "K1": "나무들",
+          "R1": "바윰'앤",
+          "E1": "'Bäum'n'는 'Bäume'의 구어체 표현으로, 나무를 의미하는 복수형입니다.",
+          "T2": "Bäume",
+          "K2": "나무들",
+          "R2": "바이메",
+          "XE": "Die Bäume sind hoch.",
+          "XK": "나무들이 높아.",
+          "XR": "디 바이메 진트 호흐"
+        },
+        {
+          "T1": "der",
+          "K1": "그",
+          "R1": "더",
+          "E1": "'Der'는 특정 남성 단수 명사 앞에 오는 정관사로, 대상을 구체적으로 지칭할 때 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Der Apfel ist rot.",
+          "XK": "사과가 빨갛다.",
+          "XR": "더 아펠 이스트 로트"
+        },
+        {
+          "T1": "Toskana",
+          "K1": "토스카나",
+          "R1": "토스카나",
+          "E1": "'Toskana'는 이탈리아 중부에 위치한 유명한 지역으로, 아름다운 경관과 와인으로 유명합니다.",
+          "T2": "Toskana",
+          "K2": "토스카나",
+          "R2": "토스카나",
+          "XE": "Die Toskana ist bekannt für ihre Landschaft.",
+          "XK": "토스카나는 그녀의 경치로 유명하다.",
+          "XR": "디 토스카나 이스트 벤칸트 퓔 이레 랜드샤프트"
+        }
+      ]
+    },
+    {
+      "T0": "Bin durch die Hügel gewandert",
+      "C0": "캄팔라의 밤의 따뜻함을 만끽했다. 나는 더블린의 아일랜드 윅로우 언덕을 걸었다.",
+      "G0": "'Bin durch die Hügel gewandert'는 주어(I 혹은 'Ich')에 따른 동사 형식('bin'은 'ich'의 be동사과거형), 전치사('durch'는 '을 통해', 'die Hügel'은 '언덕들'이라는 명사구), 그리고 과거의 동작('gewandert'는 'wander'의 과거형, '걷다'의 의미)을 조합한 구조로, 화자가 특정 경로를 걸어다녔음을 나타냅니다.",
+      "K0": "나는 언덕을 걸었다.",
+      "R0": "빈 두르크 디 휠 겜반데르트",
+      "LI": [
+        {
+          "T1": "Bin",
+          "K1": "나는 …이다",
+          "R1": "빈",
+          "E1": "'Bin'은 독일어에서 1인칭 단수 형태이며 'be' 동사의 과거형으로 사용됩니다. 여기서는 '나는 ~하다'의 의미로 쓰입니다.",
+          "T2": "sein",
+          "K2": "이다",
+          "R2": "자인",
+          "XE": "Ich bin müde.",
+          "XK": "나는 피곤하다.",
+          "XR": "이히 빈 뮈데"
+        },
+        {
+          "T1": "durch",
+          "K1": "을 통해",
+          "R1": "두르흐",
+          "E1": "'Durch'는 '을 통해' 또는 '가로지르다'라는 의미를 가진 전치사입니다.",
+          "T2": "durch",
+          "K2": "지를 통해",
+          "R2": "두르흐",
+          "XE": "Wir gehen durch den Park.",
+          "XK": "우리는 공원을 지나간다.",
+          "XR": "비어 간 두르 덴 파크"
+        },
+        {
+          "T1": "die",
+          "K1": "그",
+          "R1": "디",
+          "E1": "'Die'는 독일어에서 정관사로, 주로 여성 단수 명사를 가리킬 때 사용됩니다.",
+          "T2": "die",
+          "K2": "그",
+          "R2": "디",
+          "XE": "Die Katze schläft.",
+          "XK": "그 고양이는 자고 있다.",
+          "XR": "디 카체 슐래프트"
+        },
+        {
+          "T1": "Hügel",
+          "K1": "언덕",
+          "R1": "휘겔",
+          "E1": "'Hügel'은 언덕을 나타내는 독일어 명사입니다.",
+          "T2": "Hügel",
+          "K2": "언덕",
+          "R2": "휘겔",
+          "XE": "Die Hügel sind grün.",
+          "XK": "언덕들이 초록색이다.",
+          "XR": "디 휘겔 진드 그뤠ㄴ"
+        },
+        {
+          "T1": "gewandert",
+          "K1": "걸었다",
+          "R1": "게반데르트",
+          "E1": "'Gewandert'는 'wandern'의 과거 분사형으로, 걷는 것을 나타냅니다.",
+          "T2": "wandern",
+          "K2": "걷다",
+          "R2": "반더른",
+          "XE": "Wir sind den ganzen Tag gewandert.",
+          "XK": "우리는 하루 종일 걸었다.",
+          "XR": "비어 진드 간첼타그 게반데르트"
+        }
+      ]
+    },
+    {
+      "T0": "Konnt' mich auf spanischen Pfaden entdecken",
+      "C0": "프랑스의 길은 구원이었다. 스페인 길에서 나를 발견할 수 있었어. 그리고 다시 잠이 들었어.",
+      "G0": "'Konnt' mich auf spanischen Pfaden entdecken'은 독일어로 '스페인 길에서 나를 발견할 수 있었다'는 의미이며, 주어가 생략된 상태에서 동사('konnt')가 먼저 나오고, 목적어('mich')와 다른 수식어('auf spanischen Pfaden')가 뒤에 위치하는 문장 구조입니다.",
+      "K0": "스페인 길에서 나를 발견할 수 있었어.",
+      "R0": "콘트 미흐 아우프 스파니셰른 파덴 엔데크큰",
+      "LI": [
+        {
+          "T1": "Konnt'",
+          "K1": "할 수 있었다",
+          "R1": "콘트",
+          "E1": "'Konnt''는 'konnte'의 축약형으로, 과거형으로 '할 수 있었다'는 의미를 가지고 있습니다.",
+          "T2": "konnte",
+          "K2": "할 수 있었다",
+          "R2": "콘트",
+          "XE": "Ich konnte das Problem lösen.",
+          "XK": "나는 그 문제를 해결할 수 있었어.",
+          "XR": "이히 콘트 다스 프러블렘 로이즌"
+        },
+        {
+          "T1": "mich",
+          "K1": "나를",
+          "R1": "미흐",
+          "E1": "'Mich'는 1인칭 단수 대명사로서, '나를'이라는 의미로 사용됩니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich sehe dich.",
+          "XK": "나는 너를 봐.",
+          "XR": "이히 제에 디히"
+        },
+        {
+          "T1": "auf",
+          "K1": "~에",
+          "R1": "아우프",
+          "E1": "'Auf'는 방향을 나타내는 전치사로, '위에', '에'라는 의미로 쓰입니다.",
+          "T2": "auf",
+          "K2": "~에",
+          "R2": "아우프",
+          "XE": "Das Buch liegt auf dem Tisch.",
+          "XK": "책이 탁자 위에 있다.",
+          "XR": "다스 북 리크 아우프 뎀 티쉬"
+        },
+        {
+          "T1": "spanischen",
+          "K1": "스페인의",
+          "R1": "슈파니셴",
+          "E1": "'Spanischen'은 '스페인의'라는 뜻으로, 형용사 'spanisch'의 변형 형태입니다.",
+          "T2": "spanisch",
+          "K2": "스페인의",
+          "R2": "슈파니쉬",
+          "XE": "Ich lerne Spanisch.",
+          "XK": "나는 스페인어를 배우고 있어.",
+          "XR": "이히 레르네 슈파니쉬"
+        },
+        {
+          "T1": "Pfaden",
+          "K1": "길들",
+          "R1": "파덴",
+          "E1": "'Pfaden'은 '길'이라는 의미의 명사 'Pfad'의 복수형으로, 길을 나타냅니다.",
+          "T2": "Pfad",
+          "K2": "길",
+          "R2": "파트",
+          "XE": "Wir gehen den Pfad.",
+          "XK": "우리는 그 길로 가.",
+          "XR": "비어 게헨 덴 파트"
+        },
+        {
+          "T1": "entdecken",
+          "K1": "발견하다",
+          "R1": "엔테크큰",
+          "E1": "'Entdecken'은 무엇인가를 찾아내거나 발견하는 동사입니다.",
+          "T2": "entdecken",
+          "K2": "발견하다",
+          "R2": "엔테크큰",
+          "XE": "Wir entdecken neue Orte.",
+          "XK": "우리는 새로운 장소를 발견해.",
+          "XR": "비어 엔테크큰 노이에 오르테"
+        }
+      ]
+    },
+    {
+      "T0": "Sang mit Chör'n in Manhattan",
+      "C0": "나는 빅 애플에서 깨어 있었습니다. 맨해튼에서 합창단과 함께 노래했습니다. 프랑스길은 구원이었습니다.",
+      "G0": "'Sang mit Chör'n in Manhattan'은 주어가 생략된 상태에서 과거형 동사(sang)와 부사구(mit Chör'n in Manhattan)로 구성된 문장입니다. 주어와 동사를 추측할 수 있지만, 맥락에 따라 '나는' 혹은 '우리가'로 해석될 수 있습니다.",
+      "K0": "나는 맨해튼에서 합창단과 함께 노래했어.",
+      "R0": "상 미트 쳐른 인 맨하탄",
+      "LI": [
+        {
+          "T1": "Sang",
+          "K1": "노래했다",
+          "R1": "상",
+          "E1": "'Sang'는 과거형 동사로, 노래하는 행위를 나타냅니다. 현재형 'sing'의 과거형입니다.",
+          "T2": "sing",
+          "K2": "노래하다",
+          "R2": "싱",
+          "XE": "I sang a song yesterday.",
+          "XK": "나는 어제 노래를 불렀어.",
+          "XR": "아이 상드 어 송 예스터데이"
+        },
+        {
+          "T1": "mit",
+          "K1": "와/함께",
+          "R1": "밋",
+          "E1": "'Mit'는 독일어에서 '함께'라는 의미를 가진 전치사로, 함께 하는 행동을 나타낼 때 사용됩니다.",
+          "T2": "mit",
+          "K2": "와/함께",
+          "R2": "밋",
+          "XE": "Ich gehe mit dir.",
+          "XK": "나는 너와 함께 간다.",
+          "XR": "이히 게히 미트 디르"
+        },
+        {
+          "T1": "Chör'n",
+          "K1": "합창단",
+          "R1": "쳐른",
+          "E1": "'Chör'n'는 'Chöre(합창단)'의 구어체로, 여러 사람이 함께 노래하는 그룹을 의미합니다.",
+          "T2": "Chor",
+          "K2": "합창단",
+          "R2": "코어",
+          "XE": "Der Chor singt schön.",
+          "XK": "합창단이 아름답게 노래한다.",
+          "XR": "데어 코어 싱트 쉰"
+        },
+        {
+          "T1": "in",
+          "K1": "안에/에서",
+          "R1": "인",
+          "E1": "'In'은 위치를 나타내는 전치사로, 어떤 장소에 존재함을 의미합니다.",
+          "T2": "in",
+          "K2": "안에/에서",
+          "R2": "인",
+          "XE": "Ich bin in der Stadt.",
+          "XK": "나는 도시에 있다.",
+          "XR": "이히 빈 인 데어 슈타트"
+        },
+        {
+          "T1": "Manhattan",
+          "K1": "맨해튼",
+          "R1": "맨해튼",
+          "E1": "'Manhattan'은 미국 뉴욕 시의 다섯 개 자치구 중 하나로, 유명한 관광지 및 상업 중심지입니다.",
+          "T2": "Manhattan",
+          "K2": "맨해튼",
+          "R2": "맨해튼",
+          "XE": "I want to visit Manhattan.",
+          "XK": "나는 맨해튼에 가고 싶어.",
+          "XR": "아이 원트 투 비짓 맨해튼"
+        }
+      ]
+    },
+    {
+      "T0": "Mann, wann seh' ich dich endlich?",
+      "C0": "내가 너를 결국 언제 볼 수 있을까?",
+      "G0": "'Mann, wann seh' ich dich endlich?'는 'Mann'(이봐)과 'wann seh' ich dich endlich?'(내가 너를 결국 언제 볼 수 있을까?)라는 두 부분으로 구성된 문장으로, 화자가 상대방을 만나고 싶어하는 표현입니다.",
+      "K0": "이봐, 내가 너를 결국 언제 볼 수 있을까?",
+      "R0": "맨, 반 제 이치 딕 엔들리히?",
+      "LI": [
+        {
+          "T1": "Mann",
+          "K1": "이봐",
+          "R1": "맨",
+          "E1": "'Mann'은 친근하게 사람에게 말을 걸 때 사용하는 표현입니다.",
+          "T2": "Mann",
+          "K2": "남자",
+          "R2": "맨",
+          "XE": "Hey Mann, was machst du?",
+          "XK": "이봐, 뭐 해?",
+          "XR": "헤이 맨, 바스 마흐스트 두?"
+        },
+        {
+          "T1": "wann",
+          "K1": "언제",
+          "R1": "반",
+          "E1": "'Wann'은 특정 시점을 물어보는 질문 형용사입니다.",
+          "T2": "wann",
+          "K2": "언제",
+          "R2": "반",
+          "XE": "Wann kommst du zu mir?",
+          "XK": "너는 언제 내게 오니?",
+          "XR": "반 콤스트 두 추 미르?"
+        },
+        {
+          "T1": "seh'",
+          "K1": "보다",
+          "R1": "제",
+          "E1": "'Seh''는 'sehen'의 축약형으로, 바라보는 행위를 나타내는 동사입니다.",
+          "T2": "sehen",
+          "K2": "보다",
+          "R2": "제",
+          "XE": "Ich sehe dich morgen.",
+          "XK": "내일 너를 볼 거야.",
+          "XR": "이히 제 디히 모르겐"
+        },
+        {
+          "T1": "ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 1인칭 대명사로, 화자를 나타냅니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich liebe dich.",
+          "XK": "나는 너를 사랑해.",
+          "XR": "이히 리베 디히"
+        },
+        {
+          "T1": "dich",
+          "K1": "너를",
+          "R1": "디히",
+          "E1": "'Dich'는 2인칭 대명사로, 상대방을 직접 가리킵니다.",
+          "T2": "du",
+          "K2": "너",
+          "R2": "두",
+          "XE": "Kennst du mich?",
+          "XK": "너는 나를 아는가?",
+          "XR": "켄스트 두 미흐?"
+        },
+        {
+          "T1": "endlich",
+          "K1": "결국",
+          "R1": "엔틀리히",
+          "E1": "'Endlich'는 기다리고 기다리던 상태에서 마침내 이루어졌을 때를 나타내는 부사입니다.",
+          "T2": "endlich",
+          "K2": "결국",
+          "R2": "엔틀리히",
+          "XE": "Endlich ist es so weit.",
+          "XK": "드디어 그렇게 됐다.",
+          "XR": "엔틀리히 이스트 에스 소 와이트"
+        }
+      ]
+    },
+    {
+      "T0": "Ich schick' 'n Herz in Rot zu dir",
+      "C0": "맨, 나는 너를 드디어 언제 볼 수 있을까? 나는 너에게 빨간 하트를 보낼게.",
+      "G0": "'Ich schick' 'n Herz in Rot zu dir'는 주어(I, Ich)와 동사(شick', schick)로 시작하고 목적어('n Herz in Rot)와 간접목적어(zu dir)로 이어지는 간단한 구조로, 감정을 표현하는 내용입니다.",
+      "K0": "나는 너에게 빨간 하트를 보낼게.",
+      "R0": "이히 시크 '엔 헤르츠 인 로트 츠 디얼",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 화자를 지칭하는 1인칭 단수 주어입니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich liebe das Wetter.",
+          "XK": "나는 날씨를 사랑해.",
+          "XR": "이히 리베 다스 베터"
+        },
+        {
+          "T1": "schick'",
+          "K1": "보내다",
+          "R1": "시크",
+          "E1": "'Schick'는 보내는 행위를 나타내는 동사로, 'schicken'(보내다)의 구어체 단축형입니다.",
+          "T2": "schicken",
+          "K2": "보내다",
+          "R2": "시큰",
+          "XE": "Ich schicke dir eine Nachricht.",
+          "XK": "나는 너에게 메시지를 보낼게.",
+          "XR": "이히 시키 디어 아이네 나흐리흐트"
+        },
+        {
+          "T1": "'n",
+          "K1": "하나의",
+          "R1": "'은",
+          "E1": "'N'은 'ein'(하나의)의 구어체 단축형으로, 명사를 수식할 때 사용됩니다.",
+          "T2": "ein",
+          "K2": "하나의",
+          "R2": "아인",
+          "XE": "Ich möchte ein Stück Kuchen.",
+          "XK": "나는 케이크 한 조각을 원해.",
+          "XR": "이히 묘흐테 아인 슈틱 쿠헨"
+        },
+        {
+          "T1": "Herz",
+          "K1": "하트",
+          "R1": "헤르츠",
+          "E1": "'Herz'는 심장이나 사랑을 상징하는 명사로, 여기서는 하트를 의미합니다.",
+          "T2": "Herz",
+          "K2": "하트",
+          "R2": "헤르츠",
+          "XE": "Mein Herz schlägt schnell.",
+          "XK": "내 하트가 빨리 뛰고 있어.",
+          "XR": "마인 헤르츠 슐레크트 슈넬"
+        },
+        {
+          "T1": "in",
+          "K1": "안에",
+          "R1": "인",
+          "E1": "'In'은 장소나 방향을 나타내는 전치사입니다.",
+          "T2": "in",
+          "K2": "안에",
+          "R2": "인",
+          "XE": "Ich bin in der Schule.",
+          "XK": "나는 학교에 있어.",
+          "XR": "이히 빈 인 데어 슐레"
+        },
+        {
+          "T1": "Rot",
+          "K1": "빨간",
+          "R1": "롯",
+          "E1": "'Rot'는 색상을 나타내는 형용사로, 여기서는 빨간색을 의미합니다.",
+          "T2": "rot",
+          "K2": "빨간",
+          "R2": "롯",
+          "XE": "Das Auto ist rot.",
+          "XK": "차가 빨간색이야.",
+          "XR": "다스 아우토 이스트 롯"
+        },
+        {
+          "T1": "zu",
+          "K1": "에게",
+          "R1": "츠",
+          "E1": "'Zu'는 방향이나 목적지를 나타내는 전치사입니다.",
+          "T2": "zu",
+          "K2": "에게",
+          "R2": "츠",
+          "XE": "Gehe zu ihm.",
+          "XK": "그에게 가.",
+          "XR": "게에 츠 이람"
+        },
+        {
+          "T1": "dir",
+          "K1": "너에게",
+          "R1": "디어",
+          "E1": "'Dir'는 2인칭 단수 대명사로, 여기서는 '너'를 의미합니다.",
+          "T2": "du",
+          "K2": "너",
+          "R2": "두",
+          "XE": "Hast du Zeit?",
+          "XK": "시간 있어?",
+          "XR": "하스트 두 차이트?"
+        }
+      ]
+    },
+    {
+      "T0": "Will so viel wie's geht erleben",
+      "C0": "모든 모험으로 가득한 세상. 가능한 한 많은 것을 경험하고 싶어. 하지만 너, 베이비, 너만.",
+      "G0": "'Will so viel wie's geht erleben'은 주어(I의 생략), 조동사(will), 목적어(so viel wie's geht), 동사(erleben)로 이루어진 구조로, 가능할 때 최대한 많은 경험을 하고 싶다는 의미입니다.",
+      "K0": "최대한 많이 경험하고 싶어.",
+      "R0": "윌 소 필 비즈 겟 얼레벤",
+      "LI": [
+        {
+          "T1": "Will",
+          "K1": "원하다",
+          "R1": "윌",
+          "E1": "'Will'은 미래의 행동이나 의도를 표현하는 조동사입니다.",
+          "T2": "will",
+          "K2": "원하다",
+          "R2": "윌",
+          "XE": "I will go to the store tomorrow.",
+          "XK": "나는 내일 가게에 갈 거야.",
+          "XR": "아이 윌 고 투 더 스토어 투모로우"
+        },
+        {
+          "T1": "so",
+          "K1": "그렇게",
+          "R1": "소",
+          "E1": "'So'는 정도나 상태를 강조할 때 사용되는 부사입니다.",
+          "T2": "so",
+          "K2": "그렇게",
+          "R2": "소",
+          "XE": "I am so tired.",
+          "XK": "나는 매우 피곤해.",
+          "XR": "아이 엠 소 타이어드"
+        },
+        {
+          "T1": "viel",
+          "K1": "많은",
+          "R1": "필",
+          "E1": "'Viel'은 양이나 정도가 크다는 의미를 지닌 부사입니다.",
+          "T2": "viel",
+          "K2": "많은",
+          "R2": "필",
+          "XE": "Es gibt viel zu tun.",
+          "XK": "할 일이 많아.",
+          "XR": "에스 기프트 필 추 튠"
+        },
+        {
+          "T1": "wie's",
+          "K1": "~처럼",
+          "R1": "비즈",
+          "E1": "'Wie's'는 'wie es'의 축약형으로, '~처럼' 또는 '~하는 것처럼'이라는 의미입니다.",
+          "T2": "wie",
+          "K2": "~처럼",
+          "R2": "비",
+          "XE": "Sie tanzt wie eine professionelle Tänzerin.",
+          "XK": "그녀는 전문 무용수처럼 춤춘다.",
+          "XR": "지 탄츠 비 아이네 프로페셔넬 탄제린"
+        },
+        {
+          "T1": "geht",
+          "K1": "가다",
+          "R1": "게이트",
+          "E1": "'Geht'는 동사 'gehen'의 현재 시제 3인칭 단수형으로, '가다' 또는 '행하다'는 의미입니다.",
+          "T2": "gehen",
+          "K2": "가다",
+          "R2": "게헨",
+          "XE": "Sie geht zur Schule.",
+          "XK": "그녀는 학교에 간다.",
+          "XR": "지 게이트 츠르 슈쿨레"
+        },
+        {
+          "T1": "erleben",
+          "K1": "경험하다",
+          "R1": "얼레벤",
+          "E1": "'Erleben'은 경험하다, 체험하다라는 의미의 동사입니다.",
+          "T2": "erleben",
+          "K2": "경험하다",
+          "R2": "얼레벤",
+          "XE": "Wir wollen die Welt erleben.",
+          "XK": "우리는 세상을 경험하고 싶어.",
+          "XR": "비르 월렌 디 벨트 얼레벤"
+        }
+      ]
+    },
+    {
+      "T0": "Zwischen den größten Legenden der Welt",
+      "C0": "나는 L.A.의 언덕에 있었어. 세계의 가장 위대한 전설들 사이에. 나는 마르세유의 항구에 있었어.",
+      "G0": "'Zwischen den größten Legenden der Welt'는 '세계의 가장 위대한 전설들 사이에서'라는 의미로, 특정한 장소나 상태를 설명하는 전치사구로 구성된 문장입니다.",
+      "K0": "세계의 가장 위대한 전설들 사이에.",
+      "R0": "쯔비셴 덴 그뢰스텐 레겐덴 데어 벨트",
+      "LI": [
+        {
+          "T1": "Zwischen",
+          "K1": "사이",
+          "R1": "쯔비셴",
+          "E1": "'Zwischen'은 두 개 이상의 것 사이의 위치나 관계를 나타내는 전치사입니다.",
+          "T2": "zwischen",
+          "K2": "사이",
+          "R2": "쯔비셴",
+          "XE": "Die Katze sitzt zwischen den Stühlen.",
+          "XK": "고양이가 의자 사이에 앉아 있다.",
+          "XR": "디 카체 지츠 쯔비셴 덴 슈튈렌"
+        },
+        {
+          "T1": "den",
+          "K1": "그",
+          "R1": "덴",
+          "E1": "'Den'은 정관사로, 주격 또는 대격에서 복수형 명사와 함께 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "데어",
+          "XE": "Den Hund sehe ich selten.",
+          "XK": "나는 그 개를 자주 보지 못해.",
+          "XR": "덴 훌드 제헤 이히 젤텐"
+        },
+        {
+          "T1": "größten",
+          "K1": "가장 위대한",
+          "R1": "그뢰스텐",
+          "E1": "'Größten'은 형용사 'groß'의 최상급 형태로, 크기나 중요성을 나타내는 표현입니다.",
+          "T2": "groß",
+          "K2": "큰",
+          "R2": "그로스",
+          "XE": "Das Haus ist sehr groß.",
+          "XK": "그 집은 매우 커.",
+          "XR": "다스 하우스 이스트 제어 그로스"
+        },
+        {
+          "T1": "Legenden",
+          "K1": "전설들",
+          "R1": "레겐덴",
+          "E1": "'Legenden'는 '전설'을 의미하는 명사로, 여러 가지 이야기나 신화를 지칭합니다.",
+          "T2": "Legende",
+          "K2": "전설",
+          "R2": "레겐더",
+          "XE": "Die Legende erzählt von einem Helden.",
+          "XK": "그 전설은 한 영웅에 관한 이야기다.",
+          "XR": "디 레겐데 에르텔트 폰 아이넴 헬덴"
+        },
+        {
+          "T1": "der",
+          "K1": "그",
+          "R1": "데어",
+          "E1": "'Der'는 정관사로, 주격에서 단수형 남성 명사와 함께 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "데어",
+          "XE": "Der Lehrer ist nett.",
+          "XK": "선생님은 친절하다.",
+          "XR": "데어 레어러 이스트 네트"
+        },
+        {
+          "T1": "Welt",
+          "K1": "세계",
+          "R1": "벨트",
+          "E1": "'Welt'는 지구나 인류의 총체를 의미하는 명사입니다.",
+          "T2": "Welt",
+          "K2": "세계",
+          "R2": "벨트",
+          "XE": "Die Welt ist schön.",
+          "XK": "세계는 아름답다.",
+          "XR": "디 벨트 이스트 쉰"
+        }
+      ]
+    },
+    {
+      "T0": "Und bin fast daheim in Warschau",
+      "C0": "맨, 나는 크라쿠프에서 놀고 거의 바르샤바 집에 도착했어. 나는 빅 애플에서 깨어 있었어.",
+      "G0": "'Und bin fast daheim in Warschau'는 'und'(그리고)와 'bin'(나는 ~이다)의 결합으로 주어(나는)를 명확하게 나타내며, 'daheim'(집에) 및 장소(바르샤바)를 포함하여 상황을 설명하는 문장을 형성하고 있습니다.",
+      "K0": "그리고 나는 바르샤바 집에 거의 다 왔어.",
+      "R0": "운드 빈 파스트 다하임 인 바르샤우",
+      "LI": [
+        {
+          "T1": "Und",
+          "K1": "그리고",
+          "R1": "운드",
+          "E1": "'Und'는 두 문장이나 구를 연결할 때 사용되는 접속사입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I like pizza, and I like pasta.",
+          "XK": "나는 피자를 좋아하고, 파스타도 좋아해.",
+          "XR": "아이 라이크 피자, 앤드 아이 라이크 파스타"
+        },
+        {
+          "T1": "bin",
+          "K1": "~이다",
+          "R1": "빈",
+          "E1": "'Bin'은 독일어 동사 'sein'(이다)의 1인칭 단수형으로, 주어와 상태를 연결하는 역할을 합니다.",
+          "T2": "be",
+          "K2": "~이다",
+          "R2": "비",
+          "XE": "I am a student.",
+          "XK": "나는 학생이다.",
+          "XR": "아이 엠 어 스튜던트"
+        },
+        {
+          "T1": "fast",
+          "K1": "거의",
+          "R1": "파스트",
+          "E1": "'Fast'는 거의, 또는 대략적인 정도를 나타내는 부사입니다.",
+          "T2": "fast",
+          "K2": "거의",
+          "R2": "파스트",
+          "XE": "She is fast asleep.",
+          "XK": "그녀는 거의 잠들어 있다.",
+          "XR": "쉬 이즈 파스트 어슬립"
+        },
+        {
+          "T1": "daheim",
+          "K1": "집에",
+          "R1": "다하임",
+          "E1": "'Daheim'은 독일어로 '집'을 뜻하며, 편안함이나 익숙함을 나타내는 경향이 있습니다.",
+          "T2": "home",
+          "K2": "집",
+          "R2": "홈",
+          "XE": "I will go home now.",
+          "XK": "나는 지금 집에 갈 거야.",
+          "XR": "아이 윌 고 홈 나우"
+        },
+        {
+          "T1": "in",
+          "K1": "~에서",
+          "R1": "인",
+          "E1": "'In'은 장소를 나타내는 전치사로서, 그 안에 있는 위치를 의미합니다.",
+          "T2": "in",
+          "K2": "~에",
+          "R2": "인",
+          "XE": "She is in the room.",
+          "XK": "그녀는 방 안에 있다.",
+          "XR": "쉬 이즈 인 더 룸"
+        },
+        {
+          "T1": "Warschau",
+          "K1": "바르샤바",
+          "R1": "바르샤우",
+          "E1": "'Warschau'는 폴란드의 수도인 바르샤바를 의미하는 독일어 명칭입니다.",
+          "T2": "Warsaw",
+          "K2": "바르샤바",
+          "R2": "와르소",
+          "XE": "Warschau ist die Hauptstadt von Polen.",
+          "XK": "바르샤바는 폴란드의 수도이다.",
+          "XR": "바르샤우 이스트 디 하우프트슈타트 폰 폴렌"
+        }
+      ]
+    },
+    {
+      "T0": "Genoss die Wärme der Nächte Kampalas",
+      "C0": "나는 우간다의 마음에 있었고, 캠팔라의 밤의 따뜻함을 즐겼어. 언덕을 걸어다녔어.",
+      "G0": "'Genoss die Wärme der Nächte Kampalas'는 주어가 생략되어 있으며, 동사(Genoss), 목적어(die Wärme), 전치사 구(der Nächte Kampalas)로 이루어진 구문입니다. 이는 캠팔라의 밤에 느끼는 따뜻함을 즐기는 경험을 표현합니다.",
+      "K0": "캠팔라의 밤의 따뜻함을 즐겼어.",
+      "R0": "게노스 디 바에르메 데어 네흐태 캄팔라스",
+      "LI": [
+        {
+          "T1": "Genoss",
+          "K1": "즐기다",
+          "R1": "게노스",
+          "E1": "'Genoss'는 과거형 동사로, '~을 즐기다' 또는 '~를 만끽하다'라는 의미를 가지고 있습니다.",
+          "T2": "genießen",
+          "K2": "즐기다",
+          "R2": "게니센",
+          "XE": "Ich genoss die Zeit mit meinen Freunden.",
+          "XK": "나는 친구들과 시간을 즐겼다.",
+          "XR": "이히 게니소스 디 차이트 미트 마이넨 프렌든"
+        },
+        {
+          "T1": "die",
+          "K1": "그",
+          "R1": "디",
+          "E1": "'Die'는 독일어에서 여성(단수) 명사를 가리키는 정관사입니다.",
+          "T2": "die",
+          "K2": "그",
+          "R2": "디",
+          "XE": "Die Katze schläft.",
+          "XK": "고양이가 잔다.",
+          "XR": "디 카자 슈레프트"
+        },
+        {
+          "T1": "Wärme",
+          "K1": "따뜻함",
+          "R1": "바에르메",
+          "E1": "'Wärme'는 온도나 기온이 높은 상태를 의미하는 명사로, 여기서는 감정적이거나 분위기 있는 따뜻함을 가리킵니다.",
+          "T2": "Wärme",
+          "K2": "따뜻함",
+          "R2": "바에르메",
+          "XE": "Die Wärme des Feuers ist angenehm.",
+          "XK": "불의 따뜻함은 쾌적하다.",
+          "XR": "디 바에르메 데스 파이어스 이스트 안게나햄"
+        },
+        {
+          "T1": "der",
+          "K1": "의",
+          "R1": "데어",
+          "E1": "'Der'는 독일어에서 남성(단수) 명사를 가리키는 정관사입니다.",
+          "T2": "der",
+          "K2": "의",
+          "R2": "데어",
+          "XE": "Der Hund ist freundlich.",
+          "XK": "그 개는 친절하다.",
+          "XR": "데어 헌드 이스트 프렌들리히"
+        },
+        {
+          "T1": "Nächte",
+          "K1": "밤",
+          "R1": "네흐트",
+          "E1": "'Nächte'는 'Nacht'의 복수형으로, 여러 개의 밤을 의미하는 명사입니다.",
+          "T2": "Nacht",
+          "K2": "밤",
+          "R2": "나흐트",
+          "XE": "Die Nächte in Sommer sind warm.",
+          "XK": "여름의 밤은 따뜻하다.",
+          "XR": "디 네흐테 인 좀머 신드 바르므"
+        },
+        {
+          "T1": "Kampalas",
+          "K1": "캠팔라의",
+          "R1": "캄팔라스",
+          "E1": "'Kampalas'는 우간다의 수도인 캠팔라를 가리키는 고유명사입니다.",
+          "T2": "Kampala",
+          "K2": "캠팔라",
+          "R2": "캄팔라",
+          "XE": "Kampala ist die Hauptstadt von Uganda.",
+          "XK": "캠팔라는 우간다의 수도이다.",
+          "XR": "캄팔라 이스트 디 하우프트슈타트 폰 우간다"
+        }
+      ]
+    },
+    {
+      "T0": "Ich war in den Hills von L.A.",
+      "C0": "라, 라 라 라 라, 에이 나는 L.A.의 언덕에 있었어. 세계의 가장 위대한 전설들 사이에서.",
+      "G0": "'Ich war in den Hills von L.A.'는 주어(Ich), 동사(war), 전치사구(in den Hills von L.A.)로 이루어진 간단한 문장 구조로, 과거에 특정 장소에 있었다는 사실을 표현합니다.",
+      "K0": "나는 L.A.의 언덕에 있었어.",
+      "R0": "이히 바르 인 덴 힐스 폰 엘.에이.",
+      "LI": [
+        {
+          "T1": "Ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 1인칭 단수 주어로, 화자를 나타냅니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich mag Schokolade.",
+          "XK": "나는 초콜릿을 좋아해.",
+          "XR": "이히 마크 쇼콜라데"
+        },
+        {
+          "T1": "war",
+          "K1": "~이었다",
+          "R1": "바르",
+          "E1": "'War'는 동사 'sein(이다)'의 과거형으로, 주어 'Ich'와 함께 사용되며 과거의 상태나 존재를 나타냅니다.",
+          "T2": "sein",
+          "K2": "이다",
+          "R2": "자인",
+          "XE": "Er war glücklich.",
+          "XK": "그는 행복했어.",
+          "XR": "에르 바르 글뤽리히"
+        },
+        {
+          "T1": "in",
+          "K1": "~에서",
+          "R1": "인",
+          "E1": "'In'은 장소를 나타내는 전치사로 사용됩니다.",
+          "T2": "in",
+          "K2": "~에서",
+          "R2": "인",
+          "XE": "Ich lebe in Deutschland.",
+          "XK": "나는 독일에 살아.",
+          "XR": "이히 레베 인 독슐란드"
+        },
+        {
+          "T1": "den",
+          "K1": "그",
+          "R1": "덴",
+          "E1": "'Den'은 정관사로, 복수명사나 특정한 대상을 가리킬 때 사용됩니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Ich sehe die Katzen.",
+          "XK": "나는 고양이들을 봐.",
+          "XR": "이히 세헤 디 카텐"
+        },
+        {
+          "T1": "Hills",
+          "K1": "언덕들",
+          "R1": "힐스",
+          "E1": "'Hills'는 지형적 특성을 나타내는 명사로, 여러 개의 언덕을 의미합니다.",
+          "T2": "Hill",
+          "K2": "언덕",
+          "R2": "힐",
+          "XE": "Die Kinder spielen auf den Hügeln.",
+          "XK": "아이들은 언덕에서 놀고 있어.",
+          "XR": "디 킨더 스피렌 아우프 덴 히겔른"
+        },
+        {
+          "T1": "von",
+          "K1": "~의",
+          "R1": "폰",
+          "E1": "'Von'은 '의' 또는 '출신'을 나타내는 전치사이며, 소속이나 출처를 나타냅니다.",
+          "T2": "von",
+          "K2": "~의",
+          "R2": "폰",
+          "XE": "Das Buch ist von mir.",
+          "XK": "그 책은 나의 거야.",
+          "XR": "다스 부흐 이스트 폰 미어"
+        },
+        {
+          "T1": "L.A.",
+          "K1": "엘.에이.",
+          "R1": "엘.에이.",
+          "E1": "'L.A.'는 로스앤젤레스를 줄여서 부르는 말로, 미국의 도시를 가리킵니다.",
+          "T2": "Los Angeles",
+          "K2": "로스앤젤레스",
+          "R2": "로스 앤젤레스",
+          "XE": "Ich will nach L.A. reisen.",
+          "XK": "나는 L.A.에 여행 가고 싶어.",
+          "XR": "이히 빌 나흐 엘.에이. 라이젠"
+        }
+      ]
+    },
+    {
+      "T0": "Aß den Fisch dort direkt aus der See",
+      "C0": "나는 마르세유 항구에 있었다. Aß den Fisch dort direkt aus der See 나는 우간다의 심장에 있었다.",
+      "G0": "'Aß den Fisch dort direkt aus der See'는 주어가 생략된 상태에서, 'den Fisch'가 목적어가 되어 먹는 행동을 기술한 문장으로 보입니다.",
+      "K0": "바다에서 그 물고기를 직접 잡아먹었다.",
+      "R0": "아스 덴 피쉬 도르 디렉트 아우스 데어 제",
+      "LI": [
+        {
+          "T1": "Aß",
+          "K1": "먹었다",
+          "R1": "아스",
+          "E1": "'Aß'는 독일어로 '먹었다'라는 의미를 갖는 과거형 동사입니다.",
+          "T2": "essen",
+          "K2": "먹다",
+          "R2": "에센",
+          "XE": "Ich aß einen Apfel.",
+          "XK": "나는 사과를 먹었다.",
+          "XR": "이히 아스 아이넨 아플"
+        },
+        {
+          "T1": "den",
+          "K1": "그",
+          "R1": "덴",
+          "E1": "'Den'은 특정한 남성 명사를 꼬리표 붙일 때 쓰이는 정관사입니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "더",
+          "XE": "Den Mann habe ich gesehen.",
+          "XK": "그 남자를 봤어.",
+          "XR": "덴 만 하베 이히 위치 세헨"
+        },
+        {
+          "T1": "Fisch",
+          "K1": "물고기",
+          "R1": "피쉬",
+          "E1": "'Fisch'는 물속에서 사는 생물을 의미하며, 일반적으로 기계적으로 잡히는 고기를 나타냅니다.",
+          "T2": "Fisch",
+          "K2": "물고기",
+          "R2": "피쉬",
+          "XE": "Der Fisch schwimmt im Wasser.",
+          "XK": "물고기가 물속에서 헤엄친다.",
+          "XR": "데어 피쉬 슈임트 임 바서"
+        },
+        {
+          "T1": "dort",
+          "K1": "거기",
+          "R1": "도르트",
+          "E1": "'Dort'는 특정한 장소를 가리키는 부사로, 영어의 'there'에 해당합니다.",
+          "T2": "dort",
+          "K2": "거기",
+          "R2": "도르트",
+          "XE": "Dort ist ein schöner Strand.",
+          "XK": "거기에 아름다운 해변이 있어.",
+          "XR": "도르트 이스트 아인 쉬너 슈트란드"
+        },
+        {
+          "T1": "direkt",
+          "K1": "직접",
+          "R1": "디렉트",
+          "E1": "'Direkt'는 방향이나 경로가 나무의 방향으로 이어짐을 의미하는 형용사입니다.",
+          "T2": "direkt",
+          "K2": "직접",
+          "R2": "디렉트",
+          "XE": "Geradeaus direkt gehen.",
+          "XK": "똑바로 직접 가다.",
+          "XR": "게라데아우스 디렉트 게헨"
+        },
+        {
+          "T1": "aus",
+          "K1": "~에서",
+          "R1": "아우스",
+          "E1": "'Aus'는 '~에서', '~로부터'라는 의미를 가진 전치사입니다.",
+          "T2": "aus",
+          "K2": "~에서",
+          "R2": "아우스",
+          "XE": "Ich gehe aus dem Haus.",
+          "XK": "나는 집에서 나간다.",
+          "XR": "이히 게헤 아우스 댐 하우스"
+        },
+        {
+          "T1": "der",
+          "K1": "그",
+          "R1": "데어",
+          "E1": "'Der'는 특정한 남성 명사를 지칭하는 정관사입니다.",
+          "T2": "der",
+          "K2": "그",
+          "R2": "데어",
+          "XE": "Der Fisch ist frisch.",
+          "XK": "그 물고기는 신선하다.",
+          "XR": "데어 피쉬 이스트 프리쉬"
+        },
+        {
+          "T1": "See",
+          "K1": "바다",
+          "R1": "제",
+          "E1": "'See'는 물이 고인 특정 장소, 즉 '바다'를 의미하는 명사입니다.",
+          "T2": "See",
+          "K2": "바다",
+          "R2": "제",
+          "XE": "Die See ist ruhig.",
+          "XK": "바다가 잔잔하다.",
+          "XR": "디 제 이스트 루이히"
+        }
+      ]
+    },
+    {
+      "T0": "Und ich guck' schon wieder auf mein Handy",
+      "C0": "더블린의 아일랜드 위클로에서 나는 다시 손에 든 핸드를 바라보네. 내 머리는 너에게 가 있어.",
+      "G0": "'Und ich guck' schon wieder auf mein Handy'는 '그리고 나는 다시 내 핸드폰을 보고 있어'라는 의미의 독일어 문장으로, 주로 주어(ich)와 동사(guck')로 이루어져 있습니다.",
+      "K0": "나는 다시 내 핸드폰을 보고 있어.",
+      "R0": "운드 이히 구크 숀 비더 아우프 마인 핸디",
+      "LI": [
+        {
+          "T1": "Und",
+          "K1": "그리고",
+          "R1": "운드",
+          "E1": "'Und'는 두 개 이상의 문장을 연결할 때 사용하는 접속사로, '그리고'라는 뜻입니다.",
+          "T2": "and",
+          "K2": "그리고",
+          "R2": "앤드",
+          "XE": "I like apples and oranges.",
+          "XK": "나는 사과와 오렌지를 좋아해.",
+          "XR": "아이 라이크 애플스 앤 오렌지스"
+        },
+        {
+          "T1": "ich",
+          "K1": "나는",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 1인칭 단수 주어를 나타내는 대명사입니다.",
+          "T2": "I",
+          "K2": "나는",
+          "R2": "아이",
+          "XE": "I am learning German.",
+          "XK": "나는 독일어를 배우고 있어.",
+          "XR": "아이 엠 러닝 저민"
+        },
+        {
+          "T1": "guck'",
+          "K1": "보다",
+          "R1": "구크",
+          "E1": "'Guck''은 '보다(구경하다)'라는 뜻의 동사 'gucken'의 구어체 형태입니다.",
+          "T2": "gucken",
+          "K2": "보다",
+          "R2": "구큰",
+          "XE": "Guck mal, da drüben!",
+          "XK": "저기 봐봐!",
+          "XR": "구크 말, 다 드뤼벤!"
+        },
+        {
+          "T1": "schon",
+          "K1": "벌써",
+          "R1": "숀",
+          "E1": "'Schon'는 이미 또는 벌써라는 의미로, 어떤 행동이 예상보다 빨리 일어났음을 나타냅니다.",
+          "T2": "already",
+          "K2": "이미",
+          "R2": "얼레디",
+          "XE": "Ich habe schon gegessen.",
+          "XK": "나는 이미 먹었어.",
+          "XR": "이히 하베 숀 게에센"
+        },
+        {
+          "T1": "wieder",
+          "K1": "다시",
+          "R1": "비더",
+          "E1": "'Wieder'는 다시, 또는 재차를 의미하며, 이전에 했던 행동이 반복됨을 나타냅니다.",
+          "T2": "again",
+          "K2": "다시",
+          "R2": "어게인",
+          "XE": "Ich mache das wieder.",
+          "XK": "나는 그것을 다시 할 거야.",
+          "XR": "이히 마흐 문 다스 비더"
+        },
+        {
+          "T1": "auf",
+          "K1": "~위에",
+          "R1": "아우프",
+          "E1": "'Auf'는 위치를 나타낼 때 사용하는 전치사로, '~위에'라는 의미입니다.",
+          "T2": "on",
+          "K2": "~위에",
+          "R2": "온",
+          "XE": "Das Buch liegt auf dem Tisch.",
+          "XK": "책이 테이블 위에 있다.",
+          "XR": "다스 부흐 리그트 아우프 뎀 티쉬"
+        },
+        {
+          "T1": "mein",
+          "K1": "내",
+          "R1": "마인",
+          "E1": "'Mein'은 1인칭 소유격 대명사로 '내'라는 의미입니다.",
+          "T2": "my",
+          "K2": "내",
+          "R2": "마이",
+          "XE": "Das ist mein Hund.",
+          "XK": "이건 내 개야.",
+          "XR": "다스 이스트 마인 훈드"
+        },
+        {
+          "T1": "Handy",
+          "K1": "핸드폰",
+          "R1": "핸디",
+          "E1": "'Handy'는 휴대폰을 의미하는 독일어 단어입니다.",
+          "T2": "cell phone",
+          "K2": "휴대폰",
+          "R2": "셀 폰",
+          "XE": "Mein Handy ist neu.",
+          "XK": "내 핸드폰은 새거야.",
+          "XR": "마인 핸디 이스트 노이"
+        }
+      ]
+    },
+    {
+      "T0": "Es gibt 194 Länder, ich will jedes davon seh'n",
+      "C0": "나는 당신에게 빨간 하트를 보냅니다. 194개의 나라가 있고, 나는 그 중 매개를 보고 싶습니다. 육천오백 개 언어가 있습니다.",
+      "G0": "'Es gibt 194 Länder, ich will jedes davon seh'n'은 주어(Es), 동사(gibt), 목적어(194 Länder)와 보어(ich will jedes davon seh'n)로 구성된 문장 구조입니다. 이는 존재를 설명하고 무엇인가를 하고 싶다는 의도를 나타냅니다.",
+      "K0": "194개의 나라가 있고, 나는 그 중 매개를 보고 싶습니다.",
+      "R0": "에스 기브트 194 랜더, 이히 빌 예데스 다본 제인",
+      "LI": [
+        {
+          "T1": "Es",
+          "K1": "그것은",
+          "R1": "에스",
+          "E1": "'Es'는 주어로 사용될 때 일반적으로 존재성을 나타내는 표현으로, 특정 대상을 가리키지 않습니다.",
+          "T2": "es",
+          "K2": "그것은",
+          "R2": "에스",
+          "XE": "Es regnet heute.",
+          "XK": "오늘 비가 와.",
+          "XR": "에스 레그넷 호이테"
+        },
+        {
+          "T1": "gibt",
+          "K1": "있다",
+          "R1": "기브트",
+          "E1": "'Gibt'는 'geben'의 3인칭 단수형으로, 존재나 제공을 나타내는 동사입니다.",
+          "T2": "geben",
+          "K2": "주다",
+          "R2": "게벤",
+          "XE": "Er gibt mir ein Buch.",
+          "XK": "그가 나에게 책을 준다.",
+          "XR": "에어 기브트 미 아인 부흐"
+        },
+        {
+          "T1": "194 Länder",
+          "K1": "194개 나라",
+          "R1": "194 랜더",
+          "E1": "'194 Länder'는 194개의 독립적인 국가를 나타내는 표현입니다.",
+          "T2": "Länder",
+          "K2": "나라들",
+          "R2": "랜더",
+          "XE": "Es gibt viele Länder in Europa.",
+          "XK": "유럽에는 많은 나라가 있다.",
+          "XR": "에스 기브트 비엘 랜더 인 유로파"
+        },
+        {
+          "T1": "ich",
+          "K1": "나는",
+          "R1": "이히",
+          "E1": "'Ich'는 1인칭 단수주어로 '나'를 의미합니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich bin müde.",
+          "XK": "나는 피곤해.",
+          "XR": "이히 빈 뮈데"
+        },
+        {
+          "T1": "will",
+          "K1": "~하고 싶다",
+          "R1": "빌",
+          "E1": "'Will'은 의도를 표현할 때 사용되는 조동사로, '하고 싶다'란 의미를 지닙니다.",
+          "T2": "wollen",
+          "K2": "~하고 싶다",
+          "R2": "볼렌",
+          "XE": "Ich will ein Eis essen.",
+          "XK": "나는 아이스크림을 먹고 싶다.",
+          "XR": "이히 빌 아인 아이스 에센"
+        },
+        {
+          "T1": "jedes",
+          "K1": "모든",
+          "R1": "예데스",
+          "E1": "'Jedes'는 '각각의' 또는 '모든' 의 의미를 가지는 형용사입니다.",
+          "T2": "jede",
+          "K2": "각각의",
+          "R2": "예데",
+          "XE": "Jedes Kind sollte spielen.",
+          "XK": "모든 아이는 놀이해야 한다.",
+          "XR": "예데스 킨드 졸테 슈필렌"
+        },
+        {
+          "T1": "davon",
+          "K1": "~에서",
+          "R1": "다본",
+          "E1": "'Davon'은 '그 중에서'란 의미로 어떤 것의 일부를 가리킬 때 사용됩니다.",
+          "T2": "davon",
+          "K2": "그 중에서",
+          "R2": "다본",
+          "XE": "Ich habe das Buch davon gelesen.",
+          "XK": "나는 그 책을 읽었다.",
+          "XR": "이히 하베 다스 부흐 다본 게레드트"
+        },
+        {
+          "T1": "seh'n",
+          "K1": "보고 싶다",
+          "R1": "제인",
+          "E1": "'Seh’n'은 'sehen'의 구어체로, '보다' 또는 '보고 싶다'는 의미입니다.",
+          "T2": "sehen",
+          "K2": "보다",
+          "R2": "세엔",
+          "XE": "Ich möchte dich sehen.",
+          "XK": "널 보고 싶어.",
+          "XR": "이히 믹테 디히 세엔"
+        }
+      ]
+    },
+    {
+      "T0": "Doch heute schlaf' ich gut, denn ich weiß",
+      "C0": "전화기를 손에 쥔 채로 하지만 오늘은 잘 잘 거야, 왜냐하면 나는 알아.",
+      "G0": "'Doch heute schlaf' ich gut, denn ich weiß'는 주어(ich), 동사(schlaf'), 목적어(ich), 보어(gut), 그리고 이어지는 부사절(denn ich weiß)로 구성된 문장 구조입니다. 'Doch'는 문장의 시작에 사용되어 앞선 내용을 반박하는 역할을 합니다.",
+      "K0": "하지만 오늘은 잘 잘 거야, 왜냐하면 나는 알아.",
+      "R0": "도흐 호이테 슈래프 이히 굿, 덴 이히 바이스",
+      "LI": [
+        {
+          "T1": "Doch",
+          "K1": "하지만",
+          "R1": "도흐",
+          "E1": "'Doch'은 반대되는 내용을 강조하거나 예상되는 반대의 말을 제시할 때 사용되는 단어입니다.",
+          "T2": "doch",
+          "K2": "하지만",
+          "R2": "도흐",
+          "XE": "Ich habe kein Geld, doch ich bin glücklich.",
+          "XK": "돈이 없지만, 나는 행복해.",
+          "XR": "이히 하베 카인 겔드, 도흐 이히 빈 글리크리히"
+        },
+        {
+          "T1": "heute",
+          "K1": "오늘",
+          "R1": "호이테",
+          "E1": "'Heute'는 현재 날을 나타내는 부사로, 지금 이 시간을 의미합니다.",
+          "T2": "heute",
+          "K2": "오늘",
+          "R2": "호이테",
+          "XE": "Heute ist ein schöner Tag.",
+          "XK": "오늘은 아름다운 날이다.",
+          "XR": "호이테 이스트 아인 슈네르 탁"
+        },
+        {
+          "T1": "schlaf'",
+          "K1": "잘 자다",
+          "R1": "슐라프",
+          "E1": "'Schlaf'는 잠을 자는 행동을 나타내는 동사입니다. 'Ich schlaf'는 '내가 잔다'는 의미입니다.",
+          "T2": "schlafen",
+          "K2": "자다",
+          "R2": "슐라펜",
+          "XE": "Ich kann nicht schlafen.",
+          "XK": "나는 잘 수가 없어.",
+          "XR": "이히 칸 니히트 슐라펜"
+        },
+        {
+          "T1": "ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 첫 번째 인칭 단수 주어로, 화자를 나타냅니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich liebe Schokolade.",
+          "XK": "나는 초콜릿을 사랑해.",
+          "XR": "이히 리베 쇼콜라데"
+        },
+        {
+          "T1": "gut",
+          "K1": "잘",
+          "R1": "굿",
+          "E1": "'Gut'은 상태나 질이 좋음을 나타내는 형용사로, 이 경우 잘 자는 상태를 나타냅니다.",
+          "T2": "gut",
+          "K2": "좋은",
+          "R2": "굿",
+          "XE": "Das Essen schmeckt gut.",
+          "XK": "음식이 맛있어.",
+          "XR": "다스 에센 슈멕트 굿"
+        },
+        {
+          "T1": "denn",
+          "K1": "왜냐하면",
+          "R1": "덴",
+          "E1": "'Denn'은 이유를 설명할 때 사용하는 접속사로, 앞 문장의 이유를 제시합니다.",
+          "T2": "denn",
+          "K2": "왜냐하면",
+          "R2": "덴",
+          "XE": "Ich bin müde, denn ich habe schlecht geschlafen.",
+          "XK": "나는 피곤해, 왜냐하면 잘 못 잤거든.",
+          "XR": "이히 빈 뮈데, 덴 이히 하베 슐레흐트 게슐라펜"
+        },
+        {
+          "T1": "ich",
+          "K1": "나",
+          "R1": "이히",
+          "E1": "'Ich'는 화자 자신을 지칭하는 대명사입니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich gehe nach Hause.",
+          "XK": "나는 집에 가.",
+          "XR": "이히 게에 나흐 하우세"
+        },
+        {
+          "T1": "weiß",
+          "K1": "안다",
+          "R1": "바이스",
+          "E1": "'Weiß'는 '안다'는 의미의 동사 be의 한 형태로, 현재 알거나 깨달은 상태를 나타냅니다.",
+          "T2": "wissen",
+          "K2": "알다",
+          "R2": "비센",
+          "XE": "Ich weiß die Antwort.",
+          "XK": "나는 답을 알아.",
+          "XR": "이히 바이스 디 안버트"
+        }
+      ]
+    },
+    {
+      "T0": "Sechseinhalb Tausend Sprachen",
+      "C0": "194개의 나라가 있어, 나는 그 중에서 하나하나 보고 싶어 세치운하프 타우센드 슈프라헨 나는 그것들을 이해하려고 해.",
+      "G0": "'Sechseinhalb Tausend Sprachen'는 주어(Es), 동사(gibt), 목적어(194 Länder) 및 보어를 포함한 구조로, 다양한 언어에 대한 관심을 표현하는 메시지를 담고 있습니다.",
+      "K0": "세치운하프 타우젠드 슈프라헨.",
+      "R0": "제흐자인할프 타우젠드 슈프라헨",
+      "LI": [
+        {
+          "T1": "Sechseinhalb",
+          "K1": "세 치 반",
+          "R1": "제흐자인할프",
+          "E1": "'Sechseinhalb'는 숫자 6.5를 나타내는 독일어 표현으로, '여섯과 반'이라는 의미입니다.",
+          "T2": "sechs",
+          "K2": "여섯",
+          "R2": "제흐스",
+          "XE": "Sechs Äpfel sind auf dem Tisch.",
+          "XK": "테이블 위에 사과가 여섯 개 있습니다.",
+          "XR": "제흐스 에이펠 신드 아우프 덴 티쉬"
+        },
+        {
+          "T1": "Tausend",
+          "K1": "천",
+          "R1": "타우젠트",
+          "E1": "'Tausend'는 숫자 1,000을 나타내는 명사로, 주로 수량을 표현하는 데 사용됩니다.",
+          "T2": "tausend",
+          "K2": "천",
+          "R2": "타우젠드",
+          "XE": "Ich habe tausend Euro gespart.",
+          "XK": "나는 1,000 유로를 저축했다.",
+          "XR": "이히 하베 타우젠드 유로 게스파트"
+        },
+        {
+          "T1": "Sprachen",
+          "K1": "언어",
+          "R1": "슐프라헨",
+          "E1": "'Sprachen'은 'Sprache'의 복수형으로, 의사소통 수단으로 사용되는 다양한 언어를 나타냅니다.",
+          "T2": "Sprache",
+          "K2": "언어",
+          "R2": "슈프라흐",
+          "XE": "Es gibt viele Sprachen in der Welt.",
+          "XK": "세상에는 많은 언어가 있다.",
+          "XR": "에스 기브트 비엘레 슈프라헨 인 데어 벨트"
+        },
+        {
+          "T1": "Es gibt",
+          "K1": "~이 있다",
+          "R1": "에스 기븐",
+          "E1": "'Es gibt'는 'there is/are'와 같은 의미로, 존재하는 것들을 표현할 때 사용됩니다.",
+          "T2": "geben",
+          "K2": "주다/있다",
+          "R2": "게벤",
+          "XE": "Es gibt viele Möglichkeiten.",
+          "XK": "많은 기회가 있다.",
+          "XR": "에스 기븐 비엘레 모겐리히케이트"
+        },
+        {
+          "T1": "Länder",
+          "K1": "나라들",
+          "R1": "렌더",
+          "E1": "'Länder'는 'Land'의 복수형으로 여러 국가를 의미합니다.",
+          "T2": "Land",
+          "K2": "나라",
+          "R2": "란드",
+          "XE": "Die Länder der Europäischen Union sind vielfältig.",
+          "XK": "유럽 연합의 나라들은 다양하다.",
+          "XR": "디 렌더 데어 유로파이श엔 유니온 신드 필베일티히"
+        },
+        {
+          "T1": "ich",
+          "K1": "나는",
+          "R1": "이히",
+          "E1": "'Ich'는 독일어에서 주어를 나타내는 1인칭 단수 대명사입니다.",
+          "T2": "ich",
+          "K2": "나",
+          "R2": "이히",
+          "XE": "Ich liebe Schokolade.",
+          "XK": "나는 초콜릿을 사랑한다.",
+          "XR": "이히 리베 쇼콜라데"
+        },
+        {
+          "T1": "will",
+          "K1": "~하고 싶다",
+          "R1": "빌",
+          "E1": "'Will'은 미래에 어떤 행동을 하거나 하고 싶다는 의도를 표현할 때 사용되는 조동사입니다.",
+          "T2": "wollen",
+          "K2": "~하고 싶다",
+          "R2": "볼렌",
+          "XE": "Ich will gehen.",
+          "XK": "나는 가고 싶다.",
+          "XR": "이히 빌 게헨"
+        },
+        {
+          "T1": "jedes",
+          "K1": "모든",
+          "R1": "예데스",
+          "E1": "'Jedes'는 모든 것을 강조하며 개별적인 항목을 지칭할 때 사용되는 형용사입니다.",
+          "T2": "jeder",
+          "K2": "모든",
+          "R2": "예더",
+          "XE": "Jedes Kind ist wichtig.",
+          "XK": "모든 아이는 중요하다.",
+          "XR": "예데스 킨드 이스트 비히트리히"
+        },
+        {
+          "T1": "davon",
+          "K1": "그 중에서",
+          "R1": "다본",
+          "E1": "'Davon'은 '그것에 대해'라는 의미로, 이전에 언급된 내용과 관련된 것들을 지칭할 때 사용됩니다.",
+          "T2": "davon",
+          "K2": "그것에 대해",
+          "R2": "다본",
+          "XE": "Ich habe einen Kuchen davon gegessen.",
+          "XK": "나는 그것으로부터 케이크를 하나 먹었다.",
+          "XR": "이히 하베 아이넨 쿠헨 다본 게에센"
+        },
+        {
+          "T1": "seh'n",
+          "K1": "보다",
+          "R1": "세인",
+          "E1": "'Seh'n'은 'sehen'의 구어체 줄임말로, '보다'라는 의미입니다.",
+          "T2": "sehen",
+          "K2": "보다",
+          "R2": "제헨",
+          "XE": "Ich sehe den Sonnenuntergang.",
+          "XK": "나는 석양을 본다.",
+          "XR": "이히 제헤 덴 존넨운터간크"
+        },
+        {
+          "T1": "versuch'",
+          "K1": "시도하다",
+          "R1": "페어주흐",
+          "E1": "'Versuch'는 '하다'라는 뜻의 동사로, 어떤 것을 시도하거나 노력하는 것을 의미합니다.",
+          "T2": "versuchen",
+          "K2": "시도하다",
+          "R2": "페어주헨",
+          "XE": "Ich versuche, mein Bestes zu geben.",
+          "XK": "나는 최선을 다하려고 한다.",
+          "XR": "이히 페어주흐 얼마인 베스테스 추 게벤"
+        },
+        {
+          "T1": "zu",
+          "K1": "위하여",
+          "R1": "추",
+          "E1": "'Zu'는 목적이나 방향을 나타내는 전치사로, 주로 동사의 수식을 위해 사용됩니다.",
+          "T2": "zu",
+          "K2": "위하여",
+          "R2": "추",
+          "XE": "Ich gehe zu dem Markt.",
+          "XK": "나는 시장으로 간다.",
+          "XR": "이히 게헤 추 덴 마르크트"
+        },
+        {
+          "T1": "versteh'n",
+          "K1": "이해하다",
+          "R1": "페어슈테인",
+          "E1": "'Verstehen'은 어떤 정보를 이해하는 것을 나타내는 동사입니다.",
+          "T2": "verstehen",
+          "K2": "이해하다",
+          "R2": "페어슈테헨",
+          "XE": "Ich verstehe die Frage.",
+          "XK": "나는 그 질문을 이해한다.",
+          "XR": "이히 페어슈테에 디 프라게"
+        }
+      ]
+    }
+  ],
+  "failedLines": []
+}

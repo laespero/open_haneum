@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= song.ori_name || song.name %> - <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></title>
+    <!-- <title>Lyrics Morphology Viewer 1376 774, 574 810</title> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');
+        * {
+            font-family: "Noto Sans JP", sans-serif; /* 기본 폰트 설정 */
+            font-weight: 400;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 헤더 스타일 추가 */
+        /* .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        } */
+
+        .header-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-search input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        .header-search button {
+            padding: 8px 16px;
+            background-color: white;
+            color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .header-search button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* 기존 스타일 수정 */
+        #printer-wrapper {
+            /* margin-top: 60px; 헤더 높이만큼 여백 추가 */
+            display: flex;
+            justify-content: center;
+        }
+
+        #printer{
+            max-width: 1100px;
+            /* padding-top: 100px; */
+            padding-bottom: 200px;
+        }
+
+        .print-container {
+            background-color: #ffffff;
+            display: inline;
+            text-align: center;
+            position: relative;
+        }
+        .print-number{
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #sentence-view{
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        .class-sentence-view{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+
+        }
+
+
+        .morpheme-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .morpheme-simple-table {
+            display: flex;
+        }
+
+        tr{
+            page-break-inside: avoid;
+        }
+
+        .morpheme-table th, .morpheme-table td {
+            border: 0px solid #ddd;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 0px 7px 0px 7px;
+            /* vertical-align: baseline; */
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+
+        .morpheme-table th {
+            /* background-color: #4fcfff; */
+            /* color: #fff; */
+            font-weight: 400;
+        }
+        .controls {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .controls button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .controls button:disabled {
+            background-color: #ccc;
+        }
+        .slide-indicator {
+            font-size: 18px;
+        }
+        .class-sentence-view h2 {
+            margin: 0px;
+            font-size: 21px;
+            font-weight: 400;
+        }
+        .class-sentence-view h3 {
+            margin: 0px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        p {
+            /* color: #191919; */
+            margin: 15px;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1;
+            background: #ffffff00;
+        }
+        b {
+            color: #ff4800;   
+        }
+        .word-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .word-text{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .word-box {
+            border: solid 1px #f0f0f0;
+            background-color: #f6f6f6;
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+            padding: 5px;
+            border-radius: 4px;
+            min-width: 30px;
+            align-self: center;
+            color : #000;
+            /* box-shadow:  0px 0px 4px 0px #dadada; */
+            /* font-weight: 500; */
+        }
+
+        .print-container .content {
+            padding: 30px 30px 0px 30px;
+        }
+        .short-container .content {
+            padding: 0px 30px 0px 30px;
+            width: 400px;
+            /* box-sizing: border-box; */
+        }
+
+        .right-word-box{
+            color : #000;
+        }
+        .info-box {
+            display: flex;
+            text-align: right;
+            align-items: flex-end;
+            word-break: normal;
+            font-size: 18px;
+            margin-right: 14px;
+            margin-left: 14px;
+            text-wrap: pretty;
+            flex-direction: column;
+        }
+        .info-box-right{
+            display: block;
+            text-align: left;      
+        }
+        .word-td-left{
+            border-right: 1px solid #ddd !important;
+        }
+
+        .info-box .hanja-tip {
+            border: solid 1px #f0f0f0;
+            background-color: #f6f6f6;
+
+            border-radius: 3px;
+            padding: 3px;
+            margin-left: 1px;
+            margin-right: 1px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            /* box-shadow: 0px 0px 4px 0px #dadada; */
+        }
+
+        .word-box .hanja-tip {
+            display: none;
+        }
+
+        @media screen and (max-width: 800px) {
+            .morpheme-table td {
+                font-size: 17px;
+            }
+
+            .word-wrapper{
+                flex-direction: column;
+            }            
+            .word-box{
+                order: 1;
+                flex-direction: column;
+                /* border: none; */
+            }
+            .info-box{
+                order: 2;     
+                margin: 4px;  
+                text-align: center;        
+            }
+            .info-box-right{
+                text-align: center;      
+            }
+            .word-td-left{
+                vertical-align: top;
+            }
+            .word-td-right{
+                vertical-align: top;                
+            }
+            .word-text{
+                font-size: 20px;
+            }
+
+        
+            .info-box .hanja-tip {
+                display: none;
+            }
+            .word-box .hanja-tip {
+                display: inline-block;
+                text-align: center;
+                font-size: 17px;
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+
+            .ex-sentence{
+                font-size: 19px;
+            }
+            
+        }
+
+        #player{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1;
+            height: 200px;
+            width: 200px;
+        }
+    
+        .song-info-header {
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .song-info-content {
+            margin-top: 50px;
+        }
+
+        .song-info-header h1 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #333;
+            padding-bottom: 8px;
+        }
+
+        .song-info-item {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .song-info-item:not(:last-child) {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        .back-to-list-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-list-btn:hover {
+            background-color: #0056b3;
+        }
+
+        span.ruby {
+            display: inline-table;
+            position: relative;
+            vertical-align: bottom;
+            margin-top: 5px;
+        }
+
+        span.rb {
+            display: table-row;
+            position: relative;
+        }
+
+        span.rt {
+            display: table-header-group;
+            line-height: 0.5;
+            white-space: nowrap;
+            text-align: center;
+            letter-spacing: -0.001em;
+            font-size: 16px;
+        }
+
+        .name-chip{
+            position: absolute;
+            background-color: #79b1b6;
+            color: white;
+            font-size: 14px;
+            padding: 5px 7px 5px 7px;
+            border-radius: 0px 0px 10px 10px;
+            right: 73px;
+            bottom: 22px;
+            z-index: -1;
+        }
+        .simple-word-wrapper{
+            margin-top: 20px;
+        }
+
+        .simple-word-wrapper .word-box{
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+
+            padding: 0px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 19px;
+            
+            line-height: 1.2;
+            /* box-shadow: 1px 1px 50px 1px #ccc; */
+        }        
+
+        .simple-word-wrapper .word-text{
+            font-size: 20px;
+        }
+
+        .word-text{
+            color: #2481eb;
+        }
+        .right-word-box .word-text{
+            color: #c357f5;
+        }
+        .hanja-key{
+            color: #2481eb;
+        }
+
+        @media print {
+            header {
+                display: none;
+            }
+
+            #player {
+                display: none;
+            }
+            @page {
+                margin: 0;
+            }
+        }
+        .short-header{
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 38px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            background-color: #2481eb;
+            color: white;
+        }
+        .print-container .print-number{
+            padding-top: 5px;
+        }
+        .expl-text{
+            font-size: 16px !important;
+            margin: 12px;
+        }
+    
+    </style>
+</head>
+<!-- <body class="bg-white-100 text-gray-800 font-sans leading-relaxed">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-6xl px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
+            <form action="/songs" method="get" class="w-full max-w-xl ml-8">
+                <div class="flex">
+                    <input type="search" name="q" placeholder="가사 검색..." 
+                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header> -->
+
+    <% let searchQuery = locals.searchQuery || ''; %>
+    <div class="song-info-header">
+        <div class="song-info-content">
+            <h1><%= song.ori_name || song.name %></h1>
+            
+                <% if (song.kor_name) { %>
+                    <div class="song-info-item">한글 제목 : <%= song.kor_name %></div>
+                <% } %>
+                <% if (song.eng_name) { %>
+                    <div class="song-info-item">영문 제목 : <%= song.eng_name %></div>
+                <% } %>
+            <% if (song.artist) { %>
+                <div class="song-info-item">아티스트 : <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></div>
+            <% } %>
+        </div>
+        <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 돌아가기</a>
+    </div>
+    <div id="player"></div>
+    <div id="printer-wrapper">
+        <div id="printer">
+        </div>
+    </div>
+    <script src="/hanja.js"></script>
+    <script src="/youtube.js"></script>
+    </script>
+    <script>
+
+
+function loadVideo(vid, isLoop) {
+        const params =
+            { iv_load_policy: 3,
+              rel: 0,
+              showinfo: 0,
+              modestbranding: 0,
+              controls: 0,
+              playsinline: 1,
+              disablekb: 0,
+              fs:0,
+              autoplay: 9
+            };
+
+        if(isLoop) {
+            params.loop = 1;
+            params.playlist = vid;
+        }
+
+        const YP = new Youtube.Player({
+                video_id: vid,
+                // params: params,
+                on: {
+                    'ready': e => {
+                        player.seek(0, true);
+                        player.play();
+                    },
+                    'state_change': function onPlayerStateChange(e){
+
+                    },
+                    'yt_error': function onPlayerError(e) {
+                        player.load_video(vid, true);
+                        player.play();
+                    },
+                    'api_change': function (event) {
+                        player.set_api('captions', 'track', {});
+                        //player.set_api('channelBanners', 'track', {});
+                    },
+                    'time_change': function(){
+                        // app.ports.fromPlayer.send({ tag: "playerTime", data: parseInt(player.get_current_time() * 1000) });
+                        try{
+                            timeShift = 0.05;
+                            if(player.player_state === 1 && World.mode === "slide" && World.isShort && World.isSlideTimesVaild){
+                                let targetIdx = 0;
+                                for(let i=1; i<shortCutData.length; i++){
+                                    if(shortCutData[i-1].endTime-timeShift < player.current_time && player.current_time <= shortCutData[i].endTime-timeShift) {
+                                        targetIdx = i;
+                                    }
+                                }
+                                if(shortCutData[shortCutData.length-1].endTime-timeShift < player.current_time) {
+                                    targetIdx = shortCutData.length-1;
+                                }
+                                
+                                if(targetIdx!==World.slideIdx) set_slideIdx(targetIdx);
+                            }
+                        }
+                        catch {}
+                    }
+                }
+            });
+        const iframe = YP.get_iframe();
+
+        iframe.style.height = "100%";
+        iframe.style.width = "100%";
+        document.getElementById("player").appendChild(iframe);
+        player = YP;
+}
+
+    </script>
+    
+    <script>
+/**
+ * V5: Normalize text for flexible whitespace matching during search.
+ */
+ function findSentenceInHtmlWithFuriganaEnhancedV5(htmlStr, sentence) {
+  if (!htmlStr || !sentence) {
+    return null;
+  }
+
+  // --- 1단계: plainText 및 mappings 생성 (V4와 동일) ---
+  let plainText = "";
+  const mappings = []; // { plainIndex, htmlStart, htmlEnd, ... }
+  let currentPlainIndex = 0;
+  let i = 0;
+  let tagBuffer = "";
+  let isInsideTag = false;
+  let rubyInfo = null;
+
+  // (V4의 파싱 로직 전체를 여기에 복사 붙여넣기)
+  // ... (파싱 로직 시작) ...
+  while (i < htmlStr.length) {
+    const char = htmlStr[i];
+
+    if (char === '<') {
+      isInsideTag = true;
+      tagBuffer = "<";
+      i++;
+      continue;
+    }
+
+    if (isInsideTag) {
+      tagBuffer += char;
+      if (char === '>') {
+        isInsideTag = false;
+        const tagHtml = tagBuffer;
+        const tagStartIndex = i - tagHtml.length + 1;
+
+        if (tagHtml.toLowerCase().startsWith('<span class="ruby"')) {
+           rubyInfo = { startIndex: tagStartIndex, baseText: "", baseTextMappings: [] };
+        }
+        else if (rubyInfo && tagHtml.toLowerCase().startsWith('<span class="rb">')) {
+          let rbEndIndex = htmlStr.indexOf('</span>', i + 1);
+          if (rbEndIndex !== -1) {
+              rubyInfo.baseText = htmlStr.substring(i + 1, rbEndIndex);
+              i = rbEndIndex + '</span>'.length -1;
+              tagBuffer = htmlStr.substring(tagStartIndex, i + 1);
+          } else {
+              rubyInfo = null;
+          }
+        }
+        else if (rubyInfo && tagHtml.toLowerCase().startsWith('<span class="rt">')) {
+             let rtEndIndex = htmlStr.indexOf('</span>', i + 1);
+             if (rtEndIndex !== -1) {
+                 i = rtEndIndex + '</span>'.length - 1;
+                 tagBuffer = htmlStr.substring(tagStartIndex, i + 1);
+             } else {
+                  rubyInfo = null;
+             }
+        }
+        else if (rubyInfo && tagHtml.toLowerCase() === '</span>') {
+            if (rubyInfo.baseText !== null && rubyInfo.baseText !== undefined) { // baseText가 null/undefined가 아닌지 확인
+                const rubyEndIndex = i + 1;
+                const rubyHtmlLength = rubyEndIndex - rubyInfo.startIndex;
+                for (let k = 0; k < rubyInfo.baseText.length; k++) {
+                    const baseChar = rubyInfo.baseText[k];
+                    plainText += baseChar;
+                    mappings.push({
+                        plainIndex: currentPlainIndex,
+                        htmlStart: rubyInfo.startIndex,
+                        htmlEnd: rubyEndIndex,
+                        sourceHtmlLength: rubyHtmlLength,
+                        type: 'ruby',
+                        debugChar: baseChar,
+                        isWhitespace: /\s/.test(baseChar) // 루비 베이스 텍스트 내 공백 여부
+                    });
+                    currentPlainIndex++;
+                }
+                rubyInfo = null;
+            } else {
+                 rubyInfo = null;
+            }
+        }
+        else if (tagHtml.toLowerCase().startsWith('<br')) {
+            const isWhitespaceChar = true; // <br>은 공백으로 취급
+            plainText += ' ';
+            mappings.push({
+                plainIndex: currentPlainIndex,
+                htmlStart: tagStartIndex,
+                htmlEnd: i + 1,
+                sourceHtmlLength: tagHtml.length,
+                type: 'whitespace',
+                debugChar: ' ',
+                isWhitespace: isWhitespaceChar
+            });
+            currentPlainIndex++;
+        }
+
+        tagBuffer = "";
+        i++;
+        continue;
+      }
+      i++;
+      continue;
+    }
+
+    if (!isInsideTag && !rubyInfo) {
+        const textChar = char;
+        const textStartIndex = i;
+        const textEndIndex = i + 1;
+        const isWhitespaceChar = /\s/.test(textChar);
+
+        plainText += textChar;
+        mappings.push({
+            plainIndex: currentPlainIndex,
+            htmlStart: textStartIndex,
+            htmlEnd: textEndIndex,
+            sourceHtmlLength: 1,
+            type: isWhitespaceChar ? 'whitespace' : 'text',
+            debugChar: textChar,
+            isWhitespace: isWhitespaceChar
+        });
+        currentPlainIndex++;
+        i++;
+    } else {
+        i++;
+    }
+  }
+  // ... (파싱 로직 끝) ...
+
+  // console.log("Original Plain Text:", `"${plainText}"`);
+  // console.log("Original Mappings Count:", mappings.length);
+
+  // --- 2단계: 정규화 및 검색 ---
+  const normalizeText = (text) => text.replace(/\s+/g, ''); // 모든 공백 제거 함수
+
+  const normalizedPlainText = normalizeText(plainText);
+  const normalizedSentence = normalizeText(sentence);
+
+  // console.log("Normalized Plain Text:", `"${normalizedPlainText}"`);
+  // console.log("Normalized Sentence:", `"${normalizedSentence}"`);
+
+  const normalizedStartIndex = normalizedPlainText.indexOf(normalizedSentence);
+
+  if (normalizedStartIndex === -1) {
+    // console.log(`Normalized sentence "${normalizedSentence}" not found in normalized plain text.`);
+    return null;
+  }
+  const normalizedEndIndex = normalizedStartIndex + normalizedSentence.length; // Exclusive end index
+  // console.log(`Found normalized sentence at indices [${normalizedStartIndex}, ${normalizedEndIndex})`);
+
+  // --- 3단계: 정규화된 인덱스를 원본 plainText 인덱스로 역매핑 ---
+  let originalPlainStartIndex = -1;
+  let originalPlainEndIndexInclusive = -1; // 마지막 문자를 포함하는 인덱스
+  let nonWhitespaceCount = 0;
+  let foundStart = false;
+
+  for(let k = 0; k < mappings.length; k++) {
+      // 매핑 정보의 isWhitespace 속성을 사용하여 공백 여부 판단
+      if (!mappings[k].isWhitespace) {
+          if (nonWhitespaceCount === normalizedStartIndex && !foundStart) {
+              originalPlainStartIndex = mappings[k].plainIndex; // k 와 같음
+              // console.log(`Mapped normalized start index ${normalizedStartIndex} to original plain index ${originalPlainStartIndex}`);
+              foundStart = true;
+          }
+          if (foundStart && nonWhitespaceCount === normalizedEndIndex - 1) {
+              originalPlainEndIndexInclusive = mappings[k].plainIndex; // k 와 같음
+              // console.log(`Mapped normalized end index ${normalizedEndIndex - 1} to original plain index ${originalPlainEndIndexInclusive}`);
+              break; // 끝 인덱스 찾았으므로 종료
+          }
+          nonWhitespaceCount++;
+      }
+      // 만약 문장 끝이 공백으로 끝나는 경우 등에 대한 예외처리 고려 (현재 로직은 non-whitespace 기준)
+  }
+
+
+  if (originalPlainStartIndex === -1 || originalPlainEndIndexInclusive === -1) {
+      console.error("Error: Failed to map normalized indices back to original plain text indices.", { normalizedStartIndex, normalizedEndIndex, originalPlainStartIndex, originalPlainEndIndexInclusive });
+      return null;
+  }
+
+  // --- 4단계: 원본 plainText 인덱스를 HTML 인덱스로 변환 (V4와 동일) ---
+  // console.log(`Using original plain indices: Start=${originalPlainStartIndex}, EndInclusive=${originalPlainEndIndexInclusive}`);
+
+   // 문장의 첫 문자에 해당하는 매핑 정보
+   const startMapping = mappings[originalPlainStartIndex];
+   // 문장의 마지막 문자에 해당하는 매핑 정보
+   const endMapping = mappings[originalPlainEndIndexInclusive];
+
+   if (!startMapping || !endMapping) {
+       console.error("Error: Mapping information not found for mapped original start or end index.", {originalPlainStartIndex, originalPlainEndIndexInclusive});
+       return null;
+   }
+
+   // 최종 시작 인덱스: 첫 문자의 htmlStart
+   const finalStartIndex = startMapping.htmlStart;
+   // 최종 종료 인덱스: 마지막 문자의 htmlEnd
+   const finalEndIndex = endMapping.htmlEnd;
+
+   if (finalStartIndex === undefined || finalEndIndex === undefined || finalStartIndex >= finalEndIndex) {
+        console.error("Error: Determined invalid HTML start/end indices.", {finalStartIndex, finalEndIndex});
+        return null;
+   }
+
+   // console.log(`Mapped HTML indices: [${finalStartIndex}, ${finalEndIndex})`);
+
+  return { start: finalStartIndex, end: finalEndIndex };
+}
+
+function findRuby(htmlStr, sentence){
+    const found = findSentenceInHtmlWithFuriganaEnhancedV5(htmlStr, sentence);
+    if (found) {
+        return htmlStr.substring(found.start, found.end);
+    } else {
+        return "";
+    }
+}
+
+    </script>
+
+    <script> 
+        function getFullName(){
+            const songData = {
+                name: '<%= song.ori_name %>',
+                kor_name: '<%= song.kor_name %>',
+                eng_name: '<%= song.eng_name %>',
+                artist: '<%= typeof song.artist === "object" ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : (song.artist || "") %>'
+            };
+            return songData.name + "(" + songData.kor_name + ", " + songData.eng_name + ")" + " - " + songData.artist + " | 가사, 해석, 한글 발음, 모든 단어 완벽 정리!";
+        }
+
+        function getBlogHTML(){
+            set_isBlog(true);
+            const vid = `<%= song.vid %>`;
+            const a = document.getElementById("printer").innerHTML;
+            const b = document.getElementsByTagName("style")[0].innerHTML;
+            const c = document.getElementsByTagName("style")[1].innerHTML;
+            const d = `
+    .morpheme-table{
+        width: 100% !important;
+    }
+    #article-view{
+        padding: 0 !important;
+    }
+    iframe{
+        width: 100% !important;
+    }
+    .print-container .content{
+        padding: 40px 0px 0px 0px !important;
+    }
+    .class-sentence-view h3 {
+            margin: 5px !important;
+    }
+    .class-sentence-view h2 {
+            margin: 5px !important;
+    }
+`;
+            const iframe = `<div style="width:100%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/${vid}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
+
+            return `
+
+<style>${b}</style>
+<style>${c}</style>
+<style>${d}</style>
+${iframe}
+${a}
+            `;
+        }
+
+        var World = {
+            mode : "init",
+            slideIdx : 0,
+            isIpa : false,
+            isExplHide : true, 
+            isShort : false,
+            isSlideTimesVaild : false,
+            isSimple : false,
+            isBlog : false
+        };
+                
+        document.addEventListener('keydown', (event) => {
+            if(event.code==='Digit0') {
+                if(World.mode === "scroll") {
+                    set_mode("slide");
+                }
+                else {
+                    set_mode("scroll");
+                }
+            }
+            else if(event.code==='Digit1'){
+                set_isIpa(!World.isIpa);
+            }
+            else if(event.code==='Digit2'){
+                set_isExplHide(!World.isExplHide);
+            }
+            else if(event.code==='Digit3'){
+                player.set_volume(100);
+                set_isShort(!World.isShort);
+            }
+            else if(event.code==='Digit4'){
+                set_isSimple(!World.isSimple);
+            }
+            else if(event.code==='Digit5'){
+                set_isBlog(!World.isBlog);
+            }
+        });
+
+        function reRenderAll() {
+            printer.innerHTML = '';
+            if(World.mode === "slide"){
+                const printer = document.getElementById("printer");
+                printer.innerHTML = makeOne(World.slideIdx);
+            }
+            else if(World.mode === "scroll"){
+                const printer = document.getElementById("printer");
+                let len;
+
+                if (World.isBlog) 
+                    len = blogData.length; 
+                else if (World.isShort) 
+                    len = shortCutData.length;
+                else 
+                    len = data.length;
+
+                for(let i=0;i<len;i++){
+                    try{
+                        printer.innerHTML += makeOne(i);
+                    }catch {
+                        console.log(`${i+1} 페이지 렌더 실패`);
+                        console.log(data[i]);
+                    }
+                }
+            }
+            document.body.style.zIndex = 1;
+        }
+
+        function set_isShort(isShort){
+            World.isShort = isShort;
+            World.slideIdx = 0;
+            if(isShort){
+                if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "none";
+                if(document.querySelector("header")) document.querySelector("header").style.display = "none";
+                //document.querySelector("#printer").style.padding = "0";
+                
+            }
+            else{
+                if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "block";
+                if(document.querySelector("header")) document.querySelector("header").style.display = "block";
+                //document.querySelector("#printer").style = "";
+            }
+            reRenderAll();
+        }
+        function set_isBlog(isBlog){
+            World.isBlog = isBlog;
+            reRenderAll();
+        }        
+
+        function set_isExplHide(isExplHide){
+            World.isExplHide = isExplHide;
+            reRenderAll();
+
+        }
+        function set_isIpa(isIpa){
+            World.isIpa = isIpa;
+            reRenderAll();
+        }
+
+        function set_mode(mode){
+            World.mode = mode;
+            reRenderAll();
+        }
+        
+        function set_slideIdx(slideIdx){            
+            //console.log(player.current_time);
+            //console.log(slideIdx);
+
+            if(World.isShort) {
+                if(!(0 <= slideIdx&&slideIdx < shortCutData.length) ) return;                
+            }
+            else {
+                if(!(0 <= slideIdx&&slideIdx < data.length) ) return;
+            }
+
+            if(World.mode === "slide"){
+                const printer = document.getElementById("printer");
+                printer.innerHTML = makeOne(slideIdx);
+            }
+            World.slideIdx = slideIdx;
+        }
+
+        function set_isSimple(isSimple){
+            World.isSimple = isSimple;
+            reRenderAll();
+        }
+
+        window.addEventListener("keydown", (event) => {
+            if(event.code === "KeyA" || event.code === "KeyJ"){
+                if(World.isShort && World.isSlideTimesVaild) {
+                    let sIdx = World.slideIdx;
+                    set_slideIdx(sIdx-1);
+                    if(sIdx <= 1) player.seek(0);
+                    else player.seek(shortCutData[sIdx-2].endTime);
+                }
+                else {
+                    set_slideIdx(World.slideIdx-1);
+                    if(World.isShort) {
+                        if(World.slideIdx===0) player.seek(0);
+                        else player.seek(shortCutData[World.slideIdx-1].endTime);
+                    }
+                }
+            }
+            else if(event.code === "KeyD" || event.code === "KeyL"){
+                if(World.isShort && World.isSlideTimesVaild) {
+                    let sIdx = World.slideIdx;
+                    set_slideIdx(sIdx+1);
+                    player.seek(shortCutData[sIdx].endTime);
+                }
+                else {                
+                    if(World.isShort) shortCutData[World.slideIdx].endTime = player.current_time;
+                    set_slideIdx(World.slideIdx+1);
+                }
+            }
+            else if(event.code === "KeyS" || event.code === "KeyK"){
+                if(player.player_state===1) player.pause();
+                else player.play();
+            }
+        });
+
+        function extractPlainTextFromRuby(htmlString) {
+            // 1. 주어진 문자열을 DOM으로 변환
+            const parser = new DOMParser();
+            // 'text/html' 파싱 결과물에서 body를 얻기 위함
+            const doc = parser.parseFromString(htmlString, 'text/html');
+
+            // 2. 루비(=후리가나)만 표시하는 태그 .rt 제거
+            doc.querySelectorAll('.rt').forEach((rt) => rt.remove());
+
+            // 3. 실제 텍스트가 들어 있는 태그 .rb의 "껍데기"를 벗겨내고 텍스트만 남기기
+            doc.querySelectorAll('.rb').forEach((rb) => {
+                rb.replaceWith(rb.textContent);
+            });
+
+            // 4. 상위 래퍼가 되는 .ruby 태그도 껍데기를 벗겨내기
+            doc.querySelectorAll('.ruby').forEach((rubySpan) => {
+                rubySpan.replaceWith(rubySpan.textContent);
+            });
+
+            // 5. 결과적으로 일반 텍스트만 반환
+            return doc.body.textContent;
+        }
+
+        function replaceNai(text) {
+            return text.replace(/([가-힣]{3})나이/g, '$1 나이');
+        }
+        function replaceTai(text) {
+            return text.replace(/([가-힣]{3})타이/g, '$1 타이');
+        }
+        function replaceJP(text) {
+            return text;
+        }
+
+        function refineData(songData) {
+            // 번역된 내용이 있는지 확인
+            
+            if (Array.isArray(songData.translatedLines) && songData.translatedLines.length > 0) {
+                const toExData = t0 => ({
+                    "T0": t0,
+                    "K0": "데이터 없음",
+                    "R0": "",
+                    "LI": []
+                });
+
+                let trimedTextArr;
+                if(songData.text.includes("<br>")) {
+                    trimedTextArr = songData.text
+                        .replace(/\r/g, '')
+                        .replace(/\n/g, '')
+                        .split("<br>")
+                        .map(line => line.trim())
+                        .filter(x => x !== '');
+                }else {    
+                    trimedTextArr = songData.text
+                        .replace(/\r/g, '')
+                        .split("\n")
+                        .map(line => line.trim())
+                        .filter(x => x !== '');
+                }
+                
+                const result = trimedTextArr.map(x=> {
+                    const found = songData.translatedLines.find(y => y.T0.trim().toLowerCase() === x.trim().toLowerCase() || y.O0 === x.trim());
+                    if(found) {
+                        return found;
+                    }
+                    else {
+                        return toExData(x);
+                    }
+                });
+                songData.translatedLines = result;
+            }
+        }
+
+        function chunkArray(array, size) {
+            const result = [];
+            for (let i = 0; i < array.length; i += size) {
+                result.push(array.slice(i, i + size));
+            }
+            return result;
+        }
+
+        function chunkArrayRebalanceShortLast(arr, chunkSize) {
+            // 1) 우선 chunkSize씩 분할
+            const chunks = [];
+            for (let i = 0; i < arr.length; i += chunkSize) {
+                chunks.push(arr.slice(i, i + chunkSize));
+            }
+
+            // 2) 마지막 조각의 크기가 chunkSize보다 작은지 확인
+            if (chunks.length >= 2) {
+                const lastChunk = chunks[chunks.length - 1];
+                // leftover가 존재하면
+                if (lastChunk.length < chunkSize) {
+                // 직전 chunk와 합친다
+                const secondLastChunk = chunks[chunks.length - 2];
+                const combined = secondLastChunk.concat(lastChunk);  
+                // 기존 마지막 2개 chunk 제거
+                chunks.pop(); // 마지막 chunk 제거
+                chunks.pop(); // 직전 chunk 제거
+
+                // combined를 반으로 나누어, 새로 2 chunk를 만든다
+                // (앞 chunk에 ceil을 적용하여 홀수일 경우 하나 더 줌)
+                const half = Math.ceil(combined.length / 2);
+                const newSecondChunk = combined.slice(0, half);
+                const newLastChunk = combined.slice(half);
+
+                // chunks에 삽입
+                chunks.push(newSecondChunk, newLastChunk);
+                }
+            }
+
+            return chunks;
+        }
+
+
+        function updateDataFromServer() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('name');
+            //let server_url = 'http://localhost:3000/api/songs/love_frequency/translated'; 
+            //if(myParam)server_url = `http://localhost:3000/api/songs/${myParam}/translated`;
+            // let server_url = `/api/songs/<%= song.name %>/translated`;
+            let server_url = `/<%= song.name %>.json`;
+            let vid = `<%= song.vid %>`;
+            window.lang = `<%= lang %>`;
+
+            if(vid.length === 11){
+                loadVideo(vid, true);
+            }
+            fetch(server_url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('네트워크 응답에 문제가 있습니다: ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(o => {
+                    //console.log(o.translatedLines);
+                    //console.log(o.translatedLines.filter(x=>x.G0==''));
+                    rubyData = o.rubyData;
+                    refineData(o);
+                    data = o.translatedLines;
+                    let isJP = data.map(x=>x.T0).join('').match(/[ぁ-ゔ]/);
+                    const strData = JSON.stringify(o.translatedLines);
+                    const foundIdx = strData.indexOf("풋");
+
+                    if(foundIdx>=0){
+                        console.log(strData.substring(foundIdx-100, foundIdx+100));
+                    }
+
+                    data.forEach(x=>{
+                        const fail = x.LI.find(y=>!(y.T1&&y.K1&&y.I1&&y.R1&&y.E1&&y.T2&&y.K2&&y.I2&&y.R2&&y.XE&&y.XK&&y.XI&&y.XR));
+                        if(fail){
+                            console.log(fail);
+                        }else{
+                            if(isJP){
+                                x.R0 = replaceJP(x.R0);
+                                x.LI.forEach(y => {y.R1 = replaceJP(y.R1); y.R2 = replaceJP(y.R2); y.XR = replaceJP(y.XR);});                                
+                            }
+                        }
+                    });
+
+                    shortCutData = JSON.parse(JSON.stringify(data)).flatMap(x=> chunkArrayRebalanceShortLast(x.LI,4).map(li=>Object.assign(JSON.parse(JSON.stringify(x)), {LI : li})));
+                    function compressArray(arr) {
+                        if (!Array.isArray(arr) || arr.length === 0) return [];
+
+                        const result = [arr[0]];
+
+                        for (let i = 1; i < arr.length; i++) {
+                            if (arr[i].T0 !== arr[i - 1].T0) {
+                            result.push(arr[i]);
+                            }
+                        }
+
+                        return result;
+                    }
+
+                    blogData = compressArray(data);
+                    if(o.slideTimes && o.slideTimes.length === shortCutData.length) {
+                        shortCutData.forEach((v,i)=> { v.endTime = o.slideTimes[i] });
+                        World.isSlideTimesVaild = true;
+                    }
+
+                    set_mode("scroll");
+
+                    if(isJP||lang==="jp") setFont("JP"); 
+                    else setFont("SC"); 
+
+                })
+                .catch(error => {
+                    console.error('오류가 발생했습니다:', error);
+                });
+        }
+
+        function setFont(mode){
+            if(mode === "JP"){
+                const styleEle = document.createElement("style");
+                const classStyle = `
+                    *{
+                      font-family: "Noto Sans JP", sans-serif;
+                    }
+                    .class-sentence-view h2 {
+                        font-family: "Noto Sans JP", sans-serif;
+                        font-weight: 400;
+                        font-size: 23px;                        
+                    }
+                    .word-text{
+                        font-family: "Noto Sans JP", sans-serif;          
+                    }   
+                    .ex-sentence{
+                        font-family: "Noto Sans JP", sans-serif;                    
+                    }                
+                `;
+                styleEle.innerHTML = classStyle;
+                document.head.appendChild(styleEle);
+            }
+            else if(mode === "SC"){
+                const styleEle = document.createElement("style");
+                const classStyle = `
+                    *{
+                      font-family: "Noto Sans SC", sans-serif;
+                    }
+                    .class-sentence-view h2 {
+                        font-family: "Noto Sans SC", sans-serif;
+                        font-weight: 400;
+                        font-size: 23px;                        
+                    }
+                    .word-text{
+                        font-family: "Noto Sans SC", sans-serif;          
+                    }   
+                    .ex-sentence{
+                        font-family: "Noto Sans SC", sans-serif;                    
+                    }                
+                `;
+                styleEle.innerHTML = classStyle;
+                document.head.appendChild(styleEle);
+            }
+            else if (mode === "KR"){
+                const styleEle = document.createElement("style");
+                const classStyle = `
+                    *{
+                      font-family: "Noto Sans KR", sans-serif;
+                    }               
+                `;                
+                styleEle.innerHTML = classStyle;
+                document.head.appendChild(styleEle);                
+            }
+            document.body.style.zIndex = 1;
+        }
+
+        updateDataFromServer();
+
+
+        // if(mode===1&&!recording) {
+        //     const style = document.createElement('style');
+        //     document.head.appendChild(style);
+
+        //     style.appendChild(document.createTextNode(`
+        //     *{
+        //         user-select: none; 
+        //         cursor: none;
+        //     }`));
+        // }
+
+        let minFrequency = 300; // Min frequency for visualization
+        let maxFrequency = 3000; // Max frequency for visualization
+        let isPulse = false;
+
+        // if(mode===1){
+        //     splitOnce();
+        //     splitOnce();
+        // }
+
+        function rdot(str) {
+            try {
+                if (str.endsWith(".")) {
+                    return str.substr(0, str.length - 1);
+                }
+            } catch {}
+            return str;
+        }
+        
+        function wordBoxClick(e){
+            //console.log(this);
+        }
+
+        function makeOne(currentIndex) {
+            if(World.isSimple){
+                return makeSimpleOne(currentIndex);
+            }
+            
+            let currentData;
+            if(World.isBlog){
+                currentData = blogData[currentIndex];
+            }
+            else if(World.isShort) {
+                currentData = shortCutData[currentIndex];
+            }
+            else {
+                currentData = data[currentIndex];
+            }
+
+
+            // const namechip = '';
+            const namechip = '';//`<div class="name-chip">한음 일본어</div>`;
+            
+            let len;
+            if(World.isBlog) len = blogData.length;
+            else if(World.isShort) len = shortCutData.length;
+            else len = data.length;
+
+            const format = (a,b) => `
+        <div class="print-container">
+            ${namechip}
+            <div class="content">
+            <div class="class-sentence-view">${a}</div>
+            <table class="morpheme-table">
+                <thead>
+                    <tr>
+                        <th style="width:50%; font-size:0; margin:0; padding: 0; border: 0; border-bottom: 1px solid #ddd;"></th>
+                        <th style="width:50%; font-size:0; margin:0; padding: 0; border: 0; border-bottom: 1px solid #ddd;"></th>
+                    </tr>
+                </thead>
+                <tbody>${b}</tbody>
+            </table>
+            </div>
+            <div class="print-number">${(currentIndex+1)+"/"+len}</div>
+        </div>   
+            `;
+
+
+            let t0Str = currentData.T0;
+            if(currentData.O0){
+                t0Str = currentData.O0;
+            }
+            
+            try {
+                const found = findRuby(rubyData, t0Str);
+                if(found !== "") {
+                    t0Str = found.replaceAll("<br>","");
+                }
+            }
+            catch {}
+            
+            
+            let aStr = `<h3>${World.isIpa?currentData.I0:currentData.R0}</h3><h2>${t0Str}</h2><h3>${rdot(currentData.K0)}</h3>` + ((World.isExplHide||World.isBlog)? '' : `<div class="expl-text">${currentData.G0}</div>`);
+            let bStr = '';
+            const trStr = r => `<tr>${r}</tr>`;
+
+            
+            function removeConsecutiveDuplicatesFilter(arr) {
+                return arr.filter((item, idx) => idx === 0 || (item.T1 !== arr[idx - 1].T1 || item.K1 !== arr[idx - 1].K1));
+            }
+
+            removeConsecutiveDuplicatesFilter(currentData.LI).filter(x=>x[""]!=="").forEach(morpheme => {
+                const foundHanja = [];
+                const failHanja = [];
+                const hanjaRegex = /\p{Script=Han}/u;
+                let charList = [...new Set(morpheme.T1.split('').filter(char => hanjaRegex.test(char)))];                
+                if(charList.length === 0){
+                    charList = [...new Set(morpheme.T2.split('').filter(char => hanjaRegex.test(char)))];  
+                }
+
+                for(let i=0;i<charList.length;i++){
+                    try{
+                        const hk = hanjaKey.indexOf(charList[i]);
+                        if(hk >= 0){
+                            foundHanja.push(hk);
+                        }
+                        else {
+                            const chinaKey = chinaA.indexOf(charList[i]);
+                            if(chinaKey >= 0){
+                                const hk2 = hanjaKey.indexOf(chinaB.charAt(chinaKey));
+                                if(hk2 >=0) foundHanja.push(hk2);
+                                else failHanja.push(charList[i]);                                
+                            }
+                            else {
+                                failHanja.push(charList[i]);
+                            }
+                        }
+
+                         if(failHanja.length>0) console.log(failHanja.join());
+                    }catch{}
+                }
+                
+                let hanjaArr = []
+                for(let i=0;i<foundHanja.length;i++){
+                    const hIdx = foundHanja[i];
+                    hanjaArr.push("<span class='hanja-key'>"+hanjaKey[hIdx]+"</span> "+"<span class='hanja-val'>"+hanjaVal[hIdx]+"</span>");
+                }
+                let resultHanjaInfo = hanjaArr.length? '<div class="hanja-tip">'+hanjaArr.join(', ')+'</div>' : '';
+
+                let rightBox;
+                if(!morpheme.T2){
+                    console.log(morpheme);
+                }
+                const isSkip = morpheme.T1.toLowerCase() === morpheme.T2.toLowerCase();
+                if(isSkip){
+                    rightBox = '<div></div>';
+                }
+                else {
+                    rightBox = `<div class="word-box right-word-box"><div class="word-read">${World.isIpa?morpheme.I2:morpheme.R2}</div><div class="word-text">${morpheme.T2}</div><div class="word-kor">${morpheme.K2}</div></div>`;
+                }
+
+                const rowInner = `
+                <td class="word-td-left"><div class="word-wrapper">
+                    <div class="info-box"><div class="word-expl">${morpheme.E1}</div>${resultHanjaInfo}</div>
+                    <div class="word-box"><div class="word-read">${World.isIpa?morpheme.I1:morpheme.R1}</div><div class="word-text">${morpheme.T1}</div><div class="word-kor">${morpheme.K1?morpheme.K1:morpheme.K2}</div>${resultHanjaInfo}</div>
+                </div></td>
+                <td class="${isSkip?'word-td-right-alone':'word-td-right'}"><div class="word-wrapper" style="justify-content: flex-start;">
+                   ${rightBox}
+                    <div class="info-box info-box-right">
+                        <div>${World.isIpa?morpheme.XI:morpheme.XR}</div>
+                        <div class="ex-sentence">${morpheme.XE}</div>
+                        <div>${morpheme.XK}</div>                       
+                    </div>
+                </div></td>
+                `;
+
+                bStr += trStr(rowInner);
+            });
+            return format(aStr, bStr);
+        }
+
+        function makeSimpleOne(currentIndex) {
+            let currentData;
+            if(World.isShort) {
+                currentData = shortCutData[currentIndex];
+            }
+            else {
+                currentData = data[currentIndex];
+            }
+
+
+            const headerName = lang==="jp"?"KPOP 単語カード":"JPOP 단어장";
+            const format = (a,b) => `
+        <div class="print-container short-container">
+            <div class="short-header">${headerName}</div>
+            <div class="content">
+            <div class="class-sentence-view">${a}</div>
+            <div class="simple-word-wrapper">
+                <div>${b}</div>
+            </div>
+            </div>
+            <div class="print-number">${(currentIndex+1)+"/"+(World.isShort? shortCutData.length : data.length)}</div>
+        </div>   
+            `;
+
+
+            let t0Str = currentData.T0;
+            try {
+                const found = findRuby(rubyData, t0Str);
+                if(found !== "") {
+                    t0Str = found.replaceAll("<br>","");
+                }
+            }
+            catch {}
+            
+            let aStr = `<h3>${rdot(currentData.K0)}</h3>`;
+            let bStr = '';
+            const trStr = r => `<tr>${r}</tr>`;
+
+            
+            function removeConsecutiveDuplicatesFilter(arr) {
+                return arr.filter((item, idx) => idx === 0 || (item.T1 !== arr[idx - 1].T1 || item.K1 !== arr[idx - 1].K1));
+            }
+
+            removeConsecutiveDuplicatesFilter(currentData.LI).filter(x=>x[""]!=="").forEach(morpheme => {
+                let rightBox;
+                if(!morpheme.T2){
+                    console.log(morpheme);
+                }
+                const isSkip = morpheme.T1.toLowerCase() === morpheme.T2.toLowerCase();
+                if(isSkip){
+                    rightBox = '<div></div>';
+                }
+                else {
+                    rightBox = `<div class="word-box right-word-box"><div class="word-read">${World.isIpa?morpheme.I2:morpheme.R2}</div><div class="word-text">${morpheme.T2}</div><div class="word-kor">${morpheme.K2}</div></div>`;
+                }
+
+                const rowInner = `
+                <div class="word-box"><div class="word-read">${World.isIpa?morpheme.I1:morpheme.R1}</div><div class="word-text">${morpheme.T1}</div><div class="word-kor">${morpheme.K1?morpheme.K1:morpheme.K2}</div></div>
+                
+                `;
+
+                bStr += trStr(rowInner);
+            });
+            return format(aStr, bStr);
+        }
+
+
+
+    </script>
+    <script>
+        // 뒤로가기 버튼 이벤트 리스너 추가
+        document.querySelector('.back-to-list-btn').addEventListener('click', function(event) {
+            event.preventDefault(); // 기본 링크 동작 방지
+            
+            // 이전 페이지가 /songs인지 확인
+            const referrer = document.referrer;
+            if (referrer.includes('/songs')) {
+                window.history.back();
+            } else {
+                window.location.href = "/songs";
+            }
+        });
+
+    function analyze_all_sentences(){
+        return data.map(x=>x.R0+'\n'+x.LI.map(y=>y.R1).join()).join('\n\n')
+    }    
+    function analyze_all_sentences2(){
+        return data.map(x=>x.K0+'\n'+x.LI.map(y=>y.K1).join()).join('\n\n')
+    }
+    function analyze_all_sentences3(){
+        return [...new Set(data.map(x=>x.LI.map(y=>y.T1+' : '+y.E1)).flat())].join('\n')   
+    }
+    function analyze_all_sentences4(){
+        return [...new Set(data.map(x=>x.LI.map(y=>y.XE)).flat())].join('\n')   
+    }
+    function analyze_all_sentences5(){
+        return [...new Set(data.map(x=>x.LI.map(y=>y.XE+' : '+y.XK)).flat())].join('\n')   
+    }
+    function get_slide_times(){
+        return JSON.stringify(shortCutData.map(x=>x.endTime))
+    }
+    function get_lyrics(){
+        return data.map(x=>x.T0+'\n'+x.K0).join('\n\n')
+    }
+    function get_lyrics2(){
+        return data.map(x=>x.R0+'\n'+x.T0+'\n'+x.K0).join('\n\n')
+    }
+    function get_text(){
+        return data.map(x=>x.T0).join('\n')
+    }
+    </script>
+</body>
+</html>

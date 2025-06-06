@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneum</title>
+    
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 헤더 스타일 추가 */
+        /* .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        } */
+
+        .header-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-search {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-search input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            width: 300px;
+            font-size: 14px;
+        }
+
+        .header-search button {
+            padding: 8px 16px;
+            background-color: white;
+            color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .header-search button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* 기존 스타일 수정 */
+        #printer-wrapper {
+            /* margin-top: 60px; 헤더 높이만큼 여백 추가 */
+            display: flex;
+            justify-content: center;
+        }
+
+        #printer{
+            max-width: 1100px;
+            /* padding-top: 100px; */
+            padding-bottom: 200px;
+        }
+
+        .print-container {
+            background-color: #ffffff;
+            display: inline;
+            text-align: center;
+            position: relative;
+        }
+        .print-number{
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+        }
+
+        #sentence-view{
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        .class-sentence-view{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+
+        }
+
+
+        .morpheme-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .morpheme-simple-table {
+            display: flex;
+        }
+
+        tr{
+            page-break-inside: avoid;
+        }
+
+        .morpheme-table th, .morpheme-table td {
+            border: 0px solid #ddd;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 0px 7px 0px 7px;
+            /* vertical-align: baseline; */
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+
+        .morpheme-table th {
+            /* background-color: #4fcfff; */
+            /* color: #fff; */
+            font-weight: 500;
+        }
+        .controls {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .controls button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .controls button:disabled {
+            background-color: #ccc;
+        }
+        .slide-indicator {
+            font-size: 18px;
+        }
+        .class-sentence-view h2 {
+            margin: 0px;
+            font-size: 21px;
+            font-weight: 600;
+        }
+        .class-sentence-view h3 {
+            margin: 0px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        p {
+            /* color: #191919; */
+            margin: 15px;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: -1;
+            background: #ffffff00;
+        }
+        b {
+            color: #ff4800;   
+        }
+        .word-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .word-text{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .word-box {
+            border: solid 1px #f0f0f0;
+            background-color: #f6f6f6;
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+            padding: 5px;
+            border-radius: 4px;
+            min-width: 30px;
+            align-self: center;
+            color : #000;
+            /* box-shadow:  0px 0px 4px 0px #dadada; */
+            /* font-weight: 500; */
+        }
+
+        .print-container .content {
+            padding: 30px 30px 0px 30px;
+        }
+        .short-container .content {
+            padding: 0px 30px 0px 30px;
+            width: 400px;
+            /* box-sizing: border-box; */
+        }
+
+        .right-word-box{
+            color : #000;
+        }
+        .info-box {
+            display: flex;
+            text-align: right;
+            align-items: flex-end;
+            word-break: normal;
+            font-size: 18px;
+            margin-right: 14px;
+            margin-left: 14px;
+            text-wrap: pretty;
+            flex-direction: column;
+        }
+        .info-box-right{
+            display: block;
+            text-align: left;      
+        }
+        .word-td-left{
+            border-right: 1px solid #ddd !important;
+        }
+
+        .info-box .hanja-tip {
+            border: solid 1px #f0f0f0;
+            background-color: #f6f6f6;
+            border-radius: 3px;
+            padding: 3px;
+            margin-left: 1px;
+            margin-right: 1px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            /* box-shadow: 0px 0px 4px 0px #dadada; */
+        }
+
+        .word-box .hanja-tip {
+            display: none;
+        }
+
+        @media screen and (max-width: 800px) {
+            .morpheme-table td {
+                font-size: 17px;
+            }
+
+            .word-wrapper{
+                flex-direction: column;
+            }            
+            .word-box{
+                order: 1;
+                flex-direction: column;
+                /* border: none; */
+            }
+            .info-box{
+                order: 2;     
+                margin: 4px;  
+                text-align: center;        
+            }
+            .info-box-right{
+                text-align: center;      
+            }
+            .word-td-left{
+                vertical-align: top;
+            }
+            .word-td-right{
+                vertical-align: top;                
+            }
+            .word-text{
+                font-size: 20px;
+            }
+
+        
+            .info-box .hanja-tip {
+                display: none;
+            }
+            .word-box .hanja-tip {
+                display: inline-block;
+                text-align: center;
+                font-size: 17px;
+                margin-top: 1px;
+                margin-bottom: 1px;
+            }
+
+            .ex-sentence{
+                font-size: 19px;
+            }
+            
+        }
+
+        #player{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            z-index: 1;
+            height: 200px;
+            width: 200px;
+        }
+    
+        .song-info-header {
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .song-info-content {
+            margin-top: 50px;
+        }
+
+        .song-info-header h1 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #333;
+            padding-bottom: 8px;
+        }
+
+        .song-info-item {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .song-info-item:not(:last-child) {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        .back-to-list-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-list-btn:hover {
+            background-color: #0056b3;
+        }
+
+        span.ruby {
+            display: inline-table;
+            position: relative;
+            vertical-align: bottom;
+            margin-top: 5px;
+        }
+
+        span.rb {
+            display: table-row;
+            position: relative;
+        }
+
+        span.rt {
+            display: table-header-group;
+            line-height: 0.5;
+            white-space: nowrap;
+            text-align: center;
+            letter-spacing: -0.001em;
+            font-size: 16px;
+        }
+
+        .name-chip{
+            position: absolute;
+            background-color: #79b1b6;
+            color: white;
+            font-size: 14px;
+            padding: 5px 7px 5px 7px;
+            border-radius: 0px 0px 10px 10px;
+            right: 73px;
+            bottom: 22px;
+            z-index: -1;
+        }
+        .simple-word-wrapper{
+            margin-top: 20px;
+        }
+
+        .simple-word-wrapper .word-box{
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+
+            padding: 0px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            font-size: 19px;
+            
+            line-height: 1.2;
+            /* box-shadow: 1px 1px 50px 1px #ccc; */
+        }        
+
+        .simple-word-wrapper .word-text{
+            font-size: 20px;
+        }
+
+        .word-text{
+            color: #2481eb;
+        }
+        .right-word-box .word-text{
+            color: #c357f5;
+        }
+        .hanja-key{
+            color: #2481eb;
+        }
+
+        @media print {
+            header {
+                display: none;
+            }
+
+            #player {
+                display: none;
+            }
+            @page {
+                margin: 0;
+            }
+        }
+        .short-header{
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 38px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            background-color: #2481eb;
+            color: white;
+        }
+        .print-container .print-number{
+            padding-top: 5px;
+        }
+        .expl-text{
+            font-size: 16px !important;
+            margin: 12px;
+        }
+    
+    </style>
+</head>
+<!-- <body class="bg-white-100 text-gray-800 font-sans leading-relaxed">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-6xl px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
+            <form action="/songs" method="get" class="w-full max-w-xl ml-8">
+                <div class="flex">
+                    <input type="search" name="q" placeholder="가사 검색..." 
+                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header> -->
+
+    <div class="song-info-header">
+        <div class="song-info-content">
+            <h1><span id="song-name">노래 제목 로딩 중...</span></h1>
+            <div id="song-details">
+                <!-- Song details will be populated by JS -->
+            </div>
+        </div>
+        <a href="../index.html" class="back-to-list-btn" id="back-to-list-link">← 돌아가기</a>
+    </div>
+    <div id="player"></div>
+    <div id="printer-wrapper">
+        <div id="printer">
+        </div>
+    </div>
+    <script src="../public/hanja.js"></script>
+    <script src="../public/youtube.js"></script>
+    </script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const songFileName = urlParams.get('song'); // URL에서 'song' 파라미터 값 (JSON 파일 이름)을 가져옴
+        const searchQueryFromUrl = urlParams.get('q') || '';
+        window.currentLang = urlParams.get('lang') || 'ko'; // URL에서 lang 파라미터 또는 기본 'ko'
+
+        // 뒤로가기 링크에 검색어 유지 (필요한 경우)
+        const backToListLink = document.getElementById('back-to-list-link');
+        if (backToListLink) { // 요소가 존재하는지 확인
+            let listPageHref = "../index.html";
+            if (searchQueryFromUrl) {
+                listPageHref += `?q=${encodeURIComponent(searchQueryFromUrl)}`;
+            }
+            listPageHref += "#search";
+            backToListLink.href = listPageHref;
+        }
+
+
+function loadVideo(vid, isLoop) {
+        const params =
+            { iv_load_policy: 3,
+              rel: 0,
+              showinfo: 0,
+              modestbranding: 0,
+              controls: 0,
+              playsinline: 1,
+              disablekb: 0,
+              fs:0,
+              autoplay: 9 // 주의: 대부분의 브라우저에서 자동재생은 사용자 인터랙션 후 가능
+            };
+
+        if(isLoop) {
+            params.loop = 1;
+            params.playlist = vid;
+        }
+
+        // Youtube.Player가 정의되어 있다고 가정
+        if (typeof Youtube !== 'undefined' && Youtube.Player) {
+            const YP = new Youtube.Player({
+                    video_id: vid,
+                    // params: params, // 필요시 파라미터 사용
+                    on: {
+                        'ready': e => {
+                            // player.seek(0, true); // player 변수 사용 전 선언 필요
+                            // player.play();
+                        },
+                        'state_change': function onPlayerStateChange(e){
+
+                        },
+                        'yt_error': function onPlayerError(e) {
+                            // player.load_video(vid, true);
+                            // player.play();
+                        },
+                        'api_change': function (event) {
+                            // player.set_api('captions', 'track', {});
+                        },
+                        'time_change': function(){
+                            try{
+                                let timeShift = 0.05;
+                                if(player && player.player_state === 1 && World.mode === "slide" && World.isShort && World.isSlideTimesVaild){
+                                    let targetIdx = 0;
+                                    for(let i=1; i<shortCutData.length; i++){
+                                        if(shortCutData[i-1].endTime-timeShift < player.current_time && player.current_time <= shortCutData[i].endTime-timeShift) {
+                                            targetIdx = i;
+                                        }
+                                    }
+                                    if(shortCutData[shortCutData.length-1].endTime-timeShift < player.current_time) {
+                                        targetIdx = shortCutData.length-1;
+                                    }
+                                    
+                                    if(targetIdx!==World.slideIdx) set_slideIdx(targetIdx);
+                                }
+                            }
+                            catch (err) { console.error("Error in time_change:", err); }
+                        }
+                    }
+                });
+            const iframe = YP.get_iframe();
+
+            iframe.style.height = "100%";
+            iframe.style.width = "100%";
+            const playerElement = document.getElementById("player");
+            playerElement.innerHTML = ''; // 기존 내용 초기화
+            playerElement.appendChild(iframe);
+            player = YP; // player 변수 할당
+             if (player && typeof player.seek === 'function') { // player 객체 및 메소드 확인
+                player.seek(0, true);
+                player.play();
+            }
+        } else {
+            console.error("Youtube Player API is not loaded.");
+        }
+}
+
+    </script>
+    
+    <script>
+/**
+ * V5: Normalize text for flexible whitespace matching during search.
+ */
+ function findSentenceInHtmlWithFuriganaEnhancedV5(htmlStr, sentence) {
+  if (!htmlStr || !sentence) {
+    return null;
+  }
+
+  // --- 1단계: plainText 및 mappings 생성 (V4와 동일) ---
+  let plainText = "";
+  const mappings = []; // { plainIndex, htmlStart, htmlEnd, ... }
+  let currentPlainIndex = 0;
+  let i = 0;
+  let tagBuffer = "";
+  let isInsideTag = false;
+  let rubyInfo = null;
+
+  // (V4의 파싱 로직 전체를 여기에 복사 붙여넣기)
+  // ... (파싱 로직 시작) ...
+  while (i < htmlStr.length) {
+    const char = htmlStr[i];
+
+    if (char === '<') {
+      isInsideTag = true;
+      tagBuffer = "<";
+      i++;
+      continue;
+    }
+
+    if (isInsideTag) {
+      tagBuffer += char;
+      if (char === '>') {
+        isInsideTag = false;
+        const tagHtml = tagBuffer;
+        const tagStartIndex = i - tagHtml.length + 1;
+
+        if (tagHtml.toLowerCase().startsWith('<span class="ruby"')) {
+           rubyInfo = { startIndex: tagStartIndex, baseText: "", baseTextMappings: [] };
+        }
+        else if (rubyInfo && tagHtml.toLowerCase().startsWith('<span class="rb">')) {
+          let rbEndIndex = htmlStr.indexOf('</span>', i + 1);
+          if (rbEndIndex !== -1) {
+              rubyInfo.baseText = htmlStr.substring(i + 1, rbEndIndex);
+              i = rbEndIndex + '</span>'.length -1;
+              tagBuffer = htmlStr.substring(tagStartIndex, i + 1);
+          } else {
+              rubyInfo = null;
+          }
+        }
+        else if (rubyInfo && tagHtml.toLowerCase().startsWith('<span class="rt">')) {
+             let rtEndIndex = htmlStr.indexOf('</span>', i + 1);
+             if (rtEndIndex !== -1) {
+                 i = rtEndIndex + '</span>'.length - 1;
+                 tagBuffer = htmlStr.substring(tagStartIndex, i + 1);
+             } else {
+                  rubyInfo = null;
+             }
+        }
+        else if (rubyInfo && tagHtml.toLowerCase() === '</span>') {
+            if (rubyInfo.baseText !== null && rubyInfo.baseText !== undefined) { // baseText가 null/undefined가 아닌지 확인
+                const rubyEndIndex = i + 1;
+                const rubyHtmlLength = rubyEndIndex - rubyInfo.startIndex;
+                for (let k = 0; k < rubyInfo.baseText.length; k++) {
+                    const baseChar = rubyInfo.baseText[k];
+                    plainText += baseChar;
+                    mappings.push({
+                        plainIndex: currentPlainIndex,
+                        htmlStart: rubyInfo.startIndex,
+                        htmlEnd: rubyEndIndex,
+                        sourceHtmlLength: rubyHtmlLength,
+                        type: 'ruby',
+                        debugChar: baseChar,
+                        isWhitespace: /\s/.test(baseChar) // 루비 베이스 텍스트 내 공백 여부
+                    });
+                    currentPlainIndex++;
+                }
+                rubyInfo = null;
+            } else {
+                 rubyInfo = null;
+            }
+        }
+        else if (tagHtml.toLowerCase().startsWith('<br')) {
+            const isWhitespaceChar = true; // <br>은 공백으로 취급
+            plainText += ' ';
+            mappings.push({
+                plainIndex: currentPlainIndex,
+                htmlStart: tagStartIndex,
+                htmlEnd: i + 1,
+                sourceHtmlLength: tagHtml.length,
+                type: 'whitespace',
+                debugChar: ' ',
+                isWhitespace: isWhitespaceChar
+            });
+            currentPlainIndex++;
+        }
+
+        tagBuffer = "";
+        i++;
+        continue;
+      }
+      i++;
+      continue;
+    }
+
+    if (!isInsideTag && !rubyInfo) {
+        const textChar = char;
+        const textStartIndex = i;
+        const textEndIndex = i + 1;
+        const isWhitespaceChar = /\s/.test(textChar);
+
+        plainText += textChar;
+        mappings.push({
+            plainIndex: currentPlainIndex,
+            htmlStart: textStartIndex,
+            htmlEnd: textEndIndex,
+            sourceHtmlLength: 1,
+            type: isWhitespaceChar ? 'whitespace' : 'text',
+            debugChar: textChar,
+            isWhitespace: isWhitespaceChar
+        });
+        currentPlainIndex++;
+        i++;
+    } else {
+        i++;
+    }
+  }
+  // ... (파싱 로직 끝) ...
+
+  // console.log("Original Plain Text:", `"${plainText}"`);
+  // console.log("Original Mappings Count:", mappings.length);
+
+  // --- 2단계: 정규화 및 검색 ---
+  const normalizeText = (text) => text.replace(/\s+/g, ''); // 모든 공백 제거 함수
+
+  const normalizedPlainText = normalizeText(plainText);
+  const normalizedSentence = normalizeText(sentence);
+
+  // console.log("Normalized Plain Text:", `"${normalizedPlainText}"`);
+  // console.log("Normalized Sentence:", `"${normalizedSentence}"`);
+
+  const normalizedStartIndex = normalizedPlainText.indexOf(normalizedSentence);
+
+  if (normalizedStartIndex === -1) {
+    // console.log(`Normalized sentence "${normalizedSentence}" not found in normalized plain text.`);
+    return null;
+  }
+  const normalizedEndIndex = normalizedStartIndex + normalizedSentence.length; // Exclusive end index
+  // console.log(`Found normalized sentence at indices [${normalizedStartIndex}, ${normalizedEndIndex})`);
+
+  // --- 3단계: 정규화된 인덱스를 원본 plainText 인덱스로 역매핑 ---
+  let originalPlainStartIndex = -1;
+  let originalPlainEndIndexInclusive = -1; // 마지막 문자를 포함하는 인덱스
+  let nonWhitespaceCount = 0;
+  let foundStart = false;
+
+  for(let k = 0; k < mappings.length; k++) {
+      // 매핑 정보의 isWhitespace 속성을 사용하여 공백 여부 판단
+      if (!mappings[k].isWhitespace) {
+          if (nonWhitespaceCount === normalizedStartIndex && !foundStart) {
+              originalPlainStartIndex = mappings[k].plainIndex; // k 와 같음
+              // console.log(`Mapped normalized start index ${normalizedStartIndex} to original plain index ${originalPlainStartIndex}`);
+              foundStart = true;
+          }
+          if (foundStart && nonWhitespaceCount === normalizedEndIndex - 1) {
+              originalPlainEndIndexInclusive = mappings[k].plainIndex; // k 와 같음
+              // console.log(`Mapped normalized end index ${normalizedEndIndex - 1} to original plain index ${originalPlainEndIndexInclusive}`);
+              break; // 끝 인덱스 찾았으므로 종료
+          }
+          nonWhitespaceCount++;
+      }
+      // 만약 문장 끝이 공백으로 끝나는 경우 등에 대한 예외처리 고려 (현재 로직은 non-whitespace 기준)
+  }
+
+
+  if (originalPlainStartIndex === -1 || originalPlainEndIndexInclusive === -1) {
+      console.error("Error: Failed to map normalized indices back to original plain text indices.", { normalizedStartIndex, normalizedEndIndex, originalPlainStartIndex, originalPlainEndIndexInclusive });
+      return null;
+  }
+
+  // --- 4단계: 원본 plainText 인덱스를 HTML 인덱스로 변환 (V4와 동일) ---
+  // console.log(`Using original plain indices: Start=${originalPlainStartIndex}, EndInclusive=${originalPlainEndIndexInclusive}`);
+
+   // 문장의 첫 문자에 해당하는 매핑 정보
+   const startMapping = mappings[originalPlainStartIndex];
+   // 문장의 마지막 문자에 해당하는 매핑 정보
+   const endMapping = mappings[originalPlainEndIndexInclusive];
+
+   if (!startMapping || !endMapping) {
+       console.error("Error: Mapping information not found for mapped original start or end index.", {originalPlainStartIndex, originalPlainEndIndexInclusive});
+       return null;
+   }
+
+   // 최종 시작 인덱스: 첫 문자의 htmlStart
+   const finalStartIndex = startMapping.htmlStart;
+   // 최종 종료 인덱스: 마지막 문자의 htmlEnd
+   const finalEndIndex = endMapping.htmlEnd;
+
+   if (finalStartIndex === undefined || finalEndIndex === undefined || finalStartIndex >= finalEndIndex) {
+        console.error("Error: Determined invalid HTML start/end indices.", {finalStartIndex, finalEndIndex});
+        return null;
+   }
+
+   // console.log(`Mapped HTML indices: [${finalStartIndex}, ${finalEndIndex})`);
+
+  return { start: finalStartIndex, end: finalEndIndex };
+}
+
+function findRuby(htmlStr, sentence){
+    const found = findSentenceInHtmlWithFuriganaEnhancedV5(htmlStr, sentence);
+    if (found) {
+        return htmlStr.substring(found.start, found.end);
+    } else {
+        return "";
+    }
+}
+
+    </script>
+
+    <script> 
+        // 전역 변수로 songData를 선언하여 fetch 후 할당
+        let songDataGlobal = null; 
+
+        function getFullName(){
+            if (!songDataGlobal) return "데이터 로딩 중...";
+            // EJS의 song.ori_name 등을 songDataGlobal에서 가져오도록 수정
+            const songInfo = {
+                name: songDataGlobal.ori_name || songDataGlobal.name, // ori_name이 없을 경우 name 사용
+                kor_name: songDataGlobal.kor_name,
+                eng_name: songDataGlobal.eng_name,
+                artist: songDataGlobal.artist
+            };
+            return `${songInfo.name}${songInfo.kor_name ? `(${songInfo.kor_name})` : ''}${songInfo.eng_name ? `, ${songInfo.eng_name}` : ''} - ${songInfo.artist} | 가사, 해석, 한글 발음, 모든 단어 완벽 정리!`;
+        }
+
+        function getBlogHTML(){
+            set_isBlog(true);
+            if (!songDataGlobal || !songDataGlobal.vid) {
+                console.error("Song data or VID is not loaded for blog HTML.");
+                return "";
+            }
+            const vid = songDataGlobal.vid;
+            const printerContent = document.getElementById("printer").innerHTML;
+            // 스타일 태그는 여러 개일 수 있으므로, 필요에 따라 더 견고하게 선택해야 함
+            const styles = Array.from(document.getElementsByTagName("style")).map(s => s.innerHTML).join('\n');
+            const customBlogStyle = `
+    .morpheme-table{
+        width: 100% !important;
+    }
+    #article-view{
+        padding: 0 !important;
+    }
+    iframe{
+        width: 100% !important;
+    }
+    .print-container .content{
+        padding: 40px 0px 0px 0px !important;
+    }
+    .class-sentence-view h3 {
+            margin: 5px !important;
+    }
+    .class-sentence-view h2 {
+            margin: 5px !important;
+    }
+`;
+            const youtubeIframe = `<div style="width:100%;"><iframe width="560" height="315" src="https://www.youtube.com/embed/${vid}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
+
+            return `
+<style>${styles}</style>
+<style>${customBlogStyle}</style>
+${youtubeIframe}
+${printerContent}
+            `;
+        }
+
+        var World = {
+            mode : "init",
+            slideIdx : 0,
+            isIpa : false,
+            isExplHide : false, 
+            isShort : false,
+            isSlideTimesVaild : false,
+            isSimple : false,
+            isBlog : false
+        };
+        
+        // player 변수를 전역 또는 접근 가능한 스코프에 선언
+        var player; 
+        var data = []; // fetched data
+        var shortCutData = [];
+        var blogData = [];
+        var rubyData = null;
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateDataFromServer(); // DOM 로드 후 데이터 가져오기 시작
+
+            document.addEventListener('keydown', (event) => {
+                if(event.code==='Digit0') {
+                    if(World.mode === "scroll") {
+                        set_mode("slide");
+                    }
+                    else {
+                        set_mode("scroll");
+                    }
+                }
+                else if(event.code==='Digit1'){
+                    set_isIpa(!World.isIpa);
+                }
+                else if(event.code==='Digit2'){
+                    set_isExplHide(!World.isExplHide);
+                }
+                else if(event.code==='Digit3'){
+                    if (player && typeof player.set_volume === 'function') player.set_volume(100);
+                    set_isShort(!World.isShort);
+                }
+                else if(event.code==='Digit4'){
+                    set_isSimple(!World.isSimple);
+                }
+                else if(event.code==='Digit5'){
+                    set_isBlog(!World.isBlog);
+                }
+            });
+        });
+
+
+        function reRenderAll() {
+            const printerElement = document.getElementById("printer");
+            if (!printerElement) return;
+            printerElement.innerHTML = '';
+
+            if(World.mode === "slide"){
+                printerElement.innerHTML = makeOne(World.slideIdx);
+            }
+            else if(World.mode === "scroll"){
+                let len;
+
+                if (World.isBlog) 
+                    len = blogData.length; 
+                else if (World.isShort) 
+                    len = shortCutData.length;
+                else 
+                    len = data.length;
+
+                for(let i=0;i<len;i++){
+                    try{
+                        printerElement.innerHTML += makeOne(i);
+                    }catch(err) {
+                        console.log(`${i+1} 페이지 렌더 실패`);
+                        console.log(data[i]);
+                        console.error(err);
+                    }
+                }
+            }
+        }
+
+        function set_isShort(isShort){
+            World.isShort = isShort;
+            World.slideIdx = 0;
+            const songInfoHeader = document.querySelector(".song-info-header");
+            // const headerElement = document.querySelector("header"); // 현재 주석 처리된 header
+
+            if(isShort){
+                if(songInfoHeader) songInfoHeader.style.display = "none";
+                // if(headerElement) headerElement.style.display = "none";
+            }
+            else{
+                if(songInfoHeader) songInfoHeader.style.display = "block";
+                // if(headerElement) headerElement.style.display = "block";
+            }
+            reRenderAll();
+        }
+        function set_isBlog(isBlog){
+            World.isBlog = isBlog;
+            reRenderAll();
+        }        
+
+        function set_isExplHide(isExplHide){
+            World.isExplHide = isExplHide;
+            reRenderAll();
+
+        }
+        function set_isIpa(isIpa){
+            World.isIpa = isIpa;
+            reRenderAll();
+        }
+
+        function set_mode(mode){
+            World.mode = mode;
+            reRenderAll();
+        }
+        
+        function set_slideIdx(slideIdx){            
+            if(World.isShort) {
+                if(!(0 <= slideIdx && slideIdx < shortCutData.length) ) return;                
+            }
+            else {
+                if(!(0 <= slideIdx && slideIdx < data.length) ) return;
+            }
+
+            if(World.mode === "slide"){
+                const printerElement = document.getElementById("printer");
+                if(printerElement) printerElement.innerHTML = makeOne(slideIdx);
+            }
+            World.slideIdx = slideIdx;
+        }
+
+        function set_isSimple(isSimple){
+            World.isSimple = isSimple;
+            reRenderAll();
+        }
+
+        window.addEventListener("keydown", (event) => {
+            if (!player || typeof player.seek !== 'function') return; 
+
+            if(event.code === "KeyA" || event.code === "KeyJ"){
+                if(World.isShort && World.isSlideTimesVaild) {
+                    let sIdx = World.slideIdx;
+                    set_slideIdx(sIdx-1);
+                    if(sIdx <= 1) player.seek(0);
+                    else if (shortCutData[sIdx-2]) player.seek(shortCutData[sIdx-2].endTime);
+                }
+                else {
+                    set_slideIdx(World.slideIdx-1);
+                    if(World.isShort) {
+                        if(World.slideIdx===0) player.seek(0);
+                        else if (shortCutData[World.slideIdx-1]) player.seek(shortCutData[World.slideIdx-1].endTime);
+                    }
+                }
+            }
+            else if(event.code === "KeyD" || event.code === "KeyL"){
+                if(World.isShort && World.isSlideTimesVaild) {
+                    let sIdx = World.slideIdx;
+                    set_slideIdx(sIdx+1);
+                    if (shortCutData[sIdx]) player.seek(shortCutData[sIdx].endTime);
+                }
+                else {                
+                    if(World.isShort && shortCutData[World.slideIdx]) shortCutData[World.slideIdx].endTime = player.current_time;
+                    set_slideIdx(World.slideIdx+1);
+                }
+            }
+            else if(event.code === "KeyS" || event.code === "KeyK"){
+                if(player.player_state===1) player.pause();
+                else player.play();
+            }
+        });
+
+        function extractPlainTextFromRuby(htmlString) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlString, 'text/html');
+            doc.querySelectorAll('.rt').forEach((rt) => rt.remove());
+            doc.querySelectorAll('.rb').forEach((rb) => {
+                rb.replaceWith(rb.textContent);
+            });
+            doc.querySelectorAll('.ruby').forEach((rubySpan) => {
+                rubySpan.replaceWith(rubySpan.textContent);
+            });
+            return doc.body.textContent;
+        }
+
+        function replaceNai(text) {
+            return text.replace(/([가-힣]{3})나이/g, '$1 나이');
+        }
+        function replaceTai(text) {
+            return text.replace(/([가-힣]{3})타이/g, '$1 타이');
+        }
+        function replaceJP(text) {
+            return text;
+        }
+
+        function refineData(songJsonData) {
+            if (Array.isArray(songJsonData.translatedLines) && songJsonData.translatedLines.length > 0) {
+                const toExData = t0 => ({
+                    "T0": t0,
+                    "K0": "데이터 없음",
+                    "R0": "",
+                    "LI": []
+                });
+
+                let trimedTextArr;
+                if(songJsonData.text && songJsonData.text.includes("<br>")) {
+                    trimedTextArr = songJsonData.text
+                        .replace(/\r/g, '')
+                        .replace(/\n/g, '')
+                        .split("<br>")
+                        .map(line => line.trim())
+                        .filter(x => x !== '');
+                } else if (songJsonData.text) {    
+                    trimedTextArr = songJsonData.text
+                        .replace(/\r/g, '')
+                        .split("\n")
+                        .map(line => line.trim())
+                        .filter(x => x !== '');
+                } else {
+                    trimedTextArr = []; // text가 없는 경우 빈 배열로 처리
+                }
+                
+                const result = trimedTextArr.map(x=> {
+                    const found = songJsonData.translatedLines.find(y => y.T0.trim().toLowerCase() === x.trim().toLowerCase() || y.O0 === x.trim());
+                    if(found) {
+                        return found;
+                    }
+                    else {
+                        return toExData(x);
+                    }
+                });
+                songJsonData.translatedLines = result;
+            }
+        }
+
+        function chunkArray(array, size) {
+            const result = [];
+            for (let i = 0; i < array.length; i += size) {
+                result.push(array.slice(i, i + size));
+            }
+            return result;
+        }
+
+        function chunkArrayRebalanceShortLast(arr, chunkSize) {
+            const chunks = [];
+            for (let i = 0; i < arr.length; i += chunkSize) {
+                chunks.push(arr.slice(i, i + chunkSize));
+            }
+
+            if (chunks.length >= 2) {
+                const lastChunk = chunks[chunks.length - 1];
+                if (lastChunk.length < chunkSize) {
+                const secondLastChunk = chunks[chunks.length - 2];
+                const combined = secondLastChunk.concat(lastChunk);  
+                chunks.pop(); 
+                chunks.pop(); 
+
+                const half = Math.ceil(combined.length / 2);
+                const newSecondChunk = combined.slice(0, half);
+                const newLastChunk = combined.slice(half);
+                chunks.push(newSecondChunk, newLastChunk);
+                }
+            }
+            return chunks;
+        }
+
+
+        function updateDataFromServer() {
+            if (!songFileName) {
+                document.getElementById('song-name').textContent = "곡 정보를 찾을 수 없습니다. URL에 ?song=파일이름 형식으로 지정해주세요.";
+                console.error("Song file name is missing in URL (e.g., ?song=example_song)");
+                return;
+            }
+            // JSON 파일의 실제 위치에 맞게 경로 수정 필요
+            // 예: /data/songs/곡이름.json 또는 ../data/songs/곡이름.json
+            // 현재는 html 파일과 같은 views 폴더 내에 data 폴더가 있다고 가정
+            let server_url = `../songs/${songFileName}`; 
+
+            fetch(server_url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('네트워크 응답에 문제가 있습니다: ' + response.statusText + ' (' + response.status + ')');
+                    }
+                    return response.json();
+                })
+                .then(o => {
+                    songDataGlobal = o; // 전역 변수에 할당
+
+                    // 곡 정보 헤더 업데이트
+                    document.getElementById('song-name').textContent = o.name || o.kor_name || o.ori_name || "이름 없음";
+                    document.title = `${o.name || "곡 정보"} - Lyrics Viewer`; // 타이틀도 업데이트
+
+                    const songDetailsContainer = document.getElementById('song-details');
+                    songDetailsContainer.innerHTML = ''; // 기존 내용 초기화
+
+                    if (o.ori_name) {
+                        songDetailsContainer.innerHTML += `<div class="song-info-item">원어명: ${o.ori_name}</div>`;
+                    }
+                    if (o.kor_name) {
+                        songDetailsContainer.innerHTML += `<div class="song-info-item">한글명: ${o.kor_name}</div>`;
+                    }
+                    if (o.artist) {
+                        const artistName = typeof o.artist === 'object' ? [o.artist.ori_name, o.artist.kor_name, o.artist.eng_name].filter(Boolean).join(' / ') : o.artist;
+                        songDetailsContainer.innerHTML += `<div class="song-info-item">가수: ${artistName}</div>`;
+                    }
+                    
+                    if (o.vid && o.vid.length === 11) {
+                        loadVideo(o.vid, true);
+                    }
+
+                    // rubyData = o.rubyData; // 기존 코드 -> rubyData 키가 JSON에 없음 (이전의 잘못된 주석)
+                    // 가설: o.text (전체 가사 HTML)가 루비 정보를 포함하고 있을 수 있음. (이전 가설)
+                    // findRuby 함수의 첫 번째 인자는 HTML 문자열을 기대함.
+                    // rubyData = o.text; // songDataGlobal.text를 rubyData로 사용하도록 임시 변경. (이전 코드)
+                    rubyData = o.rubyData; // 실제 JSON 파일에 "rubyData" 키가 있는 것을 확인. 해당 값을 사용.
+                                       
+                    refineData(o); // 원본 o 객체를 refine (내부적으로 translatedLines 수정)
+                    data = o.translatedLines || []; // 전역 변수 data 업데이트
+
+                    let isJP = data.map(x=>x.T0).join('').match(/[ぁ-ゔ]/);
+                    
+                    data.forEach(x=>{
+                        if (x.LI && Array.isArray(x.LI)) { // LI가 배열인지 확인
+                            const fail = x.LI.find(y=>!(y.T1&&y.K1&&y.I1&&y.R1&&y.E1&&y.T2&&y.K2&&y.I2&&y.R2&&y.XE&&y.XK&&y.XI&&y.XR));
+                            if(fail){
+                                console.log("Incomplete LI item:", fail);
+                            }else{
+                                if(isJP){
+                                    x.R0 = replaceJP(x.R0);
+                                    x.LI.forEach(y => {y.R1 = replaceJP(y.R1); y.R2 = replaceJP(y.R2); y.XR = replaceJP(y.XR);});                                
+                                }
+                            }
+                        } else {
+                            x.LI = []; // LI가 없거나 배열이 아니면 빈 배열로 초기화
+                        }
+                    });
+
+                    shortCutData = JSON.parse(JSON.stringify(data)).flatMap(x=> chunkArrayRebalanceShortLast(x.LI,4).map(li=>Object.assign(JSON.parse(JSON.stringify(x)), {LI : li})));
+                    
+                    function compressArray(arr) {
+                        if (!Array.isArray(arr) || arr.length === 0) return [];
+                        const result = [arr[0]];
+                        for (let i = 1; i < arr.length; i++) {
+                            if (arr[i].T0 !== arr[i - 1].T0) {
+                            result.push(arr[i]);
+                            }
+                        }
+                        return result;
+                    }
+
+                    blogData = compressArray(data);
+                    if(o.slideTimes && Array.isArray(o.slideTimes) && o.slideTimes.length === shortCutData.length) {
+                        shortCutData.forEach((v,i)=> { v.endTime = o.slideTimes[i] });
+                        World.isSlideTimesVaild = true;
+                    }
+                    set_mode("scroll");
+                    if(isJP || window.currentLang ==="jp") setFont("JP");
+                    else setFont("SC"); // 기본 중국어 간체 폰트 설정 또는 다른 로직
+
+                })
+                .catch(error => {
+                    console.error('데이터를 가져오는 중 오류가 발생했습니다:', error);
+                    document.getElementById('song-name').textContent = "데이터 로드 실패";
+                    document.getElementById('printer').innerHTML = `<p style="color:red; text-align:center;">${error.message}</p><p style="text-align:center;">JSON 파일을 올바른 경로에 정확한 이름으로 생성했는지 확인해주세요. (예: data/songs/곡이름.json)</p>`;
+                });
+        }
+
+        function setFont(mode){
+            // 기존 폰트 스타일 제거 (중복 적용 방지)
+            const existingFontStyles = document.querySelectorAll('style[data-font-style]');
+            existingFontStyles.forEach(style => style.remove());
+
+            const styleEle = document.createElement("style");
+            styleEle.setAttribute('data-font-style', 'true'); // 식별자 추가
+            let fontImport = "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');";
+            let classStyle = "";
+
+            if(mode === "JP"){
+                classStyle = `
+                    *{
+                      font-family: "Noto Sans JP", sans-serif;
+                    }
+                    .class-sentence-view h2 {
+                        font-family: "Noto Sans JP", sans-serif;
+                        font-weight: 500;
+                        font-size: 23px;                        
+                    }
+                    .word-text{
+                        font-family: "Noto Sans JP", sans-serif;          
+                    }   
+                    .ex-sentence{
+                        font-family: "Noto Sans JP", sans-serif;                    
+                    }                
+                `;
+            }
+            else if(mode === "SC"){
+                classStyle = `
+                    *{
+                      /* font-family: "Noto Sans KR", sans-serif; */
+                      font-family: "Noto Sans SC", sans-serif;
+                    }
+                    .class-sentence-view h2 {
+                        font-family: "Noto Sans SC", sans-serif;
+                        font-weight: 500;
+                        font-size: 23px;                        
+                    }
+                    .word-text{
+                        font-family: "Noto Sans SC", sans-serif;          
+                    }   
+                    .ex-sentence{
+                        font-family: "Noto Sans SC", sans-serif;                    
+                    }                
+                `;
+            }
+            else if (mode === "KR"){
+                classStyle = `
+                    *{
+                      font-family: "Noto Sans KR", sans-serif;
+                    }               
+                `;
+            }
+            styleEle.innerHTML = fontImport + classStyle;
+            document.head.appendChild(styleEle);
+        }
+        // updateDataFromServer(); // DOMContentLoaded로 이동
+
+
+        let minFrequency = 300; 
+        let maxFrequency = 3000; 
+        let isPulse = false;
+
+
+        function rdot(str) {
+            try {
+                if (typeof str === 'string' && str.endsWith(".")) {
+                    return str.substr(0, str.length - 1);
+                }
+            } catch (e) { console.error("Error in rdot:", e); }
+            return str;
+        }
+        
+        function wordBoxClick(e){
+            //console.log(this);
+        }
+
+        function makeOne(currentIndex) {
+            if(World.isSimple){
+                return makeSimpleOne(currentIndex);
+            }
+            
+            let currentData;
+            let len;
+
+            if(World.isBlog){
+                if (!blogData || currentIndex < 0 || currentIndex >= blogData.length) return "";
+                currentData = blogData[currentIndex];
+                len = blogData.length;
+            }
+            else if(World.isShort) {
+                if (!shortCutData || currentIndex < 0 || currentIndex >= shortCutData.length) return "";
+                currentData = shortCutData[currentIndex];
+                len = shortCutData.length;
+            }
+            else {
+                if (!data || currentIndex < 0 || currentIndex >= data.length) return "";
+                currentData = data[currentIndex];
+                len = data.length;
+            }
+            if (!currentData) return ""; // 데이터 없는 경우 방어
+
+
+            const namechip = '';
+            
+            const format = (a,b) => `
+        <div class="print-container">
+            ${namechip}
+            <div class="content">
+            <div class="class-sentence-view">${a}</div>
+            <table class="morpheme-table">
+                <thead>
+                    <tr>
+                        <th style="width:50%; font-size:0; margin:0; padding: 0; border: 0; border-bottom: 1px solid #ddd;"></th>
+                        <th style="width:50%; font-size:0; margin:0; padding: 0; border: 0; border-bottom: 1px solid #ddd;"></th>
+                    </tr>
+                </thead>
+                <tbody>${b}</tbody>
+            </table>
+            </div>
+            <div class="print-number">${(currentIndex+1)+"/"+len}</div>
+        </div>   
+            `;
+
+
+            let t0Str = currentData.T0;
+            if(currentData.O0){
+                t0Str = currentData.O0;
+            }
+            
+            try {
+                if (rubyData && t0Str) { // rubyData (songDataGlobal.text로 가정)와 t0Str이 유효한지 확인
+                    const found = findRuby(rubyData, t0Str); 
+                    if(found !== "") { 
+                        t0Str = found.replaceAll("<br>","");
+                    } 
+                    // 만약 rubyData가 예상과 다른 구조이거나, findRuby가 원하는대로 동작하지 않으면
+                    // t0Str은 원래 값(currentData.T0 또는 currentData.O0)을 유지하게 됨.
+                }
+            }
+            catch (e) { console.error("Error applying ruby: ", e); }
+            
+            
+            let aStr = `<h3>${World.isIpa && currentData.I0 ? currentData.I0 : currentData.R0 || ''}</h3><h2>${t0Str || ''}</h2><h3>${rdot(currentData.K0 || '')}</h3>` + ((World.isExplHide||World.isBlog)? '' : `<div class="expl-text">${currentData.G0 || ''}</div>`);
+            let bStr = '';
+            const trStr = r => `<tr>${r}</tr>`;
+
+            
+            function removeConsecutiveDuplicatesFilter(arr) {
+                if (!Array.isArray(arr)) return [];
+                return arr.filter((item, idx) => idx === 0 || (item.T1 !== arr[idx - 1].T1 || item.K1 !== arr[idx - 1].K1));
+            }
+            
+            if (currentData.LI && Array.isArray(currentData.LI)) { // LI가 배열인지 확인
+                removeConsecutiveDuplicatesFilter(currentData.LI).filter(x=>x && x[""]!=="").forEach(morpheme => {
+                    const foundHanja = [];
+                    const failHanja = [];
+                    const hanjaRegex = /\p{Script=Han}/u;
+                    let charList = [];
+                    if (morpheme.T1) {
+                        charList = [...new Set(morpheme.T1.split('').filter(char => hanjaRegex.test(char)))];   
+                    }             
+                    if(charList.length === 0 && morpheme.T2){
+                        charList = [...new Set(morpheme.T2.split('').filter(char => hanjaRegex.test(char)))];  
+                    }
+
+                    // hanjaKey, chinaA, chinaB가 정의되어 있다고 가정. (외부 파일 hanja.js 등에서 로드)
+                    if (typeof hanjaKey !== 'undefined' && typeof chinaA !== 'undefined' && typeof chinaB !== 'undefined') {
+                        for(let i=0;i<charList.length;i++){
+                            try{
+                                const hk = hanjaKey.indexOf(charList[i]);
+                                if(hk >= 0){
+                                    foundHanja.push(hk);
+                                }
+                                else {
+                                    const chinaKeyIdx = chinaA.indexOf(charList[i]);
+                                    if(chinaKeyIdx >= 0){
+                                        const hk2 = hanjaKey.indexOf(chinaB.charAt(chinaKeyIdx));
+                                        if(hk2 >=0) foundHanja.push(hk2);
+                                        else failHanja.push(charList[i]);                                
+                                    }
+                                    else {
+                                        failHanja.push(charList[i]);
+                                    }
+                                }
+                                if(failHanja.length>0) console.log("Failed Hanja: " + failHanja.join());
+                            }catch(e){ console.error("Hanja processing error:", e)}
+                        }
+                    }
+                    
+                    let hanjaArr = []
+                    if (typeof hanjaKey !== 'undefined' && typeof hanjaVal !== 'undefined') {
+                        for(let i=0;i<foundHanja.length;i++){
+                            const hIdx = foundHanja[i];
+                            hanjaArr.push("<span class='hanja-key'>"+hanjaKey[hIdx]+"</span> "+"<span class='hanja-val'>"+hanjaVal[hIdx]+"</span>");
+                        }
+                    }
+                    let resultHanjaInfo = hanjaArr.length ? '<div class="hanja-tip">'+hanjaArr.join(', ')+'</div>' : '';
+
+                    let rightBox;
+                    const isSkip = morpheme.T1 && morpheme.T2 && morpheme.T1.toLowerCase() === morpheme.T2.toLowerCase();
+                    if(isSkip || !morpheme.T2){ // T2가 없거나 T1과 같으면 오른쪽 박스 비움
+                        rightBox = '<div></div>';
+                    }
+                    else {
+                        rightBox = `<div class="word-box right-word-box"><div class="word-read">${World.isIpa && morpheme.I2 ? morpheme.I2 : morpheme.R2 || ''}</div><div class="word-text">${morpheme.T2 || ''}</div><div class="word-kor">${morpheme.K2 || ''}</div></div>`;
+                    }
+
+                    const rowInner = `
+                    <td class="word-td-left"><div class="word-wrapper">
+                        <div class="info-box"><div class="word-expl">${morpheme.E1 || ''}</div>${resultHanjaInfo}</div>
+                        <div class="word-box"><div class="word-read">${World.isIpa && morpheme.I1 ? morpheme.I1 : morpheme.R1 || ''}</div><div class="word-text">${morpheme.T1 || ''}</div><div class="word-kor">${(morpheme.K1?morpheme.K1:morpheme.K2) || ''}</div>${resultHanjaInfo}</div>
+                    </div></td>
+                    <td class="${isSkip?'word-td-right-alone':'word-td-right'}"><div class="word-wrapper" style="justify-content: flex-start;">
+                       ${rightBox}
+                        <div class="info-box info-box-right">
+                            <div>${World.isIpa && morpheme.XI ? morpheme.XI : morpheme.XR || ''}</div>
+                            <div class="ex-sentence">${morpheme.XE || ''}</div>
+                            <div>${morpheme.XK || ''}</div>                       
+                        </div>
+                    </div></td>
+                    `;
+                    bStr += trStr(rowInner);
+                });
+            }
+            return format(aStr, bStr);
+        }
+
+        function makeSimpleOne(currentIndex) {
+            let currentData;
+            let len;
+
+            if(World.isShort) {
+                if (!shortCutData || currentIndex < 0 || currentIndex >= shortCutData.length) return "";
+                currentData = shortCutData[currentIndex];
+                len = shortCutData.length;
+            }
+            else {
+                if (!data || currentIndex < 0 || currentIndex >= data.length) return "";
+                currentData = data[currentIndex];
+                len = data.length;
+            }
+            if (!currentData) return "";
+
+
+            const headerName = window.currentLang ==="jp" ? "KPOP 単語カード" : "JPOP 단어장"; // window.currentLang 사용
+            const formatSimple = (a,b) => `
+        <div class="print-container short-container">
+            <div class="short-header">${headerName}</div>
+            <div class="content">
+            <div class="class-sentence-view">${a}</div>
+            <div class="simple-word-wrapper">
+                <div>${b}</div>
+            </div>
+            </div>
+            <div class="print-number">${(currentIndex+1)+"/" + len}</div>
+        </div>   
+            `;
+
+
+            let t0Str = currentData.T0;
+             try {
+                if (rubyData && t0Str) {
+                     if(typeof rubyData === 'string') { // rubyData가 문자열일 경우에만 findRuby 사용
+                        const found = findRuby(rubyData, t0Str);
+                        if(found !== "") {
+                            t0Str = found.replaceAll("<br>","");
+                        }
+                    } else if (rubyData[t0Str]) { // 객체이고 키로 접근 가능한 경우 (가정)
+                        t0Str = rubyData[t0Str];
+                    }
+                }
+            }
+            catch (e) { console.error("Error applying ruby in simple view:", e); }
+            
+            let aStr = `<h3>${rdot(currentData.K0 || '')}</h3>`;
+            let bStr = '';
+            // const trStr = r => `<tr>${r}</tr>`; // makeSimpleOne에서는 tr을 직접 사용하지 않는 것으로 보임. div로 감쌈.
+
+            function removeConsecutiveDuplicatesFilter(arr) {
+                 if (!Array.isArray(arr)) return [];
+                return arr.filter((item, idx) => idx === 0 || (item.T1 !== arr[idx - 1].T1 || item.K1 !== arr[idx - 1].K1));
+            }
+
+            if (currentData.LI && Array.isArray(currentData.LI)) {
+                removeConsecutiveDuplicatesFilter(currentData.LI).filter(x=>x && x[""]!=="").forEach(morpheme => {
+                    // makeSimpleOne 에서는 rightBox 로직이 없음. T1을 표시하는 부분만 있음.
+                    const wordItemHtml = `
+                    <div class="word-box">
+                        <div class="word-read">${World.isIpa && morpheme.I1 ? morpheme.I1 : morpheme.R1 || ''}</div>
+                        <div class="word-text">${morpheme.T1 || ''}</div>
+                        <div class="word-kor">${(morpheme.K1?morpheme.K1:morpheme.K2) || ''}</div>
+                    </div>`;
+                    bStr += wordItemHtml; // 직접 HTML 문자열 추가
+                });
+            }
+            return formatSimple(aStr, bStr);
+        }
+
+
+
+    </script>
+    <script>
+        // 뒤로가기 버튼 이벤트 리스너 추가 (DOMContentLoaded 내로 옮기거나, 버튼이 확실히 로드된 후 실행되도록 함)
+        document.addEventListener('DOMContentLoaded', () => {
+            const backButton = document.querySelector('.back-to-list-btn');
+            if (backButton) {
+                backButton.addEventListener('click', function(event) {
+                    event.preventDefault(); 
+                    
+                    const referrer = document.referrer;
+                    let listPage = "../index.html"; // 기본 목록 페이지 (프로젝트 루트의 index.html 가정)
+                                                // 만약 index.html이 없거나 다른 파일이라면 이 경로를 수정해야 합니다.
+                    if (searchQueryFromUrl) { 
+                       listPage += `?q=${encodeURIComponent(searchQueryFromUrl)}`;
+                    }
+                    // window.location.href = listPage; // 이전 로직
+
+                    // referrer를 확인하여 이전 페이지가 같은 도메인의 /songs 또는 현재 페이지와 다른 경우에만 listPage로 이동
+                    // 그렇지 않으면 history.back() 사용
+                    if (referrer && referrer.includes(window.location.origin)) {
+                        if (referrer.includes('/songs') || !referrer.endsWith(window.location.pathname.substring(window.location.pathname.lastIndexOf('/') + 1))) {
+                            window.history.back();
+                        } else {
+                            window.location.href = listPage;
+                        }
+                    } else {
+                        // 외부 사이트에서 온 경우, 또는 referrer가 없는 경우 기본 목록 페이지로 이동
+                        window.location.href = listPage;
+                    }
+                });
+            }
+        });
+        
+
+    function analyze_all_sentences(){
+        if (!data) return "";
+        return data.map(x=> (x.R0 || '') + '\n' + (Array.isArray(x.LI) ? x.LI.map(y=>y.R1 || '').join() : '')).join('\n\n')
+    }    
+    function analyze_all_sentences2(){
+        if (!data) return "";
+        return data.map(x=> (x.K0 || '') + '\n' + (Array.isArray(x.LI) ? x.LI.map(y=>y.K1 || '').join() : '')).join('\n\n')
+    }
+    function analyze_all_sentences3(){
+        if (!data) return "";
+        return [...new Set(data.flatMap(x=> Array.isArray(x.LI) ? x.LI.map(y=>(y.T1||'') + ' : ' + (y.E1||'')) : []))].join('\n')   
+    }
+    function analyze_all_sentences4(){
+        if (!data) return "";
+        return [...new Set(data.flatMap(x=> Array.isArray(x.LI) ? x.LI.map(y=>y.XE || '') : []))].join('\n')   
+    }
+    function analyze_all_sentences5(){
+        if (!data) return "";
+        return [...new Set(data.flatMap(x=> Array.isArray(x.LI) ? x.LI.map(y=>(y.XE||'') + ' : ' + (y.XK||'')) : []))].join('\n')   
+    }
+    function get_slide_times(){
+        if (!shortCutData) return "[]";
+        return JSON.stringify(shortCutData.map(x=>x.endTime))
+    }
+    function get_lyrics(){
+        if (!data) return "";
+        return data.map(x=>(x.T0||'')+'\n'+(x.K0||'')).join('\n\n')
+    }
+    function get_lyrics2(){
+        if (!data) return "";
+        return data.map(x=>(x.R0||'')+'\n'+(x.T0||'')+'\n'+(x.K0||'')).join('\n\n')
+    }
+    function get_text(){
+        if (!data) return "";
+        return data.map(x=>x.T0||'').join('\n')
+    }
+    </script>
+</body>
+</html> 

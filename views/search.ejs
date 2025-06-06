@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"<%= searchQuery %>" 검색 결과 - Haneum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto max-w-6xl px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
+            <form action="/songs" method="get" class="w-full max-w-xl ml-8">
+                <div class="flex">
+                    <input type="search" name="q" value="<%= searchQuery %>" placeholder="노래 검색..." 
+                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="container mx-auto max-w-4xl px-4 py-8">
+        <!-- 검색 정보 -->
+        <div class="mb-8">
+            <h1 class="text-2xl md:text-3xl font-semibold mb-2">
+                "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
+            </h1>
+            <p class="text-gray-600">
+                총 <span class="font-bold"><%= totalResults %></span>개의 결과를 찾았습니다.
+            </p>
+        </div>
+
+        <!-- 결과 목록 -->
+        <div class="space-y-4">
+            <% songs.forEach(song => { %>
+                <% if (!song.tags || !song.tags.includes('개발용')) { %>
+                    <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow cursor-pointer" onclick="location.href='/songs/<%= encodeURIComponent(song.name) %>'">
+                        <div class="flex justify-between items-start">
+                            <div class="flex-grow">
+                                <h2 class="text-xl font-semibold mb-1 hover:text-blue-600">
+                                    <%= song.ori_name || song.name %>
+                                </h2>
+                                <%
+                                const mainName = song.ori_name || song.name;
+                                const subNames = [];
+                                if (song.kor_name) {
+                                    subNames.push(song.kor_name);
+                                }
+                                if (song.eng_name && song.eng_name !== mainName) {
+                                    subNames.push(song.eng_name);
+                                }
+                                
+                                if (subNames.length > 0) {
+                                %>
+                                    <p class="text-gray-500 text-sm mb-2"><%= subNames.join(' / ') %></p>
+                                <%
+                                }
+                                %>
+                                
+                                <% 
+                                let artistDisplayName;
+                                if (typeof song.artist === 'object' && song.artist) {
+                                    const names = [];
+                                    if (song.artist.ori_name) {
+                                        names.push(song.artist.ori_name);
+                                    }
+                                    if (song.artist.kor_name && !names.includes(song.artist.kor_name)) {
+                                        names.push(song.artist.kor_name);
+                                    }
+                                    if (song.artist.eng_name && !names.includes(song.artist.eng_name)) {
+                                        names.push(song.artist.eng_name);
+                                    }
+                                    artistDisplayName = names.join(' / ');
+                                } else {
+                                    artistDisplayName = song.artist;
+                                }
+                                %>
+                                <p class="mt-2 text-gray-600 text-sm"><%= artistDisplayName %></p>
+                                <% if (song.tags && song.tags.length > 0) { %>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <% song.tags.forEach(tag => { %>
+                                            <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full"><%= tag %></span>
+                                        <% }); %>
+                                    </div>
+                                <% } %>
+                                <p class="text-xs text-gray-400 mt-2">
+                                    <% if (song.createdAt) { %>
+                                        <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        }) %>
+                                    <% } else { %>
+                                        날짜 정보 없음
+                                    <% } %>
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0 ml-4">
+                                <a href="/songdetail/<%= encodeURIComponent(song.name) %>" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 font-semibold px-4 py-2 rounded-full text-sm hover:bg-blue-200 transition">
+                                    <i class="fas fa-edit"></i>
+                                    <span>번역 관리</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% }); %>
+        </div>
+
+        <!-- 페이지네이션 -->
+        <% if (totalPages > 1) { %>
+            <div class="mt-8 flex justify-center space-x-2">
+                <% if (currentPage > 1) { %>
+                    <a href="/songs?q=<%= searchQuery %>&page=1" 
+                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
+                        처음
+                    </a>
+                    <a href="/songs?q=<%= searchQuery %>&page=<%= currentPage - 1 %>" 
+                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
+                        이전
+                    </a>
+                <% } %>
+                
+                <% 
+                let startPage = Math.max(1, currentPage - 2);
+                let endPage = Math.min(totalPages, startPage + 4);
+                
+                if (endPage - startPage < 4) {
+                    startPage = Math.max(1, endPage - 4);
+                }
+                
+                for (let i = startPage; i <= endPage; i++) { 
+                %>
+                    <a href="/songs?q=<%= searchQuery %>&page=<%= i %>" 
+                       class="px-4 py-2 border rounded-md <%= i === currentPage ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' %>">
+                        <%= i %>
+                    </a>
+                <% } %>
+
+                <% if (currentPage < totalPages) { %>
+                    <a href="/songs?q=<%= searchQuery %>&page=<%= currentPage + 1 %>" 
+                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
+                        다음
+                    </a>
+                    <a href="/songs?q=<%= searchQuery %>&page=<%= totalPages %>" 
+                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
+                        마지막
+                    </a>
+                <% } %>
+            </div>
+        <% } %>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-400 py-8 px-6 text-center mt-12">
+        <div class="container mx-auto max-w-6xl">
+            <!-- <nav class="mb-6">
+                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <li><a href="/about" class="hover:text-white transition duration-200">About Haneum</a></li>
+                    <li><a href="/contact" class="hover:text-white transition duration-200">문의하기</a></li>
+                    <li><a href="/privacy" class="hover:text-white transition duration-200">개인정보처리방침</a></li>
+                    <li><a href="/terms" class="hover:text-white transition duration-200">이용약관</a></li>
+                    <li><a href="/copyright" class="hover:text-white transition duration-200">저작권 안내</a></li>
+                </ul>
+            </nav> -->
+            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* 기본적으로 모든 페이지 숨기기 */
+        .page {
+            display: none;
+        }
+        /* active 클래스가 있는 페이지만 보여주기 */
+        .page.active {
+            display: block;
+        }
+        /* songView 내부 스타일 */
+        .word-box {
+            border: solid 1px #f0f0f0;
+            background-color: #f6f6f6;
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+            padding: 5px;
+            border-radius: 4px;
+            min-width: 30px;
+            align-self: center;
+            color : #000;
+        }
+        .info-box {
+            display: flex;
+            text-align: right;
+            align-items: flex-end;
+            word-break: normal;
+            font-size: 18px;
+            margin-right: 14px;
+            margin-left: 14px;
+            text-wrap: pretty;
+            flex-direction: column;
+        }
+        .morpheme-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        .morpheme-table th, .morpheme-table td {
+            border: 0px solid #ddd;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 0px 7px 0px 7px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+         .word-text{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        /* --- songView.html에서 가져온 스타일 시작 --- */
+        #printer-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        #printer {
+            max-width: 1100px;
+            padding-bottom: 200px;
+        }
+        .print-container {
+            background-color: #ffffff;
+            display: inline;
+            text-align: center;
+            position: relative;
+        }
+        .class-sentence-view{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        .morpheme-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        tr {
+            page-break-inside: avoid;
+        }
+        .morpheme-table th, .morpheme-table td {
+            border: 0px solid #ddd;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 0px 7px 0px 7px;
+            text-align: left;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+        .morpheme-table th {
+            font-weight: 500;
+        }
+        .class-sentence-view h2 {
+            margin: 0px;
+            font-size: 21px;
+            font-weight: 600;
+        }
+        .class-sentence-view h3 {
+            margin: 0px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .word-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .word-text{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .word-box {
+            border: solid 1px #f0f0f0;
+            background-color: #f6f6f6;
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-shrink: 0;
+            padding: 5px;
+            border-radius: 4px;
+            min-width: 30px;
+            align-self: center;
+            color : #000;
+        }
+        .info-box {
+            display: flex;
+            text-align: right;
+            align-items: flex-end;
+            word-break: normal;
+            font-size: 18px;
+            margin-right: 14px;
+            margin-left: 14px;
+            text-wrap: pretty;
+            flex-direction: column;
+        }
+        .word-td-left{
+            border-right: 1px solid #ddd !important;
+        }
+        /* --- songView.html에서 가져온 스타일 끝 --- */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Landing Page -->
+    <div id="landing" class="page">
+        <header id="hero" class="text-white text-center py-24 md:py-32 px-6 bg-gradient-to-r from-blue-600 to-indigo-600">
+            <div class="container mx-auto max-w-4xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Haneum과 함께 어떤 외국어든 노래로 즐겁게 공부하세요.</h1>
+                <form id="landing-search-form" class="flex flex-col sm:flex-row justify-center max-w-xl mx-auto">
+                    <input type="search" id="landing-search-input" name="q" placeholder="노래 제목 또는 아티스트를 입력하세요" required
+                           class="flex-grow px-5 py-4 rounded-full sm:rounded-r-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 mb-2 sm:mb-0 text-lg">
+                    <button type="submit"
+                            class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-full sm:rounded-l-none transition duration-300 ease-in-out text-lg inline-flex items-center justify-center gap-2">
+                        <i class="fas fa-search"></i> 노래 찾기
+                    </button>
+                </form>
+                <div class="flex justify-center gap-4 mt-6">
+                    <a href="#search" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out text-lg inline-flex items-center justify-center gap-2">
+                        <i class="fas fa-list"></i> 전체 노래 보기
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="py-16 px-6">
+                <div class="container mx-auto max-w-6xl">
+                    <h2 class="text-2xl font-semibold mb-6 pb-2 border-b-2 border-blue-600 inline-block">최근 추가된 노래</h2>
+                    <div id="latest-songs" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <!-- Latest songs will be rendered here by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Search Page -->
+    <div id="search" class="page">
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto max-w-6xl px-4 py-3 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-600">Haneum</a>
+                <form id="search-form" class="w-full max-w-xl ml-8">
+                    <div class="flex">
+                        <input type="search" id="search-input" name="q" placeholder="노래 검색..." 
+                               class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <main class="container mx-auto max-w-4xl px-4 py-8">
+            <div class="mb-8">
+                <h1 class="text-2xl md:text-3xl font-semibold mb-2">
+                    "<span id="search-query-display" class="text-blue-600"></span>" 검색 결과
+                </h1>
+                <p class="text-gray-600">
+                    총 <span id="search-results-count" class="font-bold">0</span>개의 결과를 찾았습니다.
+                </p>
+            </div>
+            <div id="search-results" class="space-y-4">
+                <!-- Search results will be rendered here by JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-gray-800 text-gray-400 py-12 px-6 text-center">
+        <div class="container mx-auto max-w-6xl">
+            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const pages = document.querySelectorAll('.page');
+            const latestSongsContainer = document.getElementById('latest-songs');
+            const searchResultsContainer = document.getElementById('search-results');
+            const searchResultsCount = document.getElementById('search-results-count');
+            const searchQueryDisplay = document.getElementById('search-query-display');
+
+            let allSongs = []; // 검색용 인덱스 데이터
+
+            // 1. 데이터 로드 (검색 인덱스)
+            async function loadSongIndex() {
+                try {
+                    const response = await fetch('./songSearch.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    allSongs = await response.json();
+                    console.log(`${allSongs.length} songs index loaded.`);
+                } catch (error) {
+                    console.error("Could not load songSearch.json:", error);
+                    latestSongsContainer.innerHTML = '<p>노래 목록을 불러오는 데 실패했습니다.</p>';
+                }
+            }
+
+            // 2. 라우팅 처리 (song-view 제거)
+            function router() {
+                const hash = window.location.hash || '#landing';
+                // URL 파라미터로 song-view를 처리하므로, 해시 라우팅에서는 제외합니다.
+                const route = hash.substring(1).split('/')[0];
+                
+                pages.forEach(page => {
+                    // 'song-view'는 이제 id가 아니므로, 다른 페이지만을 대상으로 합니다.
+                    if (page.id === route) {
+                        page.classList.add('active');
+                    } else {
+                        page.classList.remove('active');
+                    }
+                });
+
+                switch (route) {
+                    case 'landing':
+                        renderLatestSongs();
+                        break;
+                    case 'search':
+                        const urlParams = new URLSearchParams(window.location.search);
+                        const query = urlParams.get('q') || '';
+                        document.getElementById('search-input').value = query;
+                        renderSearchResults(query);
+                        break;
+                }
+            }
+            
+            // 3. 렌더링 함수
+            function getArtistDisplayName(artist) {
+                if (typeof artist === 'object' && artist) {
+                    return [artist.ori_name, artist.kor_name, artist.eng_name].filter(Boolean).join(' / ');
+                }
+                return artist || '알 수 없음';
+            }
+
+            function renderLatestSongs() {
+                if (!latestSongsContainer) return;
+                const songsToDisplay = allSongs.slice(0, 24);
+                latestSongsContainer.innerHTML = songsToDisplay.map(song => `
+                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
+                        <a href="views/songView.html?song=${encodeURIComponent(song.filename)}" class="block">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2 hover:text-blue-600 transition-colors truncate">
+                                ${song.ori_name || song.name}
+                            </h3>
+                            <p class="text-sm text-gray-600 truncate">${getArtistDisplayName(song.artist)}</p>
+                            ${song.kor_name ? `<p class="text-sm text-gray-500 mt-1 truncate">${song.kor_name}</p>` : ''}
+                            <p class="text-xs text-gray-400 mt-2">
+                                ${song.createdAt ? new Date(song.createdAt).toLocaleDateString('ko-KR') : '날짜 정보 없음'}
+                            </p>
+                        </a>
+                    </div>
+                `).join('');
+            }
+
+            function renderSearchResults(query) {
+                searchQueryDisplay.textContent = query;
+                const filteredSongs = query ? allSongs.filter(song => {
+                    const searchTerm = query.toLowerCase();
+                    const artistName = getArtistDisplayName(song.artist).toLowerCase();
+                    return (song.name && song.name.toLowerCase().includes(searchTerm)) ||
+                           (song.ori_name && song.ori_name.toLowerCase().includes(searchTerm)) ||
+                           (song.kor_name && song.kor_name.toLowerCase().includes(searchTerm)) ||
+                           (artistName.includes(searchTerm));
+                }) : allSongs;
+
+                searchResultsCount.textContent = filteredSongs.length;
+                searchResultsContainer.innerHTML = filteredSongs.map(song => `
+                    <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow cursor-pointer" onclick="window.location.href='views/songView.html?song=${encodeURIComponent(song.filename)}&q=${encodeURIComponent(query)}'">
+                         <h2 class="text-xl font-semibold mb-1 hover:text-blue-600">
+                            ${song.ori_name || song.name}
+                        </h2>
+                        <p class="text-gray-500 text-sm mb-2">${[song.kor_name, song.eng_name].filter(Boolean).join(' / ')}</p>
+                        <p class="mt-2 text-gray-600 text-sm">${getArtistDisplayName(song.artist)}</p>
+                         ${song.tags && song.tags.length > 0 ? `
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                ${song.tags.map(tag => `<span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full">${tag}</span>`).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `).join('');
+            }
+
+            // 4. 이벤트 리스너
+            window.addEventListener('hashchange', router);
+            
+            document.getElementById('landing-search-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const query = document.getElementById('landing-search-input').value;
+                window.location.hash = `search`;
+                const newUrl = new URL(window.location);
+                newUrl.searchParams.set('q', query);
+                history.pushState({}, '', newUrl);
+                 renderSearchResults(query);
+            });
+
+            document.getElementById('search-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const query = document.getElementById('search-input').value;
+                const newUrl = new URL(window.location);
+                newUrl.searchParams.set('q', query);
+                history.pushState({}, '', newUrl); // URL만 업데이트, hashchange는 발생 안함
+                renderSearchResults(query);
+            });
+            
+             document.getElementById('search-input').addEventListener('input', (e) => {
+                const query = e.target.value;
+                const newUrl = new URL(window.location);
+                newUrl.searchParams.set('q', query);
+                history.pushState({}, '', newUrl);
+                renderSearchResults(query);
+            });
+
+            // 초기화
+            async function init() {
+                await loadSongIndex();
+                router();
+            }
+
+            init();
+        });
+    </script>
+</body>
+</html> 
