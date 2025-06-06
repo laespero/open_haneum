@@ -320,17 +320,22 @@
         }
     
         .song-info-header {
-            margin: 20px 0;
-            padding: 20px;
+            padding: 30px;
             background-color: #f8f9fa;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .song-info-content {
+            margin-top: 50px;
         }
 
         .song-info-header h1 {
             margin-bottom: 15px;
             font-size: 28px;
             color: #333;
+            padding-bottom: 8px;
         }
 
         .song-info-item {
@@ -345,13 +350,15 @@
         }
 
         .back-to-list-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
             display: inline-block;
             padding: 8px 16px;
-            margin-bottom: 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 20px;
             font-size: 14px;
             transition: background-color 0.3s ease;
         }
@@ -474,12 +481,13 @@
     </header> -->
 
     <div class="song-info-header">
-        <a href="/songs" class="back-to-list-btn" id="back-to-list-link">← 돌아가기</a>
-        
-        <h1><span id="song-name">노래 제목 로딩 중...</span></h1>
-        <div class="song-info-item" id="song-ori-name-item" style="display:none;">원어명: <span id="song-ori-name"></span></div>
-        <div class="song-info-item" id="song-kor-name-item" style="display:none;">한글명: <span id="song-kor-name"></span></div>
-        <div class="song-info-item" id="song-artist-item" style="display:none;">가수: <span id="song-artist"></span></div>
+        <div class="song-info-content">
+            <h1><span id="song-name">노래 제목 로딩 중...</span></h1>
+            <div id="song-details">
+                <!-- Song details will be populated by JS -->
+            </div>
+        </div>
+        <a href="../index.html" class="back-to-list-btn" id="back-to-list-link">← 돌아가기</a>
     </div>
     <div id="player"></div>
     <div id="printer-wrapper">
@@ -498,11 +506,11 @@
         // 뒤로가기 링크에 검색어 유지 (필요한 경우)
         const backToListLink = document.getElementById('back-to-list-link');
         if (backToListLink) { // 요소가 존재하는지 확인
-            let listPageHref = "../index.html"; // 기본 목록 페이지 (프로젝트 루트의 index.html 가정)
-                                            // 만약 index.html이 없거나 다른 파일이라면 이 경로를 수정해야 합니다.
+            let listPageHref = "../index.html";
             if (searchQueryFromUrl) {
-                listPageHref += `?q=${searchQueryFromUrl}`;
+                listPageHref += `?q=${encodeURIComponent(searchQueryFromUrl)}`;
             }
+            listPageHref += "#search";
             backToListLink.href = listPageHref;
         }
 
@@ -1136,7 +1144,7 @@ ${printerContent}
             // JSON 파일의 실제 위치에 맞게 경로 수정 필요
             // 예: /data/songs/곡이름.json 또는 ../data/songs/곡이름.json
             // 현재는 html 파일과 같은 views 폴더 내에 data 폴더가 있다고 가정
-            let server_url = `../songs/${songFileName}.json`; 
+            let server_url = `../songs/${songFileName}`; 
 
             fetch(server_url)
                 .then(response => {
@@ -1152,17 +1160,18 @@ ${printerContent}
                     document.getElementById('song-name').textContent = o.name || o.kor_name || o.ori_name || "이름 없음";
                     document.title = `${o.name || "곡 정보"} - Lyrics Viewer`; // 타이틀도 업데이트
 
+                    const songDetailsContainer = document.getElementById('song-details');
+                    songDetailsContainer.innerHTML = ''; // 기존 내용 초기화
+
                     if (o.ori_name) {
-                        document.getElementById('song-ori-name').textContent = o.ori_name;
-                        document.getElementById('song-ori-name-item').style.display = 'block';
+                        songDetailsContainer.innerHTML += `<div class="song-info-item">원어명: ${o.ori_name}</div>`;
                     }
                     if (o.kor_name) {
-                        document.getElementById('song-kor-name').textContent = o.kor_name;
-                        document.getElementById('song-kor-name-item').style.display = 'block';
+                        songDetailsContainer.innerHTML += `<div class="song-info-item">한글명: ${o.kor_name}</div>`;
                     }
                     if (o.artist) {
-                        document.getElementById('song-artist').textContent = o.artist;
-                        document.getElementById('song-artist-item').style.display = 'block';
+                        const artistName = typeof o.artist === 'object' ? [o.artist.ori_name, o.artist.kor_name, o.artist.eng_name].filter(Boolean).join(' / ') : o.artist;
+                        songDetailsContainer.innerHTML += `<div class="song-info-item">가수: ${artistName}</div>`;
                     }
                     
                     if (o.vid && o.vid.length === 11) {
@@ -1541,7 +1550,7 @@ ${printerContent}
                     let listPage = "../index.html"; // 기본 목록 페이지 (프로젝트 루트의 index.html 가정)
                                                 // 만약 index.html이 없거나 다른 파일이라면 이 경로를 수정해야 합니다.
                     if (searchQueryFromUrl) { 
-                       listPage += `?q=${searchQueryFromUrl}`;
+                       listPage += `?q=${encodeURIComponent(searchQueryFromUrl)}`;
                     }
                     // window.location.href = listPage; // 이전 로직
 
