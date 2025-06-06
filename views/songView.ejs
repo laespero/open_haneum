@@ -326,17 +326,22 @@
         }
     
         .song-info-header {
-            margin: 20px 0;
-            padding: 20px;
+            padding: 30px;
             background-color: #f8f9fa;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .song-info-content {
+            margin-top: 50px;
         }
 
         .song-info-header h1 {
             margin-bottom: 15px;
             font-size: 28px;
             color: #333;
+            padding-bottom: 8px;
         }
 
         .song-info-item {
@@ -351,13 +356,15 @@
         }
 
         .back-to-list-btn {
+            position: absolute;
+            top: 30px;
+            right: 30px;
             display: inline-block;
             padding: 8px 16px;
-            margin-bottom: 20px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 20px;
             font-size: 14px;
             transition: background-color 0.3s ease;
         }
@@ -481,19 +488,20 @@
 
     <% let searchQuery = locals.searchQuery || ''; %>
     <div class="song-info-header">
+        <div class="song-info-content">
+            <h1><%= song.ori_name || song.name %></h1>
+            
+                <% if (song.kor_name) { %>
+                    <div class="song-info-item">한글 제목 : <%= song.kor_name %></div>
+                <% } %>
+                <% if (song.eng_name) { %>
+                    <div class="song-info-item">영문 제목 : <%= song.eng_name %></div>
+                <% } %>
+            <% if (song.artist) { %>
+                <div class="song-info-item">아티스트 : <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></div>
+            <% } %>
+        </div>
         <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 돌아가기</a>
-        
-        <h1><%= song.ori_name || song.name %></h1>
-        
-            <% if (song.kor_name) { %>
-                <div class="song-info-item">한글 제목 : <%= song.kor_name %></div>
-            <% } %>
-            <% if (song.eng_name) { %>
-                <div class="song-info-item">영문 제목 : <%= song.eng_name %></div>
-            <% } %>
-        <% if (song.artist) { %>
-            <div class="song-info-item">아티스트 : <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></div>
-        <% } %>
     </div>
     <div id="player"></div>
     <div id="printer-wrapper">
