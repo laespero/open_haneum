@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= song.ori_name || song.name %> - <%= song.artist %></title>
+    <title><%= song.ori_name || song.name %> - <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></title>
     <!-- <title>Lyrics Morphology Viewer 1376 774, 574 810</title> -->
     <!-- <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
@@ -481,17 +481,18 @@
 
     <% let searchQuery = locals.searchQuery || ''; %>
     <div class="song-info-header">
-        <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 수정 페이지로 돌아가기</a>
+        <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 돌아가기</a>
         
         <h1><%= song.ori_name || song.name %></h1>
-        <% if (song.ori_name) { %>
-            <div class="song-info-item">원어명: <%= song.ori_name %></div>
-        <% } %>
-        <% if (song.kor_name) { %>
-            <div class="song-info-item">한글명: <%= song.kor_name %></div>
-        <% } %>
+        
+            <% if (song.kor_name) { %>
+                <div class="song-info-item">한글 제목 : <%= song.kor_name %></div>
+            <% } %>
+            <% if (song.eng_name) { %>
+                <div class="song-info-item">영문 제목 : <%= song.eng_name %></div>
+            <% } %>
         <% if (song.artist) { %>
-            <div class="song-info-item">가수: <%= song.artist %></div>
+            <div class="song-info-item">아티스트 : <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></div>
         <% } %>
     </div>
     <div id="player"></div>
@@ -799,7 +800,7 @@ function findRuby(htmlStr, sentence){
                 name: '<%= song.ori_name %>',
                 kor_name: '<%= song.kor_name %>',
                 eng_name: '<%= song.eng_name %>',
-                artist: '<%= song.artist %>'
+                artist: '<%= typeof song.artist === "object" ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : (song.artist || "") %>'
             };
             return songData.name + "(" + songData.kor_name + ", " + songData.eng_name + ")" + " - " + songData.artist + " | 가사, 해석, 한글 발음, 모든 단어 완벽 정리!";
         }

@@ -6,6 +6,25 @@ import path from "path";
 import { KR_MSG } from './messages.js';  // MSG import 추가
 import { JP_MSG } from './jp_messages.js';
 import 'dotenv/config';
+import 'express-async-errors'; // express-async-errors 임포트
+
+// 처리되지 않은 프로미스 거부(rejection)를 처리
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('====================================');
+    console.error('처리되지 않은 프로미스 거부:', reason);
+    console.error('====================================');
+    // 애플리케이션을 종료하고, PM2와 같은 프로세스 관리자가 재시작하도록 하는 것이 안전합니다.
+    process.exit(1); 
+});
+
+// 예기치 않은 예외(exception)를 처리
+process.on('uncaughtException', (err) => {
+    console.error('====================================');
+    console.error('예기치 않은 예외:', err);
+    console.error('====================================');
+    // 예외 발생 후에는 애플리케이션 상태를 신뢰할 수 없으므로 종료하는 것이 가장 안전합니다.
+    process.exit(1);
+});
 
 // 사용자가 API 제공자를 선택할 수 있는 변수
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
@@ -150,7 +169,7 @@ async function refreshSongCache() {
 refreshSongCache();
 
 app.post('/add', async (req, res) => {
-    let { title, ori_name, kor_name, eng_name, vid, artist, text } = req.body;
+    let { title, ori_name, kor_name, eng_name, vid, artist_ori_name, artist_kor_name, artist_eng_name, text, tags } = req.body;
     let isJapanSong = false;
     let japanData = [];
 
@@ -162,8 +181,6 @@ app.post('/add', async (req, res) => {
         }
     }
     catch {}
-
-
 
     let trimedTextArr;
     if(text.includes("<br>")) {
@@ -183,6 +200,15 @@ app.post('/add', async (req, res) => {
 
     const uniqueLines = [...new Set(trimedTextArr)];
 
+    // Process tags: split string by comma, trim whitespace, and remove empty tags
+    const processedTags = tags ? tags.split(',').map(tag => tag.trim()).filter(tag => tag) : [];
+
+    const artist = {
+        ori_name: artist_ori_name,
+        kor_name: artist_kor_name || '',
+        eng_name: artist_eng_name || ''
+    };
+
     const songData = {
         name: title,
         ori_name,
@@ -190,6 +216,7 @@ app.post('/add', async (req, res) => {
         eng_name,
         vid,
         artist,
+        tags: processedTags,
         text : text.replaceAll("  "," "),
         createdAt: new Date().toISOString(),
         p1: uniqueLines
@@ -198,124 +225,142 @@ app.post('/add', async (req, res) => {
         songData.japanSongData = japanData;
     }
 
-    fs.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2), async (err) => {
-        if (err) {
-            console.error(err);
-            res.send('노래 저장 중 오류 발생');
-        } else {
-            await refreshSongCache(); // 캐시 갱신
-            res.render('songDetail', { song: songData });
-        }
-    });
+    await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
+    
+    // 캐시를 효율적으로 업데이트 (전체 리프레시 대신)
+    const existingSongIndex = songCache.findIndex(song => song.name === title);
+    if (existingSongIndex > -1) {
+        songCache[existingSongIndex] = songData;
+    } else {
+        songCache.unshift(songData); // 새 노래를 맨 앞에 추가
+    }
+    console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
+
+    res.render('songDetail', { song: songData });
 });
 
-app.post('/update', (req, res) => {
-    const originalTitle = req.body.originalTitle;
-    const title = req.body.title;
-    const vid = req.body.vid;
-    const text = req.body.text
-        .replace(/\r/g, '')
-        .split("\n")
-        .map(line => line.trim())
-        .filter(x => x !== '')
-        .join("\n");
-    const uniqueLines = [...new Set(text.split('\n'))];
+app.post('/update-song-meta/:title', async (req, res) => {
+    const { title } = req.params;
+    const { artist_ori_name, artist_kor_name, artist_eng_name, vid, ori_name, kor_name, eng_name, tags } = req.body;
 
-    const songData = {
-        name: title,
-        text: text,
-        vid: vid,
-        p1: uniqueLines
-    };
+    const filePath = `songs/${title}.json`;
 
-    fs.unlink(`songs/${originalTitle}.json`, async (err) => {
-        if (err && err.code !== 'ENOENT') {
-            console.error(err);
-            res.send('노래 업데이트 중 오류 발생');
-        } else {
-            fs.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2), async (err) => {
-                if (err) {
-                    console.error(err);
-                    res.send('노래 저장 중 오류 발생');
-                } else {
-                    await refreshSongCache(); // 캐시 갱신
-                    res.redirect('/songs');
-                }
-            });
-        }
-    });
+    const data = await fs.promises.readFile(filePath, 'utf8');
+    const songData = JSON.parse(data);
+
+    // Update artist field
+    if (artist_ori_name !== undefined) {
+        songData.artist = {
+            ori_name: artist_ori_name,
+            kor_name: artist_kor_name || '',
+            eng_name: artist_eng_name || ''
+        };
+    }
+
+    // Update other fields
+    if (vid !== undefined) songData.vid = vid;
+    if (ori_name !== undefined) songData.ori_name = ori_name;
+    if (kor_name !== undefined) songData.kor_name = kor_name;
+    if (eng_name !== undefined) songData.eng_name = eng_name;
+    if (tags !== undefined) {
+        songData.tags = tags ? tags.split(',').map(tag => tag.trim()).filter(tag => tag) : [];
+    }
+    
+    await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+    
+    // 캐시를 효율적으로 업데이트 (전체 리프레시 대신)
+    const songIndex = songCache.findIndex(song => song.name === title);
+    if (songIndex > -1) {
+        songCache[songIndex] = { ...songCache[songIndex], ...songData };
+        console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
+    } else {
+        // 만약 캐시에 없다면 (이론상 발생하기 어려움), 전체 리프레시로 안전하게 처리
+        await refreshSongCache();
+        console.log(`캐시에 없는 노래(${title})가 업데이트되어 전체 캐시를 갱신합니다.`);
+    }
+    
+    res.redirect(`/songdetail/${title}`);
 });
 
-app.get('/songs/:title', (req, res) => {
+app.get('/songs/:title', async (req, res) => {
     const title = req.params.title;
-    fs.readFile(`songs/${title}.json`, 'utf8', (err, data) => {
-        if (err) {
-            console.error(err);
-            res.send('노래 불러오기 중 오류 발생');
-        } else {
-            const songData = JSON.parse(data);
-            
-            // contextText와 translatedLines가 모두 존재하는 경우에만 정렬 시도
-            if (songData.contextText && songData.translatedLines) {
-                try {
-                    // contextText의 순서를 기준으로 translatedLines 정렬
-                    const sortedTranslatedLines = songData.contextText
-                        .map(context => {
-                            // T0 또는 O0와 일치하는 번역된 라인 찾기
-                            const translatedLine = songData.translatedLines.find(
-                                line => line.T0 === context.T0 || line.O0 === context.T0
-                            );
-                            return translatedLine || { T0: context.T0, K0: "번역 없음" };
-                        })
-                        .filter(line => line); // null이나 undefined 제거
-                    
-                    songData.translatedLines = sortedTranslatedLines;
-                } catch (error) {
-                    console.error('정렬 중 오류 발생:', error);
-                    // 정렬 실패 시 원본 데이터 유지
-                }
+    try {
+        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const songData = JSON.parse(data);
+        
+        // contextText와 translatedLines가 모두 존재하는 경우에만 정렬 시도
+        if (songData.contextText && songData.translatedLines) {
+            try {
+                // contextText의 순서를 기준으로 translatedLines 정렬
+                const sortedTranslatedLines = songData.contextText
+                    .map(context => {
+                        // T0 또는 O0와 일치하는 번역된 라인 찾기
+                        const translatedLine = songData.translatedLines.find(
+                            line => line.T0 === context.T0 || line.O0 === context.T0
+                        );
+                        return translatedLine || { T0: context.T0, K0: "번역 없음" };
+                    })
+                    .filter(line => line); // null이나 undefined 제거
+                
+                songData.translatedLines = sortedTranslatedLines;
+            } catch (error) {
+                console.error('정렬 중 오류 발생:', error);
+                // 정렬 실패 시 원본 데이터 유지
             }
-            
-            res.render('lyrics', { song: songData });
         }
-    });
+        
+        res.render('lyrics', { song: songData });
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return res.redirect('/');
+        }
+        throw error; // 그 외 다른 에러는 전역 에러 핸들러로 전달
+    }
 });
 
-app.get('/songview/:title', (req, res) => {
+app.get('/songview/:title', async (req, res) => {
     const title = req.params.title;
-    fs.readFile(`songs/${title}.json`, 'utf8', (err, data) => {
-        if (err) {
-            console.error(err);
-            res.send('노래 불러오기 중 오류 발생');
-        } else {
-            const songData = JSON.parse(data);
-            res.render('songView', { song: songData, lang: lang });
+    try {
+        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const songData = JSON.parse(data);
+        res.render('songView', { song: songData, lang: lang });
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return res.redirect('/');
         }
-    });
+        throw error;
+    }
 });
 
-app.get('/songdetail/:title', (req, res) => {
+app.get('/songdetail/:title', async (req, res) => {
     const title = req.params.title;
-    fs.readFile(`songs/${title}.json`, 'utf8', (err, data) => {
-        if (err) {
-            console.error(err);
-            res.send('노래 불러오기 중 오류 발생');
-        } else {
-            const songData = JSON.parse(data);
-            res.render('songDetail', { song: songData });
+    try {
+        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const songData = JSON.parse(data);
+        res.render('songDetail', { song: songData });
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return res.redirect('/');
         }
-    });
+        throw error;
+    }
 });
 
 app.get('/songs', (req, res) => {
     const searchQuery = req.query.q || '';
+    const lowerCaseQuery = searchQuery.toLowerCase();
     const filteredSongs = searchQuery ? 
-        songCache.filter(song => 
-            song.name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            song.ori_name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            song.kor_name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            song.artist?.toLowerCase().includes(searchQuery.toLowerCase())
-        ) : songCache;
+        songCache.filter(song => {
+            const artistMatch = typeof song.artist === 'object' 
+                ? song.artist.ori_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.kor_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.eng_name?.toLowerCase().includes(lowerCaseQuery)
+                : song.artist?.toLowerCase().includes(lowerCaseQuery);
+
+            return song.name?.toLowerCase().includes(lowerCaseQuery) ||
+                song.ori_name?.toLowerCase().includes(lowerCaseQuery) ||
+                song.kor_name?.toLowerCase().includes(lowerCaseQuery) ||
+                artistMatch ||
+                (song.tags && song.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)));
+        }) : songCache;
 
     const sortedSongs = filteredSongs.sort((a, b) => {
         const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
@@ -339,17 +384,18 @@ app.get('/songs', (req, res) => {
     });
 });
 
-app.get('/edit/:title', (req, res) => {
+app.get('/edit/:title', async (req, res) => {
     const title = req.params.title;
-    fs.readFile(`songs/${title}.json`, 'utf8', (err, data) => {
-        if (err) {
-            console.error(err);
-            res.send('노래 불러오기 중 오류 발생');
-        } else {
-            const songData = JSON.parse(data);
-            res.render('edit', { song: songData });
+    try {
+        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const songData = JSON.parse(data);
+        res.render('edit', { song: songData });
+    } catch (error) {
+        if (error.code === 'ENOENT') {
+            return res.redirect('/');
         }
-    });
+        throw error;
+    }
 });
 
 app.post('/translate/:title', async (req, res) => {
@@ -868,7 +914,7 @@ app.get('/', (req, res) => {
             const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
             return dateB - dateA;
         })
-        .slice(0, 20);
+        .slice(0, 24);
 
     res.render('landing', {
         latestSongs
@@ -891,10 +937,19 @@ app.get('/api/search', (req, res) => {
                 song.ori_name?.toLowerCase(),
                 song.kor_name?.toLowerCase(),
                 song.eng_name?.toLowerCase(),
-                song.artist?.toLowerCase()
             ].filter(Boolean);
 
-            return searchFields.some(field => field.includes(query));
+            if (typeof song.artist === 'object') {
+                searchFields.push(song.artist.ori_name?.toLowerCase());
+                searchFields.push(song.artist.kor_name?.toLowerCase());
+                searchFields.push(song.artist.eng_name?.toLowerCase());
+            } else {
+                searchFields.push(song.artist?.toLowerCase());
+            }
+
+            const hasTagMatch = song.tags && song.tags.some(tag => tag.toLowerCase().includes(query));
+
+            return searchFields.some(field => field && field.includes(query)) || hasTagMatch;
         });
 
         const totalPages = Math.ceil(allResults.length / limit);
@@ -913,28 +968,18 @@ app.get('/api/search', (req, res) => {
     }
 });
 
-app.get('/songs/:name', async (req, res) => {
-    const songName = decodeURIComponent(req.params.name);
-    const searchQuery = req.query.q || '';
-
-    console.log('Request URL:', req.originalUrl);
-    console.log('Extracted searchQuery:', searchQuery);
-
-    try {
-        const data = await fs.promises.readFile(`songs/${songName}.json`, 'utf8');
-        const songData = JSON.parse(data);
-
-        console.log('Rendering songView with:', { song: songData, searchQuery });
-
-        res.render('songView', {
-            song: songData,
-            searchQuery: searchQuery,
-            lang: lang
-        });
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(404).send('Song not found');
+// 전역 에러 처리 미들웨어 (모든 라우터 뒤, listen 전에 위치)
+app.use((err, req, res, next) => {
+    console.error('====================================');
+    console.error('전역 에러 핸들러가 에러를 포착했습니다:');
+    console.error(err.stack);
+    console.error('====================================');
+    
+    if (res.headersSent) {
+        return next(err);
     }
+    
+    res.status(500).send('<h1> 서버 오류 </h1><p> 죄송합니다, 서버에 예상치 못한 문제가 발생했습니다. </p>');
 });
 
 const PORT = process.env.PORT || 3000;

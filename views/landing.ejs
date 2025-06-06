@@ -70,13 +70,13 @@
             <div class="container mx-auto max-w-6xl">
                 <h2 class="text-2xl font-semibold mb-6 pb-2 border-b-2 border-blue-600 inline-block">최근 추가된 노래</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    <% latestSongs.slice(0, 20).forEach(song => { %>
+                    <% latestSongs.slice(0, 24).forEach(song => { %>
                         <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-4">
                             <a href="/songs/<%= song.name %>" class="block">
                                 <h3 class="text-lg font-semibold text-gray-800 mb-2 hover:text-blue-600 transition-colors">
                                     <%= song.ori_name || song.name %>
                                 </h3>
-                                <p class="text-sm text-gray-600"><%= song.artist %></p>
+                                <p class="text-sm text-gray-600"><%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></p>
                                 <% if (song.kor_name) { %>
                                     <p class="text-sm text-gray-500 mt-1"><%= song.kor_name %></p>
                                 <% } %>

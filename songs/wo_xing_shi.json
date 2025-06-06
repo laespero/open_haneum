@@ -1492,5 +1492,15 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "顾夕",
+    "kor_name": "고석",
+    "eng_name": "GUXI"
+  },
+  "vid": "WYM_YJnUrjc",
+  "ori_name": "我姓石",
+  "kor_name": "워싱시",
+  "eng_name": "Wo Xing Shi",
+  "tags": []
 }

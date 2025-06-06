@@ -2,149 +2,271 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title><%= song.name %> 상세 정보</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= song.name %> - Haneum</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-button.active { 
+            border-color: #3b82f6; /* blue-500 */
+            color: #2563eb; /* blue-600 */
+            background-color: #eff6ff; /* blue-50 */
+        }
+    </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
-    <div class="container mx-auto px-4 py-8">
-        <h1 class="text-3xl font-bold text-gray-800 mb-8 text-center"><%= song.name %> 상세 정보</h1>
-        
-        <!-- 가사 섹션 -->
-        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4">가사</h2>
-            <pre class="whitespace-pre-wrap text-gray-600 font-mono"><%= song.text %></pre>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <!-- 헤더 -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="/add-song" class="text-gray-600 hover:text-blue-600 transition-colors">노래 추가</a>
+                    <a href="/songs" class="text-gray-600 hover:text-blue-600 transition-colors">노래 목록</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
+        <!-- 노래 정보 및 주요 액션 -->
+        <div class="bg-white p-6 rounded-2xl shadow-lg mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900"><%= song.name %></h1>
+                    <p class="text-lg text-gray-500 mt-1"><%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %></p>
+                    <div class="flex gap-2 text-sm text-gray-400 mt-2">
+                        <span><%= song.kor_name %></span> / <span><%= song.eng_name %></span>
+                    </div>
+                    <% if (song.tags && song.tags.length > 0) { %>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <% song.tags.forEach(tag => { %>
+                                <span class="bg-gray-200 text-gray-700 text-xs font-semibold px-2.5 py-0.5 rounded-full"><%= tag %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
+                    <% if (!song.translatedLines || song.translatedLines.length === 0) { %>
+                        <form action="/translate/<%= song.name %>" method="post" class="disable-on-submit">
+                            <button type="submit" data-processing-text="번역중..." class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                                <i class="fas fa-language"></i> 번역하기
+                            </button>
+                        </form>
+                    <% } %>
+                     <a href="/songview/<%= song.name %>" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition font-semibold">
+                        <i class="fas fa-eye"></i> 완성본 보기
+                    </a>
+                    <button id="edit-button" class="flex items-center gap-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition font-semibold">
+                        <i class="fas fa-edit"></i> 정보 수정
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- 중복 제거된 가사 -->
-        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4">중복 제거된 가사</h2>
-            <% if (Array.isArray(song.p1) && song.p1.length > 0) { %>
-                <ul class="space-y-2">
-                    <% song.p1.forEach(function(line) { %>
-                        <li class="text-gray-600"><%= line %></li>
-                    <% }); %>
-                </ul>
-            <% } else { %>
-                <p class="text-gray-500 italic">중복 제거된 가사가 없습니다.</p>
-            <% } %>
+        <!-- 수정 모달 -->
+        <div id="edit-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden z-50">
+            <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+                <h2 class="text-2xl font-bold mb-6">정보 수정</h2>
+                <form action="/update-song-meta/<%= song.name %>" method="post">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="ori_name" class="block text-sm font-medium text-gray-700">노래 원어명</label>
+                            <input type="text" id="ori_name" name="ori_name" value="<%= song.ori_name %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="kor_name" class="block text-sm font-medium text-gray-700">노래 한국어명</label>
+                            <input type="text" id="kor_name" name="kor_name" value="<%= song.kor_name %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="eng_name" class="block text-sm font-medium text-gray-700">노래 영어명</label>
+                            <input type="text" id="eng_name" name="eng_name" value="<%= song.eng_name %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="artist_ori_name" class="block text-sm font-medium text-gray-700">아티스트 원어명</label>
+                            <input type="text" id="artist_ori_name" name="artist_ori_name" value="<%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="artist_kor_name" class="block text-sm font-medium text-gray-700">아티스트 한국어명</label>
+                            <input type="text" id="artist_kor_name" name="artist_kor_name" value="<%= typeof song.artist === 'object' ? song.artist.kor_name : '' %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="artist_eng_name" class="block text-sm font-medium text-gray-700">아티스트 영어명</label>
+                            <input type="text" id="artist_eng_name" name="artist_eng_name" value="<%= typeof song.artist === 'object' ? song.artist.eng_name : '' %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="tags" class="block text-sm font-medium text-gray-700">태그 (쉼표로 구분)</label>
+                            <input type="text" id="tags" name="tags" value="<%= song.tags ? song.tags.join(', ') : '' %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                        <div>
+                            <label for="vid" class="block text-sm font-medium text-gray-700">유튜브 영상 ID (11자리)</label>
+                            <input type="text" id="vid" name="vid" value="<%= song.vid %>"
+                                   class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition">
+                        </div>
+                    </div>
+                    <div class="mt-8 flex justify-end gap-3">
+                        <button type="button" id="close-modal-button" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition font-semibold">취소</button>
+                        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">저장하기</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-        <!-- 번역된 내용 -->
-        <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-            <h2 class="text-xl font-semibold text-gray-700 mb-4">번역된 내용</h2>
-            <% if (Array.isArray(song.translatedLines) && song.translatedLines.length > 0) { %>
-                <div class="space-y-6">
+        <!-- 탭 네비게이션 -->
+        <div class="mb-6">
+            <div class="border-b border-gray-200">
+                <nav class="-mb-px flex space-x-6" aria-label="Tabs">
+                    <button class="tab-button active" data-tab="translated">번역된 가사 (<%= song.translatedLines ? song.translatedLines.length : 0 %>)</button>
+                    <button class="tab-button" data-tab="processed-lyrics">작업용 가사 (<%= song.p1 ? song.p1.length : 0 %>)</button>
+                    <button class="tab-button" data-tab="full-lyrics">전체 가사</button>
+                    <% if (Array.isArray(song.failedLines) && song.failedLines.length > 0) { %>
+                        <button class="tab-button text-red-600" data-tab="failed">번역 실패 (<%= song.failedLines.length %>)</button>
+                    <% } %>
+                </nav>
+            </div>
+        </div>
+
+        <!-- 탭 컨텐츠 -->
+        <div id="tab-contents">
+            <!-- 번역된 가사 -->
+            <div id="tab-translated" class="tab-content active space-y-4">
+                <% if (Array.isArray(song.translatedLines) && song.translatedLines.length > 0) { %>
                     <% song.p1.forEach(function(originalLine) { 
-                        const translation = song.translatedLines.find(t => t.T0 === originalLine ||  t.O0 === originalLine);
+                        const translation = song.translatedLines.find(t => t.T0 === originalLine || t.O0 === originalLine);
+                        if (!translation) return; // 번역이 없는 경우 렌더링 스킵
                     %>
-                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200">
-                            <div class="space-y-2">
-                                <div class="text-base text-gray-700">
-                                    <%= translation && translation.R0 ? translation.R0 : '데이터를 찾을 수 없습니다.' %>
-                                </div>
-                                <div class="text-base text-gray-700">
-                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.R1).join(' ')) : '데이터를 찾을 수 없습니다.' %>
-                                </div>
-                                <div class="text-base text-gray-700">
-                                    <%= translation && translation.T0 ? translation.T0 : '데이터를 찾을 수 없습니다.' %>
-                                </div>
-                                <div class="text-base text-gray-700">
-                                    <%= translation && translation.LI ? (translation.LI.flat().map(x=>x.T1).join(' ')) : '데이터를 찾을 수 없습니다.' %>
-                                </div>
-                                <div class="text-base text-gray-700">
-                                    <%= translation && translation.K0 ? translation.K0 : '데이터를 찾을 수 없습니다.' %>
-                                </div>
+                        <div class="bg-white rounded-xl shadow-md p-5 border border-gray-200 hover:border-blue-400 transition">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+                                <div class="font-semibold text-gray-800 break-words"><%= translation.T0 %></div>
+                                <div class="text-blue-700 font-semibold break-words"><%= translation.K0 %></div>
+                                <div class="text-sm text-gray-500 break-words"><%= translation.LI.flat().map(x=>x.T1).join(' ') %></div>
+                                <div class="text-sm text-blue-500 break-words"><%= translation.LI.flat().map(x=>x.R1).join(' ') %></div>
                             </div>
-                            
-                            <div class="mt-4 space-y-3">
-                                <form class="retry-form disable-on-submit" action="/retry-line/<%= song.name %>" method="post">
+                            <div class="mt-4 pt-4 border-t border-gray-200 flex flex-wrap items-center gap-2">
+                                <form class="retry-form disable-on-submit flex-shrink-0" action="/retry-line/<%= song.name %>" method="post">
                                     <input type="hidden" name="originalLine" value="<%= originalLine %>">
-                                    <button type="submit" 
-                                            data-processing-text="다시 번역중..."
-                                            class="px-3 py-1.5 bg-green-500 text-white text-sm rounded-md hover:bg-green-600 transition-colors duration-200">
-                                        다시 번역하기
-                                    </button>
+                                    <button type="submit" data-processing-text="재번역중..." class="text-xs bg-green-100 text-green-700 hover:bg-green-200 px-3 py-1 rounded-full font-medium transition">재번역</button>
                                 </form>
-                                
-                                <form class="correct-with-message disable-on-submit" action="/correct-with-message/<%= song.name %>" method="post">
-                                    <input type="hidden" name="originalLine" value="<%= originalLine %>">
-                                    <textarea name="correctionMessage" 
-                                              placeholder="수정 요청 메시지를 입력하세요" 
-                                              rows="2" 
-                                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"></textarea>
-                                    <button type="submit" 
-                                            data-processing-text="수정 요청중..."
-                                            class="mt-2 px-3 py-1.5 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors duration-200">
-                                        메시지로 수정하기
-                                    </button>
+                                <form class="correct-with-message disable-on-submit flex-grow" action="/correct-with-message/<%= song.name %>" method="post">
+                                    <div class="flex gap-2">
+                                        <input type="hidden" name="originalLine" value="<%= originalLine %>">
+                                        <input name="correctionMessage" placeholder="수정 요청 메시지..." class="flex-grow text-xs w-full px-3 py-1 border border-gray-300 rounded-full focus:ring-1 focus:ring-blue-500 focus:border-blue-500"/>
+                                        <button type="submit" data-processing-text="수정중..." class="text-xs bg-blue-100 text-blue-700 hover:bg-blue-200 px-3 py-1 rounded-full font-medium transition flex-shrink-0">요청</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     <% }); %>
-                </div>
-            <% } else { %>
-                <p class="text-gray-500 italic">아직 번역된 내용이 없습니다.</p>
-            <% } %>
-        </div>
-
-        <!-- 액션 버튼들 -->
-        <div class="flex space-x-3 mb-6">
-            <% if (!Array.isArray(song.translatedLines) || song.translatedLines.length === 0) { %>            
-            <form action="/translate/<%= song.name %>" method="post" class="disable-on-submit">
-                <button type="submit" 
-                        data-processing-text="번역중..."
-                        class="px-4 py-2 bg-indigo-500 text-white text-sm rounded-md hover:bg-indigo-600 transition-colors duration-200">
-                    번역하기
-                </button>
-            </form>
-            <% } %>
-            
-            <form action="/songview/<%= song.name %>" method="get">
-                <button type="submit" 
-                        class="px-4 py-2 bg-blue-500 text-white text-sm rounded-md hover:bg-blue-600 transition-colors duration-200">
-                    결과 보기
-                </button>
-            </form>
-        </div>
-
-        <!-- 실패한 문장들 -->
-        <% if (Array.isArray(song.failedLines) && song.failedLines.length > 0) { %>
-            <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-                <h2 class="text-xl font-semibold text-gray-700 mb-4">번역에 실패한 문장들</h2>
-                <ul class="space-y-2 mb-4">
-                    <% song.failedLines.forEach(function(context) { %>
-                        <li class="text-gray-600"><%= JSON.stringify(context) %></li>
-                    <% }); %>
-                </ul>
-                <form action="/retry-translation/<%= song.name %>" method="post" class="disable-on-submit">
-                    <button type="submit" 
-                            data-processing-text="다시 번역중..."
-                            class="px-4 py-2 bg-yellow-500 text-white text-sm rounded-md hover:bg-yellow-600 transition-colors duration-200">
-                        실패한 문장 다시 번역하기
-                    </button>
-                </form>
+                <% } else { %>
+                    <div class="text-center py-12 bg-white rounded-xl shadow-md">
+                        <i class="fas fa-info-circle text-4xl text-gray-400 mb-4"></i>
+                        <p class="text-gray-500">아직 번역된 내용이 없습니다.</p>
+                        <p class="text-sm text-gray-400 mt-1">상단의 '번역하기' 버튼을 눌러 작업을 시작하세요.</p>
+                    </div>
+                <% } %>
             </div>
-        <% } %>
 
-        <!-- 뒤로 가기 링크 -->
-        <div class="text-center">
-            <a href="/songs" 
-               class="inline-block px-4 py-2 text-blue-600 hover:text-blue-800 transition-colors duration-200 text-sm">
-                ← 노래 목록으로 돌아가기
-            </a>
+            <!-- 작업용 가사 -->
+            <div id="tab-processed-lyrics" class="tab-content">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <% if (Array.isArray(song.p1) && song.p1.length > 0) { %>
+                        <ul class="space-y-2 font-mono text-sm">
+                            <% song.p1.forEach(function(line) { %>
+                                <li class="text-gray-700 border-b border-gray-100 py-1"><%= line %></li>
+                            <% }); %>
+                        </ul>
+                    <% } else { %>
+                        <p class="text-gray-500">처리된 가사가 없습니다.</p>
+                    <% } %>
+                </div>
+            </div>
+
+            <!-- 전체 가사 -->
+            <div id="tab-full-lyrics" class="tab-content">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <pre class="whitespace-pre-wrap text-sm text-gray-700 leading-relaxed"><%= song.text %></pre>
+                </div>
+            </div>
+            
+            <!-- 번역 실패 -->
+            <% if (Array.isArray(song.failedLines) && song.failedLines.length > 0) { %>
+                <div id="tab-failed" class="tab-content">
+                    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
+                        <h3 class="text-lg font-semibold text-red-800 mb-4">번역에 실패한 문장들</h3>
+                        <ul class="space-y-2 mb-4 text-sm">
+                            <% song.failedLines.forEach(function(context) { %>
+                                <li class="text-red-700 font-mono bg-red-100 p-2 rounded"><%= JSON.stringify(context) %></li>
+                            <% }); %>
+                        </ul>
+                        <form action="/retry-translation/<%= song.name %>" method="post" class="disable-on-submit">
+                            <button type="submit" data-processing-text="재번역중..." class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition font-semibold">
+                                실패한 문장 모두 재번역
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            <% } %>
         </div>
-    </div>
+    </main>
     <script>
+        // 폼 제출 시 버튼 비활성화
         document.querySelectorAll('.disable-on-submit').forEach(form => {
             form.addEventListener('submit', function(event) {
                 const button = form.querySelector('button[type="submit"]');
                 if (button) {
                     button.disabled = true;
                     const processingText = button.getAttribute('data-processing-text') || '처리중...';
-                    button.textContent = processingText;
-                    button.classList.add('opacity-50', 'cursor-wait');
+                    button.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${processingText}`;
+                    button.classList.add('opacity-70', 'cursor-wait');
                 }
             });
+        });
+
+        // 탭 기능
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            // 기본 스타일 설정
+            button.classList.add('py-2', 'px-4', 'border-b-2', 'border-transparent', 'text-sm', 'font-medium', 'text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300', 'transition-colors');
+            
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                tabContents.forEach(content => content.classList.remove('active'));
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(`tab-${tabId}`).classList.add('active');
+            });
+        });
+
+        // 모달 제어
+        const editButton = document.getElementById('edit-button');
+        const modal = document.getElementById('edit-modal');
+        const closeModalButton = document.getElementById('close-modal-button');
+
+        editButton.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        closeModalButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // 모달 외부 클릭 시 닫기
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+            }
         });
     </script>
 </body>

@@ -12,21 +12,18 @@
     "pro-start": "pm2 start server.js",
     "pro-stop": "pm2 stop server.js",
     "pro-restart": "pm2 restart server.js",
+    "pro-reload": "pm2 reload server.js",
     "pro-logs": "pm2 logs server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "cheerio": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
-    "glob": "^11.0.2",
-    "hangul-js": "^0.2.6",
-    "html-to-text": "^9.0.5",
-    "node-fetch": "^3.3.2",
-    "openai": "^4.63.0"
+    "express-async-errors": "^3.1.1",
+    "openai": "^4.63.0",
+    "pm2": "^6.0.8"
   }
 }
