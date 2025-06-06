@@ -4,7 +4,11 @@
   "kor_name": "광선",
   "eng_name": "Ray",
   "vid": "6QQYGnekTaY",
-  "artist": "Chilldspot",
+  "artist": {
+    "ori_name": "chilldspot",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "波のように赤く燃えている物\r\nたまに消えて また熱を帯びて\r\n\r\n14歳\r\nそこで拾った一つの鍵\r\n差し込む先は見えてない\r\nけど行きたい\r\n\r\n未知への旅\r\n生傷が歌い\r\n後悔の雨が踊っていても\r\n僕は進んで 進んでいく",
   "createdAt": "2025-06-06T11:14:10.120Z",
   "p1": [
@@ -818,5 +822,6 @@
       "O0": "波のように赤く燃えている物"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": []
 }

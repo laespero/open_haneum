@@ -39,57 +39,57 @@
         <!-- 결과 목록 -->
         <div class="space-y-4">
             <% songs.forEach(song => { %>
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
-                    <div class="flex justify-between items-start">
-                        <div class="flex-grow">
-                            <h2 class="text-xl font-semibold mb-1">
-                                <a href="/songs/<%= song.name %>" class="hover:text-blue-600">
+                <% if (!song.tags || !song.tags.includes('개발용')) { %>
+                    <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow cursor-pointer" onclick="location.href='/songs/<%= encodeURIComponent(song.name) %>'">
+                        <div class="flex justify-between items-start">
+                            <div class="flex-grow">
+                                <h2 class="text-xl font-semibold mb-1 hover:text-blue-600">
                                     <%= song.ori_name || song.name %>
+                                </h2>
+                                <% if (song.kor_name) { %>
+                                    <p class="text-gray-500 text-sm"><%= song.kor_name %></p>
+                                <% } %>
+                                <% if (song.eng_name) { %>
+                                    <p class="text-gray-500 text-sm mb-2"><%= song.eng_name %></p>
+                                <% } %>
+                                
+                                <% 
+                                let artistDisplayName;
+                                if (typeof song.artist === 'object' && song.artist) {
+                                    artistDisplayName = song.artist.kor_name || song.artist.eng_name || song.artist.ori_name;
+                                } else {
+                                    artistDisplayName = song.artist;
+                                }
+                                %>
+                                <p class="mt-2 text-gray-700"><%= artistDisplayName %></p>
+                                <% if (song.tags && song.tags.length > 0) { %>
+                                    <div class="flex flex-wrap gap-2 mt-3">
+                                        <% song.tags.forEach(tag => { %>
+                                            <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full"><%= tag %></span>
+                                        <% }); %>
+                                    </div>
+                                <% } %>
+                                <p class="text-xs text-gray-400 mt-2">
+                                    <% if (song.createdAt) { %>
+                                        <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        }) %>
+                                    <% } else { %>
+                                        날짜 정보 없음
+                                    <% } %>
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0 ml-4">
+                                <a href="/songdetail/<%= encodeURIComponent(song.name) %>" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 font-semibold px-4 py-2 rounded-full text-sm hover:bg-blue-200 transition">
+                                    <i class="fas fa-edit"></i>
+                                    <span>번역 관리</span>
                                 </a>
-                            </h2>
-                            <% if (song.kor_name) { %>
-                                <p class="text-gray-500 text-sm"><%= song.kor_name %></p>
-                            <% } %>
-                            <% if (song.eng_name) { %>
-                                <p class="text-gray-500 text-sm mb-2"><%= song.eng_name %></p>
-                            <% } %>
-                            
-                            <p class="mt-2 text-gray-700"><%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %></p>
-                            <% if (typeof song.artist === 'object') { %>
-                                <% if (song.artist.kor_name) { %>
-                                    <p class="text-gray-500 text-sm"><%= song.artist.kor_name %></p>
-                                <% } %>
-                                <% if (song.artist.eng_name) { %>
-                                    <p class="text-gray-500 text-sm"><%= song.artist.eng_name %></p>
-                                <% } %>
-                            <% } %>
-                            <% if (song.tags && song.tags.length > 0) { %>
-                                <div class="flex flex-wrap gap-2 mt-3">
-                                    <% song.tags.forEach(tag => { %>
-                                        <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full"><%= tag %></span>
-                                    <% }); %>
-                                </div>
-                            <% } %>
-                            <p class="text-xs text-gray-400 mt-2">
-                                <% if (song.createdAt) { %>
-                                    <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
-                                        year: 'numeric',
-                                        month: 'long',
-                                        day: 'numeric'
-                                    }) %>
-                                <% } else { %>
-                                    날짜 정보 없음
-                                <% } %>
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0 ml-4">
-                            <a href="/songdetail/<%= song.name %>" class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 font-semibold px-4 py-2 rounded-full text-sm hover:bg-blue-200 transition">
-                                <i class="fas fa-edit"></i>
-                                <span>번역 관리</span>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                <% } %>
             <% }); %>
         </div>
 
