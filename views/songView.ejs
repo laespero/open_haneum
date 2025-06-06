@@ -1213,7 +1213,7 @@ ${a}
                         font-family: "Noto Sans JP", sans-serif;                    
                     }                
                 `;
-                
+                styleEle.innerHTML = classStyle;
                 document.head.appendChild(styleEle);
             }
             else if(mode === "SC"){
@@ -1234,7 +1234,7 @@ ${a}
                         font-family: "Noto Sans SC", sans-serif;                    
                     }                
                 `;
-                
+                styleEle.innerHTML = classStyle;
                 document.head.appendChild(styleEle);
             }
             else if (mode === "KR"){
@@ -1244,6 +1244,7 @@ ${a}
                       font-family: "Noto Sans KR", sans-serif;
                     }               
                 `;                
+                styleEle.innerHTML = classStyle;
                 document.head.appendChild(styleEle);                
             }
             document.body.style.zIndex = 1;
