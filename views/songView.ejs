@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haneum</title>
+    <title><%= song.ori_name || song.name %> - <%= song.artist %></title>
     <!-- <title>Lyrics Morphology Viewer 1376 774, 574 810</title> -->
     <!-- <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
@@ -483,7 +483,7 @@
     <div class="song-info-header">
         <a href="/songs<%= searchQuery ? `?q=${searchQuery}` : '' %>" class="back-to-list-btn">← 수정 페이지로 돌아가기</a>
         
-        <h1><%= song.name %></h1>
+        <h1><%= song.ori_name || song.name %></h1>
         <% if (song.ori_name) { %>
             <div class="song-info-item">원어명: <%= song.ori_name %></div>
         <% } %>
