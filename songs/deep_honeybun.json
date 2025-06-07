@@ -4,7 +4,11 @@
   "kor_name": "허니번",
   "eng_name": "Honeybun",
   "vid": "Df9Y-Kv9SCA",
-  "artist": "LeoStayTrill",
+  "artist": {
+    "ori_name": "LeoStayTrill",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Leo\r\nWho's that? Skin tone same colour as honeybun\r\nSpit game to the girl, man hurry up\r\nFuck that, man I'm really on a money run\r\nI don't know love come show me what it's really 'bout\r\nI'm a young dark nigga from the city south\r\nAfro Boy, but she came from the islands\r\nNow she got me all up in my crib doin' Willy Bounce\r\nDon't test me, two-two-two girls are they twins or besties?\r\nThat body impress me\r\nBut she talk too much, don't stress me\r\nDon't let me touch my pinnacle\r\nStay trill, man, I really gon' original\r\nDon't come up on my silly bein' cynical\r\nReally get cut from the cord, umbilical\r\nF-F-F-First off, skirt off in a Benz\r\nI don't really need a friend\r\nI ain't followin' a trend, all these other boys dead\r\nShe said she will never be the Barbie to my Ken\r\nDon't know my she bein' popped, she can never be a ten\r\nFuck, racks man I'm tryna get plenty\r\nBeen said I want a mil' by twenty\r\nProved all of the paigons wrong, now my uncle sayin' I'm a well-known MC\r\nUh-oh, you don't wanna see Trill go loco\r\nShe asked do you love me, so-so\r\nShe a model makin' money off promo\r\nHer manners extinct, Dodo\r\nNow I got her mind in a chokehold\r\nNeed a whole lot of money, need a boatload\r\nBring a friend for the bro-bro, stickin' to the bro-code\r\nIf we're goin' on a two-man step\r\nmy boy 6'1' so I take the shorter one\r\nSlide me the-, slide me the number, might just call her once\r\nBattery's fucked so I might just order one\r\nWant an LV bag? Bro can source her one\r\nHead gets hot like I left the sauna on\r\nTell him-, tell him that his watch ain't icy\r\nChain ain't icy, copped the colder one\r\nDeja-Deja-Deja, silly with it\r\nLet's drip to the card, got a milli' in it\r\nWho flocked at the scene? Young Trilly did it\r\nI ain't called NeNe in a silly minute\r\nReal talk-, real talk, man you wouldn't wanna miss this\r\nGot a couple MCs on my hitlist\r\nFuck, my bad I know it ain't Christmas\r\nBut I got a real bad B on my wishlist\r\nUh-uh-uh-uh-oh, you don't wanna see Trill go loco\r\nShe asked do you love me, so-so\r\nShe a model makin' money off promo\r\nHer manners extinct, Dodo\r\nNow I got her mind in a chokehold\r\nNeed a whole lot of money, need a boatload\r\nBring a friend for the bro-bro, stickin' to the bro-code\r\nWho's that?\r\nSkin tone same colour as honeybun\r\nSpit game to the girl, man hurry up\r\nFuck that, fuck that, money run\r\nI don't know love come show me what it's really 'bout\r\nReally 'bout, really 'bout, really 'bout, really 'bout\r\nAfro Boy, but she came from the islands\r\nNow she got me-, Willy Bounce, Willy Bounce, Willy Bounce\r\nHold that",
   "createdAt": "2025-01-14T03:06:25.494Z",
   "p1": [
@@ -7003,5 +7007,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

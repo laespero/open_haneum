@@ -5198,5 +5198,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Namika",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Je ne parle pas français",
+  "kor_name": "나는 프랑스어를 할 줄 몰라요",
+  "eng_name": "I don't speak French",
+  "tags": [
+    "독일어",
+    "프랑스어"
+  ]
 }

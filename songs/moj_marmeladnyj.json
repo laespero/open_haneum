@@ -1612,5 +1612,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "КАТЯ ЛЕЛЬ",
+    "kor_name": "",
+    "eng_name": "Katya Lel"
+  },
+  "vid": "0JMdXFHo5SY",
+  "ori_name": "Мой мармеладный",
+  "kor_name": "내 마멀레이드",
+  "eng_name": "My Marmalade",
+  "tags": [
+    "러시아어"
+  ]
 }

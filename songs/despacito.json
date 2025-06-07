@@ -6517,5 +6517,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Luis Fonsi",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "kJQP7kiw5Fk",
+  "ori_name": "Despacito",
+  "kor_name": "데스파시토",
+  "eng_name": "Slowly",
+  "tags": [
+    "스페인어"
+  ]
 }

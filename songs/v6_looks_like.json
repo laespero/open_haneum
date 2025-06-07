@@ -1809,7 +1809,7 @@
           "XK": "그가 달려왔다.",
           "XI": "tā pǎo lái le",
           "XR": "타 파오 라이 러"
-        },        
+        },
         {
           "T1": "想",
           "K1": "생각하다",
@@ -2048,5 +2048,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
+  "ori_name": "像极了",
+  "kor_name": "정말 닮았어",
+  "eng_name": "Just like",
+  "tags": [
+    "중국어"
+  ]
 }

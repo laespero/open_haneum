@@ -4,7 +4,11 @@
   "kor_name": "쿵푸 파이팅 팬더",
   "eng_name": "Kung Fu Fighting Panda",
   "vid": "QspjKVTMlL8",
-  "artist": "CeeLo Green",
+  "artist": {
+    "ori_name": "CeeLo Green",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Everybody is Kung Fu fighting\r\nYour mind becomes fast as lightning\r\nAlthough the future is a little bit frightening\r\nIt's the book of your life that you're writing\r\nYou're a diamond in the rough\r\nA brilliant ball of clay\r\nYou could be a work of art\r\nIf you just go all the way\r\nNow what would it take to break?\r\nI believe that you can bend\r\nNot only do you have to fight\r\nBut you have got to win\r\nEverybody is kung fu fighting\r\nYour mind becomes fast as lightning\r\nAlthough the future is a little bit frightening\r\nIt's the book of your life that you're writing\r\nYou are a natural\r\nWhy is it so hard to see?\r\nMaybe it's just because\r\nYou keep on looking at me\r\nThe journey's a lonely one\r\nSo much more than we know\r\nBut sometimes you've got to go\r\nGo on and be your own hero\r\nEverybody is kung fu fighting\r\nYour mind becomes fast as lightning\r\nAlthough the future is a little bit frightening\r\nIt's the book of your life that you're writing\r\nYou're a diamond in the rough\r\nA brilliant ball of clay\r\nYou could be a work of art\r\nIf you just go all the way\r\nNow what would it take to break?\r\nI believe that you can bend\r\nNot only do you have to fight\r\nBut you have got to win\r\n'Cause everybody is kung fu fighting\r\nYour mind becomes fast as lightning\r\nAlthough the future is a little bit frightening\r\nIt's the book of your life that you're writing\r\n",
   "createdAt": "2025-05-22T21:58:19.978Z",
   "p1": [
@@ -2330,5 +2334,8 @@
       "O0": "Everybody is Kung Fu fighting"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "다 잊어",
   "eng_name": "Let It Go",
   "vid": "L0MK7qz13bU",
-  "artist": "Idina Menzel",
+  "artist": {
+    "ori_name": "Idina Menzel",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "The snow glows white on the mountain tonight\r\nNot a footprint to be seen\r\nA kingdom of isolation\r\nAnd it looks like I'm the queen\r\nThe wind is howling like this swirling storm inside\r\nCouldn't keep it in, heaven knows I tried\r\nDon't let them in, don't let them see\r\nBe the good girl you always have to be\r\nConceal, don't feel, don't let them know\r\nWell, now they know\r\nLet it go, let it go\r\nCan't hold it back anymore\r\nLet it go, let it go\r\nTurn away and slam the door\r\nI don't care what they're going to say\r\nLet the storm rage on\r\nThe cold never bothered me anyway\r\nIt's funny how some distance makes everything seem small\r\nAnd the fears that once controlled me can't get to me at all\r\nIt's time to see what I can do\r\nTo test the limits and break through\r\nNo right, no wrong, no rules for me\r\nI'm free\r\nLet it go, let it go\r\nI am one with the wind and sky\r\nLet it go, let it go\r\nYou'll never see me cry\r\nHere I stand and here I stay\r\nLet the storm rage on\r\nMy power flurries through the air into the ground\r\nMy soul is spiraling in frozen fractals all around\r\nAnd one thought crystallizes like an icy blast\r\nI'm never going back, the past is in the past\r\nLet it go, let it go\r\nAnd I'll rise like the break of dawn\r\nLet it go, let it go\r\nThat perfect girl is gone\r\nHere I stand in the light of day\r\nLet the storm rage on\r\nThe cold never bothered me anyway",
   "createdAt": "2025-05-28T15:34:05.154Z",
   "p1": [
@@ -3960,5 +3964,8 @@
       "O0": "I don't care what they're going to say"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

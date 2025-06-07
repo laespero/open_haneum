@@ -2433,5 +2433,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "KATSEYE",
+    "kor_name": "캣츠아이",
+    "eng_name": ""
+  },
+  "vid": "l9CZykYZkOQ",
+  "ori_name": "Touch",
+  "kor_name": "터치",
+  "eng_name": "",
+  "tags": [
+    "영어"
+  ]
 }

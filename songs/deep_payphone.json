@@ -4,7 +4,11 @@
   "kor_name": "페이폰",
   "eng_name": "Payphone",
   "vid": "KRaWnd3LJfs",
-  "artist": "Maroon 5",
+  "artist": {
+    "ori_name": "Maroon 5",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I'm at a payphone, trying to call home\r\nAll of my change, I spent on you\r\nWhere have the times gone? Baby, it's all wrong\r\nWhere are the plans we made for two?\r\nYeah, I, I know it's hard to remember the people we used to be\r\nIt's even harder to picture that you're not here next to me\r\nYou say it's too late to make it, but is it too late to try?\r\nAnd in our time that you wasted, all of our bridges burned down\r\nI've wasted my nights, you turned out the lights\r\nNow I'm paralyzed\r\nStill stuck in that time when we called it \"love\"\r\nBut even the sun sets in paradise\r\nI'm at a payphone, trying to call home\r\nAll of my change, I spent on you\r\nWhere have the times gone? Baby, it's all wrong\r\nWhere are the plans we made for two?\r\nIf happy-ever-afters did exist\r\nI would still be holding you like this\r\nAll those fairy tales are full of shit\r\nOne more fucking love song, I'll be sick, oh, yeah\r\nYou turned your back on tomorrow 'cause you forgot yesterday\r\nI gave you my love to borrow, but you just gave it away\r\nYou can't expect me to be fine (oh), I don't expect you to care (yeah)\r\nI know I said it before, but all of our bridges burned down\r\nI've wasted my nights, you turned out the lights\r\nNow I'm paralyzed\r\nStill stuck in that time when we called it \"love\"\r\nBut even the sun sets in paradise\r\nI'm at a payphone, trying to call home\r\nAll of my change, I spent on you (oh, oh)\r\nWhere have the times gone? Baby, it's all wrong\r\nWhere are the plans we made for two? (Yeah)\r\nIf happy-ever-afters did exist\r\nI would still be holding you like this\r\nAnd all those fairy tales are full of shit\r\nOne more fucking love song, I'll be sick (uh)\r\nNow I'm at a payphone\r\nMan, fuck that shit\r\nI'll be out, spendin' all this money while you sittin' 'round\r\nWondering why it wasn't you who came up from nothin'\r\nMade it from the bottom, now when you see me, I'm stuntin'\r\nAnd all of my cars start with the push of a button\r\nTelling me I changed since I blew up, or whatever you call it\r\nSwitched the number to my phone so you never could call it\r\nDon't need my name on my shirt, you can tell that I'm ballin'\r\nSwish, what a shame, coulda got picked\r\nHad a really good game, but you missed your last shot\r\nSo you talk about who you see at the top\r\nOr what you could've saw, but sad to say, it's over for\r\nPhantom pulled up, valet opened doors\r\nWished I'd go away, got what you was looking for\r\nNow it's me who they want\r\nSo you can go and take that little piece of shit with you (yeah)\r\nI'm at a payphone, trying to call home\r\nAll of my change, I spent on you (whoo)\r\nWhere have the times gone? Baby, it's all wrong (yeah)\r\nWhere are the plans we made for two? (Yeah, yeah)\r\nIf happy-ever-afters did exist (oh)\r\nI would still be holding you like this\r\nAnd all these fairy tales are full of shit (yeah)\r\nOne more fucking love song, I'll be sick (yeah)\r\nNow I'm at a payphone",
   "createdAt": "2025-03-13T13:27:18.507Z",
   "p1": [
@@ -7497,5 +7501,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

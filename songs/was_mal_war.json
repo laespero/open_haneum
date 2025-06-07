@@ -1,6 +1,6 @@
 {
   "name": "was_mal_war",
-  "vid":"6XZvYUICSp8",
+  "vid": "6XZvYUICSp8",
   "text": "Könn'n wir das, was mal war, wieder haben?\nDenn ich halt es ohne dich einfach nicht aus\nIch war jung, ich war dumm, was soll ich sagen?\nVielleicht hab ich nur etwas Zeit gebraucht, ah-ah\nVielleicht hab ich etwas Zeit gebraucht\nWir war'n jung und haben Scheiß gebaut\nDoch mit den Jahr'n ist unser Eis getaut\nIch weiß genau, der Himmel scheint in Grau, nicht mehr in Weiß und Blau\nKeine Schmetterlinge, sondern Flugzeuge in meinem Bauch\nNur wir zwei, ganz kleines Kino\nBenutz die Weinflasche als Mikrofon\nSing dir was vor, doch treff kein'n Ton\nKönn'n wir das, was mal war, wieder haben?\nDenn ich halt es ohne dich einfach nicht aus\nIch war jung, ich war dumm, was soll ich sagen?\nVielleicht hab ich nur etwas Zeit gebraucht\nSag mir, könn'n wir das, was mal war, wieder haben?\nDenn ich halt es ohne dich einfach nicht aus\nIch war jung, ich war dumm, was soll ich sagen?\nVielleicht hab ich nur etwas Zeit gebraucht\nIch hab viele getroffen, aber keine war so wie du\nErst Dinge geworfen, doch ich hoffe, dass es dir gut geht\nUnd das kriegst, was dir zusteht, ich weiß, ist zu spät\nDoch lass noch einmal an der Uhr dreh'n, ah\nIch weiß nicht, wohin, seit du weg bist, bin ich hoffnungslos\nVerlor'n und mein Kompass kaputt\nKönn'n wir das, was mal war, wieder haben?\nDenn ich halt es ohne dich einfach nicht aus\nIch war jung, ich war dumm, was soll ich sagen?\nVielleicht hab ich nur etwas Zeit gebraucht\nIch hab dich ein, zwei Jahre nicht geseh'n\nUnd es kann sein, dass jemand anders bei dir schläft\nIst es vorbei? Hast dir's anders überlegt?\nDeshalb frag ich\nKönn'n wir das, was mal war, wieder haben?\nDenn ich halt es ohne dich einfach nicht aus\nIch war jung, ich war dumm, was soll ich sagen?\nVielleicht hab ich nur etwas Zeit gebraucht",
   "p1": [
     "Könn'n wir das, was mal war, wieder haben?",
@@ -3338,5 +3338,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

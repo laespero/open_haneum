@@ -4,7 +4,11 @@
   "kor_name": "나는 정말 너의 집에 머물고 싶어",
   "eng_name": "I Really Want to Stay At Your House",
   "vid": "KvMY1uzSC1E",
-  "artist": "Rosa Walton",
+  "artist": {
+    "ori_name": "Rosa Walton",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I couldn't wait for you to come and clear the cupboard\r\nBut now you're gone and leaving nothing but a sign\r\nAnother evening I'll be sitting reading in between your lines\r\nBecause I miss you all the time\r\nSo, get away\r\nAnother way to feel what you didn't want yourself to know\r\nAnd let yourself go\r\nYou know you didn't lose your self-control\r\nLet's start at the rainbow\r\nTurn away\r\nAnother way to be where you didn't want yourself to go\r\nAnd let yourself go\r\nIs that a compromise?\r\nSo, what do you wanna do, what's your point of view?\r\nThere's a party, screw it, do you wanna go?\r\nA handshake with you, what's your point of view?\r\nI'm on top of you, I don't wanna go\r\n'Cause I really wanna stay at your house\r\nAnd I hope it all works out\r\nBut you know how much you broke me apart\r\nI'm done with you, I'm ignoring you\r\nI don't wanna know, ahh\r\nAnd I'm awarе that you were lying in the gutter\r\n'Cause I did everything to be there by your side-ide\r\nSo when you tell me I'm the reason, I just can't believe the lies\r\nAnd why do I still wanna call you (call you, call you, call you)\r\nSo, what do you wanna do, what's your point of view?\r\nThere's a party, screw it, do you wanna go?\r\nA handshake with you, what's your point of view?\r\nI'm on top of you, I don't wanna go\r\n'Cause I really wanna stay at your house\r\nAnd I hope it all works out\r\nBut you know how much you broke me apart\r\nI'm done with you, I'm ignoring you\r\nI don't wanna know\r\nOhh\r\nOh-oh, oh-oh-oh\r\nI don't know why I'm no one\r\nSo, get away\r\nAnother way to feel what you didn't want yourself to know\r\nAnd let yourself go\r\nYou know you didn't lose your self-control\r\nLet's start at the rainbow\r\nTurn away\r\nAnother way to be where you didn't want yourself to go\r\nAnd let yourself go\r\nIs that a compromise?\r\nSo what do you wanna do, what's your point of view?\r\nThere's a party, screw it, do you wanna go?\r\nA handshake with you, what's your point of view?\r\nI'm on top of you, I don't wanna go\r\n'Cause I really wanna stay at your house\r\nAnd I hope it all works out\r\nBut you know how much you broke me apart\r\nI'm done with you, I'm ignoring you\r\nI don't wanna know",
   "createdAt": "2025-03-13T12:30:15.852Z",
   "p1": [
@@ -3913,5 +3917,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

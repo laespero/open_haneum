@@ -4,7 +4,11 @@
   "kor_name": "하늘에 다시 500년을 빌려",
   "eng_name": "Borrow Five Hundred More Years from Heaven",
   "vid": "WBjKV3_lfZI",
-  "artist": "韩磊",
+  "artist": {
+    "ori_name": "韩磊",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "沿着江山起起伏\r\n伏温柔的曲线\r\n放马爱的中原\r\n爱的北国和江南\r\n面对冰刀雪剑风雨\r\n多情的陪伴\r\n珍惜苍天赐给我的\r\n金色的华年\r\n做人一地肝胆\r\n做人何惧艰险\r\n豪情不变\r\n年复一年\r\n做人有苦有甜\r\n善恶分开两边\r\n都为梦中的明天\r\n看铁蹄铮铮\r\n踏遍万里河山\r\n我站在风口浪尖\r\n紧握住日月旋转\r\n愿烟火人间\r\n安得太平美满\r\n我真的还想再活五百年\r\n做人一地肝胆\r\n做人何惧艰险\r\n豪情不变\r\n年复一年\r\n做人有苦有甜\r\n善恶分开两边\r\n都为梦中的明天\r\n看铁蹄铮铮\r\n踏遍万里河山\r\n我站在风口浪尖\r\n紧握住日月旋转\r\n愿烟火人间\r\n安得太平美满\r\n我真的还想再活五百年\r\n我真的还想再活五百年",
   "createdAt": "2024-12-30T00:01:57.799Z",
   "p1": [
@@ -1588,5 +1592,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "가능한",
   "eng_name": "Capable",
   "vid": "cMhT1SqxqHY",
-  "artist": "Alleh & Yorghaki",
+  "artist": {
+    "ori_name": "Alleh & Yorghaki",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "No, no, no, no\r\nNo, no, no, no, no\r\nNo, no, no, no\r\n¿Qué tanto podía durar?, si desde que empezamos\r\nLo mismo sentimos y decidimos creer\r\nParte por parte, menos ropa, de noche al amanecer\r\nLas horas se hicieron cortas, suficientes pa entender\r\nQué más da si besarte es tan fácil\r\nQuería olvidarte, no lo logré, pero casi\r\nQué más da si besarte es tan fácil\r\nTe sigo en las redes como fan a papá\r\nY capaz no funcionamos, capaz nos dimos la mano\r\nCapaz nos fuimos temprano y queríamos quedarnos más\r\nQue nada de esto sea en vano, cuando te diga \"te amo\"\r\nSin que lo diga, te aclamo, ¿cómo esto va a terminar?\r\nQué más da si besarte es tan fácil\r\nQuería olvidarte, no lo logré, pero casi\r\nQué más da si besarte es tan fácil\r\nTe sigo en las redes como fan a papá (casi)\r\nAtrévete, ven, pégate, bailando, pega tu cintura\r\nQue tu cuerpo no me quiere, todavía tengo mis dudas\r\nEnviciado de ti, si no es contigo no quiero nada\r\nNo quiero nada, no quiero nada\r\nAventurándome por tu piel, no quieres que pare (no quieres que pare)\r\nQué te parece que hoy tengo en mente una vuelta por la ciudad\r\nTu cara dice que te entretiene, date la oportunidad\r\n¿Quién quita que se nos da?, y, ay, se nos da\r\nY capaz no funcionamos, capaz nos dimos la mano\r\nCapaz nos fuimos temprano y queríamos quedarnos más\r\nQue nada de esto sea en vano cuando te diga \"te amo\"\r\nSin que lo diga te aclamo, ¿cómo esto va a terminar?\r\nQué más da si (da si, más)\r\nQué más da si (aventurándome por tu)\r\nQué más da si (enviciado de ti, si no es contigo no quiero nada)\r\nQué más da si (no quiero nada, no)\r\nAventurándome por tu piel, no quieres que pare (no quieres que pare)\r\nQué te parece que hoy tengo en mente una vuelta por la ciudad\r\nTu cara dice que te entretiene, date la oportunidad\r\n¿Quién quita que se nos da?, y, ay, se nos da\r\nY capaz no funcionamos, capaz nos dimos la mano\r\nCapaz nos fuimos temprano y queríamos quedarnos más\r\nQue nada de esto sea en vano, cuando te diga \"te amo\"\r\nSin que lo diga te aclamo, ¿cómo esto va a terminar?\r\nY capaz no funcionamos, capaz nos dimos la mano\r\nCapaz nos fuimos temprano y queríamos quedarnos más\r\nQue nada de esto sea en vano, cuando te diga \"te amo\"\r\nSin que lo diga te aclamo, ¿cómo esto va a terminar?",
   "createdAt": "2025-03-05T21:22:33.452Z",
   "p1": [
@@ -4063,5 +4067,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "스페인어"
+  ]
 }

@@ -6158,5 +6158,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Phương Mỹ Chi",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "VŨ TRỤ CÓ ANH",
+  "kor_name": "유영 우주",
+  "eng_name": "THE UNIVERSE HAS YOU",
+  "tags": [
+    "베트남어"
+  ]
 }

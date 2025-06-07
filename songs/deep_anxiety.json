@@ -4,7 +4,11 @@
   "kor_name": "불안",
   "eng_name": "Anxiety",
   "vid": "riCP9x31Kuk",
-  "artist": "Doechii",
+  "artist": {
+    "ori_name": "Doechii",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Anxiety keep on tryin' me\r\nI feel it quietly, tryna silence me, yeah\r\nMy anxiety, can't shake it off of me\r\nSomebody's watchin' me\r\nAnd my anxiety, yeah\r\n\r\nSolo, no mojo\r\nI bounce back, no pogo\r\nUnhappy, no homo\r\nNew brands, no logos\r\nMoney on my juggla, natural hustler\r\nThink I need a smuggler up in Russia\r\nYou could be my butler, shine my cutla'\r\nShout out to Oyenda, that's the guzzler\r\nOkay, next thing, my life is a wet dream\r\nI call it a sex scene, the bag is a nice tease\r\nI tried to escape, my life is an x-rate\r\nI'm sorry, a sex tape, you only get one take\r\n\r\nQuiet on the set, please\r\nRollin' Anxiety\r\nIn three, two, one\r\n\r\nAnxiety keep on tryin' me\r\nI feel it quietly, tryna silence me, yeah\r\nAnxiety, shake it off of me\r\nSomebody's watchin' me\r\nIt's my anxiety\r\n\r\nAnxiety, anxie—, oh\r\nI feel it tryin' \r\nKeep it tryin', keep it tryin'\r\nOh, I feel the silence \r\nKeep it quiet, keep it tired\r\nOh, somebody's touchin' me \r\nAnxiety, anxie—, oh\r\nI feel anxiety\r\n\r\nMy anxiety, my anxie— \r\nOh, I feel it tryin' \r\nKeep it tryin', keep it tryin'\r\nOh, I feel the silence \r\nKeep it quiet, keep it quiet\r\nOh, somebody's watchin' me \r\nAnxiety, anxie—, oh, I feel anxiety \r\n\r\nAnxie—, my anxie—\r\nOh, I feel it tryin'\r\nKeep it tryin', keep it tryin'\r\nOh, I feel the silence\r\nKeep it quiet, keep it quiet\r\nOh, somebody's watchin' me\r\nAnxiety, anxie—, oh, I feel anxiety\r\n\r\nCourt order from Florida\r\nWhat's in that clear blue water?\r\nNo limits, no borders\r\nWhat's in that new world order?\r\nMarco , Polo \r\nNegro, run from popo \r\nThat blue light and that rojo \r\n\r\nAnd it's like\r\nI get this tightness in my chest\r\nLike an elephant is standin' on me\r\nAnd I just let it take over\r\n\r\nAnxiety keeps on tryin' me\r\nAnxiety keeps on tryin' me, yeah, ooh-woah\r\n\r\nAnxiety, anxie—\r\nOh, I feel it tryin'\r\nKeep it tryin', keep it tryin'\r\nOh, I feel the silence\r\nKeep it quiet, keep it tired \r\nOh, somebody's watchin' me\r\nAnxiety, anxie—, oh, I feel anxiety \r\n\r\nIt's my anxiety, can't shake it off of me \r\nIt's my anxiety, gotta keep it off of me \r\nIt's my anxiety, can't shake it off of me\r\nIt's my anxiety, gotta keep it off of me\r\nCan't shake it off of me, shake, shake it off of me\r\nIt's my anxiety, gotta keep it off of me\r\nCan't shake it off of me, shake, shake it off of me\r\nIt's my anxiety, gotta keep it off of me\r\nMe\r\nMe",
   "createdAt": "2025-05-15T06:30:37.968Z",
   "p1": [
@@ -5226,5 +5230,8 @@
       "O0": "I call it a sex scene, the bag is a nice tease"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

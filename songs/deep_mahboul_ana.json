@@ -4,7 +4,11 @@
   "kor_name": "나는 미쳤다",
   "eng_name": "I'm Crazy",
   "vid": "pcKK10ikF2c",
-  "artist": "Lazaro",
+  "artist": {
+    "ori_name": "Lazaro",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Ya Hayati, \r\nNtiya 3arfa 3endi Ghalya \r\nW ga3 li galo hadra khawya \r\nSafi louwla njibouha talya \r\nT3ali liya bb domini \r\ntwahachte l vibe m3ak \r\nNtiya Malak \r\nNtiya La vida l3mr wlkbida \r\nNtiya li kanhwak \r\nO ma 3la bali bihoum ah\r\nYa rwa7i wla ghadi ndiro lhoul ana \r\nMahboul ana ghadi f l’autoroute ana \r\nDayr mazzika zayd flvolume ana \r\nO bilal yfakarni bli fat \r\nYa wedi chella 7ekayat .\r\nGalou fiya maryoul galou ntassi \r\nWmanhdrr\r\nGalou chella kdoub wana sakt \r\nAl3mrrr \r\nNtiya 3arfani ana nfoutek \r\nMan9drr \r\nT3ali liya bb domini \r\ntwahachte l vibe m3ak \r\nNtiya Malak \r\nNtiya La vida l3mr wlkbida\r\nNtiya li kanhwak\r\nO ma 3la bali bihoum ah\r\nYa rwa7i wla ghadi ndiro lhoul ana \r\nMahboul ana ghadi f l’autoroute ana \r\nDayr mazzika zayd flvolume ana \r\nO bilal yfakarni bli fat \r\nYa wedi chela 7ekayat .",
   "createdAt": "2025-03-05T20:27:49.725Z",
   "p1": [
@@ -1983,5 +1987,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "아랍어"
+  ]
 }

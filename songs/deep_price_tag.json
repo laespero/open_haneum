@@ -4,7 +4,11 @@
   "kor_name": "가격표",
   "eng_name": "Price Tag",
   "vid": "qMxX-QOV9tI",
-  "artist": "Jessie J",
+  "artist": {
+    "ori_name": "Jessie J",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Okay, Coconut Man, Moonhead and Pea\r\nYou ready?\r\nSeems like everybody's got a price\r\nI wonder how they sleep at night\r\nWhen the sale comes first and the truth comes second\r\nJust stop for a minute and smile\r\nWhy is everybody so serious?\r\nActing so damn mysterious\r\nGot shades on your eyes and your heels so high\r\nThat you can't even have a good time\r\nEverybody look to their left\r\nEverybody look to their right\r\nCan you feel that? Yeah\r\nWe're paying with love tonight\r\nIt's not about the money, money, money\r\nWe don't need your money, money, money\r\nWe just wanna make the world dance\r\nForget about the price tag\r\nAin't about the, uh, cha-ching, cha-ching\r\nAin't about the, yeah, ba-bling, ba-bling\r\nWanna make the world dance\r\nForget about the price tag\r\nWe need to take it back in time\r\nWhen music made us all unite\r\nAnd it wasn't low blows and video hoes\r\nAm I the only one getting tired?\r\nWhy is everybody so obsessed?\r\nMoney can't buy us happiness\r\nCan we all slow down and enjoy right now?\r\nGuarantee we'll be feeling alright\r\nEverybody look to their left (to their left)\r\nEverybody look to their right (to their right)\r\nCan you feel that? Yeah\r\nWe're paying with love tonight\r\nIt's not about the money, money, money\r\nWe don't need your money, money, money\r\nWe just wanna make the world dance\r\nForget about the price tag\r\nAin't about the, uh, cha-ching, cha-ching\r\nAin't about the, yeah, ba-bling, ba-bling\r\nWanna make the world dance\r\nForget about the price tag (yeah, yeah)\r\nWell, keep the price tag (yeah) and take the cash back (back)\r\nJust give me six strings (six strings) and a half stack (half stack)\r\nAnd you can, can keep the cars, leave me the garage\r\nAnd all I, yes, all I need are keys and guitars\r\nAnd guess what? In 30 seconds, I'm leaving to Mars\r\nYeah, we leaping across these undefeatable odds\r\nIt's like this, man, you can't put a price on a life\r\nWe do this for the love, so we fight and sacrifice every night\r\nSo we ain't gon' stumble and fall, never (nah)\r\nWaiting to see this in the sign of defeat, uh-uh\r\nSo we gon' keep everyone moving their feet\r\nSo bring back the beat and then everyone sing\r\nIt's not about the money, money, money\r\nWe don't need your money, money, money\r\nWe just wanna make the world dance\r\nForget about the price tag\r\nAin't about the, uh, cha-ching, cha-ching\r\nAin't about the, yeah, ba-bling, ba-bling\r\nWanna make the world dance\r\nForget about the price tag (hey, hey)\r\nIt's not about the money, money, money (we don't need it)\r\nWe don't need your money, money, money (no I don't, we don't need it)\r\nWe just wanna make the world dance (dance)\r\nForget about the price tag (dance your ass off, ah-ah)\r\nAin't about the, uh, cha-ching, cha-ching\r\nAin't about the, yeah, ba-bling, ba-bling (it ain't about)\r\nWanna make the world dance (yeah, yeah)\r\nForget about the price tag (forget about the price tag)\r\nYeah, yeah, oh-oh\r\nForget about the price tag",
   "createdAt": "2025-03-13T12:38:45.378Z",
   "p1": [
@@ -6810,5 +6814,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

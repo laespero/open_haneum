@@ -2423,5 +2423,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "颜人中",
+    "kor_name": "안인중",
+    "eng_name": ""
+  },
+  "ori_name": "我只能离开",
+  "kor_name": "나는 떠날 수 밖에 없어",
+  "eng_name": "",
+  "tags": [
+    "중국어"
+  ]
 }

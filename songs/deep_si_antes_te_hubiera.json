@@ -3,8 +3,12 @@
   "ori_name": "Si Antes Te Hubiera Conocido",
   "kor_name": "널 더 일찍 알았더라면",
   "eng_name": "If I Had Met You Sooner",
-  "vid": "MgsdDfdGdHc",
-  "artist": "KAROL G",
+  "vid": "u9aCMPBN8Go",
+  "artist": {
+    "ori_name": "KAROL G",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Ke lo ke\r\nEstamos a rulay \r\nEmpezó el verano\r\nFuego\r\n¿Qué hubiera sido?\r\nSi antes te hubiera conocido\r\nSeguramente,\r\nEstarías bailando esta conmigo,\r\nNo como amigos\r\nSino como otra cosa,\r\nUsted cerca me pone peligrosa,\r\nPor un besito\r\nHago cualquier cosa\r\nLa novia suya me pone celosa\r\nY aunque es hermosa\r\nEy!\r\nNo te va a tratar como yo,\r\nNo te va a besar como yo,\r\nNo está tan rica, así como yo\r\nElla es timida y yo no,\r\nCon estas ganas que tengo yo,\r\nMe atrevo a comerme a los dos,\r\nHoy estás jangueando con ella,\r\nPero (mmm)\r\nDespués tal vez no\r\n¿Qué hubiera sido?\r\nSi antes te hubiera conocido\r\nSeguramente,\r\nEstarías bailando esta conmigo,\r\nNo como amigos\r\nEy!\r\n¿Qué hubiera sido?\r\nSi antes te hubiera conocido\r\nSeguramente,\r\nEstarías bailando esta conmigo,\r\nNo como amigos\r\nEy!\r\nY yo te veo y no sé\r\nCómo actuar\r\nBebé pa’ conquistarte\r\nQue me pasen el manual\r\nEspero lo que sea,\r\nYo no me voy a quitar\r\nTengo fé que esos ojitos\r\nUn día me van a mirar\r\nYo me caso contigo,\r\nMi nombre suena bien con tu apellido\r\nEstoy esperando el primer descuido,\r\nPa’ presentarte como mi marido\r\nYo me casó contigo,\r\nMi nombre suena bien con tu apellido\r\nEstoy esperando el primer descuido,\r\nPa’ presentarte como mi marido\r\nNo has entendido que\r\nNo te va a tratar como yo,\r\nNo te va a besar como yo,\r\nNo está tan rica, así como yo\r\nElla es timida y yo no,\r\nCon estas ganas que tengo yo,\r\nMe atrevo a comerme a los dos,\r\nHoy estás jangueando con ella,\r\nPero (mmm)\r\nDespués tal vez no\r\n¿Qué hubiera sido?\r\nSi antes te hubiera conocido\r\n(Ey, ¿Cómo?)\r\nSeguramente,\r\nEstarías bailando esta conmigo,\r\nno como amigos\r\n(No, no, no)\r\nEy, Ey, Ey\r\n¿Qué hubiera sido?\r\nSi antes te hubiera conocido\r\n¿Qué hubiera sido?\r\nSi antes te hubiera conocido",
   "createdAt": "2025-03-26T05:12:34.886Z",
   "p1": [
@@ -3416,5 +3420,8 @@
       "O0": "Mi nombre suena bien con tu apellido"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "스페인어"
+  ]
 }

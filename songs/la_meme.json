@@ -3427,5 +3427,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "GIMS",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "fC6YV65JJ6g",
+  "ori_name": "La Même",
+  "kor_name": "같은",
+  "eng_name": "The same",
+  "tags": [
+    "프랑스어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "천천히 날 내려놔요",
   "eng_name": "Let Me Down Slow",
   "vid": "Q2x7i5xk2ZY",
-  "artist": "New Hope Club",
+  "artist": {
+    "ori_name": "New Hope Club",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Heaven knows we're out of luck\r\nAnd I'm on the point of giving up\r\nIf all is fair in war and love\r\nThen why do we fight?\r\nSomething ain't right (Yeah)\r\n'Cause we don't really talk about life no more\r\nI'm just here with my own tryna laugh it off\r\nWhen the night comes crawling, I'm holding on\r\nFor something to change, tension to break\r\nIt's about time\r\nWhat are you hiding?\r\n'Cause I got the right to know\r\nThere's something different in the way you look\r\nWhat are you fighting?\r\nIf you're gonna let me go\r\nIt's gonna hurt so choose your words\r\nBaby, let me down slow (Let me down, let me down)\r\nBaby, let me down slow (Baby, let me down slow)\r\nBaby, let me down slow (Let me down, let me down)\r\nBaby, let me down\r\nWho was misguided?\r\nWho's to blame?\r\nThe first to have the final say?\r\nIf love is just a wicked game\r\nThen why do we play?\r\nWhy do we play? (Yeah)\r\nAnd it hurts seeing you tryna put me off\r\nTryna make me be the one to break it off, mm\r\nWhen the night comes crawling, I'm holding on\r\nFor something to change, tension to break\r\nIt's about time\r\nWhat are you hiding?\r\n'Cause I got the right to know\r\nThere's something different in the way you look\r\nWhat are you fighting?\r\nIf you're gonna let me go\r\nIt's gonna hurt so choose your words\r\nBaby, let me down slow (Let me down, let me down)\r\nBaby, let me down slow (Baby, let me down slow)\r\nBaby, let me down slow (Let me down, let me down)\r\nBaby, let me down\r\nWhat are you hiding?\r\n'Cause I got the right to know (Know)\r\nThere's something different in the way you look\r\nWhat are you fighting?\r\nIf you're gonna let me go\r\nIt's gonna hurt so choose your words\r\nBaby, let me down slow (Ooh)\r\nBaby, let me down slow (Let me down, let me down, let me down slow)",
   "createdAt": "2025-03-13T12:36:49.106Z",
   "p1": [
@@ -3384,5 +3388,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

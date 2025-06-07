@@ -4,7 +4,11 @@
   "kor_name": "사랑은 아름다울 수 있어",
   "eng_name": "Love Can Be Beautiful",
   "vid": "CiU1MsAYK8E",
-  "artist": "Revelle & Gregor Hägele",
+  "artist": {
+    "ori_name": "Revelle & Gregor Hägele",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Dass Liebe schön sein kann\r\nDass Liebe schön sein kann\r\n\r\nDu holst mich ab, wir fahren Richtung Stadt\r\nIn deinem weißen Pickup\r\nSeit 'nem Jahr treff' ich zum ersten Mal\r\nWieder jemand Neues, den ich mag\r\n\r\nIch hatte irgendwie schon Angst vor der Liebe\r\nUnd was Menschen mit ihr machen\r\nAlso hielt ich erstmal Abstand\r\nIch hatte irgendwie schon Angst, mich zu verlieben\r\nDoch mit dir ist alles krass\r\nDu erinnerst mich daran\r\n\r\nDass Liebe schön sein kann\r\nDass Liebe schön sein kann\r\nDu erinnerst mich daran, dass Liebe schön sein kann\r\nSo schön sein kann, so schön sein kann\r\n\r\nEs ist schon Nacht, wir laufen durch die Stadt\r\nIch erzähl' von meiner Schwester\r\nSie hat irgendwo ihr Herz verloren\r\nDoch irgendwann dann mit der Zeit wird es besser\r\nJa, du erinnerst mich an sie\r\n\r\nIch hatte irgendwie schon Angst vor der Liebe\r\nUnd was Menschen mit ihr machen\r\nAlso hielt ich erstmal Abstand\r\nIch hatte irgendwie schon Angst, mich zu verlieben\r\nDoch mit dir ist alles krass\r\nDu erinnerst mich daran\r\n\r\nDass Liebe schön sein kann\r\nDass Liebe schön sein kann\r\nDu erinnerst mich daran, dass Liebe schön sein kann\r\nSo schön sein kann, so schön sein kann\r\n\r\nIch mach' ein Bild von uns im Spiegel\r\nDamit ich irgendwann ma' weiß, dass das hier echt war\r\nDass wir zwei hier waren\r\nUnd sollt es irgendwann vorbeigehen\r\nDann will ich mich dran erinnern, dass es schön war\r\nDass die Liebe hier war\r\n\r\nUnd dann\r\nBist da du und erinnerst mich\r\nWie es ist, wie die Liebe ist\r\nDann bist da du und erinnerst mich\r\nWie die Liebe ist, wie die Liebe ist",
   "createdAt": "2025-05-02T23:01:44.227Z",
   "p1": [
@@ -3372,5 +3376,8 @@
       "O0": "Also hielt ich erstmal Abstand"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "독일어"
+  ]
 }

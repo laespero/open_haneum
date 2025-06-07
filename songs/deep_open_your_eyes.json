@@ -4,7 +4,11 @@
   "kor_name": "눈을 떠",
   "eng_name": "Open Your Eyes",
   "vid": "uelex5tkrIU",
-  "artist": "CIVO",
+  "artist": {
+    "ori_name": "CIVO",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Baby, mach die Augen auf\r\nTreib mir meine Flausen aus\r\nIch will so gern erwachsen werden\r\nUnd nicht schon mit 18 sterben\r\nWir hab'n die Nächte bis spätmorgens verbracht (on God)\r\nIrgendein Parkplatz bei dir in deiner Stadt (for real)\r\nIch lenk dich viel zu oft vom Wichtigen ab\r\nJeden Tag, jede Nacht\r\nIch weiß, ich hab dir versprochen, dass ich auf dein Herz aufpasse (safe)\r\nUnd deshalb hab ich's immer mit mir in meiner Bauchtasche\r\nWeil ich glaub, dass ich es ohne dich hier nicht rausschaffe (niemals)\r\nHörst du meine Stimme, wenn ich das Radio laut mache? (Und sie sagt)\r\nBaby, mach die Augen auf (on God)\r\nTreib mir meine Flausen aus\r\nIch will so gern erwachsen werden\r\nUnd nicht schon mit 18 sterben (hey-yeah)\r\nBaby, mach die Augen auf (mach sie auf)\r\nTreib mir meine Flausen aus\r\nWie kannst du trotz der Schwierigkeiten\r\nZuneigung und Liebe zeigen?\r\nOh mein Gott, glaub, ich fahr viel zu schnell (viel zu schnell)\r\nAlles dreht, alles laut, alles hell (oh mein Gott)\r\nUnd ich zieh dich mit in meine Welt\r\nTut mir leid, weil ich weiß, dass ich wein, wenn du fällst\r\nKann sein, ich bin schon wieder viel zu drunk, ja\r\nKann sein, ich fahr mein'n Beamer vor die Wand wie ein Idiot\r\nDu weißt ja, diese Liebe ist riskant\r\nAber trotzdem hältst du immer meine Hand und lässt nicht los\r\nBaby, mach die Augen auf\r\nTreib mir meine Flausen aus\r\nIch will so gern erwachsen werden\r\nUnd nicht schon mit 18 sterben (hey-yeah)\r\nBaby, mach die Augen auf (mach sie auf)\r\nTreib mir meine Flausen aus\r\nWie kannst du trotz der Schwierigkeiten\r\nZuneigung und Liebe zeigen?",
   "createdAt": "2025-03-05T16:33:20.479Z",
   "p1": [
@@ -3597,5 +3601,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "독일어"
+  ]
 }

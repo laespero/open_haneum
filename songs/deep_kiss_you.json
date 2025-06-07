@@ -4,7 +4,11 @@
   "kor_name": "너에게 키스해",
   "eng_name": "Kiss You",
   "vid": "T4cdfRohhcg",
-  "artist": "One Direction",
+  "artist": {
+    "ori_name": "One Direction",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Oh, I just wanna take you any way that you like\r\nWe could go out any day, any night\r\nBaby I'll take you there, take you there\r\nBaby I'll take you there, yeah\r\n\r\nOh, tell me tell me tell me how to turn your love on\r\nYou can get, get anything that you want\r\nBaby just shout it out, shout it out\r\nBaby just shout it out, yeah\r\n\r\nAnd if you, you want me to\r\nLet's make a move\r\n\r\nYeah, so tell me girl if every time we\r\n\r\nTo-o-uch\r\nYou get this kind of, ru-u-ush\r\nBaby say yeah, yeah\r\nIf you don't wanna, take it slow\r\nAnd you just wanna, take me home\r\nBaby say yeah, yeah\r\n\r\nAnd let me kiss you\r\n\r\nOh baby, baby don't you know you got what I need\r\nLooking so good from your head to your feet\r\nCome on come over here, over here\r\nCome on come over here, yeah\r\n\r\nOh, I just wanna show you off to all of my friends\r\nMaking them drool down their chinny-chin-chins\r\nBaby be mine tonight, mine tonight\r\nBaby be mine tonight, yeah\r\n\r\nAnd if you, you want me to\r\nLet's make a move\r\nYeah, so tell me girl if every time we\r\n\r\nTo-o-uch\r\nYou get this kind of, ru-u-ush\r\nBaby say yeah, yeah\r\nIf you don't wanna, take it slow\r\nAnd you just wanna, take me home\r\nBaby say yeah, yeah\r\n\r\nAnd let me kiss you\r\n\r\nNa na na na na na na na\r\nNa na na na na na na na\r\nNa na na na na na na na\r\nYeah, so tell me girl if every time we\r\n\r\nTo-o-uch\r\nYou get this kind of, ru-u-ush\r\nBaby say yeah, yeah\r\nIf you don't wanna, take it slow\r\nAnd you just wanna, take me home\r\nBaby say yeah, yeah\r\n\r\nEvery time we to-o-uch\r\nYou get this kind of, ru-u-ush\r\nBaby say yeah, yeah\r\nIf you don't wanna, take it slow\r\nAnd you just wanna, take me home\r\nBaby say yeah, yeah\r\n\r\nAnd let me kiss you",
   "createdAt": "2025-03-13T13:25:22.272Z",
   "p1": [
@@ -3195,7 +3199,7 @@
           "K1": "데려가다",
           "I1": "teɪk",
           "R1": "테이크",
-          "E1":"여기에서는 누군가를 어딘가로 데려가거나 이동시키는 것을 의미합니다.",
+          "E1": "여기에서는 누군가를 어딘가로 데려가거나 이동시키는 것을 의미합니다.",
           "T2": "take",
           "K2": "가져가다",
           "I2": "teɪk",
@@ -3262,7 +3266,7 @@
           "R2": "댓",
           "XE": "This is the book that I told you about.",
           "XK": "이게 내가 너에게 말했던 그 책이야.",
-          "XI":"ðɪs ɪz ðə bʊk ðæt aɪ toʊld ju əˈbaʊt",
+          "XI": "ðɪs ɪz ðə bʊk ðæt aɪ toʊld ju əˈbaʊt",
           "XR": "디스 이즈 더 북 댓 아이 톨드 유 어바우트"
         },
         {
@@ -3298,5 +3302,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

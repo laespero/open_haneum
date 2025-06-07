@@ -3772,5 +3772,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "ノア",
+    "kor_name": "노아",
+    "eng_name": "noa"
+  },
+  "vid": "peaUrcufpXs",
+  "ori_name": "初恋キラー",
+  "kor_name": "첫사랑 킬러",
+  "eng_name": "My lovely killer",
+  "tags": [
+    "일본어"
+  ]
 }

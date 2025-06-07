@@ -4,7 +4,11 @@
   "kor_name": "전속 천사",
   "eng_name": "Exclusive Angel",
   "vid": "56uf3xWjwpU",
-  "artist": "yihuik苡慧",
+  "artist": {
+    "ori_name": "yihuik苡慧",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "我不会怪你\r\n\r\n对我的伪装\r\n\r\n天使在人间是该藏好翅膀\r\n\r\n人们愚蠢鲁莽而你纤细善良\r\n\r\n怎能让你为了我被碰伤\r\n\r\n小小的手掌\r\n\r\n厚厚的温暖\r\n\r\n你总能平复我不安的夜晚\r\n\r\n不敢想的梦想\r\n\r\n透过你的眼光\r\n\r\n我才看见它原来在前方\r\n\r\n没有谁能把你抢离我身旁\r\n\r\n你是我的专属天使\r\n\r\n唯我能独占\r\n\r\n没有谁能取代你在我心上\r\n\r\n拥有一个专属天使\r\n\r\n我哪里还需要别的愿望\r\n\r\n小小的手掌\r\n\r\n大大的力量\r\n\r\n我一定也会像你一样飞翔\r\n\r\n你想去的地方\r\n\r\n就是我的方向\r\n\r\n有我保护笑容尽管灿烂\r\n\r\n没有谁能把你抢离我身旁\r\n\r\n你是我的专属天使\r\n\r\n唯我能独占\r\n\r\n没有谁能取代你在我心上\r\n\r\n拥有一个专属天使\r\n\r\n我哪里还需要别的愿望\r\n\r\n要不是你出现\r\n\r\n我一定还在沉睡\r\n\r\n绝望的以为\r\n\r\n生命只有黑夜\r\n\r\n没有谁能把你抢离我身旁\r\n\r\n你是我的专属天使\r\n\r\n唯我能独占\r\n\r\n没有谁能取代你在我心上\r\n\r\n拥有一个专属天使\r\n\r\n我哪里还需要别的愿望",
   "createdAt": "2025-03-05T12:25:39.814Z",
   "p1": [
@@ -2278,5 +2282,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "나쁜 녀석",
   "eng_name": "bad guy",
   "vid": "ZD6rXLXZOEI",
-  "artist": "Billie Eilish",
+  "artist": {
+    "ori_name": "Billie Eilish",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "White shirt now red my bloody nose\r\nSleepin' you're on your tippy toes\r\nCreepin' around like no one knows\r\nThink you're so criminal\r\nBruises on both my knees for you\r\nDon't say thank you or please\r\nI do what I want when I'm wanting to\r\nMy soul so cynical\r\nSo you're a tough guy\r\nLike it really rough guy\r\nJust can't get enough guy\r\nChest always so puffed guy\r\nI'm that bad type\r\nMake your mama sad type\r\nMake your girlfriend mad tight\r\nMight seduce your dad type\r\nI'm the bad guy duh\r\nI'm the bad guy\r\nI like it when you take control\r\nEven if you know that you don't\r\nOwn me I'll let you play the role\r\nI'll be your animal\r\nMy mommy likes to sing along with me\r\nBut she won't sing this song\r\nIf she reads all the lyrics\r\nShe'll pity the men I know\r\nSo you're a tough guy\r\nLike it really rough guy\r\nJust can't get enough guy\r\nChest always so puffed guy\r\nI'm that bad type\r\nMake your mama sad type\r\nMake your girlfriend mad tight\r\nMight seduce your dad type\r\nI'm the bad guy duh\r\nI'm the bad guy duh\r\nI'm only good at bein' bad bad\r\nI like when you get mad\r\nI guess I'm pretty glad that you're alone\r\nYou said she's scared of me?\r\nI mean I don't see what she sees\r\nBut maybe it's 'cause\r\nI'm wearing your cologne\r\nI'm a bad guy\r\nI'm a bad guy\r\nBad guy bad guy\r\nI'm a bad",
   "createdAt": "2025-01-14T03:15:41.368Z",
   "p1": [
@@ -3583,5 +3587,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

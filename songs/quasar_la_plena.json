@@ -4,7 +4,11 @@
   "kor_name": "라 플레나",
   "eng_name": "La Plena",
   "vid": "F1_aOX0acbY",
-  "artist": "W Sound",
+  "artist": {
+    "ori_name": "W Sound",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "O-O-Ovy On The Drums\r\nEres la niña de mis ojos, tú\r\nEres todo lo que quiero yo\r\n¿Una cerveza pa calmar la sed?, no\r\nMejor ser besado por su boquita, amor\r\nLas tentaciones, así como tú\r\nMerecen pecados como yo\r\nAy, si tú quieres, solo da la lu' (yeh-yeh)\r\nTú sabes que no vo'a a decir que no\r\nAy, tienes la magia, tú sí tienes una vainita\r\nQue a mí me encanta, me enloquece (alright)\r\nDormir contigo fue amor a primera vista\r\nCuando bailabas así\r\nPor el cuellito, besito y lengüita\r\nSé que te encanta, te enloquece\r\nSé que te encanta, te enloquece\r\nY a veces\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh\r\nSé que te encanta, te enloquece\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh\r\n¡La plena!\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh\r\nUh-uh-uh-uh (óyelo), uh-uh-uh, uh-uh\r\nOye, lo que pasa es que desde que vi tu cara\r\nMe enamoro de ti toda, es que tú tiene' un no sé qué\r\nSiento que te pasa lo mismo cuando te miro\r\n¿Qué dices si nos parchamos a ver el amanecer? (¡Prr, uh!)\r\nQuiero ser tu todo, quiero que tú seas mi toa\r\nLe digo: \"Soft low\", y luego viene y me lo soba (¡uah!)\r\nVamo'a vernos luego, si no te gusta el infierno\r\n¿Pa qué vienes al diablo y lo emboba'?\r\nElla parcerita paisa, y yo costeño coleto\r\nEn una baldosa la aprieto\r\nPa hablarte claro, cero visaje\r\nSe sabe que tú eres puro veneno\r\nAy, tienes la magia, tú sí tiene' una vainita\r\nQue a mí me encanta, me enloquece\r\nDormir contigo fue amor a primera vista\r\nCuando bailabas así\r\nPor el cuellito, besito y lengüita\r\nSé que te encanta, te enloquece\r\nSé que te encanta, te enloquece\r\nY a veces\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh\r\nSé que te encanta, te enloquece\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh (óyelo)\r\n¡La plena!\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh\r\nSé que te encanta, te enloquece\r\nUh-uh-uh-uh, uh-uh-uh, uh-uh\r\nBeéle\r\n¡Wuh-wuh-wuh-wuh-wuh-wuh!\r\nOvy On The Rasta Drums (lo tomo)\r\nW Sound\r\nAye\r\nAlright",
   "createdAt": "2025-04-08T17:41:43.560Z",
   "p1": [
@@ -4748,5 +4752,8 @@
       "O0": "Ovy On The Rasta Drums (lo tomo)"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "스페인어"
+  ]
 }

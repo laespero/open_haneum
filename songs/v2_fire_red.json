@@ -1478,5 +1478,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "要不要买菜",
+    "kor_name": "반찬을 살까 말까",
+    "eng_name": ""
+  },
+  "ori_name": "火红的萨日朗",
+  "kor_name": "붉은 백합",
+  "eng_name": "The fiery Sarilang",
+  "tags": [
+    "중국어"
+  ]
 }

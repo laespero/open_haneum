@@ -4,7 +4,11 @@
   "kor_name": "분노에 차 뒤돌아보지 마",
   "eng_name": "Don't Look Back In Anger",
   "vid": "oplra1FJxWI",
-  "artist": "Oasis",
+  "artist": {
+    "ori_name": "Oasis",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Slip inside the eye of your mind\r\nDon't you know you might find\r\nA better place to play?\r\nYou said that you'd never been\r\nBut all the things that you've seen\r\nWill slowly fade away\r\nSo I start a revolution from my bed\r\n'Cause you said the brains I had went to my head\r\nStep outside, summertime's in bloom\r\nStand up beside the fireplace\r\nTake that look from off your face\r\nYou ain't ever gonna burn my heart out\r\nAnd so Sally can wait\r\nShe knows it's too late\r\nAs we're walking on by\r\nHer soul slides away\r\nBut don't look back in anger\r\nI heard you say\r\nTake me to the place where you go\r\nWhere nobody knows\r\nIf it's night or day\r\nBut please don't put your life in the hands\r\nOf a rock and roll band\r\nWho'll throw it all away\r\nI'm gonna start a revolution from my bed\r\n'Cause you said the brains I had went to my head\r\nStep outside 'cause summertime's in bloom\r\nStand up beside the fireplace\r\nTake that look from off your face\r\n'Cause you ain't ever gonna burn my heart out\r\nAnd so Sally can wait\r\nShe knows it's too late\r\nAs she's walking on by\r\nMy soul slides away\r\nBut don't look back in anger\r\nI heard you say\r\nSo Sally can wait\r\nShe knows it's too late\r\nAs we're walking on by\r\nHer soul slides away\r\nBut don't look back in anger\r\nI heard you say\r\nSo Sally can wait\r\nShe knows it's too late\r\nAs she's walking on by\r\nMy soul slides away\r\nBut don't look back in anger\r\nDon't look back in anger\r\nI heard you say\r\nAt least not today",
   "createdAt": "2025-05-21T00:57:13.912Z",
   "p1": [
@@ -3390,5 +3394,8 @@
       "O0": "At least not today"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

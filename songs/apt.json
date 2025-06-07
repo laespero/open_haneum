@@ -2527,5 +2527,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "ROSÉ, Bruno Mars",
+    "kor_name": "로제, 브루노 마스",
+    "eng_name": ""
+  },
+  "vid": "ekr2nIex040",
+  "ori_name": "APT.",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "영어"
+  ]
 }

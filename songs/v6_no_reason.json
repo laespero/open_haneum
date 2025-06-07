@@ -2183,5 +2183,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Ryan.B · effie",
+    "kor_name": "영빈Ryan.B",
+    "eng_name": ""
+  },
+  "ori_name": "No Reason",
+  "kor_name": "이유는 없어",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

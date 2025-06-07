@@ -2963,5 +2963,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Marie Bothmer",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Ich dein Alles, Du mein Nichts",
+  "kor_name": "나는 너의 전부이고, 너는 나의 아무것도 아니야",
+  "eng_name": "I am your everything, you are my nothing",
+  "tags": [
+    "독일어"
+  ]
 }

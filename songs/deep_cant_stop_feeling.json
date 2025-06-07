@@ -4,7 +4,11 @@
   "kor_name": "캔트 스탑 더 필링!",
   "eng_name": "CAN'T STOP THE FEELING!",
   "vid": "ru0K8uYEZWw",
-  "artist": "Justin Timberlake",
+  "artist": {
+    "ori_name": "Justin Timberlake",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I got this feelin' inside my bones\r\nIt goes electric, wavy when I turn it on\r\nAll through my city, all through my home\r\nWe're flyin' up, no ceilin', when we in our zone\r\nI got that sunshine in my pocket\r\nGot that good soul in my feet\r\nI feel that hot blood in my body when it drops (ooh)\r\nI can't take my eyes up off it, movin' so phenomenally\r\nRoom on lock, the way we rock it, so don't stop\r\nAnd under the lights when everything goes\r\nNowhere to hide when I'm gettin' you close\r\nWhen we move, well, you already know\r\nSo just imagine, just imagine, just imagine\r\nNothin' I can see but you when you dance, dance, dance\r\nFeel a good, good creepin' up on you\r\nSo just dance, dance, dance, come on\r\nAll those things I shouldn't do\r\nBut you dance, dance, dance\r\nAnd ain't nobody leavin' soon, so keep dancin'\r\nI can't stop the feelin'\r\nSo just dance, dance, dance\r\nI can't stop the feelin'\r\nSo just dance, dance, dance, come on\r\nOoh, it's something magical\r\nIt's in the air, it's in my blood, it's rushin' on (rushin' on)\r\nI don't need no reason, don't need control (don't need control)\r\nI fly so high, no ceiling, when I'm in my zone\r\n'Cause I got that sunshine in my pocket\r\nGot that good soul in my feet\r\nI feel that hot blood in my body when it drops (ooh)\r\nI can't take my eyes up off it, moving so phenomenally\r\nRoom on lock, the way we rock it, so don't stop\r\nUnder the lights when everything goes\r\nNowhere to hide when I'm gettin' you close\r\nWhen we move, well, you already know\r\nSo just imagine, just imagine, just imagine\r\nNothing I can see but you when you dance, dance, dance\r\nFeel a good, good creepin' up on you\r\nSo just dance, dance, dance, come on\r\nAll those things I shouldn't do\r\nBut you dance, dance, dance\r\nAnd ain't nobody leavin' soon, so keep dancin'\r\nI can't stop the feelin'\r\nSo just dance, dance, dance\r\nI can't stop the feelin'\r\nSo just dance, dance, dance\r\nI can't stop the feelin'\r\nSo just dance, dance, dance\r\nI can't stop the feelin' (yeah)\r\nSo keep dancin', come on\r\nOh, yeah, oh\r\nI can't stop the, I can't stop the\r\nI can't stop the, I can't stop the\r\nI can't stop the feelin'\r\nNothin' I can see but you when you dance, dance, dance (I can't stop the feelin')\r\nFeel a good, good creepin' up on you\r\nSo just dance, dance, dance, come on (I can't stop the feelin')\r\nAll those things I shouldn't do\r\nBut you dance, dance, dance (dance, dance, dance) (I can't stop the feelin')\r\nAnd ain't nobody leavin' soon, so keep dancin' (I can't stop the feelin')\r\nEverybody sing\r\nGot this feeling in my body (I can't stop the feelin')\r\nGot this feeling in my body (I can't stop the feelin')\r\nWanna see you move your body (I can't stop the feelin')\r\nGot this feelin' in my body\r\nBreak it down\r\nGot this feelin' in my body (can't stop the feelin')\r\nGot this feelin' in my body, come on (ooh)",
   "createdAt": "2025-03-13T13:05:13.229Z",
   "p1": [
@@ -6153,5 +6157,8 @@
     227.742424,
     229.78553,
     236.425393
+  ],
+  "tags": [
+    "영어"
   ]
 }

@@ -8093,5 +8093,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "VannDa",
+    "eng_name": ""
+  },
+  "ori_name": "Time To Rise",
+  "kor_name": "일어날 시간",
+  "eng_name": "",
+  "tags": [
+    "크메르어"
+  ]
 }

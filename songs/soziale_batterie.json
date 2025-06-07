@@ -4087,5 +4087,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "SOPHIA",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "o0YvtH4aeNA",
+  "ori_name": "Soziale Batterie",
+  "kor_name": "소셜 배터리",
+  "eng_name": "Social Battery",
+  "tags": [
+    "독일어"
+  ]
 }

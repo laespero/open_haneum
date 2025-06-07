@@ -4,7 +4,11 @@
   "kor_name": "달빛 아래의 아름다움과 슬픔",
   "eng_name": "Beauty and Sorrow Under the Moonlight",
   "vid": "usL2SFfl9pY",
-  "artist": "于翔北",
+  "artist": {
+    "ori_name": "于翔北",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "\r\nLet me talk to the moon\r\n\r\n把心事都倾出\r\n\r\n对你所有倾慕\r\n\r\n都有迹可追溯\r\n\r\n交出爱的拼图\r\n\r\n交出恨的眉目\r\n\r\n交出心的纹路\r\n\r\n交出你的在乎\r\n\r\nwoo你深爱着月亮\r\n\r\n我不再浪费月光\r\n\r\n把爱倒映在汪洋\r\n\r\nfor u\r\n\r\nwoo你深爱着月亮\r\n\r\n我不再浪费月光\r\n\r\n把吻晾你在脸上\r\n\r\nfor u\r\n\r\nLet me talk to the moon\r\n\r\n想让此时留驻\r\n\r\n你耳边的温度\r\n\r\n让我呼吸凝固\r\n\r\n交出爱的庆祝\r\n\r\n交出恨的落幕\r\n\r\n交出心的维度\r\n\r\n交出你的痛苦\r\n\r\n月光下的美丽哀愁\r\n\r\n清澈见底的倾诉\r\n\r\n月光下的美丽哀愁\r\n\r\n映衬着你的全部\r\n\r\nLet me talk to the moon\r\n\r\n把心事都倾出\r\n\r\n对你所有倾慕\r\n\r\n都有迹可追溯\r\n\r\n交出爱的拼图\r\n\r\n交出恨的眉目\r\n\r\n交出心的纹路\r\n\r\n交出你的在乎\r\n\r\nwoo你深爱着月亮\r\n\r\n我不再浪费月光\r\n\r\n把爱倒映在汪洋\r\n\r\nfor u\r\n\r\nwoo你深爱着月亮\r\n\r\n我不再浪费月光\r\n\r\n把吻晾你在脸上\r\n\r\nfor u\r\n\r\noh why i miss u everyday everynight\r\n\r\nso can u stay with me everyday everynight",
   "createdAt": "2025-01-07T08:26:16.664Z",
   "p1": [
@@ -2038,5 +2042,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

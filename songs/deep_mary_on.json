@@ -4,7 +4,11 @@
   "kor_name": "십자가 위의 메리",
   "eng_name": "Mary On A Cross",
   "vid": "k5mX3NkA7jM",
-  "artist": "Ghost",
+  "artist": {
+    "ori_name": "Ghost",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "We were speeding together\r\nDown the dark avenues\r\nBut besides of the stardom\r\nAll we got was blues\r\nBut through all of that sorrow\r\nWe were riding high\r\nAnd the truth of the matter is\r\nI never let you go, let you go\r\nWe were scanning the cities\r\nRocking to pay the dues\r\nBut besides of the glamour\r\nAll we got was bruised\r\nBut through all of that sorrow\r\nWe were riding high\r\nAnd the truth of the matter is\r\nI never let you go, let you go\r\nYou go down just like Holy Mary\r\nMary on a, Mary on a cross\r\nNot just another Bloody Mary\r\nMary on a, Mary on a cross\r\nIf you choose to run away with me\r\nI will tickle you internally\r\nAnd I see nothing wrong with that\r\nWe were searching for reasons\r\nTo play by the rules\r\nBut we quickly found\r\nIt was just for fools\r\nNow through all of this sorrow\r\nWe'll be riding high\r\nAnd the truth of the matter is\r\nI never let you go, let you go\r\nYou go down just like Holy Mary\r\nMary on a, Mary on a cross\r\nNot just another Bloody Mary\r\nMary on a, Mary on a\r\nYou go down just like Holy Mary\r\nMary on a, Mary on a cross\r\nYour beauty never ever scared me\r\nMary on a, Mary on a cross\r\nIf you choose to run away with me\r\nI will tickle you internally\r\nAnd I see nothing wrong with that\r\nNothing wrong with that\r\n(Mary on a, Mary on a cross)\r\nNothing wrong with that\r\n(Mary on a, Mary on a cross)\r\n(Mary on a) Mary on a cross",
   "createdAt": "2025-01-14T02:59:26.064Z",
   "p1": [
@@ -2773,5 +2777,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "렛잇비",
   "eng_name": "Let it be",
   "vid": "CGj85pVzRJs",
-  "artist": "The Beatles",
+  "artist": {
+    "ori_name": "The Beatles",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "When I find myself in times of trouble, Mother Mary comes to me\r\nSpeaking words of wisdom, let it be\r\nAnd in my hour of darkness she is standing right in front of me\r\nSpeaking words of wisdom, let it be\r\nLet it be, let it be, let it be, let it be\r\nWhisper words of wisdom, let it be\r\nAnd when the broken hearted people living in the world agree\r\nThere will be an answer, let it be\r\nFor though they may be parted, there is still a chance that they will see\r\nThere will be an answer, let it be\r\nLet it be, let it be, let it be, let it be\r\nThere will be an answer, let it be\r\nLet it be, let it be, let it be, let it be\r\nWhisper words of wisdom, let it be\r\nLet it be, let it be, let it be, let it be\r\nWhisper words of wisdom, let it be, be\r\nAnd when the night is cloudy there is still a light that shines on me\r\nShinin' until tomorrow, let it be\r\nI wake up to the sound of music, Mother Mary comes to me\r\nSpeaking words of wisdom, let it be\r\nAnd let it be, let it be, let it be, let it be\r\nWhisper words of wisdom, let it be\r\nAnd let it be, let it be, let it be, let it be\r\nWhisper words of wisdom, let it be",
   "createdAt": "2025-05-28T15:16:37.204Z",
   "p1": [
@@ -2321,5 +2325,8 @@
       "O0": "I wake up to the sound of music, Mother Mary comes to me"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

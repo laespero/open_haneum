@@ -1974,5 +1974,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "阿肆",
+    "kor_name": "",
+    "eng_name": "A Si"
+  },
+  "ori_name": "热爱105°c的你",
+  "kor_name": "105도의 너를 사랑해",
+  "eng_name": "Love you at 105°C",
+  "tags": [
+    "중국어"
+  ]
 }

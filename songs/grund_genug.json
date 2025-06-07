@@ -2753,5 +2753,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Madeline Juno",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Grund genug",
+  "kor_name": "충분한 이유",
+  "eng_name": "Reason enough",
+  "tags": [
+    "독일어"
+  ]
 }

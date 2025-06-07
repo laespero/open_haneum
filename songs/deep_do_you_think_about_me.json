@@ -4,7 +4,11 @@
   "kor_name": "나에 대해 생각하니",
   "eng_name": "Do You Think About Me",
   "vid": "SxFVQzvvvqM",
-  "artist": "Benjamin Ingrosso",
+  "artist": {
+    "ori_name": "Benjamin Ingrosso",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Ooh-ooh\r\nDo you think about me?\r\nOoh-ooh\r\nDo you really think about me?\r\nDo you think about me, when you wake up?\r\nDo you think about me, when the two of you make love?\r\nIs it me that you see when you're by yourself?\r\nOr does he make you feel like you've never felt?\r\nAaah, do you think about me, I just want to know\r\nOoh-ooh\r\nDo you think about me?\r\nOoh-ooh\r\nDo you really think about me anymore?\r\nI wish I didn't miss you but I'd lie to you\r\nWe're better together, not alone\r\nOoh-ooh\r\nDo you really think about me at all?\r\nI've been drinking 'bout you, almost every night\r\nI wonder what would happen, if called you to say hi?\r\nWould you yell \"go to hell\" and hang up the phone?\r\nOr suggest that we met somewhere alone?\r\n'Cause I've been trying to figure it out\r\nBut I'm so lost without you, I really wanna know!\r\nOoh-ooh\r\nDo you think about me?\r\nOoh-ooh\r\nDo you really think about me anymore?\r\nI wish I didn't miss you but I'd lie to you\r\nWe're better together, not alone\r\nOoh-ooh\r\nDo you really think about me at all?\r\nIs it me that you see when you touch yourself?\r\nOr does he make you feel\r\nFeel like you've never felt?!\r\nOoh-ooh\r\nSay do you think about me?\r\nOoh-ooh\r\nDo you really think about me, anymore?\r\nI wish I didn't miss you but I'd lie to you\r\nWe're better together, not alone\r\nOoh-ooh\r\nDo you really think about me at all?",
   "createdAt": "2025-03-13T13:08:31.077Z",
   "p1": [
@@ -3073,5 +3077,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

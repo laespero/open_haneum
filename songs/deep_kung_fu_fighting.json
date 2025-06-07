@@ -4,7 +4,11 @@
   "kor_name": "쿵푸 파이팅",
   "eng_name": "Kung Fu Fighting",
   "vid": "UiznIkHQ9sQ",
-  "artist": "Carl Douglas",
+  "artist": {
+    "ori_name": "Carl Douglas",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Everybody was kung fu fighting\r\nThose cats were fast as lightning\r\nIn fact, it was a little bit frightening\r\nBut they fought with expert timing\r\nThere were funky China men from funky Chinatown\r\nThey were chopping them up, they were chopping them down\r\nIt's an ancient Chinese art and everybody knew their part\r\nFrom a feint into a slip and a kicking from the hip\r\nEverybody was kung fu fighting\r\nThose cats were fast as lightning\r\nIn fact, it was a little bit frightening\r\nBut they fought with expert timing\r\nThere was funky Billy Chin and little Sammy Chung\r\nHe said, \"Here comes the big boss (huh-ha!), let's get it on\"\r\nWe took a bow and made a stand, started swaying with the hand\r\nA sudden motion made me skip, now we're into a brand-new trip\r\nEverybody was kung fu fighting\r\nThose cats were fast as lightning\r\nIn fact, it was a little bit frightening\r\nBut they fought with expert timing\r\nEverybody was kung fu fighting\r\nThose cats were fast as lightning\r\nIn fact, it was a little bit frightening\r\nBut they fought with expert timing\r\nEverybody was kung fu fighting\r\nThose cats were fast as lightning\r\nIn fact, it was a little bit frightening\r\nBut they fought with expert timing\r\nKung fu fighting\r\nFast as lightning\r\nKung fu fighting\r\nFast as lightning\r\nKung fu fighting (keep on, keep on, keep on)\r\nFast as lightning\r\nKung fu fighting (everybody was kung fu fighting)\r\nFast as lightning",
   "createdAt": "2025-05-15T06:03:25.271Z",
   "p1": [
@@ -2249,5 +2253,8 @@
       "O0": "He said, \"Here comes the big boss (huh-ha!), let's get it on\""
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

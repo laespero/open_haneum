@@ -2798,5 +2798,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Gregor Hägele",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Astrologie",
+  "kor_name": "점성학",
+  "eng_name": "astrology",
+  "tags": [
+    "독일어"
+  ]
 }

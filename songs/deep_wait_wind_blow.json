@@ -4,7 +4,11 @@
   "kor_name": "바람이 불기를 기다리다",
   "eng_name": "Waiting for the Wind to Blow",
   "vid": "ni8cUvZK64E",
-  "artist": "LBI利比",
+  "artist": {
+    "ori_name": "利比",
+    "kor_name": "",
+    "eng_name": "LBI"
+  },
   "text": "让风儿吹yiya替你轻抚我头发\r\n\r\n脸颊yiya靠在我的肩膀啊\r\n\r\n思念 在仲夏夜里浮现\r\n\r\n思绪放空在房间\r\n\r\n我靠在阳台旁边望向你的那边\r\n\r\n爱怎么会不知疲倦\r\n\r\n你是我一生想要的了解\r\n\r\n整个青春里 充满了你的画面\r\n\r\n地球公转自转我们不停往前走\r\n\r\n不管走到什么地方还是会相拥\r\n\r\n只有我懂你 晚安的意义 是想你的讯号\r\n\r\n让风儿吹yiya替你轻抚我头发\r\n\r\n脸颊yiya靠在我的肩膀啊\r\n\r\n搂着yiya我的腰 载着你 骑单车追赶日落\r\n\r\n这风儿吹yiya 吹去我思念牵挂\r\n\r\n我猜yiya 你也会有一样的想念吧\r\n\r\n风吹过带走我手中的花 吹到你的屋檐下\r\n\r\n思念 在仲夏夜里浮现\r\n\r\n思绪放空在房间\r\n\r\n我靠在阳台旁边望向你的那边\r\n\r\n爱怎么会不知疲倦\r\n\r\n你是我一生想要的了解\r\n\r\n整个青春里 充满了你的画面\r\n\r\n地球公转自转我们不停往前走\r\n\r\n不管走到什么地方还是会相拥\r\n\r\n只有我懂你 晚安的意义 是想你的讯号\r\n\r\n让风儿吹yiya替你轻抚我头发\r\n\r\n脸颊yiya靠在我的肩膀啊\r\n\r\n搂着yiya我的腰 载着你 骑单车追赶日落\r\n\r\n这风儿吹yiya 吹去我思念牵挂\r\n\r\n我猜yiya 你也会有一样的想念吧\r\n\r\n风吹过带走我手中的花 吹到你的屋檐下",
   "createdAt": "2025-01-16T09:18:46.353Z",
   "p1": [
@@ -1933,5 +1937,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

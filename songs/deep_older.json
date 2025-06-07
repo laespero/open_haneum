@@ -4,7 +4,11 @@
   "kor_name": "나이 든",
   "eng_name": "Older",
   "vid": "iq_bO2Rva6o",
-  "artist": "Sasha Alex Sloan",
+  "artist": {
+    "ori_name": "Sasha Alex Sloan",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I used to shut my door while my mother screamed in the kitchen\r\nI'd turn the music up, get high and try not to listen\r\nTo every little fight, 'cause neither one was right\r\nI swore I'd never be like them\r\nBut I was just a kid back then\r\nThe older I get the more that I see\r\nMy parents aren't heroes, they're just like me\r\nAnd loving is hard, it don't always work\r\nYou just try your best not to get hurt\r\nI used to be mad but now I know\r\nSometimes it's better to let someone go\r\nIt just hadn't hit me yet\r\nThe older I get\r\nI used to wonder why, why they could never be happy\r\nI used to close my eyes and pray for a whole 'nother family\r\nWhere everything was fine, one that felt like mine\r\nI swore I'd never be like them\r\nBut I was just a kid back then\r\nThe older I get the more that I see\r\nMy parents aren't heroes, they're just like me\r\nAnd loving is hard, it don't always work\r\nYou just try your best not to get hurt\r\nI used to be mad but now I know\r\nSometimes it's better to let someone go\r\nIt just hadn't hit me yet\r\nThe older I get\r\nThe older I get the more that I see\r\nMy parents aren't heroes, they're just like me\r\nAnd loving is hard, it don't always work\r\nYou just try your best not to get hurt\r\nI used to be mad but now I know\r\nSometimes it's better to let someone go\r\nIt just hadn't hit me yet\r\nThe older I get",
   "createdAt": "2025-01-14T03:17:41.388Z",
   "p1": [
@@ -2293,5 +2297,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

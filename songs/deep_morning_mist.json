@@ -4,7 +4,11 @@
   "kor_name": "새벽 안개",
   "eng_name": "Morning Mist",
   "vid": "N9x5Tpc1h4Q",
-  "artist": "薛黛霏",
+  "artist": {
+    "ori_name": "薛黛霏",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "好低的能见度\r\n\r\n微粒形状的孤独\r\n\r\n在清晨漂浮成雾\r\n\r\n这世界怎么都看不清楚\r\n\r\n夜晚是城市的淤青\r\n\r\n阵痛的人群\r\n\r\n奋力地找寻着黎明\r\n\r\n来充当救兵\r\n\r\n我从未如此地渴望一场日出\r\n\r\n等风吹过我再吹散了晨雾\r\n\r\n拉开今日的序幕\r\n\r\n脚步才不会被过去绊住\r\n\r\n迟钝的感官\r\n\r\n能不能在热闹声中醒来\r\n\r\n有些遗憾\r\n\r\n能不能随着晨雾一并消散\r\n\r\n我走过天桥的阶梯\r\n\r\n漫步几公里\r\n\r\n我知道故事在老去\r\n\r\n有新的风景\r\n\r\n我从未如此地渴望一场日出\r\n\r\n等风吹过我再吹散了晨雾\r\n\r\n拉开今日的序幕\r\n\r\n脚步才不会被过去绊住\r\n\r\n晨雾 woo~ woo~\r\n\r\n晨雾 woo~ woo~\r\n\r\n心脏不再露宿\r\n\r\n拥抱喧嚣上午\r\n\r\n眼睛不再目睹\r\n\r\n夜晚的荒芜\r\n\r\n而这一天会重复\r\n\r\n我从未如此地渴望一场日出\r\n\r\n等风吹过我再吹散了晨雾\r\n\r\n拉开今日的序幕\r\n\r\n脚步才不会被过去绊住\r\n\r\n晨雾 woo~ woo~\r\n\r\n晨雾 woo~ woo~",
   "createdAt": "2025-01-13T03:20:33.322Z",
   "p1": [
@@ -2098,5 +2102,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

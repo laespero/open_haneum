@@ -4,7 +4,11 @@
   "kor_name": "침몰",
   "eng_name": "Sink",
   "vid": "obCmHh0aTFk",
-  "artist": "邹沛沛, Pank",
+  "artist": {
+    "ori_name": "邹沛沛, Pank",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Baby don' t leave me\r\n\r\n答应我像每晚的暮色\r\n\r\n只对我一个人燃起\r\n\r\n比昨天更想你\r\n\r\n就像太阳在照常升起\r\n\r\n我对你的爱从一开始就不会缺席\r\n\r\n被咖啡的香味叫醒\r\n\r\n为我吹干头发的你\r\n\r\n让我有种不真实又患失的感受\r\n\r\n背着我踩沙滩的你\r\n\r\n额头的汗落在手心\r\n\r\n我明白梦中亲吻我的那个人是你\r\n\r\nBaby\r\n\r\n你让我的心不再结冰\r\n\r\n初雪我们围一条围巾\r\n\r\n整日沉溺在你的眼睛\r\n\r\n你的深情\r\n\r\n望不到底\r\n\r\nCome on come on\r\n\r\n靠我的胸口\r\n\r\n我的心脏\r\n\r\n随时为你跳动\r\n\r\n漫天雪花\r\n\r\n谁都不能摘走\r\n\r\n落在你的脸\r\n\r\n忍不住的触碰 yeah\r\n\r\nWe can just groove all night\r\n\r\n不愿让你独自醒来\r\n\r\n你让我的世界花开\r\n\r\n融化了冰川\r\n\r\n就抱紧你的腰\r\n\r\n什么都不去想\r\n\r\n如果可以我想就这样一直到老\r\n\r\n我想你也明了\r\n\r\n对我多么重要\r\n\r\n才会让时间定格这一秒\r\n\r\nAll i mean is u\r\n\r\nAll i need is u\r\n\r\nAll i got is u\r\n\r\nAll i want is u\r\n\r\n一想到\r\n\r\n被咖啡的香味叫醒\r\n\r\n为我吹干头发的你\r\n\r\n让我有种不真实又患失的感受\r\n\r\n背着我踩沙滩的你\r\n\r\n额头的汗落在手心\r\n\r\n我明白梦中亲吻我的那个人是你\r\n\r\nBaby\r\n\r\n你让我的心不再结冰\r\n\r\n初雪我们围一条围巾\r\n\r\n整日沉溺在你的眼睛\r\n\r\n你的深情\r\n\r\n望不到底",
   "createdAt": "2025-01-16T09:48:04.351Z",
   "p1": [
@@ -3733,5 +3737,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

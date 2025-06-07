@@ -2796,5 +2796,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Linkin Park",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "5FrhtahQiRc",
+  "ori_name": "Heavy Is The Crown",
+  "kor_name": "무거운 왕관",
+  "eng_name": "",
+  "tags": [
+    "영어"
+  ]
 }

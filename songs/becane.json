@@ -5270,5 +5270,17 @@
       "O0": "N'écoute jamais les \"on dit\", ceux qui jactent n'ont pas vu la vie au travers de ton monde"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Yamê",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "lukT_WB5IB0",
+  "ori_name": "Bécane",
+  "kor_name": "바이크",
+  "eng_name": "Bike",
+  "tags": [
+    "프랑스어"
+  ]
 }

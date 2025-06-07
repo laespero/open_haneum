@@ -2232,5 +2232,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Camille, Michael Giacchino",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "G3lSONLLx70",
+  "ori_name": "Le Festin",
+  "kor_name": "잔치",
+  "eng_name": "The Feast",
+  "tags": [
+    "프랑스어"
+  ]
 }

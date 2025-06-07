@@ -4,7 +4,11 @@
   "kor_name": "이 정도면 충분해",
   "eng_name": "Something Just Like This",
   "vid": "FM7MFYoylVs",
-  "artist": "The Chainsmokers & Coldplay",
+  "artist": {
+    "ori_name": "The Chainsmokers & Coldplay",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I've been reading books of old, the legends and the myths\r\nAchilles and his gold, Hercules and his gifts\r\nSpider-Man's control and Batman with his fists\r\nAnd clearly, I don't see myself upon that list\r\nBut she said, \"Where d'you wanna go? How much you wanna risk?\r\nI'm not looking for somebody with some superhuman gifts\r\nSome superhero, some fairy tale bliss\r\nJust something I can turn to, somebody I can kiss\"\r\nI want something just like this\r\nDoo-doo-doo, doo-doo-doo\r\nDoo-doo-doo, doo, doo\r\nDoo-doo-doo, doo-doo-doo\r\nOh, I want something just like this\r\nDoo-doo-doo, doo-doo-doo\r\nDoo-doo-doo, doo, doo\r\nDoo-doo-doo, doo, doo-doo\r\nOh, I want something just like this\r\nI want something just like this\r\nI've been reading books of old, the legends and the myths\r\nThe testaments they told, the moon and its eclipse\r\nAnd Superman unrolls a suit before he lifts\r\nBut I'm not the kind of person that it fits\r\nShe said, \"Where d'you wanna go? How much you wanna risk?\r\nI'm not looking for somebody with some superhuman gifts\r\nSome superhero, some fairy tale bliss\r\nJust something I can turn to, somebody I can miss\"\r\nI want something just like this\r\nI want something just like this\r\nOh, I want something just like this\r\nDoo-doo-doo, doo-doo-doo\r\nDoo-doo-doo, doo, doo\r\nDoo-doo-doo, doo-doo-doo\r\nOh, I want something just like this\r\nDoo-doo-doo, doo-doo-doo\r\nDoo-doo-doo, doo, doo\r\nDoo-doo-doo, doo, doo-doo\r\nWhere d'you wanna go? How much you wanna risk?\r\nI'm not looking for somebody with some superhuman gifts\r\nSome superhero, some fairy tale bliss\r\nJust something I can turn to, somebody I can kiss\r\nI want something just like this\r\nOh, I want something just like this\r\nOh, I want something just like this\r\nOh, I want something just like this",
   "createdAt": "2025-03-13T13:06:55.371Z",
   "p1": [
@@ -2728,5 +2732,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

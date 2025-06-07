@@ -4,7 +4,11 @@
   "kor_name": "에이비씨",
   "eng_name": "ABC",
   "vid": "Mtd24QIBJ5Y",
-  "artist": "Polyphia",
+  "artist": {
+    "ori_name": "Polyphia",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Someone call a paramedic\r\nI can't speak it's all phonetic\r\nMade me forget every word 'cause like that's a lot of letters\r\nABCDEFGHIJKLMNOPQRSTUVWXYZ\r\nNine one one, hello, it's me Sophia\r\nYes, this is an emergency\r\nYes, the way they put it down on me\r\nGot the whole room tipsy\r\nHyperventilating when\r\nWe be procreating\r\nWhere'd you learn to do that thing\r\nHow you hold the bat when you swing\r\nI don't think I can breathe\r\nI don't think I can be\r\nI don't think I can think\r\nI don't think I can see, fuck\r\nSomeone call a paramedic\r\nI can't speak it's all phonetic\r\nMade me forget every word 'cause like that's a lot of letters\r\nABCDEFGHIJKLMNOPQRSTUVWXYZ\r\nCut your pic out and put it my locket (wow, wow, wo)\r\nSo I could kiss you whenever I wanted\r\nHyperventilating when (oh)\r\nWe be procreating\r\nWhere'd you learn to do that thing (yeah)\r\nHow you hold the bat when you swing\r\nI don't think I can breathe\r\nI don't think I can be\r\nI don't think I can think\r\nI don't think I can see, shit\r\nSomeone call a paramedic\r\nI can't speak it's all phonetic\r\nMade me forget every word 'cause like that's a lot of letters\r\nABCDEFGHIJKLMNOPQRSTUVWXYZ\r\nあいうえお\r\nかきくけこ\r\nさしすせそ\r\nたちつてと\r\nなにぬねの (yeah)\r\nはひふへほ\r\nまみむめも\r\nやゐゆゑよ\r\nらりるれろ\r\nぱぴぷぺぽ\r\n「え ちょっと待って\r\nちょっと待って イケメンじゃない?\r\nイケメンだよね?\r\n無理 無理 無理 無理 無理\r\nヤバイ 超かっこいいんだけど\r\nなんか緊張しちゃう\r\nちょっと待って 無理 無理 絶対 無理\r\nヤバイんだけど」\r\nOh\r\nOoh\r\nYeah yeah yeah\r\nOh ooh (yeah)\r\nSomeone call a par-par-par\r\nCome on\r\nえへ woo\r\nABCDEFGHIJKLMNOPQRSTUVWXYZ\r\nあいうえお (oh yeah)\r\nかきくけこ\r\nさしすせそ (you got me)\r\nたちつてと (you got me)\r\nなにぬねの (forgetting all my words)\r\n(Yeah) はひふへほ\r\nまみむめも\r\nやゐゆゑよ\r\nらりるれろ\r\nぱぴぷぺぽ",
   "createdAt": "2025-03-13T05:00:46.195Z",
   "p1": [
@@ -5050,5 +5054,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

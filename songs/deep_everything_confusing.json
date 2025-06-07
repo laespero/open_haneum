@@ -4,7 +4,11 @@
   "kor_name": "모든 게 혼란스러워졌어",
   "eng_name": "Everything Became Confusing",
   "vid": "90i4GNHNTcM",
-  "artist": "等一下就回家",
+  "artist": {
+    "ori_name": "等一下就回家",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "现在是黄昏在长椅上背对着\r\n\r\n想着很多事情发生但不知道为何\r\n\r\nits time to wake up\r\n\r\n就算是“寂寞”我也不想再去打扰它\r\n\r\n朽木被繁华覆盖\r\n\r\n没有什么能够再来阻碍\r\n\r\n像是一团颜料被涂开\r\n\r\n脚踩进小河畔鱼绕开来游\r\n\r\nit‘s not the summer time she has already gone\r\n\r\n已经到傍晚 还没能放手\r\n\r\n脚步慢 霓虹滥\r\n\r\n此时行人不用在避开\r\n\r\nbefore I decide\r\n\r\n好像也不太意外\r\n\r\n可能本来就留不住你\r\n\r\n是我在避开\r\n\r\n把注意力转移开\r\n\r\n当初可能太依赖\r\n\r\n导致现在我拿不定主意\r\n\r\n现在是哪年\r\n\r\n很多东西都已变的贵\r\n\r\n不像在买股票\r\n\r\n还要大声的叫卖\r\n\r\n也不会倒带\r\n\r\n把大部分都淘汰\r\n\r\n爱情也不值钱\r\n\r\n还不如一颗包菜\r\n\r\n确实不一样但你没变所以\r\n\r\nLet them know\r\n\r\n喝点烂酒不一会儿又是一整宿\r\n\r\n会忘了间隔\r\n\r\n重复几遍了\r\n\r\n喔我的脸呢\r\n\r\n很多东西都在召唤\r\n\r\n但我只想饱饭一顿\r\n\r\n我需要去找个代言\r\n\r\n另有其人还在捣乱\r\n\r\n谁还真的关注比分\r\n\r\n本来就是离的太远\r\n\r\n别再皱眉头已经快\r\n\r\n久违了 但别理睬\r\n\r\n怎么都走对了\r\n\r\n旁人全部死开\r\n\r\n脚踩进小河畔鱼绕开来游\r\n\r\nit‘s not the summer time she has already gone\r\n\r\n已经到傍晚 还没能放手\r\n\r\n脚步慢 霓虹滥\r\n\r\n此时行人不用在避开\r\n\r\nBeforeIdecide\r\n\r\n好像也不太意外\r\n\r\n可能本来就留不住你\r\n\r\n是我在避开\r\n\r\n把注意力转移开\r\n\r\n当初可能太依赖\r\n\r\n导致现在我拿不定主意",
   "createdAt": "2025-03-07T19:42:57.504Z",
   "p1": [
@@ -4033,5 +4037,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

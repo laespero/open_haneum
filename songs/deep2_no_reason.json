@@ -4,7 +4,11 @@
   "kor_name": "이유 없이",
   "eng_name": "No Reason",
   "vid": "BJYKrL5pMfU",
-  "artist": "Ryan.B & Effie",
+  "artist": {
+    "ori_name": "永彬 & Effie",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
   "text": "没有人可以去等待\n不知不觉的放开你\n我们都没有那勇气\nBaby I'm sorry I'm so lonely\n我们都没有错与对\n找不到任何一个原因\n没有理由的离开\nBaby I'm sorry I'm so lonely\n看见信息不是不想回你\n只是我们的对话少了一些甜蜜\n看似很正常的语句 但透着距离\n我不知道该怎么对你 也许是正常的关系\n我每时每刻都在告诉自己\n我还是很爱你的只是Lonely\n不知道微信什么时候开始没有表情\n你的上班时间多了 没有那么多的高兴\n回想起来 刚开始的时间\n俩个人都在 都想办法离开 没有理由的\n没有人可以去等待\n不知不觉的放开你\n我们都没有那勇气\nBaby I'm sorry I'm so lonely\n我们都没有错与对\n找不到任何一个原因\n没有理由的离开\nBaby I'm sorry I'm so lonely\n理由 理由 理由 理由\n再多理由 无法挽留\n爱情 爱情 爱情 爱情\n再多理由 说停就停\n回想起来 刚开始的时间\n俩个人都在 都想办法离开 没有理由的\n没有人可以去等待\n不知不觉的放开你\n我们都没有那勇气\nBaby I'm sorry I'm so lonely\n我们都没有错与对\n找不到任何一个原因\n没有理由的离开\nBaby I'm sorry I'm so lonely\n没有人可以去等待\n不知不觉的放开你\n我们都没有那勇气\nBaby I'm sorry I'm so lonely\n我们都没有错与对\n找不到任何一个原因\n没有理由的离开\nBaby I'm sorry I'm so lonely\nI'm sorry I'm so lonely",
   "p1": [
     "没有人可以去等待",
@@ -2382,5 +2386,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

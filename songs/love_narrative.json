@@ -4568,5 +4568,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "吴子健Remi",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "热恋情节",
+  "kor_name": "사랑 이야기",
+  "eng_name": "Love Story",
+  "tags": [
+    "중국어"
+  ]
 }

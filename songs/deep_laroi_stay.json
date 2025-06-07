@@ -4,7 +4,11 @@
   "kor_name": "STAY",
   "eng_name": "STAY",
   "vid": "kTJczUoc26U",
-  "artist": "The Kid LAROI, Justin Bieber",
+  "artist": {
+    "ori_name": "The Kid LAROI, Justin Bieber",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I do the same thing I told you that I never would\r\nI told you I'd change, even when I knew I never could\r\nI know that I can't find nobody else as good as you\r\nI need you to stay, need you to stay, hey (oh)\r\nI get drunk, wake up, I'm wasted still\r\nI realize the time that I wasted here\r\nI feel like you can't feel the way I feel\r\nOh, I'll be f- up if you can't be right here\r\nOh, ooh-woah (oh, ooh-woah, ooh-woah)\r\nOh, ooh-woah (oh, ooh-woah, ooh-woah)\r\nOh, ooh-woah (Oh, ooh-woah, ooh-woah)\r\nOh, I'll be f- up if you can't be right here\r\nI do the same thing I told you that I never would\r\nI told you I'd change, even when I knew I never could\r\nI know that I can't find nobody else as good as you\r\nI need you to stay, need you to stay, hey\r\nI do the same thing I told you that I never would\r\nI told you I'd change, even when I knew I never could\r\nI know that I can't find nobody else as good as you\r\nI need you to stay, need you to stay, hey\r\nWhen I'm away from you, I miss your touch (ooh)\r\nYou're the reason I believe in love\r\nIt's been difficult for me to trust (ooh)\r\nAnd I'm afraid that I'ma f- it up\r\nAin't no way that I can leave you stranded\r\n'Cause you ain't ever left me empty-handed\r\nAnd you know that I know that I can't live without you\r\nSo, baby, stay\r\nOh, ooh-woah (oh, ooh-woah, ooh-woah)\r\nOh, ooh-woah (oh, ooh-woah, ooh-woah)\r\nOh, ooh-woah (oh, ooh-woah, ooh-woah)\r\nI'll be f- up if you can't be right here\r\nI do the same thing I told you that I never would\r\nI told you I'd change, even when I knew I never could\r\nI know that I can't find nobody else as good as you\r\nI need you to stay, need you to stay, hey\r\nI do the same thing I told you that I never would\r\nI told you I'd change, even when I knew I never could\r\nI know that I can't find nobody else as good as you\r\nI need you to stay, need you to stay, hey\r\nWoah-oh\r\nI need you to stay, need you to stay, hey",
   "createdAt": "2025-03-13T13:22:59.466Z",
   "p1": [
@@ -3013,5 +3017,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

@@ -1943,5 +1943,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "阿悠悠",
+    "kor_name": "아유유",
+    "eng_name": ""
+  },
+  "ori_name": "旧梦一场",
+  "kor_name": "구몽일장",
+  "eng_name": "An old dream",
+  "tags": [
+    "중국어"
+  ]
 }

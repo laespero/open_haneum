@@ -4,7 +4,11 @@
   "kor_name": "라라라 러브송",
   "eng_name": "La La La Love Song",
   "vid": "TGQuCyLvay8",
-  "artist": "久保田利伸",
+  "artist": {
+    "ori_name": "久保田利伸",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "まわれ まわれ メリーゴーラウンド\r\nもうけして止まらないように\r\n動き出したメロディ\r\nLa・la・la・la・la love song\r\nWanna make love,\r\nWanna make love song\r\nHey baby\r\nWanna make love,\r\nWanna make love song\r\nHey baby\r\nドシャ降りの午後を待って\r\n街に飛び出そう\r\n心に降る雨に\r\n傘をくれた君と\r\n「まっぴら!」と横向いて \r\n本音はウラハラ\r\nでも そのままでいい\r\nお互いさまだから\r\nめぐり会えた奇跡が\r\nYou make me feel brand new\r\n涙の色を変えた\r\nAnd I wanna love that's brand new\r\n息が止まるくらいの\r\n甘いくちづけをしようよ\r\nひと言もいらないさ\r\nとびきりの今を\r\n勇気をくれた君に\r\n照れてる場合じゃないから\r\n言葉よりも本気な\r\nla・la・la・la・la love song\r\nWanna make love,\r\nWanna make love song\r\nHey baby\r\nWanna make love,\r\nWanna make love song\r\nHey baby\r\n知らぬ間に落としてた \r\n小さなかけらを\r\n隙間なく抱きよせ\r\n肌でたしかめあう\r\n宇宙の見えない夜\r\nYou are my shinin' star\r\nかまわない 君が見える\r\nAnd I wanna be your shinin' star\r\nまわれ まわれ メリーゴーラウンド\r\nもうけして止まらないように\r\n動き出したメロディ\r\nla・la・la・la・la love song\r\nとめどなく楽しくて\r\nやるせないほど切なくて\r\nそんな朝に生まれる\r\n僕なりの love song\r\nためいきの前に\r\nここにおいでよ\r\n息が止まるくらいの\r\n甘いくちづけをしようよ\r\nひと言もいらないさ\r\nとびきりの今を\r\n勇気をくれた君に\r\n照れてる場合じゃないから\r\n言葉よりも本気な\r\nla・la・la・la・la love song\r\nLa・la・la・la・la・la・la・la\r\n",
   "createdAt": "2025-05-30T04:54:35.442Z",
   "p1": [
@@ -3380,5 +3384,8 @@
     231.4637,
     234.058591,
     269.651832
+  ],
+  "tags": [
+    "일본어"
   ]
 }

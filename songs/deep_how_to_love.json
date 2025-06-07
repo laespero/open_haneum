@@ -4,7 +4,11 @@
   "kor_name": "사랑하는 방법",
   "eng_name": "How To Love",
   "vid": "peByeoQhjMM",
-  "artist": "Cash Cash",
+  "artist": {
+    "ori_name": "Cash Cash",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "One two three\r\nI've been running from the pain\r\nTrying not to feel the same\r\nBut it's a shame that we're sinking\r\nSee, my confidence is shaking\r\nAnd my heart is feeling vacant\r\nSo you try to fill it in\r\nYou say, \"I could fix the broken in your heart\r\nYou're worth saving, darling\"\r\nBut I don't know why you're shooting in the dark\r\nI got faith in nothing\r\nBut love, pray for me\r\nI never had somebody\r\nSo I don't know how to love\r\nPray for me\r\nI know I need somebody\r\nSo I can learn how to love\r\nI know it's been a while\r\n'Cause my memory's on trial\r\nFor the way I used to be\r\nMy head is running miles\r\nRound in circles and I try\r\nTo find the little light in me\r\nYou say, \"I could fix the broken in your heart\r\nYou're worth saving, darling\"\r\nBut I don't know why you're shooting in the dark\r\nI got faith in nothing\r\nBut love, pray for me\r\nI never had somebody\r\nSo I don't know how to love\r\nPray for me\r\nI know I need somebody\r\nSo I can learn how to love\r\nI know I need somebody\r\nI know I need somebody\r\nI know I need somebody\r\nSo I can learn how to love\r\nHow to love\r\nHow to love\r\nSo I can learn how to love\r\nHow to love\r\nHow to love\r\nHow to love\r\nLove, love, love, love, love, love, oh\r\nI know I need somebody\r\nI know I need somebody\r\nI know I need somebody\r\nSo I can learn how to love\r\n(Need somebody now\r\nHow to love, love\r\nHow to love, love)",
   "createdAt": "2025-03-13T12:32:36.155Z",
   "p1": [
@@ -2773,5 +2777,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

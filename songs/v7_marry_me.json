@@ -2393,5 +2393,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
+  "ori_name": "Marry Me",
+  "kor_name": "결혼해줄래",
+  "eng_name": "",
+  "tags": [
+    "중국어"
+  ]
 }

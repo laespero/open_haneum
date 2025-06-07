@@ -1778,5 +1778,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
+  "ori_name": "放個大招給你看",
+  "kor_name": "필살기를 너에게 보여줄게",
+  "eng_name": "",
+  "tags": [
+    "중국어"
+  ]
 }

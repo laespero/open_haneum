@@ -4,7 +4,11 @@
   "kor_name": "나생문",
   "eng_name": "Rashomon",
   "vid": "GC-_tWEUIH8",
-  "artist": "梨冻紧",
+  "artist": {
+    "ori_name": "梨冻紧",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "我没转身\r\n一直走 一直梦\r\n一直疯 一直没停留\r\n那些美好的\r\n越靠近 越沉溺\r\n越来越 不想放手\r\nWherever you go\r\nWherever you go\r\nFollow\r\n每到晚上理智变得感性\r\n我编了这条短信\r\n说不在乎不过是我嘴硬\r\n总是期待你有什么反应\r\n对你没法保持那份冷静\r\n偷偷想着我们之间关系的远近\r\n我的心里没有任何的侥幸\r\n我知道我的爱对你来说就好像软禁\r\n我们都闭口不提\r\n这跨不过的距离\r\n我们不停的一再复习着\r\n那些感情里俗套的剧情\r\n你那里是怎么样的天气\r\n夜空是否还是那么透明\r\n我说的又开始不着了边际\r\n可是没有你我真的不行\r\n就请你\r\n把我当成贪得无厌\r\n把我当作得寸进尺\r\n每当难过表情在你脸上浮现\r\n我也难过得像照着一面镜子\r\n多么希望和你在一起的时间\r\n那些快乐可以突然静止\r\n多么希望时间可以快点\r\n带我和你一起体验生老和病死\r\n我想过下次会更好\r\n也开始更加了解了你的脾气\r\n可是下次 我们还是争吵\r\n下次可能还是不留余地\r\n我爱你不遗余力\r\n在爱里不停期待奇迹\r\n不忍看你这么痛苦\r\n又不愿离去\r\nand i will\r\nFollow\r\n\r\n一直走 一直梦\r\n一直疯 一直没停留\r\n那些美好的\r\n越靠近 越沉溺\r\n越来越 不想放手\r\nWherever you go\r\nWherever you go\r\nWherever you go\r\nWherever you go\r\n一直都搞不定自己的情绪在你走后\r\nWherever you go\r\njust want you to know\r\n你知道我的心一直都在原地为你等候\r\n其实对天气不感兴趣\r\n想知道你会不会太冷\r\n没法完成那份陪伴\r\n孤独你会不会在忍\r\n不知道想念你的痛苦\r\n来的到底会不会太准\r\n只知道当你不在床上\r\n我总是睡得不会太稳\r\n我们看惯了世间的罗生门\r\n变得好像陌生人\r\n两颗同样不安的心脏被塞进了同一个摩天轮\r\n每次拥抱停留在清晨\r\n窗外大雨在倾盆\r\n我们好像巨大城市里面两个相爱的外星人\r\n可我不想生活在套路里\r\n想把心事都告诉你\r\n我想要一直照顾你\r\n又总害怕你耗不起\r\n滴答的秒针又在\r\n提醒我爱你几分\r\n只要听到你的声音\r\n我一定会为你转身\r\n一直走 一直梦\r\n一直疯 一直没停留\r\n那些美好的\r\n越靠近 越沉溺\r\n越来越 不想放手\r\nWherever you go\r\nWherever you go",
   "createdAt": "2025-01-14T04:37:47.196Z",
   "p1": [
@@ -6582,5 +6586,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

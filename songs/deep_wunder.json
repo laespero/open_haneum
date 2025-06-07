@@ -4613,5 +4613,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "AYLIVA x APACHE 207",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Wunder",
+  "kor_name": "궁금해",
+  "eng_name": "Wonder",
+  "tags": [
+    "독일어"
+  ]
 }

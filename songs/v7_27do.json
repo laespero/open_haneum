@@ -3293,5 +3293,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
+  "ori_name": "27度",
+  "kor_name": "27도",
+  "eng_name": "twenty-seven degrees",
+  "tags": [
+    "중국어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "잠 못 이루는 밤",
   "eng_name": "WHITE NIGHT",
   "vid": "UP3b94kLH5M",
-  "artist": "张杰",
+  "artist": {
+    "ori_name": "张杰",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "车窗外 这夜色 流光溢彩\r\n\r\n别忘了 闭上眼 才算醒来\r\n\r\n你参演 这场戏 变换姿态\r\n\r\n谜底 结局 我该 怎么猜\r\n\r\n记忆是梦的开场白\r\n\r\n伤疤被掩盖 昨日还在\r\n\r\n时间在静候你醒来\r\n\r\nTake me away\r\n\r\n别再破碎 别再枯萎\r\n\r\n继续沉醉 自我迂回\r\n\r\n最后品味 永恒的滋味\r\n\r\n下一场那夜的梦 再相会\r\n\r\n越是虚伪 越是完美\r\n\r\n美梦入睡 绝望轮回\r\n\r\n一闭一睁 便开始倒退\r\n\r\n下一场那夜的梦 再相会\r\n\r\n伏笔没解开 悬念还在\r\n\r\n时间在静候你醒来\r\n\r\nSing with me\r\n\r\n别再破碎 别再枯萎\r\n\r\n继续沉醉 自我迂回\r\n\r\n最后品味 永恒的滋味\r\n\r\n来一场不眠之夜 作结尾\r\n\r\n越要快乐 越要破溃\r\n\r\n是是非非 别再意会\r\n\r\n忘记时间 来梦的派对\r\n\r\n来一场不眠之夜 作结尾",
   "createdAt": "2025-01-01T20:28:43.701Z",
   "p1": [
@@ -1978,5 +1982,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

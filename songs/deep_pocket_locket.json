@@ -4,7 +4,11 @@
   "kor_name": "포켓 로켓",
   "eng_name": "Pocket Locket",
   "vid": "rMz1a078R0U",
-  "artist": "Alaina Castillo",
+  "artist": {
+    "ori_name": "Alaina Castillo",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "One day he will be mine\r\nI'm your type, I'm the vibe\r\nFantasize, stay the night\r\nEvery night, I can keep all your secrets in my pocket locket\r\nAnd then I keep ya held down when I lock and drop it\r\nYeah, you be sly, that's all right\r\nI don't mind, you be cruel\r\nI'll survive, playing that hard to get love showing no affection\r\nI know it's hard to keep up with my good intention\r\nYou must think I'm mad to need ya\r\nThey must think I'll never leave ya\r\nI don't see my love as weakness\r\nI know in the end you'll be the one, one, one\r\nRight now I bet you think you've got me in the palm of your hands\r\nGive me no love, you get that good love, hope that you don't regret\r\nTaking so long to see that I'm the best thing you'll ever have\r\nCome get that love, boy, get that good love, baby, while you still can\r\nI'm the shit, I'm a trip\r\nTake a sip, watch it drip from your lip\r\nKnow that I can keep you held down with my little finger\r\nAnd I would do it all day just to let you linger\r\nYou know that I would take the time\r\nTo let you ride, let you try to do me right\r\nHoping that you're learnin' real quick, asking all the questions\r\n'Cause if you push me too far, you gon' learn your lesson\r\nYou must think I'm mad to need ya\r\nThey must think I'll never leave ya\r\nI don't see my love as weakness\r\nI know in the end you'll be the one, one, one\r\nRight now I bet you think you've got me in the palm of your hands\r\nGive me no love, you get that good love, hope that you don't regret\r\nTaking so long to see that I'm the best thing you'll ever have\r\nCome get that love, boy, get that good love, baby, while you still can\r\nOh, baby, while you still can\r\nThat love, boy, get that good love\r\nWhile you still can, oh, yeah\r\nCome get that love, boy, get that good love\r\nWhile you still can",
   "createdAt": "2025-03-13T03:20:33.757Z",
   "p1": [
@@ -4603,5 +4607,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

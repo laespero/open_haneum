@@ -4,7 +4,11 @@
   "kor_name": "날 막을 수 있는 건 없어",
   "eng_name": "There's Nothing Holdin' Me Back",
   "vid": "dT2owtxkU8k",
-  "artist": "Shawn Mendes",
+  "artist": {
+    "ori_name": "Shawn Mendes",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I wanna follow where she goes\r\nI think about her and she knows it\r\nI wanna let her take control\r\n'Cause every time that she gets close, yeah\r\nShe pulls me in enough to keep me guessin', hm\r\nAnd maybe I should stop and start confessin'\r\nConfessin', yeah\r\nOh, I've been shakin', I love it when you go crazy\r\nYou take all my inhibitions\r\nBaby, there's nothing holdin' me back\r\nYou take me places that tear up my reputation\r\nManipulate my decisions\r\nBaby, there's nothing holdin' me back\r\nThere's nothing holdin' me back\r\nThere's nothing holdin' me back\r\nShe says that she's never afraid\r\nJust picture everybody naked\r\nShe really doesn't like to wait\r\nNot really into hesitation\r\nPulls me in enough to keep me guessin', whoa\r\nAnd maybe I should stop and start confessin'\r\nConfessin', yeah\r\nOh, I've been shakin', I love it when you go crazy\r\nYou take all my inhibitions\r\nBaby, there's nothing holdin' me back\r\nYou take me places that tear up my reputation\r\nManipulate my decisions\r\nBaby, there's nothing holdin' me back\r\nThere's nothing holdin' me back\r\n'Cause if we lost our minds and we took it way too far\r\nI know we'd be alright, I know we would be alright\r\nIf you were by my side and we stumbled in the dark\r\nI know we'd be alright, I know we would be alright\r\n'Cause if we lost our minds and we took it way too far\r\nI know we'd be alright, I know we would be alright\r\nIf you were by my side and we stumbled in the dark\r\nI know we'd be alright, we would be alright\r\nOh, I've been shakin', I love it when you go crazy\r\nYou take all my inhibitions\r\nBaby, there's nothing holdin' me back\r\nYou take me places that tear up my reputation\r\nManipulate my decisions\r\nBaby, there's nothing holdin' me back, oh-whoa\r\nThere's nothing holdin' me back\r\nI feel so free when you're with me, baby\r\nBaby, there's nothing holdin' me back",
   "createdAt": "2025-03-13T13:20:19.372Z",
   "p1": [
@@ -3028,5 +3032,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

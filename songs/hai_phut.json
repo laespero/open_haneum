@@ -1973,5 +1973,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Pháo",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "2 Phút Hơn",
+  "kor_name": "2분 더",
+  "eng_name": "2 Minutes More",
+  "tags": [
+    "베트남어"
+  ]
 }

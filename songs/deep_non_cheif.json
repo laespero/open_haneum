@@ -4,7 +4,11 @@
   "kor_name": "운이 없는 사람",
   "eng_name": "Non-Chief",
   "vid": "aLew-F7Vfrw",
-  "artist": "薛明媛",
+  "artist": {
+    "ori_name": "薛明媛",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "感觉到好炽热\r\n刚好是你经过\r\n眼神表现洒脱\r\n手却不自主地\r\n打招呼该如何\r\n一下子全忘了\r\n明明都想好的\r\n脑袋全空白了\r\n接下来该怎么做\r\n是言语还是慢动作\r\n好像都不太好说\r\n尴尬症该怎么破\r\n还不如就直接做\r\n为什么要想那么多\r\n多制造一点巧合\r\n不算最坏的结果\r\n如果天突然下起了雨我不会避躲\r\n因为我知道有一个人会守护着我\r\n就算有一天彗星突然撞向了地球\r\n没关系 只要有你 我的非酋\r\n我从来都没有这种嗜好\r\n就是照顾哪个女生一直慢慢变老\r\n自从你说我这个怂货是你的依靠\r\n我的心情就开始慢慢变好\r\n你说你是街角盛开的野蔷薇\r\n而我傻傻只当你是朵玫瑰\r\n就算你被全世界的坏人包围\r\n看我化身超人一一把他们击退\r\n感觉到好炽热\r\n刚好是你经过\r\n眼神表现洒脱\r\n手却不自主地\r\n打招呼该如何\r\n一下子全忘了\r\n明明都想好的\r\n脑袋全空白了\r\n接下来该怎么做\r\n是言语还是慢动作\r\n好像都不太好说\r\n尴尬症该怎么破\r\n还不如就直接做\r\n为什么要想那么多\r\n多制造一点巧合\r\n不算最坏的结果\r\n如果天突然下起了雨我不会避躲\r\n因为我知道有一个人会守护着我\r\n就算有一天彗星突然撞向了地球\r\n没关系 只要有你 我的非酋\r\nYou are the best special one for me\r\nYou are the best special one for me\r\nYou are the best special one for me\r\nYou are the best special one for me",
   "createdAt": "2025-01-02T22:05:24.378Z",
   "p1": [
@@ -2953,5 +2957,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

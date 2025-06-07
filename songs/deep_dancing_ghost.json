@@ -4,7 +4,11 @@
   "kor_name": "너의 유령과 춤을",
   "eng_name": "Dancing With Your Ghost",
   "vid": "lAJazaLrHfQ",
-  "artist": "Sasha Alex Sloan",
+  "artist": {
+    "ori_name": "Sasha Alex Sloan",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Yelling at the sky\r\nScreaming at the world\r\nBaby, why'd you go away?\r\nI'm still your girl\r\nHolding on too tight\r\nHead up in the clouds\r\nHeaven only knows where you are now\r\nHow do I love, how do I love again?\r\nHow do I trust, how do I trust again?\r\nI stay up all night, tell myself I'm alright\r\nBaby, you're just harder to see than most\r\nI put the record on, wait 'til I hear our song\r\nEvery night, I'm dancing with your ghost\r\nEvery night, I'm dancing with your ghost\r\nNever got the chance\r\nTo say a last goodbye\r\nI gotta move on\r\nBut it hurts to try\r\nHow do I love, how do I love again?\r\nHow do I trust, how do I trust again?\r\nI stay up all night, tell myself I'm alright\r\nBaby, you're just harder to see than most\r\nI put the record on, wait 'til I hear our song\r\nEvery night, I'm dancing with your ghost\r\nEvery night, I'm dancing with your ghost\r\nHow do I love, how do I love again?\r\nHow do I trust, how do I trust again?\r\nI stay up all night, tell myself I'm alright\r\nBaby, you're just harder to see than most\r\nI put the record on, wait 'til I hear our song\r\nEvery night, I'm dancing with your ghost\r\nEvery night, I'm dancing with your ghost\r\nEvery night, I'm dancing with your ghost",
   "createdAt": "2025-01-14T03:46:40.110Z",
   "p1": [
@@ -1813,5 +1817,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

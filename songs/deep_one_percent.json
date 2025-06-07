@@ -4,7 +4,11 @@
   "kor_name": "1퍼센트",
   "eng_name": "One Percent",
   "vid": "Gz5IWFwz2mI",
-  "artist": "薛黛霏",
+  "artist": {
+    "ori_name": "薛黛霏",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "拨不通的电话在哔声后留言 alright\r\n\r\n只剩 one percent的期待\r\n\r\n就在这一刻崩坏\r\n\r\n在失眠的凌晨三点\r\n\r\n一个人徘徊在原点\r\n\r\n对话框的字里行间\r\n\r\n已被消耗完全\r\n\r\n像是在无止尽的充电一次次落空\r\n\r\n我们只剩下 one percent\r\n\r\n心知肚明这结果漫无目的的拖\r\n\r\n我们只剩下 one percent\r\n\r\n接线让它持航\r\n\r\n多些时间也好\r\n\r\n就让它无止尽的充至最后一分钟\r\n\r\n我们只剩下 one percent\r\n\r\n拨不通的电话在彼岸那端静侯处决等待\r\n\r\n哔哔无人接听\r\n\r\n只剩下一瓶酒精我还是分不清\r\n\r\n在失眠的凌晨三点\r\n\r\n一个人徘徊在原点\r\n\r\n对话框的字里行间\r\n\r\n已被消耗完全\r\n\r\n像是在无止尽的充电一次次落空\r\n\r\n我们只剩下 one percent\r\n\r\n心知肚明这结果漫无目的的拖\r\n\r\n我们只剩下 one percent\r\n\r\n接线让它持航\r\n\r\n多些时间也好\r\n\r\n就让它无止尽的充至最后一分钟\r\n\r\n我们只剩下 one percent\r\n\r\n像是在无止尽的充电一次次落空\r\n\r\n我们只剩下 one percent\r\n\r\n心知肚明这结果漫无目的的拖\r\n\r\n我们只剩下 one percent\r\n\r\n接线让它持航\r\n\r\n多些时间也好\r\n\r\n就让它无止尽的充至最后一分钟\r\n\r\n我们只剩下 one percent",
   "createdAt": "2025-01-09T00:24:19.797Z",
   "p1": [
@@ -1543,5 +1547,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "여름밤 바람",
   "eng_name": "Summer Night Breeze",
   "vid": "W7de3OERc_o",
-  "artist": "xxxmiracle, Aioz",
+  "artist": {
+    "ori_name": "xxxmiracle, Aioz",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "放纵 每个夏天\r\n与你 惬意的互动\r\n逗逗 你的眉眼\r\n感受 你给的温柔\r\n有你 陪在身边\r\n吹夏日的晚风\r\nOh my girl\r\nOh\r\n放纵 每个夏天\r\n与你 惬意的互动\r\n逗逗 你的眉眼\r\n一切 悠然的轻松\r\n有你 陪在身边\r\n吹夏日的晚风\r\nOh my girl\r\nOh\r\nHey girl 打包你的行李跟我去兜风\r\n开着电瓶 只需要那几分钟\r\n你从后面抱住我 在我耳边告诉我\r\n说你想要 躺在海边壁咚咚\r\n喜欢看你 灿烂的天真\r\n心里此刻 正在泛滥着坚贞\r\n我的baby 善良是天生\r\n让我放下顾虑做你 浪漫的先生\r\n不要害怕 没说瞎话 穿上婚纱\r\n让我陪你玩过家家\r\n为你埋下 我的情话\r\n这场游戏不会结束 到老眼昏花\r\nIn the night 想要被你疼爱\r\n我的爱 永远为你存在\r\n怎么办 好像无法再离开\r\n我爱上了你 这让我心潮澎湃\r\n放纵 每个夏天\r\n与你 惬意的互动\r\n逗逗 你的眉眼\r\n感受 你给的温柔\r\n有你 陪在身边\r\n吹夏日的晚风\r\nOh my girl\r\nOh\r\n放纵 每个夏天\r\n与你 惬意的互动\r\n逗逗 你的眉眼\r\n一切 悠然的轻松\r\n有你 陪在身边\r\n吹夏日的晚风\r\nOh my girl\r\nOh\r\n想带你兜风不管春夏秋冬\r\n悄悄的进入你的梦乡我是周公\r\n不再是偷偷我想要与你沟通\r\n把甜言蜜语藏在风中烦恼抽空\r\n请你乖乖 在我怀里待着\r\n给你的爱 就像热天的fire\r\n每一刻在 你身边就是爱河\r\n把你双手交给我 你不用再去猜测\r\n海浪 沐浴着阳光\r\n你我 慵懒躺沙滩上\r\n水手控制着船桨\r\n摇曳掀起彩虹波浪\r\n夏日晚风很清凉\r\n放纵 每个夏天\r\n与你 惬意的互动\r\n逗逗 你的眉眼\r\n感受 你给的温柔\r\n有你 陪在身边\r\n吹夏日的晚风\r\nOh my girl\r\nOh\r\n放纵 每个夏天\r\n与你 惬意的互动\r\n逗逗 你的眉眼\r\n一切 悠然的轻松\r\n有你 陪在身边\r\n吹夏日的晚风\r\nOh my girl\r\nOh",
   "createdAt": "2025-01-09T02:17:52.410Z",
   "p1": [
@@ -3883,5 +3887,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

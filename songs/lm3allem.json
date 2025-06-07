@@ -713,5 +713,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Saad Lamjarred",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "LM3ALLEM",
+  "kor_name": "선생님",
+  "eng_name": "master",
+  "tags": [
+    "아랍어"
+  ]
 }

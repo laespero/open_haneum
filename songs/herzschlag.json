@@ -1,6 +1,6 @@
 {
   "name": "herzschlag",
-  "vid":"QEMX_kFcaYc",
+  "vid": "QEMX_kFcaYc",
   "text": "Bist du auch grad an dei'm Handy?\nLiest die Nachrichten von mir\nDie du seit 72 einhalb Stunden ignorierst\nEy, zwischen uns steht immer dieser rosa Elefant\nHast du den nich' erkannt?\nWas sagt dir dein Herzschlag, wenn du mich siehst?\nVerdammt es ist schwer, wenn man immer nur gibt\nSolang dir nicht klar wird, was das mit uns ist\nWerd ich darauf warten, bis du mich vergisst\nFür 'ne Sekunde dacht ich, dass da was war\nDoch in der nächsten bin ich dir dann egal\nSolang dir nicht klar wird, was das mit uns ist\nWerd ich darauf warten, bis du mich vergisst\nIch schick dir Briefe übers Meer\nUnd paar Tauben hinterher\nUnd ist selbst das nicht gut genug\nHab ich's wenigstens versucht\nRuf 110 und 112\nDoch die komm'n nicht mehr vorbei\nWaren 15 Mal schon hier\nKriegen mich nich' repariert\nHältst mein Herz gefang'n und lässt nicht los\nIch glaub, ich geh daran bald k. o., oh, oh, oh, oh\nWas sagt dir dein Herzschlag, wenn du mich siehst?\nVerdammt es ist schwer, wenn man immer nur gibt\nSolang dir nicht klar wird, was das mit uns ist\nWerd ich darauf warten, bis du mich vergisst\nFür 'ne Sekunde dacht ich, dass da was war\nDoch in der nächsten bin ich dir dann egal\nSolang dir nicht klar wird, was das mit uns ist\nWerd ich darauf warten, bis du mich vergisst",
   "p1": [
     "Bist du auch grad an dei'm Handy?",
@@ -2423,5 +2423,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "ELEHA",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Herzschlag",
+  "kor_name": "심장 박동",
+  "eng_name": "Heartbeat",
+  "tags": [
+    "독일어"
+  ]
 }

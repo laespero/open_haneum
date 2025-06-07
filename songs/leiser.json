@@ -3022,5 +3022,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "LEA",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "rnzIN9H_G10",
+  "ori_name": "Leiser",
+  "kor_name": "더 조용하다",
+  "eng_name": "Quieter",
+  "tags": [
+    "독일어"
+  ]
 }

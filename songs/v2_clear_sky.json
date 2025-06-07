@@ -2483,5 +2483,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "苏星婕, 王忻辰",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "清空",
+  "kor_name": "비우기",
+  "eng_name": "Clear",
+  "tags": [
+    "중국어"
+  ]
 }

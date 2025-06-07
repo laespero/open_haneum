@@ -4,7 +4,11 @@
   "kor_name": "너가 이유야",
   "eng_name": "You Are The Reason",
   "vid": "ShZ978fBl6Y",
-  "artist": "Calum Scott",
+  "artist": {
+    "ori_name": "Calum Scott",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "There goes my heart beating\r\n'Cause you are the reason\r\nI'm losing my sleep\r\nPlease come back now\r\nAnd there goes my mind racing\r\nAnd you are the reason\r\nThat I'm still breathing\r\nI'm hopeless now\r\nI'd climb every mountain\r\nAnd swim every ocean\r\nJust to be with you\r\nAnd fix what I've broken\r\nOh, 'cause I need you to see\r\nThat you are the reason\r\nThere goes my hands shaking\r\nAnd you are the reason\r\nMy heart keeps bleeding\r\nI need you now\r\nAnd if I could turn back the clock\r\nI'd make sure the light defeated the dark\r\nI'd spend every hour, of every day\r\nKeeping you safe\r\nAnd I'd climb every mountain\r\nAnd swim every ocean\r\nJust to be with you\r\nAnd fix what I've broken\r\nOh, 'cause I need you to see\r\nThat you are the reason\r\nI don't wanna fight no more\r\nI don't wanna hide no more\r\nI don't wanna cry no more\r\nCome back I need you to hold me (you are the reason)\r\nBe a little closer now\r\nJust a little closer now\r\nCome a little closer\r\nI need you to hold me tonight\r\nI'd climb every mountain\r\nAnd swim every ocean\r\nJust to be with you\r\nAnd fix what I've broken\r\n'Cause I need you to see\r\nThat you are the reason",
   "createdAt": "2025-03-13T13:10:44.676Z",
   "p1": [
@@ -2968,5 +2972,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

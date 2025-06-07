@@ -1597,5 +1597,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Νίκος Οικονομόπουλος",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "MNfc4-M7_JE",
+  "ori_name": "Βαλ' Το Τέρμα",
+  "kor_name": "그걸 끝내라",
+  "eng_name": "Put an End to It",
+  "tags": [
+    "그리스어"
+  ]
 }

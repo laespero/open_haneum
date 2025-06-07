@@ -4,7 +4,11 @@
   "kor_name": "모르는 게 약",
   "eng_name": "The Less I Know The Better",
   "vid": "2SUwOgmvzK4",
-  "artist": "Tame Impala",
+  "artist": {
+    "ori_name": "Tame Impala",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Someone said they left together\r\nI ran out the door to get her\r\nShe was holding hands with Trevor\r\nNot the greatest feeling ever\r\nSaid, \"Pull yourself together\r\nYou should try your luck with Heather\"\r\nThen I heard they slept together\r\nOh, the less I know the better\r\nThe less I know the better\r\nOh, my love, can't you see yourself by my side?\r\nNo surprise when you're on his shoulder like every night\r\nOh, my love, can't you see that you're on my mind?\r\nDon't suppose you could convince your lover to change his mind?\r\nSo goodbye\r\nShe said, \"It's not now or never\r\nWait ten years, we'll be together\"\r\nI said, \"Better late than never\r\nJust don't make me wait forever\"\r\nDon't make me wait forever\r\nDon't make me wait forever\r\nOh, my love, can't you see yourself by my side?\r\nI don't suppose you could convince your lover to change his mind?\r\nI was doin' fine without you\r\n'Til I saw your face, now I can't erase\r\nGivin' in to all his bullshit\r\nIs this what you want? is this who you are?\r\nI was doin' fine without you\r\n'Til I saw your eyes turn away from mine\r\nOh, sweet darling, where he wants you\r\nSaid, \"Come on Superman, say your stupid line\"\r\nSaid, \"Come on Superman, say your stupid line\"\r\nSaid, \"Come on Superman, say your stupid line\"",
   "createdAt": "2025-05-15T05:41:13.574Z",
   "p1": [
@@ -3355,5 +3359,8 @@
       "O0": "Oh, my love, can't you see that you're on my mind?"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

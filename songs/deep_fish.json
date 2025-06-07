@@ -4,7 +4,11 @@
   "kor_name": "나는 한 마리 물고기",
   "eng_name": "I Am a Fish",
   "vid": "orVfKtnGvxg",
-  "artist": "Yihuik苡慧",
+  "artist": {
+    "ori_name": "Yihuik苡慧",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "可不可以不想你\r\n\r\n我需要振作一下\r\n\r\n七八九月的天气\r\n\r\n像我和你需要下一场雨\r\n\r\n需要你 我是一只鱼\r\n\r\n水里的空气\r\n\r\n是你小心眼和坏脾气\r\n\r\n没有你 像离开水的鱼\r\n\r\n快要活不下去\r\n\r\n不能在一起游来游去\r\n\r\n能不能让你清醒\r\n\r\n爱是快乐的事情\r\n\r\n我只有真心而已\r\n\r\n世界末日我都不会离去\r\n\r\n需要你 我是一只鱼\r\n\r\n水里的空气\r\n\r\n是你小心眼和坏脾气\r\n\r\n没有你 像离开水的鱼\r\n\r\n快要活不下去\r\n\r\n不能在一起游来游去\r\n\r\n我是一只站在岸上的鱼\r\n\r\n如何能忘记曾经活在海里\r\n\r\n曾经我活在你的生命\r\n\r\n需要你 我是一只鱼\r\n\r\n水里的空气\r\n\r\n是你小心眼和坏脾气\r\n\r\n没有你\r\n\r\n像离开水的鱼\r\n\r\n快要活不下去\r\n\r\n为什么不能在一起\r\n\r\n需要你 我是一只鱼\r\n\r\n水里的空气\r\n\r\n是你小心眼和坏脾气\r\n\r\n没有你\r\n\r\n像离开水的鱼\r\n\r\n快要活不下去\r\n\r\n不能在一起游来游去",
   "createdAt": "2025-01-16T09:25:59.442Z",
   "p1": [
@@ -1828,5 +1832,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

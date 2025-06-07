@@ -2959,5 +2959,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Shawn Mendes, Camila Cabello",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "Pkh8UtuejGw",
+  "ori_name": "Señorita",
+  "kor_name": "세뇨리따",
+  "eng_name": "Miss",
+  "tags": [
+    "영어"
+  ]
 }

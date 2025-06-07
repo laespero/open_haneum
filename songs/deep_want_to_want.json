@@ -4,7 +4,11 @@
   "kor_name": "원 투 원 미",
   "eng_name": "Want To Want Me",
   "vid": "rClUOdS5Zyw",
-  "artist": "Jason Derulo",
+  "artist": {
+    "ori_name": "Jason Derulo",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "It's too hot to sleep\r\nI got the sheets on the floor, nothin' on me\r\nAnd I can't take it no more, it's 100 degrees\r\nI got one foot out the door, where are my keys?\r\n'Cause I gotta leave, yeah\r\nIn the back of the cab\r\nI tip the driver 'head of time\r\nGet me there fast (uh)\r\nI got your body on my mind\r\nI want it bad\r\nOh, just the thought of you\r\nGets me so high\r\nSo high\r\nGirl, you're the one I want to want me\r\nAnd if you want me, girl, you got me\r\nThere's nothing I, no, I wouldn't do (I wouldn't do)\r\nJust to get up next to you\r\nGirl, you're the one I want to want me\r\nAnd if you want me, girl, you got me\r\nThere's nothing I, no, I wouldn't do (I wouldn't do)\r\nJust to get up next to you\r\nOoh-oh-oh-ooh-oh-ooh\r\nJust to get up next to you (oh-oh-oh-ooh-oh-oh-ooh-oh-ooh)\r\n(Oh, yeah)\r\nYou open the door\r\nWearing nothing but a smile\r\nFell to the floor (uh)\r\nAnd you whisper in my ear\r\n\"Baby, I'm yours\" (oh)\r\nOh, just the thought of you\r\nGets me so high (so high)\r\nSo high\r\nGirl, you're the one I want to want me\r\nAnd if you want me, girl, you got me\r\nThere's nothing I, no, I wouldn't do (I wouldn't do)\r\nJust to get up next to you\r\nGirl, you're the one I want to want me (uh)\r\nAnd if you want me, girl, you got me\r\nThere's nothing I, no, I wouldn't do (I wouldn't do)\r\nJust to get up next to you\r\nOoh-oh-oh-ooh-oh-ooh (yeah)\r\nJust to get up next to you (ooh-oh-oh-ooh-oh-oh-ooh-oh-ooh)\r\nJust the thought of you\r\nGets me so high\r\nSo high\r\nOh, just the thought of you, woah\r\nGets me so high\r\nSo high\r\nGirl, you're the one I want to want me (girl, I want you)\r\nAnd if you want me, girl, you got me (you got me)\r\nThere's nothing I, no, I wouldn't do (I wouldn't do)\r\nJust to get up next to you (oh-oh)\r\nGirl, you're the one I want to want me\r\nAnd if you want me, girl, you got me\r\nThere's nothing I, no, I wouldn't do (oh no, I wouldn't do)\r\nJust to get up next to you (oh-oh)\r\nI would do anything\r\nJust to get up next to you (oh-oh-oh-ooh-oh-oh-ooh-oh-ooh)\r\nAnything and everything\r\nJust to get up next to you (oh-oh-ooh-oh-oh-ooh-oh-ooh, baby)\r\nJust to get up next to you (oh-oh-oh-ooh-oh-oh-ooh-oh-ooh)\r\nGet up, get up",
   "createdAt": "2025-03-13T13:21:38.176Z",
   "p1": [
@@ -4543,5 +4547,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

@@ -3563,5 +3563,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Teddy Swims",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Lose Control",
+  "kor_name": "통제력을 잃어",
+  "eng_name": "",
+  "tags": [
+    "영어"
+  ]
 }

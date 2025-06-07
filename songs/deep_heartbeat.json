@@ -4,7 +4,11 @@
   "kor_name": "심장 박동의 증명",
   "eng_name": "Proof of Heartbeat",
   "vid": "5xDFEP9_GCk",
-  "artist": "刘人语",
+  "artist": {
+    "ori_name": "刘人语",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "我和你的距离\r\n一眼无法看清\r\n所有复杂情绪\r\n莫名都因为你\r\n\r\n我以为的差距\r\n不过是背对而已\r\n平行线交汇的瞬间\r\n是你才有的奇迹\r\n\r\n每一次 再一次 你慢慢地靠近\r\n告诉我 这是心跳的证明\r\n那些回忆 很清晰\r\n谁都不能否定\r\n在我心中写满你的名\r\n\r\n我以为的差距\r\n不过是背对而已\r\n两个世界的交界\r\n转过身就跨越\r\n\r\nI miss you I miss you 你慢慢地靠近\r\n我承认 这是心跳的证明\r\n这次换我 走向你\r\n这不是恶作剧\r\n你是我最难解的一道题\r\n\r\nI miss You\r\n你是我唯一想要的决定\r\n\r\n每一次 再一次 你慢慢地靠近\r\n告诉我 这是命中的注定\r\n我在这里 等着你\r\n这不是恶作剧\r\n你是我最难解的一道题",
   "createdAt": "2024-12-31T14:46:50.327Z",
   "p1": [
@@ -2203,5 +2207,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

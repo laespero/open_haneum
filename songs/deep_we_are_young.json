@@ -4,7 +4,11 @@
   "kor_name": "우리는 젊다",
   "eng_name": "We Are Young",
   "vid": "Sv6dMFF_yts",
-  "artist": "Fun.",
+  "artist": {
+    "ori_name": "Fun.",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Give me a second I\r\nI need to get my story straight\r\nMy friends are in the bathroom getting higher than the Empire State\r\nMy lover she's waiting for me just across the bar\r\nMy seat's been taken by some sunglasses asking 'bout a scar, and\r\nI know I gave it to you months ago\r\nI know you're trying to forget\r\nBut between the drinks and subtle things\r\nThe holes in my apologies, you know\r\nI'm trying hard to take it back\r\nSo if by the time the bar closes\r\nAnd you feel like falling down\r\nI'll carry you home\r\nTonight\r\nWe are young\r\nSo let's set the world on fire\r\nWe can burn brighter than the sun\r\nTonight\r\nWe are young\r\nSo let's set the world on fire\r\nWe can burn brighter than the sun\r\nNow I know that I'm not\r\nAll that you got\r\nI guess that I, I just thought\r\nMaybe we could find new ways to fall apart\r\nBut our friends are back\r\nSo let's raise a cup\r\n'Cause I found someone to carry me home\r\nTonight\r\nWe are young\r\nSo let's set the world on fire\r\nWe can burn brighter than the sun\r\nTonight\r\nWe are young\r\nSo let's set the world on fire\r\nWe can burn brighter than the sun\r\nCarry me home tonight (na na na na na na)\r\nJust carry me home tonight (na na na na na na)\r\nCarry me home tonight (na na na na na na)\r\nJust carry me home tonight (na na na na na na)\r\nThe moon is on my side (na na na na na na)\r\nI have no reason to run (na na na na na na)\r\nSo will someone come and carry me home tonight (na na na na na na)\r\nThe angels never arrived (na na na na na na)\r\nBut I can hear the choir (na na na na na na)\r\nSo will someone come and carry me home (na na na na na na)\r\nTonight\r\nWe are young\r\nSo let's set the world on fire\r\nWe can burn brighter than the sun\r\nTonight\r\nWe are young\r\nSo let's set the world on fire\r\nWe can burn brighter than the sun\r\nSo if by the time the bar closes\r\nAnd you feel like falling down\r\nI'll carry you home tonight",
   "createdAt": "2025-03-13T12:34:31.441Z",
   "p1": [
@@ -4207,5 +4211,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "weisses_kleid",
-  "vid":"SRGiqiFtEZ0",
+  "vid": "SRGiqiFtEZ0",
   "text": "Ja, ich will weiße Tauben, weißes Kleid\nWas ich will, sind wir zwei für die Ewigkeit\nJa, ich will weiße Rosen, weißes Kleid\nUnd ich will Freudentränen, weil Mama weint\nWill, dass meine besten Freunde uns're Trauzeugen sind\nIch will Gold in seinen Augen und 'nen silbernen Ring\nIch will alles genau so, wie ich's erträumt hab' als Kind\nDenn wir beide waren schon immer füreinander bestimmt\nIch will alles, wirklich alles mit dir teilen\nWill die guten und auch schlechten Zeiten\nWill beim Liebemachen mich nicht mehr beeilen\nIch will mehr von dir\nJa, ich will weiße Tauben, weißes Kleid\nWas ich will, sind wir zwei für die Ewigkeit\nJa, ich will weiße Rosen, weißes Kleid\nUnd ich will Freudentränen, weil Mama weint\nNicht mehr viel Schritte, die vor uns liegen\nDu plus ich ist gleich ewige Liebe\nJa, ich will weiße Tauben, weißes Kleid\nWas ich will, sind wir zwei für die Ewigkeit\nIch will Papa an dem Tag zum ersten Mal weinen sehen\nUnd dass Oma zu mir sagt: „Mensch, dass ich das noch erleb'“\nWill von diesem Moment noch unsern Kindern erzählen\nDas mit uns ist 'ne Zehn-von-Zehn\nJa, ich will weiße Tauben, weißes Kleid\nWas ich will, sind wir zwei für die Ewigkeit\nJa, ich will weiße Rosen, weißes Kleid\nUnd ich will Freudentränen, weil Mama weint\nNicht mehr viel Schritte, die vor uns liegen\nDu plus ich ist gleich ewige Liebe\nJa, ich will weiße Tauben, weißes Kleid\nWas ich will, sind wir zwei für die Ewigkeit\nEgal, was auch kommt, ich bleib' bei dir\nBis sie uns're Namen an 'nen Stein gravieren\nJa, ich will",
   "p1": [
     "Ja, ich will weiße Tauben, weißes Kleid",
@@ -2783,5 +2783,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "KATI K",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Weißes Kleid",
+  "kor_name": "하얀 드레스",
+  "eng_name": "White dress",
+  "tags": [
+    "독일어"
+  ]
 }

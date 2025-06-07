@@ -4,7 +4,11 @@
   "kor_name": "빈 노래",
   "eng_name": "Empty Song",
   "vid": "BIL21F_HwgY",
-  "artist": "Kentaro",
+  "artist": {
+    "ori_name": "Kentaro",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "空に歌った君のことどれだけ\r\n想っても足りないな\r\n心はずっと痛むわ\r\nギュッとI feel so lonely lonely\r\nlonely\r\nまだ未完成なこの気持ち\r\n伝わらなくてもここで歌う\r\n君を想って明日も\r\n明後日もI feel so lonely lonely\r\nlonely\r\n\r\n弾ける 感情 Pop とめどない 愛情\r\n止めてよ stop\r\nもどかしく 笑う 君の笑顔にもう\r\nFallin' Fallin' Fallin' love\r\nわざと狂わせたチューニング\r\nありふれたリズムでalright\r\n満たされない夜のMusic\r\n\r\nこのまま 二人 遠くの星\r\n眺めてよう\r\nどんな 夜も 特別な パレード\r\n叶う事ないdream\r\n宇宙の果て投げ捨てて\r\n味気なく 眠るよ Good Night\r\nyour love 愛していく度に\r\n傷だらけになってまた繰り返す\r\ni'm a stupid\r\n\r\n空に歌った君のことどれだけ\r\n想っても足りないな\r\n心はずっと痛むわ\r\nギュッとI feel so lonely lonely\r\nlonely\r\nまだ未完成なこの気持ち\r\n伝わらなくてもここで歌う\r\n君を想って明日も\r\n明後日もI feel so lonely lonely\r\nlonely\r\n\r\n君から着信深夜3時\r\n朝が来る前のmorning coffee\r\n正直気になるよ毎度返信\r\nmaybe Too,\r\nwant me too too too want me too\r\nI don't know.\r\nmyself今もこうして君を想ってる\r\n\r\n愛の基準で彷徨って時間だけが\r\n過ぎてく永遠のループ\r\noh I wanna know about you\r\n『君にとって俺は?』って\r\nthink about you oh この心全部\r\n透けてしまわぬよう装うget cool.\r\nwow oh melody keep going on\r\n部屋に鳴り響く時計の音が\r\nそっと目を閉じてI say you\r\n\"good night\"\r\n\r\nyour love 愛していく度に\r\n傷だらけになって\r\nまた繰り返すi'm a stupid\r\n\r\n空に歌った君のことどれだけ\r\n想っても足りないな\r\n心はずっと痛むわ\r\nギュッとI feel so lonely lonely\r\nlonely\r\nまだ未完成なこの気持ち\r\n伝わらなくてもここで歌う\r\n君を想って明日も\r\n明後日もI feel so lonely lonely\r\nlonely\r\n\r\nありふれた日々の束の中\r\n君という名の栞を間に挟んで\r\neveryday everynight\r\nまた今日も触れられない君を想うよ\r\ndancing with you星に願いを\r\nI wanna stay with you.\r\n\r\nyour love 愛していく度に 心の奥\r\nぎゅっと 痛むわ i'm a stupid.\r\n未完成な気持ち 全部 隠さず\r\n歌うよ I feel so lonely\r\n最低な 君を全部 包んであげるから\r\nI feel so lonely\r\n\r\nla la la la wow oh…\r\nla la la la wow oh…",
   "createdAt": "2025-03-05T16:12:37.996Z",
   "p1": [
@@ -5173,5 +5177,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "개발용"
+  ]
 }

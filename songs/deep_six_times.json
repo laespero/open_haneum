@@ -4,7 +4,11 @@
   "kor_name": "널 생각한 6번",
   "eng_name": "Thought of You 6 Times",
   "vid": "JUi6YfOykl0",
-  "artist": "王ADEN",
+  "artist": {
+    "ori_name": "王ADEN",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Lady come here to be my baby\r\n我受够了只是想妳\r\n这道选择题他很简单\r\nMoney 再多我也选择妳\r\n我在这里等妳\r\n喔请妳不要想太多\r\n简单点请妳跟我说\r\n我为妳全天待机\r\n收到妳的一个讯息我就开心\r\n同个和弦不停的练习\r\n为了自弹自唱给妳听\r\n这个男孩不只是个音乐家\r\n妳赋予歌曲灵魂你丰富了他\r\nBaby can't you see\r\nWe are what we need\r\nSay 我有栋大房子\r\n没有妳也只是栋空房子\r\n少了一个主人翁\r\n剩她的未来老公\r\n我寻寻觅觅找了一段时间\r\n现在终于跟妳初次见面\r\n我想跟妳过明天和明天的明天\r\n一直到永远\r\nLady come here to be my baby\r\n我受够了只是想妳\r\n这道选择题他很简单\r\nMoney 再多我也选择妳\r\n我在这里等妳\r\n喔请妳不要想太多\r\n简单点请妳跟我说\r\n喔 那么多的feelings get involved\r\n喔 我缠了线让妳操控我\r\n喔 今天想了妳6次\r\n哎 我可不想装没事\r\nSo 请妳不要想太多\r\n我在这等妳跟我说\r\n跟妳说声早安\r\n我帮妳做了早餐\r\n喔看妳还不起床\r\n我在妳额头捣乱\r\n望向窗外天空好蓝\r\n想跟妳去海边\r\nWanna be with you\r\n再说一百遍\r\nGirl get your seatbelt fastened\r\n带妳去旅行\r\n让我唱歌给妳听\r\nOh no matter what happens\r\n对我来说都是美妙的奇迹\r\n所以别想太多\r\n妳的心只有我才懂\r\nImma give you the world\r\n绝对不会改口\r\n妳什么都不必说\r\n我解答妳的疑惑\r\n甜得像蜂蜜我一口接着一口\r\n每当我勾妳的肩膀\r\n当我注视妳的眼框\r\n总是让我结巴\r\n我的senorita\r\n别说那么多我只想带妳回家\r\nLady come here to be my baby\r\n我受够了只是想妳\r\n这道选择题他很简单\r\nMoney 再多我也选择妳\r\n我在这里等妳\r\n喔请妳不要想太多\r\n简单点请妳跟我说\r\n喔 那么多的feelings get involved\r\n喔 我缠了线让妳操控我\r\n喔 今天想了妳6次\r\n哎 我可不想装没事\r\nSo 请妳不要想太多\r\n我在这等妳跟我说",
   "createdAt": "2025-03-05T21:54:29.847Z",
   "p1": [
@@ -5548,5 +5552,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

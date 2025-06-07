@@ -4,7 +4,11 @@
   "kor_name": "11",
   "eng_name": "11",
   "vid": "DVXYpsjnydA",
-  "artist": "队长",
+  "artist": {
+    "ori_name": "队长",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "就把我爱意都掩埋\r\n但你能清楚的明白\r\n靠近我 然后别离开\r\n可是难过的却不是回忆\r\n因为回忆里 哭泣的你\r\nCause you know\r\n爱意就像大雨落下怎么能让人不牵挂\r\n过得好吗想说的话你能听到吗\r\nWow 没能陪你到最后 别再叹息皱眉头\r\n怎么会忘掉你所有\r\n我还在这默默的承受着 没有人附和\r\n过了很久了么\r\n怎么会傻到等你回来 这算什么期待\r\n情话全都变苍白\r\n那夜的银河\r\n是你眼里的星辰\r\n你还记得么\r\n最开始为你写的歌\r\n但是这里现在只是剩下我\r\nWow 别走 don’t wanna say good bye\r\n好像对你的爱 永远都不能收回来\r\nBaby I will die for you 你能清楚\r\nMad for you\r\nSad for you\r\nCry for you\r\nDie for you\r\nDie for you\r\nDie for you\r\nCause you know\r\n爱意就像大雨落下怎么能让人不牵挂\r\n过得好吗想说的话你能听到吗\r\nWow 没能陪你到最后 别再叹息皱眉头\r\n怎么会忘掉你所有\r\n情绪难过 不知道该怎么说\r\n视线斑驳 漫长的夜怎么过\r\n紧紧拥抱的感觉就像发生在昨天\r\n我拼尽全力实现对你的诺言\r\n我像掉进漩涡\r\n来不及难过\r\n被吞没\r\nCause you know\r\n爱意就像大雨落下怎么能让人不牵挂\r\n过得好吗想说的话你能听到吗\r\nWow 没能陪你到最后 别再叹息皱眉头\r\n怎么会忘掉你所有\r\n没能陪你到最后\r\n没能陪你到最后\r\n可我的心啊\r\n好像总残缺\r\n因为你已不在\r\n你已不在\r\n你不在身边",
   "createdAt": "2025-03-05T20:46:37.235Z",
   "p1": [
@@ -4063,5 +4067,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

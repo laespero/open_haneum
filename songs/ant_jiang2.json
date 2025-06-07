@@ -2308,5 +2308,16 @@
       "O0": "侠骨魔心如何来分辨 弹指一梦不过一瞬间"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "바람소리를 들어봐",
   "eng_name": "Listen to the Wind",
   "vid": "rmqOuenVv9g",
-  "artist": "庄淇文29",
+  "artist": {
+    "ori_name": "庄淇文29",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "听着风\r\n\r\n吹 手搭在你左肩\r\n\r\n追 只与你谈风月\r\n\r\n银河在你我之间\r\n\r\n有思念就不算远\r\n\r\n如盛夏般热烈\r\n\r\n让花儿更鲜艳\r\n\r\n你是我惊鸿一瞥\r\n\r\n再没理由能忘却\r\n\r\n余光偷看好几遍\r\n\r\n是你那张侧脸\r\n\r\n蜻蜓 飞过我指尖\r\n\r\n我们漫步在旷野\r\n\r\nOh 流星划过\r\n\r\n默契闭上眼许愿\r\n\r\n听着风\r\n\r\n吹 手搭在你左肩\r\n\r\n追 只与你谈风月\r\n\r\n心动总在不经意间\r\n\r\n想定格 对视画面\r\n\r\n吹 晚风掀起想念\r\n\r\n追 沿着轨迹向你蔓延\r\n\r\n领略过你的美 沦陷 这瞬间\r\n\r\n银河在你我之间\r\n\r\n有思念就不算远\r\n\r\n如盛夏般热烈\r\n\r\n让花儿更鲜艳\r\n\r\n你是我惊鸿一瞥\r\n\r\n再没理由能忘却\r\n\r\n余光偷看好几遍\r\n\r\n是你那张侧脸\r\n\r\n蜻蜓 飞过我指尖\r\n\r\n我们漫步在旷野\r\n\r\nOh 流星划过\r\n\r\n默契闭上眼许愿\r\n\r\n听着风\r\n\r\n吹 手搭在你左肩\r\n\r\n追 只与你谈风月\r\n\r\n心动总在不经意间\r\n\r\n想定格 对视画面\r\n\r\n吹 晚风掀起想念\r\n\r\n追 沿着轨迹向你蔓延\r\n\r\n领略过你的美 沦陷 这瞬间",
   "createdAt": "2025-01-16T09:11:57.408Z",
   "p1": [
@@ -1678,5 +1682,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

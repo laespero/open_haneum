@@ -4133,5 +4133,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "PIggy",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "脸红接收处",
+  "kor_name": "검홍접수처",
+  "eng_name": "Blush reception",
+  "tags": [
+    "중국어"
+  ]
 }

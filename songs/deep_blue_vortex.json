@@ -4,7 +4,11 @@
   "kor_name": "푸른 소용돌이",
   "eng_name": "Blue Vortex",
   "vid": "I8x8_2pCAms",
-  "artist": "薛黛霏",
+  "artist": {
+    "ori_name": "薛黛霏",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "看来往乘客穿梭着无关我\r\n\r\n猜其他选项是否还藏匿高楼\r\n\r\n游走在失序的路口\r\n\r\n情绪模糊的几何\r\n\r\n所有潜意识围攻我\r\n\r\n瞬间就吞没夜色\r\n\r\n让我放慢动作\r\n\r\n感受蓝色漩涡\r\n\r\n如果说你爱我\r\n\r\n又或者不爱我\r\n\r\n答案排列组合\r\n\r\n以上都皆可\r\n\r\n让我放慢动作\r\n\r\n感受蓝色漩涡\r\n\r\n想太多没有用\r\n\r\n有时候放轻松\r\n\r\n夜幕降落\r\n\r\n呼吸着自由\r\n\r\n猜其他选项是否还藏匿高楼\r\n\r\n游走在失序的路口\r\n\r\n情绪模糊的几何\r\n\r\n所有潜意识围攻我\r\n\r\n瞬间就吞没夜色\r\n\r\n我回头看着光\r\n\r\n想要的答案也猜不透\r\n\r\n不用多说放慢动作\r\n\r\n感受现在你给我的所有感受\r\n\r\n不用保留\r\n\r\n让我放慢动作\r\n\r\n感受蓝色漩涡\r\n\r\n如果说你爱我\r\n\r\n又或者不爱我\r\n\r\n答案排列组合\r\n\r\n以上都皆可\r\n\r\n让我放慢动作\r\n\r\n感受蓝色漩涡\r\n\r\n想太多没有用\r\n\r\n有时候放轻松\r\n\r\n夜幕降落\r\n\r\n呼吸着自由",
   "createdAt": "2025-01-08T23:31:42.844Z",
   "p1": [
@@ -1648,5 +1652,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

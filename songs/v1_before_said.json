@@ -2693,5 +2693,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "小阿七",
+    "kor_name": "소아칠",
+    "eng_name": ""
+  },
+  "ori_name": "从前说",
+  "kor_name": "예전에 말했었지",
+  "eng_name": "Once upon a time",
+  "tags": [
+    "중국어"
+  ]
 }

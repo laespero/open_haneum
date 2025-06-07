@@ -3908,5 +3908,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Pietro Lombardi",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Bella Donna",
+  "kor_name": "Pretty Woman",
+  "eng_name": "아름다운 여성",
+  "tags": [
+    "독일어"
+  ]
 }

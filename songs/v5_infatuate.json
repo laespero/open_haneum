@@ -1838,5 +1838,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "邓典",
+    "kor_name": "등전",
+    "eng_name": ""
+  },
+  "ori_name": "神魂颠倒",
+  "kor_name": "신혼전도",
+  "eng_name": "Infatuated",
+  "tags": [
+    "중국어"
+  ]
 }

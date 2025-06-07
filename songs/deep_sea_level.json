@@ -4,7 +4,11 @@
   "kor_name": "해수면의 별",
   "eng_name": "Stars on the Sea Level",
   "vid": "OCKAJkurWrI",
-  "artist": "Zkaaai, 红宇乐团",
+  "artist": {
+    "ori_name": "Zkaaai, 红宇乐团",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "你给的爱是\r\n飘忽海平面上的星星\r\n再美丽 也是种倒影\r\n谁脚步轻盈\r\n编织若有似无的爱情\r\n你离开 我的心却永远\r\n无法风平浪静\r\n绚烂 街景\r\n灯关上回归平静\r\n月亮 星星\r\n也懒得互相倾听\r\n温情 深情\r\n是海市蜃楼般\r\n浪漫的幻影\r\nAnd I miss U\r\nBut there's nothing I can do\r\n你给的爱是\r\n飘忽海平面上的星星\r\n再美丽 也是种倒影\r\n谁脚步轻盈\r\n编织若有似无的爱情\r\n你离开 我的心却永远\r\n无法风平浪静\r\n绚烂 街景\r\n灯关上回归平静\r\n月亮 星星\r\n也懒得互相倾听\r\n温情 深情\r\n是海市蜃楼般\r\n浪漫的幻影\r\nAnd I miss U\r\nBut there's nothing I can do\r\n你给的爱是\r\n飘忽海平面上的星星\r\n再美丽 也是种倒影\r\n谁脚步轻盈\r\n编织若有似无的爱情\r\n你离开 我的心却永远\r\n无法风平浪静\r\n你给的爱是\r\n飘忽海平面上的星星\r\n再美丽 也是种倒影\r\n谁脚步轻盈\r\n编织若有似无的爱情\r\n你离开 我的心却永远\r\n无法风平浪静",
   "createdAt": "2024-12-31T14:27:27.593Z",
   "p1": [
@@ -1213,5 +1217,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

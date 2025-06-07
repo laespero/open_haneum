@@ -2153,5 +2153,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "王七七",
+    "kor_name": "왕치치",
+    "eng_name": ""
+  },
+  "ori_name": "我願意平凡的陪在你身旁",
+  "kor_name": "평범하게 네 곁에 있고 싶어",
+  "eng_name": "Stay by your side in an ordinary way",
+  "tags": [
+    "중국어"
+  ]
 }

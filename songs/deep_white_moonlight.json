@@ -4,7 +4,11 @@
   "kor_name": "백월광과 주사점",
   "eng_name": "White Moonlight and Cinnabar Mole",
   "vid": "h8vnnZGOskQ",
-  "artist": "大籽",
+  "artist": {
+    "ori_name": "大籽",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "从前的歌谣\r\n\r\n都在指尖绕\r\n\r\n得不到的美好\r\n\r\n总在心间挠\r\n\r\n白饭粒无处抛\r\n\r\n蚊子血也抹不掉\r\n\r\n触不可及刚刚好\r\n\r\n日久天长让人恼\r\n\r\n那时滚烫的心跳\r\n\r\n也曾无处遁逃\r\n\r\n像一团烈火燃烧\r\n\r\n烧尽跨不过的桥\r\n\r\n时光匆匆地跑\r\n\r\n火焰化作月遥遥\r\n\r\n再无激荡的波涛\r\n\r\n也从不在梦里飘摇\r\n\r\n白月光在照耀\r\n\r\n你才想起她的好\r\n\r\n朱砂痣久难消\r\n\r\n你是否能知道\r\n\r\n窗前的明月照\r\n\r\n你独自一人远眺\r\n\r\n白月光是年少\r\n\r\n是她的笑\r\n\r\n那时滚烫的心跳\r\n\r\n也曾无处遁逃\r\n\r\n像一团烈火燃烧\r\n\r\n烧尽跨不过的桥\r\n\r\n时光匆匆地跑\r\n\r\n火焰化作月遥遥\r\n\r\n再无激荡的波涛\r\n\r\n也从不在梦里飘摇\r\n\r\n白月光在照耀\r\n\r\n你才想起她的好\r\n\r\n朱砂痣久难消\r\n\r\n你是否能知道\r\n\r\n窗前的明月照\r\n\r\n你独自一人远眺\r\n\r\n白月光是年少\r\n\r\n是她的笑\r\n\r\n白月光在照耀\r\n\r\n你才想起她的好\r\n\r\n朱砂痣久难消\r\n\r\n你是否能知道\r\n\r\n窗前的明月照\r\n\r\n你独自一人远眺\r\n\r\n白月光是年少\r\n\r\n是她的笑",
   "createdAt": "2025-01-01T20:50:44.997Z",
   "p1": [
@@ -1783,5 +1787,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

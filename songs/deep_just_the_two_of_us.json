@@ -4,7 +4,11 @@
   "kor_name": "우리 둘만",
   "eng_name": "Just the Two of Us",
   "vid": "6POZlJAZsok",
-  "artist": "Grover Washington, Jr.",
+  "artist": {
+    "ori_name": "Grover Washington, Jr.",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I see the crystal raindrops fall\r\nAnd the beauty of it all\r\nIs when the sun comes shining through\r\nTo make those rainbows in my mind\r\nWhen I think of you sometime\r\nAnd I wanna spend some time with you\r\nJust the two of us\r\nWe can make it if we try\r\nJust the two of us\r\n(Just the two of us)\r\nJust the two of us\r\nBuilding castles in the sky\r\nJust the two of us\r\nYou and I\r\nWe look for love, no time for tears\r\nWasted water's all that is\r\nAnd it don't make no flowers grow\r\nGood things might come to those who wait\r\nNot for those who wait too late\r\nWe gotta go for all we know\r\nJust the two of us\r\nWe can make it if we try\r\nJust the two of us\r\n(Just the two of us)\r\nJust the two of us\r\nBuilding them castles in the sky\r\nJust the two of us\r\nYou and I\r\nI hear the crystal raindrops fall\r\nOn the window down the hall\r\nAnd it becomes the morning dew\r\nAnd darling when the morning comes\r\nAnd I see the morning sun\r\nI wanna be the one with you\r\nJust the two of us\r\nWe can make it if we try\r\nJust the two of us\r\n(Just the two of us)\r\nJust the two of us\r\nBuilding big castles way on high\r\nJust the two of us\r\nYou and I\r\njust the two of us\r\n(We can make it, just the two of us)\r\nLet's get it together baby (yeah)\r\n(Just the two of us)\r\nJust the two of us\r\n(We can make it, just the two of us)\r\n(Just the two of us)\r\n(We can make it, just the two of us)\r\n(Just the two of us)\r\n(We can make it, just the two of us)\r\n(Just the two of us)\r\n(We can make it, just the two of us)\r\n(Just the two of us)\r\n(We can make it, just the two of us)\r\n(Just the two of us)",
   "createdAt": "2025-04-20T10:59:21.893Z",
   "p1": [
@@ -3101,5 +3105,8 @@
       "O0": "And I wanna spend some time with you"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

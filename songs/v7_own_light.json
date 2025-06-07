@@ -2003,5 +2003,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "善宇",
+    "kor_name": "선우",
+    "eng_name": ""
+  },
+  "ori_name": "做自己的光，不需要太亮",
+  "kor_name": "너만의 빛이 되렴, 너무 밝을 필요는 없어",
+  "eng_name": "Be your own light",
+  "tags": [
+    "중국어"
+  ]
 }

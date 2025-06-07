@@ -4,7 +4,11 @@
   "kor_name": "키스 키스 샤이 샤이",
   "eng_name": "Kiss Kiss Shy Shy",
   "vid": "OzBpcHbnDSY",
-  "artist": "李要红RedLi",
+  "artist": {
+    "ori_name": "李要红RedLi",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "你说我们的相遇 像是浪漫的电影\r\n土味情话很多不知道哪句打动了你\r\n你带我去了你最喜欢的公园和风景\r\n又是个浪漫的男人想偷走我的心\r\n闯进了他的心里面\r\nOh no我从不会道歉\r\n恋爱的魔咒 我已练习千万遍\r\n在那个小小的房间\r\n你弹琴唱着sol fa mi\r\n没想到我却掉进了你的陷阱\r\n(You) made me wanna\r\nKiss Kiss Shy Shy\r\n只想要和你一起\r\nKiss Kiss Shy Shy\r\nYou made me feel like doing\r\nKiss Kiss Shy Shy\r\n竟对你有点依赖\r\n(You) made me wanna\r\nKiss Kiss Shy Shy\r\n只想要和你一起\r\nKiss Kiss Shy Shy\r\nYou made me feel like doing\r\nKiss Kiss Shy Shy\r\n对未来有点期待\r\n跨越了半个地球 找到了生命的意义\r\n爱我想要爱的人 做我想要做的事情\r\n无论什么流言蜚语 I can just be myself\r\n在大街小巷和你跳着圆舞曲\r\n闯进了他的心里面\r\nOh yes我挪不开视线\r\n恋爱的魔咒 我已练习千万遍\r\n在这个大大的世界\r\n我也会唱着do re mi\r\n这次我要带你回家去见妈妈\r\n(You) made me wanna\r\nKiss Kiss Shy Shy\r\n只想要和你一起\r\nKiss Kiss Shy Shy\r\nYou made me feel like doing\r\nKiss Kiss Shy Shy\r\n竟对你有点依赖\r\n(You) made me wanna\r\nKiss Kiss Shy Shy\r\n只想要和你一起\r\nKiss Kiss Shy Shy\r\nYou made me feel like doing\r\nKiss Kiss Shy Shy\r\n放开手大胆去爱",
   "createdAt": "2025-03-06T07:28:03.718Z",
   "p1": [
@@ -2878,5 +2882,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

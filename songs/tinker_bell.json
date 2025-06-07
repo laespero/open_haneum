@@ -1,6 +1,6 @@
 {
   "name": "tinker_bell",
-  "vid":"UBjKVbVyDUo",
+  "vid": "UBjKVbVyDUo",
   "text": "Schwere Augenlider, keine Kraft mehr\nMüde Blicke, so als ob du niemals wach wärst\nIch glaube da, wo du bist\nKomm ich einfach nicht hin, hm, yeah\nLeere Worte spenden keinen Trost mehr\nE-Energie zu schwach für Notwehr\nWieso fragst du mich nicht?\nIch will nur da sein für dich\nIch bin noch nicht so zerstört, dass ich dir nicht mehr helfen kann\nUnd wenn ich nicht die Rettung bin, dann warten wir zusamm'n\nDu willst einfach nur weg hier, irgendwie raus\nSchiebst das Bild vor das Fenster, bist nächtelang auf\nUnd du wartest nur auf Tinkerbell\nDie dich mitnimmt in ihre Welt\nIch spür doch, wie du kaputtgehst und halt es nicht aus\nIch kann nicht einfach zuseh'n, wenn du mich brauchst\nIch wär so gern deine Tinkerbell\nDie dich mitnimmt in ihre Welt\nWenn du willst, kann ich das Netz sein, das dich auffängt\nUnd die Letzte sein, die sich im Dunkeln auskennt\nWenn der Rest dich vergisst\nGlaub mir, denk ich an dich\nWill nicht wissen, wie viel Tage du geweint hast\nWeil du dachtest, dass du hier nirgendwo reinpasst\nDoch ich weiß, wie du bist\nEs gibt keine Zweite wie dich\nIch bin noch nicht so zerstört, dass ich dir nicht mehr helfen kann\nUnd wenn ich nicht Tinkerbell bin, dann warten wir zusamm'n\nDu willst einfach nur weg hier, irgendwie raus\nSchiebst das Bild vor das Fenster, bist nächtelang auf\nUnd du wartest nur auf Tinkerbell\nDie dich mitnimmt in ihre Welt\nIch spür doch, wie du kaputtgehst und halt es nicht aus\nIch kann nicht einfach zuseh'n, wenn du mich brauchst\nIch wär so gern deine Tinkerbell\nDie dich mitnimmt in ihre Welt",
   "p1": [
     "Schwere Augenlider, keine Kraft mehr",
@@ -3368,5 +3368,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "NESS",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Tinkerbell",
+  "kor_name": "팅커벨",
+  "eng_name": "",
+  "tags": [
+    "독일어"
+  ]
 }

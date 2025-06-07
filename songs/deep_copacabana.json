@@ -4,7 +4,11 @@
   "kor_name": "코파카바나",
   "eng_name": "Copacabana",
   "vid": "RrdQhn2IZ48",
-  "artist": "Leon Machère",
+  "artist": {
+    "ori_name": "Leon Machère",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Spüre die Sonne, das Meer\nVon Rio de Janeiro\nKomm, lass uns weg von hier, pack deine Koffer\nIch sag' dir, wohin\nAn die Küste von Rio de Janeiro\nEs fühlt sich an, als wär' dieser Ort wie für uns beide bestimmt\nKomm mit mir an die Copacabana\nIch tanze für dich wie 'ne Diva\nDie Nächte vergisst du nie wieder\nIch entführe dich heute Nacht\nAn die Copacabana, ey\nKomm, wir beide, wir nehmen den Flieger\nNach Rio de Janerio\nWir starten dann einfach heut Nacht\nAn die Copacabana\nIch würd' gern nach Rom, gern nach Paris\nDann Montreal und danach nach Wien\nAber sie will nach Copa\nAn die Copacabana\nIch wär' gern auf Hawaii oder Bali\nVon Shanghai bis Abu Dhabi\nAber sie will nach Copa\nAn die Copacabana\nIch wollte nach Paris und Rom, wollte dir die Welt zeigen\nYouTube-Money-Rich, jetzt kann ich mir die Hotels leisten\nAber dein Plan war schon immer Rio\nDoch früher reichte meine Kohle grade mal fürs Kino\nFrüher hatt' ich nich' viel, aber du warst da\nKarma, heute zahl' ich alles hier in bar\nIch würd' alles für dich tun, bin da, wenn du mich brauchst\nAndre geh'n feiern, du bist lieber abends auf der Couch\nKopfkino, ich kauf' dir Moschino\nUnd heute Abend stech' ich zu wie ein' Moskito\nIch war noch nie in New York, war noch nie auf Hawaii\nAber Baby, du meinst\nKomm mit mir an die Copacabana\nIch tanze für dich wie 'ne Diva\nDie Nächte vergisst du nie wieder\nIch entführe dich heute Nacht\nAn die Copacabana, ey\nKomm, wir beide, wir nehmen den Flieger\nNach Rio de Janerio\nWir starten dann einfach heut Nacht\nAn die Copacabana\nIch würd' gern nach Rom, gern nach Paris\nDann Montreal und danach nach Wien\nAber sie will nach Copa\nAn die Copacabana\nIch wär' gern auf Hawaii oder Bali\nVon Shanghai bis Abu Dhabi\nAber sie will nach Copa\nAn die Copacabana\nIch erfüll' dir jeden Wunsch, flüster mir ins Ohr rein\nFür dich würd' ich gegen alle kämpfen wie bei Fortnite\nWeil es sich lohnt, du bist nicht wie die Anderen\nWeil du kein Fußballspieler suchst und Champagner trinkst\nBeame mich mit dir auf Wolke Sieben\nHängematte zwischen Palm'n, dadrauf woll'n wir liegen\nSamba, Latino, Copacabana-Vibes\nUnd trotzdem mach' ich hier den Adler, Albaner-Style\nWill dich vernaschen, als wärst du ein Solero\nFühl' mich mit dir, wie in der Werbung von Ferrero\nWar noch nie in L.A. und noch nie in Shanghai\nAber Baby, du meinst...\nKomm mit mir an die Copacabana\nIch tanze für dich wie 'ne Diva\nDie Nächte vergisst du nie wieder\nIch entführe dich heute Nacht\nAn die Copacabana, ey\nKomm, wir beide, wir nehmen den Flieger\nNach Rio de Janerio\nWir starten dann einfach heut Nacht\nAn die Copacabana\nIch würd' gern nach Rom, gern nach Paris\nDann Montreal und danach nach Wien\nAber sie will nach Copa\nAn die Copacabana\nIch wär' gern auf Hawaii oder Bali\nVon Shanghai bis Abu Dhabi\nAber sie will nach Copa\nAn die Copacabana",
   "p1": [
     "Spüre die Sonne, das Meer",
@@ -2727,7 +2731,7 @@
           "E1": "어떤 장소에서 출발함을 나타내는 전치사입니다.",
           "T2": "von",
           "K2": "에서",
-          "I2": "fɔn",          
+          "I2": "fɔn",
           "R2": "폰",
           "XE": "Ich komme von der Arbeit.",
           "XK": "나는 일에서 왔어.",
@@ -5487,5 +5491,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "독일어"
+  ]
 }

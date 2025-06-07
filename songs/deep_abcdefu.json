@@ -4,7 +4,11 @@
   "kor_name": "에이비씨디이에프유",
   "eng_name": "abcdefu",
   "vid": "xn0-IZZ6YO4",
-  "artist": "GAYLE",
+  "artist": {
+    "ori_name": "GAYLE",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Fuck you and your mom and your sister and your job\r\nAnd your broke-ass car and that shit you call art\r\nFuck you and your friends that I'll never see again\r\nEverybody but your dog, you can all fuck off\r\nI swear I meant to mean the best when it ended\r\nEven tried to bite my tongue when you start shit\r\nNow you're textin' all my friends asking questions\r\nThey never even liked you in the first place\r\nDated a girl that I hate for the attention\r\nShe only made it two days, what a connection\r\nIt's like you'd do anything for my affection\r\nYou're goin' all about it in the worst ways\r\nI was into you, but I'm over it now\r\nAnd I was tryin' to be nice\r\nBut nothing's getting through, so let me spell it out\r\nA-B-C-D-E, F-U\r\nAnd your mom and your sister and your job\r\nAnd your broke-ass car and that shit you call art\r\nFuck you and your friends that I'll never see again\r\nEverybody but your dog, you can all fuck off\r\nNah, nah, nah, nah, nah, nah, nah, nah\r\nA-B-C-D-E, F-U\r\nYou said you just needed space and so I gave it\r\nWhen I had nothin' to say you couldn't take it\r\nTold everyone I'm a bitch, so I became it\r\nAlways had to put yourself above me\r\nI was into you, but I'm over it now\r\nAnd I was tryin' to be nice\r\nBut nothing's getting through, so let me spell it out\r\nA-B-C-D-E, F-U\r\nAnd your mom and your sister and your job\r\nAnd your craigslist couch and the way your voice sounds\r\nFuck you and your friends that I'll never see again\r\nEverybody but your dog, you can all fuck off\r\nNah, nah, nah, nah, nah, nah, nah, nah\r\nA-B-C-D-E, F-U\r\nNah, nah, nah, nah, nah, nah, nah, nah\r\nA-B-C-D-E, F-U\r\nAnd your mom and your sister and your job\r\nAnd your broke-ass car and that shit you call art\r\nFuck you and your friends that I'll never see again\r\nEverybody but your dog, you can all fuck off",
   "createdAt": "2025-01-14T03:09:20.953Z",
   "p1": [
@@ -3418,5 +3422,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

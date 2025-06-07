@@ -5000,5 +5000,16 @@
       "O0": "Oh, oh, l'invite pas à la cité, elle va chambouler le rrain-té, hum"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

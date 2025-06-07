@@ -4,7 +4,11 @@
   "kor_name": "그건 안 돼",
   "eng_name": "That's Not How This Works",
   "vid": "PAKFzFqJa58",
-  "artist": "CHARLIE PUTH",
+  "artist": {
+    "ori_name": "CHARLIE PUTH",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Thought the day you disappeared that it was over\r\nDidn't even hear you leavin'\r\nSaw you with someone and thought that it was closure\r\nBut you still tell me that you need me\r\nBaby, why, tell me, why can't you just make up your mind?\r\nQuit messin' with my head\r\nYou can't say you hate me, then call me when you're hurt\r\nBaby, you know that's not how this works, no\r\nThat's not how this works\r\nYou can't walk away, then come back to what we were\r\nBaby, you know that's not how this works, no\r\nThat's not how this works, no\r\nNo, no, no, no\r\nOh, no, no, no, no\r\nBaby, that's not how this works, no\r\nThat's not how this works, oh\r\nStop remindin' me of when we said \"forever\"\r\nI know exactly what you're doin'\r\nWhen you say, \"You need to drop off all my sweaters\"\r\nIt's just one of your excuses\r\nBaby, why, tell me, why can't you just make up your mind?\r\nQuit messin' with my head\r\nYou can't say you hate me, then call me when you're hurt\r\nBaby, you know that's not how this works, no\r\nThat's not how this works\r\nYou can't walk away, then come back to what we were\r\nBaby, you know that's not how this works, no\r\nThat's not how this works, no\r\nDon't say that you're in love with me (say that you're in love)\r\n'Cause I know it's not what you mean\r\nYou can't say you hate me, then call me when you're hurt\r\nBaby, you know that's not how this works, no\r\nThat's not how this works\r\nYou can't walk away, then come back to what we were\r\nBaby, you know that's not how this works, no\r\nThat's not how this works\r\nOh, no, no, no, no (hey)\r\nOh, no, no, no, no (oh)\r\nBaby, that's not how this works, no\r\nThat's not how this works, oh\r\nNo, no, no, no\r\nOh, no, no, no, no\r\nBaby, that's not how this works",
   "createdAt": "2025-03-13T13:49:53.808Z",
   "p1": [
@@ -3103,5 +3107,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

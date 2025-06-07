@@ -2318,5 +2318,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "都智文, 永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
+  "ori_name": "特别关系",
+  "kor_name": "특별 관계",
+  "eng_name": "Special love",
+  "tags": [
+    "중국어"
+  ]
 }

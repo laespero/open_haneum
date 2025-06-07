@@ -4,7 +4,11 @@
   "kor_name": "높은 기대",
   "eng_name": "High Hopes",
   "vid": "IPXIgEAGe4U",
-  "artist": "Panic! At The Disco",
+  "artist": {
+    "ori_name": "Panic! At The Disco",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Had to have high high hopes for a living\r\nShooting for the stars\r\nWhen I couldn't make a killing\r\nDidn't have a dime but I always had a vision\r\nAlways had high high hopes\r\nHad to have high high hopes for a living\r\nDidn't know how but I always had a feeling\r\nI was gonna be that one in a million\r\nAlways had high high hopes\r\nMama said\r\nFulfill the prophecy\r\nBe something greater\r\nGo make a legacy\r\nManifest destiny\r\nBack in the days\r\nWe wanted everything wanted everything\r\nMama said\r\nBurn your biographies\r\nRewrite your history\r\nLight up your wildest dreams\r\nMuseum victories everyday\r\nWe wanted everything wanted everything\r\nMama said don't give up\r\nIt's a little complicated\r\nAll tied up no more love\r\nAnd I'd hate to see you waiting\r\nHad to have high high hopes for a living\r\nShooting for the stars\r\nWhen I couldn't make a killing\r\nDidn't have a dime but I always had a vision\r\nAlways had high high hopes\r\nHad to have high high hopes for a living\r\nDidn't know how but I always had a feeling\r\nI was gonna be that one in a million\r\nAlways had high high hopes\r\nMama said\r\nIt's uphill for oddities\r\nThe stranger crusaders\r\nAin't ever wannabes\r\nThe weird and the novelties\r\nDon't ever change\r\nWe wanted everything wanted everything\r\nStay up on that rise\r\nStay up on that rise and never come down\r\nStay up on that rise\r\nStay up on that rise and never come down\r\nMama said don't give up\r\nIt's a little complicated\r\nAll tied up no more love\r\nAnd I'd hate to see you waiting\r\nThey say it's all been done\r\nBut they haven't seen the best of me\r\nSo I got one more run\r\nAnd it's gonna be a sight to see\r\nHad to have high high hopes for a living\r\nShooting for the stars\r\nWhen I couldn't make a killing\r\nDidn't have a dime\r\nBut I always had a vision\r\nAlways had high high hopes\r\nHad to have high high hopes for a living\r\nDidn't know how but I always had a feeling\r\nI was gonna be that one in a million\r\nAlways had high high hopes\r\nHad to have high\r\nHigh hopes for a living\r\nShooting for the stars\r\nWhen I couldn't make a killing\r\nDidn't have a dime but I always had a vision\r\nAlways had high high hopes\r\nHad to have high high hopes for a living\r\nDidn't know how but I always had a feeling\r\nI was gonna be that one in a million\r\nAlways had high high hopes",
   "createdAt": "2025-04-22T05:05:28.190Z",
   "p1": [
@@ -3455,5 +3459,8 @@
       "O0": "And it's gonna be a sight to see"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

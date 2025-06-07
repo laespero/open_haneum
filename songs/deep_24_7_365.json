@@ -4,7 +4,11 @@
   "kor_name": "24/7, 365",
   "eng_name": "24/7, 365",
   "vid": "et1M7Kky1OE",
-  "artist": "elijah woods",
+  "artist": {
+    "ori_name": "elijah woods",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "It's been three years and six whole months\r\nSince I saw your face that night\r\nIt took five seconds to fall in love\r\nAnd two more to make you mine\r\nNow it's four in the morning, sun's set and\r\nSeven minutes with you and it's heaven\r\nAin't an hour that rolls by\r\nI love you 24∕7, 3-6-5\r\nGive you my name, if you wanted to\r\nKey to my heart, if you want it too\r\nAnd I hope and pray that you'll stay right here\r\n'Til we're old and gray in our last few years\r\nI'm on a knee, I just need a \"yes\"\r\nA couple kids and a picket fence\r\nShare the memories like an open book\r\nEvery page I read it still got me hooked\r\nAnd I'm fine spending my whole life on everything you like\r\nIs it obvious that all of this is right?\r\n'Cause it's been three years and six whole months\r\nSince I saw your face that night\r\nIt took five seconds to fall in love\r\nAnd two more to make you mine\r\nNow it's four in the morning, sun's set and\r\nSeven minutes with you and it's heaven\r\nAin't an hour that rolls by\r\nI love you 24∕7, 3-6-5\r\nI'll share the last bite of every meal\r\nI'll wipe your tears when you're in your feels\r\nAnd I'll hold you close through a thunderstorm\r\nWhen it's cold at night, know I'll keep you warm\r\n'Cause I'm fine spending my whole life on everything you like\r\nIs it obvious that all of this is right?\r\n'Cause it's been three years and six whole months\r\nSince I saw your face that night\r\nIt took five seconds to fall in love\r\nAnd two more to make you mine\r\nNow it's four in the morning, sun's set and\r\nSeven minutes with you and it's heaven\r\nAin't an hour that rolls by\r\nI love you 24∕7, 3-6-5\r\nI love you 24∕7, 3-6-5\r\nNow it's four in the morning, sun's set and\r\nSeven minutes with you and it's heaven\r\nAin't an hour that rolls by\r\nI love you 24∕7, 3-6-5",
   "createdAt": "2025-04-25T23:47:55.704Z",
   "p1": [
@@ -3368,5 +3372,8 @@
       "O0": "And I'm fine spending my whole life on everything you like"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

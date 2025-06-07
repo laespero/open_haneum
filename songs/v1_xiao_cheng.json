@@ -1703,5 +1703,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "利比",
+    "kor_name": "",
+    "eng_name": "LBI"
+  },
+  "ori_name": "小城夏天",
+  "kor_name": "소성하천",
+  "eng_name": "Summer in a small town",
+  "tags": [
+    "중국어"
+  ]
 }

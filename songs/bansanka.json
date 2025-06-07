@@ -3007,5 +3007,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "",
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

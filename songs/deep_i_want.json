@@ -4,7 +4,11 @@
   "kor_name": "나는 원해",
   "eng_name": "I want",
   "vid": "jnPdFDVoDl4",
-  "artist": "顾三十",
+  "artist": {
+    "ori_name": "顾三十",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Got me feeling like falling in love\nTell you that you shine like a diamond\nCall me when you in the moonlight so bright\nIf you're there waiting for someone\nHaste makes waste我太\nYou're the only one head-to-toe我爱\nGonna promise我在\nLet me tell ya how's it gonna be\nGimme that浪漫的时间\nGimme that炙热的视线\nGimme that身体的支点\n只属于我们的世界\nI want that赤裸的腼腆\nI want that美妙的危险\nI want that直白的体验\n只当你唯一的备选\n当我们丢掉防卫眼神交汇的瞬间\n掉进了答案只剩下单选的试题卷\n第一次我陪你试验 爱情我给你指点\n确定是你主演 不遮掩的情节\n跳过前奏气氛是火热 镁光灯下baby在左侧\n身体接触居心是叵测 温度升高需要买可乐\nBe my lady 牵我的左手 不必熟练都跟着我走\n抛开害羞肢体不闪躲 专心和我做学问探索\nI told you I just cannot control myself so babe\nForgive me if I ever forget to behave\n想要你和我一起忘我地wave 从清晨\n晃到了深夜 忘记了时间 快乐的神仙 uh再来一遍\n我们之间的距离放映着 没分级的故事片\n你我呼吸在重叠 脑海里有了音节 好像突然 通电\n别担心 云霄飞车初体验我都陪你坐\n我答应 角色扮演主题线我都跟你做\n在此刻 我想对你说 我想对你说\nBaby baby 今夜的月色 是我对你唱着\nGimme that浪漫的时间\nGimme that炙热的视线\nGimme that身体的支点\n只属于我们的世界\nI want that赤裸的腼腆\nI want that美妙的危险\nI want that直白的体验\n只当你唯一的备选\n当我们丢掉防卫眼神交汇的瞬间\n掉进了答案只剩下单选的试题卷\n第一次我陪你试验 爱情我给你指点\n确定是你主演 不遮掩的情节\n我触碰到了你 不自觉做出的反应\n不需要去考虑 是automatic的感应\n你眼神的肯定 我故作太镇定\n对你不断靠近 是无法抗拒的本性 ay\nLet me feel your body on me I’m so dope\nShawty baby chilling don’t say nope\n我味蕾在捕获 你施展的蛊惑\n把所有伊甸园神话里说的都给我\n当我第一次认定句点就是你的时候\n我抱紧你的时候 那时刻\n把时间尽我全力铭刻\n体温在瞬间融合 记忆在瞬间定格\nTonight is far away, make me wide awake\nI just wanna say, baby won’t you stay\nI know what you’re waiting, show you how I wave\nThat is all I gave, no more exit\nNow you gotta listen up, cuz this is a song just for you\nGimme that浪漫的时间\nGimme that炙热的视线\nGimme that身体的支点\n只属于我们的世界\nI want that赤裸的腼腆\nI want that美妙的危险\nI want that直白的体验\n只当你唯一的备选\n当我们丢掉防卫眼神交汇的瞬间\n掉进了答案只剩下单选的试题卷\n第一次我陪你试验 爱情我给你指点\n确定是你主演 不遮掩的情节\nThe night is fade away\n彻夜陶醉我在回味\n是你的香味\nMy baby...",
   "createdAt": "2025-03-05T12:28:50.545Z",
   "p1": [
@@ -9178,5 +9182,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

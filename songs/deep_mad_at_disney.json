@@ -4,7 +4,11 @@
   "kor_name": "디즈니에 화가 나",
   "eng_name": "Mad at Disney",
   "vid": "4cLaxFWT9iI",
-  "artist": "salem ilese",
+  "artist": {
+    "ori_name": "salem ilese",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I'm mad at Disney, Disney\r\nThey tricked me, tricked me\r\nHad me wishing on a shooting star\r\nBut now I'm twenty-something\r\nI still know nothing\r\n'Bout who I am or what I'm not\r\nSo call me a pessimist\r\nBut I don't believe in it\r\nFinding a true love's kiss is bullsh-\r\n'Cause I felt sad love, I felt bad love\r\nSometimes happy love\r\nTurns into giving up\r\nI felt hurt love 'bout the word love\r\nWhat the hell is love supposed to feel like?\r\nWhat the hell is love? What the hell is love?\r\nWhat the hell is love supposed to feel like?\r\nMy fairy grandma warned me\r\nCinderella's story only ended in a bad divorce\r\nThe prince ain't sleeping when he takes his sleeping beauty\r\nTo the motel on his snow white horse\r\nSo call me a pessimist\r\nBut I don't believe in it\r\nFinding a true love's kiss is bullsh-\r\n'Cause I felt sad love, I felt bad love\r\nSometimes happy love\r\nTurns into giving up\r\nI felt hurt love 'bout the word love\r\nWhat the hell is love supposed to feel like?\r\nWhat the hell is love? What the hell is love?\r\nWhat the hell is love supposed to feel like?\r\nWhat the hell is love? What the hell is love?\r\nWhat the hell is love supposed to feel like?\r\nI'm mad at Disney, Disney\r\nThey tricked me, tricked me\r\nNo more wishing on a shooting star",
   "createdAt": "2025-05-22T22:01:11.969Z",
   "p1": [
@@ -2298,5 +2302,8 @@
       "O0": "'Cause I felt sad love, I felt bad love"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

@@ -6050,5 +6050,16 @@
       "O0": "Ich war nur in der Schule, um alle zu nerven und heute singen alle mit"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

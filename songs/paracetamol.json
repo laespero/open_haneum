@@ -1,6 +1,6 @@
 {
   "name": "paracetamol",
-  "vid":"rtDZZ8j4JFo",
+  "vid": "rtDZZ8j4JFo",
   "text": "Mir wird schwarz vor Augen, wenn ich dich nicht mehr seh'\nDas Pochen in mei'm Kopf, alles tut weh\nIch zitter', kannst du's sehen? Fast wie auf Entzug\nMedizin, so bitter\nEs ist mitten in der Nacht\nRuf' dich an, wenn's okay ist\nWill dich nur kurz hören\nSorry, dass es so spät ist\nDu bist wie Paracetamol für mich\nAlles okay bei mir, addier' ich dich\nDu bist wie Paracetamol für mich\nDu tust mir gut, glaub mir, ich lüge nicht\nMein Arzt verschreibt mir irgendwas\nBist du nicht da, dann hilft nichts anderes\nDu bist wie Paracetamol für mich\nAlles okay bei mir, addier' ich dich\nSchmerz lässt nach, wenn du bei mir liegst\nSeh' endlich klar, ich glaub', du weißt gar nicht\nWie gut du tust, fast zu gut für mich\nGib mir noch 'n Zug\nEs ist mitten in der Nacht\nWeck' dich auf, wenn's okay ist\nWill dich nur kurz fühlen\nSorry, dass es so spät ist\nDu bist wie Paracetamol für mich\nAlles okay bei mir, addier' ich dich\nDu bist wie Paracetamol für mich\nDu tust mir gut, glaub mir, ich lüge nicht\nMein Arzt verschreibt mir irgendwas\nBist du nicht da, dann hilft nichts anderes\nDu bist wie Paracetamol für mich\nAlles okay bei mir, addier' ich dich\nUnd ich weiß, ich weiß, ich weiß\nMuss auch ohne dich klar kommen, oh-oh\nNur mit dir wird es halt so leicht, so leicht, so leicht\nIch will, dass du's weißt\nDu bist wie Paracetamol für mich\nAlles okay bei mir, addier' ich dich\nDu bist wie Paracetamol für mich\nDu tust mir gut, glaub mir, ich lüge nicht",
   "p1": [
     "Mir wird schwarz vor Augen, wenn ich dich nicht mehr seh'",
@@ -2648,5 +2648,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Gregor Hägele",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Paracetamol",
+  "kor_name": "해열제",
+  "eng_name": "",
+  "tags": [
+    "독일어"
+  ]
 }

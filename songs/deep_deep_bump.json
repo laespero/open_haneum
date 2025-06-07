@@ -4,7 +4,11 @@
   "kor_name": "심장이 쿵",
   "eng_name": "Little Deer Bumping",
   "vid": "3pLBuKPwOlc",
-  "artist": "永彬",
+  "artist": {
+    "ori_name": "永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
   "text": "I’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\n啊 你还没睡\r\n\r\n啊 问我想谁\r\n\r\n啊 你的套路被我看透\r\n\r\n但我只想和你醉\r\n\r\n啊 今天约会\r\n\r\n啊 看见你腿\r\n\r\n啊 不是我太肮脏 是这画面太美\r\n\r\n啊 Baby你依旧如此的美\r\n\r\n啊 今晚让我无法疲惫\r\n\r\n啊 不要让我等太久Baby\r\n\r\n你看起来很美\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\n这感觉就像在\r\n\r\n撞撞 小鹿乱撞\r\n\r\n撞撞撞 小鹿乱撞\r\n\r\n撞撞 小鹿乱撞\r\n\r\n撞撞撞 小鹿乱撞\r\n\r\nyou make me drunk I say\r\n\r\nyou make me drunk I say\r\n\r\nyou make me drunk I pretty sure\r\n\r\n你是美酒姑娘中的拉菲\r\n\r\n把你摇晃在我的酒杯散发伊甸园里的香味\r\n\r\n无法抵抗你的完美我也想要和你醉\r\n\r\nCan you feel my heart\r\n\r\nbaby boom boom boom boom\r\n\r\ncan you be my baby\r\n\r\naye woo woo woo woo\r\n\r\nI know I know 在你心里一定认为我们非常的般配\r\n\r\n我想你做我女朋友我想和你约会\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\nI’m feeling good\r\n\r\n这感觉就像在\r\n\r\n撞撞 小鹿乱撞\r\n\r\n撞撞撞 小鹿乱撞\r\n\r\n撞撞 小鹿乱撞\r\n\r\n撞撞撞 小鹿乱撞\r\n\r\nI’m feeling good\r\n\r\n我的小鹿它在乱撞\r\n\r\n这感觉就像在\r\n\r\nI’m feeling good\r\n\r\n你的小鹿也在乱撞\r\n\r\n这感觉就像在\r\n\r\nI’m feeling good\r\n\r\n这感觉就像在\r\n\r\nI’m feeling good\r\n\r\n撞撞 小鹿乱撞\r\n\r\n这感觉就像在",
   "createdAt": "2025-03-05T21:42:43.922Z",
   "p1": [
@@ -3088,5 +3092,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

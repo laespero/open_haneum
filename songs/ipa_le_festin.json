@@ -2162,5 +2162,17 @@
       "T0": "Nous allons enfin nous régaler",
       "CX": "Laissez-moi vous émerveiller et prendre mon envol Nous allons enfin nous régaler La fête va enfin commencer"
     }
+  ],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "",
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
   ]
 }

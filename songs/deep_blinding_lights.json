@@ -4,7 +4,11 @@
   "kor_name": "블라인딩 라이츠",
   "eng_name": "Blinding Lights",
   "vid": "4NRXx6U8ABQ",
-  "artist": "The Weeknd",
+  "artist": {
+    "ori_name": "The Weeknd",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Yeah\r\nI've been tryna call\r\nI've been on my own for long enough\r\nMaybe you can show me how to love, maybe\r\nI'm going through withdrawals\r\nYou don't even have to do too much\r\nYou can turn me on with just a touch, baby\r\nI look around and\r\nSin City's cold and empty (oh)\r\nNo one's around to judge me (oh)\r\nI can't see clearly when you're gone\r\nI said, ooh, I'm blinded by the lights\r\nNo, I can't sleep until I feel your touch\r\nI said, ooh, I'm drowning in the night\r\nOh, when I'm like this, you're the one I trust\r\n(Hey, hey, hey)\r\nI'm running out of time\r\n'Cause I can see the sun light up the sky\r\nSo I hit the road in overdrive, baby, oh\r\nThe city's cold and empty (oh)\r\nNo one's around to judge me (oh)\r\nI can't see clearly when you're gone\r\nI said, ooh, I'm blinded by the lights\r\nNo, I can't sleep until I feel your touch\r\nI said, ooh, I'm drowning in the night\r\nOh, when I'm like this, you're the one I trust\r\nI'm just walking by to let you know (by to let you know)\r\nI can never say it on the phone (say it on the phone)\r\nWill never let you go this time (ooh)\r\nI said, ooh, I'm blinded by the lights\r\nNo, I can't sleep until I feel your touch\r\n(Hey, hey, hey)\r\n(Hey, hey, hey)\r\nI said, ooh, I'm blinded by the lights\r\nNo, I can't sleep until I feel your touch",
   "createdAt": "2025-03-13T13:51:25.516Z",
   "p1": [
@@ -2818,5 +2822,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

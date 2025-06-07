@@ -4758,5 +4758,16 @@
       "O0": "Und jetzt frag mich, ob sie dasselbe geben kann, was du mir gegeben hast"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "",
+  "kor_name": "",
+  "eng_name": "",
+  "tags": [
+    "개발용"
+  ]
 }

@@ -2603,5 +2603,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Christoph Sakwerda",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Herztausch",
+  "kor_name": "심장 교환",
+  "eng_name": "Heart exchange",
+  "tags": [
+    "독일어"
+  ]
 }

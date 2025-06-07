@@ -1,10 +1,14 @@
 {
   "name": "deep_cha_cha",
   "ori_name": "午夜恰恰",
-  "kor_name": "자정 차차차",
+  "kor_name": "한밤중의 차차차",
   "eng_name": "Midnight Cha-Cha-Cha",
   "vid": "RdStbcX66L4",
-  "artist": "邓典/刘至佳",
+  "artist": {
+    "ori_name": "邓典/刘至佳",
+    "kor_name": "등전",
+    "eng_name": ""
+  },
   "text": "跳午夜恰恰舞\n怎么跳我都很喜欢\n微醺的电子鼓\n把我灵魂抽离一半\n跳午夜恰恰舞\n霓虹灯在闪的璀璨\n醉意中打了赌\n一定带你fly to the moon for sure\n午夜的星光被点亮的音符相得益彰\n你让我澎湃的心跳勾勒出油画一张\n长夜漫漫\n可想说的话说不完\n就给我炙热的吻\n瞄准我柔软的唇\n跳午夜恰恰舞\n怎么跳我都很喜欢\n微醺的电子鼓\n把我灵魂抽离一半\n跳午夜恰恰舞\n霓虹灯在闪的璀璨\n醉意中打了赌\n一定带你fly to the moon\n跳午夜恰恰舞\n怎么跳我都很喜欢\n微醺的电子鼓\n把我灵魂抽离一半\n跳午夜恰恰舞\n霓虹灯在闪的璀璨\n醉意中打了赌\n一定带你fly to the moon\nShake your body move\n带着微笑在月球漫步\n靠近我let me smooth come boi\n这么轻松的把我拴住\nShake your body move\n带着微笑在月球漫步\n靠近我let me smooth\n这么轻松的把我拴住\n午夜的星光被点亮的音符相得益彰\n你让我澎湃的心跳勾勒出油画一张\n长夜漫漫\n可想说的话说不完\n就给我炙热的吻\n瞄准我柔软的唇\n跳午夜恰恰舞\n怎么跳我都很喜欢\n微醺的电子鼓\n把我灵魂抽离一半\n跳午夜恰恰舞\n霓虹灯在闪的璀璨\n醉意中打了赌\n一定带你fly to the moon\n跳午夜恰恰舞\n怎么跳我都很喜欢\n微醺的电子鼓\n把我灵魂抽离一半\n跳午夜恰恰舞\n霓虹灯在闪的璀璨\n醉意中打了赌\n一定带你fly to the moon",
   "p1": [
     "跳午夜恰恰舞",
@@ -1902,5 +1906,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "지나친 낭만",
   "eng_name": "Excessive Romance",
   "vid": "2uuUmdDZjn4",
-  "artist": "ERIKA",
+  "artist": {
+    "ori_name": "ERIKA",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "看着钟为何开始慢\r\n\r\n原来是已经入深夜\r\n\r\n每个地方熄灯入眠\r\n\r\n我还在 才纳闷那么晚\r\n\r\n等什么\r\n\r\n已经告诉你多可爱\r\n\r\n眼神还在闪躲\r\n\r\n无奈\r\n\r\n偷偷把你\r\n\r\n藏在心里\r\n\r\n留在记忆\r\n\r\n不曾明白\r\n\r\n是什么让我\r\n\r\n坠入过分浪漫\r\n\r\n怎如此混乱\r\n\r\n可能现在\r\n\r\n我们都需要\r\n\r\n别猜测一吻就明白\r\n\r\n抱紧我就别放开\r\n\r\n每一夜\r\n\r\n开着手机放在床边\r\n\r\n这是我对你的思念\r\n\r\n老习惯\r\n\r\n想象你在我床头\r\n\r\n摸摸我的脸\r\n\r\n靠近我耳边\r\n\r\n悄悄聊着天\r\n\r\n直到我们入睡\r\n\r\n闭上双眼\r\n\r\n你的侧脸\r\n\r\n轻轻浮现\r\n\r\n偷偷把你\r\n\r\n藏在心里\r\n\r\n留在记忆\r\n\r\n不太明白\r\n\r\n是什么让我\r\n\r\n坠入过分浪漫\r\n\r\n怎如此混乱\r\n\r\n可能现在\r\n\r\n我们都需要\r\n\r\n别猜测一吻就明白\r\n\r\n抱紧我就别放开\r\n\r\n(不要离开)\r\n\r\n(不要离开)\r\n\r\n(不要离开)\r\n\r\n(不要离开)\r\n\r\nI want it want it bad\r\n\r\n(不要离开)\r\n\r\nOh I want it bad\r\n\r\n(不要离开)\r\n\r\nWanna be your bae\r\n\r\n(不要离开)\r\n\r\n(不要离开)\r\n\r\n(不要离开)\r\n\r\nCuz I want you\r\n\r\n(不要离开)\r\n\r\nOh I need you\r\n\r\n(不要离开)\r\n\r\nI need you uh huh\r\n\r\nI want you\r\n\r\n(不要离开)\r\n\r\nAnd I need you\r\n\r\n(不要离开)\r\n\r\n不要离开\r\n\r\n不太明白\r\n\r\n是什么让我\r\n\r\n坠入过分浪漫\r\n\r\n怎如此混乱\r\n\r\n可能现在\r\n\r\n我们都需要\r\n\r\n别猜测一吻就明白\r\n\r\n抱紧我就别放开",
   "createdAt": "2025-04-04T22:05:02.343Z",
   "p1": [
@@ -2919,5 +2923,8 @@
       "O0": "这是我对你的思念"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

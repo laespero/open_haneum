@@ -1,6 +1,6 @@
 {
   "name": "notion",
-  "vid":"PD1EXJScA6k",
+  "vid": "PD1EXJScA6k",
   "text": "Sure, it's a calming notion, perpetual in motion\nBut I don't need the comfort of any lies\nFor I have seen the ending, and there is no ascending rise\nOh, back when I was younger, was told by other youngsters\nThat my end will be torture beneath the Earth\n'Cause I don't see what they see, when death is staring at me\nI see a window, a limit, to live it, or not at all\nIf you could pull the lever to carry on forever\nWould your life even matter anymore?\nSure, it's a calming notion, perpetual in motion\nBut it's not what you signed up for\nI'm sure there won't always be sunshine\nBut there's this momentary beam of light\nYou don't have to wait those salty decades\nTo get through the gate, it's all in front of your face\nI'm sure there won't always be sunshine\nI'm sure there won't always be sunshine\nBut there's this momentary beam of light\nI could-could cross the ocean in a fit of devotion\nFor every shining second, this fragile body beckons\nYou think you're owed it better believing ancient letters\nSure, it's a calming notion, but it's a lie",
   "p1": [
     "Sure, it's a calming notion, perpetual in motion",
@@ -2798,5 +2798,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "The Rare Occasions",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "Notion",
+  "kor_name": "관념",
+  "eng_name": "",
+  "tags": [
+    "영어"
+  ]
 }

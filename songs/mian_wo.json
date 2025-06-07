@@ -2318,5 +2318,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "黄龄",
+    "kor_name": "황령",
+    "eng_name": ""
+  },
+  "ori_name": "免我蹉跎苦",
+  "kor_name": "면아차타고",
+  "eng_name": "I won't waste my time",
+  "tags": [
+    "중국어"
+  ]
 }

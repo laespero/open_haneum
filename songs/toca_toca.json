@@ -918,7 +918,7 @@
           "XE": "I see you.",
           "XK": "나는 너를 본다.",
           "XR": "아이 시 유"
-        },       
+        },
         {
           "T1": "'til",
           "K1": "~까지",
@@ -1216,5 +1216,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Fly Project",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "vid": "L5GwTfI_PD8",
+  "ori_name": "Toca Toca",
+  "kor_name": "토카토카",
+  "eng_name": "",
+  "tags": [
+    "스페인어"
+  ]
 }

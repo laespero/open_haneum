@@ -3638,5 +3638,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "郑润泽",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "瞬",
+  "kor_name": "순간",
+  "eng_name": "Moment",
+  "tags": [
+    "중국어"
+  ]
 }

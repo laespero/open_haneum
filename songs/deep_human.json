@@ -4,7 +4,11 @@
   "kor_name": "인간",
   "eng_name": "Human",
   "vid": "L3wKzyIN1yk",
-  "artist": "Rag'n'Bone Man",
+  "artist": {
+    "ori_name": "Rag'n'Bone Man",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "I'm only human\r\nI'm only, I'm only\r\nI'm only human, human\r\n\r\nMaybe I'm foolish\r\nMaybe I'm blind\r\nThinking I can see through this\r\nAnd see what's behind\r\nGot no way to prove it\r\nSo maybe I'm blind\r\nBut I'm only human after all\r\nI'm only human after all\r\nDon't put your blame on me\r\nDon't put your blame on me\r\n\r\nTake a look in the mirror\r\nAnd what do you see\r\nDo you see it clearer\r\nOr are you deceived\r\nIn what you believe\r\n'Cause I'm only human after all\r\nYou're only human after all\r\nDon't put the blame on me\r\nDon't put your blame on me\r\n\r\nSome people got the real problems\r\nSome people out of luck\r\nSome people think I can solve them\r\nLord heavens above\r\nI'm only human after all\r\nI'm only human after all\r\nDon't put the blame on me\r\nDon't put the blame on me\r\n\r\nDon't ask my opinion\r\nDon't ask me to lie\r\nThen beg for forgiveness\r\nFor making you cry\r\nMaking you cry\r\n'Cause I'm only human after all\r\nI'm only human after all\r\nDon't put your blame on me\r\nDon't put the blame on me\r\n\r\nOh, some people got the real problems\r\nSome people out of luck\r\nSome people think I can solve them\r\nLord heavens above\r\nI'm only human after all\r\nI'm only human after all\r\nDon't put the blame on me\r\nDon't put the blame on me\r\n\r\nI'm only human\r\nI make mistakes\r\nI'm only human\r\nThat's all it takes\r\nTo put the blame on me\r\nDon't put the blame on me\r\n\r\nI'm no prophet or Messiah\r\nShould go looking somewhere higher\r\nI'm only human after all\r\nI'm only human after all\r\nDon't put the blame on me\r\nDon't put the blame on me\r\n\r\nI'm only human\r\nI do what I can\r\nI'm just a man\r\nI do what I can\r\nDon't put the blame on me\r\nDon't put your blame on me",
   "createdAt": "2025-03-13T14:25:52.882Z",
   "p1": [
@@ -3193,5 +3197,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

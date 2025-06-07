@@ -1718,5 +1718,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "胖虎",
+    "kor_name": "",
+    "eng_name": ""
+  },
+  "ori_name": "白月光與硃砂痣",
+  "kor_name": "하얀달빛과 붉은점",
+  "eng_name": "White Moonlight and Crimson Mole",
+  "tags": [
+    "중국어"
+  ]
 }

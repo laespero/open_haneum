@@ -4,7 +4,11 @@
   "kor_name": "일선의 간격",
   "eng_name": "A Thin Line",
   "vid": "ew3V4GtPtDc",
-  "artist": "永彬Ryan.B",
+  "artist": {
+    "ori_name": "永彬",
+    "kor_name": "영빈",
+    "eng_name": "Ryan.B"
+  },
   "text": "拨通了电话号码\r\n\r\n颇有礼貌的回答\r\n\r\n太容易煽情的话\r\n\r\n我不善于表达\r\n\r\n窗外的那朵晚霞\r\n\r\n抱不到墙上的画\r\n\r\n孤单不知不觉\r\n\r\n开始发芽\r\n\r\n旧照世界的繁华\r\n\r\n像在对着我惩罚\r\n\r\n为什么这结局不像童话\r\n\r\n我没有那么伟大\r\n\r\n说放下就能放下\r\n\r\n一个人我也会害怕\r\n\r\n那年盛夏为你摘下那一朵栀子花\r\n\r\n经过了多少风吹雨打\r\n\r\n枯萎时刻很优雅\r\n\r\n只能算了吧忘了吧没什么办法\r\n\r\n就别再挣扎揭开旧伤疤\r\n\r\n说得潇洒是真是假\r\n\r\n这答案重要吗\r\n\r\n回忆却还在\r\n\r\n脑海旋转着\r\n\r\n用力的嘲笑\r\n\r\n谁不够快乐\r\n\r\n我多不舍得\r\n\r\n你也知道的\r\n\r\n为什么那时坚持要走我不懂得\r\n\r\n再怎么深刻\r\n\r\n也只能到这\r\n\r\n你近况如何\r\n\r\n没资格干涉\r\n\r\n一个人的我\r\n\r\n并非你不可\r\n\r\n只不过这么多年我却还学不会\r\n\r\n洒脱\r\n\r\n你就像星星闪烁\r\n\r\n在谁的天空亮着\r\n\r\n我被放逐在银河\r\n\r\n离你一线之隔\r\n\r\n那甜蜜已经褪色\r\n\r\n我却还依然记得\r\n\r\n你微笑时那种纯白清澈\r\n\r\n原来不经意说的\r\n\r\n伤人却是最狠的\r\n\r\n幸福又不能靠假设\r\n\r\n别问值不值得\r\n\r\n毕竟爱过\r\n\r\n也算一种难得\r\n\r\n回忆却还在\r\n\r\n脑海旋转着\r\n\r\n用力的嘲笑\r\n\r\n谁不够快乐\r\n\r\n我多不舍得\r\n\r\n你也知道的\r\n\r\n为什么那时坚持要走我不懂得\r\n\r\n再怎么深刻\r\n\r\n也只能到这\r\n\r\n你近况如何\r\n\r\n没资格干涉\r\n\r\n一个人的我\r\n\r\n并非你不可\r\n\r\n只不过这么多年我却还学不会\r\n\r\n洒脱",
   "createdAt": "2025-03-05T16:29:45.741Z",
   "p1": [
@@ -4153,5 +4157,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

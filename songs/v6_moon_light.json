@@ -1178,5 +1178,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "鄧麗君",
+    "kor_name": "등려군",
+    "eng_name": "Teresa Teng"
+  },
+  "ori_name": "月亮代表我的心",
+  "kor_name": "월량대표아적심",
+  "eng_name": "The Moon Represents My Heart",
+  "tags": [
+    "중국어"
+  ]
 }

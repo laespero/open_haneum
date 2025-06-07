@@ -2722,5 +2722,16 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "陳雪凝",
+    "kor_name": "진설응",
+    "eng_name": ""
+  },
+  "ori_name": "綠色",
+  "kor_name": "녹색",
+  "eng_name": "Green Color",
+  "tags": [
+    "중국어"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "네 독에 중독된 것처럼",
   "eng_name": "Like I'm Addicted to Your Poison",
   "vid": "hN_ERv94gq0",
-  "artist": "Ginger",
+  "artist": {
+    "ori_name": "Ginger",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "一天 的时间 其实说多也不算多\r\n\r\n好多 时钟的圈 足够想念你了七遍\r\n\r\n旁边 是谁 怎么我没看过他的脸\r\n\r\nWu wu wu wu\r\n\r\n奇怪 这感觉 明明我知道很危险\r\n\r\n飞蛾 总在 危险时候把自己奉献\r\n\r\n乱了一切\r\n\r\n我像是中了你的毒 快乐藏不住\r\n\r\n再次假装不在乎 你面前装酷\r\n\r\n其实我需要你 so there's no monday blue\r\n\r\n我像是中了你的毒 快乐藏不住\r\n\r\n再次隐藏着喜怒 thought it's pretty cool\r\n\r\n发现我需要你 so there's no monday blue\r\n\r\nI got lots of work 等着我去慢慢完成\r\n\r\nBut the brain just fart 昨晚那路口的红灯\r\n\r\n目光都变炙热 一切都停滞了\r\n\r\n梦到与你一起走在沙滩上的温柔\r\n\r\n一道一道阳光让我身处粉红宇宙\r\n\r\n这一刻 我想我 像是\r\n\r\n我像是中了你的毒 快乐藏不住\r\n\r\n再次假装不在乎 你面前装酷\r\n\r\n其实我需要你 so there's no monday blue\r\n\r\n(so there's no monday blue)\r\n\r\n我像是中了你的毒 快乐藏不住\r\n\r\n再次隐藏着喜怒 thought it's pretty cool\r\n\r\n发现我需要你 so there's no monday blue",
   "createdAt": "2025-04-25T23:35:30.704Z",
   "p1": [
@@ -2537,5 +2541,8 @@
       "O0": "But the brain just fart 昨晚那路口的红灯"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "개발용"
+  ]
 }

@@ -4,7 +4,11 @@
   "kor_name": "전생들",
   "eng_name": "Past Lives",
   "vid": "hK59OMfBN8E",
-  "artist": "sapientdream",
+  "artist": {
+    "ori_name": "sapientdream",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Past lives couldn't ever come between us\r\nLost love is sweeter when it's finally found\r\nI've got the strangest feeling\r\nThis isn't our first time around\r\nPast lives couldn't ever come between us\r\nSometimes the dreamers finally wake up\r\nDon't wake me, I'm not dreaming\r\nDon't wake me, I'm not dreaming\r\nPast lives couldn't ever hold me down\r\nLost love is sweeter when it's finally found\r\nI've got the strangest feeling\r\nThis isn't our first time around\r\nPast lives couldn't ever come between us\r\nSometimes the dreamers finally wake up\r\nDon't wake me, I'm not dreaming\r\nDon't wake me, I'm not dreaming\r\nPast lives couldn't ever hold me down\r\nLost love is sweeter when it's finally found\r\nI've got the strangest feeling\r\nThis isn't our first time around\r\nPast lives couldn't ever come between us\r\nSometimes the dreamers finally wake up\r\nDon't wake me, I'm not dreaming\r\nDon't wake me, I'm not dreaming",
   "createdAt": "2025-05-19T15:39:52.518Z",
   "p1": [
@@ -800,5 +804,8 @@
       "O0": "Lost love is sweeter when it's finally found"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

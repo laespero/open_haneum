@@ -4,7 +4,11 @@
   "kor_name": "도파민",
   "eng_name": "Dopamine",
   "vid": "QJT1QXWsX2Y",
-  "artist": "于翔北 · 薛黛霏",
+  "artist": {
+    "ori_name": "于翔北 · 薛黛霏",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "故事开始琢磨不清\r\n你变得很扑朔迷离\r\n蔓延嘴巴到眼睛\r\n\r\n像是拥有某种魔力\r\n无时不刻散发神秘\r\n每寸皮肤到纹理\r\n\r\n你在我心里下了场骤雨\r\n氤氲出了未知的剧情\r\n窥见玫瑰亲吻了夜莺\r\n遍体鳞伤 也愿意\r\n\r\n空气开始弥漫你的气息\r\n大脑到心脏都被你占据\r\n你的眼神和唇语还有呼吸\r\nmake me fallin\r\nmake me fallin\r\n\r\nwooo\r\n\r\n故事开始琢磨不清\r\n你变得很扑朔迷离\r\n蔓延嘴巴到眼睛\r\n\r\n像是拥有某种魔力\r\n无时不刻散发神秘\r\n每寸皮肤到纹理\r\n\r\n你在我心里念了句咒语\r\n变幻出了漫天的星云\r\n窥见飞蛾扑向了烟花雨\r\n转瞬即逝 也美丽\r\n\r\n空气开始弥漫你的气息\r\n大脑到心脏都被你占据\r\n你的眼神和唇语还有呼吸\r\nmake me fallin\r\nmake me fallin\r\n\r\nwooo\r\n\r\n空气开始弥漫你的气息\r\n大脑到心脏都被你占据\r\n你的眼神和唇语还有呼吸\r\nmake me fallin\r\nmake me fallin",
   "createdAt": "2025-01-07T08:13:30.045Z",
   "p1": [
@@ -1663,5 +1667,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "중국어"
+  ]
 }

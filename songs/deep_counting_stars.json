@@ -4,7 +4,11 @@
   "kor_name": "별을 세다",
   "eng_name": "Counting Stars",
   "vid": "_GWKkqNoyEA",
-  "artist": "OneRepublic",
+  "artist": {
+    "ori_name": "OneRepublic",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "Lately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no morecounting dollars\r\nWe'll be counting stars\r\nYeah we'll be counting stars\r\nI see this life Like a swinging vine\r\nSwing my heart across the line\r\nIn my faces flashing signs\r\nSeek it out and ye shall find\r\nOld but I'm not that old\r\nYoung but I'm not that bold\r\nAnd I don't think the world is sold\r\nI'm just doing what we're told\r\nI feel something so right\r\nAt doing the wrong thing\r\nI feel something so wrong\r\nAt doing the right thing\r\nI couldn't lie couldn't lie couldn't lie\r\nEverything that kills me\r\nmakes me feel alive\r\nLately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no more counting dollars\r\nWe'll be counting stars\r\nLately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no more counting dollars\r\nWe'll be we'll be counting stars\r\nI feel the love And I feel it burn\r\nDown this river every turn\r\nHope is a four letter word\r\nMake that money Watch it burn\r\nOld but I'm not that old\r\nYoung but I'm not that bold\r\nAnd I don't think the world is sold\r\nI'm just doing what we're told\r\nAnd I feel something so wrong\r\nAt doing the right thing\r\nI could lie could lie could lie\r\nEverything that drowns me makes me wanna fly\r\nLately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no more counting dollars\r\nWe'll be counting stars\r\nLately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no more counting dollars\r\nWe'll be we'll be counting stars\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nEverything that kills me\r\nmakes me feel alive\r\nLately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no more counting dollars\r\nWe'll be counting stars\r\nLately I been I been losing sleep\r\nDreaming about the things that we could be\r\nBut baby I been I been prayin' hard\r\nSaid no more counting dollars\r\nWe'll be we'll be counting stars\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned\r\nTake that money And watch it burn\r\nSink in the river The lessons I learned",
   "createdAt": "2025-01-14T03:10:51.429Z",
   "p1": [
@@ -3418,5 +3422,8 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "영어"
+  ]
 }

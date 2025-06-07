@@ -3531,5 +3531,17 @@
       ]
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "artist": {
+    "ori_name": "Billie Eilish",
+    "kor_name": "빌리 아일리시",
+    "eng_name": ""
+  },
+  "vid": "V9PVRfjEBTI",
+  "ori_name": "BIRDS OF A FEATHER",
+  "kor_name": "깃털이 같은 새들",
+  "eng_name": "",
+  "tags": [
+    "영어"
+  ]
 }

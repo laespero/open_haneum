@@ -4,7 +4,11 @@
   "kor_name": "빛나는 날들",
   "eng_name": "Shiny Days",
   "vid": "0me_7B2rRIE",
-  "artist": "asaka",
+  "artist": {
+    "ori_name": "asaka",
+    "kor_name": "",
+    "eng_name": ""
+  },
   "text": "窓を開けたら \r\nAh Bright light\r\n優しい 陽ざし いっぱいに浴びて\r\n素敵な予感は そう\r\nDay by day\r\nBit by bit \r\n胸に あふれていく\r\n変わらない日々のトビラを開け\r\n光の向こうまで\r\nRight now \r\nはじまりの一歩\r\nSHINY DAYS!あたらしい風\r\nはずむようなステップ踏んで\r\nGo my way \r\nCan you feel？ \r\n透き通る空\r\n胸騒ぎが連れていく\r\nBrand-new world \r\nListen to the melody\r\n遠く口笛 響かせたら\r\n飛び出そう 未来ヘ\r\nほら見上げたら \r\nCloudless sky \r\nSo happy \r\n空気 いっぱいに吸って\r\n当たり前の小さなキセキを\r\nOne by one \r\nまっすぐ 噛みしめてる\r\n少しの勇気がきっかけで\r\n動き出す世界\r\nAll right \r\nどこへでも行ける\r\nSHINY DAYS！どこまでも前へ\r\n好きな歌口ずさんで \r\nFeel so good \r\nCan you see？ \r\nきらめいた Heaven\r\n向かい風が運んでいく\r\nBrand-new mind\r\nPlease save your memories\r\n重ねていく 夢と共に\r\n踏み出そう 未来ヘ\r\n太陽のような笑顔で\r\nTake it easy \r\n肩のチカラ抜いて\r\n毎日を過ごしていこう\r\n今日も明日も そう \r\nIt will be fine\r\nSing a song！！ \r\n一緒に歌おう\r\n晴れ渡る空の向こうまで\r\nCan you see？ \r\nきらめいたHeaven\r\nどこまでも風が誘うよ\r\nSHINY DAYS！あたらしい風\r\nはずむようなステップ踏んで\r\nGo my way\r\nCan you feel？ \r\n透き通る空\r\n胸騒ぎが連れていく\r\nBrand-new world\r\nListen to the melody\r\n遠く口笛 響かせたら\r\n飛び出そう 未来ヘ",
   "createdAt": "2025-06-06T19:52:49.540Z",
   "p1": [
@@ -3577,5 +3581,8 @@
       "O0": "変わらない日々のトビラを開け"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "tags": [
+    "일본어"
+  ]
 }
