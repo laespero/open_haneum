@@ -544,6 +544,10 @@ function loadVideo(vid, isLoop) {
 
                     },
                     'yt_error': function onPlayerError(e) {
+                        if(player._retryCount === undefined) player._retryCount = 0;
+                        player._retryCount++;
+                        if(player._retryCount > 5) return;
+
                         player.load_video(vid, true);
                         player.play();
                     },

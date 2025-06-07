@@ -349,8 +349,13 @@ app.get('/songdetail/:title', async (req, res) => {
 app.get('/songs', (req, res) => {
     const searchQuery = req.query.q || '';
     const lowerCaseQuery = searchQuery.toLowerCase();
-    const filteredSongs = searchQuery ? 
-        songCache.filter(song => {
+
+    // "개발용" 태그가 있는 노래를 제외한 리스트를 먼저 만듭니다.
+    let filteredSongs = songCache.filter(song => !song.tags || !song.tags.includes('개발용'));
+
+    // 검색어가 있는 경우 추가로 필터링합니다.
+    if (searchQuery) {
+        filteredSongs = filteredSongs.filter(song => {
             const artistMatch = typeof song.artist === 'object' 
                 ? song.artist.ori_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.kor_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.eng_name?.toLowerCase().includes(lowerCaseQuery)
                 : song.artist?.toLowerCase().includes(lowerCaseQuery);
@@ -360,7 +365,8 @@ app.get('/songs', (req, res) => {
                 song.kor_name?.toLowerCase().includes(lowerCaseQuery) ||
                 artistMatch ||
                 (song.tags && song.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)));
-        }) : songCache;
+        });
+    }
 
     const sortedSongs = filteredSongs.sort((a, b) => {
         const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
@@ -932,6 +938,11 @@ app.get('/api/search', (req, res) => {
     
     try {
         const allResults = songCache.filter(song => {
+            // "개발용" 태그가 있는 노래는 결과에서 제외합니다.
+            if (song.tags && song.tags.includes('개발용')) {
+                return false;
+            }
+
             const searchFields = [
                 song.name?.toLowerCase(),
                 song.ori_name?.toLowerCase(),
