@@ -623,7 +623,7 @@ app.post('/retry-line/:title', async (req, res) => {
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.redirect(`/songs/${title}`);
+        res.redirect('back');
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         res.status(500).send('특정 라인 재번역 중 오류 발생');
@@ -668,7 +668,7 @@ app.post('/correct-hangul/:title', async (req, res) => {
         //songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.redirect(`/songs/${title}`);
+        res.redirect('back');
     } catch (error) {
         console.error('특정 라인 한글 정정 오류:', error);
         res.status(500).send('특정 라인 한글 정정 중 오류 발생');
@@ -723,7 +723,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.redirect(`/songs/${title}`);
+        res.redirect('back');
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         res.status(500).send('특정 라인 재번역 중 오류 발생');
@@ -774,7 +774,7 @@ app.post('/correct-every-hangul/:title', async (req, res) => {
         await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
         console.log(`정정 끝 : [${title}]`);
 
-        res.render('songDetail', { song: songData });
+        res.redirect('back');
     } catch (error) {
         console.error('정정 오류:', error);
         res.send('정정 중 오류 발생');

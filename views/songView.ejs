@@ -365,7 +365,7 @@
             color: white;
             text-decoration: none;
             border-radius: 20px;
-            font-size: 14px;
+            font-size: 15px;
             transition: background-color 0.3s ease;
         }
 
@@ -814,7 +814,7 @@ function findRuby(htmlStr, sentence){
         }
 
         function getBlogHTML(){
-            set_isBlog(true);
+            blogSetting();
             const vid = `<%= song.vid %>`;
             const a = document.getElementById("printer").innerHTML;
             const b = document.getElementsByTagName("style")[0].innerHTML;
@@ -859,7 +859,7 @@ ${a}
             isShort : false,
             isSlideTimesVaild : false,
             isSimple : false,
-            isBlog : false
+            isBlog : true
         };
                 
         document.addEventListener('keydown', (event) => {
@@ -934,6 +934,16 @@ ${a}
             }
             reRenderAll();
         }
+
+        function blogSetting() {
+            World.mode = "scroll";
+            World.isBlog = true;
+            World.isExplHide = true;
+            World.isIpa = false;
+            World.isShort = false;
+            World.isSimple = false;
+            reRenderAll();
+        }  
         function set_isBlog(isBlog){
             World.isBlog = isBlog;
             reRenderAll();
@@ -1354,7 +1364,7 @@ ${a}
             catch {}
             
             
-            let aStr = `<h3>${World.isIpa?currentData.I0:currentData.R0}</h3><h2>${t0Str}</h2><h3>${rdot(currentData.K0)}</h3>` + ((World.isExplHide||World.isBlog)? '' : `<div class="expl-text">${currentData.G0}</div>`);
+            let aStr = `<h3>${World.isIpa?currentData.I0:currentData.R0}</h3><h2>${t0Str}</h2><h3>${rdot(currentData.K0)}</h3>` + ((World.isExplHide)? '' : `<div class="expl-text">${currentData.G0}</div>`);
             let bStr = '';
             const trStr = r => `<tr>${r}</tr>`;
 
