@@ -17,6 +17,24 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // 페이지가 로드될 때 세션 스토리지에서 스크롤 위치를 읽어옵니다.
+            const scrollpos = sessionStorage.getItem('scrollpos');
+            if (scrollpos) {
+                window.scrollTo(0, parseInt(scrollpos, 10));
+                sessionStorage.removeItem('scrollpos'); // 사용 후에는 제거합니다.
+            }
+
+            // 페이지의 모든 폼에 이벤트 리스너를 추가합니다.
+            document.querySelectorAll('form').forEach(form => {
+                form.addEventListener('submit', () => {
+                    // 폼이 제출되기 직전에 현재 스크롤 위치를 세션 스토리지에 저장합니다.
+                    sessionStorage.setItem('scrollpos', window.scrollY);
+                });
+            });
+        });
+    </script>
     <!-- 헤더 -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

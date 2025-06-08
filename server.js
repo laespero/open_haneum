@@ -345,7 +345,7 @@ app.get('/detail/:title', async (req, res) => {
     try {
         const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
         const songData = JSON.parse(data);
-        res.render('songdetail', { song: songData });
+        res.render('songDetail', { song: songData });
     } catch (error) {
         if (error.code === 'ENOENT') {
             return res.redirect('/');
@@ -496,36 +496,6 @@ app.post('/translate/:title', async (req, res) => {
     }
 });
 
-app.get('/makebatch/:title', async (req, res) => {
-    const title = req.params.title;
-
-    try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
-        let songData = JSON.parse(data);
-        const contextText = toContextObj(songData.p1);
-        songData.contextText = contextText;
-        const batchObj = (id,body) => ({"custom_id": id, "method": "POST", "url": "/v1/chat/completions", "body": body});
-
-        const batchJoin = contextText.map((context, idx) => {
-            const body = {
-                model: chatModel,
-                messages: [
-                    { role: "system", content: MSG },
-                    { role: 'user', content: JSON.stringify(context) },
-                ],   
-                response_format: { type: "json_object" }
-            };
-            return JSON.stringify(batchObj("jamin"+idx, body));
-        }).join("\n");
-
-        await fs.promises.writeFile(`batchs/${title}.jsonl`, batchJoin);
-        console.log('배치 완료');
-        res.render('songDetail', { song: songData });
-    } catch (error) {
-        console.error('배치 생성 오류:', error);
-        res.send('배치 생성 중 오류 발생');
-    }
-});
 
 app.post('/retry-translation/:title', async (req, res) => {
     const title = req.params.title;
@@ -597,7 +567,7 @@ app.post('/retry-line/:title', async (req, res) => {
     const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
     let songData = JSON.parse(data);
     
-    const thatLine = songData.contextText.find(x=>x.T0 === req.body.originalLine);
+    const thatLine = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
 
     if (!thatLine) {
         return res.status(400).send('원본 가사 없음');
@@ -626,7 +596,8 @@ app.post('/retry-line/:title', async (req, res) => {
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
-        const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine);   
+        parsedResult.O0 = thatLine.T0;
+        const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
             songData.translatedLines.push(parsedResult);
@@ -637,55 +608,10 @@ app.post('/retry-line/:title', async (req, res) => {
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.redirect('back');
+        res.redirect(`/detail/${title}`);
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         res.status(500).send('특정 라인 재번역 중 오류 발생');
-    }
-});
-
-app.post('/correct-hangul/:title', async (req, res) => {
-    const title = req.params.title;
-    const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
-    let songData = JSON.parse(data);
-    
-    const thatLine = songData.translatedLines.find(x=>x.T0 === req.body.originalLine);
-
-    if (!thatLine) {
-        return res.status(400).send('원본 가사 없음');
-    }
-
-    try {
-        const completion = await openai.chat.completions.create({
-            model: isUsingDeepSeekDirectly ? "deepseek-chat" : "google/gemini-2.0-flash-001",
-            max_tokens: 8192,
-            temperature: 0,
-            messages: [
-                { role: "system", content: "다음 JSON에서 만약 틀린 점이 있다면 수정하세요. 출력 형식은 입력의 형식과 같은 JSON입니다." },
-                { role: 'user', content: JSON.stringify(thatLine) },
-            ],
-            response_format: { type: "json_object" }
-        });
-
-        console.log(completion.choices[0].message.content.substring(0,1000));
-        const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
-        const parsedResult = JSON.parse(translatedLine);
-
-        const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine);   
-        
-        if(foundIdx===-1){
-            //songData.translatedLines.push(parsedResult);
-        }
-        else{
-            songData.translatedLines[foundIdx] = parsedResult;
-        }
-        //songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
-
-        await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.redirect('back');
-    } catch (error) {
-        console.error('특정 라인 한글 정정 오류:', error);
-        res.status(500).send('특정 라인 한글 정정 중 오류 발생');
     }
 });
 
@@ -737,7 +663,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.redirect('back');
+        res.redirect(`/detail/${title}`);
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         res.status(500).send('특정 라인 재번역 중 오류 발생');
@@ -745,55 +671,6 @@ app.post('/correct-with-message/:title', async (req, res) => {
 
 });
 
-app.post('/correct-every-hangul/:title', async (req, res) => {
-    const title = req.params.title;
-    console.log(`정정 시작 : [${title}]`);
-
-    try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
-        let songData = JSON.parse(data);    
-
-        const translationPromises = songData.translatedLines.map(async (context) => {
-            try {
-                const completion = await openai.chat.completions.create({
-                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : "google/gemini-2.0-flash-001",
-                    max_tokens: 8192,
-                    temperature:0.2,
-                    messages: [
-                        { role: "system", content: `다음 JSON의 "R0","R1","R2","XR" 항목에 적힌 한글 발음 표기가 틀린 것을 수정하세요. 출력 형식은 입력의 형식과 같은 JSON입니다.` },
-                        { role: 'user', content: JSON.stringify(context) },
-                    ],
-                    response_format: { 
-                        type: "json_object" 
-                    }
-                });
-
-                const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
-                console.log(translatedLine.substring(0,100));
-                const parsedResult = JSON.parse(translatedLine);
-
-                const foundIdx = songData.translatedLines.findIndex(t=>t.T0===context.T0);   
-        
-                if(foundIdx!==-1){
-                    songData.translatedLines[foundIdx] = parsedResult;
-                }
-
-            } catch (error) {
-                console.error('정정 오류:', error);
-            }
-        });
-
-        await Promise.all(translationPromises);
-
-        await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        console.log(`정정 끝 : [${title}]`);
-
-        res.redirect('back');
-    } catch (error) {
-        console.error('정정 오류:', error);
-        res.send('정정 중 오류 발생');
-    }
-});
 
 app.get('/api/songs/:title/translated', async (req, res) => {
     const title = req.params.title;
@@ -831,33 +708,6 @@ app.get('/api/songs/:title/translated', async (req, res) => {
                 title: songData.name,
                 translatedLines: result
             });
-        } else {
-            res.status(404).json({
-                error: '번역된 가사 없음'
-            });
-        }
-    } catch (error) {
-        console.error('API 오류:', error);
-        res.status(500).json({
-            error: '서버 오류'
-        });
-    }
-});
-
-app.get('/api/songs/:title/finetune', async (req, res) => {
-    const title = req.params.title;
-
-    try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
-        let songData = JSON.parse(data);
-
-        if (Array.isArray(songData.translatedLines) && songData.translatedLines.length > 0) {
-            const a = songData.contextText;
-            const b = songData.translatedLines;
-            const c = a.filter(x=>b.find(y=>y.T0==x.T0)).map(x=>({context:x, result:b.find(y=>y.T0==x.T0)}));
-            const gen = (A, B, C) => ({"messages": [{"role": "system", "content": A}, {"role": "user", "content": B}, {"role": "assistant", "content": C }]});
-
-            res.json(c.map(o=>gen(MSG, JSON.stringify(o.context), JSON.stringify(o.result))).map(o=>JSON.stringify(o)));
         } else {
             res.status(404).json({
                 error: '번역된 가사 없음'

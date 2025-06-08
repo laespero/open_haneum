@@ -155,8 +155,8 @@ open-haneum/
 ### 가사 보기
 - `GET /songs`: 가사 목록
 - `GET /songs/:title`: 특정 가사 보기
-- `GET /songview/:title`: 가사 상세 보기
-- `GET /songdetail/:title`: 가사 상세 정보
+- `GET /view/:title`: 가사 상세 보기
+- `GET /detail/:title`: 가사 상세 정보
 
 ### 번역 관련
 - `POST /translate/:title`: 가사 번역

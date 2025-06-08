@@ -7,9 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-slate-50 text-slate-800 font-sans">
     <!-- 헤더 -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50 border-b border-slate-200">
         <div class="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
             <nav class="hidden md:flex items-center gap-6">
@@ -19,74 +19,88 @@
         </div>
     </header>
 
-    <main class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+    <main class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
         <!-- 곡 정보 및 액션 버튼 -->
-        <div class="bg-white p-8 rounded-2xl shadow-lg mb-8">
-            <div class="text-center">
-                <p class="text-lg text-gray-500"><%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %></p>
-                <% if (typeof song.artist === 'object' && song.artist.kor_name) { %>
-                    <p class="text-base text-gray-500"><%= song.artist.kor_name %></p>
-                <% } %>
-                <% if (typeof song.artist === 'object' && song.artist.eng_name) { %>
-                    <p class="text-base text-gray-500"><%= song.artist.eng_name %></p>
-                <% } %>
-                
-                <h1 class="text-4xl font-bold text-gray-900 mt-4"><%= song.ori_name || song.name %></h1>
-                <% if (song.kor_name) { %>
-                    <p class="text-2xl text-gray-600 mt-1"><%= song.kor_name %></p>
-                <% } %>
-                <% if (song.eng_name) { %>
-                    <p class="text-xl text-gray-500 mt-1"><%= song.eng_name %></p>
-                <% } %>
-
-                <% if (song.tags && song.tags.length > 0) { %>
-                    <div class="flex flex-wrap justify-center gap-2 mt-4">
-                        <% song.tags.forEach(tag => { %>
-                            <span class="bg-gray-200 text-gray-700 text-sm font-semibold px-3 py-1 rounded-full"><%= tag %></span>
-                        <% }); %>
+        <section class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl mb-12">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <% if (song.vid && song.vid.trim() !== '') { %>
+                    <div class="w-full md:w-[280px] flex-shrink-0">
+                        <a href="https://www.youtube.com/watch?v=<%= song.vid %>" target="_blank" rel="noopener noreferrer" class="block overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                            <img src="https://img.youtube.com/vi/<%= song.vid %>/hqdefault.jpg" alt="<%= song.ori_name || song.name %> 썸네일" class="w-full aspect-video object-cover transform hover:scale-105 transition-transform duration-300">
+                        </a>
                     </div>
                 <% } %>
-            </div>
-            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="/view/<%= song.name %>" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-transform transform hover:scale-105">
-                    <i class="fas fa-eye"></i> 분석 결과 보기
-                </a>
-                <a href="/songdetail/<%= song.name %>" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gray-200 text-gray-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-300 transition-transform transform hover:scale-105">
-                    <i class="fas fa-edit"></i> 번역 관리 페이지
-                </a>
-            </div>
-        </div>
 
-        <!-- 번역된 가사 미리보기 -->
-        <div class="bg-white p-8 rounded-2xl shadow-lg">
-            <h2 class="text-2xl font-semibold text-center text-gray-800 mb-8">번역된 가사 미리보기</h2>
-            <div class="space-y-6">
-                <% if (Array.isArray(song.translatedLines) && song.translatedLines.length > 0) { %>
-                    <% song.translatedLines.slice(0, 5).forEach(line => { %>
-                        <div class="border-b border-gray-200 pb-4 last:border-b-0">
-                            <p class="text-gray-800 font-medium text-lg"><%= line.T0 %></p>
-                            <p class="text-blue-600 mt-1"><%= line.K0 %></p>
-                        </div>
-                    <% }); %>
-                    <% if (song.translatedLines.length > 5) { %>
-                        <div class="text-center text-gray-500 pt-4">
-                            ... 등 총 <%= song.translatedLines.length %>개의 번역된 라인이 있습니다.
+                <div class="flex-grow w-full text-center md:text-left">
+                    <p class="text-sm font-semibold text-blue-600 uppercase tracking-wider"><%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %></p>
+                    <% if (typeof song.artist === 'object' && song.artist.kor_name) { %>
+                        <p class="text-xs text-slate-500 mt-1"><%= song.artist.kor_name %></p>
+                    <% } %>
+                    
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2"><%= song.ori_name || song.name %></h1>
+                    <% if (song.kor_name) { %>
+                        <p class="text-2xl text-slate-700 mt-1"><%= song.kor_name %></p>
+                    <% } %>
+                    <% if (song.eng_name) { %>
+                        <p class="text-xl text-slate-500 mt-1"><%= song.eng_name %></p>
+                    <% } %>
+
+                    <% if (song.tags && song.tags.length > 0) { %>
+                        <div class="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
+                            <% song.tags.forEach(tag => { %>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-1 rounded-full"><%= tag %></span>
+                            <% }); %>
                         </div>
                     <% } %>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="/view/<%= song.name %>" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold px-8 py-3 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-300">
+                    <i class="fas fa-eye fa-fw"></i>
+                    <span>분석 결과 보기</span>
+                </a>
+                <a href="/detail/<%= song.name %>" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-200 text-slate-700 font-semibold px-6 py-3 rounded-full hover:bg-slate-300 transition-colors">
+                    <i class="fas fa-edit fa-fw"></i>
+                    <span>번역 관리</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 전체 가사 보기 -->
+        <section class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">노래 가사</h2>
+            <div class="space-y-6">
+                <% if (Array.isArray(song.translatedLines) && song.translatedLines.length > 0) { %>
+                    <% song.translatedLines.forEach(line => { %>
+                        <div class="border-b border-slate-200/80 pb-5 last:border-b-0">
+                            <% if (line.R0 && line.R0.trim() !== '' && line.R0.trim() !== line.T0.trim()) { %>
+                                <p class="text-slate-500 font-medium text-md leading-relaxed tracking-wide"><%= line.R0 %></p>
+                            <% } %>
+                            <p class="text-slate-900 font-semibold text-lg leading-relaxed mt-1"><%= line.T0 %></p>
+                            <p class="text-blue-600 mt-2 text-base font-medium"><%= line.K0 %></p>
+                        </div>
+                    <% }); %>
                 <% } else { %>
-                    <div class="text-center py-10">
-                        <i class="fas fa-info-circle text-4xl text-gray-400 mb-4"></i>
-                        <p class="text-gray-500">아직 번역된 내용이 없습니다.</p>
-                        <p class="text-sm text-gray-400 mt-1">'번역 관리 페이지'로 이동하여 번역을 시작하세요.</p>
+                    <div class="text-center py-12">
+                        <div class="mx-auto w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-file-alt text-3xl text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-slate-800">아직 번역된 내용이 없습니다</h3>
+                        <p class="text-slate-500 mt-2">'번역 관리' 페이지로 이동하여 번역을 시작해 보세요.</p>
+                        <a href="/detail/<%= song.name %>" class="mt-6 inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold px-6 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-md hover:shadow-lg">
+                            <i class="fas fa-edit fa-fw"></i>
+                            <span>번역 관리로 이동</span>
+                        </a>
                     </div>
                 <% } %>
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer class="text-center py-8 mt-12">
-        <a href="/songs?q=<%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %>" class="text-gray-500 hover:text-gray-700 transition">
-            <i class="fas fa-arrow-left"></i> <%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %>의 다른 곡 보기
+    <footer class="text-center py-10 mt-8">
+        <a href="/songs?q=<%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %>" class="text-slate-500 hover:text-blue-600 transition-colors">
+            <i class="fas fa-arrow-left fa-fw mr-1"></i> <%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %>의 다른 곡 보기
         </a>
     </footer>
     <script>
