@@ -279,7 +279,7 @@ app.post('/update-song-meta/:title', async (req, res) => {
         console.log(`캐시에 없는 노래(${title})가 업데이트되어 전체 캐시를 갱신합니다.`);
     }
     
-    res.redirect(`/songdetail/${title}`);
+    res.redirect(`/detail/${title}`);
 });
 
 app.get('/songs/:title', async (req, res) => {
@@ -318,7 +318,7 @@ app.get('/songs/:title', async (req, res) => {
     }
 });
 
-app.get('/songview/:title', async (req, res) => {
+app.get('/view/:title', async (req, res) => {
     const title = req.params.title;
     try {
         const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
@@ -332,12 +332,20 @@ app.get('/songview/:title', async (req, res) => {
     }
 });
 
-app.get('/songdetail/:title', async (req, res) => {
+app.get('/songview/:title', (req, res) => {
+    res.redirect(`/view/${req.params.title}`);
+});
+
+app.get('/songdetail/:title', (req, res) => {
+    res.redirect(`/detail/${req.params.title}`);
+});
+
+app.get('/detail/:title', async (req, res) => {
     const title = req.params.title;
     try {
         const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
         const songData = JSON.parse(data);
-        res.render('songDetail', { song: songData });
+        res.render('songdetail', { song: songData });
     } catch (error) {
         if (error.code === 'ENOENT') {
             return res.redirect('/');
