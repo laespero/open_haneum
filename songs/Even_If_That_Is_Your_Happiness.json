@@ -172,7 +172,7 @@
       "G0": "이 문장은 'こぞって'라는 부사구로 시작하여 '모두 함께'라는 의미를 나타내고, '造り上げた'는 '만들어낸'이라는 과거형 동사로, '센세이션'이라는 명사를 수식합니다. 전체적으로 '모두 함께 만들어낸 센세이션'이라는 의미를 전달합니다.",
       "K0": "모두 함께 만들어낸 센세이션",
       "I0": "kozotte tsukuriageta sensēshon",
-      "R0": "코좃테 쓰쿠리아게타 센세이숀",
+      "R0": "코좃테 츠쿠리 아게타 센세이숀",
       "LI": [
         {
           "T1": "こぞって",
@@ -193,16 +193,16 @@
           "T1": "造り上げた",
           "K1": "만들어낸",
           "I1": "tsukuriageta",
-          "R1": "쓰쿠리아게타",
+          "R1": "츠쿠리 아게타",
           "E1": "'만들다'의 과거형으로, 무언가를 완성하거나 만들어냄을 의미합니다.",
           "T2": "造り上げる",
           "K2": "만들어내다",
           "I2": "tsukuriageru",
-          "R2": "쓰쿠리아게루",
+          "R2": "츠쿠리 아게루",
           "XE": "彼は作品を造り上げた。",
           "XK": "그는 작품을 만들어냈다.",
           "XI": "kare wa sakuhin o tsukuriageta",
-          "XR": "카레 와 사쿠힌 오 쓰쿠리아게타"
+          "XR": "카레 와 사쿠힌 오 츠쿠리 아게타"
         },
         {
           "T1": "センセーション",
@@ -217,7 +217,7 @@
           "XE": "そのニュースは大きなセンセーションを巻き起こした。",
           "XK": "그 뉴스는 큰 센세이션을 일으켰다.",
           "XI": "sono nyūsu wa ookina sensēshon o makiokoshita",
-          "XR": "소노 뉴스 와 오오키나 센세이숀 오 마키오코시타"
+          "XR": "소노 뉴스 와 오오키나 센세이숀 오 마키 오코시타"
         }
       ],
       "O0": "こぞって造り上げたセンセーション"
@@ -228,22 +228,22 @@
       "G0": "이 문장은 'シチュエーション'이라는 명사와 조건을 나타내는 조사 'ならば'로 구성되어 있습니다. 'シチュエーション'은 '상황'을 의미하며, 'ならば'는 '~이라면'이라는 조건을 표현합니다. 전체적으로 특정 상황을 가정하고 그 상황에 대해 이야기하고 있는 문장입니다.",
       "K0": "상황이라면",
       "I0": "shichuēshon naraba",
-      "R0": "시츄에숀 나라바",
+      "R0": "시츄에이숀 나라바",
       "LI": [
         {
           "T1": "シチュエーション",
           "K1": "상황",
           "I1": "shichuēshon",
-          "R1": "시츄에숀",
+          "R1": "시츄에이숀",
           "E1": "어떤 사건이나 일이 벌어지는 특정한 상태나 환경을 의미합니다.",
           "T2": "シチュエーション",
           "K2": "상황",
           "I2": "shichuēshon",
-          "R2": "시츄에숀",
+          "R2": "시츄에이숀",
           "XE": "このシチュエーションは難しい。",
           "XK": "이 상황은 어렵다.",
           "XI": "kono shichuēshon wa muzukashii",
-          "XR": "코노 시츄에숀 와 무즈카시이"
+          "XR": "코노 시츄에이숀 와 무즈카시이"
         },
         {
           "T1": "ならば",
@@ -258,7 +258,7 @@
           "XE": "雨ならば、行かない。",
           "XK": "비가 온다면, 가지 않을 거야.",
           "XI": "ame naraba, ikanai",
-          "XR": "아메 나라바, 이카나이"
+          "XR": "아메 나라바, 이카 나이"
         }
       ],
       "O0": "シチュエーションならば"
@@ -269,7 +269,7 @@
       "G0": "이 문장은 주어(その数歩) + 주격 조사(が) + 술어(運命でも)로 구성되어 있습니다. 'その数歩'는 '그 몇 걸음'을 의미하며, 'が'는 주격 조사로 주어를 나타냅니다. '運命でも'는 '운명이라도'라는 의미로, 'でも'는 '~이라도'라는 양보의 의미를 가집니다. 전체적으로 '그 몇 걸음이 운명이라도'라는 뜻을 전달합니다.",
       "K0": "그 몇 걸음이 운명이라도",
       "I0": "sono sūpo ga unmei demo",
-      "R0": "소노 스포 가 운메이 데모",
+      "R0": "소노 스우 호 가 운메이 데모",
       "LI": [
         {
           "T1": "その",
@@ -290,16 +290,16 @@
           "T1": "数歩",
           "K1": "몇 걸음",
           "I1": "sūpo",
-          "R1": "스포",
+          "R1": "스우 호",
           "E1": "수량을 나타내는 명사로, '몇 걸음'이라는 의미입니다.",
           "T2": "数歩",
           "K2": "몇 걸음",
           "I2": "sūpo",
-          "R2": "스포",
+          "R2": "스우 호",
           "XE": "数歩進んだ。",
           "XK": "몇 걸음 나아갔다.",
           "XI": "sūpo susunda",
-          "XR": "스포 스슨다"
+          "XR": "스우 호 스슨다"
         },
         {
           "T1": "が",
@@ -355,22 +355,22 @@
       "G0": "이 문장은 주어(議論) + 조사(は) + 술어(トートロジーに)로 구성되어 있습니다. 'めくるめく'는 '어지러운'이라는 의미의 형용사로, '議論'을 수식합니다. 'は'는 주제를 나타내는 조사이며, 'トートロジーに'는 '동어반복에'라는 의미로, 논의가 같은 말의 반복에 그치고 있음을 나타냅니다.",
       "K0": "어지러운 논의는 동어반복에.",
       "I0": "mekurumeku giron wa tōtorojī ni",
-      "R0": "메쿠루메쿠 기론 와 토오토로지이 니",
+      "R0": "메쿠루 메쿠 기론 와 토오토로지이 니",
       "LI": [
         {
           "T1": "めくるめく",
           "K1": "어지러운",
           "I1": "mekurumeku",
-          "R1": "메쿠루메쿠",
+          "R1": "메쿠루 메쿠",
           "E1": "어지럽거나 현기증이 날 정도로 복잡한 상태를 나타내는 형용사입니다.",
           "T2": "めくるめく",
           "K2": "어지러운",
           "I2": "mekurumeku",
-          "R2": "메쿠루메쿠",
+          "R2": "메쿠루 메쿠",
           "XE": "めくるめく世界",
           "XK": "어지러운 세계",
           "XI": "mekurumeku sekai",
-          "XR": "메쿠루메쿠 세카이"
+          "XR": "메쿠루 메쿠 세카이"
         },
         {
           "T1": "議論",
@@ -643,7 +643,7 @@
       "G0": "이 문장은 의문문으로, 'それは'가 주어, '誰にも'가 부사어, '解けない'가 서술어, 'のだろうか'가 의문을 나타내는 종조사입니다. 전체적으로 '그것은 아무도 풀 수 없는 걸까'라는 의미를 전달합니다.",
       "K0": "그것은 아무도 풀 수 없는 걸까",
       "I0": "sore wa dare ni mo tokenai no darou ka",
-      "R0": "소레 와 다레 니 모 토케나이 노 다로우 카",
+      "R0": "소레 와 다레 니 모 토케 나이 노 다로우 카",
       "LI": [
         {
           "T1": "それ",
@@ -709,7 +709,7 @@
           "T1": "解けない",
           "K1": "풀 수 없는",
           "I1": "tokenai",
-          "R1": "토케나이",
+          "R1": "토케 나이",
           "E1": "동사 '解ける'의 부정형으로, '풀 수 없다'는 뜻입니다.",
           "T2": "解ける",
           "K2": "풀리다",
@@ -718,7 +718,7 @@
           "XE": "この問題は解けない。",
           "XK": "이 문제는 풀 수 없다.",
           "XI": "kono mondai wa tokenai",
-          "XR": "코노 몬다이 와 토케나이"
+          "XR": "코노 몬다이 와 토케 나이"
         },
         {
           "T1": "の",
@@ -890,7 +890,7 @@
       "G0": "이 문장은 일본어로, 주어(素足を晒して駆け出した少年少女) + 목적어(期待)로 구성되어 있습니다. '素足を晒して駆け出した'는 '맨발을 드러내고 달려나간'이라는 의미로, '少年少女の期待'는 '소년 소녀의 기대'를 의미합니다. 전체적으로 맨발로 달려나가는 소년 소녀의 기대를 표현하는 문장입니다.",
       "K0": "맨발을 드러내고 달려나간 소년 소녀의 기대",
       "I0": "suashi o sarashite kakedashita shounen shoujo no kitai",
-      "R0": "스아시 오 사라시테 카케다시타 쇼우넨 쇼우죠 노 키타이",
+      "R0": "스아시 오 사라시테 카케 다시타 쇼오넨 쇼오죠 노 키타이",
       "LI": [
         {
           "T1": "素足",
@@ -941,31 +941,31 @@
           "T1": "駆け出した",
           "K1": "달려나간",
           "I1": "kakedashita",
-          "R1": "카케다시타",
+          "R1": "카케 다시타",
           "E1": "동사 '駆け出す(달려나가다)'의 과거형으로, '~한'이라는 의미를 가집니다.",
           "T2": "駆け出す",
           "K2": "달려나가다",
           "I2": "kakedasu",
-          "R2": "카케다스",
+          "R2": "카케 다스",
           "XE": "彼は駆け出した。",
           "XK": "그는 달려나갔다.",
           "XI": "kare wa kakedashita",
-          "XR": "카레 와 카케다시타"
+          "XR": "카레 와 카케 다시타"
         },
         {
           "T1": "少年少女",
           "K1": "소년 소녀",
           "I1": "shounen shoujo",
-          "R1": "쇼우넨 쇼우죠",
+          "R1": "쇼오넨 쇼오죠",
           "E1": "소년과 소녀를 함께 지칭하는 명사입니다.",
           "T2": "少年少女",
           "K2": "소년 소녀",
           "I2": "shounen shoujo",
-          "R2": "쇼우넨 쇼우죠",
+          "R2": "쇼오넨 쇼오죠",
           "XE": "少年少女の夢。",
           "XK": "소년 소녀의 꿈.",
           "XI": "shounen shoujo no yume",
-          "XR": "쇼우넨 쇼우죠 노 유메"
+          "XR": "쇼오넨 쇼오죠 노 유메"
         },
         {
           "T1": "の",
@@ -1238,7 +1238,7 @@
       "G0": "이 문장은 'その数秒が'와 '運命でも'로 구성되어 있습니다. 'その数秒が'는 '그 몇 초가'를 의미하며, '運命でも'는 '운명이라 해도'를 의미합니다. 전체적으로 '그 몇 초가 운명이라 해도'라는 의미를 전달합니다.",
       "K0": "그 몇 초가 운명이라 해도",
       "I0": "sono sūbyō ga unmei demo",
-      "R0": "소노 수뵤우 가 운메이 데모",
+      "R0": "소노 스우 뵤오 가 운메이 데모",
       "LI": [
         {
           "T1": "その",
@@ -1259,16 +1259,16 @@
           "T1": "数秒",
           "K1": "몇 초",
           "I1": "sūbyō",
-          "R1": "수뵤우",
+          "R1": "스우 뵤오",
           "E1": "시간의 단위로, '몇 초'를 의미합니다.",
           "T2": "数秒",
           "K2": "몇 초",
           "I2": "sūbyō",
-          "R2": "수뵤우",
+          "R2": "스우 뵤오",
           "XE": "数秒待ってください。",
           "XK": "몇 초 기다려 주세요.",
           "XI": "sūbyō matte kudasai",
-          "XR": "수뵤우 맛테 쿠다사이"
+          "XR": "스우 뵤오 맛테 쿠다사이"
         },
         {
           "T1": "が",
@@ -1481,7 +1481,7 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 'あなたが旅立つ場所へ'로, '당신이 떠나는 곳으로'라는 의미이며, 'あなた'는 주어, '旅立つ'는 동사, '場所へ'는 목적어입니다. 두 번째 절은 '行かせたくはないな'로, '가게 하고 싶지 않아'라는 의미이며, '行かせ'는 사역형 동사, 'たくはない'는 부정의 뜻을 나타내는 표현입니다. 전체적으로 상대방이 떠나는 것을 원하지 않는 감정을 표현하고 있습니다.",
       "K0": "당신이 떠나는 곳으로 가게 하고 싶지 않아",
       "I0": "anata ga tabidatsu basho e ikasetaku wa nai na",
-      "R0": "아나타 가 타비다츠 바쇼 에 이카세타쿠 와 나이 나",
+      "R0": "아나타 가 타비 다츠 바쇼 에 이카세타쿠 와 나이 나",
       "LI": [
         {
           "T1": "あなた",
@@ -1517,12 +1517,12 @@
           "T1": "旅立つ",
           "K1": "떠나다",
           "I1": "tabidatsu",
-          "R1": "타비다츠",
+          "R1": "타비 다츠",
           "E1": "여행을 떠나거나 출발한다는 의미의 동사입니다.",
           "T2": "旅立つ",
           "K2": "떠나다",
           "I2": "tabidatsu",
-          "R2": "타비다츠",
+          "R2": "타비 다츠",
           "XE": "明日、旅立ちます。",
           "XK": "내일, 떠날 거예요.",
           "XI": "ashita, tabidachimasu",
@@ -1642,13 +1642,13 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '許される事すら'로, '용서받을 일조차'라는 의미입니다. '許される'는 '용서받다'라는 동사의 수동형이며, '事'는 '일'을 의미합니다. 'すら'는 '조차'라는 의미로, 강조의 역할을 합니다. 두 번째 절은 '許されなくなった'로, '용서받을 수 없게 되었다'라는 의미입니다. '許されない'는 '용서받을 수 없다'라는 부정형이며, 'なった'는 '되다'라는 동사의 과거형입니다. 전체적으로 용서받을 수 없는 상황에 대한 절망감을 표현하고 있습니다.",
       "K0": "용서받을 일조차 용서받을 수 없게 되었다.",
       "I0": "yurusareru koto sura yurusarenaku natta",
-      "R0": "유루사레루 코토 스라 유루사레나쿠 낫타",
+      "R0": "유루 사레루 코토 스라 유루 사레 나쿠 낫타",
       "LI": [
         {
           "T1": "許される",
           "K1": "용서받다",
           "I1": "yurusareru",
-          "R1": "유루사레루",
+          "R1": "유루 사레루",
           "E1": "'용서받다'라는 의미의 동사 '許す'의 수동형입니다.",
           "T2": "許す",
           "K2": "용서하다",
@@ -1657,7 +1657,7 @@
           "XE": "彼は許されるべきだ。",
           "XK": "그는 용서받아야 한다.",
           "XI": "kare wa yurusareru beki da",
-          "XR": "카레 와 유루사레루 베키 다"
+          "XR": "카레 와 유루 사레루 베키 다"
         },
         {
           "T1": "事",
@@ -1693,16 +1693,16 @@
           "T1": "許されなくなった",
           "K1": "용서받을 수 없게 되었다",
           "I1": "yurusarenaku natta",
-          "R1": "유루사레나쿠 낫타",
+          "R1": "유루 사레 나쿠 낫타",
           "E1": "'용서받을 수 없다'라는 의미의 부정형 동사 '許されない'와 '되다'라는 동사의 과거형 'なった'가 결합된 형태입니다.",
           "T2": "許されない",
           "K2": "용서받을 수 없다",
           "I2": "yurusarenai",
-          "R2": "유루사레나이",
+          "R2": "유루 사레 나이",
           "XE": "彼は許されなくなった。",
           "XK": "그는 용서받을 수 없게 되었다.",
           "XI": "kare wa yurusarenaku natta",
-          "XR": "카레 와 유루사레나쿠 낫타"
+          "XR": "카레 와 유루 사레 나쿠 낫타"
         }
       ],
       "O0": "許される事すら 許されなくなった"
@@ -1713,7 +1713,7 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '緩やかに落ちてく魔法を'로, '緩やかに'는 '천천히', '落ちてく'는 '떨어지다', '魔法を'는 '마법을'을 의미합니다. 두 번째 절은 'かけられたんだろうか'로, 'かけられた'는 '걸리다'의 수동형, 'んだろうか'는 '~인 걸까?'라는 추측을 나타냅니다. 전체적으로 천천히 떨어지는 마법에 걸린 것인지에 대한 의문을 표현하고 있습니다.",
       "K0": "천천히 떨어지는 마법에 걸린 걸까?",
       "I0": "yuruyaka ni ochiteku mahō o kakeraretan darō ka",
-      "R0": "유루야카 니 오치테쿠 마호오 오 카케라레탄 다로오 카",
+      "R0": "유루야카 니 오치테쿠 마호오 오 카케 라레탄 다로오 카",
       "LI": [
         {
           "T1": "緩やかに",
@@ -1758,13 +1758,13 @@
           "XE": "魔法を使う",
           "XK": "마법을 사용하다",
           "XI": "mahō o tsukau",
-          "XR": "마호오 오 쓰카우"
+          "XR": "마호오 오 츠카우"
         },
         {
           "T1": "かけられた",
           "K1": "걸리다",
           "I1": "kakerareta",
-          "R1": "카케라레타",
+          "R1": "카케 라레타",
           "E1": "걸리다의 수동형으로, 누군가에게 마법 등이 걸린 상태를 나타냅니다.",
           "T2": "かける",
           "K2": "걸다",
@@ -1773,7 +1773,7 @@
           "XE": "魔法をかけられた",
           "XK": "마법에 걸렸다",
           "XI": "mahō o kakerareta",
-          "XR": "마호오 오 카케라레타"
+          "XR": "마호오 오 카케 라레타"
         },
         {
           "T1": "んだろうか",
@@ -1799,52 +1799,52 @@
       "G0": "이 문장은 '行かないで'(가지 마)라는 구절이 세 번 반복되어 강한 간청의 감정을 표현하고 있습니다. '今は'(지금은)는 시간적 상황을 나타내며, 전체적으로 상대방이 떠나지 않기를 간절히 바라는 마음을 담고 있습니다. 문장 구조는 간단한 명령문과 시간 부사로 이루어져 있습니다.",
       "K0": "가지 마, 가지 마, 가지 마 지금은",
       "I0": "ikanai de ikanai de ikanai de ima wa",
-      "R0": "이카나이 데 이카나이 데 이카나이 데 이마 와",
+      "R0": "이카 나이 데 이카 나이 데 이카 나이 데 이마 와",
       "LI": [
         {
           "T1": "行かないで",
           "K1": "가지 마",
           "I1": "ikanai de",
-          "R1": "이카나이 데",
+          "R1": "이카 나이 데",
           "E1": "'가지 마'라는 의미로, 상대방이 떠나지 않기를 바라는 간청의 표현입니다.",
           "T2": "行かない",
           "K2": "가지 않다",
           "I2": "ikanai",
-          "R2": "이카나이",
+          "R2": "이카 나이",
           "XE": "行かないで、お願い。",
           "XK": "가지 마, 제발.",
           "XI": "ikanai de, onegai",
-          "XR": "이카나이 데, 오네가이"
+          "XR": "이카 나이 데, 오네가이"
         },
         {
           "T1": "行かないで",
           "K1": "가지 마",
           "I1": "ikanai de",
-          "R1": "이카나이 데",
+          "R1": "이카 나이 데",
           "E1": "앞의 구절을 반복하여 간청의 감정을 강조합니다.",
           "T2": "行かない",
           "K2": "가지 않다",
           "I2": "ikanai",
-          "R2": "이카나이",
+          "R2": "이카 나이",
           "XE": "行かないで、僕のそばにいて。",
           "XK": "가지 마, 내 곁에 있어줘.",
           "XI": "ikanai de, boku no soba ni ite",
-          "XR": "이카나이 데, 보쿠 노 소바 니 이테"
+          "XR": "이카 나이 데, 보쿠 노 소바 니 이테"
         },
         {
           "T1": "行かないで",
           "K1": "가지 마",
           "I1": "ikanai de",
-          "R1": "이카나이 데",
+          "R1": "이카 나이 데",
           "E1": "세 번째 반복으로, 간청의 감정을 더욱 강하게 표현합니다.",
           "T2": "行かない",
           "K2": "가지 않다",
           "I2": "ikanai",
-          "R2": "이카나이",
+          "R2": "이카 나이",
           "XE": "行かないで、約束だよ。",
           "XK": "가지 마, 약속이야.",
           "XI": "ikanai de, yakusoku da yo",
-          "XR": "이카나이 데, 야쿠소쿠 다 요"
+          "XR": "이카 나이 데, 야쿠소쿠 다 요"
         },
         {
           "T1": "今は",
@@ -1971,7 +1971,7 @@
       "G0": "이 문장은 'その時'라는 시간적 배경과 '胸を締め付けてた感情と'라는 감정적 상태를 나타내는 구문으로 구성되어 있습니다. 'その時'는 '그때'를 의미하며, '胸を締め付けてた'는 '가슴을 조여오던'이라는 의미로, 강한 감정을 표현합니다. '感情と'는 '감정과'라는 의미로, 뒤에 이어질 내용과 연결됩니다. 전체적으로 과거의 강렬한 감정을 회상하는 문장입니다.",
       "K0": "그때 가슴을 조여오던 감정과",
       "I0": "sono toki mune o shimetsuketeta kanjou to",
-      "R0": "소노 토키 무네 오 시메츠케테타 칸죠우 토",
+      "R0": "소노 토키 무네 오 시메 츠케테타 칸죠우 토",
       "LI": [
         {
           "T1": "その",
@@ -2037,16 +2037,16 @@
           "T1": "締め付けてた",
           "K1": "조여오던",
           "I1": "shimetsuketeta",
-          "R1": "시메츠케테타",
+          "R1": "시메 츠케테타",
           "E1": "동사 '締め付ける'의 과거 진행형으로, '조여오던'이라는 의미입니다.",
           "T2": "締め付ける",
           "K2": "조여오다",
           "I2": "shimetsukeru",
-          "R2": "시메츠케루",
+          "R2": "시메 츠케루",
           "XE": "彼は私の手を締め付けた。",
           "XK": "그는 내 손을 조여왔다.",
           "XI": "kare wa watashi no te o shimetsuketa",
-          "XR": "카레 와 와타시 노 테 오 시메츠케타"
+          "XR": "카레 와 와타시 노 테 오 시메 츠케타"
         },
         {
           "T1": "感情",
@@ -2087,7 +2087,7 @@
       "G0": "이 문장은 주어(あなたの明日) + 서술어(辛くはないか)로 구성되어 있습니다. 'あなたの明日'는 '당신의 내일'을 의미하며, '辛くはないか'는 '힘들지 않을까'라는 의미로, 미래에 대한 걱정이나 염려를 표현합니다. 전체적으로 상대방의 미래에 대한 걱정을 나타내는 구문입니다.",
       "K0": "당신의 내일은 힘들지 않을까",
       "I0": "anata no ashita wa tsuraku wa nai ka",
-      "R0": "아나타 노 아시타 와 쓰라쿠 와 나이 카",
+      "R0": "아나타 노 아스 와 츠라쿠 와 나이 카",
       "LI": [
         {
           "T1": "あなた",
@@ -2123,16 +2123,16 @@
           "T1": "明日",
           "K1": "내일",
           "I1": "ashita",
-          "R1": "아시타",
+          "R1": "아스",
           "E1": "오늘의 다음 날을 의미하는 명사입니다.",
           "T2": "明日",
           "K2": "내일",
           "I2": "ashita",
-          "R2": "아시타",
+          "R2": "아스",
           "XE": "明日は晴れるかな？",
           "XK": "내일은 맑을까?",
           "XI": "ashita wa hareru ka na",
-          "XR": "아시타 와 하레루 카 나"
+          "XR": "아스 와 하레루 카 나"
         },
         {
           "T1": "は",
@@ -2153,16 +2153,16 @@
           "T1": "辛く",
           "K1": "힘들게",
           "I1": "tsuraku",
-          "R1": "쓰라쿠",
+          "R1": "츠라쿠",
           "E1": "어렵거나 고통스러운 상태를 나타내는 형용사입니다.",
           "T2": "辛い",
           "K2": "힘들다",
           "I2": "tsurai",
-          "R2": "쓰라이",
+          "R2": "츠라이",
           "XE": "この仕事は辛い。",
           "XK": "이 일은 힘들다.",
           "XI": "kono shigoto wa tsurai",
-          "XR": "코노 시고토 와 쓰라이"
+          "XR": "코노 시고토 와 츠라이"
         },
         {
           "T1": "は",
@@ -2218,7 +2218,7 @@
       "G0": "이 문장은 주어(言葉だけが) + 서술어(言葉になるわけじゃない)로 구성되어 있습니다. '言葉だけが'는 '말만이'를 의미하며, '言葉になるわけじゃない'는 '말이 되는 건 아니야'를 나타냅니다. 전체적으로 말만이 모든 것을 결정짓는 것은 아니라는 의미를 전달합니다.",
       "K0": "말만이 말이 되는 건 아니야.",
       "I0": "kotoba dake ga kotoba ni naru wake ja nai",
-      "R0": "코토바 다케가 코토바니 나루 와케 쟈 나이",
+      "R0": "코토바 다케가 코토바 니 나루 와케 쟈 나이",
       "LI": [
         {
           "T1": "言葉",
@@ -2278,7 +2278,7 @@
           "XE": "言葉にできない気持ち。",
           "XK": "말로 표현할 수 없는 감정.",
           "XI": "kotoba ni dekinai kimochi",
-          "XR": "코토바니 데키나이 키모치"
+          "XR": "코토바 니 데키나이 키모치"
         },
         {
           "T1": "に",
@@ -2858,7 +2858,7 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '僕にもがいてる文字に'로, '僕'는 주어 '나', 'に'는 '에게', 'もがいてる'는 '고뇌하고 있다', '文字'는 '글자', 'に'는 '에'를 의미합니다. 두 번째 절은 'ひとつ線を引かせて'로, 'ひとつ'는 '하나', '線'은 '선', 'を'는 목적격 조사, '引かせて'는 '그리게 해줘'를 의미합니다. 전체적으로 화자가 글자에 선을 그리며 고뇌하는 상황을 표현합니다.",
       "K0": "나도 고뇌하는 글자에 하나의 선을 그리게 해줘.",
       "I0": "boku ni mogai teru moji ni hitotsu sen o hikase te",
-      "R0": "보쿠 니 모가이 테루 모지 니 히토츠 센 오 히카세 테",
+      "R0": "보쿠 니 모가이테루 모지 니 히토츠 센 오 히카세테",
       "LI": [
         {
           "T1": "僕",
@@ -2894,7 +2894,7 @@
           "T1": "もがいてる",
           "K1": "고뇌하고 있다",
           "I1": "mogai teru",
-          "R1": "모가이 테루",
+          "R1": "모가이테루",
           "E1": "고뇌하거나 몸부림치는 상태를 나타내는 동사입니다.",
           "T2": "もがく",
           "K2": "고뇌하다",
@@ -2903,7 +2903,7 @@
           "XE": "彼はもがいてる。",
           "XK": "그는 고뇌하고 있다.",
           "XI": "kare wa mogai teru",
-          "XR": "카레 와 모가이 테루"
+          "XR": "카레 와 모가이테루"
         },
         {
           "T1": "文字",
@@ -2984,7 +2984,7 @@
           "T1": "引かせて",
           "K1": "그리게 해줘",
           "I1": "hikase te",
-          "R1": "히카세 테",
+          "R1": "히카세테",
           "E1": "동사 '引く'의 사역형으로, 누군가에게 어떤 행동을 하게 하는 것을 의미합니다.",
           "T2": "引く",
           "K2": "그리다",
@@ -2993,7 +2993,7 @@
           "XE": "線を引かせてください。",
           "XK": "선을 그리게 해주세요.",
           "XI": "sen o hikase te kudasai",
-          "XR": "센 오 히카세 테 쿠다사이"
+          "XR": "센 오 히카세테 쿠다사이"
         }
       ],
       "O0": "僕にもがいてる文字に ひとつ線を引かせて"
@@ -3105,7 +3105,7 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 'あなたが抱えてる明日は'로, 주어(あなた) + 동사구(抱えてる) + 목적어(明日)로 이루어져 있으며, '당신이 안고 있는 내일'을 의미합니다. 두 번째 절은 '辛くはないか'로, 형용사(辛く) + 보조사(は) + 부정형(ない) + 의문형(か)으로 구성되어 있으며, '힘들지 않을까'라는 의미로, 앞서 언급된 '내일'에 대한 걱정을 표현합니다. 전체적으로 미래에 대한 걱정과 염려를 나타내는 구문입니다.",
       "K0": "당신이 안고 있는 내일은 힘들지 않을까",
       "I0": "anata ga kakaeteru ashita wa tsuraku wa nai ka",
-      "R0": "아나타 가 카카에테루 아시타 와 쓰라쿠 와 나이 카",
+      "R0": "아나타 가 카카에테루 아시타 와 츠라쿠 와 나이 카",
       "LI": [
         {
           "T1": "あなた",
@@ -3186,16 +3186,16 @@
           "T1": "辛く",
           "K1": "힘들게",
           "I1": "tsuraku",
-          "R1": "쓰라쿠",
+          "R1": "츠라쿠",
           "E1": "형용사 '辛い'의 부사형으로, '힘들게'라는 의미입니다.",
           "T2": "辛い",
           "K2": "힘들다",
           "I2": "tsurai",
-          "R2": "쓰라이",
+          "R2": "츠라이",
           "XE": "彼女は辛く働いている。",
           "XK": "그녀는 힘들게 일하고 있다.",
           "XI": "kanojo wa tsuraku hataraite iru",
-          "XR": "카노죠 와 쓰라쿠 하타라이테 이루"
+          "XR": "카노죠 와 츠라쿠 하타라이테 이루"
         },
         {
           "T1": "は",
@@ -3251,7 +3251,7 @@
       "G0": "이 문장은 두 개의 주요 부분으로 구성되어 있습니다. 첫 번째 부분 'こぼした涙 つられた涙'는 '흘린 눈물, 흘러내린 눈물'을 의미하며, 두 번째 부분 '消費期限はいつまでですか'는 '소비 기한은 언제까지입니까?'라는 질문입니다. 전체적으로 눈물의 감정적 의미와 그 소비 기한에 대해 묻는 문장입니다.",
       "K0": "흘린 눈물, 흘러내린 눈물의 소비 기한은 언제까지입니까?",
       "I0": "koboshita namida tsurareta namida no shōhikigen wa itsu made desu ka",
-      "R0": "코보시타 나미다 츠라레타 나미다 노 쇼우히키겐 와 이츠 마데 데스 카",
+      "R0": "코보시타 나미다 츠라레타 나미다 노 쇼우히 키겐 와 이츠 마데 데스 카",
       "LI": [
         {
           "T1": "こぼした",
@@ -3332,16 +3332,16 @@
           "T1": "消費期限",
           "K1": "소비 기한",
           "I1": "shōhikigen",
-          "R1": "쇼우히키겐",
+          "R1": "쇼우히 키겐",
           "E1": "상품을 소비할 수 있는 마지막 기한을 의미합니다.",
           "T2": "消費期限",
           "K2": "소비 기한",
           "I2": "shōhikigen",
-          "R2": "쇼우히키겐",
+          "R2": "쇼우히 키겐",
           "XE": "この商品の消費期限は明日です。",
           "XK": "이 상품의 소비 기한은 내일입니다.",
           "XI": "kono shōhin no shōhikigen wa ashita desu",
-          "XR": "코노 쇼우힌 노 쇼우히키겐 와 아시타 데스"
+          "XR": "코노 쇼우힌 노 쇼우히 키겐 와 아시타 데스"
         },
         {
           "T1": "は",
@@ -3410,5 +3410,6 @@
   "failedLines": [],
   "tags": [
     "일본어"
-  ]
+  ],
+  "rubyData": "\n          <span class=\"ruby\"><span class=\"rb\">素足</span><span class=\"rt\">すあし</span></span>を<span class=\"ruby\"><span class=\"rb\">晒</span><span class=\"rt\">さら</span></span>して<span class=\"ruby\"><span class=\"rb\">駆</span><span class=\"rt\">か</span></span>け<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">だ</span></span>した <span class=\"ruby\"><span class=\"rb\">少年少女</span><span class=\"rt\">しょうねんしょうじょ</span></span>の<span class=\"ruby\"><span class=\"rb\">期待</span><span class=\"rt\">きたい</span></span><br>\nこの<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>は<span class=\"ruby\"><span class=\"rb\">水</span><span class=\"rt\">みず</span></span>に<span class=\"ruby\"><span class=\"rb\">濡</span><span class=\"rt\">ぬ</span></span>れてもいいから<br>\nめくるめく<span class=\"ruby\"><span class=\"rb\">議論</span><span class=\"rt\">ぎろん</span></span>は トートロジーに<br>\nああ また<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>が<span class=\"ruby\"><span class=\"rb\">暮</span><span class=\"rt\">く</span></span>れてった<br>\nこぞって<span class=\"ruby\"><span class=\"rb\">造</span><span class=\"rt\">つく</span></span>り<span class=\"ruby\"><span class=\"rb\">上</span><span class=\"rt\">あ</span></span>げたセンセーション<br>\n<br>\nその<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span> <span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>を<span class=\"ruby\"><span class=\"rb\">締</span><span class=\"rt\">し</span></span>め<span class=\"ruby\"><span class=\"rb\">付</span><span class=\"rt\">つ</span></span>けてた<span class=\"ruby\"><span class=\"rb\">感情</span><span class=\"rt\">かんじょう</span></span>と<br>\nこぼした<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span> つられた<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span>の<span class=\"ruby\"><span class=\"rb\">消費期限</span><span class=\"rt\">しょうひきげん</span></span>はいつまでですか<br>\n<span class=\"ruby\"><span class=\"rb\">或</span><span class=\"rt\">あ</span></span>る<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span> <span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>いあえてる<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span><br>\nあと<span class=\"ruby\"><span class=\"rb\">数日後</span><span class=\"rt\">すうじつご</span></span>の<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span>だったのなら<br>\n<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えてる<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>は <span class=\"ruby\"><span class=\"rb\">辛</span><span class=\"rt\">つら</span></span>くはないか<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>にもがいてる<span class=\"ruby\"><span class=\"rb\">文字</span><span class=\"rt\">もじ</span></span>に ひとつ<span class=\"ruby\"><span class=\"rb\">線</span><span class=\"rt\">せん</span></span>を<span class=\"ruby\"><span class=\"rb\">引</span><span class=\"rt\">ひ</span></span>かせて<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えてる<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は <span class=\"ruby\"><span class=\"rb\">救</span><span class=\"rt\">すく</span></span>えやしないか<br>\nそれでもその<span class=\"ruby\"><span class=\"rb\">肩</span><span class=\"rt\">かた</span></span>に <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しさを<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>せたなら<br>\nまた<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を <span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じられるだろうか<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">緩</span><span class=\"rt\">ゆる</span></span>やかに<span class=\"ruby\"><span class=\"rb\">落</span><span class=\"rt\">お</span></span>ちてく<span class=\"ruby\"><span class=\"rb\">魔法</span><span class=\"rt\">まほう</span></span>を かけられたんだろうか<br>\nそれは<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>にも<span class=\"ruby\"><span class=\"rb\">解</span><span class=\"rt\">と</span></span>けないのだろうか<br>\n<span class=\"ruby\"><span class=\"rb\">許</span><span class=\"rt\">ゆる</span></span>される<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span>すら <span class=\"ruby\"><span class=\"rb\">許</span><span class=\"rt\">ゆる</span></span>されなくなった<br>\nシチュエーションならば<br>\n<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>だけが<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>になるわけじゃない<br>\n<br>\nその<span class=\"ruby\"><span class=\"rb\">数秒</span><span class=\"rt\">すうびょう</span></span>が<span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>でも<br>\nその<span class=\"ruby\"><span class=\"rb\">数歩</span><span class=\"rt\">すうほ</span></span>が<span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>でも<br>\nその<span class=\"ruby\"><span class=\"rb\">決意</span><span class=\"rt\">けつい</span></span>を<span class=\"ruby\"><span class=\"rb\">止</span><span class=\"rt\">と</span></span>めるのは<span class=\"ruby\"><span class=\"rb\">我儘</span><span class=\"rt\">わがまま</span></span>か<br>\n<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>は<br>\n<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">目指</span><span class=\"rt\">めざ</span></span>してた<span class=\"ruby\"><span class=\"rb\">地点</span><span class=\"rt\">ちてん</span></span>は <span class=\"ruby\"><span class=\"rb\">暗</span><span class=\"rt\">くら</span></span>くはないか<br>\nそれが<span class=\"ruby\"><span class=\"rb\">大</span><span class=\"rt\">おお</span></span>きな<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span>の ただの<span class=\"ruby\"><span class=\"rb\">影</span><span class=\"rt\">かげ</span></span>だとしたら<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">旅立</span><span class=\"rt\">たびだ</span></span>つ<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>へ <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かせたくはないな<br>\n<span class=\"ruby\"><span class=\"rb\">例</span><span class=\"rt\">たと</span></span>えばその<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>で <span class=\"ruby\"><span class=\"rb\">静</span><span class=\"rt\">しず</span></span>かに<span class=\"ruby\"><span class=\"rb\">眠</span><span class=\"rt\">ねむ</span></span>れても<br>\nそれがあなたの <span class=\"ruby\"><span class=\"rb\">幸</span><span class=\"rt\">しあわ</span></span>せとしても<br>\n<br>\nあなたの<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>は <span class=\"ruby\"><span class=\"rb\">辛</span><span class=\"rt\">つら</span></span>くはないか<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>にもがいてる<span class=\"ruby\"><span class=\"rb\">文字</span><span class=\"rt\">もじ</span></span>に ひとつ<span class=\"ruby\"><span class=\"rb\">線</span><span class=\"rt\">せん</span></span>を<span class=\"ruby\"><span class=\"rb\">引</span><span class=\"rt\">ひ</span></span>かせて<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えてる<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は <span class=\"ruby\"><span class=\"rb\">救</span><span class=\"rt\">すく</span></span>えやしないか<br>\nそれでもその<span class=\"ruby\"><span class=\"rb\">肩</span><span class=\"rt\">かた</span></span>に <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しさを<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>せたなら<br>\nその<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を <span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じられるだろうか<br>\n        "
 }

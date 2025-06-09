@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= song.name %> - Haneum</title>
+    <title><%= song.kor_name || song.name %> - 번역 관리</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
@@ -90,7 +94,7 @@
                             </button>
                         </form>
                     <% } %>
-                     <a href="/view/<%= song.name %>" class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition font-semibold">
+                     <a href="/view/<%= song.name %>" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
                         <i class="fas fa-eye"></i> 완성본 보기
                     </a>
                     <button id="edit-button" class="flex items-center gap-2 bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition font-semibold">
@@ -167,7 +171,7 @@
                 <form id="json-edit-form" action="" method="post" class="disable-on-submit flex-grow flex flex-col p-6">
                     <input type="hidden" name="originalLine" id="json-edit-original-line">
                     <div class="flex-grow flex flex-col min-h-0">
-                        <label for="json-content" class="block text-sm font-medium text-gray-700 mb-2 flex-shrink-0">JSON 데이터 (실시간 스키마/문법 검사, Ctrl+F 로 검색)</label>
+                        <label for="json-content" class="block text-sm font-medium text-gray-700 mb-2 flex-shrink-0">JSON 데이터 (Ctrl+F 로 검색)</label>
                         <textarea id="json-content" name="jsonContent"
                                   class="w-full flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition font-mono text-sm bg-gray-50"></textarea>
                         <div id="schema-validation-errors" class="text-xs text-red-500 mt-2 font-mono whitespace-pre-wrap"></div>
@@ -231,7 +235,7 @@
                                 <button class="edit-json-button text-xs bg-yellow-100 text-yellow-700 hover:bg-yellow-200 px-3 py-1 rounded-full font-medium transition"
                                         data-original-line="<%= originalLine %>"
                                         data-translation="<%- JSON.stringify(translation).replace(/\"/g, '&quot;') %>">
-                                    <i class="fas fa-code"></i> 수동 수정
+                                    <i class="fas fa-code"></i> 직접 수정
                                 </button>
                             </div>
                         </div>

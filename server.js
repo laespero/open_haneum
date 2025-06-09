@@ -824,8 +824,9 @@ function toContextObj(sentences) {
 
 // 루트 경로 라우트
 app.get('/', (req, res) => {
-    // 최근 추가된 노래 20개를 가져옵니다
+    // 최근 추가된 노래 24개를 가져옵니다
     const latestSongs = songCache
+        .filter(song => !song.tags || !song.tags.includes('개발용'))
         .sort((a, b) => {
             const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
             const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);

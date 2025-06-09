@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"<%= searchQuery %>" 검색 결과 - Haneum</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
     <!-- 헤더 -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto max-w-4xl px-4 py-3 flex items-center gap-4">
-            <a href="/" class="text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
+        <div class="container mx-auto max-w-4xl px-5 py-3 flex items-center gap-4">
+            <a href="/" class=" px-2 text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
             <form action="/songs" method="get" class="flex-grow min-w-0" id="searchForm">
-                <div class="flex">
+                <div class="flex px-2">
                     <input type="search" name="q" id="searchInput" value="<%= searchQuery %>" placeholder="노래 검색..." 
                            class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0">
                     <button type="submit" class="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
@@ -25,11 +29,15 @@
     </header>
 
     <!-- 메인 콘텐츠 -->
-    <main class="container mx-auto max-w-4xl px-4 py-8 flex-grow">
+    <main class="container mx-auto max-w-4xl px-8 py-8 flex-grow">
         <!-- 검색 정보 -->
         <div class="mb-8">
             <h1 class="text-2xl md:text-3xl font-semibold mb-2">
-                "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
+                <% if (searchQuery && searchQuery.trim()) { %>
+                    "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
+                <% } else { %>
+                    전체 노래 목록
+                <% } %>
             </h1>
             <p class="text-gray-600">
                 총 <span class="font-bold"><%= totalResults %></span>개의 결과를 찾았습니다.
@@ -65,6 +73,7 @@
                                 
                                 <% 
                                 let artistDisplayName;
+                                let artistSearchQuery;
                                 if (typeof song.artist === 'object' && song.artist) {
                                     const names = [];
                                     if (song.artist.ori_name) {
@@ -77,11 +86,15 @@
                                         names.push(song.artist.eng_name);
                                     }
                                     artistDisplayName = names.join(' / ');
+                                    artistSearchQuery = song.artist.ori_name || artistDisplayName;
                                 } else {
                                     artistDisplayName = song.artist;
+                                    artistSearchQuery = song.artist;
                                 }
                                 %>
-                                <p class="mt-2 text-gray-600 text-sm"><%= artistDisplayName %></p>
+                                <p class="mt-2 font-semibold text-blue-600 text-sm">
+                                    <a href="/songs?q=<%= encodeURIComponent(artistSearchQuery) %>" onclick="event.stopPropagation()" class="hover:underline transition-colors"><%= artistDisplayName %></a>
+                                </p>
                                 <% if (song.tags && song.tags.length > 0) { %>
                                     <div class="flex flex-wrap gap-2 mt-3">
                                         <% song.tags.forEach(tag => { %>
@@ -162,13 +175,8 @@
             const searchInput = document.getElementById('searchInput');
 
             if (searchForm && searchInput) {
-                searchForm.addEventListener('submit', (event) => {
-                    const trimmedValue = searchInput.value.trim();
-                    if (trimmedValue) {
-                        searchInput.value = trimmedValue;
-                    } else {
-                        event.preventDefault();
-                    }
+                searchForm.addEventListener('submit', () => {
+                    searchInput.value = searchInput.value.trim();
                 });
             }
         });
