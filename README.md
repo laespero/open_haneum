@@ -96,6 +96,9 @@ npm start
 ### 번역 관리 페이지
 ![번역 관리 페이지](example_img/song-detail.png)
 
+### 번역 완료 시
+![번역 완료 시](example_img/song-detail-success.png)
+
 ### 노래 정보 수정
 ![노래 정보 수정](example_img/song-info-edit.png)
 
@@ -103,8 +106,6 @@ npm start
 ![가사 데이터 수정](example_img/song-lyrics-data-edit.png)
 - 번역된 각 라인 옆의 'JSON 수정' 버튼을 통해 개별 가사 데이터(번역, 발음, 단어 정보 등)를 직접 수정할 수 있습니다.
 
-### 번역 완료 시
-![번역 완료 시](example_img/song-detail-success.png)
 
 ### 가사 보기 페이지
 ![가사 보기 페이지](example_img/songview.png)
