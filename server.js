@@ -671,6 +671,59 @@ app.post('/correct-with-message/:title', async (req, res) => {
 
 });
 
+app.post('/update-line/:title', async (req, res) => {
+    const { title } = req.params;
+    const { originalLine, jsonContent } = req.body;
+
+    if (!originalLine || !jsonContent) {
+        return res.status(400).send('필수 데이터가 누락되었습니다.');
+    }
+
+    const filePath = `songs/${title}.json`;
+
+    try {
+        const data = await fs.promises.readFile(filePath, 'utf8');
+        let songData = JSON.parse(data);
+
+        let updatedLineData;
+        try {
+            updatedLineData = JSON.parse(jsonContent);
+        } catch (parseError) {
+            console.error('수정된 JSON 파싱 오류:', parseError);
+            return res.status(400).send(`<h1>JSON 형식 오류</h1><p>제출된 JSON 형식이 올바르지 않습니다. 다시 확인해주세요.</p><a href="/detail/${title}">돌아가기</a>`);
+        }
+
+        const lineIndex = songData.translatedLines.findIndex(
+            line => line.T0 === originalLine || line.O0 === originalLine
+        );
+        
+        if (lineIndex === -1) {
+            return res.status(404).send('수정할 가사 라인을 찾을 수 없습니다.');
+        }
+
+        songData.translatedLines[lineIndex] = updatedLineData;
+        
+        await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+
+        console.log(`[${title}] 가사 라인이 수동으로 업데이트되었습니다. 원본: "${originalLine}"`);
+        
+        // 캐시 업데이트
+        const songIndex = songCache.findIndex(song => song.name === title);
+        if (songIndex > -1) {
+            songCache[songIndex] = songData;
+            console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
+        }
+
+        res.redirect(`/detail/${title}`);
+
+    } catch (error) {
+        console.error('가사 라인 수동 업데이트 중 오류:', error);
+        if (error.code === 'ENOENT') {
+            return res.status(404).send('노래 파일을 찾을 수 없습니다.');
+        }
+        res.status(500).send('서버 오류가 발생했습니다.');
+    }
+});
 
 app.get('/api/songs/:title/translated', async (req, res) => {
     const title = req.params.title;

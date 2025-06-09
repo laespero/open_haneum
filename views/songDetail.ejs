@@ -6,6 +6,13 @@
     <title><%= song.name %> - Haneum</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/dialog/dialog.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/lint.css">
+
     <style>
         .tab-content { display: none; }
         .tab-content.active { display: block; }
@@ -13,6 +20,15 @@
             border-color: #3b82f6; /* blue-500 */
             color: #2563eb; /* blue-600 */
             background-color: #eff6ff; /* blue-50 */
+        }
+        /* CodeMirror custom styles */
+        .CodeMirror {
+            flex-grow: 1;
+            border: 1px solid #d1d5db; /* gray-300 */
+            border-radius: 0.5rem; /* rounded-lg */
+        }
+        .CodeMirror-wrap pre.CodeMirror-line, .CodeMirror-wrap pre.CodeMirror-line-like {
+            word-break: break-all;
         }
     </style>
 </head>
@@ -139,13 +155,38 @@
             </div>
         </div>
 
+        <!-- JSON 수정 모달 -->
+        <div id="json-edit-modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex justify-center items-center z-50 opacity-0 transition-opacity duration-300 p-4 sm:p-8">
+            <div class="bg-white rounded-2xl shadow-xl w-full h-full flex flex-col transform transition-all duration-300 scale-95">
+                <div class="flex justify-between items-center p-6 border-b border-gray-200 flex-shrink-0">
+                    <h2 class="text-2xl font-bold">가사 라인 JSON 수정</h2>
+                    <button id="close-json-modal-button" class="text-gray-400 hover:text-gray-600 transition-colors">
+                        <i class="fas fa-times fa-lg"></i>
+                    </button>
+                </div>
+                <form id="json-edit-form" action="" method="post" class="disable-on-submit flex-grow flex flex-col p-6">
+                    <input type="hidden" name="originalLine" id="json-edit-original-line">
+                    <div class="flex-grow flex flex-col min-h-0">
+                        <label for="json-content" class="block text-sm font-medium text-gray-700 mb-2 flex-shrink-0">JSON 데이터 (실시간 스키마/문법 검사, Ctrl+F 로 검색)</label>
+                        <textarea id="json-content" name="jsonContent"
+                                  class="w-full flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 transition font-mono text-sm bg-gray-50"></textarea>
+                        <div id="schema-validation-errors" class="text-xs text-red-500 mt-2 font-mono whitespace-pre-wrap"></div>
+                    </div>
+                    <div class="mt-6 flex justify-end gap-3 flex-shrink-0">
+                        <button type="button" id="cancel-json-modal-button" class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300 transition font-semibold">취소</button>
+                        <button type="submit" id="json-save-button" data-processing-text="저장중..." class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">저장하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <!-- 탭 네비게이션 -->
         <div class="mb-6">
             <div class="border-b border-gray-200">
                 <nav class="-mb-px flex space-x-6" aria-label="Tabs">
                     <button class="tab-button active" data-tab="translated">번역된 가사 (<%= song.translatedLines ? song.translatedLines.length : 0 %>)</button>
                     <button class="tab-button" data-tab="processed-lyrics">작업용 가사 (<%= song.p1 ? song.p1.length : 0 %>)</button>
-                    <button class="tab-button" data-tab="full-lyrics">전체 가사</button>
+                    <button class="tab-button" data-tab="full-lyrics">원본 가사</button>
                     <% if (Array.isArray(song.failedLines) && song.failedLines.length > 0) { %>
                         <button class="tab-button text-red-600" data-tab="failed">번역 실패 (<%= song.failedLines.length %>)</button>
                     <% } %>
@@ -181,6 +222,11 @@
                                         <button type="submit" data-processing-text="수정중..." class="text-xs bg-blue-100 text-blue-700 hover:bg-blue-200 px-3 py-1 rounded-full font-medium transition flex-shrink-0">요청</button>
                                     </div>
                                 </form>
+                                <button class="edit-json-button text-xs bg-yellow-100 text-yellow-700 hover:bg-yellow-200 px-3 py-1 rounded-full font-medium transition"
+                                        data-original-line="<%= originalLine %>"
+                                        data-translation="<%- JSON.stringify(translation).replace(/\"/g, '&quot;') %>">
+                                    <i class="fas fa-code"></i> 수동 수정
+                                </button>
                             </div>
                         </div>
                     <% }); %>
@@ -235,6 +281,21 @@
             <% } %>
         </div>
     </main>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/matchbrackets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/edit/closebrackets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/search/search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/search/searchcursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/search/jump-to-line.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/dialog/dialog.js"></script>
+    <!-- JSON Linting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsonlint/1.6.0/jsonlint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/lint.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/json-lint.js"></script>    
+    
     <script>
         // 폼 제출 시 버튼 비활성화
         document.querySelectorAll('.disable-on-submit').forEach(form => {
@@ -286,6 +347,190 @@
                 modal.classList.add('hidden');
             }
         });
+
+        // JSON 수정 모달 제어
+        const jsonEditModal = document.getElementById('json-edit-modal');
+        let jsonEditor = null; // CodeMirror 인스턴스를 담을 변수
+
+        if (jsonEditModal) {
+            const jsonEditModalContent = jsonEditModal.querySelector('.w-full');
+            const jsonEditForm = document.getElementById('json-edit-form');
+            const jsonEditOriginalLineInput = document.getElementById('json-edit-original-line');
+            const jsonContentTextarea = document.getElementById('json-content');
+            const closeJsonModalButtons = [document.getElementById('close-json-modal-button'), document.getElementById('cancel-json-modal-button')];
+            const jsonSaveButton = document.getElementById('json-save-button');
+            const schemaValidationErrors = document.getElementById('schema-validation-errors');
+
+            // 1. 직접 스키마를 검증하는 함수
+            function validateSchema(data) {
+                const errors = [];
+                const rootRequired = ["T0", "C0", "G0", "K0", "I0", "R0", "LI"];
+                const liRequired = [
+                    "T1", "K1", "I1", "R1", "E1",
+                    "T2", "K2", "I2", "R2",
+                    "XE", "XK", "XI", "XR"
+                ];
+
+                if (typeof data !== 'object' || data === null) {
+                    return { isValid: false, errors: ["- 최상위 데이터는 객체여야 합니다."] };
+                }
+
+                for (const key of rootRequired) {
+                    if (!(key in data)) {
+                        errors.push(`- 최상위 필수 필드 '${key}'가 없습니다.`);
+                    }
+                }
+
+                if ('T0' in data && (typeof data.T0 !== 'string' || data.T0.length === 0)) {
+                    errors.push("- 'T0'는 비어 있지 않은 문자열이어야 합니다.");
+                }
+                
+                const stringKeys = ["C0", "G0", "K0", "I0", "R0"];
+                for(const key of stringKeys) {
+                    if(key in data && typeof data[key] !== 'string') {
+                        errors.push(`- '${key}'는 문자열이어야 합니다.`);
+                    }
+                }
+
+                if (!('LI' in data) || !Array.isArray(data.LI)) {
+                    errors.push("- 'LI'는 배열이어야 합니다.");
+                } else {
+                    data.LI.forEach((item, index) => {
+                        if (typeof item !== 'object' || item === null) {
+                            errors.push(`- LI[${index}] 항목은 객체여야 합니다.`);
+                            return; // 다음 항목으로
+                        }
+                        for (const key of liRequired) {
+                            if (!(key in item)) {
+                                errors.push(`- LI[${index}]에 필수 필드 '${key}'가 없습니다.`);
+                            } else if (typeof item[key] !== 'string') {
+                                errors.push(`- LI[${index}].${key}는 문자열이어야 합니다.`);
+                            }
+                        }
+                    });
+                }
+
+                return {
+                    isValid: errors.length === 0,
+                    errors: errors
+                };
+            }
+
+            document.querySelectorAll('.edit-json-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const originalLine = button.dataset.originalLine;
+                    // HTML dataset 속성은 자동으로 엔티티를 디코딩하므로, 추가적인 replace 없이 바로 파싱합니다.
+                    const translationData = JSON.parse(button.dataset.translation);
+
+                    jsonEditForm.action = `/update-line/<%= song.name %>`;
+                    jsonEditOriginalLineInput.value = originalLine;
+
+                    jsonEditModal.classList.remove('hidden');
+                    setTimeout(() => {
+                        jsonEditModal.classList.add('opacity-100');
+                        jsonEditModalContent.classList.remove('scale-95');
+
+                        if (!jsonEditor) {
+                            jsonEditor = CodeMirror.fromTextArea(jsonContentTextarea, {
+                                lineNumbers: true,
+                                mode: { name: "javascript", json: true },
+                                theme: "dracula",
+                                matchBrackets: true,
+                                autoCloseBrackets: true,
+                                lineWrapping: true,
+                                gutters: ["CodeMirror-lint-markers"],
+                                lint: {
+                                    onUpdateLinting: (annotations, allAnnotations, cm) => {
+                                        const hasSyntaxErrors = annotations.length > 0;
+
+                                        if (hasSyntaxErrors) {
+                                            // Linter가 문법 오류를 표시하고 있으므로, 저장 버튼을 비활성화하고
+                                            // 하단의 커스텀 스키마 오류 메시지는 비웁니다.
+                                            jsonSaveButton.disabled = true;
+                                            jsonSaveButton.classList.add('opacity-50', 'cursor-not-allowed');
+                                            schemaValidationErrors.textContent = '';
+                                            return;
+                                        }
+
+                                        // 문법이 올바르므로, 이제 직접 만든 스키마를 검증합니다.
+                                        try {
+                                            const content = cm.getValue();
+                                            const data = JSON.parse(content);
+                                            const validationResult = validateSchema(data);
+                                            
+                                            if (validationResult.isValid) {
+                                                jsonSaveButton.disabled = false;
+                                                jsonSaveButton.classList.remove('opacity-50', 'cursor-not-allowed');
+                                                schemaValidationErrors.textContent = '';
+                                            } else {
+                                                jsonSaveButton.disabled = true;
+                                                jsonSaveButton.classList.add('opacity-50', 'cursor-not-allowed');
+                                                schemaValidationErrors.textContent = "스키마 오류:\n" + validationResult.errors.join('\n');
+                                            }
+                                        } catch (e) {
+                                            // 이 경우는 거의 없지만, 만약을 대비해 처리합니다.
+                                            console.error("An unexpected error occurred during schema validation:", e); // 디버깅을 위해 에러를 콘솔에 출력
+                                            jsonSaveButton.disabled = true;
+                                            jsonSaveButton.classList.add('opacity-50', 'cursor-not-allowed');
+                                            schemaValidationErrors.textContent = '데이터 처리 중 오류가 발생했습니다. (개발자 콘솔에서 상세 정보 확인)';
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                        
+                        jsonEditor.setValue(JSON.stringify(translationData, null, 2));
+                        jsonEditor.clearHistory(); // 히스토리의 시작점을 현재 내용으로 설정하여 빈 문자열로 돌아가는 것을 방지
+
+                        setTimeout(() => {
+                            jsonEditor.refresh();
+                            jsonEditor.focus();
+                            jsonEditor.performLint(); // 모달이 열릴 때 수동으로 Linter를 실행합니다.
+                        }, 50);
+
+                    }, 10);
+                });
+            });
+
+            jsonEditForm.addEventListener('submit', (event) => {
+                if (jsonEditor) {
+                    const content = jsonEditor.getValue();
+                    let data;
+                    try {
+                        data = JSON.parse(content);
+                    } catch (e) {
+                        event.preventDefault(); // 폼 제출 중단
+                        alert('JSON 문법 오류: ' + e.message);
+                        return;
+                    }
+                    
+                    const validationResult = validateSchema(data);
+                    if (!validationResult.isValid) {
+                        event.preventDefault();
+                        alert('JSON 스키마 오류. 수정한 내용이 스키마에 맞지 않습니다.\n\n오류 내용:\n' + validationResult.errors.join('\n'));
+                        return;
+                    }
+                    
+                    jsonEditor.save(); // 에디터의 내용을 textarea에 저장
+                }
+            });
+
+            function closeJsonEditModal() {
+                jsonEditModal.classList.remove('opacity-100');
+                jsonEditModalContent.classList.add('scale-95');
+                setTimeout(() => {
+                    jsonEditModal.classList.add('hidden');
+                }, 300);
+            }
+
+            closeJsonModalButtons.forEach(btn => btn.addEventListener('click', closeJsonEditModal));
+
+            jsonEditModal.addEventListener('click', (e) => {
+                if (e.target === jsonEditModal) {
+                    closeJsonEditModal();
+                }
+            });
+        }
     </script>
 </body>
 </html>

@@ -85,21 +85,19 @@
                                 <% if (song.tags && song.tags.length > 0) { %>
                                     <div class="flex flex-wrap gap-2 mt-3">
                                         <% song.tags.forEach(tag => { %>
-                                            <span class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full"><%= tag %></span>
+                                            <a href="/songs?q=<%= encodeURIComponent(tag) %>" onclick="event.stopPropagation()" class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full hover:bg-blue-200 transition-colors"><%= tag %></a>
                                         <% }); %>
                                     </div>
                                 <% } %>
+                                <% if (song.createdAt) { %>
                                 <p class="text-xs text-gray-400 mt-2">
-                                    <% if (song.createdAt) { %>
-                                        <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
-                                            year: 'numeric',
-                                            month: 'long',
-                                            day: 'numeric'
-                                        }) %>
-                                    <% } else { %>
-                                        날짜 정보 없음
-                                    <% } %>
+                                    <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric'
+                                    }) %>
                                 </p>
+                                <% } %>
                             </div>
                         </div>
                     </div>
