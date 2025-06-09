@@ -7,14 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
     <!-- 헤더 -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto max-w-6xl px-4 py-3 flex items-center gap-4">
+        <div class="container mx-auto max-w-4xl px-4 py-3 flex items-center gap-4">
             <a href="/" class="text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
-            <form action="/songs" method="get" class="flex-grow min-w-0">
+            <form action="/songs" method="get" class="flex-grow min-w-0" id="searchForm">
                 <div class="flex">
-                    <input type="search" name="q" value="<%= searchQuery %>" placeholder="노래 검색..." 
+                    <input type="search" name="q" id="searchInput" value="<%= searchQuery %>" placeholder="노래 검색..." 
                            class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0">
                     <button type="submit" class="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
                         <i class="fas fa-search"></i>
@@ -25,7 +25,7 @@
     </header>
 
     <!-- 메인 콘텐츠 -->
-    <main class="container mx-auto max-w-4xl px-4 py-8">
+    <main class="container mx-auto max-w-4xl px-4 py-8 flex-grow">
         <!-- 검색 정보 -->
         <div class="mb-8">
             <h1 class="text-2xl md:text-3xl font-semibold mb-2">
@@ -113,10 +113,6 @@
                        class="px-4 py-2 border rounded-md hover:bg-gray-100">
                         처음
                     </a>
-                    <a href="/songs?q=<%= searchQuery %>&page=<%= currentPage - 1 %>" 
-                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
-                        이전
-                    </a>
                 <% } %>
                 
                 <% 
@@ -136,10 +132,6 @@
                 <% } %>
 
                 <% if (currentPage < totalPages) { %>
-                    <a href="/songs?q=<%= searchQuery %>&page=<%= currentPage + 1 %>" 
-                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
-                        다음
-                    </a>
                     <a href="/songs?q=<%= searchQuery %>&page=<%= totalPages %>" 
                        class="px-4 py-2 border rounded-md hover:bg-gray-100">
                         마지막
@@ -164,5 +156,22 @@
             <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchInput');
+
+            if (searchForm && searchInput) {
+                searchForm.addEventListener('submit', (event) => {
+                    const trimmedValue = searchInput.value.trim();
+                    if (trimmedValue) {
+                        searchInput.value = trimmedValue;
+                    } else {
+                        event.preventDefault();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html> 
