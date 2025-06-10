@@ -197,7 +197,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, '英語わからない'는 '영어를 모르겠다'라는 의미입니다. '英語'는 '영어'를, 'わからない'는 '모르겠다'를 의미합니다. 전체적으로 영어를 이해하지 못한다는 의미를 전달합니다.",
       "K0": "영어를 모르겠어.",
       "I0": "eigo wakaranai",
-      "R0": "에이고 와카라나이",
+      "R0": "에이고 와카라 나이",
       "LI": [
         {
           "T1": "英語",
@@ -218,7 +218,7 @@
           "T1": "わからない",
           "K1": "모르겠다",
           "I1": "wakaranai",
-          "R1": "와카라나이",
+          "R1": "와카라 나이",
           "E1": "'わかる'의 부정형으로, 이해하지 못하거나 알지 못함을 나타냅니다.",
           "T2": "わかる",
           "K2": "알다",
@@ -227,7 +227,7 @@
           "XE": "この問題がわからない。",
           "XK": "이 문제를 모르겠어.",
           "XI": "kono mondai ga wakaranai",
-          "XR": "코노 몬다이 가 와카라나이"
+          "XR": "코노 몬다이 가 와카라 나이"
         }
       ]
     },
@@ -368,7 +368,7 @@
           "T2": "わからない",
           "K2": "모르다",
           "I2": "wakaranai",
-          "R2": "와카라나이",
+          "R2": "와카라 나이",
           "XE": "この問題、わからんてぇ。",
           "XK": "이 문제, 모르겠어.",
           "XI": "kono mondai, wakaran tee",
@@ -383,7 +383,7 @@
           "T2": "わからない",
           "K2": "모르다",
           "I2": "wakaranai",
-          "R2": "와카라나이",
+          "R2": "와카라 나이",
           "XE": "彼の言っていること、わからんてぇ。",
           "XK": "그가 말하는 것, 모르겠어.",
           "XI": "kare no itte iru koto, wakaran tee",
@@ -397,7 +397,7 @@
       "G0": "이 문장은 일본어와 러시아어가 혼합된 문장입니다. 'ご搭乗'은 '탑승'을 의미하는 일본어 명사로, 'センキュー'는 영어 'Thank you'를 일본어 발음으로 표현한 것입니다. 전체적으로 항공사에서 승객에게 탑승에 대한 감사를 표현하는 문장입니다.",
       "K0": "탑승해 주셔서 감사합니다.",
       "I0": "go toujou senkyuu",
-      "R0": "고 토죠 센큐",
+      "R0": "고 토죠 센큐우",
       "LI": [
         {
           "T1": "ご搭乗",
@@ -418,7 +418,7 @@
           "T1": "センキュー",
           "K1": "감사합니다",
           "I1": "senkyuu",
-          "R1": "센큐",
+          "R1": "센큐우",
           "E1": "영어 'Thank you'를 일본어 발음으로 표현한 것으로, 감사의 뜻을 나타냅니다.",
           "T2": "Thank you",
           "K2": "감사합니다",
@@ -427,7 +427,7 @@
           "XE": "プレゼントをありがとう、センキュー！",
           "XK": "선물 고마워, 감사합니다!",
           "XI": "purezento wo arigatou, senkyuu!",
-          "XR": "프레젠토 오 아리가토, 센큐!"
+          "XR": "프레젠토 오 아리가토, 센큐우!"
         }
       ]
     },
@@ -477,7 +477,7 @@
       "G0": "이 문장은 부사(適当に) + 동사(着陸した)로 구성되어 있습니다. '適当に'는 '적당히'라는 의미로, '着陸した'는 '착륙했다'를 나타냅니다. 전체적으로 적당히 착륙했다는 의미를 전달합니다.",
       "K0": "적당히 착륙했어.",
       "I0": "tekitou ni chakuriku shita",
-      "R0": "테키토우 니 차쿠리쿠 시타",
+      "R0": "테키토우 니 챠쿠리쿠 시타",
       "LI": [
         {
           "T1": "適当に",
@@ -498,16 +498,16 @@
           "T1": "着陸した",
           "K1": "착륙했다",
           "I1": "chakuriku shita",
-          "R1": "차쿠리쿠 시타",
+          "R1": "챠쿠리쿠 시타",
           "E1": "'착륙했다'라는 의미로, 비행기 등이 땅에 내려앉는 행위를 나타냅니다.",
           "T2": "着陸する",
           "K2": "착륙하다",
           "I2": "chakuriku suru",
-          "R2": "차쿠리쿠 스루",
+          "R2": "챠쿠리쿠 스루",
           "XE": "飛行機が空港に着陸した。",
           "XK": "비행기가 공항에 착륙했다.",
           "XI": "hikouki ga kuukou ni chakuriku shita",
-          "XR": "히코우키 가 쿠우코우 니 차쿠리쿠 시타"
+          "XR": "히코우키 가 쿠우코우 니 챠쿠리쿠 시타"
         }
       ]
     },
@@ -887,7 +887,7 @@
       "G0": "이 문장은 질문 형식으로 구성되어 있습니다. 'リザビザ'는 '리자비자'를 의미하며, '持ってないん?'은 '가지고 있지 않아?'라는 의미입니다. 전체적으로 상대방이 리자비자를 가지고 있는지 묻는 질문입니다.",
       "K0": "리자 비자 가지고 있지 않아?",
       "I0": "rizabiza mottenain?",
-      "R0": "리자 비자 못테나인?",
+      "R0": "리자 비자 못테 나인?",
       "LI": [
         {
           "T1": "リザ",
@@ -923,7 +923,7 @@
           "T1": "持ってないん",
           "K1": "가지고 있지 않아",
           "I1": "mottenain",
-          "R1": "못테나인",
+          "R1": "못테 나인",
           "E1": "'가지고 있지 않다'라는 의미로, 부정형 질문을 나타냅니다.",
           "T2": "持つ",
           "K2": "가지다",
@@ -932,7 +932,7 @@
           "XE": "彼はその本を持ってないんですか？",
           "XK": "그는 그 책을 가지고 있지 않나요?",
           "XI": "kare wa sono hon o mottenain desu ka?",
-          "XR": "카레 와 소노 혼 오 못테나인 데스 카?"
+          "XR": "카레 와 소노 혼 오 못테 나인 데스 카?"
         }
       ]
     },
@@ -997,22 +997,22 @@
       "G0": "이 문장은 '宇宙語喋れる'와 감탄사 '(いぇい)'로 구성되어 있습니다. '宇宙語喋れる'는 '우주어를 말할 수 있다'라는 의미로, '宇宙語'는 '우주어', '喋れる'는 '말할 수 있다'를 의미합니다. '(いぇい)'는 감탄사로, 기쁨이나 흥분을 표현합니다. 전체적으로 우주어를 말할 수 있다는 능력을 자랑하며 기쁨을 표현하는 문장입니다.",
       "K0": "우주어를 말할 수 있어 (예이).",
       "I0": "uchūgo shabereru (iei)",
-      "R0": "우추고 샤베레루 (예이)",
+      "R0": "우츄우고 샤베레루 (예이)",
       "LI": [
         {
           "T1": "宇宙語",
           "K1": "우주어",
           "I1": "uchūgo",
-          "R1": "우추고",
+          "R1": "우츄우고",
           "E1": "우주에서 사용되는 언어를 의미하는 명사입니다.",
           "T2": "宇宙語",
           "K2": "우주어",
           "I2": "uchūgo",
-          "R2": "우추고",
+          "R2": "우츄우고",
           "XE": "宇宙語で話す。",
           "XK": "우주어로 말하다.",
           "XI": "uchūgo de hanasu",
-          "XR": "우추고 데 하나스"
+          "XR": "우츄우고 데 하나스"
         },
         {
           "T1": "喋れる",
@@ -1637,7 +1637,7 @@
       "G0": "이 문장은 일본어로, '次は'는 '다음에는', '火星とかにでも'는 '화성 같은 데라도', '出かけましょう'는 '나가자'를 의미합니다. 전체적으로 화성 같은 먼 곳으로 여행을 떠나자는 제안을 담고 있습니다.",
       "K0": "다음에는 화성 같은 데라도 가보자.",
       "I0": "tsugi wa kasei toka ni demo dekakemashou",
-      "R0": "츠기 와 카세이 토카 니 데모 데카케마쇼",
+      "R0": "츠기 와 카세이 토카 니 데모 데카케 마쇼오",
       "LI": [
         {
           "T1": "次は",
@@ -1688,7 +1688,7 @@
           "T1": "出かけましょう",
           "K1": "나가자",
           "I1": "dekakemashou",
-          "R1": "데카케마쇼",
+          "R1": "데카케 마쇼오",
           "E1": "'나가다'라는 의미의 동사 '出かける'의 권유형으로, 함께 가자고 제안할 때 사용됩니다.",
           "T2": "出かける",
           "K2": "나가다",
@@ -1697,7 +1697,7 @@
           "XE": "一緒に出かけましょう。",
           "XK": "함께 나가자.",
           "XI": "issho ni dekakemashou",
-          "XR": "잇쇼 니 데카케마쇼"
+          "XR": "잇쇼 니 데카케 마쇼오"
         }
       ]
     },
@@ -2262,7 +2262,7 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 번째 부분 'ビザがない'는 '비자가 없다'라는 의미로, 주어(ビザ) + 부정형(~がない)으로 구성되어 있습니다. 두 번째 부분 '追い出された!'는 '쫓겨났다!'라는 의미로, 동사 '追い出す'의 수동형 '追い出された'에 감탄사 느낌의 '!'가 붙어 있습니다. 전체적으로 비자가 없어서 쫓겨난 상황을 표현하고 있습니다.",
       "K0": "비자가 없어서 쫓겨났어!",
       "I0": "biza ga nai oidasareta",
-      "R0": "비자 가 나이 오이다사레타",
+      "R0": "비자 가 나이 오이 다사레타",
       "LI": [
         {
           "T1": "ビザ",
@@ -2313,16 +2313,16 @@
           "T1": "追い出された",
           "K1": "쫓겨났다",
           "I1": "oidasareta",
-          "R1": "오이다사레타",
+          "R1": "오이 다사레타",
           "E1": "'쫓아내다'라는 의미의 동사 '追い出す'의 수동형입니다.",
           "T2": "追い出す",
           "K2": "쫓아내다",
           "I2": "oidasu",
-          "R2": "오이다스",
+          "R2": "오이 다스",
           "XE": "彼は家から追い出された。",
           "XK": "그는 집에서 쫓겨났다.",
           "XI": "kare wa ie kara oidasareta",
-          "XR": "카레 와 이에 카라 오이다사레타"
+          "XR": "카레 와 이에 카라 오이 다사레타"
         }
       ]
     }
@@ -2330,5 +2330,6 @@
   "failedLines": [],
   "tags": [
     "일본어"
-  ]
+  ],
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">英語</span><span class=\"rt\">えいご</span></span>わからない<br><span class=\"ruby\"><span class=\"rb\">成田</span><span class=\"rt\">なりた</span></span> airplane<br>まもなく いえーい<br>こんにちわ いえーい<br>わからんてぇ わからんてぇ<br>ご<span class=\"ruby\"><span class=\"rb\">搭乗</span><span class=\"rt\">とうじょう</span></span>センキュー<br><span class=\"ruby\"><span class=\"rb\">冴</span><span class=\"rt\">さ</span></span>えすぎた brain<br><span class=\"ruby\"><span class=\"rb\">適当</span><span class=\"rt\">てきとう</span></span>に<span class=\"ruby\"><span class=\"rb\">着陸</span><span class=\"rt\">ちゃくりく</span></span>した<br>Привет спасибо<br>ワガママな<span class=\"ruby\"><span class=\"rb\">暮</span><span class=\"rt\">く</span></span>らし<br><span class=\"ruby\"><span class=\"rb\">離陸</span><span class=\"rt\">りりく</span></span>します okay<br><span class=\"ruby\"><span class=\"rb\">次</span><span class=\"rt\">つぎ</span></span><span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きタイランド<br>7と<span class=\"ruby\"><span class=\"rb\">並</span><span class=\"rt\">なら</span></span>んで<br><span class=\"ruby\"><span class=\"rb\">歯止</span><span class=\"rt\">はど</span></span>め<span class=\"ruby\"><span class=\"rb\">効</span><span class=\"rt\">き</span></span>かんわ<br><span class=\"ruby\"><span class=\"rb\">男</span><span class=\"rt\">おとこ</span></span>いらんバナナ<br>リザビザ<span class=\"ruby\"><span class=\"rb\">持</span><span class=\"rt\">も</span></span>ってないん?<br>りんごもってるけど<br><span class=\"ruby\"><span class=\"rb\">宇宙</span><span class=\"rt\">うちゅう</span></span><span class=\"ruby\"><span class=\"rb\">語</span><span class=\"rt\">ご</span></span><span class=\"ruby\"><span class=\"rb\">喋</span><span class=\"rt\">しゃべ</span></span>れる (いぇい)<br><span class=\"ruby\"><span class=\"rb\">月</span><span class=\"rt\">つき</span></span>に<span class=\"ruby\"><span class=\"rb\">連</span><span class=\"rt\">つ</span></span>れてく (いぇい)<br><span class=\"ruby\"><span class=\"rb\">和歌山</span><span class=\"rt\">わかやま</span></span>から<span class=\"ruby\"><span class=\"rb\">飛</span><span class=\"rt\">と</span></span>んで<br>パラ<span class=\"ruby\"><span class=\"rb\">航空</span><span class=\"rt\">こうくう</span></span>に okay<br>「リザ」じゃなくて「リーザ」<br><span class=\"ruby\"><span class=\"rb\">六</span><span class=\"rt\">ろく</span></span>で<span class=\"ruby\"><span class=\"rb\">無</span><span class=\"rt\">な</span></span>しな 7<br>(あー) <span class=\"ruby\"><span class=\"rb\">持</span><span class=\"rt\">も</span></span>ってないんか?<br>ビザ リザビ ビザ<span class=\"ruby\"><span class=\"rb\">持</span><span class=\"rt\">も</span></span>ってんの?<br>さて<span class=\"ruby\"><span class=\"rb\">何処</span><span class=\"rt\">どこ</span></span>にいく? は?<br>(いぇい いぇい いぇい) パラレル<br><span class=\"ruby\"><span class=\"rb\">次</span><span class=\"rt\">つぎ</span></span>は<span class=\"ruby\"><span class=\"rb\">火星</span><span class=\"rt\">かせい</span></span>とかにでも<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>かけましょう<br>ここはどこ? ロシアだった<br>ゆーてるまにババアやさけ<span class=\"ruby\"><span class=\"rb\">急</span><span class=\"rt\">いそ</span></span>がんと<br>「リザ」じゃない (yeah)「リーザ」だよ (uh)<br>なんとかなるって<span class=\"ruby\"><span class=\"rb\">思</span><span class=\"rt\">おも</span></span>ったら<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>けるワールド<br>ビザ<span class=\"ruby\"><span class=\"rb\">持</span><span class=\"rt\">も</span></span>ってるし (どうやって<span class=\"ruby\"><span class=\"rb\">取</span><span class=\"rt\">と</span></span>るんビザ)<br>どーやってビザは<span class=\"ruby\"><span class=\"rb\">取</span><span class=\"rt\">と</span></span>んねん name <span class=\"ruby\"><span class=\"rb\">傷</span><span class=\"rt\">きず</span></span>あってよ<br>ビザがない <span class=\"ruby\"><span class=\"rb\">追</span><span class=\"rt\">お</span></span>い<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>された!"
 }

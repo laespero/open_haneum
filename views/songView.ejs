@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= song.ori_name || song.name %> - <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></title>
+    <title><%= song.kor_name || song.ori_name || song.name %> - <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %></title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">

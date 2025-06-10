@@ -157,7 +157,7 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 부분은 'もう戻れなくたって'로, 'もう'는 '이미', '戻れなくたって'는 '돌아갈 수 없어도'라는 의미입니다. 두 번째 부분은 '忘れないで'로, '忘れない'는 '잊지 않다', 'で'는 청유의 의미를 나타내는 조사입니다. 전체적으로 이미 돌아갈 수 없는 상황에서도 잊지 말아달라는 간절한 부탁을 표현하고 있습니다.",
       "K0": "이미 돌아갈 수 없어도 잊지 말아줘.",
       "I0": "mou modorenakutatte wasurenaide",
-      "R0": "모우 모도레나쿠탓테 와스레나이데",
+      "R0": "모우 모도레 나쿠 탓테 와스레 나이데",
       "LI": [
         {
           "T1": "もう",
@@ -178,7 +178,7 @@
           "T1": "戻れなくたって",
           "K1": "돌아갈 수 없어도",
           "I1": "modorenakutatte",
-          "R1": "모도레나쿠탓테",
+          "R1": "모도레 나쿠 탓테",
           "E1": "'戻れない'는 '돌아갈 수 없다'라는 의미의 동사이며, 'たって'는 '~라도'라는 의미의 접속조사입니다.",
           "T2": "戻れない",
           "K2": "돌아갈 수 없다",
@@ -187,22 +187,22 @@
           "XE": "戻れなくたって頑張る。",
           "XK": "돌아갈 수 없어도 노력할 거야.",
           "XI": "modorenakutatte ganbaru",
-          "XR": "모도레나쿠탓테 간바루"
+          "XR": "모도레 나쿠 탓테 간바루"
         },
         {
           "T1": "忘れないで",
           "K1": "잊지 말아줘",
           "I1": "wasurenaide",
-          "R1": "와스레나이데",
+          "R1": "와스레 나이데",
           "E1": "'忘れない'는 '잊지 않다'라는 의미의 동사이며, 'で'는 청유의 의미를 나타내는 조사입니다.",
           "T2": "忘れない",
           "K2": "잊지 않다",
           "I2": "wasurenai",
-          "R2": "와스레나이",
+          "R2": "와스레 나이",
           "XE": "忘れないでいてね。",
           "XK": "잊지 말아줘.",
           "XI": "wasurenaide ite ne",
-          "XR": "와스레나이데 이테 네"
+          "XR": "와스레 나이데 이테 네"
         }
       ]
     },
@@ -212,7 +212,7 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 부분은 '噂のドリーミンガール'로, '소문의 드리밍 걸'을 의미하는 명사구입니다. 두 번째 부분은 '忘れないで'로, '잊지 말아줘'라는 부정 명령형입니다. 전체적으로 소문의 드리밍 걸을 잊지 말라는 메시지를 전달합니다.",
       "K0": "소문의 드리밍 걸, 잊지 말아줘.",
       "I0": "uwasa no dorīmingāru, wasurenaide",
-      "R0": "우와사 노 도리이민가아루, 와스레나이데",
+      "R0": "우와사 노 도리이민 가아루, 와스레 나이데",
       "LI": [
         {
           "T1": "噂",
@@ -248,22 +248,22 @@
           "T1": "ドリーミンガール",
           "K1": "드리밍 걸",
           "I1": "dorīmingāru",
-          "R1": "도리이민가아루",
+          "R1": "도리이민 가아루",
           "E1": "꿈꾸는 소녀를 의미하는 명사입니다.",
           "T2": "ドリーミンガール",
           "K2": "드리밍 걸",
           "I2": "dorīmingāru",
-          "R2": "도리이민가아루",
+          "R2": "도리이민 가아루",
           "XE": "彼女はドリーミンガールだ",
           "XK": "그녀는 드리밍 걸이야",
           "XI": "kanojo wa dorīmingāru da",
-          "XR": "카노조 와 도리이민가아루 다"
+          "XR": "카노조 와 도리이민 가아루 다"
         },
         {
           "T1": "忘れないで",
           "K1": "잊지 말아줘",
           "I1": "wasurenaide",
-          "R1": "와스레나이데",
+          "R1": "와스레 나이데",
           "E1": "부정 명령형으로, 잊지 말라는 의미입니다.",
           "T2": "忘れる",
           "K2": "잊다",
@@ -272,7 +272,7 @@
           "XE": "私を忘れないで",
           "XK": "나를 잊지 말아줘",
           "XI": "watashi o wasurenaide",
-          "XR": "와타시 오 와스레나이데"
+          "XR": "와타시 오 와스레 나이데"
         }
       ]
     },
@@ -507,7 +507,7 @@
       "G0": "이 문장은 주어(胸の高鳴り) + 술어(ごまかせない)로 구성되어 있습니다. '胸の高鳴り'는 '가슴이 두근거림'을 의미하며, 'ごまかせない'는 '속일 수 없다'라는 의미로, 가슴이 두근거리는 감정을 숨길 수 없음을 나타냅니다. 전체적으로 강한 감정을 감추지 못하는 상황을 표현합니다.",
       "K0": "가슴이 두근거리는 걸 감출 수 없어.",
       "I0": "mune no takanari gomakasenai",
-      "R0": "무네 노 타카나리 고마카세나이",
+      "R0": "무네 노 타카나리 고마카세 나이",
       "LI": [
         {
           "T1": "胸",
@@ -558,7 +558,7 @@
           "T1": "ごまかせない",
           "K1": "속일 수 없다",
           "I1": "gomakasenai",
-          "R1": "고마카세나이",
+          "R1": "고마카세 나이",
           "E1": "무언가를 숨기거나 속이지 못함을 나타내는 동사입니다.",
           "T2": "ごまかす",
           "K2": "속이다",
@@ -567,7 +567,7 @@
           "XE": "彼はごまかせない。",
           "XK": "그는 속일 수 없다.",
           "XI": "kare wa gomakasenai",
-          "XR": "카레 와 고마카세나이"
+          "XR": "카레 와 고마카세 나이"
         }
       ]
     },
@@ -662,7 +662,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, '近付く距離'가 주어 역할을 합니다. '近付く'는 '다가오는'을 의미하는 동사, '距離'는 '거리'를 의미하는 명사입니다. 'にも'는 '~에도'라는 의미로, '気づかない'는 '눈치채지 못하다'라는 동사입니다. 전체적으로 다가오는 거리를 눈치채지 못하는 상황을 표현합니다.",
       "K0": "다가오는 거리에도 눈치채지 못해.",
       "I0": "chikazuku kyori ni mo kizukanai",
-      "R0": "치카즈쿠 교리 니 모 키즈카나이",
+      "R0": "치카즈쿠 교리 니 모 키즈카 나이",
       "LI": [
         {
           "T1": "近付く",
@@ -728,7 +728,7 @@
           "T1": "気づかない",
           "K1": "눈치채지 못하다",
           "I1": "kizukanai",
-          "R1": "키즈카나이",
+          "R1": "키즈카 나이",
           "E1": "'눈치채지 못하다'라는 의미의 동사입니다.",
           "T2": "気づく",
           "K2": "눈치채다",
@@ -972,7 +972,7 @@
       "G0": "이 문장은 '後悔したって'와 '構わない' 두 부분으로 구성되어 있습니다. '後悔したって'는 '後悔する'의 과거형인 '後悔した'에 'って'가 붙은 형태로, '후회한다고 해도'라는 의미입니다. 'って'는 '라고 해도'라는 뜻의 조사입니다. '構わない'는 '상관없다'라는 의미의 형용사입니다. 전체적으로 '후회한다고 해도 상관없다'라는 의미를 전달합니다.",
       "K0": "후회한다고 해도 상관없어.",
       "I0": "kōkai shitatte kamawanai",
-      "R0": "코오카이 시탓테 카마와나이",
+      "R0": "코오카이 시탓테 카마와 나이",
       "LI": [
         {
           "T1": "後悔",
@@ -1023,7 +1023,7 @@
           "T1": "構わない",
           "K1": "상관없다",
           "I1": "kamawanai",
-          "R1": "카마와나이",
+          "R1": "카마와 나이",
           "E1": "어떤 일에 대해 신경 쓰지 않거나 문제가 되지 않음을 나타내는 형용사입니다.",
           "T2": "構う",
           "K2": "상관하다",
@@ -1032,7 +1032,7 @@
           "XE": "彼は何を言っても構わない。",
           "XK": "그는 무엇을 말해도 상관없다.",
           "XI": "kare wa nani o itte mo kamawanai",
-          "XR": "카레 와 나니 오 잇테 모 카마와나이"
+          "XR": "카레 와 나니 오 잇테 모 카마와 나이"
         }
       ]
     },
@@ -1397,7 +1397,7 @@
       "G0": "이 문장은 'この夏は' (이 여름은) + '充実する' (충실해지다) + 'のもっと' (더욱)로 구성되어 있습니다. 'この夏は'는 주어로 '이 여름은'을 의미하며, '充実する'는 '충실해지다'라는 동사로 문장의 서술어 역할을 합니다. 'のもっと'는 '더욱'이라는 의미로, 앞서 언급된 상태가 더 강화됨을 나타냅니다. 전체적으로 이 여름이 더욱 충실해질 것이라는 의미를 전달합니다.",
       "K0": "이 여름은 더욱 충실해질 거야.",
       "I0": "kono natsu wa juujitsu suru no motto",
-      "R0": "코노 나츠 와 쥬지츠 스루 노 못토",
+      "R0": "코노 나츠 와 쥬우지츠 스루 노 못토",
       "LI": [
         {
           "T1": "この",
@@ -1448,16 +1448,16 @@
           "T1": "充実",
           "K1": "충실",
           "I1": "juujitsu",
-          "R1": "쥬지츠",
+          "R1": "쥬우지츠",
           "E1": "어떤 일이나 상태가 충분하고 알차다는 것을 의미하는 명사입니다.",
           "T2": "充実",
           "K2": "충실",
           "I2": "juujitsu",
-          "R2": "쥬지츠",
+          "R2": "쥬우지츠",
           "XE": "生活が充実している。",
           "XK": "생활이 충실하다.",
           "XI": "seikatsu ga juujitsu shite iru",
-          "XR": "세이카츠 가 쥬지츠 시테 이루"
+          "XR": "세이카츠 가 쥬우지츠 시테 이루"
         },
         {
           "T1": "する",
@@ -1727,7 +1727,7 @@
       "G0": "이 문장은 주어(この夢) + 주제 조사(は) + 동사구(覚めてしまう) + 추측 표현(だろう) + 종조사(な)로 구성되어 있습니다. 'この夢'은 '이 꿈', 'は'는 주제를 나타내는 조사, '覚めてしまう'는 '깨고 말다', 'だろう'는 추측을 나타내며, 'な'는 감탄을 나타내는 종조사입니다. 전체적으로 화자가 꿈이 깨질 것이라는 것을 아쉬움과 함께 추측하고 있음을 나타냅니다.",
       "K0": "이 꿈은 깨고 말겠지.",
       "I0": "kono yume wa samete shimau darou na",
-      "R0": "코노 유메 와 사메테 시마우 다로우 나",
+      "R0": "코노 유메 와 사메테 시마우 다로오 나",
       "LI": [
         {
           "T1": "この",
@@ -1808,16 +1808,16 @@
           "T1": "だろう",
           "K1": "겠지",
           "I1": "darou",
-          "R1": "다로우",
+          "R1": "다로오",
           "E1": "추측을 나타내는 조동사입니다.",
           "T2": "だろう",
           "K2": "겠지",
           "I2": "darou",
-          "R2": "다로우",
+          "R2": "다로오",
           "XE": "明日は晴れるだろう。",
           "XK": "내일은 맑겠지.",
           "XI": "ashita wa hareru darou",
-          "XR": "아시타 와 하레루 다로우"
+          "XR": "아시타 와 하레루 다로오"
         },
         {
           "T1": "な",
@@ -1842,7 +1842,7 @@
       "G0": "이 문장은 주어(思い出) + 조사(は) + 서술어(色褪せたって)로 구성되어 있습니다. '思い出'는 '추억', 'は'는 주제를 나타내는 조사, '色褪せたって'는 '색이 바래도'라는 의미입니다. '色褪せた'는 동사 '色褪せる'(색이 바래다)의 과거형이며, 접속조사 'って'는 '~라고 해도', '~일지라도'라는 의미를 나타냅니다. 전체적으로 추억이 색이 바래도 소중하다는 의미를 전달합니다.",
       "K0": "추억은 색이 바래도",
       "I0": "omoide wa iroasetatte",
-      "R0": "오모이데 와 이로아세탓테",
+      "R0": "오모이데 와 이로 아세탓테",
       "LI": [
         {
           "T1": "思い出",
@@ -1878,16 +1878,16 @@
           "T1": "色褪せた",
           "K1": "색이 바랬다",
           "I1": "iroaseta",
-          "R1": "이로아세타",
+          "R1": "이로 아세타",
           "E1": "'색이 바래다'라는 의미의 동사로, 시간이 지나 원래의 색이 없어졌음을 나타냅니다.",
           "T2": "色褪せる",
           "K2": "색이 바래다",
           "I2": "iroaseru",
-          "R2": "이로아세루",
+          "R2": "이로 아세루",
           "XE": "写真が色褪せた。",
           "XK": "사진이 색이 바랬다.",
           "XI": "shashin ga iroaseta",
-          "XR": "샤신 가 이로아세타"
+          "XR": "샤신 가 이로 아세타"
         },
         {
           "T1": "って",
@@ -1982,7 +1982,7 @@
       "G0": "이 문장은 '～たい'로 '～하고 싶다'는 희망을 표현합니다. '潮騒に包まれたい'는 '조수에 휩싸이고 싶다'라는 의미로, 주어는 문맥상 '나'로 추정됩니다. 'ね'는 동의나 확인을 구하는 감탄사로 사용됩니다. 문장 구조는 '조건 + 하고 싶다 + 감탄사'의 형태를 띱니다.",
       "K0": "조수에 휩싸이고 싶어.",
       "I0": "shiosai ni tsutsumaretai ne",
-      "R0": "시오사이 니 츠츠마레타이 네",
+      "R0": "시오사이 니 츠츠마레 타이 네",
       "LI": [
         {
           "T1": "潮騒",
@@ -2018,7 +2018,7 @@
           "T1": "包まれたい",
           "K1": "휩싸이고 싶다",
           "I1": "tsutsumaretai",
-          "R1": "츠츠마레타이",
+          "R1": "츠츠마레 타이",
           "E1": "'包まる'의 가능형으로, '휩싸이다'라는 의미입니다. '～たい'로 '～하고 싶다'는 희망을 나타냅니다.",
           "T2": "包まる",
           "K2": "휩싸이다",
@@ -2027,7 +2027,7 @@
           "XE": "風に包まれたい。",
           "XK": "바람에 휩싸이고 싶어.",
           "XI": "kaze ni tsutsumaretai",
-          "XR": "카제 니 츠츠마레타이"
+          "XR": "카제 니 츠츠마레 타이"
         },
         {
           "T1": "ね",
@@ -2450,5 +2450,6 @@
   "failedLines": [],
   "tags": [
     "일본어"
-  ]
+  ],
+  "rubyData": "もう<span class=\"ruby\"><span class=\"rb\">戻</span><span class=\"rt\">もど</span></span>れなくたって<span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れないで<br><span class=\"ruby\"><span class=\"rb\">噂</span><span class=\"rt\">うわさ</span></span>のドリーミンガール、<span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れないで<br><span class=\"ruby\"><span class=\"rb\">彼女</span><span class=\"rt\">かのじょ</span></span>の<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>が<span class=\"ruby\"><span class=\"rb\">憎</span><span class=\"rt\">にく</span></span>いね<br><span class=\"ruby\"><span class=\"rb\">海岸通</span><span class=\"rt\">かいがんどお</span></span>りを<span class=\"ruby\"><span class=\"rb\">歩</span><span class=\"rt\">ある</span></span>きたい<br>ねぇ サマータイム<br><span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>の<span class=\"ruby\"><span class=\"rb\">高鳴</span><span class=\"rt\">たかな</span></span>りごまかせない<br><span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>なんてあるわけない<br><span class=\"ruby\"><span class=\"rb\">近付</span><span class=\"rt\">ちかづ</span></span>く<span class=\"ruby\"><span class=\"rb\">距離</span><span class=\"rt\">きょり</span></span>にも<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>づかない<br><span class=\"ruby\"><span class=\"rb\">占</span><span class=\"rt\">うらな</span></span>いなんて<span class=\"ruby\"><span class=\"rb\">信</span><span class=\"rt\">しん</span></span>じない<br><span class=\"ruby\"><span class=\"rb\">夜明</span><span class=\"rt\">よあ</span></span>けまで<span class=\"ruby\"><span class=\"rb\">海辺</span><span class=\"rt\">うみべ</span></span><span class=\"ruby\"><span class=\"rb\">走</span><span class=\"rt\">はし</span></span>って<br>でも<span class=\"ruby\"><span class=\"rb\">気持</span><span class=\"rt\">きも</span></span>ちを<span class=\"ruby\"><span class=\"rb\">伝</span><span class=\"rt\">つた</span></span>えてしまえばいつか<br><span class=\"ruby\"><span class=\"rb\">後悔</span><span class=\"rt\">こうかい</span></span>したって<span class=\"ruby\"><span class=\"rb\">構</span><span class=\"rt\">かま</span></span>わない<br>ドライブだってしてみたい<br><span class=\"ruby\"><span class=\"rb\">何年</span><span class=\"rt\">なんねん</span></span><span class=\"ruby\"><span class=\"rb\">経</span><span class=\"rt\">た</span></span>っても<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>えない<br><span class=\"ruby\"><span class=\"rb\">惚</span><span class=\"rt\">ほ</span></span>れた<span class=\"ruby\"><span class=\"rb\">腫</span><span class=\"rt\">は</span></span>れたの<span class=\"ruby\"><span class=\"rb\">仲</span><span class=\"rt\">なか</span></span>がいいね<br>でも<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>はここまで<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>てるの<br>この<span class=\"ruby\"><span class=\"rb\">夏</span><span class=\"rt\">なつ</span></span>は<span class=\"ruby\"><span class=\"rb\">充実</span><span class=\"rt\">じゅうじつ</span></span>するのもっと<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>の<span class=\"ruby\"><span class=\"rb\">虜</span><span class=\"rt\">とりこ</span></span>になってしまえばきっと<br><span class=\"ruby\"><span class=\"rb\">彼女</span><span class=\"rt\">かのじょ</span></span>の<span class=\"ruby\"><span class=\"rb\">仕草</span><span class=\"rt\">しぐさ</span></span>が<span class=\"ruby\"><span class=\"rb\">甘</span><span class=\"rt\">あま</span></span>いね<br>この<span class=\"ruby\"><span class=\"rb\">夢</span><span class=\"rt\">ゆめ</span></span>は<span class=\"ruby\"><span class=\"rb\">覚</span><span class=\"rt\">さ</span></span>めてしまうだろうな<br><span class=\"ruby\"><span class=\"rb\">思</span><span class=\"rt\">おも</span></span>い<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>は<span class=\"ruby\"><span class=\"rb\">色褪</span><span class=\"rt\">いろあ</span></span>せたって<br><span class=\"ruby\"><span class=\"rb\">青</span><span class=\"rt\">あお</span></span>い<span class=\"ruby\"><span class=\"rb\">影</span><span class=\"rt\">かげ</span></span>が<span class=\"ruby\"><span class=\"rb\">揺</span><span class=\"rt\">ゆ</span></span>れる<br><span class=\"ruby\"><span class=\"rb\">潮騒</span><span class=\"rt\">しおさい</span></span>に<span class=\"ruby\"><span class=\"rb\">包</span><span class=\"rt\">つつ</span></span>まれたいね<br><span class=\"ruby\"><span class=\"rb\">青</span><span class=\"rt\">あお</span></span>い<span class=\"ruby\"><span class=\"rb\">影</span><span class=\"rt\">かげ</span></span>が<span class=\"ruby\"><span class=\"rb\">揺</span><span class=\"rt\">ゆ</span></span>れる<span class=\"ruby\"><span class=\"rb\">街角</span><span class=\"rt\">まちかど</span></span><br>ただ<span class=\"ruby\"><span class=\"rb\">本当</span><span class=\"rt\">ほんとう</span></span>のことを<span class=\"ruby\"><span class=\"rb\">知</span><span class=\"rt\">し</span></span>りたいの<br>でも<span class=\"ruby\"><span class=\"rb\">昔</span><span class=\"rt\">むかし</span></span>と<span class=\"ruby\"><span class=\"rb\">変</span><span class=\"rt\">か</span></span>わらずニブいの<br>ただ<span class=\"ruby\"><span class=\"rb\">視線</span><span class=\"rt\">しせん</span></span>を<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>わせて<span class=\"ruby\"><span class=\"rb\">欲</span><span class=\"rt\">ほ</span></span>しいの"
 }
