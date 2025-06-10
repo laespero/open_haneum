@@ -261,28 +261,28 @@
       "G0": "이 문장은 동사 '雨宿りする'의 의지형 '雨宿りしよう'로 구성되어 있습니다. '雨宿り'는 '비를 피하다'라는 의미의 명사이며, 'しよう'는 '~하자'라는 의지를 나타내는 조동사입니다. 전체적으로 '비를 피하자'라는 제안을 표현하고 있습니다.",
       "K0": "비를 피하자.",
       "I0": "amayadori shiyou",
-      "R0": "아마야도리 시요우",
+      "R0": "아마 야도리 시요오",
       "LI": [
         {
           "T1": "雨宿り",
           "K1": "비를 피하다",
           "I1": "amayadori",
-          "R1": "아마야도리",
+          "R1": "아마 야도리",
           "E1": "비가 올 때 비를 피하기 위해 어떤 곳에 머무는 행위를 나타내는 명사입니다.",
           "T2": "雨宿り",
           "K2": "비를 피하다",
           "I2": "amayadori",
-          "R2": "아마야도리",
+          "R2": "아마 야도리",
           "XE": "軒下で雨宿りする。",
           "XK": "처마 밑에서 비를 피하다.",
           "XI": "nokishita de amayadori suru",
-          "XR": "노키시타 데 아마야도리 스루"
+          "XR": "노키시타 데 아마 야도리 스루"
         },
         {
           "T1": "しよう",
           "K1": "~하자",
           "I1": "shiyou",
-          "R1": "시요우",
+          "R1": "시요오",
           "E1": "동사의 의지형으로, 함께 어떤 행동을 하자고 제안할 때 사용합니다.",
           "T2": "する",
           "K2": "하다",
@@ -291,7 +291,7 @@
           "XE": "一緒に勉強しよう。",
           "XK": "같이 공부하자.",
           "XI": "issho ni benkyou shiyou",
-          "XR": "잇쇼 니 벤쿄우 시요우"
+          "XR": "잇쇼 니 벤쿄우 시요오"
         }
       ],
       "O0": "雨宿りしよう"
@@ -302,7 +302,7 @@
       "G0": "이 문장은 'ふたりだけで'와 '解けない'로 구성되어 있습니다. 'ふたりだけで'는 '둘이서만'을 의미하며, '解けない'는 '해결할 수 없다'는 뜻입니다. 전체적으로 '둘이서만 해결할 수 없다'는 의미를 전달합니다.",
       "K0": "둘이서만 해결할 수 없다.",
       "I0": "futari dake de tokenai",
-      "R0": "후타리 다케 데 토케나이",
+      "R0": "후타리 다케 데 호도케 나이",
       "LI": [
         {
           "T1": "ふたり",
@@ -338,16 +338,16 @@
           "T1": "解けない",
           "K1": "해결할 수 없다",
           "I1": "tokenai",
-          "R1": "토케나이",
+          "R1": "호도케 나이",
           "E1": "어떤 문제를 해결할 수 없다는 의미의 동사입니다.",
           "T2": "解ける",
           "K2": "해결되다",
           "I2": "tokeru",
-          "R2": "토케루",
+          "R2": "호도케루",
           "XE": "この問題は解けない。",
           "XK": "이 문제는 해결할 수 없다.",
           "XI": "kono mondai wa tokenai",
-          "XR": "코노 몬다이 와 토케나이"
+          "XR": "코노 몬다이 와 호도케 나이"
         }
       ],
       "O0": "ふたりだけで解けない"
@@ -414,22 +414,22 @@
       "G0": "이 문장은 '当たり前じゃないこと'로 구성되어 있습니다. '当たり前'는 '당연한', 'じゃない'는 '~이 아니다', 'こと'는 '것'을 의미합니다. 전체적으로 '당연하지 않은 것'이라는 의미를 전달합니다.",
       "K0": "당연하지 않은 것",
       "I0": "atarimae ja nai koto",
-      "R0": "아타리마에 쟈 나이 코토",
+      "R0": "아타리 마에 쟈 나이 코토",
       "LI": [
         {
           "T1": "当たり前",
           "K1": "당연한",
           "I1": "atarimae",
-          "R1": "아타리마에",
+          "R1": "아타리 마에",
           "E1": "'당연한', '자연스러운'이라는 의미의 형용사적 명사입니다.",
           "T2": "当たり前",
           "K2": "당연한",
           "I2": "atarimae",
-          "R2": "아타리마에",
+          "R2": "아타리 마에",
           "XE": "それは当たり前だ。",
           "XK": "그건 당연해.",
           "XI": "sore wa atarimae da",
-          "XR": "소레 와 아타리마에 다"
+          "XR": "소레 와 아타리 마에 다"
         },
         {
           "T1": "じゃない",
@@ -597,7 +597,7 @@
       "G0": "이 문장은 명령문 형태로, 상대방에게 특정 행동을 요청하는 내용입니다. '脇目振らないで'는 '옆을 보지 말고'라는 의미로, 주의를 집중하라는 뜻입니다. '横で笑って'는 '옆에서 웃어줘'라는 의미로, 상대방의 미소를 요청하는 표현입니다. 전체적으로 상대방의 관심과 미소를 요구하는 따뜻한 부탁의 문장입니다.",
       "K0": "옆을 보지 말고 옆에서 웃어줘.",
       "I0": "wakame furanaide yoko de waratte",
-      "R0": "와카메 후라나이데 요코 데 와랏테",
+      "R0": "와카메 후라 나이데 요코 데 와랏테",
       "LI": [
         {
           "T1": "脇目",
@@ -618,7 +618,7 @@
           "T1": "振らないで",
           "K1": "흔들지 말고",
           "I1": "furanaide",
-          "R1": "후라나이데",
+          "R1": "후라 나이데",
           "E1": "흔들지 말라는 의미의 부정 명령형입니다.",
           "T2": "振る",
           "K2": "흔들다",
@@ -627,7 +627,7 @@
           "XE": "頭を振らないで。",
           "XK": "머리를 흔들지 마세요.",
           "XI": "atama o furanaide",
-          "XR": "아타마 오 후라나이데"
+          "XR": "아타마 오 후라 나이데"
         },
         {
           "T1": "横で",
@@ -810,7 +810,7 @@
       "G0": "이 문장은 두 개의 동사구로 이루어져 있습니다. '慰め合って'는 '서로 위로하며'라는 의미로, '慰め'(위로하다)의 연용형에 '合う'(서로 하다)의 연용형 '合って'가 결합된 형태입니다. '抱きしめて'는 '안아줘'라는 의미로, '抱きしめる'(껴안다)의 연용형입니다. 전체적으로 서로를 위로하며 안아주자는 따뜻한 감정을 표현하고 있습니다.",
       "K0": "서로 위로하며 안아줘",
       "I0": "nagusameatte dakishimete",
-      "R0": "나구사메앗테 다키시메테",
+      "R0": "나구사메 앗테 다키시메테",
       "LI": [
         {
           "T1": "慰め",
@@ -993,22 +993,22 @@
       "G0": "이 문장은 '逸れぬように'라는 부사구와 '手を取って'라는 동사구로 구성되어 있습니다. '逸れぬように'는 '떨어지지 않도록'이라는 의미로, '手を取って'는 '손을 잡아서'라는 의미입니다. 전체적으로 상대방이 떨어지지 않도록 손을 잡아달라는 부탁을 표현하고 있습니다.",
       "K0": "떨어지지 않도록 손을 잡아서.",
       "I0": "hazurenu yō ni te o totte",
-      "R0": "하즈레누 요오 니 테 오 톳테",
+      "R0": "하구레누 요오 니 테 오 톳테",
       "LI": [
         {
           "T1": "逸れぬ",
           "K1": "떨어지지 않는",
           "I1": "hazurenu",
-          "R1": "하즈레누",
+          "R1": "하구레누",
           "E1": "'逸れる'의 부정형으로, '떨어지지 않는'이라는 의미입니다.",
           "T2": "逸れる",
           "K2": "떨어지다",
           "I2": "hazureru",
-          "R2": "하즈레루",
+          "R2": "하구레루",
           "XE": "彼は逸れないように気をつけた。",
           "XK": "그는 떨어지지 않도록 조심했다.",
           "XI": "kare wa hazurenai yō ni ki o tsuketa",
-          "XR": "카레 와 하즈레나이 요오 니 키 오 츠케타"
+          "XR": "카레 와 하구레 나이 요오 니 키 오 츠케타"
         },
         {
           "T1": "ように",
@@ -1292,18 +1292,18 @@
       "G0": "이 문장은 두 개의 동사구로 이루어져 있습니다. '寄り添い合い'는 '서로 기대다'라는 의미로, '寄り添い'는 '기대다', '合い'는 '서로'를 나타냅니다. '縛り合って'는 '서로 묶다'라는 의미로, '縛り'는 '묶다', '合って'는 '서로'를 나타냅니다. 전체적으로 서로 의지하며 연결되어 있는 관계를 표현하고 있습니다.",
       "K0": "서로 기대며 묶여서",
       "I0": "yorisoi ai shibari atte",
-      "R0": "요리소이 아이 시바리 앗테",
+      "R0": "요리 소이 아이 시바리 앗테",
       "LI": [
         {
           "T1": "寄り添い",
           "K1": "기대다",
           "I1": "yorisoi",
-          "R1": "요리소이",
+          "R1": "요리 소이",
           "E1": "물리적 또는 정신적으로 가까이 다가가 의지하는 행위를 나타내는 동사입니다.",
           "T2": "寄り添う",
           "K2": "기대다",
           "I2": "yorisou",
-          "R2": "요리소우",
+          "R2": "요리 소우",
           "XE": "彼はいつも私に寄り添ってくれる。",
           "XK": "그는 항상 내게 기대어 준다.",
           "XI": "kare wa itsumo watashi ni yorisotte kureru",
@@ -1520,7 +1520,7 @@
       "G0": "이 문장은 두 개의 형용사구로 구성되어 있습니다. '口下手で'는 '말솜씨가 서툴러서'라는 의미로, '表現不足で'는 '표현이 부족해서'라는 의미입니다. 두 구문 모두 'で'로 연결되어 있어, 원인이나 이유를 나타내는 접속사 역할을 합니다. 전체적으로 말솜씨가 서툴러서 표현이 부족하다는 것을 나타내는 문장입니다.",
       "K0": "말솜씨가 서툴러서 표현이 부족해서",
       "I0": "kuchiheta de hyougenbusoku de",
-      "R0": "쿠치헤타 데 효우겐부소쿠 데",
+      "R0": "쿠치헤타 데 효우겐 부소쿠 데",
       "LI": [
         {
           "T1": "口下手",
@@ -1692,18 +1692,18 @@
       "G0": "이 문장은 두 개의 동사구로 구성되어 있습니다. 첫 번째 동사구 '寄り添い合い'는 '서로 가까이하며'라는 의미로, '寄り添い'는 '가까이하다', '合い'는 '서로'를 나타냅니다. 두 번째 동사구 '分かり合って'는 '이해하고'라는 의미로, '分かり'는 '이해하다', '合って'는 '서로'를 나타냅니다. 전체적으로 서로 가까이하며 이해하는 관계를 표현합니다.",
       "K0": "서로 가까이하며 이해하고",
       "I0": "yorisoi ai wakari atte",
-      "R0": "요리소이 아이 와카리 앗테",
+      "R0": "요리 소이 아이 와카리 앗테",
       "LI": [
         {
           "T1": "寄り添い",
           "K1": "가까이하며",
           "I1": "yorisoi",
-          "R1": "요리소이",
+          "R1": "요리 소이",
           "E1": "가까이하다는 의미의 동사로, 상대방과의 물리적 또는 정서적 거리를 좁히는 행위를 나타냅니다.",
           "T2": "寄り添う",
           "K2": "가까이하다",
           "I2": "yorisou",
-          "R2": "요리소우",
+          "R2": "요리 소우",
           "XE": "彼はいつも私に寄り添ってくれる。",
           "XK": "그는 항상 나에게 가까이해 준다.",
           "XI": "kare wa itsumo watashi ni yorisotte kureru",
@@ -2193,22 +2193,22 @@
       "G0": "이 문장은 동사 '戯れ合う'의 연용형에 조동사 'よう'가 결합된 형태입니다. '戯れ合う'는 '함께 즐기다'라는 의미의 동사이며, 'ていよう'는 '~하고 있자'라는 의미로, 미래에 대한 의지나 제안을 나타냅니다. 전체적으로 '함께 즐기자'라는 의미를 전달합니다.",
       "K0": "함께 즐기자.",
       "I0": "tawamureatte iyou",
-      "R0": "타와무레앗테 이요우",
+      "R0": "자레 앗테 이요우",
       "LI": [
         {
           "T1": "戯れ合って",
           "K1": "함께 즐기며",
           "I1": "tawamureatte",
-          "R1": "타와무레앗테",
+          "R1": "자레 앗테",
           "E1": "'戯れ合う'는 '함께 즐기다'라는 의미의 동사입니다. '戯れ合って'는 '戯れ合う'의 연용형으로, '~하며'라는 의미를 나타냅니다.",
           "T2": "戯れ合う",
           "K2": "함께 즐기다",
           "I2": "tawamureau",
-          "R2": "타와무레아우",
+          "R2": "자레 아우",
           "XE": "彼らは戯れ合って笑っていた。",
           "XK": "그들은 함께 즐기며 웃고 있었다.",
           "XI": "karera wa tawamureatte waratte ita",
-          "XR": "카레라 와 타와무레앗테 와랏테 이타"
+          "XR": "카레라 와 자레 앗테 와랏테 이타"
         },
         {
           "T1": "いよう",
@@ -2320,7 +2320,7 @@
       "G0": "이 문장은 주어(君) + 수식어(中心に) + 동사(揺れる) + 목적어(世界は)로 구성되어 있습니다. '君'은 '너'를 의미하며, '中心に'는 '중심으로', '揺れる'는 '흔들리다', '世界は'는 '세상은'을 나타냅니다. 전체적으로 '너를 중심으로 흔들리는 세상'이라는 의미를 전달합니다.",
       "K0": "네가 중심으로 흔들리는 세상은",
       "I0": "kimi chūshin ni yureru sekai wa",
-      "R0": "키미 추신 니 유레루 세카이 와",
+      "R0": "키미 츄우신 니 유레루 세카이 와",
       "LI": [
         {
           "T1": "君",
@@ -2341,16 +2341,16 @@
           "T1": "中心",
           "K1": "중심",
           "I1": "chūshin",
-          "R1": "추신",
+          "R1": "츄우신",
           "E1": "무엇의 가운데 또는 핵심이 되는 부분을 의미합니다.",
           "T2": "中心",
           "K2": "중심",
           "I2": "chūshin",
-          "R2": "추신",
+          "R2": "츄우신",
           "XE": "地球の中心",
           "XK": "지구의 중심",
           "XI": "chikyū no chūshin",
-          "XR": "치큐 노 추신"
+          "XR": "치큐 노 츄우신"
         },
         {
           "T1": "に",
@@ -2623,22 +2623,22 @@
       "G0": "이 문장은 주어(続いていく日々) + 조사(は)로 구성되어 있습니다. '続いていく日々'는 '계속 이어지는 나날'을 의미하며, 'は'는 주제를 나타내는 조사입니다. 전체적으로 계속 이어지는 나날에 대해 말하고 있습니다.",
       "K0": "계속 이어지는 나날은",
       "I0": "tsuzuiteiku hibi wa",
-      "R0": "쯔즈이테이쿠 히비 와",
+      "R0": "츠즈이테 이쿠 히비 와",
       "LI": [
         {
           "T1": "続いていく",
           "K1": "계속 이어지는",
           "I1": "tsuzuiteiku",
-          "R1": "쯔즈이테이쿠",
+          "R1": "츠즈이테 이쿠",
           "E1": "'계속 이어지다'라는 의미의 동사 '続く'의 연용형에, 'ていく'가 결합된 형태입니다. 'ていく'는 앞으로도 계속 이어질 것을 나타냅니다.",
           "T2": "続く",
           "K2": "계속되다",
           "I2": "tsuzuku",
-          "R2": "쯔즈쿠",
+          "R2": "츠즈쿠",
           "XE": "この調子で続いていけば、きっと成功する。",
           "XK": "이런 식으로 계속 이어가면 분명히 성공할 거야.",
           "XI": "kono choushi de tsuzuiteikeba, kitto seikou suru.",
-          "XR": "코노 쵸우시 데 쯔즈이테이케바, 킷토 세이코우 스루."
+          "XR": "코노 쵸우시 데 츠즈이테이케바, 킷토 세이코우 스루."
         },
         {
           "T1": "日々",
@@ -3180,5 +3180,5 @@
     }
   ],
   "failedLines": [],
-  "rubyData": "<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>さないで<br><span class=\"ruby\"><span class=\"rb\">雨宿</span><span class=\"rt\">あまやど</span></span>りしよう<br>ふたりだけで<span class=\"ruby\"><span class=\"rb\">解</span><span class=\"rt\">と</span></span>けない<br>なんとも<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>しいね<br><span class=\"ruby\"><span class=\"rb\">当</span><span class=\"rt\">あ</span></span>たり<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>じゃないこと<br><span class=\"ruby\"><span class=\"rb\">子供</span><span class=\"rt\">こども</span></span>だったり<span class=\"ruby\"><span class=\"rb\">大人</span><span class=\"rt\">おとな</span></span>だったり<br>あなたとだけ<br><span class=\"ruby\"><span class=\"rb\">脇目</span><span class=\"rt\">わきめ</span></span><span class=\"ruby\"><span class=\"rb\">振</span><span class=\"rt\">ふ</span></span>らないで<span class=\"ruby\"><span class=\"rb\">横</span><span class=\"rt\">よこ</span></span>で<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>って<br><span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">靡</span><span class=\"rt\">なび</span></span>け<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span>まで<br>どんな<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span>を<span class=\"ruby\"><span class=\"rb\">重</span><span class=\"rt\">かさ</span></span>ねても<br><span class=\"ruby\"><span class=\"rb\">慰</span><span class=\"rt\">なぐさ</span></span>め<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">だ</span></span>きしめて<br>くだらないこと<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>い<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<br><span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>れるのは<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>だけ<br><span class=\"ruby\"><span class=\"rb\">逸</span><span class=\"rt\">そ</span></span>れぬように<span class=\"ruby\"><span class=\"rb\">手</span><span class=\"rt\">て</span></span>を<span class=\"ruby\"><span class=\"rb\">取</span><span class=\"rt\">と</span></span>って<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>にやられてるんだよ<br><span class=\"ruby\"><span class=\"rb\">波風</span><span class=\"rt\">なみかぜ</span></span>も<span class=\"ruby\"><span class=\"rb\">立</span><span class=\"rt\">た</span></span>つだろうけど<br>どこにも<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで<span class=\"ruby\"><span class=\"rb\">欲</span><span class=\"rt\">ほ</span></span>しくて<br><span class=\"ruby\"><span class=\"rb\">寄</span><span class=\"rt\">よ</span></span>り<span class=\"ruby\"><span class=\"rb\">添</span><span class=\"rt\">そ</span></span>い<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>い<span class=\"ruby\"><span class=\"rb\">縛</span><span class=\"rt\">しば</span></span>り<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<br><span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>してるだけじゃ<span class=\"ruby\"><span class=\"rb\">足</span><span class=\"rt\">た</span></span>りないもっと<br><span class=\"ruby\"><span class=\"rb\">心配</span><span class=\"rt\">しんぱい</span></span>になるほど<br><span class=\"ruby\"><span class=\"rb\">口下手</span><span class=\"rt\">くちべた</span></span>で<span class=\"ruby\"><span class=\"rb\">表現</span><span class=\"rt\">ひょうげん</span></span><span class=\"ruby\"><span class=\"rb\">不足</span><span class=\"rt\">ぶそく</span></span>で<br><span class=\"ruby\"><span class=\"rb\">騒</span><span class=\"rt\">さわ</span></span>がしい<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>の<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>で<br><span class=\"ruby\"><span class=\"rb\">寄</span><span class=\"rt\">よ</span></span>り<span class=\"ruby\"><span class=\"rb\">添</span><span class=\"rt\">そ</span></span>い<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>い<span class=\"ruby\"><span class=\"rb\">分</span><span class=\"rt\">わ</span></span>かり<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<br><span class=\"ruby\"><span class=\"rb\">困</span><span class=\"rt\">こま</span></span>らせてるかな<br><span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を<span class=\"ruby\"><span class=\"rb\">教</span><span class=\"rt\">おし</span></span>えてよ<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>の<span class=\"ruby\"><span class=\"rb\">方</span><span class=\"rt\">かた</span></span>はどうかな<br><span class=\"ruby\"><span class=\"rb\">顔</span><span class=\"rt\">かお</span></span>も<span class=\"ruby\"><span class=\"rb\">髪型</span><span class=\"rt\">かみがた</span></span>も<span class=\"ruby\"><span class=\"rb\">性格</span><span class=\"rt\">せいかく</span></span>も<br>どんな<span class=\"ruby\"><span class=\"rb\">天気</span><span class=\"rt\">てんき</span></span>だってふたりでいるなら<br><span class=\"ruby\"><span class=\"rb\">戯</span><span class=\"rt\">ざ</span></span>れ<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>っていよう<br><span class=\"ruby\"><span class=\"rb\">悲</span><span class=\"rt\">かな</span></span>しいことが<span class=\"ruby\"><span class=\"rb\">起</span><span class=\"rt\">お</span></span>きたって<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span><span class=\"ruby\"><span class=\"rb\">中心</span><span class=\"rt\">ちゅうしん</span></span>に<span class=\"ruby\"><span class=\"rb\">揺</span><span class=\"rt\">ゆ</span></span>れる<span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>は<br><span class=\"ruby\"><span class=\"rb\">弱</span><span class=\"rt\">よわ</span></span>さも<span class=\"ruby\"><span class=\"rb\">不機嫌</span><span class=\"rt\">ふきげん</span></span>も<span class=\"ruby\"><span class=\"rb\">甘</span><span class=\"rt\">あま</span></span>さも<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>にだけ<span class=\"ruby\"><span class=\"rb\">懐</span><span class=\"rt\">なつ</span></span>いた<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>を<br><span class=\"ruby\"><span class=\"rb\">続</span><span class=\"rt\">つづ</span></span>いていく<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>々は<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>の<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>も<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">い</span></span>き<span class=\"ruby\"><span class=\"rb\">方</span><span class=\"rt\">かた</span></span>も<br><span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>あたたまる<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span><br>いないとだめなのはお<span class=\"ruby\"><span class=\"rb\">互</span><span class=\"rt\">たが</span></span>い<span class=\"ruby\"><span class=\"rb\">様</span><span class=\"rt\">さま</span></span>でしょ<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>に<span class=\"ruby\"><span class=\"rb\">惹</span><span class=\"rt\">ひ</span></span>かれて<span class=\"ruby\"><span class=\"rb\">正解</span><span class=\"rt\">せいかい</span></span>だったよ<br><span class=\"ruby\"><span class=\"rb\">台本</span><span class=\"rt\">だいほん</span></span>と<span class=\"ruby\"><span class=\"rb\">地図</span><span class=\"rt\">ちず</span></span>のない<span class=\"ruby\"><span class=\"rb\">旅</span><span class=\"rt\">たび</span></span>で"
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>さないで<br><span class=\"ruby\"><span class=\"rb\">雨宿</span><span class=\"rt\">あまやど</span></span>りしよう<br>ふたりだけで<span class=\"ruby\"><span class=\"rb\">解</span><span class=\"rt\">ほど</span></span>けない<br>なんとも<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>しいね<br><span class=\"ruby\"><span class=\"rb\">当</span><span class=\"rt\">あ</span></span>たり<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>じゃないこと<br><span class=\"ruby\"><span class=\"rb\">子供</span><span class=\"rt\">こども</span></span>だったり<span class=\"ruby\"><span class=\"rb\">大人</span><span class=\"rt\">おとな</span></span>だったり<br>あなたとだけ<br><span class=\"ruby\"><span class=\"rb\">脇目</span><span class=\"rt\">わきめ</span></span><span class=\"ruby\"><span class=\"rb\">振</span><span class=\"rt\">ふ</span></span>らないで<span class=\"ruby\"><span class=\"rb\">横</span><span class=\"rt\">よこ</span></span>で<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>って<br><span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>く<span class=\"ruby\"><span class=\"rb\">靡</span><span class=\"rt\">なび</span></span>け<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span>まで<br>どんな<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span>を<span class=\"ruby\"><span class=\"rb\">重</span><span class=\"rt\">かさ</span></span>ねても<br><span class=\"ruby\"><span class=\"rb\">慰</span><span class=\"rt\">なぐさ</span></span>め<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">だ</span></span>きしめて<br>くだらないこと<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>い<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<br><span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>れるのは<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>だけ<br><span class=\"ruby\"><span class=\"rb\">逸</span><span class=\"rt\">はぐ</span></span>れぬように<span class=\"ruby\"><span class=\"rb\">手</span><span class=\"rt\">て</span></span>を<span class=\"ruby\"><span class=\"rb\">取</span><span class=\"rt\">と</span></span>って<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>にやられてるんだよ<br><span class=\"ruby\"><span class=\"rb\">波風</span><span class=\"rt\">なみかぜ</span></span>も<span class=\"ruby\"><span class=\"rb\">立</span><span class=\"rt\">た</span></span>つだろうけど<br>どこにも<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで<span class=\"ruby\"><span class=\"rb\">欲</span><span class=\"rt\">ほ</span></span>しくて<br><span class=\"ruby\"><span class=\"rb\">寄</span><span class=\"rt\">よ</span></span>り<span class=\"ruby\"><span class=\"rb\">添</span><span class=\"rt\">そ</span></span>い<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>い<span class=\"ruby\"><span class=\"rb\">縛</span><span class=\"rt\">しば</span></span>り<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<br><span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>してるだけじゃ<span class=\"ruby\"><span class=\"rb\">足</span><span class=\"rt\">た</span></span>りないもっと<br><span class=\"ruby\"><span class=\"rb\">心配</span><span class=\"rt\">しんぱい</span></span>になるほど<br><span class=\"ruby\"><span class=\"rb\">口下手</span><span class=\"rt\">くちべた</span></span>で<span class=\"ruby\"><span class=\"rb\">表現</span><span class=\"rt\">ひょうげん</span></span><span class=\"ruby\"><span class=\"rb\">不足</span><span class=\"rt\">ぶそく</span></span>で<br><span class=\"ruby\"><span class=\"rb\">騒</span><span class=\"rt\">さわ</span></span>がしい<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>の<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>で<br><span class=\"ruby\"><span class=\"rb\">寄</span><span class=\"rt\">よ</span></span>り<span class=\"ruby\"><span class=\"rb\">添</span><span class=\"rt\">そ</span></span>い<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>い<span class=\"ruby\"><span class=\"rb\">分</span><span class=\"rt\">わ</span></span>かり<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>って<br><span class=\"ruby\"><span class=\"rb\">困</span><span class=\"rt\">こま</span></span>らせてるかな<br><span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を<span class=\"ruby\"><span class=\"rb\">教</span><span class=\"rt\">おし</span></span>えてよ<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>の<span class=\"ruby\"><span class=\"rb\">方</span><span class=\"rt\">ほう</span></span>はどうかな<br><span class=\"ruby\"><span class=\"rb\">顔</span><span class=\"rt\">かお</span></span>も<span class=\"ruby\"><span class=\"rb\">髪型</span><span class=\"rt\">かみがた</span></span>も<span class=\"ruby\"><span class=\"rb\">性格</span><span class=\"rt\">せいかく</span></span>も<br>どんな<span class=\"ruby\"><span class=\"rb\">天気</span><span class=\"rt\">てんき</span></span>だってふたりでいるなら<br><span class=\"ruby\"><span class=\"rb\">戯</span><span class=\"rt\">ざ</span></span>れ<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>っていよう<br><span class=\"ruby\"><span class=\"rb\">悲</span><span class=\"rt\">かな</span></span>しいことが<span class=\"ruby\"><span class=\"rb\">起</span><span class=\"rt\">お</span></span>きたって<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span><span class=\"ruby\"><span class=\"rb\">中心</span><span class=\"rt\">ちゅうしん</span></span>に<span class=\"ruby\"><span class=\"rb\">揺</span><span class=\"rt\">ゆ</span></span>れる<span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>は<br><span class=\"ruby\"><span class=\"rb\">弱</span><span class=\"rt\">よわ</span></span>さも<span class=\"ruby\"><span class=\"rb\">不機嫌</span><span class=\"rt\">ふきげん</span></span>も<span class=\"ruby\"><span class=\"rb\">甘</span><span class=\"rt\">あま</span></span>さも<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>にだけ<span class=\"ruby\"><span class=\"rb\">懐</span><span class=\"rt\">なつ</span></span>いた<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>を<br><span class=\"ruby\"><span class=\"rb\">続</span><span class=\"rt\">つづ</span></span>いていく<span class=\"ruby\"><span class=\"rb\">日々</span><span class=\"rt\">ひび</span></span>は<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>の<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>も<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">い</span></span>き<span class=\"ruby\"><span class=\"rb\">方</span><span class=\"rt\">かた</span></span>も<br><span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>あたたまる<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span><br>いないとだめなのはお<span class=\"ruby\"><span class=\"rb\">互</span><span class=\"rt\">たが</span></span>い<span class=\"ruby\"><span class=\"rb\">様</span><span class=\"rt\">さま</span></span>でしょ<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>に<span class=\"ruby\"><span class=\"rb\">惹</span><span class=\"rt\">ひ</span></span>かれて<span class=\"ruby\"><span class=\"rb\">正解</span><span class=\"rt\">せいかい</span></span>だったよ<br><span class=\"ruby\"><span class=\"rb\">台本</span><span class=\"rt\">だいほん</span></span>と<span class=\"ruby\"><span class=\"rb\">地図</span><span class=\"rt\">ちず</span></span>のない<span class=\"ruby\"><span class=\"rb\">旅</span><span class=\"rt\">たび</span></span>で"
 }
