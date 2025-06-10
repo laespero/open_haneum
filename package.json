@@ -15,7 +15,8 @@
     "pro-reload": "pm2 reload server.js",
     "pro-logs": "pm2 logs server.js",
     "predeploy": "node scripts/generate-search-index.js",
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d .",
+    "edit": "node scripts/editor.cjs"
   },
   "author": "",
   "license": "ISC",
@@ -25,10 +26,14 @@
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "express-async-errors": "^3.1.1",
-    "openai": "^4.63.0",
-    "pm2": "^6.0.8"
+    "openai": "^4.63.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "glob": "^11.0.2",
+    "hangul-js": "^0.2.6",
+    "pm2": "^6.0.8",
+    "puppeteer": "^24.10.0",
+    "yargs": "^18.0.0"
   }
 }

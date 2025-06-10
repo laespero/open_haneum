@@ -227,28 +227,28 @@
       "G0": "이 문장은 'データコレクターの道理'라는 주어와 그에 대한 설명으로 이루어져 있습니다. 'データコレクター'는 '데이터 수집자'를 의미하며, 'の'는 소유나 속성을 나타내는 조사입니다. '道理'는 '도리' 또는 '이치'를 의미합니다. 전체적으로 데이터 수집자의 원칙이나 이치를 설명하고 있습니다.",
       "K0": "데이터 수집자의 도리",
       "I0": "dēta korekutā no dōri",
-      "R0": "데타 코레쿠타 노 도리",
+      "R0": "데에타 코레쿠타아 노 도오리",
       "LI": [
         {
           "T1": "データ",
           "K1": "데이터",
           "I1": "dēta",
-          "R1": "데타",
+          "R1": "데에타",
           "E1": "정보나 자료를 의미하는 명사입니다.",
           "T2": "データ",
           "K2": "데이터",
           "I2": "dēta",
-          "R2": "데타",
+          "R2": "데에타",
           "XE": "データを分析する。",
           "XK": "데이터를 분석하다.",
           "XI": "dēta o bunseki suru",
-          "XR": "데타 오 분세키 스루"
+          "XR": "데에타 오 분세키 스루"
         },
         {
           "T1": "コレクター",
           "K1": "수집자",
           "I1": "korekutā",
-          "R1": "코레쿠타",
+          "R1": "코레쿠타아",
           "E1": "무언가를 수집하는 사람을 의미합니다.",
           "T2": "コレクター",
           "K2": "수집자",
@@ -256,8 +256,8 @@
           "R2": "코레쿠타",
           "XE": "彼は切手のコレクターだ。",
           "XK": "그는 우표 수집자야.",
-          "XI": "kare wa kitte no korekutā da",
-          "XR": "카레 와 킷테 노 코레쿠타 다"
+          "XI": "kare wa kitte no korekutā da.",
+          "XR": "카레 와 킷테 노 코레쿠타아 다."
         },
         {
           "T1": "の",
@@ -278,8 +278,8 @@
           "T1": "道理",
           "K1": "도리",
           "I1": "dōri",
-          "R1": "도리",
-          "E1": "사물의 이치나 원리를 의미합니다.",
+          "R1": "도오리",
+          "E1": "사물의 이치나 원리를 의미합니다. 道 길 도, 理 다스릴 리",
           "T2": "道理",
           "K2": "도리",
           "I2": "dōri",
@@ -287,7 +287,7 @@
           "XE": "道理にかなった行動",
           "XK": "도리에 맞는 행동",
           "XI": "dōri ni kanatta kōdō",
-          "XR": "도리 니 카낫타 코도"
+          "XR": "도오리 니 카낫타 코오도오"
         }
       ],
       "O0": "データコレクターの道理"
@@ -425,7 +425,7 @@
       "G0": "이 문장은 '杞憂では済まなそうな'로 구성되어 있습니다. '杞憂'는 '근심'을 의미하며, 'では'는 '~로는'이라는 의미의 조사입니다. '済まなそうな'는 '해결할 수 없을 것 같은'이라는 의미로, '済む'의 부정형 '済まない'에 추측을 나타내는 'そう'와 형용사화하는 'な'가 결합된 형태입니다. 전체적으로 '근심으로는 해결할 수 없을 것 같은'이라는 의미를 전달합니다.",
       "K0": "근심으로는 해결할 수 없을 것 같은",
       "I0": "きゆうではすまなそうな",
-      "R0": "키유우 데와 스마나소우나",
+      "R0": "키유우 데와 스마나 소오나",
       "LI": [
         {
           "T1": "杞憂",
@@ -461,7 +461,7 @@
           "T1": "済まなそうな",
           "K1": "해결할 수 없을 것 같은",
           "I1": "すまなそうな",
-          "R1": "스마나소우나",
+          "R1": "스마나 소오나",
           "E1": "'済む'의 부정형 '済まない'에 추측을 나타내는 'そう'와 형용사화하는 'な'가 결합된 형태로, '해결할 수 없을 것 같은'이라는 의미입니다.",
           "T2": "済む",
           "K2": "해결되다",
@@ -470,7 +470,7 @@
           "XE": "この問題は簡単には済まなそうだ。",
           "XK": "이 문제는 쉽게 해결될 것 같지 않아.",
           "XI": "このもんだいはかんたんにはすまなそうだ",
-          "XR": "코노 몬다이와 칸탄니와 스마나소우 다"
+          "XR": "코노 몬다이와 칸탄니와 스마나 소오 다"
         }
       ],
       "O0": "杞憂では済まなそうな"
@@ -694,7 +694,7 @@
       "G0": "이 문장은 '本当は'로 시작하여 실제 상황을 강조하고, '無いんだって'로 그 상황을 부정하는 구조입니다. '無い'는 부정을 나타내는 형용사이고, 'んだ'는 설명을 강조하는 표현이며, 'って'는 전해들은 내용을 인용하는 종조사입니다. 전체적으로 어떤 진실이 실제로는 존재하지 않는다는 것을 강조하는 문장입니다.",
       "K0": "사실은 없는 거라고.",
       "I0": "hontō wa nai n da tte",
-      "R0": "혼토오 와 나이 은다 테",
+      "R0": "혼토오 와 나인다 떼",
       "LI": [
         {
           "T1": "本当は",
@@ -745,16 +745,16 @@
           "T1": "って",
           "K1": "~라고",
           "I1": "tte",
-          "R1": "테",
+          "R1": "떼",
           "E1": "전해들은 내용을 인용하거나 강조할 때 사용하는 종조사입니다.",
           "T2": "って",
           "K2": "~라고",
           "I2": "tte",
-          "R2": "테",
+          "R2": "떼",
           "XE": "行くって言ったよ。",
           "XK": "간다고 말했어.",
           "XI": "iku tte itta yo",
-          "XR": "이쿠 테 잇타 요"
+          "XR": "이쿠 떼 잇타 요"
         }
       ],
       "O0": "本当は無いんだって"
@@ -765,7 +765,7 @@
       "G0": "이 문장은 일본어로 작성되었으며, 'Hyperな'는 형용사적 용법으로 'Hyper한'을 의미합니다. 'フロントを'는 목적어로 '프론트를'을 나타내며, '切り売り'는 동사로 '조금씩 팔다'라는 의미입니다. 전체적으로 Hyper한 프론트를 조금씩 팔아치우는 행위를 묘사하고 있습니다.",
       "K0": "Hyper한 프론트를 조금씩 팔아치우고",
       "I0": "haipaa na furonto o kiriuri",
-      "R0": "하이파아 나 후론토 오 키리우리",
+      "R0": "하이파아 나 후론토 오 키리 우리",
       "LI": [
         {
           "T1": "Hyper",
@@ -831,16 +831,16 @@
           "T1": "切り売り",
           "K1": "조금씩 팔다",
           "I1": "kiriuri",
-          "R1": "키리우리",
+          "R1": "키리 우리",
           "E1": "전체를 나누어 조금씩 판매하는 행위를 의미하는 동사입니다.",
           "T2": "切り売り",
           "K2": "조금씩 팔다",
           "I2": "kiriuri",
-          "R2": "키리우리",
+          "R2": "키리 우리",
           "XE": "土地を切り売りする",
           "XK": "땅을 조금씩 팔다",
           "XI": "tochi o kiriuri suru",
-          "XR": "토치 오 키리우리 스루"
+          "XR": "토치 오 키리 우리 스루"
         }
       ],
       "O0": "Hyperなフロントを切り売り"
@@ -993,7 +993,7 @@
       "G0": "이 문장은 '常に'라는 부사구로 시작하여 시간적 지속성을 나타냅니다. '見直していく'는 '되돌아보고 나아가다'라는 의미로, 현재 진행 중인 행동을 나타냅니다. '自分のやり方'는 '자신의 방식'을 의미하며, 전체적으로 자신의 방식을 꾸준히 점검하고 개선해 나가는 태도를 표현하고 있습니다.",
       "K0": "항상 되돌아보는 자신의 방식",
       "I0": "tsune ni minaoshite iku jibun no yarikata",
-      "R0": "츠네 니 미나오시테 이쿠 지분 노 야리카타",
+      "R0": "츠네 니 미나오시테 이쿠 지분 노 야리 카타",
       "LI": [
         {
           "T1": "常に",
@@ -1023,7 +1023,7 @@
           "XE": "計画を見直して改善点を探そう。",
           "XK": "계획을 되돌아보고 개선점을 찾아보자.",
           "XI": "keikaku o minaoshite kaizen ten o sagasou",
-          "XR": "케이카쿠 오 미나오시테 카이젠 텐 오 사가소우"
+          "XR": "케이카쿠 오 미나오시테 카이젠 텐 오 사가소오"
         },
         {
           "T1": "いく",
@@ -1059,16 +1059,16 @@
           "T1": "やり方",
           "K1": "방식",
           "I1": "yarikata",
-          "R1": "야리카타",
+          "R1": "야리 카타",
           "E1": "어떤 일을 하는 방법이나 방식을 의미하는 명사입니다.",
           "T2": "やり方",
           "K2": "방식",
           "I2": "yarikata",
-          "R2": "야리카타",
+          "R2": "야리 카타",
           "XE": "彼のやり方は独特だ。",
           "XK": "그의 방식은 독특하다.",
           "XI": "kare no yarikata wa dokutoku da",
-          "XR": "카레 노 야리카타 와 도쿠토쿠 다"
+          "XR": "카레 노 야리 카타 와 도쿠토쿠 다"
         }
       ],
       "O0": "常に見直していく自分のやり方"
@@ -1709,15 +1709,15 @@
       "T0": "表層だけ一人前に掬ってる",
       "C0": "책임은 일체 합쳐서 방치. 표면만 그럴듯하게 건져내고 있어. 데이터 콜렉터의 도리",
       "G0": "이 문장은 '表層だけ(표면만)'이라는 명사구로 시작하여, '一人前に(그럴듯하게)'라는 부사구가 뒤따르고, '掬ってる(건져내고 있어)'라는 동사로 끝나는 구조입니다. 전체적으로 '표면만 그럴듯하게 건져내고 있다'는 의미를 전달합니다.",
-      "K0": "표면만 그럴듯하게 건져내고 있어.",
-      "I0": "hyousou dake hitorimae ni sukutteru",
-      "R0": "효소 다케 히토리마에 니 스쿳테루",
+      "K0": "표면만 그럴듯하게 건져내고 있어",
+      "I0": "hyōsō dake ichininmae ni sukutteru",
+      "R0": "효오소오 다케 이치닌 마에 니 스쿳테루",
       "LI": [
         {
           "T1": "表層",
           "K1": "표면",
           "I1": "hyousou",
-          "R1": "효소",
+          "R1": "효오소오",
           "E1": "겉으로 드러난 부분을 의미하는 명사입니다.",
           "T2": "表層",
           "K2": "표면",
@@ -1725,8 +1725,8 @@
           "R2": "효소",
           "XE": "この問題は表層だけ見ても解決しない。",
           "XK": "이 문제는 표면만 봐서는 해결되지 않아.",
-          "XI": "kono mondai wa hyousou dake mite mo kaiketsu shinai",
-          "XR": "코노 몬다이 와 효소 다케 미테 모 카이케츠 시나이"
+          "XI": "kono mondai wa hyōsō dake mite mo kaiketsu shinai.",
+          "XR": "코노 몬다이 와 효오소오 다케 미테 모 카이케츠 시나이."
         },
         {
           "T1": "だけ",
@@ -1746,8 +1746,8 @@
         {
           "T1": "一人前",
           "K1": "그럴듯한",
-          "I1": "hitorimae",
-          "R1": "히토리마에",
+          "I1": "ichininmae",
+          "R1": "이치닌 마에",
           "E1": "어른다운, 제대로 된 모습을 의미하는 명사입니다.",
           "T2": "一人前",
           "K2": "어른다운",
@@ -1913,7 +1913,7 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 번째 부분 '虚しいね'는 감탄사로 허무함을 표현하며, 두 번째 부분 '不完全を肯定できないエゴの塊'는 '불완전을 긍정할 수 없는 에고의 덩어리'라는 의미로, 주어가 생략된 문장입니다. 전체적으로 불완전함을 인정하지 못하는 자기중심적인 태도를 비판하는 내용입니다.",
       "K0": "허무하네, 불완전을 긍정할 수 없는 에고의 덩어리",
       "I0": "munashii ne, fukanzen o koutei dekinai ego no katamari",
-      "R0": "무나시이 네, 후칸젠 오 코우테이 데키나이 에고 노 카타마리",
+      "R0": "무나시이 네, 후칸젠 오 코오테이 데키나이 에고 노 카타마리",
       "LI": [
         {
           "T1": "虚しい",
@@ -1979,16 +1979,16 @@
           "T1": "肯定",
           "K1": "긍정",
           "I1": "koutei",
-          "R1": "코우테이",
+          "R1": "코오테이",
           "E1": "어떤 것을 옳다고 인정하는 것을 의미하는 명사입니다.",
           "T2": "肯定",
           "K2": "긍정",
           "I2": "koutei",
-          "R2": "코우테이",
+          "R2": "코오테이",
           "XE": "彼の意見を肯定する。",
           "XK": "그의 의견을 긍정하다.",
           "XI": "kare no iken o koutei suru",
-          "XR": "카레 노 이켄 오 코우테이 스루"
+          "XR": "카레 노 이켄 오 코오테이 스루"
         },
         {
           "T1": "できない",
@@ -2059,22 +2059,22 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 번째 부분은 'QWERTYだけが武器らしい'로, 'QWERTY만이 무기인 것 같아'라는 의미입니다. 여기서 'QWERTY'는 키보드 배열을 의미하며, 'だけ'는 '~만', 'が'는 주격 조사, '武器'는 '무기', 'らしい'는 '~인 것 같다'를 나타냅니다. 두 번째 부분은 '←リアリティ、笑'로, '←리얼리티, 웃겨'라는 의미입니다. 'リアリティ'는 '리얼리티', '笑'는 '웃기다'를 의미합니다. 전체적으로 현실에 대한 비꼬는 표현입니다.",
       "K0": "QWERTY만이 무기인 것 같아←리얼리티, 웃겨.",
       "I0": "kyuuerutii dake ga buki rashii ← riariti, warai",
-      "R0": "큐에루티이 다케 가 부키 라시이 ← 리아리티, 와라이",
+      "R0": "쿼티 다케 가 부키 라시이 ← 리아리티, 와라이",
       "LI": [
         {
           "T1": "QWERTY",
           "K1": "QWERTY",
           "I1": "kyuuerutii",
-          "R1": "큐에루티이",
+          "R1": "쿼티",
           "E1": "키보드의 표준 배열 중 하나를 의미합니다.",
           "T2": "QWERTY",
           "K2": "QWERTY",
           "I2": "kyuuerutii",
-          "R2": "큐에루티이",
+          "R2": "쿼티",
           "XE": "QWERTY keyboard is common.",
           "XK": "QWERTY 키보드가 흔해.",
           "XI": "kyuuerutii kii boodo izu komon",
-          "XR": "큐에루티이 키이 보오도 이즈 코몬"
+          "XR": "쿼티 키보드 이즈 커먼"
         },
         {
           "T1": "だけ",
@@ -2137,21 +2137,6 @@
           "XR": "카레 와 가쿠세이 라시이"
         },
         {
-          "T1": "←",
-          "K1": "←",
-          "I1": "←",
-          "R1": "←",
-          "E1": "화살표로, 앞의 내용과 뒤의 내용을 연결하는 역할을 합니다.",
-          "T2": "←",
-          "K2": "←",
-          "I2": "←",
-          "R2": "←",
-          "XE": "←これは重要です。",
-          "XK": "←이것은 중요해.",
-          "XI": "←kore wa juuyou desu",
-          "XR": "←코레 와 쥬우요오 데스"
-        },
-        {
           "T1": "リアリティ",
           "K1": "리얼리티",
           "I1": "riariti",
@@ -2190,22 +2175,22 @@
       "G0": "이 문장은 '모순과 공존해가는 00세대의 긍지'라는 주제를 나타내는 명사구입니다. '矛盾と共存していく'는 '모순과 공존해가는'이라는 의미로, '00世代の'는 '00세대의', '矜持'는 '긍지'를 의미합니다. 전체적으로 특정 세대의 자부심을 표현하는 문장입니다.",
       "K0": "모순과 공존해가는 00세대의 긍지",
       "I0": "mujun to kyōzon shite iku zero zero sedai no kyōji",
-      "R0": "무준 토 쿄오존 시테 이쿠 제로 제로 세다이 노 쿄오지",
+      "R0": "무쥰 토 쿄오존 시테 이쿠 제로 제로 세다이 노 쿄오지",
       "LI": [
         {
           "T1": "矛盾",
           "K1": "모순",
           "I1": "mujun",
-          "R1": "무준",
+          "R1": "무쥰",
           "E1": "서로 어긋나거나 대립되는 상태를 의미하는 명사입니다.",
           "T2": "矛盾",
           "K2": "모순",
           "I2": "mujun",
-          "R2": "무준",
+          "R2": "무쥰",
           "XE": "彼の話には矛盾が多い。",
           "XK": "그의 말에는 모순이 많다.",
           "XI": "kare no hanashi ni wa mujun ga ooi",
-          "XR": "카레노 하나시니와 무준가 오오이"
+          "XR": "카레노 하나시니와 무쥰가 오오이"
         },
         {
           "T1": "と",
@@ -2306,7 +2291,7 @@
       "G0": "이 문장은 감탄사 'Ey'로 시작하여 주의를 환기한 후, '反対側に居る奴も受け入れるこの在り方'라는 주된 메시지를 전달합니다. '反対側に居る奴も'는 '반대편에 있는 녀석도'라는 의미로, 상대방을 포함하는 포용적인 태도를 나타냅니다. '受け入れる'는 '받아들이다'라는 동사로, 수용을 의미하며, 'この在り方'는 '이 방식'이라는 뜻으로 전체적으로는 반대편에 있는 사람까지도 포용하는 방식을 강조하는 문장입니다.",
       "K0": "Ey, 반대편에 있는 녀석도 받아들이는 이 방식",
       "I0": "eɪ hantai gawa ni iru yatsu mo ukeireru kono arikata",
-      "R0": "에이 한타이 가와 니 이루 야츠 모 우케이레루 코노 아리카타",
+      "R0": "에이 한타이 가와 니 이루 야츠 모 우케 이레루 코노 아리 카타",
       "LI": [
         {
           "T1": "Ey",
@@ -2402,16 +2387,16 @@
           "T1": "受け入れる",
           "K1": "받아들이다",
           "I1": "ukeireru",
-          "R1": "우케이레루",
+          "R1": "우케 이레루",
           "E1": "수용하거나 받아들이는 것을 의미하는 동사입니다.",
           "T2": "受け入れる",
           "K2": "받아들이다",
           "I2": "ukeireru",
-          "R2": "우케이레루",
+          "R2": "우케 이레루",
           "XE": "新しい考えを受け入れる",
           "XK": "새로운 생각을 받아들이다",
           "XI": "atarashii kangae o ukeireru",
-          "XR": "아타라시이 칸가에 오 우케이레루"
+          "XR": "아타라시이 칸가에 오 우케 이레루"
         },
         {
           "T1": "この",
@@ -2432,16 +2417,16 @@
           "T1": "在り方",
           "K1": "방식",
           "I1": "arikata",
-          "R1": "아리카타",
+          "R1": "아리 카타",
           "E1": "존재하거나 행동하는 방식을 의미하는 명사입니다.",
           "T2": "在り方",
           "K2": "방식",
           "I2": "arikata",
-          "R2": "아리카타",
+          "R2": "아리 카타",
           "XE": "生き方",
           "XK": "삶의 방식",
           "XI": "ikikata",
-          "XR": "이키카타"
+          "XR": "이키 카타"
         }
       ],
       "O0": "Ey 反対側に居る奴も受け入れるこの在り方"
@@ -2635,7 +2620,7 @@
       "G0": "이 문장은 감탄사 'ハロー'로 시작하여, 상대방에게 말을 건네는 형식입니다. '知らず'는 '알지 못한 채'라는 의미로, '失った'는 '잃어버린'을 나타냅니다. '灯よ'는 '빛이여'라는 호칭으로, 잃어버린 빛을 의인화하여 부르고 있습니다. 전체적으로 잃어버린 무언가에 대한 애절한 호소를 담고 있습니다.",
       "K0": "안녕, 알지 못한 채 잃어버린 빛이여.",
       "I0": "harō, shirazu ushinatta hi yo",
-      "R0": "하로오, 시라즈 우시낫타 히 요",
+      "R0": "하로오, 시라즈 우시낫타 히카리 요",
       "LI": [
         {
           "T1": "ハロー",
@@ -2686,16 +2671,16 @@
           "T1": "灯",
           "K1": "빛",
           "I1": "hi",
-          "R1": "히",
+          "R1": "히카리",
           "E1": "빛을 의미하는 명사입니다.",
-          "T2": "灯",
+          "T2": "光",
           "K2": "빛",
           "I2": "hi",
-          "R2": "히",
-          "XE": "灯が消えた。",
+          "R2": "히카리",
+          "XE": "光が消えた。",
           "XK": "빛이 꺼졌다.",
           "XI": "hi ga kieta.",
-          "XR": "히 가 키에타."
+          "XR": "히카리 가 키에타."
         },
         {
           "T1": "よ",
@@ -2792,7 +2777,7 @@
       "G0": "이 문장은 주어(責任) + 조사(は) + 부사(一切合切) + 동사(放置)로 구성되어 있습니다. '責任'은 '책임'을 의미하며, 'は'는 주제를 나타내는 조사입니다. '一切合切'는 '전혀'라는 의미로, '放置'는 '방치하다'를 나타냅니다. 전체적으로 책임을 전혀 돌보지 않고 방치한다는 의미를 전달합니다.",
       "K0": "책임은 전혀 돌보지 않아.",
       "I0": "sekinin wa issaigassai hōchi",
-      "R0": "세키닌 와 잇사이갓사이 호오치",
+      "R0": "세키닌 와 잇사이 갓사이 호오치",
       "LI": [
         {
           "T1": "責任",
@@ -2828,16 +2813,16 @@
           "T1": "一切合切",
           "K1": "전혀",
           "I1": "issaigassai",
-          "R1": "잇사이갓사이",
+          "R1": "잇사이 갓사이",
           "E1": "어떤 것에 대해 전혀, 조금도 없다는 의미를 강조하는 부사입니다.",
           "T2": "一切合切",
           "K2": "전혀",
           "I2": "issaigassai",
-          "R2": "잇사이갓사이",
+          "R2": "잇사이 갓사이",
           "XE": "彼は一切合切謝らなかった。",
           "XK": "그는 전혀 사과하지 않았다.",
           "XI": "kare wa issaigassai ayamaranakatta",
-          "XR": "카레 와 잇사이갓사이 아야마라나캇타"
+          "XR": "카레 와 잇사이 갓사이 아야마라나캇타"
         },
         {
           "T1": "放置",
@@ -2949,22 +2934,22 @@
       "G0": "이 문장은 주어가 생략된 형태로, '心中を綴るには'가 목적어와 목적을 나타내는 부사구이며, '困る'가 서술어입니다. '心中を綴るには'는 '마음을 적는 데는'이라는 의미로, '困る'는 '곤란하다'라는 뜻입니다. 전체적으로 마음을 글로 표현하는 것이 어렵다는 의미를 전달합니다.",
       "K0": "마음을 적는 데는 곤란해.",
       "I0": "shinchū o tsuzuru ni wa komaru",
-      "R0": "신츄 오 쓰즈루 니 와 코마루",
+      "R0": "신츄우 오 츠즈루 니 와 코마루",
       "LI": [
         {
           "T1": "心中",
           "K1": "마음",
           "I1": "shinchū",
-          "R1": "신츄",
+          "R1": "신츄우",
           "E1": "마음속의 깊은 감정이나 생각을 의미하는 명사입니다.",
           "T2": "心中",
           "K2": "마음",
           "I2": "shinchū",
-          "R2": "신츄",
+          "R2": "신츄우",
           "XE": "彼の心中を察する。",
           "XK": "그의 마음을 헤아리다.",
           "XI": "kare no shinchū o sassuru",
-          "XR": "카레 노 신츄 오 삿스루"
+          "XR": "카레 노 신츄우 오 삿스루"
         },
         {
           "T1": "を",
@@ -2985,16 +2970,16 @@
           "T1": "綴る",
           "K1": "적다",
           "I1": "tsuzuru",
-          "R1": "쓰즈루",
+          "R1": "츠즈루",
           "E1": "글을 쓰거나 기록하는 행위를 나타내는 동사입니다.",
           "T2": "綴る",
           "K2": "적다",
           "I2": "tsuzuru",
-          "R2": "쓰즈루",
+          "R2": "츠즈루",
           "XE": "手紙を綴る。",
           "XK": "편지를 쓰다.",
           "XI": "tegami o tsuzuru",
-          "XR": "테가미 오 쓰즈루"
+          "XR": "테가미 오 츠즈루"
         },
         {
           "T1": "には",
@@ -3035,22 +3020,22 @@
       "G0": "이 문장은 'ブルータリティな社会'라는 명사구와 '咀嚼'라는 동사로 구성되어 있습니다. 'ブルータリティな'는 '잔혹한'이라는 의미의 형용사로, '社会'는 '사회'를 의미합니다. '咀嚼'는 '소화하다'라는 의미로, 여기서는 사회의 잔혹함을 이해하고 받아들이는 것을 비유적으로 표현하고 있습니다.",
       "K0": "잔혹한 사회를 소화하다.",
       "I0": "burūtariti na shakai o soshaku",
-      "R0": "부루타리티 나 샤카이 오 소샤쿠",
+      "R0": "부루우타리티 나 샤카이 오 소샤쿠",
       "LI": [
         {
           "T1": "ブルータリティ",
           "K1": "잔혹함",
           "I1": "burūtariti",
-          "R1": "부루타리티",
+          "R1": "부루우타리티",
           "E1": "'잔혹함'을 의미하는 명사로, 사회나 상황이 매우 잔인하고 비인간적임을 나타냅니다.",
           "T2": "ブルータリティ",
           "K2": "잔혹함",
           "I2": "burūtariti",
-          "R2": "부루타리티",
+          "R2": "부루우타리티",
           "XE": "この映画はブルータリティを描いている。",
           "XK": "이 영화는 잔혹함을 그려내고 있다.",
           "XI": "kono eiga wa burūtariti o egai te iru.",
-          "XR": "코노 에이가 와 부루타리티 오 에가이 테 이루."
+          "XR": "코노 에이가 와 부루우타리티 오 에가이 테 이루."
         },
         {
           "T1": "な",
@@ -3515,21 +3500,6 @@
           "XK": "그의 의견은 옳다.",
           "XI": "kare no iken wa tadashii.",
           "XR": "카레 노 이켄 와 타다시이."
-        },
-        {
-          "T1": "？",
-          "K1": "?",
-          "I1": "?",
-          "R1": "?",
-          "E1": "의문문을 나타내는 문장 부호입니다.",
-          "T2": "？",
-          "K2": "?",
-          "I2": "?",
-          "R2": "?",
-          "XE": "何をしている？",
-          "XK": "뭐 하고 있어?",
-          "XI": "nani o shite iru?",
-          "XR": "나니 오 시테 이루?"
         }
       ],
       "O0": "んで何、お前だけが正しい？"
@@ -3656,7 +3626,7 @@
       "G0": "이 문장은 일본어로, 감탄문 형식입니다. 「コレ、ソレが絶対正解です！」는 '이것, 그것이 절대 정답입니다!'라는 의미로, 강한 확신을 나타내는 표현입니다. 문장은 두 부분으로 나뉘어 있습니다. 첫 번째 부분은 'コレ'와 'ソレ'로, 각각 '이것'과 '그것'을 의미합니다. 두 번째 부분은 '絶対正解です'로, '절대 정답입니다'라는 의미입니다. 전체적으로 강한 확신과 단호함을 나타내는 문장입니다.",
       "K0": "「이것, 그것이 절대 정답입니다!」",
       "I0": "「kore, sore ga zettai seikai desu!」",
-      "R0": "「코레, 소레 가 젯타이 세카이 데스!」",
+      "R0": "「코레, 소레 가 젯타이 세이카이 데스!」",
       "LI": [
         {
           "T1": "コレ",
@@ -3722,7 +3692,7 @@
           "T1": "正解",
           "K1": "정답",
           "I1": "seikai",
-          "R1": "세카이",
+          "R1": "세이카이",
           "E1": "문제나 질문에 대한 올바른 답을 의미하는 명사입니다.",
           "T2": "正解",
           "K2": "정답",
@@ -3747,21 +3717,6 @@
           "XK": "이것은 책입니다.",
           "XI": "kore wa hon desu",
           "XR": "코레 와 혼 데스"
-        },
-        {
-          "T1": "！",
-          "K1": "!",
-          "I1": "!",
-          "R1": "!",
-          "E1": "강한 감정이나 강조를 나타내는 기호입니다.",
-          "T2": "！",
-          "K2": "!",
-          "I2": "!",
-          "R2": "!",
-          "XE": "すごい！",
-          "XK": "대단해!",
-          "XI": "sugoi!",
-          "XR": "스고이!"
         }
       ],
       "O0": "「コレ、ソレが絶対正解です！」"
@@ -3772,7 +3727,7 @@
       "G0": "이 문장은 감탄사 '嗚呼'로 시작하여 강한 감정을 표현합니다. '陶酔の極み'는 '도취의 극치'를 의미하며, '悦に浸り'는 '기쁨에 젖어'라는 뜻입니다. '右左'는 '좌우'를 의미하며, 전체적으로 강렬한 감정과 그에 따른 상태를 나타내는 문장입니다.",
       "K0": "아아, 도취의 극치, 기쁨에 젖어 좌우",
       "I0": "aa, tōsui no kiwami, etsu ni hitari sayū",
-      "R0": "아아, 토오스이 노 키와미, 에츠 니 히타리 사유우",
+      "R0": "아아, 토오스이 노 키와미, 에츠 니 히타리 미기 히다리",
       "LI": [
         {
           "T1": "嗚呼",
@@ -3883,7 +3838,7 @@
           "T1": "右左",
           "K1": "좌우",
           "I1": "sayū",
-          "R1": "사유우",
+          "R1": "미기 히다리",
           "E1": "왼쪽과 오른쪽을 의미하며, 여기서는 방향이나 위치를 나타냅니다.",
           "T2": "右左",
           "K2": "좌우",
@@ -3901,5 +3856,6 @@
   "failedLines": [],
   "tags": [
     "일본어"
-  ]
+  ],
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">嗚呼</span><span class=\"rt\">ああ</span></span>、<span class=\"ruby\"><span class=\"rb\">陶酔</span><span class=\"rt\">とうすい</span></span>の<span class=\"ruby\"><span class=\"rb\">極</span><span class=\"rt\">きわ</span></span>み、<span class=\"ruby\"><span class=\"rb\">悦</span><span class=\"rt\">えつ</span></span>に<span class=\"ruby\"><span class=\"rb\">浸</span><span class=\"rt\">ひた</span></span>り<span class=\"ruby\"><span class=\"rb\">右左</span><span class=\"rt\">みぎひだり</span></span><br><span class=\"ruby\"><span class=\"rb\">虚構</span><span class=\"rt\">きょこう</span></span>で<span class=\"ruby\"><span class=\"rb\">埋</span><span class=\"rt\">う</span></span>まるキャパシティ<br>QWERTYだけが<span class=\"ruby\"><span class=\"rb\">武器</span><span class=\"rt\">ぶき</span></span>らしい←リアリティ、<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わらい</span></span><br>んで<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>、お<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>だけが<span class=\"ruby\"><span class=\"rb\">正</span><span class=\"rt\">ただ</span></span>しい？<br><span class=\"ruby\"><span class=\"rb\">虚</span><span class=\"rt\">むな</span></span>しいね、<span class=\"ruby\"><span class=\"rb\">不完全</span><span class=\"rt\">ふかんぜん</span></span>を<span class=\"ruby\"><span class=\"rb\">肯定</span><span class=\"rt\">こうてい</span></span>できないエゴの<span class=\"ruby\"><span class=\"rb\">塊</span><span class=\"rt\">かたまり</span></span><br>「コレ、ソレが<span class=\"ruby\"><span class=\"rb\">絶対</span><span class=\"rt\">ぜったい</span></span><span class=\"ruby\"><span class=\"rb\">正解</span><span class=\"rt\">せいかい</span></span>です！」<br>とかなんとか<span class=\"ruby\"><span class=\"rb\">宣</span><span class=\"rt\">の</span></span>っては<span class=\"ruby\"><span class=\"rb\">毎日</span><span class=\"rt\">まいにち</span></span><br>Hyperなフロントを<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>り<span class=\"ruby\"><span class=\"rb\">売</span><span class=\"rt\">う</span></span>り<br><span class=\"ruby\"><span class=\"rb\">責任</span><span class=\"rt\">せきにん</span></span>は<span class=\"ruby\"><span class=\"rb\">一切合切</span><span class=\"rt\">いっさいがっさい</span></span><span class=\"ruby\"><span class=\"rb\">放置</span><span class=\"rt\">ほうち</span></span><br><span class=\"ruby\"><span class=\"rb\">表層</span><span class=\"rt\">ひょうそう</span></span>だけ<span class=\"ruby\"><span class=\"rb\">一人前</span><span class=\"rt\">いちにんまえ</span></span>に<span class=\"ruby\"><span class=\"rb\">掬</span><span class=\"rt\">すく</span></span>ってる<br>データコレクターの<span class=\"ruby\"><span class=\"rb\">道理</span><span class=\"rt\">どうり</span></span><br>とうに、<span class=\"ruby\"><span class=\"rb\">轢</span><span class=\"rt\">ひ</span></span>き<span class=\"ruby\"><span class=\"rb\">回</span><span class=\"rt\">まわ</span></span>すだけ<span class=\"ruby\"><span class=\"rb\">回</span><span class=\"rt\">まわ</span></span>され<br><span class=\"ruby\"><span class=\"rb\">荒</span><span class=\"rt\">あ</span></span>れた00<span class=\"ruby\"><span class=\"rb\">世代</span><span class=\"rt\">せだい</span></span>の<span class=\"ruby\"><span class=\"rb\">矜持</span><span class=\"rt\">きょうじ</span></span><br><span class=\"ruby\"><span class=\"rb\">心中</span><span class=\"rt\">しんちゅう</span></span>を<span class=\"ruby\"><span class=\"rb\">綴</span><span class=\"rt\">つづ</span></span>るには<span class=\"ruby\"><span class=\"rb\">困</span><span class=\"rt\">こま</span></span>る<br>どうにも<span class=\"ruby\"><span class=\"rb\">狭</span><span class=\"rt\">せま</span></span>すぎる<span class=\"ruby\"><span class=\"rb\">余白</span><span class=\"rt\">よはく</span></span><br><span class=\"ruby\"><span class=\"rb\">杞憂</span><span class=\"rt\">きゆう</span></span>では<span class=\"ruby\"><span class=\"rb\">済</span><span class=\"rt\">す</span></span>まなそうな<br>ブルータリティな<span class=\"ruby\"><span class=\"rb\">社会</span><span class=\"rt\">しゃかい</span></span>を<span class=\"ruby\"><span class=\"rb\">咀嚼</span><span class=\"rt\">そしゃく</span></span><br><span class=\"ruby\"><span class=\"rb\">靭性</span><span class=\"rt\">じんせい</span></span>ないメンタリティで<br><span class=\"ruby\"><span class=\"rb\">人生</span><span class=\"rt\">じんせい</span></span>の<span class=\"ruby\"><span class=\"rb\">色</span><span class=\"rt\">いろ</span></span>をブルーに<span class=\"ruby\"><span class=\"rb\">焦</span><span class=\"rt\">こ</span></span>がす<br><span class=\"ruby\"><span class=\"rb\">現在地</span><span class=\"rt\">げんざいち</span></span>も<span class=\"ruby\"><span class=\"rb\">不明</span><span class=\"rt\">ふめい</span></span>なまま<br><span class=\"ruby\"><span class=\"rb\">偶然</span><span class=\"rt\">ぐうぜん</span></span>できた<span class=\"ruby\"><span class=\"rb\">道</span><span class=\"rt\">みち</span></span>を<span class=\"ruby\"><span class=\"rb\">進</span><span class=\"rt\">すす</span></span>む<br>Fallible<br>In life's gamble, we are fallible<br>Fallible<br>In life's gamble, we are fallible<br><span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>かに<span class=\"ruby\"><span class=\"rb\">宿</span><span class=\"rt\">やど</span></span>る<span class=\"ruby\"><span class=\"rb\">正</span><span class=\"rt\">ただ</span></span>しさなんて<br><span class=\"ruby\"><span class=\"rb\">本当</span><span class=\"rt\">ほんとう</span></span>は<span class=\"ruby\"><span class=\"rb\">無</span><span class=\"rt\">な</span></span>いんだって<br><span class=\"ruby\"><span class=\"rb\">在</span><span class=\"rt\">あ</span></span>るものじゃなく<span class=\"ruby\"><span class=\"rb\">祈</span><span class=\"rt\">いの</span></span>るものなんだって<br><span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>だって、「<span class=\"ruby\"><span class=\"rb\">正</span><span class=\"rt\">ただ</span></span>しくあれ」と<span class=\"ruby\"><span class=\"rb\">祈</span><span class=\"rt\">いの</span></span>っているから<br>0からやっていくから<br><span class=\"ruby\"><span class=\"rb\">全部</span><span class=\"rt\">ぜんぶ</span></span><span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えていくから<br>その<span class=\"ruby\"><span class=\"rb\">上</span><span class=\"rt\">うえ</span></span>を<span class=\"ruby\"><span class=\"rb\">怖</span><span class=\"rt\">こわ</span></span>がらず<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>くから<br><span class=\"ruby\"><span class=\"rb\">常</span><span class=\"rt\">つね</span></span>に<span class=\"ruby\"><span class=\"rb\">見直</span><span class=\"rt\">みなお</span></span>していく<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>のやり<span class=\"ruby\"><span class=\"rb\">方</span><span class=\"rt\">かた</span></span><br>Ey <span class=\"ruby\"><span class=\"rb\">反対</span><span class=\"rt\">はんたい</span></span><span class=\"ruby\"><span class=\"rb\">側</span><span class=\"rt\">がわ</span></span>に<span class=\"ruby\"><span class=\"rb\">居</span><span class=\"rt\">い</span></span>る<span class=\"ruby\"><span class=\"rb\">奴</span><span class=\"rt\">やつ</span></span>も<span class=\"ruby\"><span class=\"rb\">受</span><span class=\"rt\">う</span></span>け<span class=\"ruby\"><span class=\"rb\">入</span><span class=\"rt\">い</span></span>れるこの<span class=\"ruby\"><span class=\"rb\">在</span><span class=\"rt\">あ</span></span>り<span class=\"ruby\"><span class=\"rb\">方</span><span class=\"rt\">かた</span></span><br>嗚呼<span class=\"ruby\"><span class=\"rb\">、</span><span class=\"rt\">ああ</span></span><span class=\"ruby\"><span class=\"rb\">喧騒</span><span class=\"rt\">けんそう</span></span>の<span class=\"ruby\"><span class=\"rb\">最中</span><span class=\"rt\">さいちゅう</span></span>にあるこの<span class=\"ruby\"><span class=\"rb\">心臓</span><span class=\"rt\">しんぞう</span></span><br>から<span class=\"ruby\"><span class=\"rb\">汲</span><span class=\"rt\">く</span></span>んでいく<span class=\"ruby\"><span class=\"rb\">意志</span><span class=\"rt\">いし</span></span><br><span class=\"ruby\"><span class=\"rb\">矛盾</span><span class=\"rt\">むじゅん</span></span>と<span class=\"ruby\"><span class=\"rb\">共存</span><span class=\"rt\">きょうぞん</span></span>していく00<span class=\"ruby\"><span class=\"rb\">世代</span><span class=\"rt\">せだい</span></span>の<span class=\"ruby\"><span class=\"rb\">矜持</span><span class=\"rt\">きょうじ</span></span><br><span class=\"ruby\"><span class=\"rb\">探</span><span class=\"rt\">さが</span></span>している、この<span class=\"ruby\"><span class=\"rb\">心臓</span><span class=\"rt\">しんぞう</span></span>の<span class=\"ruby\"><span class=\"rb\">向</span><span class=\"rt\">む</span></span>く<span class=\"ruby\"><span class=\"rb\">方向</span><span class=\"rt\">ほうこう</span></span>を<br>ただただ<span class=\"ruby\"><span class=\"rb\">願</span><span class=\"rt\">ねが</span></span>っている、いつか<span class=\"ruby\"><span class=\"rb\">肯定</span><span class=\"rt\">こうてい</span></span>できるように<br>ハロー、<span class=\"ruby\"><span class=\"rb\">知</span><span class=\"rt\">し</span></span>らず<span class=\"ruby\"><span class=\"rb\">失</span><span class=\"rt\">うしな</span></span>った<span class=\"ruby\"><span class=\"rb\">灯</span><span class=\"rt\">ひかり</span></span>よ<br><span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れてしまった<span class=\"ruby\"><span class=\"rb\">視界</span><span class=\"rt\">しかい</span></span>よ<br><span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>も<span class=\"ruby\"><span class=\"rb\">分</span><span class=\"rt\">わ</span></span>からなくなった<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>も<br><span class=\"ruby\"><span class=\"rb\">祈</span><span class=\"rt\">いの</span></span>りだけは<span class=\"ruby\"><span class=\"rb\">変</span><span class=\"rt\">か</span></span>わらず<span class=\"ruby\"><span class=\"rb\">響</span><span class=\"rt\">ひび</span></span>いている<br>In life's gamble, we are fallible<br>Fallible<br>In life's gamble, we are fallible"
 }

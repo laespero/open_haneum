@@ -252,7 +252,7 @@
       "G0": "이 문장은 '何も' (아무것도) + 'いらない' (필요 없다) + 'から' (때문에)로 구성되어 있습니다. 전체적으로 '아무것도 필요 없으니까'라는 의미를 전달하며, 앞 문장과 연결되어 특정 조건이나 이유를 나타내는 종속절 역할을 합니다.",
       "K0": "아무것도 필요 없으니까.",
       "I0": "nani mo iranai kara",
-      "R0": "나니 모 이라나이 카라",
+      "R0": "나니 모 이라 나이 카라",
       "LI": [
         {
           "T1": "何も",
@@ -273,7 +273,7 @@
           "T1": "いらない",
           "K1": "필요 없다",
           "I1": "iranai",
-          "R1": "이라나이",
+          "R1": "이라 나이",
           "E1": "'필요 없다', '원하지 않는다'는 의미의 동사입니다.",
           "T2": "いる",
           "K2": "필요하다",
@@ -282,7 +282,7 @@
           "XE": "この本はいらない。",
           "XK": "이 책은 필요 없어.",
           "XI": "kono hon wa iranai",
-          "XR": "코노 혼 와 이라나이"
+          "XR": "코노 혼 와 이라 나이"
         },
         {
           "T1": "から",
@@ -308,7 +308,7 @@
       "G0": "이 문장은 'あなたの'와 '姿'로 구성되어 있습니다. 'あなたの'는 '너의'라는 의미의 소유격 표현이며, '姿'는 '모습'을 의미하는 명사입니다. 전체적으로 '너의 모습'이라는 의미를 전달합니다.",
       "K0": "너의 모습",
       "I0": "anata no sugata",
-      "R0": "아나타노 스가타",
+      "R0": "아나타 노 스가타",
       "LI": [
         {
           "T1": "あなた",
@@ -562,7 +562,7 @@
       "G0": "이 문장은 '二人で(두 사람이)' + 'ただ(그냥)' + '過ごしていたくて(보내고 싶어서)'로 구성되어 있습니다. '二人で'는 '두 사람이 함께'라는 의미의 부사구이며, 'ただ'는 '단순히, 그냥'을 의미하는 부사입니다. '過ごしていたくて'는 '過ごす(보내다)'의 연용형에 희망을 나타내는 '~たい(싶다)'가 결합된 형태로, '보내고 싶어서'라는 의미를 가집니다. 전체적으로 두 사람이 단순히 함께 시간을 보내고 싶다는 소망을 표현하고 있습니다.",
       "K0": "두 사람이 그냥 함께 보내고 싶어서",
       "I0": "futari de tada sugoshiteitakute",
-      "R0": "후타리 데 타다 스고시테이타쿠테",
+      "R0": "후타리 데 타다 스고시테 이타쿠테",
       "LI": [
         {
           "T1": "二人で",
@@ -598,8 +598,8 @@
           "T1": "過ごしていたくて",
           "K1": "보내고 싶어서",
           "I1": "sugoshiteitakute",
-          "R1": "스고시테이타쿠테",
-          "E1": "'過ごす(보내다)'의 연용형에 희망을 나타내는 '~たい(싶다)'가 결합된 형태입니다. '~て'는 이유나 원인을 나타내는 접속조사로, '보내고 싶어서'라는 의미를 가집니다.",
+          "R1": "스고시테 이타쿠테",
+          "E1": "'過ごす'의 연용형에 희망을 나타내는 '~たい(싶다)'가 결합된 형태입니다. '~て'는 이유나 원인을 나타내는 접속조사입니다.",
           "T2": "過ごす",
           "K2": "보내다",
           "I2": "sugosu",
@@ -775,7 +775,7 @@
       "G0": "이 문장은 희망을 나타내는 간접 명령문입니다. '春が訪れますように'는 '봄이 찾아오길'이라는 의미로, 'ように'는 희망이나 소원을 나타내는 표현입니다. 주어는 '春(봄)'이고, 동사 '訪れます(찾아오다)'가 사용되었습니다. 전체적으로 봄이 빨리 찾아오기를 바라는 마음을 표현하고 있습니다.",
       "K0": "봄이 찾아오길",
       "I0": "haru ga otozuremasu you ni",
-      "R0": "하루 가 오토즈레마스 요오 니",
+      "R0": "하루 가 오토즈레 마스 요오 니",
       "LI": [
         {
           "T1": "春",
@@ -811,7 +811,7 @@
           "T1": "訪れます",
           "K1": "찾아오다",
           "I1": "otozuremasu",
-          "R1": "오토즈레마스",
+          "R1": "오토즈레 마스",
           "E1": "방문하거나 도착하는 것을 의미하는 동사입니다. 정중한 표현으로 사용됩니다.",
           "T2": "訪れる",
           "K2": "찾아오다",
@@ -820,7 +820,7 @@
           "XE": "友達が訪れます。",
           "XK": "친구가 찾아옵니다.",
           "XI": "tomodachi ga otozuremasu",
-          "XR": "토모다치 가 오토즈레마스"
+          "XR": "토모다치 가 오토즈레 마스"
         },
         {
           "T1": "ように",
@@ -846,22 +846,22 @@
       "G0": "이 문장은 '窓越しの' (창 너머의) + '白い' (하얀) + '画面に' (화면에) + '映った' (비친)으로 구성되어 있습니다. '窓越しの'는 '창 너머의'라는 의미로, '白い画面'은 '하얀 화면'을 의미하며, '映った'는 '비치다'의 과거형입니다. 전체적으로 창 너머의 하얀 화면에 비친 것을 묘사하는 문장입니다.",
       "K0": "창 너머의 하얀 화면에 비친",
       "I0": "madogoshi no shiroi gamen ni utsutta",
-      "R0": "마도고시 노 시로이 가멘 니 우춋타",
+      "R0": "마도 고시 노 시로이 가멘 니 우츳타",
       "LI": [
         {
           "T1": "窓越しの",
           "K1": "창 너머의",
           "I1": "madogoshi no",
-          "R1": "마도고시 노",
+          "R1": "마도 고시 노",
           "E1": "'窓'은 '창', '越し'는 '너머', 'の'는 소유격 조사로 '의'를 의미합니다. '창 너머의'라는 뜻입니다.",
           "T2": "窓越し",
           "K2": "창 너머",
           "I2": "madogoshi",
-          "R2": "마도고시",
+          "R2": "마도 고시",
           "XE": "窓越しの景色が美しい。",
           "XK": "창 너머의 풍경이 아름답다.",
           "XI": "madogoshi no keshiki ga utsukushii",
-          "XR": "마도고시 노 케시키 가 우츠쿠시이"
+          "XR": "마도 고시 노 케시키 가 우츠쿠시이"
         },
         {
           "T1": "白い",
@@ -897,7 +897,7 @@
           "T1": "映った",
           "K1": "비친",
           "I1": "utsutta",
-          "R1": "우춋타",
+          "R1": "우츳타",
           "E1": "'비치다'라는 의미의 동사 '映る'의 과거형입니다.",
           "T2": "映る",
           "K2": "비치다",
@@ -906,7 +906,7 @@
           "XE": "テレビに映った。",
           "XK": "TV에 비쳤다.",
           "XI": "terebi ni utsutta",
-          "XR": "테레비 니 우춋타"
+          "XR": "테레비 니 우츳타"
         }
       ],
       "O0": "窓越しの白い画面に映った"
@@ -917,7 +917,7 @@
       "G0": "이 문장은 'どうか'로 시작하여 소원을 나타내는 부사구로, '見えていますように'는 '보이길 바라'라는 의미의 동사구입니다. 'どうか'는 '부디'라는 뜻으로, 소망을 강조하며, '見えていますように'는 '보이고 있다'라는 현재 진행형에 'ように'가 붙어 '보이길 바라'라는 소망을 나타냅니다. 전체적으로 떨어져 있어도 같은 하늘을 보며 소원을 빌고 있는 상황을 표현합니다.",
       "K0": "부디 보이길 바라.",
       "I0": "dōka mieteimasu yō ni",
-      "R0": "도오카 미에테이마스 요오 니",
+      "R0": "도오카 미에테 이마스 요오 니",
       "LI": [
         {
           "T1": "どうか",
@@ -938,7 +938,7 @@
           "T1": "見えています",
           "K1": "보이고 있다",
           "I1": "mieteimasu",
-          "R1": "미에테이마스",
+          "R1": "미에테 이마스",
           "E1": "'보다'라는 동사의 현재 진행형으로, '보이고 있다'라는 의미입니다.",
           "T2": "見える",
           "K2": "보이다",
@@ -947,7 +947,7 @@
           "XE": "星が見えています。",
           "XK": "별이 보이고 있어.",
           "XI": "hoshi ga mieteimasu",
-          "XR": "호시 가 미에테이마스"
+          "XR": "호시 가 미에테 이마스"
         },
         {
           "T1": "ように",
@@ -1059,22 +1059,22 @@
       "G0": "이 문장은 두 부분으로 나뉩니다. 첫 부분 '待ち続ける二人にも'는 '기다리는 두 사람에게도'라는 의미로, '待ち続ける'는 '계속 기다리다', '二人'은 '두 사람', 'にも'는 '~에게도'를 나타냅니다. 두 번째 부분 'ああ'는 감탄사로 '아아'로 해석됩니다. 전체적으로 두 사람이 기다리는 날이 오길 바라는 마음과 봄의 도래를 기원하는 감정을 담고 있습니다.",
       "K0": "기다리는 두 사람에게도 아아",
       "I0": "machitsuzukeru futari ni mo aa",
-      "R0": "마치츠즈케루 후타리 니 모 아아",
+      "R0": "마치 츠즈케루 후타리 니 모 아아",
       "LI": [
         {
           "T1": "待ち続ける",
           "K1": "계속 기다리다",
           "I1": "machitsuzukeru",
-          "R1": "마치츠즈케루",
+          "R1": "마치 츠즈케루",
           "E1": "'기다리다'를 의미하는 '待つ'와 '계속하다'를 의미하는 '続ける'가 합쳐진 복합동사로, '계속 기다리다'라는 의미를 가집니다.",
           "T2": "待ち続ける",
           "K2": "계속 기다리다",
           "I2": "machitsuzukeru",
-          "R2": "마치츠즈케루",
+          "R2": "마치 츠즈케루",
           "XE": "彼は毎日駅で待ち続けている。",
           "XK": "그는 매일 역에서 계속 기다리고 있다.",
           "XI": "kare wa mainichi eki de machitsuzukete iru",
-          "XR": "카레 와 마이니치 에키 데 마치츠즈케테 이루"
+          "XR": "카레 와 마이니치 에키 데 마치 츠즈케테 이루"
         },
         {
           "T1": "二人",
@@ -1145,7 +1145,7 @@
       "G0": "이 문장은 '涙溢さないように'라는 목적을 나타내는 부사절입니다. '涙'는 '눈물', '溢さない'는 '넘치지 않다', 'ように'는 '~하도록'이라는 의미로, 전체적으로 '눈물이 넘치지 않도록'이라는 뜻을 나타냅니다. 이 문장은 앞뒤 문맥과 함께 감정을 억제하려는 화자의 의지를 표현하고 있습니다.",
       "K0": "눈물이 넘치지 않도록",
       "I0": "namida afurasa nai you ni",
-      "R0": "나미다 아후라사 나이 요오 니",
+      "R0": "나미다 코보사 나이 요오 니",
       "LI": [
         {
           "T1": "涙",
@@ -1166,16 +1166,16 @@
           "T1": "溢さない",
           "K1": "넘치지 않다",
           "I1": "afurasa nai",
-          "R1": "아후라사 나이",
+          "R1": "코보사 나이",
           "E1": "액체나 감정 등이 넘쳐흐르지 않는다는 의미입니다.",
           "T2": "溢す",
           "K2": "넘치다",
           "I2": "afurasu",
-          "R2": "아후라스",
+          "R2": "코보스",
           "XE": "感情を溢さないようにする。",
           "XK": "감정이 넘치지 않도록 한다.",
           "XI": "kanjou wo afurasa nai you ni suru",
-          "XR": "칸죠오 오 아후라사 나이 요오 니 스루"
+          "XR": "칸죠오 오 코보사 나이 요오 니 스루"
         },
         {
           "T1": "ように",
@@ -1201,7 +1201,7 @@
       "G0": "이 문장은 'また'로 시작하여 과거에 했던 행동을 다시 반복함을 나타냅니다. '目を瞑る'는 '눈을 감다'라는 의미로, 주어가 생략되어 있지만 문맥상 '나'가 주어로 추정됩니다. 전체적으로 과거의 행동을 반복하며, 어떤 상황에 대한 반응을 표현하고 있습니다.",
       "K0": "다시 눈을 감는다.",
       "I0": "mata me o tsuburu",
-      "R0": "마타 메 오 쓰부루",
+      "R0": "마타 메 오 츠무루",
       "LI": [
         {
           "T1": "また",
@@ -1252,16 +1252,16 @@
           "T1": "瞑る",
           "K1": "감다",
           "I1": "tsuburu",
-          "R1": "쓰부루",
+          "R1": "츠무루",
           "E1": "눈을 감는 행위를 나타내는 동사입니다.",
           "T2": "瞑る",
           "K2": "감다",
           "I2": "tsuburu",
-          "R2": "쓰부루",
+          "R2": "츠무루",
           "XE": "目を瞑って考える。",
           "XK": "눈을 감고 생각하다.",
           "XI": "me o tsubutte kangaeru",
-          "XR": "메 오 쓰붓테 칸가에루"
+          "XR": "메 오 츠뭇테 칸가에루"
         }
       ],
       "O0": "また目を瞑る"
@@ -1399,7 +1399,7 @@
       "G0": "이 문장은 주어(世界) + 동사구(が切り離された) + 명사(夜)로 구성되어 있습니다. '世界'는 '세계'를 의미하며, 'が'는 주격 조사로 주어를 나타냅니다. '切り離された'는 '분리되었다'라는 의미의 동사구로, '夜'는 '밤'을 의미합니다. 전체적으로 세계가 분리된 밤이라는 상황을 표현합니다.",
       "K0": "세계가 분리된 밤",
       "I0": "sekai ga kirihanasareta yoru",
-      "R0": "세카이 가 키리하나사레타 요루",
+      "R0": "세카이 가 키리 하나 사레타 요루",
       "LI": [
         {
           "T1": "世界",
@@ -1435,16 +1435,16 @@
           "T1": "切り離された",
           "K1": "분리된",
           "I1": "kirihanasareta",
-          "R1": "키리하나사레타",
+          "R1": "키리 하나 사레타",
           "E1": "무엇인가가 분리되거나 떨어져 나간 상태를 나타내는 동사구입니다.",
           "T2": "切り離す",
           "K2": "분리하다",
           "I2": "kirihanasu",
-          "R2": "키리하나스",
+          "R2": "키리 하나스",
           "XE": "彼は私から切り離された。",
           "XK": "그는 나로부터 분리되었다.",
           "XI": "kare wa watashi kara kirihanasareta",
-          "XR": "카레 와 와타시 카라 키리하나사레타"
+          "XR": "카레 와 와타시 카라 키리 하나 사레타"
         },
         {
           "T1": "夜",
@@ -1470,7 +1470,7 @@
       "G0": "이 문장은 조건절과 주절로 구성되어 있습니다. '信じ合えれば'는 조건절로 '서로 믿을 수 있다면'이라는 의미를 가지며, 'いつまでも'는 주절로 '영원히'라는 의미를 가집니다. 전체적으로 서로 믿을 수 있다면 영원히 함께할 수 있다는 메시지를 전달합니다.",
       "K0": "서로 믿을 수 있다면 영원히",
       "I0": "shinji aereba itsumademo",
-      "R0": "신지 아에레바 이츠마데모",
+      "R0": "신지 아에레바 이츠 마데 모",
       "LI": [
         {
           "T1": "信じ",
@@ -1521,16 +1521,16 @@
           "T1": "いつまでも",
           "K1": "영원히",
           "I1": "itsumademo",
-          "R1": "이츠마데모",
+          "R1": "이츠 마데 모",
           "E1": "시간의 끝없음을 나타내는 부사입니다.",
           "T2": "いつまでも",
           "K2": "영원히",
           "I2": "itsumademo",
-          "R2": "이츠마데모",
+          "R2": "이츠 마데 모",
           "XE": "いつまでも一緒にいたい。",
           "XK": "영원히 함께 있고 싶어요.",
           "XI": "itsumademo issho ni itai",
-          "XR": "이츠마데모 잇쇼 니 이타이"
+          "XR": "이츠 마데 모 잇쇼 니 이타이"
         }
       ],
       "O0": "信じ合えればいつまでも"
@@ -1769,13 +1769,13 @@
       "G0": "이 문장은 조건을 나타내는 접속조사 'ても'로 끝나는 조건절입니다. '触れ合うこと'는 '서로 만지는 것'을 의미하는 명사구이며, 'が'는 주격 조사입니다. 'できなくても'는 '할 수 없어도'라는 의미로, 'できる'의 부정형 'できなく'에 조건을 나타내는 'ても'가 결합된 형태입니다. 전체적으로 '서로 만질 수 없어도'라는 조건을 나타내는 문장입니다.",
       "K0": "서로 만질 수 없어도",
       "I0": "fureau koto ga dekinakutemo",
-      "R0": "후레아우 코토 가 데키나쿠테모",
+      "R0": "후레 아우 코토 가 데키 나쿠테모",
       "LI": [
         {
           "T1": "触れ合う",
           "K1": "서로 만지다",
           "I1": "fureau",
-          "R1": "후레아우",
+          "R1": "후레 아우",
           "E1": "서로 접촉하거나 만지는 행위를 나타내는 동사입니다.",
           "T2": "触れ合う",
           "K2": "서로 만지다",
@@ -1820,7 +1820,7 @@
           "T1": "できなくても",
           "K1": "할 수 없어도",
           "I1": "dekinakutemo",
-          "R1": "데키나쿠테모",
+          "R1": "데키 나쿠테모",
           "E1": "동사 'できる'의 부정형 'できなく'에 조건을 나타내는 'ても'가 결합된 형태로, '할 수 없어도'라는 의미입니다.",
           "T2": "できる",
           "K2": "할 수 있다",
@@ -1829,7 +1829,7 @@
           "XE": "できなくても頑張ります。",
           "XK": "할 수 없어도 힘낼게요.",
           "XI": "dekinakutemo ganbarimasu",
-          "XR": "데키나쿠테모 간바리마스"
+          "XR": "데키 나쿠테모 간바리마스"
         }
       ],
       "O0": "触れ合うことができなくても"
@@ -1840,22 +1840,22 @@
       "G0": "이 문장은 '振り返れば'라는 조건절과 'あの日の'라는 명사 수식절로 구성되어 있습니다. '振り返れば'는 '돌이켜 보면'이라는 의미로, 조건을 나타내는 접속사 역할을 합니다. 'あの日の'는 '그날의'라는 의미로, 뒤에 오는 명사를 수식합니다. 전체적으로 과거의 특정 날을 회상하는 의미를 담고 있습니다.",
       "K0": "돌이켜 보면 그날의",
       "I0": "furikaereba ano hi no",
-      "R0": "후리카에레바 아노 히 노",
+      "R0": "후리 카에레바 아노 히 노",
       "LI": [
         {
           "T1": "振り返れば",
           "K1": "돌이켜 보면",
           "I1": "furikaereba",
-          "R1": "후리카에레바",
+          "R1": "후리 카에레바",
           "E1": "'振り返る'는 '돌이켜 보다'라는 의미의 동사로, 여기에 조건을 나타내는 접속사 'ば'가 붙어 '~하면'이라는 의미를 더합니다.",
           "T2": "振り返る",
           "K2": "돌이켜 보다",
           "I2": "furikaeru",
-          "R2": "후리카에루",
+          "R2": "후리 카에루",
           "XE": "振り返れば、懐かしい景色が見える。",
           "XK": "돌이켜 보면, 그리운 풍경이 보인다.",
           "XI": "furikaereba, natsukashii keshiki ga mieru.",
-          "XR": "후리카에레바, 나츠카시이 케시키가 미에루."
+          "XR": "후리 카에레바, 나츠카시이 케시키가 미에루."
         },
         {
           "T1": "あの",
@@ -1911,7 +1911,7 @@
       "G0": "이 문장은 주어(季節) + 조사(が) + 부사(何度) + 동사(変わろうと)로 구성되어 있습니다. '季節'은 '계절'을 의미하며, 'が'는 주격 조사입니다. '何度'는 '몇 번'이라는 의미로, '変わろうと'는 '바뀌더라도'라는 의미의 동사입니다. 전체적으로 계절이 몇 번 바뀌더라도 변하지 않을 의지를 표현합니다.",
       "K0": "계절이 몇 번 바뀌더라도",
       "I0": "kisetsu ga nando kawarou to",
-      "R0": "키세츠가 난도 카와로우 토",
+      "R0": "키세츠 가 난도 카와로오 토",
       "LI": [
         {
           "T1": "季節",
@@ -1962,7 +1962,7 @@
           "T1": "変わろうと",
           "K1": "바뀌더라도",
           "I1": "kawarou to",
-          "R1": "카와로우 토",
+          "R1": "카와로오 토",
           "E1": "동사 '変わる'의 의지형으로, '바뀌더라도'라는 의미입니다.",
           "T2": "変わる",
           "K2": "바뀌다",
@@ -1971,7 +1971,7 @@
           "XE": "何が変わろうと気にしない。",
           "XK": "무엇이 바뀌더라도 신경 쓰지 않는다.",
           "XI": "nani ga kawarou to ki ni shinai",
-          "XR": "나니가 카와로우 토 키니 시나이"
+          "XR": "나니가 카와로오 토 키 니 시나이"
         }
       ],
       "O0": "季節が何度変わろうと"
@@ -2053,7 +2053,7 @@
       "G0": "이 문장은 '冬の終わり'(겨울의 끝)을 주어로, '告げる'(알리다)를 동사로, '淡雪'(가랑눈)을 목적어로 하는 문장입니다. 'を'는 목적격 조사로, '告げる'의 대상이 '淡雪'임을 나타냅니다. '冬の終わりを告げる'는 '겨울의 끝을 알리는'이라는 수식어구로 '淡雪'를 꾸며줍니다. 전체적으로 겨울의 끝을 알리는 가랑눈이 주제인 문장입니다.",
       "K0": "겨울의 끝을 알리는 가랑눈",
       "I0": "fuyu no owari o tsugeru awayuki",
-      "R0": "후유 노 오와리 오 츠게루 아와유키",
+      "R0": "후유 노 오와리 오 츠게루 아와 유키",
       "LI": [
         {
           "T1": "冬",
@@ -2134,16 +2134,16 @@
           "T1": "淡雪",
           "K1": "가랑눈",
           "I1": "awayuki",
-          "R1": "아와유키",
+          "R1": "아와 유키",
           "E1": "가볍게 내리는 눈을 의미합니다.",
           "T2": "淡雪",
           "K2": "가랑눈",
           "I2": "awayuki",
-          "R2": "아와유키",
+          "R2": "아와 유키",
           "XE": "淡雪が舞う。",
           "XK": "가랑눈이 춤춘다.",
           "XI": "awayuki ga mau",
-          "XR": "아와유키 가 마우"
+          "XR": "아와 유키 가 마우"
         }
       ],
       "O0": "冬の終わりを告げる淡雪"
@@ -2154,22 +2154,22 @@
       "G0": "이 문장은 주어(あなた) + 동사(残した) + 목적어(静寂)로 구성된 일본어 문장입니다. '耳元に'는 '귓가에'라는 의미로 장소를 나타내는 부사구입니다. 'あなたが'는 '당신이'라는 의미의 주어이며, '残した'는 '남겼다'는 의미의 동사입니다. '静寂'은 '고요'라는 의미의 명사로, 문장의 목적어 역할을 합니다. 전체적으로 귓가에 남아 있는 고요함을 표현하고 있습니다.",
       "K0": "귓가에 당신이 남긴 고요",
       "I0": "mimimoto ni anata ga nokoshita shijima",
-      "R0": "미미모토 니 아나타 가 노코시타 시지마",
+      "R0": "미미 모토 니 아나타 가 노코시타 시지마",
       "LI": [
         {
           "T1": "耳元",
           "K1": "귓가",
           "I1": "mimimoto",
-          "R1": "미미모토",
+          "R1": "미미 모토",
           "E1": "귀 근처를 의미하는 명사입니다.",
           "T2": "耳元",
           "K2": "귓가",
           "I2": "mimimoto",
-          "R2": "미미모토",
+          "R2": "미미 모토",
           "XE": "耳元で囁く声が聞こえる。",
           "XK": "귓가에서 속삭이는 목소리가 들린다.",
           "XI": "mimimoto de sasayaku koe ga kikoeru",
-          "XR": "미미모토 데 사사야쿠 코에 가 키코에루"
+          "XR": "미미 모토 데 사사야쿠 코에 가 키코에루"
         },
         {
           "T1": "に",
@@ -2487,22 +2487,22 @@
       "G0": "이 문장은 '会いたくなる' (보고 싶어지다)라는 동사구와 'んだよ' (거야)라는 문말 표현으로 구성되어 있습니다. '会いたくなる'은 '会う' (만나다)의 가능형 '会える'에 'たい' (하고 싶다)가 결합된 형태로, '만나고 싶어지다'라는 의미를 나타냅니다. 'んだよ'는 설명이나 강조의 의미를 담은 문말 표현으로, 친근한 분위기를 만듭니다. 전체적으로 상대방을 보고 싶어지는 감정을 표현하고 있습니다.",
       "K0": "보고 싶어지는 거야.",
       "I0": "aitaku narun da yo",
-      "R0": "아이타쿠 나룬 다 요",
+      "R0": "아이 타쿠 나룬 다 요",
       "LI": [
         {
           "T1": "会いたく",
           "K1": "보고 싶어",
           "I1": "aitaku",
-          "R1": "아이타쿠",
+          "R1": "아이 타쿠",
           "E1": "'会う' (만나다)의 가능형 '会える'에 'たい' (하고 싶다)가 결합된 형태로, '만나고 싶다'라는 의미를 나타냅니다.",
           "T2": "会いたい",
           "K2": "보고 싶다",
           "I2": "aitai",
-          "R2": "아이타이",
+          "R2": "아이 타이",
           "XE": "彼女に会いたくなった。",
           "XK": "그녀를 보고 싶어졌어.",
           "XI": "kanojo ni aitaku natta",
-          "XR": "카노조 니 아이타쿠 낫타"
+          "XR": "카노조 니 아이 타쿠 낫타"
         },
         {
           "T1": "なる",
@@ -2558,22 +2558,22 @@
       "G0": "이 문장은 '降りしきる雪が'라는 주어와 '積もるように'이라는 서술어로 구성된 비유적 표현입니다. '降りしきる'는 '계속 내리다'라는 의미로, '雪が'는 '눈이'를 나타냅니다. '積もるように'은 '쌓이듯이'라는 의미로, 눈이 쌓이는 모습을 비유적으로 표현하고 있습니다. 전체적으로 눈이 계속 내려 쌓이는 모습을 통해 화자의 감정을 강조하고 있습니다.",
       "K0": "내리쌓이는 눈처럼",
       "I0": "furishikiru yuki ga tsumoru you ni",
-      "R0": "후리시키루 유키 가 츠모루 요우 니",
+      "R0": "후리 시키루 유키 가 츠모루 요오 니",
       "LI": [
         {
           "T1": "降りしきる",
           "K1": "계속 내리다",
           "I1": "furishikiru",
-          "R1": "후리시키루",
+          "R1": "후리 시키루",
           "E1": "비나 눈이 계속해서 내리는 상태를 나타내는 동사입니다.",
           "T2": "降りしきる",
           "K2": "계속 내리다",
           "I2": "furishikiru",
-          "R2": "후리시키루",
+          "R2": "후리 시키루",
           "XE": "雨が降りしきる。",
           "XK": "비가 계속 내린다.",
           "XI": "ame ga furishikiru",
-          "XR": "아메 가 후리시키루"
+          "XR": "아메 가 후리 시키루"
         },
         {
           "T1": "雪",
@@ -2624,16 +2624,16 @@
           "T1": "ように",
           "K1": "~처럼",
           "I1": "you ni",
-          "R1": "요우 니",
+          "R1": "요오 니",
           "E1": "비유적으로 어떤 상태나 상황을 나타내는 표현입니다.",
           "T2": "ように",
           "K2": "~처럼",
           "I2": "you ni",
-          "R2": "요우 니",
+          "R2": "요오 니",
           "XE": "彼女は天使のように美しい。",
           "XK": "그녀는 천사처럼 아름답다.",
           "XI": "kanojo wa tenshi no you ni utsukushii",
-          "XR": "카노조 와 텐시 노 요우 니 우츠쿠시이"
+          "XR": "카노조 와 텐시 노 요오 니 우츠쿠시이"
         }
       ],
       "O0": "降りしきる雪が積もるように"
@@ -2801,7 +2801,7 @@
       "G0": "이 문장은 '笑顔で' (미소 지으며) + 'また' (다시) + '会えます' (만날 수 있다) + 'ように' (~하기를 바라다)로 구성된 희망을 나타내는 문장입니다. '笑顔で'는 상태를 나타내는 부사구로, 'また'는 '다시'라는 의미의 부사입니다. '会えます'는 '만나다'의 가능형으로, 'ように'는 희망이나 소망을 나타내는 표현입니다. 전체적으로 미소 지으며 다시 만나기를 바라는 마음을 표현하고 있습니다.",
       "K0": "미소 지으며 다시 만날 수 있기를 바래요.",
       "I0": "egao de mata aemasu you ni",
-      "R0": "에가오 데 마타 아에마스 요오 니",
+      "R0": "에가오 데 마타 아에 마스 요오 니",
       "LI": [
         {
           "T1": "笑顔",
@@ -2852,7 +2852,7 @@
           "T1": "会えます",
           "K1": "만날 수 있다",
           "I1": "aemasu",
-          "R1": "아에마스",
+          "R1": "아에 마스",
           "E1": "만나다'의 가능형으로, 만날 수 있음을 나타냅니다.",
           "T2": "会う",
           "K2": "만나다",
@@ -2861,7 +2861,7 @@
           "XE": "彼と会えますか？",
           "XK": "그를 만날 수 있나요?",
           "XI": "kare to aemasu ka",
-          "XR": "카레 토 아에마스 카"
+          "XR": "카레 토 아에 마스 카"
         },
         {
           "T1": "ように",
@@ -2887,7 +2887,7 @@
       "G0": "이 문장은 '같은 식으로 웃어주고 있었는데'라는 의미로, '同じように'는 '같은 식으로', '笑い返していた'는 '웃어주고 있었다', 'のに'는 '~인데'를 나타냅니다. 전체적으로 과거의 행동과 현재의 상황을 대조하며, 예상과 다른 결과에 대한 아쉬움을 표현하고 있습니다.",
       "K0": "같은 식으로 웃어주고 있었는데",
       "I0": "onaji you ni warai kaeshite ita noni",
-      "R0": "오나지 요우 니 와라이 카에시테 이타 노니",
+      "R0": "오나지 요오 니 와라이 카에시테 이타 노니",
       "LI": [
         {
           "T1": "同じ",
@@ -2908,16 +2908,16 @@
           "T1": "ように",
           "K1": "~처럼",
           "I1": "you ni",
-          "R1": "요우 니",
+          "R1": "요오 니",
           "E1": "어떤 상태나 방식과 비슷함을 나타내는 표현입니다.",
           "T2": "よう",
           "K2": "~처럼",
           "I2": "you",
-          "R2": "요우",
+          "R2": "요오",
           "XE": "彼女は天使のように美しい。",
           "XK": "그녀는 천사처럼 아름답다.",
           "XI": "kanojo wa tenshi no you ni utsukushii",
-          "XR": "카노죠 와 텐시 노 요우 니 우츠쿠시이"
+          "XR": "카노죠 와 텐시 노 요오 니 우츠쿠시이"
         },
         {
           "T1": "笑い返し",
@@ -3160,22 +3160,22 @@
       "G0": "이 문장은 '雪明かり(눈빛)'이 '照らす(비추다)'라는 동작을 통해 'この町(이 마을)'을 수식하고 있습니다. 'にも'는 '~에도'라는 의미로, 특정 장소나 상황을 강조하는 조사입니다. 전체적으로 눈빛이 비추는 마을을 배경으로 한 서정적인 표현입니다.",
       "K0": "눈빛이 비추는 이 마을에도",
       "I0": "yukiakari terasu kono machi ni mo",
-      "R0": "유키아카리 테라스 코노 마치 니 모",
+      "R0": "유키 아카리 테라스 코노 마치 니 모",
       "LI": [
         {
           "T1": "雪明かり",
           "K1": "눈빛",
           "I1": "yukiakari",
-          "R1": "유키아카리",
+          "R1": "유키 아카리",
           "E1": "눈이 내려서 밝아진 빛을 의미합니다. 눈이 내린 밤의 환한 분위기를 나타냅니다.",
           "T2": "雪明かり",
           "K2": "눈빛",
           "I2": "yukiakari",
-          "R2": "유키아카리",
+          "R2": "유키 아카리",
           "XE": "雪明かりが道を照らす。",
           "XK": "눈빛이 길을 비춘다.",
           "XI": "yukiakari ga michi o terasu",
-          "XR": "유키아카리 가 미치 오 테라스"
+          "XR": "유키 아카리 가 미치 오 테라스"
         },
         {
           "T1": "照らす",
@@ -3261,7 +3261,7 @@
       "G0": "이 문장은 'そのひとときに'라는 시간적 상황을 나타내는 부사구와 '願いを乗せる'라는 동사구로 구성되어 있습니다. 'そのひとときに'는 '그 한 순간에'라는 의미로, 특정한 시점을 강조합니다. '願いを乗せる'는 '소원을 실다'라는 의미로, 무언가에 소원을 담아 전달한다는 뉘앙스를 가지고 있습니다. 전체적으로 특정한 순간에 소원을 담아 전하고자 하는 마음을 표현하고 있습니다.",
       "K0": "그 한 순간에 소원을 실어",
       "I0": "sono hitotoki ni negai wo noseru",
-      "R0": "소노 히토토키 니 네가이 오 노세루",
+      "R0": "소노 히토 토키 니 네가이 오 노세루",
       "LI": [
         {
           "T1": "その",
@@ -3282,16 +3282,16 @@
           "T1": "ひととき",
           "K1": "한 순간",
           "I1": "hitotoki",
-          "R1": "히토토키",
+          "R1": "히토 토키",
           "E1": "짧은 시간이나 순간을 의미하는 명사입니다.",
           "T2": "ひととき",
           "K2": "한 순간",
           "I2": "hitotoki",
-          "R2": "히토토키",
+          "R2": "히토 토키",
           "XE": "彼とのひとときは忘れられない。",
           "XK": "그와의 한 순간은 잊을 수 없어.",
           "XI": "kare to no hitotoki wa wasurerarenai",
-          "XR": "카레 토 노 히토토키 와 와스레라레나이"
+          "XR": "카레 토 노 히토 토키 와 와스레라레나이"
         },
         {
           "T1": "に",
@@ -3680,7 +3680,7 @@
       "G0": "이 문장은 두 개의 구로 이루어져 있습니다. 첫 번째 구 '隣にいたいよ'는 '隣(となり)'(곁) + 'に'(~에) + 'いたい'(있고 싶다) + 'よ'(감탄, 강조)로, '곁에 있고 싶어'라는 소망을 나타냅니다. 두 번째 구 'ねえそれ以上'는 'ねえ'(있잖아, 부름) + 'それ'(그것) + '以上'(이상)으로, '있잖아, 그 이상'이라는 의미입니다. 전체적으로 화자가 상대방 곁에 있고 싶다는 강한 바람과, 그 이상은 바라지 않는다는 마음을 표현합니다.",
       "K0": "곁에 있고 싶어. 있잖아, 그 이상은 바라지 않아.",
       "I0": "tonari ni itai yo nee sore ijou",
-      "R0": "토나리 니 이타이요 네에 소레 이조오",
+      "R0": "토나리 니 이타이요 네에 소레 이죠오",
       "LI": [
         {
           "T1": "隣",
@@ -3776,16 +3776,16 @@
           "T1": "以上",
           "K1": "이상",
           "I1": "ijou",
-          "R1": "이조오",
+          "R1": "이죠오",
           "E1": "어떤 기준이나 수치보다 많거나 그 이후임을 나타내는 단어입니다.",
           "T2": "以上",
           "K2": "이상",
           "I2": "ijou",
-          "R2": "이조오",
+          "R2": "이죠오",
           "XE": "これ以上待てません。",
           "XK": "이 이상은 기다릴 수 없어요.",
           "XI": "kore ijou matemasen",
-          "XR": "코레 이조오 마테마센"
+          "XR": "코레 이죠오 마테마센"
         }
       ],
       "O0": "隣にいたいよ ねえそれ以上"
@@ -4026,5 +4026,6 @@
   "failedLines": [],
   "tags": [
     "일본어"
-  ]
+  ],
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>もいらないから<br>あなたの<span class=\"ruby\"><span class=\"rb\">姿</span><span class=\"rt\">すがた</span></span><br><span class=\"ruby\"><span class=\"rb\">変</span><span class=\"rt\">か</span></span>わることなく<br>くだらないことにずっと<br><span class=\"ruby\"><span class=\"rb\">二人</span><span class=\"rt\">ふたり</span></span><span class=\"ruby\"><span class=\"rb\">繋</span><span class=\"rt\">つな</span></span>がっていられる ah<br><span class=\"ruby\"><span class=\"rb\">二人</span><span class=\"rt\">ふたり</span></span>でただ<span class=\"ruby\"><span class=\"rb\">過</span><span class=\"rt\">す</span></span>ごしていたくて<br><span class=\"ruby\"><span class=\"rb\">幸</span><span class=\"rt\">しあわ</span></span>せを<span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じてたきっと<br><span class=\"ruby\"><span class=\"rb\">特別</span><span class=\"rt\">とくべつ</span></span>じゃない<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>々をもっと<br><span class=\"ruby\"><span class=\"rb\">春</span><span class=\"rt\">はる</span></span>が<span class=\"ruby\"><span class=\"rb\">訪</span><span class=\"rt\">おとず</span></span>れますように<br><span class=\"ruby\"><span class=\"rb\">窓越</span><span class=\"rt\">まどご</span></span>しの<span class=\"ruby\"><span class=\"rb\">白</span><span class=\"rt\">しろ</span></span>い<span class=\"ruby\"><span class=\"rb\">画面</span><span class=\"rt\">がめん</span></span>に<span class=\"ruby\"><span class=\"rb\">映</span><span class=\"rt\">うつ</span></span>った<br>どうか<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>えていますように<br>あれからいくつ<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span>を<span class=\"ruby\"><span class=\"rb\">越</span><span class=\"rt\">こ</span></span>えた<br><span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>ち<span class=\"ruby\"><span class=\"rb\">続</span><span class=\"rt\">つづ</span></span>ける<span class=\"ruby\"><span class=\"rb\">二人</span><span class=\"rt\">ふたり</span></span>にも ああ<br><span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span><span class=\"ruby\"><span class=\"rb\">溢</span><span class=\"rt\">こぼ</span></span>さないように<br>また<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>を<span class=\"ruby\"><span class=\"rb\">瞑</span><span class=\"rt\">つむ</span></span>る<br><span class=\"ruby\"><span class=\"rb\">何度</span><span class=\"rt\">なんど</span></span>だってそう<br>Ah <span class=\"ruby\"><span class=\"rb\">何度</span><span class=\"rt\">なんど</span></span>だってそう<br><span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>が<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>り<span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>された<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span><br><span class=\"ruby\"><span class=\"rb\">信</span><span class=\"rt\">しん</span></span>じ<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>えればいつまでも<br>ずっとずっと<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>つめたまま<br>「またね」と<span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しい<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>が<span class=\"ruby\"><span class=\"rb\">響</span><span class=\"rt\">ひび</span></span>く<br><span class=\"ruby\"><span class=\"rb\">気付</span><span class=\"rt\">きづ</span></span>けば<span class=\"ruby\"><span class=\"rb\">少</span><span class=\"rt\">すこ</span></span>し<span class=\"ruby\"><span class=\"rb\">滲</span><span class=\"rt\">にじ</span></span>んでいた<br><span class=\"ruby\"><span class=\"rb\">触</span><span class=\"rt\">ふ</span></span>れ<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>うことができなくても<br><span class=\"ruby\"><span class=\"rb\">振</span><span class=\"rt\">ふ</span></span>り<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>ればあの<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>の<br><span class=\"ruby\"><span class=\"rb\">季節</span><span class=\"rt\">きせつ</span></span>が<span class=\"ruby\"><span class=\"rb\">何度</span><span class=\"rt\">なんど</span></span><span class=\"ruby\"><span class=\"rb\">変</span><span class=\"rt\">か</span></span>わろうと<br>いつかは<span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しい<span class=\"ruby\"><span class=\"rb\">春</span><span class=\"rt\">はる</span></span>が<span class=\"ruby\"><span class=\"rb\">芽吹</span><span class=\"rt\">めぶ</span></span>く<br><span class=\"ruby\"><span class=\"rb\">冬</span><span class=\"rt\">ふゆ</span></span>の<span class=\"ruby\"><span class=\"rb\">終</span><span class=\"rt\">お</span></span>わりを<span class=\"ruby\"><span class=\"rb\">告</span><span class=\"rt\">つ</span></span>げる<span class=\"ruby\"><span class=\"rb\">淡雪</span><span class=\"rt\">あわゆき</span></span><br><span class=\"ruby\"><span class=\"rb\">耳元</span><span class=\"rt\">みみもと</span></span>にあなたが<span class=\"ruby\"><span class=\"rb\">残</span><span class=\"rt\">のこ</span></span>した<span class=\"ruby\"><span class=\"rb\">静寂</span><span class=\"rt\">しじま</span></span><br><span class=\"ruby\"><span class=\"rb\">鮮</span><span class=\"rt\">あざ</span></span>やかな<span class=\"ruby\"><span class=\"rb\">花</span><span class=\"rt\">はな</span></span>が<span class=\"ruby\"><span class=\"rb\">咲</span><span class=\"rt\">さ</span></span>くその<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>を<br>どんな<span class=\"ruby\"><span class=\"rb\">季節</span><span class=\"rt\">きせつ</span></span>も<span class=\"ruby\"><span class=\"rb\">景色</span><span class=\"rt\">けしき</span></span>もあなたと<br><span class=\"ruby\"><span class=\"rb\">会</span><span class=\"rt\">あ</span></span>いたくなるんだよ<br><span class=\"ruby\"><span class=\"rb\">降</span><span class=\"rt\">ふ</span></span>りしきる<span class=\"ruby\"><span class=\"rb\">雪</span><span class=\"rt\">ゆき</span></span>が<span class=\"ruby\"><span class=\"rb\">積</span><span class=\"rt\">つ</span></span>もるように<br><span class=\"ruby\"><span class=\"rb\">離</span><span class=\"rt\">はな</span></span>れていても<span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じ<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>が<br>あなたの<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>が<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>が<br><span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>でまた<span class=\"ruby\"><span class=\"rb\">会</span><span class=\"rt\">あ</span></span>えますように<br><span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じように<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>い<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>していたのに<br>「またね」と<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>って<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>せてくれた<br><span class=\"ruby\"><span class=\"rb\">共</span><span class=\"rt\">とも</span></span>に<span class=\"ruby\"><span class=\"rb\">同</span><span class=\"rt\">おな</span></span>じ<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>で<span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じていたい<br><span class=\"ruby\"><span class=\"rb\">雪明</span><span class=\"rt\">ゆきあ</span></span>かり<span class=\"ruby\"><span class=\"rb\">照</span><span class=\"rt\">て</span></span>らすこの<span class=\"ruby\"><span class=\"rb\">町</span><span class=\"rt\">まち</span></span>にも<br>そのひとときに<span class=\"ruby\"><span class=\"rb\">願</span><span class=\"rt\">ねが</span></span>いを<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>せる<br><span class=\"ruby\"><span class=\"rb\">町</span><span class=\"rt\">まち</span></span>に<span class=\"ruby\"><span class=\"rb\">柔</span><span class=\"rt\">やわ</span></span>らかな<span class=\"ruby\"><span class=\"rb\">風</span><span class=\"rt\">かぜ</span></span>が<span class=\"ruby\"><span class=\"rb\">吹</span><span class=\"rt\">ふ</span></span>いて<br>あなたと<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>たい<span class=\"ruby\"><span class=\"rb\">景色</span><span class=\"rt\">けしき</span></span>を<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>も<br><span class=\"ruby\"><span class=\"rb\">遠</span><span class=\"rt\">とお</span></span>い<span class=\"ruby\"><span class=\"rb\">町</span><span class=\"rt\">まち</span></span>でただあなたを<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>う<br><span class=\"ruby\"><span class=\"rb\">隣</span><span class=\"rt\">となり</span></span>にいたいよ ねえそれ<span class=\"ruby\"><span class=\"rb\">以上</span><span class=\"rt\">いじょう</span></span><br>ここでまた<span class=\"ruby\"><span class=\"rb\">会</span><span class=\"rt\">あ</span></span>えたその<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span>は<br>この<span class=\"ruby\"><span class=\"rb\">町</span><span class=\"rt\">まち</span></span>でただあなたを<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>う"
 }

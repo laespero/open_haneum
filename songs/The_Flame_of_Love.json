@@ -284,7 +284,7 @@
       "G0": "이 문장은 '언젠가 언젠가 안아줄 수 있을까?'라는 의미로, 'いつか'가 두 번 반복되어 강조되고 있습니다. '抱きしめられる'는 수동형으로 '안아지다'라는 의미를 가지며, 문장 끝의 물음표는 의문을 나타냅니다. 전체적으로 미래에 대한 기대와 현재의 고통을 대비하는 감정을 표현하고 있습니다.",
       "K0": "언젠가 언젠가 안아줄 수 있을까?",
       "I0": "itsuka itsuka dakishimerareru?",
-      "R0": "이츠카 이츠카 다키시메라레루?",
+      "R0": "이츠카 이츠카 다키 시메 라레루?",
       "LI": [
         {
           "T1": "いつか",
@@ -320,31 +320,16 @@
           "T1": "抱きしめられる",
           "K1": "안아지다",
           "I1": "dakishimerareru",
-          "R1": "다키시메라레루",
+          "R1": "다키 시메 라레루",
           "E1": "'抱きしめる'의 수동형으로, '안아지다'라는 의미의 동사입니다.",
           "T2": "抱きしめる",
           "K2": "안아주다",
           "I2": "dakishimeru",
-          "R2": "다키시메루",
+          "R2": "다키 시메루",
           "XE": "彼に抱きしめられた。",
           "XK": "그에게 안아졌다.",
           "XI": "kare ni dakishimerareta.",
-          "XR": "카레 니 다키시메라레타."
-        },
-        {
-          "T1": "？",
-          "K1": "?",
-          "I1": "?",
-          "R1": "?",
-          "E1": "의문을 나타내는 문장 부호입니다.",
-          "T2": "？",
-          "K2": "?",
-          "I2": "?",
-          "R2": "?",
-          "XE": "大丈夫？",
-          "XK": "괜찮아?",
-          "XI": "daijoubu?",
-          "XR": "다이죠우부?"
+          "XR": "카레 니 다키 시메 라레타."
         }
       ],
       "O0": "いつかいつか抱きしめられる？"
@@ -467,22 +452,22 @@
       "G0": "이 문장은 'こうやって'라는 부사구로 시작하여, '傷つく'라는 동사와 '夜に'라는 시간을 나타내는 부사구로 구성되어 있습니다. 'こうやって'는 '이렇게'라는 의미로, 행동의 방식을 나타내며, '傷つく'는 '상처받다'라는 의미의 동사입니다. '夜に'는 '밤에'라는 시간적 상황을 나타냅니다. 전체적으로 '이렇게 상처받는 밤에'라는 의미로, 특정한 상황에서의 감정을 표현하고 있습니다.",
       "K0": "이렇게 상처받는 밤에",
       "I0": "kōyatte kizutsuku yoru ni",
-      "R0": "코오얏테 키즈츠쿠 요루 니",
+      "R0": "코오 얏테 키즈츠쿠 요루 니",
       "LI": [
         {
           "T1": "こうやって",
           "K1": "이렇게",
           "I1": "kōyatte",
-          "R1": "코오얏테",
+          "R1": "코오 얏테",
           "E1": "어떤 행동이나 상태를 설명할 때 사용하는 부사로, '이렇게'라는 의미입니다.",
           "T2": "こうやって",
           "K2": "이렇게",
           "I2": "kōyatte",
-          "R2": "코오얏테",
+          "R2": "코오 얏테",
           "XE": "こうやってやればうまくいくよ。",
           "XK": "이렇게 하면 잘 될 거야.",
           "XI": "kōyatte yareba umaku iku yo",
-          "XR": "코오얏테 야레바 우마쿠 이쿠 요"
+          "XR": "코오 얏테 야레바 우마쿠 이쿠 요"
         },
         {
           "T1": "傷つく",
@@ -721,7 +706,7 @@
       "G0": "이 문장은 'もう怖くないって言えるように'로, 'もう'는 '이제 더 이상', '怖くない'는 '무섭지 않다', 'って'는 인용을 나타내는 조사, '言える'는 '말할 수 있다', 'ように'는 '~할 수 있도록'을 의미합니다. 전체적으로 '이제 더 이상 무섭지 않다고 말할 수 있도록'이라는 뜻을 가진 문장입니다.",
       "K0": "이제 더 이상 무섭지 않다고 말할 수 있도록",
       "I0": "mō kowakunai tte ieru yō ni",
-      "R0": "모오 코와쿠나이 테 이에루 요오 니",
+      "R0": "모오 코와쿠 나이 테 이에루 요오 니",
       "LI": [
         {
           "T1": "もう",
@@ -742,7 +727,7 @@
           "T1": "怖くない",
           "K1": "무섭지 않다",
           "I1": "kowakunai",
-          "R1": "코와쿠나이",
+          "R1": "코와쿠 나이",
           "E1": "'怖い(무섭다)'의 부정형으로, '무섭지 않다'라는 의미를 가집니다.",
           "T2": "怖い",
           "K2": "무섭다",
@@ -751,7 +736,7 @@
           "XE": "この映画は怖くない。",
           "XK": "이 영화는 무섭지 않아.",
           "XI": "kono eiga wa kowakunai",
-          "XR": "코노 에이가 와 코와쿠나이"
+          "XR": "코노 에이가 와 코와쿠 나이"
         },
         {
           "T1": "って",
@@ -807,7 +792,7 @@
       "G0": "이 문장은 감탄사 '嗚呼'로 시작하여 화자의 감정을 표현하고 있습니다. '追いつかないまま'는 '쫓아가지 못한 채'라는 의미로, '追いつく'의 부정형 '追いつかない'와 상태를 나타내는 'まま'로 구성되어 있습니다. '消えてった'는 '消える'의 과거형 '消えた'에 강조를 더한 'ってった'가 결합된 형태로, '사라져 버렸다'는 뜻을 강조합니다. 전체적으로 쫓아가지 못한 채 사라져 버린 것에 대한 아쉬움과 체념을 표현하는 문장입니다.",
       "K0": "아아, 쫓아가지 못한 채 사라져 버렸어.",
       "I0": "aa oitsukanai mama kietetta",
-      "R0": "아아 오이츠카나이 마마 키에텟타",
+      "R0": "아아 오이 츠카 나이 마마 키에텟타",
       "LI": [
         {
           "T1": "嗚呼",
@@ -828,7 +813,7 @@
           "T1": "追いつかない",
           "K1": "쫓아가지 못하는",
           "I1": "oitsukanai",
-          "R1": "오이츠카나이",
+          "R1": "오이 츠카 나이",
           "E1": "'追いつく'의 부정형으로, '쫓아가다'라는 동사의 부정을 나타냅니다.",
           "T2": "追いつく",
           "K2": "쫓아가다",
@@ -837,7 +822,7 @@
           "XE": "彼に追いつかないと試合に負ける。",
           "XK": "그를 쫓아가지 못하면 경기에 질 거야.",
           "XI": "kare ni oitsukanai to shiai ni makeru",
-          "XR": "카레 니 오이츠카나이 토 시아이 니 마케루"
+          "XR": "카레 니 오이 츠카 나이 토 시아이 니 마케루"
         },
         {
           "T1": "まま",
@@ -878,13 +863,13 @@
       "G0": "이 문장은 조건절과 주절로 구성되어 있습니다. '怖くないって言えるのなら'는 조건을 나타내는 절로, '무섭지 않다고 말할 수 있다면'이라는 의미입니다. '今日は'는 주절로 '오늘은'을 의미하며, 문맥상 뒤에 이어질 내용이 생략되어 있습니다. 전체적으로 '만약 무섭지 않다고 말할 수 있다면 오늘은...'이라는 조건문 구조입니다.",
       "K0": "무섭지 않다고 말할 수 있다면 오늘은",
       "I0": "kowakunai tte ieru nonara kyō wa",
-      "R0": "코와쿠나이 테 이에루 노나라 쿄오 와",
+      "R0": "코와쿠 나이 테 이에루 노 나라 쿄오 와",
       "LI": [
         {
           "T1": "怖くない",
           "K1": "무섭지 않다",
           "I1": "kowakunai",
-          "R1": "코와쿠나이",
+          "R1": "코와쿠 나이",
           "E1": "'怖い'(무섭다)의 부정형으로, '무섭지 않다'라는 의미를 가집니다. 형용사의 부정형은 '~くない' 형태로 만듭니다.",
           "T2": "怖い",
           "K2": "무섭다",
@@ -893,7 +878,7 @@
           "XE": "この映画は怖くない。",
           "XK": "이 영화는 무섭지 않아.",
           "XI": "kono eiga wa kowakunai",
-          "XR": "코노 에이가 와 코와쿠나이"
+          "XR": "코노 에이가 와 코와쿠 나이"
         },
         {
           "T1": "って",
@@ -929,7 +914,7 @@
           "T1": "のなら",
           "K1": "~라면",
           "I1": "nonara",
-          "R1": "노나라",
+          "R1": "노 나라",
           "E1": "조건을 나타내는 표현으로, '~라면'이라는 의미입니다. 'の'는 명사화 조사, 'なら'는 조건을 나타내는 조사입니다.",
           "T2": "なら",
           "K2": "~라면",
@@ -938,7 +923,7 @@
           "XE": "行けるのなら行きたい。",
           "XK": "갈 수 있다면 가고 싶어.",
           "XI": "ikeru nonara ikitai",
-          "XR": "이케루 노나라 이키타이"
+          "XR": "이케루 노 나라 이키타이"
         },
         {
           "T1": "今日は",
@@ -1439,7 +1424,7 @@
       "G0": "이 문장은 접속사 'でも'로 시작하여 앞 문장과 대조적인 내용을 이어갑니다. 'さ'는 말을 부드럽게 이어가는 감탄사입니다. '忘れてはいない'는 '잊지 않았다'라는 뜻으로, 부정의 'ない'가 사용되었습니다. 'んだ'는 설명이나 강조의 의미를 더하는 종조사입니다. 전체적으로 어떤 것을 잊지 않았다는 강한 감정을 표현하고 있습니다.",
       "K0": "하지만 잊지 않았어.",
       "I0": "demo sa wasuretewa inainda",
-      "R0": "데모 사 와스레테와 이나인다",
+      "R0": "데모 사 와스레테 와 이나인다",
       "LI": [
         {
           "T1": "でも",
@@ -1525,7 +1510,7 @@
       "G0": "이 문장은 '独りが'가 두 번 반복되어 혼자 있는 것에 대한 두려움을 강조하고 있습니다. '怖くって'는 '무서워서'라는 의미로, 두려움의 감정을 나타냅니다. 전체적으로 혼자 있는 것에 대한 두려움과 그 감정을 마음속에 숨겨두었다는 의미를 전달합니다.",
       "K0": "혼자서 혼자서 무서워서",
       "I0": "hitori ga hitori ga kowakutte",
-      "R0": "히토리가 히토리가 코와쿳테",
+      "R0": "히토리 가 히토리 가 코와쿳테",
       "LI": [
         {
           "T1": "独り",
@@ -1730,19 +1715,19 @@
           "XR": "카레 와 싯파이 시타. 소레데모 소레데모 간밧테 이루."
         },
         {
-          "T1": "いいんじゃない？",
+          "T1": "いいんじゃない",
           "K1": "괜찮지 않을까?",
-          "I1": "iin janai?",
-          "R1": "이인 자나이?",
-          "E1": "긍정적인 의문을 나타내는 표현으로, '괜찮지 않을까?'라는 의미입니다.",
-          "T2": "いい",
-          "K2": "괜찮다",
-          "I2": "ii",
-          "R2": "이이",
-          "XE": "この服、いいんじゃない？",
-          "XK": "이 옷, 괜찮지 않을까?",
-          "XI": "kono fuku, iin janai?",
-          "XR": "코노 후쿠, 이인 자나이?"
+          "I1": "iin janai",
+          "R1": "이인 쟈 나이",
+          "E1": "'~ではないか'의 구어체 표현으로, '~하는 거 아냐?', '~해도 괜찮지 않아?'라며 상대방의 동의를 구하거나 제안하는 뉘앙스입니다.",
+          "T2": "いいのではないか",
+          "K2": "~하는 것이 좋지 않은가",
+          "I2": "iinodehanai ka",
+          "R2": "이이노 데와 나이 카",
+          "XE": "もう帰ってもいいんじゃない？",
+          "XK": "이제 돌아가도 괜찮지 않아?",
+          "XI": "mou kaettemo iin janai?",
+          "XR": "모오 카엣테모 이인 쟈 나이?"
         }
       ],
       "O0": "ならそれでもそれでもいいんじゃない？"
@@ -1753,7 +1738,7 @@
       "G0": "이 문장은 'ただ'로 시작하여 '단지', '그저'라는 의미를 나타내고, 'いつもより'는 '평소보다'라는 뜻으로 비교를 나타냅니다. '寂しくなって'는 '외로워져서'라는 의미로, 상태의 변화를 나타내는 표현입니다. 전체적으로 평소보다 더 외로워진 상태를 표현하고 있습니다.",
       "K0": "그저 평소보다 더 외로워져서",
       "I0": "tada itsumo yori sabishiku natte",
-      "R0": "타다 이츠모 요리 사비시쿠 낫테",
+      "R0": "타다 이츠모 요리 사미시쿠 낫테",
       "LI": [
         {
           "T1": "ただ",
@@ -1804,16 +1789,16 @@
           "T1": "寂しく",
           "K1": "외롭게",
           "I1": "sabishiku",
-          "R1": "사비시쿠",
+          "R1": "사미시쿠",
           "E1": "'외롭다'라는 의미의 형용사 '寂しい'의 연용형으로, 상태를 나타냅니다.",
           "T2": "寂しい",
           "K2": "외롭다",
           "I2": "sabishii",
-          "R2": "사비시이",
+          "R2": "사미시이",
           "XE": "一人で寂しい。",
           "XK": "혼자서 외로워.",
           "XI": "hitori de sabishii",
-          "XR": "히토리 데 사비시이"
+          "XR": "히토리 데 사미시이"
         },
         {
           "T1": "なって",
@@ -1925,7 +1910,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, 'しんどい感情' (힘든 감정)을 목적어로 하고 '抱きしめる' (안아주다)를 동사로 하는 문장입니다. 'それすらも'는 '그것마저도'라는 의미로, 강조의 역할을 합니다. 문장 끝의 'の'는 설명이나 감정을 나타내는 종조사입니다. 전체적으로 힘든 감정까지도 받아들이려는 마음을 표현하고 있습니다.",
       "K0": "힘든 감정 그것마저도 안아주는 거야",
       "I0": "shindoi kanjou sore sura mo dakishimeru no",
-      "R0": "신도이 칸조오 소레 스라 모 다키시메루 노",
+      "R0": "신도이 칸죠오 소레 스라 모 다키 시메루 노",
       "LI": [
         {
           "T1": "しんどい",
@@ -1946,16 +1931,16 @@
           "T1": "感情",
           "K1": "감정",
           "I1": "kanjou",
-          "R1": "칸조오",
+          "R1": "칸죠오",
           "E1": "마음에서 일어나는 기쁨, 슬픔, 분노 등의 느낌을 나타내는 명사입니다.",
           "T2": "感情",
           "K2": "감정",
           "I2": "kanjou",
-          "R2": "칸조오",
+          "R2": "칸죠오",
           "XE": "感情をコントロールするのは難しい。",
           "XK": "감정을 조절하는 건 어려워.",
           "XI": "kanjou o kontorooru suru no wa muzukashii",
-          "XR": "칸조오 오 콘토로오루 스루 노 와 무즈카시이"
+          "XR": "칸죠오 오 콘토로오루 스루 노 와 무즈카시이"
         },
         {
           "T1": "それ",
@@ -2006,16 +1991,16 @@
           "T1": "抱きしめる",
           "K1": "안아주다",
           "I1": "dakishimeru",
-          "R1": "다키시메루",
+          "R1": "다키 시메루",
           "E1": "껴안다는 의미의 동사입니다.",
           "T2": "抱きしめる",
           "K2": "안아주다",
           "I2": "dakishimeru",
-          "R2": "다키시메루",
+          "R2": "다키 시메루",
           "XE": "母は子供を抱きしめた。",
           "XK": "어머니는 아이를 안아주었다.",
           "XI": "haha wa kodomo o dakishimeta",
-          "XR": "하하 와 코도모 오 다키시메타"
+          "XR": "하하 와 코도모 오 다키 시메타"
         },
         {
           "T1": "の",
@@ -2120,33 +2105,18 @@
         },
         {
           "T1": "の",
-          "K1": "까",
+          "K1": "~인가?",
           "I1": "no",
           "R1": "노",
           "E1": "의문을 나타내는 종조사입니다.",
           "T2": "の",
-          "K2": "까",
+          "K2": "~인가?",
           "I2": "no",
           "R2": "노",
           "XE": "本当に行くの？",
           "XK": "정말로 갈까?",
           "XI": "hontou ni iku no?",
           "XR": "혼토우 니 이쿠 노?"
-        },
-        {
-          "T1": "？",
-          "K1": "?",
-          "I1": "?",
-          "R1": "?",
-          "E1": "의문문을 나타내는 문장 부호입니다.",
-          "T2": "？",
-          "K2": "?",
-          "I2": "?",
-          "R2": "?",
-          "XE": "どうしたの？",
-          "XK": "무슨 일이야?",
-          "XI": "dou shita no?",
-          "XR": "도우 시타 노?"
         }
       ],
       "O0": "いつかいつか意味はできるの？"
@@ -2273,7 +2243,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, 주어는 '나'로 추정됩니다. '今描く'는 현재 진행형으로 '지금 그리고 있는'이라는 의미를 가지며, '過去の夜'는 '과거의 밤'을 의미합니다. 'も'는 '도'로 해석되어 '과거의 밤도'라는 의미를 강조합니다. '夢の中'은 '꿈 속'을 나타냅니다. 전체적으로 지금 그리고 있는 과거의 밤이 꿈 속에 있다는 의미를 전달합니다.",
       "K0": "지금 그리는 과거의 밤도 꿈 속에서",
       "I0": "ima egaku kako no yoru mo yume no naka",
-      "R0": "이마 에가쿠 카코 노 요루 모 유메 노 나카",
+      "R0": "이마 에가쿠 카코 노 요 모 유메 노 나카",
       "LI": [
         {
           "T1": "今",
@@ -2339,16 +2309,16 @@
           "T1": "夜",
           "K1": "밤",
           "I1": "yoru",
-          "R1": "요루",
+          "R1": "요",
           "E1": "해가 진 후의 시간을 나타내는 명사입니다.",
           "T2": "夜",
           "K2": "밤",
           "I2": "yoru",
-          "R2": "요루",
+          "R2": "요",
           "XE": "夜が明けた。",
           "XK": "밤이 밝았다.",
           "XI": "yoru ga aketa",
-          "XR": "요루 가 아케타"
+          "XR": "요 가 아케타"
         },
         {
           "T1": "も",
@@ -2417,5 +2387,6 @@
   "failedLines": [],
   "tags": [
     "일본어"
-  ]
+  ],
+  "rubyData": "ただいつもより<span class=\"ruby\"><span class=\"rb\">寂</span><span class=\"rt\">さみ</span></span>しくなって\r\nぽつりぽつりこぼれる<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>\r\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>には<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>も<span class=\"ruby\"><span class=\"rb\">無</span><span class=\"rt\">な</span></span>いようだから\r\n<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span>くらい<span class=\"ruby\"><span class=\"rb\">流</span><span class=\"rt\">なが</span></span>させてくれ\r\nそうやって<span class=\"ruby\"><span class=\"rb\">過</span><span class=\"rt\">す</span></span>ごした<span class=\"ruby\"><span class=\"rb\">日々</span><span class=\"rt\">ひび</span></span>に\r\nいつかいつか<span class=\"ruby\"><span class=\"rb\">意味</span><span class=\"rt\">いみ</span></span>はできるの？\r\nこうやって<span class=\"ruby\"><span class=\"rb\">傷</span><span class=\"rt\">きず</span></span>つく<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span>に\r\nひとつ<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span>の<span class=\"ruby\"><span class=\"rb\">音</span><span class=\"rt\">おと</span></span>が\r\n<span class=\"ruby\"><span class=\"rb\">嗚呼</span><span class=\"rt\">ああ</span></span> やがて<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">く</span></span>る<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>の<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>で\r\nもう<span class=\"ruby\"><span class=\"rb\">怖</span><span class=\"rt\">こわ</span></span>くないって<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>えるように\r\nただ<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>が<span class=\"ruby\"><span class=\"rb\">灯</span><span class=\"rt\">とも</span></span>る <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しく<span class=\"ruby\"><span class=\"rb\">灯</span><span class=\"rt\">とも</span></span>る\r\n<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>えるように\r\nそうやって<span class=\"ruby\"><span class=\"rb\">苦</span><span class=\"rt\">くる</span></span>しい<span class=\"ruby\"><span class=\"rb\">日々</span><span class=\"rt\">ひび</span></span>を\r\nいつかいつか<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">だ</span></span>きしめられる？\r\nこうやって<span class=\"ruby\"><span class=\"rb\">泣</span><span class=\"rt\">な</span></span>いちゃう<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span>に\r\nどうか<span class=\"ruby\"><span class=\"rb\">導</span><span class=\"rt\">みちび</span></span>いてくれ\r\n<span class=\"ruby\"><span class=\"rb\">知</span><span class=\"rt\">し</span></span>ってゆく<span class=\"ruby\"><span class=\"rb\">大人</span><span class=\"rt\">おとな</span></span>になるの\r\nその<span class=\"ruby\"><span class=\"rb\">度</span><span class=\"rt\">たび</span></span>に<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">から</span></span>っぽな<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>だけ\r\nでもさ <span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れてはいないんだ\r\n<span class=\"ruby\"><span class=\"rb\">微</span><span class=\"rt\">かす</span></span>かに<span class=\"ruby\"><span class=\"rb\">残</span><span class=\"rt\">のこ</span></span>る <span class=\"ruby\"><span class=\"rb\">温</span><span class=\"rt\">ぬく</span></span>もりの<span class=\"ruby\"><span class=\"rb\">音</span><span class=\"rt\">おと</span></span>\r\n<span class=\"ruby\"><span class=\"rb\">嗚呼</span><span class=\"rt\">ああ</span></span> やがて<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">く</span></span>る<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>の<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>で\r\n<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span><span class=\"ruby\"><span class=\"rb\">描</span><span class=\"rt\">えが</span></span>く<span class=\"ruby\"><span class=\"rb\">過去</span><span class=\"rt\">かこ</span></span>の<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よ</span></span>も<span class=\"ruby\"><span class=\"rb\">夢</span><span class=\"rt\">ゆめ</span></span>の<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>\r\nただ<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>が<span class=\"ruby\"><span class=\"rb\">灯</span><span class=\"rt\">とも</span></span>る <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しく<span class=\"ruby\"><span class=\"rb\">灯</span><span class=\"rt\">とも</span></span>る\r\n<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>えるように\r\n<span class=\"ruby\"><span class=\"rb\">独り</span><span class=\"rt\">ひとり</span></span>が<span class=\"ruby\"><span class=\"rb\">独り</span><span class=\"rt\">ひとり</span></span>が<span class=\"ruby\"><span class=\"rb\">怖</span><span class=\"rt\">こわ</span></span>くって\r\n<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>にちょっぴり<span class=\"ruby\"><span class=\"rb\">隠</span><span class=\"rt\">かく</span></span>してた\r\nしんどい<span class=\"ruby\"><span class=\"rb\">感情</span><span class=\"rt\">かんじょう</span></span>それすらも<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">だ</span></span>きしめるの\r\n<span class=\"ruby\"><span class=\"rb\">嗚呼</span><span class=\"rt\">ああ</span></span> <span class=\"ruby\"><span class=\"rb\">追</span><span class=\"rt\">お</span></span>いつかないまま<span class=\"ruby\"><span class=\"rb\">消</span><span class=\"rt\">き</span></span>えてった\r\nならそれでもそれでもいいんじゃない？\r\n<span class=\"ruby\"><span class=\"rb\">怖</span><span class=\"rt\">こわ</span></span>くないって<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>えるのなら <span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は"
 }

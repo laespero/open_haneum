@@ -1486,21 +1486,6 @@
           "XK": "내일은 맑을까?",
           "XI": "ashita wa hareru kana?",
           "XR": "아시타 와 하레루 카나?"
-        },
-        {
-          "T1": "?」",
-          "K1": "?」",
-          "I1": "?」",
-          "R1": "?」",
-          "E1": "의문을 나타내는 문장 부호입니다.",
-          "T2": "?」",
-          "K2": "?」",
-          "I2": "?」",
-          "R2": "?」",
-          "XE": "",
-          "XK": "",
-          "XI": "",
-          "XR": ""
         }
       ],
       "O0": "これは<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>かの<span class=\"ruby\"><span class=\"rb\">病</span><span class=\"rt\">やまい</span></span>かな?」"

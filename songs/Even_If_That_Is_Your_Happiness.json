@@ -407,7 +407,7 @@
           "K1": "동어반복",
           "I1": "tōtorojī",
           "R1": "토오토로지이",
-          "E1": "같은 말을 반복하는 논리적 오류를 의미하는 명사입니다.",
+          "E1": "같은 말을 반복하는 논리적 오류를 의미하는 명사입니다. tautology.",
           "T2": "トートロジー",
           "K2": "동어반복",
           "I2": "tōtorojī",
@@ -621,12 +621,12 @@
         },
         {
           "T1": "か",
-          "K1": "까",
+          "K1": "~일까?",
           "I1": "ka",
           "R1": "카",
           "E1": "의문을 나타내는 종조사입니다.",
           "T2": "か",
-          "K2": "까",
+          "K2": "~일까?",
           "I2": "ka",
           "R2": "카",
           "XE": "これは何ですか？",
@@ -643,7 +643,7 @@
       "G0": "이 문장은 의문문으로, 'それは'가 주어, '誰にも'가 부사어, '解けない'가 서술어, 'のだろうか'가 의문을 나타내는 종조사입니다. 전체적으로 '그것은 아무도 풀 수 없는 걸까'라는 의미를 전달합니다.",
       "K0": "그것은 아무도 풀 수 없는 걸까",
       "I0": "sore wa dare ni mo tokenai no darou ka",
-      "R0": "소레 와 다레 니 모 토케 나이 노 다로우 카",
+      "R0": "소레 와 다레 니 모 토케 나이 노 다로오 카",
       "LI": [
         {
           "T1": "それ",
@@ -739,16 +739,16 @@
           "T1": "だろうか",
           "K1": "일까",
           "I1": "darou ka",
-          "R1": "다로우 카",
+          "R1": "다로오 카",
           "E1": "추측을 나타내는 의문형 종조사로, '~일까'라는 뜻입니다.",
           "T2": "だろう",
           "K2": "일 것이다",
           "I2": "darou",
-          "R2": "다로우",
+          "R2": "다로오",
           "XE": "彼は来るだろうか？",
           "XK": "그는 올까?",
           "XI": "kare wa kuru darou ka",
-          "XR": "카레 와 쿠루 다로우 카"
+          "XR": "카레 와 쿠루 다로오 카"
         }
       ],
       "O0": "それは誰にも解けないのだろうか"
@@ -1152,7 +1152,7 @@
       "G0": "이 문장은 'また'로 시작하여 '다시'라는 의미를 나타내고, '愛を'는 '사랑을'이라는 목적어입니다. '感じられる'는 '느낄 수 있다'라는 가능의 의미를 가지며, 'だろうか'는 추측을 나타내는 종결어미입니다. 전체적으로 '다시 사랑을 느낄 수 있을까'라는 의미를 전달합니다.",
       "K0": "다시 사랑을 느낄 수 있을까",
       "I0": "mata ai o kanjirareru darou ka",
-      "R0": "마타 아이 오 칸지라레루 다로우 카",
+      "R0": "마타 아이 오 칸지라레루 다로오 카",
       "LI": [
         {
           "T1": "また",
@@ -1218,16 +1218,16 @@
           "T1": "だろうか",
           "K1": "일까",
           "I1": "darou ka",
-          "R1": "다로우 카",
+          "R1": "다로오 카",
           "E1": "추측을 나타내는 종결어미입니다.",
           "T2": "だろう",
           "K2": "일 것이다",
           "I2": "darou",
-          "R2": "다로우",
+          "R2": "다로오",
           "XE": "彼は来るだろうか。",
           "XK": "그가 올까?",
           "XI": "kare wa kuru darou ka",
-          "XR": "카레 와 쿠루 다로우 카"
+          "XR": "카레 와 쿠루 다로오 카"
         }
       ],
       "O0": "また愛を 感じられるだろうか"
@@ -1620,12 +1620,12 @@
         },
         {
           "T1": "な",
-          "K1": "~아/어",
+          "K1": "~네",
           "I1": "na",
           "R1": "나",
           "E1": "감탄을 나타내는 종조사입니다.",
           "T2": "な",
-          "K2": "~아/어",
+          "K2": "~네",
           "I2": "na",
           "R2": "나",
           "XE": "いいな。",
@@ -2196,12 +2196,12 @@
         },
         {
           "T1": "か",
-          "K1": "까",
+          "K1": "~일까?",
           "I1": "ka",
           "R1": "카",
           "E1": "의문을 나타내는 종조사입니다.",
           "T2": "か",
-          "K2": "까",
+          "K2": "~일까?",
           "I2": "ka",
           "R2": "카",
           "XE": "これは何ですか？",
@@ -3004,7 +3004,7 @@
       "G0": "이 문장은 두 부분으로 구성되어 있습니다. 첫 번째 부분 'その愛を'는 '그 사랑을'이라는 의미로, 'その'는 지시사, '愛'는 명사, 'を'는 목적격 조사입니다. 두 번째 부분 '感じられるだろうか'는 '느낄 수 있을까'라는 의미로, '感じられる'는 '느낄 수 있다'라는 가능의 의미를 가진 동사, 'だろう'는 추측을 나타내는 조동사, 'か'는 의문을 나타내는 종조사입니다. 전체적으로 상대방이 사랑을 느낄 수 있을지에 대한 의문을 표현하고 있습니다.",
       "K0": "그 사랑을 느낄 수 있을까?",
       "I0": "sono ai o kanjirareru darou ka",
-      "R0": "소노 아이 오 칸지라레루 다로우 카",
+      "R0": "소노 아이 오 칸지라레루 다로오 카",
       "LI": [
         {
           "T1": "その",
@@ -3070,16 +3070,16 @@
           "T1": "だろう",
           "K1": "~일 것이다",
           "I1": "darou",
-          "R1": "다로우",
+          "R1": "다로오",
           "E1": "추측을 나타내는 조동사로, '~일 것이다'라는 의미를 나타냅니다.",
           "T2": "だろう",
           "K2": "~일 것이다",
           "I2": "darou",
-          "R2": "다로우",
+          "R2": "다로오",
           "XE": "彼は来るだろう。",
           "XK": "그는 올 것이다.",
           "XI": "kare wa kuru darou",
-          "XR": "카레 와 쿠루 다로우"
+          "XR": "카레 와 쿠루 다로오"
         },
         {
           "T1": "か",
@@ -3411,5 +3411,5 @@
   "tags": [
     "일본어"
   ],
-  "rubyData": "\n          <span class=\"ruby\"><span class=\"rb\">素足</span><span class=\"rt\">すあし</span></span>を<span class=\"ruby\"><span class=\"rb\">晒</span><span class=\"rt\">さら</span></span>して<span class=\"ruby\"><span class=\"rb\">駆</span><span class=\"rt\">か</span></span>け<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">だ</span></span>した <span class=\"ruby\"><span class=\"rb\">少年少女</span><span class=\"rt\">しょうねんしょうじょ</span></span>の<span class=\"ruby\"><span class=\"rb\">期待</span><span class=\"rt\">きたい</span></span><br>\nこの<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>は<span class=\"ruby\"><span class=\"rb\">水</span><span class=\"rt\">みず</span></span>に<span class=\"ruby\"><span class=\"rb\">濡</span><span class=\"rt\">ぬ</span></span>れてもいいから<br>\nめくるめく<span class=\"ruby\"><span class=\"rb\">議論</span><span class=\"rt\">ぎろん</span></span>は トートロジーに<br>\nああ また<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>が<span class=\"ruby\"><span class=\"rb\">暮</span><span class=\"rt\">く</span></span>れてった<br>\nこぞって<span class=\"ruby\"><span class=\"rb\">造</span><span class=\"rt\">つく</span></span>り<span class=\"ruby\"><span class=\"rb\">上</span><span class=\"rt\">あ</span></span>げたセンセーション<br>\n<br>\nその<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span> <span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>を<span class=\"ruby\"><span class=\"rb\">締</span><span class=\"rt\">し</span></span>め<span class=\"ruby\"><span class=\"rb\">付</span><span class=\"rt\">つ</span></span>けてた<span class=\"ruby\"><span class=\"rb\">感情</span><span class=\"rt\">かんじょう</span></span>と<br>\nこぼした<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span> つられた<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span>の<span class=\"ruby\"><span class=\"rb\">消費期限</span><span class=\"rt\">しょうひきげん</span></span>はいつまでですか<br>\n<span class=\"ruby\"><span class=\"rb\">或</span><span class=\"rt\">あ</span></span>る<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span> <span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>いあえてる<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span><br>\nあと<span class=\"ruby\"><span class=\"rb\">数日後</span><span class=\"rt\">すうじつご</span></span>の<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span>だったのなら<br>\n<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えてる<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>は <span class=\"ruby\"><span class=\"rb\">辛</span><span class=\"rt\">つら</span></span>くはないか<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>にもがいてる<span class=\"ruby\"><span class=\"rb\">文字</span><span class=\"rt\">もじ</span></span>に ひとつ<span class=\"ruby\"><span class=\"rb\">線</span><span class=\"rt\">せん</span></span>を<span class=\"ruby\"><span class=\"rb\">引</span><span class=\"rt\">ひ</span></span>かせて<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えてる<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は <span class=\"ruby\"><span class=\"rb\">救</span><span class=\"rt\">すく</span></span>えやしないか<br>\nそれでもその<span class=\"ruby\"><span class=\"rb\">肩</span><span class=\"rt\">かた</span></span>に <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しさを<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>せたなら<br>\nまた<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を <span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じられるだろうか<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">緩</span><span class=\"rt\">ゆる</span></span>やかに<span class=\"ruby\"><span class=\"rb\">落</span><span class=\"rt\">お</span></span>ちてく<span class=\"ruby\"><span class=\"rb\">魔法</span><span class=\"rt\">まほう</span></span>を かけられたんだろうか<br>\nそれは<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>にも<span class=\"ruby\"><span class=\"rb\">解</span><span class=\"rt\">と</span></span>けないのだろうか<br>\n<span class=\"ruby\"><span class=\"rb\">許</span><span class=\"rt\">ゆる</span></span>される<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span>すら <span class=\"ruby\"><span class=\"rb\">許</span><span class=\"rt\">ゆる</span></span>されなくなった<br>\nシチュエーションならば<br>\n<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>だけが<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>になるわけじゃない<br>\n<br>\nその<span class=\"ruby\"><span class=\"rb\">数秒</span><span class=\"rt\">すうびょう</span></span>が<span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>でも<br>\nその<span class=\"ruby\"><span class=\"rb\">数歩</span><span class=\"rt\">すうほ</span></span>が<span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>でも<br>\nその<span class=\"ruby\"><span class=\"rb\">決意</span><span class=\"rt\">けつい</span></span>を<span class=\"ruby\"><span class=\"rb\">止</span><span class=\"rt\">と</span></span>めるのは<span class=\"ruby\"><span class=\"rb\">我儘</span><span class=\"rt\">わがまま</span></span>か<br>\n<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>は<br>\n<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">目指</span><span class=\"rt\">めざ</span></span>してた<span class=\"ruby\"><span class=\"rb\">地点</span><span class=\"rt\">ちてん</span></span>は <span class=\"ruby\"><span class=\"rb\">暗</span><span class=\"rt\">くら</span></span>くはないか<br>\nそれが<span class=\"ruby\"><span class=\"rb\">大</span><span class=\"rt\">おお</span></span>きな<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span>の ただの<span class=\"ruby\"><span class=\"rb\">影</span><span class=\"rt\">かげ</span></span>だとしたら<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">旅立</span><span class=\"rt\">たびだ</span></span>つ<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>へ <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かせたくはないな<br>\n<span class=\"ruby\"><span class=\"rb\">例</span><span class=\"rt\">たと</span></span>えばその<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>で <span class=\"ruby\"><span class=\"rb\">静</span><span class=\"rt\">しず</span></span>かに<span class=\"ruby\"><span class=\"rb\">眠</span><span class=\"rt\">ねむ</span></span>れても<br>\nそれがあなたの <span class=\"ruby\"><span class=\"rb\">幸</span><span class=\"rt\">しあわ</span></span>せとしても<br>\n<br>\nあなたの<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>は <span class=\"ruby\"><span class=\"rb\">辛</span><span class=\"rt\">つら</span></span>くはないか<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>にもがいてる<span class=\"ruby\"><span class=\"rb\">文字</span><span class=\"rt\">もじ</span></span>に ひとつ<span class=\"ruby\"><span class=\"rb\">線</span><span class=\"rt\">せん</span></span>を<span class=\"ruby\"><span class=\"rb\">引</span><span class=\"rt\">ひ</span></span>かせて<br>\nあなたが<span class=\"ruby\"><span class=\"rb\">抱</span><span class=\"rt\">かか</span></span>えてる<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は <span class=\"ruby\"><span class=\"rb\">救</span><span class=\"rt\">すく</span></span>えやしないか<br>\nそれでもその<span class=\"ruby\"><span class=\"rb\">肩</span><span class=\"rt\">かた</span></span>に <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しさを<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>せたなら<br>\nその<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を <span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じられるだろうか<br>\n        "
+  "rubyData": "こぞって<span class=\"ruby\"><span class=\"rb\">造り上げた</span><span class=\"rt\">つくりあげた</span></span>センセーション<br>シチュエーションならば<br>その数歩が<span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>でも<br>めくるめく<span class=\"ruby\"><span class=\"rb\">議論</span><span class=\"rt\">ぎろん</span></span>はトートロジーに<br>例えばその<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>で <span class=\"ruby\"><span class=\"rb\">静</span><span class=\"rt\">しず</span></span>かに<span class=\"ruby\"><span class=\"rb\">眠</span><span class=\"rt\">ねむ</span></span>れても<br>その<span class=\"ruby\"><span class=\"rb\">決意</span><span class=\"rt\">けつい</span></span>を<span class=\"ruby\"><span class=\"rb\">止</span><span class=\"rt\">と</span></span>めるのは<span class=\"ruby\"><span class=\"rb\">我儘</span><span class=\"rt\">わがまま</span></span>か<br>それは<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>にも<span class=\"ruby\"><span class=\"rb\">解</span><span class=\"rt\">と</span></span>けないのだろうか<br>あと<span class=\"ruby\"><span class=\"rb\">数日後</span><span class=\"rt\">すうじつご</span></span>の<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span>だったのなら<br><span class=\"ruby\"><span class=\"rb\">素足</span><span class=\"rt\">すあし</span></span>を晒して<span class=\"ruby\"><span class=\"rb\">駆け出</span><span class=\"rt\">かけだ</span></span>した<span class=\"ruby\"><span class=\"rb\">少年少女</span><span class=\"rt\">しょうねんしょうじょ</span></span>の<span class=\"ruby\"><span class=\"rb\">期待</span><span class=\"rt\">きたい</span></span><br>それが<span class=\"ruby\"><span class=\"rb\">大</span><span class=\"rt\">おお</span></span>きな<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span>の ただの<span class=\"ruby\"><span class=\"rb\">影</span><span class=\"rt\">かげ</span></span>だとしたら<br>また<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を <span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じられるだろうか<br>その数秒が<span class=\"ruby\"><span class=\"rb\">運命</span><span class=\"rt\">うんめい</span></span>でも<br><span class=\"ruby\"><span class=\"rb\">或</span><span class=\"rt\">あ</span></span>る<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span> <span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>いあえてる<span class=\"ruby\"><span class=\"rb\">未来</span><span class=\"rt\">みらい</span></span><br>ああ また<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>が暮れてった<br>あなたが<span class=\"ruby\"><span class=\"rb\">旅立</span><span class=\"rt\">たびだ</span></span>つ<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span>へ <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かせたくはないな<br><span class=\"ruby\"><span class=\"rb\">許</span><span class=\"rt\">ゆる</span></span>される<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span>すら <span class=\"ruby\"><span class=\"rb\">許</span><span class=\"rt\">ゆる</span></span>されなくなった<br><span class=\"ruby\"><span class=\"rb\">緩</span><span class=\"rt\">ゆる</span></span>やかに<span class=\"ruby\"><span class=\"rb\">落</span><span class=\"rt\">お</span></span>ちてく<span class=\"ruby\"><span class=\"rb\">魔法</span><span class=\"rt\">まほう</span></span>を かけられたんだろうか<br><span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで <span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>かないで 今は<br>それがあなたの <span class=\"ruby\"><span class=\"rb\">幸せ</span><span class=\"rt\">しあわせ</span></span>としても<br>その<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span> <span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>を締め付けてた<span class=\"ruby\"><span class=\"rb\">感情</span><span class=\"rt\">かんじょう</span></span>と<br>あなたの<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>は <span class=\"ruby\"><span class=\"rb\">辛</span><span class=\"rt\">つら</span></span>くはないか<br><span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>だけが<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>になるわけじゃない<br>あなたが<span class=\"ruby\"><span class=\"rb\">目指</span><span class=\"rt\">めざ</span></span>してた<span class=\"ruby\"><span class=\"rb\">地点</span><span class=\"rt\">ちてん</span></span>は <span class=\"ruby\"><span class=\"rb\">暗</span><span class=\"rt\">くら</span></span>くはないか<br>あなたが抱えてる<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>は <span class=\"ruby\"><span class=\"rb\">救</span><span class=\"rt\">すく</span></span>えやしないか<br>それでもその<span class=\"ruby\"><span class=\"rb\">肩</span><span class=\"rt\">かた</span></span>に <span class=\"ruby\"><span class=\"rb\">優</span><span class=\"rt\">やさ</span></span>しさを<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>せたなら<br>この<span class=\"ruby\"><span class=\"rb\">先</span><span class=\"rt\">さき</span></span>は<span class=\"ruby\"><span class=\"rb\">水</span><span class=\"rt\">みず</span></span>に濡れてもいいから<br><span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>にもがいてる<span class=\"ruby\"><span class=\"rb\">文字</span><span class=\"rt\">もじ</span></span>に ひとつ<span class=\"ruby\"><span class=\"rb\">線</span><span class=\"rt\">せん</span></span>を引かせて<br>その<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を <span class=\"ruby\"><span class=\"rb\">感</span><span class=\"rt\">かん</span></span>じられるだろうか<br>あなたが抱えてる<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>は <span class=\"ruby\"><span class=\"rb\">辛</span><span class=\"rt\">つら</span></span>くはないか<br>こぼした<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span> つられた<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span>の<span class=\"ruby\"><span class=\"rb\">消費期限</span><span class=\"rt\">しょうひきげん</span></span>はいつまでですか"
 }

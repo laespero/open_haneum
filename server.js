@@ -146,7 +146,7 @@ let songCache = [];  // 노래 데이터를 저장할 캐시
 // 캐시 갱신 함수
 async function refreshSongCache() {
     try {
-        const files = await fs.promises.readdir('songs');
+        const files = (await fs.promises.readdir('songs')).filter(file => path.extname(file).toLowerCase() === '.json');
         const songPromises = files.map(async file => {
             const filePath = `songs/${file}`;
             try {

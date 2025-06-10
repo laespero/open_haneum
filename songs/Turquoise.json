@@ -145,7 +145,7 @@
       "G0": "이 문장은 주어(他ならぬ僕自身) + 서술어(だろう)로 구성되어 있습니다. '他ならぬ'는 '다름 아닌'이라는 의미로, '僕自身'은 '나 자신'을 나타냅니다. 'だろう'는 추측을 나타내는 종조사로, '~겠지'로 해석됩니다. 전체적으로 '다름 아닌 나 자신이겠지'라는 의미를 전달합니다.",
       "K0": "다름 아닌 나 자신이겠지.",
       "I0": "hoka naranu boku jishin darou",
-      "R0": "호카 나라누 보쿠 지신 다로우",
+      "R0": "호카 나라누 보쿠 지신 다로오",
       "LI": [
         {
           "T1": "他ならぬ",
@@ -208,7 +208,8 @@
           "XR": "아시타 와 하레루 다로우"
         }
       ],
-      "O0": "他ならぬ僕自身だろう"
+      "O0": "他ならぬ僕自身だろう",
+      "R0_auto": "호카나라누보쿠지신다로우"
     },
     {
       "T0": "泡沫の希望だろうと",
@@ -279,7 +280,8 @@
           "XR": "아메 가 후루 다로오 토, 데카케루"
         }
       ],
-      "O0": "泡沫の希望だろうと"
+      "O0": "泡沫の希望だろうと",
+      "R0_auto": "우타카타노키보우다로우토"
     },
     {
       "T0": "大きな声で夢を謳った",
@@ -380,7 +382,8 @@
           "XR": "우타 우 우타우"
         }
       ],
-      "O0": "大きな声で夢を謳った"
+      "O0": "大きな声で夢を謳った",
+      "R0_auto": "오우키나코에데유메오우타ㅅ타"
     },
     {
       "T0": "君もきっとそうなんだろう",
@@ -466,7 +469,8 @@
           "XR": "카레 와 모오 네테 이루 난 다로오"
         }
       ],
-      "O0": "君もきっとそうなんだろう"
+      "O0": "君もきっとそうなんだろう",
+      "R0_auto": "키미모키ㅅ토소우난다로우"
     },
     {
       "T0": "ぎゅっと握りドアを開いた",
@@ -552,7 +556,8 @@
           "XR": "마도 오 히라이다"
         }
       ],
-      "O0": "ぎゅっと握りドアを開いた"
+      "O0": "ぎゅっと握りドアを開いた",
+      "R0_auto": "규ㅅ토니기리ドア오히라이타"
     },
     {
       "T0": "首を飾る君のネックレス",
@@ -653,7 +658,8 @@
           "XR": "카노조 와 네쿠레스 오 시테 이루"
         }
       ],
-      "O0": "首を飾る君のネックレス"
+      "O0": "首を飾る君のネックレス",
+      "R0_auto": "쿠비오카자루키미노ネックレス"
     },
     {
       "T0": "マリンスノーが宙を舞っていて",
@@ -754,7 +760,8 @@
           "XR": "카레 와 핫싯테 이루"
         }
       ],
-      "O0": "マリンスノーが宙を舞っていて"
+      "O0": "マリンスノーが宙を舞っていて",
+      "R0_auto": "マリンスノー가추우오마ㅅ테이테"
     },
     {
       "T0": "森の伴奏 太陽が照らし出すと",
@@ -870,7 +877,8 @@
           "XR": "아메 가 후루 토, 카사 가 히츠요오 다"
         }
       ],
-      "O0": "森の伴奏 太陽が照らし出すと"
+      "O0": "森の伴奏 太陽が照らし出すと",
+      "R0_auto": "모리노반소우 타이요우가테라시다스토"
     },
     {
       "T0": "その言葉を胸に",
@@ -956,7 +964,8 @@
           "XR": "이에 니 카에루"
         }
       ],
-      "O0": "その言葉を胸に"
+      "O0": "その言葉を胸に",
+      "R0_auto": "소노코토바오무네니"
     },
     {
       "T0": "雨の間奏 嵐が吹き飛ばすと",
@@ -1072,7 +1081,8 @@
           "XR": "아메 가 후루 토, 이에 니 이루"
         }
       ],
-      "O0": "雨の間奏 嵐が吹き飛ばすと"
+      "O0": "雨の間奏 嵐が吹き飛ばすと",
+      "R0_auto": "아메노칸소우 아라시가후키토바스토"
     },
     {
       "T0": "そっと握り涙を溢した",
@@ -1158,7 +1168,8 @@
           "XR": "카레 와 나미다 오 코보시타"
         }
       ],
-      "O0": "そっと握り涙を溢した"
+      "O0": "そっと握り涙を溢した",
+      "R0_auto": "소ㅅ토니기리나미다오코보시타"
     },
     {
       "T0": "まだ拍手もない僕のステージが始まる",
@@ -1304,7 +1315,8 @@
           "XR": "카이기 가 하지마루"
         }
       ],
-      "O0": "まだ拍手もない僕のステージが始まる"
+      "O0": "まだ拍手もない僕のステージが始まる",
+      "R0_auto": "마다하쿠슈모나이보쿠노ステージ가하지마루"
     },
     {
       "T0": "数え切れぬ敗北の前で",
@@ -1390,7 +1402,8 @@
           "XR": "코우엔 데 아소부"
         }
       ],
-      "O0": "数え切れぬ敗北の前で"
+      "O0": "数え切れぬ敗北の前で",
+      "R0_auto": "카조에키레누하이보쿠노마에데"
     },
     {
       "T0": "まだ拍手のない僕のステージが始まる",
@@ -1536,7 +1549,8 @@
           "XR": "카이기 가 하지마루"
         }
       ],
-      "O0": "まだ拍手のない僕のステージが始まる"
+      "O0": "まだ拍手のない僕のステージが始まる",
+      "R0_auto": "마다하쿠슈노나이보쿠노ステージ가하지마루"
     },
     {
       "T0": "綺麗なものは綺麗なだけじゃないと",
@@ -1682,7 +1696,8 @@
           "XR": "카레 와 이쿠 토 야쿠소쿠 시타"
         }
       ],
-      "O0": "綺麗なものは綺麗なだけじゃないと"
+      "O0": "綺麗なものは綺麗なだけじゃないと",
+      "R0_auto": "키레이나모노하키레이나다케쟈나이토"
     },
     {
       "T0": "深海の夢を見た",
@@ -1768,7 +1783,8 @@
           "XR": "에이가 오 밋타"
         }
       ],
-      "O0": "深海の夢を見た"
+      "O0": "深海の夢を見た",
+      "R0_auto": "싱카이노유메오미타"
     },
     {
       "T0": "きっと無いよりマシなはずさ",
@@ -1869,7 +1885,8 @@
           "XR": "다이죠부 사"
         }
       ],
-      "O0": "きっと無いよりマシなはずさ"
+      "O0": "きっと無いよりマシなはずさ",
+      "R0_auto": "키ㅅ토나이요리マシ나하즈사"
     },
     {
       "T0": "誰よりもそれを聴いていたのは",
@@ -1970,7 +1987,8 @@
           "XR": "하시루 노 와 타노시이"
         }
       ],
-      "O0": "誰よりもそれを聴いていたのは"
+      "O0": "誰よりもそれを聴いていたのは",
+      "R0_auto": "다레요리모소레오키이테이타노하"
     },
     {
       "T0": "僕はそれを鞄につめた",
@@ -2086,7 +2104,8 @@
           "XR": "오벤토오 오 하코 니 츠메타"
         }
       ],
-      "O0": "僕はそれを鞄につめた"
+      "O0": "僕はそれを鞄につめた",
+      "R0_auto": "보쿠하소레오카반니츠메타"
     },
     {
       "T0": "はりぼての勇気だろうと",
@@ -2172,7 +2191,8 @@
           "XR": "아메 다로우 토 유키 다로우 토"
         }
       ],
-      "O0": "はりぼての勇気だろうと"
+      "O0": "はりぼての勇気だろうと",
+      "R0_auto": "하리보테노유우키다로우토"
     },
     {
       "T0": "膝をつく日だってあるだろう",
@@ -2288,7 +2308,8 @@
           "XR": "카레 와 쿠루 다로우"
         }
       ],
-      "O0": "膝をつく日だってあるだろう"
+      "O0": "膝をつく日だってあるだろう",
+      "R0_auto": "히자오츠쿠히다ㅅ테아루다로우"
     },
     {
       "T0": "首を飾る君のターコイズ",
@@ -2389,7 +2410,8 @@
           "XR": "타아코이즈 노 유비와"
         }
       ],
-      "O0": "首を飾る君のターコイズ"
+      "O0": "首を飾る君のターコイズ",
+      "R0_auto": "쿠비오카자루키미노ターコイズ"
     },
     {
       "T0": "逃げる事も勇気の一つだと",
@@ -2520,7 +2542,8 @@
           "XR": "카레 와 이쿠 토 코타에타"
         }
       ],
-      "O0": "逃げる事も勇気の一つだと"
+      "O0": "逃げる事も勇気の一つだと",
+      "R0_auto": "니게루코토모유우키노히토츠다토"
     },
     {
       "T0": "みんなの前でカッコ悪いくらいに",
@@ -2636,8 +2659,10 @@
           "XR": "키레이 니 스루"
         }
       ],
-      "O0": "みんなの前でカッコ悪いくらいに"
+      "O0": "みんなの前でカッコ悪いくらいに",
+      "R0_auto": "민나노마에데カッコ와루이쿠라이니"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">他</span><span class=\"rt\">ほか</span></span>ならぬ<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span><span class=\"ruby\"><span class=\"rb\">自身</span><span class=\"rt\">じしん</span></span>だろう<br><span class=\"ruby\"><span class=\"rb\">泡沫</span><span class=\"rt\">うたかた</span></span>の<span class=\"ruby\"><span class=\"rb\">希望</span><span class=\"rt\">きぼう</span></span>だろうと<br><span class=\"ruby\"><span class=\"rb\">大</span><span class=\"rt\">おお</span></span>きな<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>で<span class=\"ruby\"><span class=\"rb\">夢</span><span class=\"rt\">ゆめ</span></span>を<span class=\"ruby\"><span class=\"rb\">謳</span><span class=\"rt\">うた</span></span>った<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>もきっとそうなんだろう<br>ぎゅっと<span class=\"ruby\"><span class=\"rb\">握</span><span class=\"rt\">にぎ</span></span>りドアを<span class=\"ruby\"><span class=\"rb\">開</span><span class=\"rt\">ひら</span></span>いた<br><span class=\"ruby\"><span class=\"rb\">首</span><span class=\"rt\">くび</span></span>を<span class=\"ruby\"><span class=\"rb\">飾</span><span class=\"rt\">かざ</span></span>る<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>のネックレス<br>マリンスノーが<span class=\"ruby\"><span class=\"rb\">宙</span><span class=\"rt\">ちゅう</span></span>を<span class=\"ruby\"><span class=\"rb\">舞</span><span class=\"rt\">ま</span></span>っていて<br><span class=\"ruby\"><span class=\"rb\">森</span><span class=\"rt\">もり</span></span>の<span class=\"ruby\"><span class=\"rb\">伴奏</span><span class=\"rt\">ばんそう</span></span> <span class=\"ruby\"><span class=\"rb\">太陽</span><span class=\"rt\">たいよう</span></span>が<span class=\"ruby\"><span class=\"rb\">照</span><span class=\"rt\">て</span></span>らし<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">だ</span></span>すと<br>その<span class=\"ruby\"><span class=\"rb\">言葉</span><span class=\"rt\">ことば</span></span>を<span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>に<br><span class=\"ruby\"><span class=\"rb\">雨</span><span class=\"rt\">あめ</span></span>の<span class=\"ruby\"><span class=\"rb\">間奏</span><span class=\"rt\">かんそう</span></span> <span class=\"ruby\"><span class=\"rb\">嵐</span><span class=\"rt\">あらし</span></span>が<span class=\"ruby\"><span class=\"rb\">吹</span><span class=\"rt\">ふ</span></span>き<span class=\"ruby\"><span class=\"rb\">飛</span><span class=\"rt\">と</span></span>ばすと<br>そっと<span class=\"ruby\"><span class=\"rb\">握</span><span class=\"rt\">にぎ</span></span>り<span class=\"ruby\"><span class=\"rb\">涙</span><span class=\"rt\">なみだ</span></span>を<span class=\"ruby\"><span class=\"rb\">溢</span><span class=\"rt\">こぼ</span></span>した<br>まだ<span class=\"ruby\"><span class=\"rb\">拍手</span><span class=\"rt\">はくしゅ</span></span>もない<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>のステージが<span class=\"ruby\"><span class=\"rb\">始</span><span class=\"rt\">はじ</span></span>まる<br><span class=\"ruby\"><span class=\"rb\">数</span><span class=\"rt\">かぞ</span></span>え<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>れぬ<span class=\"ruby\"><span class=\"rb\">敗北</span><span class=\"rt\">はいぼく</span></span>の<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>で<br>まだ<span class=\"ruby\"><span class=\"rb\">拍手</span><span class=\"rt\">はくしゅ</span></span>のない<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>のステージが<span class=\"ruby\"><span class=\"rb\">始</span><span class=\"rt\">はじ</span></span>まる<br><span class=\"ruby\"><span class=\"rb\">綺麗</span><span class=\"rt\">きれい</span></span>なものは<span class=\"ruby\"><span class=\"rb\">綺麗</span><span class=\"rt\">きれい</span></span>なだけじゃないと<br><span class=\"ruby\"><span class=\"rb\">深海</span><span class=\"rt\">しんかい</span></span>の<span class=\"ruby\"><span class=\"rb\">夢</span><span class=\"rt\">ゆめ</span></span>を<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>た<br>きっと<span class=\"ruby\"><span class=\"rb\">無</span><span class=\"rt\">な</span></span>いよりマシなはずさ<br><span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>よりもそれを<span class=\"ruby\"><span class=\"rb\">聴</span><span class=\"rt\">き</span></span>いていたのは<br><span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>はそれを<span class=\"ruby\"><span class=\"rb\">鞄</span><span class=\"rt\">かばん</span></span>につめた<br>はりぼての<span class=\"ruby\"><span class=\"rb\">勇気</span><span class=\"rt\">ゆうき</span></span>だろうと<br><span class=\"ruby\"><span class=\"rb\">膝</span><span class=\"rt\">ひざ</span></span>をつく<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ひ</span></span>だってあるだろう<br><span class=\"ruby\"><span class=\"rb\">首</span><span class=\"rt\">くび</span></span>を<span class=\"ruby\"><span class=\"rb\">飾</span><span class=\"rt\">かざ</span></span>る<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>のターコイズ<br><span class=\"ruby\"><span class=\"rb\">逃</span><span class=\"rt\">に</span></span>げる<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span>も<span class=\"ruby\"><span class=\"rb\">勇気</span><span class=\"rt\">ゆうき</span></span>の<span class=\"ruby\"><span class=\"rb\">一</span><span class=\"rt\">ひと</span></span>つだと<br>みんなの<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>でカッコ<span class=\"ruby\"><span class=\"rb\">悪</span><span class=\"rt\">わる</span></span>いくらいに"
 }

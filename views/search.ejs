@@ -92,7 +92,7 @@
                                     artistSearchQuery = song.artist;
                                 }
                                 %>
-                                <p class="mt-2 font-semibold text-blue-600 text-sm">
+                                <p class="mt-2 text-blue-600 text-sm">
                                     <a href="/songs?q=<%= encodeURIComponent(artistSearchQuery) %>" onclick="event.stopPropagation()" class="hover:underline transition-colors"><%= artistDisplayName %></a>
                                 </p>
                                 <% if (song.tags && song.tags.length > 0) { %>
