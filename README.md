@@ -160,24 +160,25 @@ open-haneum/
 - `GET /`: 메인 페이지
 - `GET /add-song`: 가사 추가 페이지
 - `POST /add`: 새 가사 추가
-- `GET /edit/:title`: 가사 수정 페이지
-- `POST /update`: 가사 업데이트
+- `GET /edit/:title`: 가사 원문 수정 페이지
+- `POST /update-song-meta/:title`: 노래 메타데이터(아티스트, 제목, 유튜브 영상 ID 등) 업데이트
+- `GET /detail/:title`: 번역 관리 및 노래 정보 상세 페이지
 
 ### 가사 보기
-- `GET /songs`: 가사 목록
-- `GET /songs/:title`: 특정 가사 보기
-- `GET /view/:title`: 가사 상세 보기
-- `GET /detail/:title`: 가사 상세 정보
+- `GET /songs`: 노래 목록 및 검색 페이지
+- `GET /view/:title`: 가사 보기 페이지
 
 ### 번역 관련
-- `POST /translate/:title`: 가사 번역
-- `POST /retry-translation/:title`: 번역 재시도
+- `POST /translate/:title`: 가사 전체 번역 요청
+- `POST /retry-translation/:title`: 실패한 전체 번역 재시도
 - `POST /retry-line/:title`: 특정 라인 재번역
-- `POST /update-line/:title`: 특정 라인 JSON 수동 업데이트
+- `POST /correct-with-message/:title`: 수정 메시지를 포함하여 특정 라인 재번역
+- `POST /update-line/:title`: 특정 라인 번역 결과(JSON) 수동 업데이트
 
 ### API
-- `GET /api/songs/:title/translated`: 번역된 가사 조회
-- `GET /api/search`: 가사 검색
+- `POST /auto-fill-names`: (노래 추가 시) 원제목으로 한국어/영어 제목 자동 완성
+- `GET /api/songs/:title/translated`: 번역된 가사 데이터 조회
+- `GET /api/search`: 노래 검색 (실시간)
 
 ## 라이선스
 
