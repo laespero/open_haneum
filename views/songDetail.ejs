@@ -76,7 +76,7 @@
                     <h1 class="text-3xl font-bold text-gray-900"><%= song.name %></h1>
                     <p class="text-lg text-gray-500 mt-1"><%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %></p>
                     <div class="flex gap-2 text-sm text-gray-400 mt-2">
-                        <span><%= song.kor_name %></span> / <span><%= song.eng_name %></span>
+                        <span><%= song.ori_name %></span> / <span><%= song.kor_name %></span> / <span><%= song.eng_name %></span>
                     </div>
                     <% if (song.tags && song.tags.length > 0) { %>
                         <div class="flex flex-wrap gap-2 mt-4">
@@ -89,7 +89,7 @@
                 <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
                     <% if (!song.translatedLines || song.translatedLines.length === 0) { %>
                         <form action="/translate/<%= song.name %>" method="post" class="disable-on-submit">
-                            <button type="submit" data-processing-text="번역중..." class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
+                            <button type="submit" data-processing-text="번역중..." class="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">
                                 <i class="fas fa-language"></i> 번역하기
                             </button>
                         </form>

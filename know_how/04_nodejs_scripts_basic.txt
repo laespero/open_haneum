@@ -1,0 +1,110 @@
+# 4. Node.js 스크립트를 사용한 안정적인 일괄 수정
+
+JSON 파일 내 여러 값을 일괄적으로 또는 특정 패턴에 따라 수정해야 할 경우, Node.js 스크립트를 작성하여 직접 실행하는 것이 좋습니다. 에이전트에게 스크립트 생성을 요청하고, 사용자가 실행 권한을 부여하면 됩니다.
+
+## 4.1. 스크립트 기본 구조 및 모듈 시스템
+
+Node.js 스크립트 작성 시, 파일 확장자는 `.cjs`를 사용하고, 모듈은 `require()`를 사용하여 불러오는 CommonJS 방식을 권장합니다. 이는 별도의 프로젝트 설정 없이 Node.js 환경에서 일반적으로 잘 작동합니다.
+
+```javascript
+// 예시: scripts/my_fix_script.cjs
+const fs = require('fs'); // fs 모듈 불러오기
+const path = require('path'); // path 모듈 불러오기 (경로 처리에 유용)
+
+const filePath = path.join(__dirname, '..', 'songs', 'your_target_file.json'); // 스크립트 위치 기준 상대 경로
+
+try {
+  let rawData = fs.readFileSync(filePath, 'utf-8');
+  let data = JSON.parse(rawData);
+  let changesMade = 0;
+
+  // 데이터 구조 확인 (translatedLines 배열이 있고, 그 안에 LI 배열이 있다고 가정}
+  if (data && Array.isArray(data.translatedLines)) {
+    data.translatedLines.forEach(line => { // 각 가사 라인(T0) 순회
+      // K0 수정 예시: 특정 T0 라인의 K0 값을 변경
+      if (line.T0 === "수정 대상 전체 가사 원문 (T0)" && line.K0 !== "새로운 K0 번역문") {
+        console.log(`- Updating K0 for T0: \"${line.T0}\". Old: \"${line.K0}\", New: \"새로운 K0 번역문\"`);
+        line.K0 = "새로운 K0 번역문";
+        changesMade++;
+      }
+
+      // LI 배열 내 E1, XE, XK 수정 예시
+      if (line.LI && Array.isArray(line.LI)) {
+        line.LI.forEach(item => { // 각 LI 항목(T1, E1, XE, XK 등) 순회
+          // E1 수정: T0와 T1을 함께 사용하여 정확히 타겟팅
+          if (line.T0 === "특정 가사 원문" && item.T1 === "특정 단어 (T1)" && item.E1 === "기존 E1 설명") {
+            item.E1 = "새로운 E1 설명";
+            changesMade++;
+            console.log(`Updated E1 for T0: \"${line.T0}\", T1: \"${item.T1}\"`);
+          }
+
+          // XE/XK 수정: T0, T1, 그리고 현재 XE/XK 값까지 조건으로 사용하여 매우 정밀하게 타겟팅
+          if (line.T0 === "다른 가사 원문" && 
+              item.T1 === "다른 단어 (T1)" && 
+              item.XE === "기존 예문 (XE)" && 
+              item.XK === "기존 예문 번역 (XK)") {
+            item.XE = "새로운 예문 (XE)";
+            item.XK = "새로운 예문 번역 (XK)";
+            changesMade++;
+            console.log(`Updated XE/XK for T0: \"${line.T0}\", T1: \"${item.T1}\"`);
+          }
+        });
+      }
+    });
+
+    if (changesMade > 0) {
+      fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+      console.log(`Successfully updated ${filePath} with ${changesMade} changes.`);
+    } else {
+      console.log(`No changes needed for ${filePath}.`);
+    }
+  } else {
+    console.error('Error: Could not find translatedLines array or data structure is not as expected.');
+  }
+} catch (error) {
+  console.error('Error processing the file:', error);
+}
+```
+
+**ES Module (`import`/`export`) 사용 시 주의사항**: 만약 `.js` 확장자를 사용하고 `import fs from 'fs';` 와 같이 ES Module을 사용하려면, `package.json` 파일에 `\"type\": \"module\"` 설정을 추가하거나, 실행 시 `node --experimental-modules your_script.mjs` 와 같이 옵션을 주어야 할 수 있습니다. 단순 스크립팅에는 `.cjs`와 `require()`가 더 간편할 수 있습니다.
+
+## 4.2. 정확한 수정 대상 타겟팅 및 스크립트 작성 시 유의사항
+
+스크립트로 값을 수정할 때 가장 중요한 것은 **수정 대상을 정확히 특정하는 것**입니다. 다음 사항에 유의하여 스크립트를 작성하고 실행합니다.
+
+*   **경로 설정의 정확성**: 스크립트 내 `filePath` 변수에는 대상 JSON 파일의 정확한 경로를 지정해야 합니다. 일반적으로 스크립트 파일 위치(`__dirname`)를 기준으로 상대 경로를 사용하는 것이 좋습니다. (예: `path.join(__dirname, '..', 'songs', 'your_target_file.json')`)
+*   **조건문의 명확성**: `if` 조건문 작성 시, 수정하고자 하는 대상을 고유하게 식별할 수 있도록 충분한 조건을 명시합니다. 예를 들어 `LI` 항목을 수정할 때는 `line.T0` (해당 라인 전체 원문)과 `item.T1` (대상 단어)을 조합하여 특정합니다. 특정 `K0`를 수정할 때도 해당 `T0`를 정확히 지정해야 합니다.
+*   **변경 사항 로깅**: `changesMade++`와 함께 `console.log()`를 사용하여 어떤 항목이 어떻게 변경되었는지 구체적으로 출력하면, 스크립트 실행 결과를 명확히 파악하고 디버깅하는 데 도움이 됩니다. 변경 전과 후의 값을 함께 로깅하는 것이 좋습니다.
+*   **오류 처리**: `try...catch` 블록을 사용하여 파일 읽기/쓰기 오류, JSON 파싱 오류 등 예기치 않은 문제가 발생했을 때 프로그램이 비정상적으로 종료되지 않고 오류 메시지를 출력하도록 합니다.
+*   **JSON 포맷 유지**: 수정된 내용을 다시 파일에 쓸 때는 `JSON.stringify(data, null, 2)`와 같이 `null, 2` 옵션을 주어 사람이 읽기 좋은 형태로 포맷팅하여 저장하는 것이 좋습니다.
+*   **`LI` 배열 내 항목의 병합 및 수정 시 유의사항**:
+    *   원문(`T0`)의 특정 어절이나 표현이 `LI` 배열 내에서 여러 개의 `T1` 항목으로 분리되어 기술될 수 있습니다 (예: 동사의 활용형과 조사가 결합된 형태). 이 경우, 언어학적 단위나 의미 단위에 맞게 하나의 `T1` 항목으로 병합하고 관련 필드(`K1`, `E1` 등)를 통합적으로 기술하는 것이 데이터의 정확성과 가독성을 높일 수 있습니다.
+    *   스크립트로 이러한 수정을 진행할 때는, 수정 대상 항목(예: 병합될 주된 부분)을 정확히 식별하고, 병합 후 불필요해진 `LI` 항목은 `Array.prototype.filter()` 등을 사용하여 안전하게 제거합니다.
+    *   **변경 사항 로그의 상세화 및 검증의 중요성**: `LI` 배열의 항목을 수정(병합 포함)하거나 삭제할 때는, 어떤 `T0`의 어떤 `T1`이 어떻게 변경되었는지(예: `T1: "さらけ" -> "さらけ出せず"`), 어떤 `T1`이 삭제되었는지(예: `Removing T1: "出せず"`), 그래서 `LI` 배열의 길이가 어떻게 변했는지(예: `LI count changed from 3 to 2.`) 등을 `console.log`로 상세히 기록해야 합니다. 이는 스크립트 실행 결과를 명확히 추적하고, 의도한 대로 수정이 이루어졌는지 검증하는 데 필수적입니다.
+
+## 4.3. 스크립트 실행 및 수정 내용 검토
+
+1.  에이전트가 위와 같은 스크립트(`somename.cjs`)를 생성하도록 합니다.
+2.  터미널에서 해당 스크립트가 있는 경로로 이동합니다. (예: `cd scripts`)
+3.  `node somename.cjs` 명령으로 스크립트를 실행합니다.
+4.  스크립트 실행 결과(콘솔 로그)와 실제 파일 변경 내용을 확인합니다.
+
+**효율적인 검토 방법:**
+
+*   **스크립트 로그 활용**: 스크립트 실행 시 어떤 항목이 변경되었는지 `console.log`로 출력된 내용을 확인합니다.
+*   **특정 항목 필터링 (Node.js)**: 변경된 특정 `T0`나 `T1`의 내용을 확인하고 싶을 때, 다음과 같은 Node.js 명령어를 사용하여 필터링하여 볼 수 있습니다. (기존 예제 외 추가적인 필터링 아이디어는 4.5절 참고)
+
+    ```bash
+    # 특정 T0 라인의 모든 LI 항목의 T1, E1, XE, XK 출력 예시
+    node -e "const fs = require('fs'); const path = require('path'); const filePath = path.join('songs', 'your_target_file.json'); const data = JSON.parse(fs.readFileSync(filePath, 'utf-8')); const targetT0 = '검색할 T0 문자열'; data.translatedLines.forEach(line => { if (line.T0 === targetT0 && line.LI) { line.LI.forEach(item => { console.log(\`T0: ${line.T0} | T1: ${item.T1}\`); console.log(\`  E1: ${item.E1}\`); console.log(\`  XE: ${item.XE}\`); console.log(\`  XK: ${item.XK}\`); console.log('---\\n'); }); } });" | cat
+    ```
+
+    ```bash
+    # 특정 T1을 포함하는 모든 LI 항목의 T1, E1, XE, XK 및 해당 T0 출력 예시
+    node -e "const fs = require('fs'); const path = require('path'); const filePath = path.join('songs', 'your_target_file.json'); const data = JSON.parse(fs.readFileSync(filePath, 'utf-8')); const targetT1 = '검색할 T1 문자열'; data.translatedLines.forEach(line => { if (line.LI) { line.LI.forEach(item => { if (item.T1 === targetT1) { console.log(\`T0: ${line.T0} | T1: ${item.T1}\`); console.log(\`  E1: ${item.E1}\`); console.log(\`  XE: ${item.XE}\`); console.log(\`  XK: ${item.XK}\`); console.log('---\\n'); } }); } });" | cat
+    ```
+*   **`grep` 활용**: 파일 전체에서 특정 문자열이나 패턴이 어떻게 변경되었는지 광범위하게 확인할 때 유용합니다.
+
+    ```bash
+    grep "검색할 문자열" songs/your_target_file.json
+    ``` 
