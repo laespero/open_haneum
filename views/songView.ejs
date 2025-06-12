@@ -205,6 +205,7 @@
         .word-text{
             font-size: 20px;
             font-weight: 400;
+            line-height: 1.4;
         }
         .word-box {
             border: solid 1px #f0f0f0;
@@ -1232,17 +1233,17 @@ ${a}
                         console.log(strData.substring(foundIdx-100, foundIdx+100));
                     }
 
-                    data.forEach(x=>{
-                        const fail = x.LI.find(y=>!(y.T1&&y.K1&&y.I1&&y.R1&&y.E1&&y.T2&&y.K2&&y.I2&&y.R2&&y.XE&&y.XK&&y.XI&&y.XR));
-                        if(fail){
-                            console.log(fail);
-                        }else{
-                            if(isJP){
-                                x.R0 = replaceJP(x.R0);
-                                x.LI.forEach(y => {y.R1 = replaceJP(y.R1); y.R2 = replaceJP(y.R2); y.XR = replaceJP(y.XR);});                                
-                            }
-                        }
-                    });
+                    // data.forEach(x=>{
+                    //     const fail = x.LI.find(y=>!(y.T1&&y.K1&&y.I1&&y.R1&&y.E1&&y.T2&&y.K2&&y.I2&&y.R2&&y.XE&&y.XK&&y.XI&&y.XR));
+                    //     if(fail){
+                    //         console.log(fail);
+                    //     }else{
+                    //         if(isJP){
+                    //             x.R0 = replaceJP(x.R0);
+                    //             x.LI.forEach(y => {y.R1 = replaceJP(y.R1); y.R2 = replaceJP(y.R2); y.XR = replaceJP(y.XR);});                                
+                    //         }
+                    //     }
+                    // });
 
                     shortCutData = JSON.parse(JSON.stringify(data)).flatMap(x=> chunkArrayRebalanceShortLast(x.LI,4).map(li=>Object.assign(JSON.parse(JSON.stringify(x)), {LI : li})));
                     function compressArray(arr) {
@@ -1268,7 +1269,8 @@ ${a}
                     set_mode("scroll");
 
                     if(isJP||lang==="jp") setFont("JP"); 
-                    else setFont("SC"); 
+                    else if(o.tags.includes("중국어")) setFont("SC"); 
+                    else setFont("EN"); 
 
                 })
                 .catch(error => {
@@ -1319,11 +1321,17 @@ ${a}
                 styleEle.innerHTML = classStyle;
                 document.head.appendChild(styleEle);
             }
-            else if (mode === "KR"){
+            else if (mode === "EN"){
                 const styleEle = document.createElement("style");
                 const classStyle = `
+                    .class-sentence-view h2 {
+                        font-family: "Noto Sans Display", sans-serif;
+                        font-weight: 400;
+                        font-size: 22px;                        
+                    }
+
                     *{
-                      font-family: "Noto Sans KR", sans-serif;
+                      font-family: "Noto Sans Display", sans-serif;
                     }               
                 `;                
                 styleEle.innerHTML = classStyle;
