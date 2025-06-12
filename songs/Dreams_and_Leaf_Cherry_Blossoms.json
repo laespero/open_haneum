@@ -1,11 +1,11 @@
 {
   "name": "Dreams_and_Leaf_Cherry_Blossoms",
   "ori_name": "夢と葉桜",
-  "kor_name": "꿈과 잎 벚꽃",
+  "kor_name": "꿈과 벚나무",
   "eng_name": "Dream and Leaf Cherry Blossom",
   "vid": "N5HxbW_OcJI",
   "artist": {
-    "ori_name": "ヲタみん (원곡 : 青木月光 )",
+    "ori_name": "ヲタみん",
     "kor_name": "",
     "eng_name": ""
   },
@@ -2083,6 +2083,7 @@
   ],
   "failedLines": [],
   "tags": [
-    "일본어"
+    "일본어",
+    "青木月光"
   ]
 }

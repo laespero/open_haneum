@@ -105,40 +105,82 @@ async function extractUtatenData(url) {
     }
 }
 
-// 2. utaten HTML에서 정확한 한자-히라가나 매핑 추출
+// 2. utaten HTML에서 정확한 한자-히라가나 매핑 추출 (컨텍스트 포함)
 function parseUtatenHTML(htmlData) {
-  console.log('\n🧠 2단계: HTML 데이터 파싱 중...');
+  console.log('\n🧠 2단계: HTML 데이터 파싱 및 컨텍스트 추출 중...');
   
-  const kanjiToReading = new Map();
-  
-  // 루비 태그 패턴 매칭
+  const kanjiToReadings = new Map();
   const rubyPattern = /<span class="ruby"><span class="rb">([^<]+)<\/span><span class="rt">([^<]+)<\/span><\/span>/g;
+
+  let rebuiltPlainText = "";
+  let lastIndex = 0;
+  const matchesWithContextInfo = [];
+
   let match;
-  
-  while ((match = rubyPattern.exec(htmlData)) !== null) {
-    const kanjiText = match[1];
+  while((match = rubyPattern.exec(htmlData)) !== null) {
+    rebuiltPlainText += htmlData.substring(lastIndex, match.index).replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, "");
+    
+    const kanji = match[1];
     const reading = match[2];
     
-    // 한자 길이에 따라 처리
-    if (kanjiText.length === 1) {
-      // 단일 한자
-      kanjiToReading.set(kanjiText, reading);
-    } else {
-      // 복합 한자 - 전체 매핑만 저장 (잘못된 개별 분할 방지)
-      kanjiToReading.set(kanjiText, reading);
+    matchesWithContextInfo.push({
+      kanji: kanji,
+      reading: reading,
+      plainTextStartIndex: rebuiltPlainText.length
+    });
+    
+    rebuiltPlainText += kanji;
+    lastIndex = match.index + match[0].length;
+  }
+  rebuiltPlainText += htmlData.substring(lastIndex).replace(/<br\s*\/?>/gi, '\n').replace(/<[^>]+>/g, "");
+
+  for(const matchInfo of matchesWithContextInfo) {
+    const { kanji, reading, plainTextStartIndex } = matchInfo;
+    const plainTextEndIndex = plainTextStartIndex + kanji.length;
+
+    const getContextChars = (text, startIndex, direction, count) => {
+      let result = '';
+      let i = startIndex;
+      let charsFound = 0;
+      const ignoredChars = /[\s\p{P}ー「」『』、。]/u; 
+
+      while (charsFound < count && i >= 0 && i < text.length) {
+        const char = text[i];
+        if (!ignoredChars.test(char)) {
+          result = (direction === 1) ? result + char : char + result;
+          charsFound++;
+        }
+        i += direction;
+      }
+      return result;
+    };
+
+    const leftContext = getContextChars(rebuiltPlainText, plainTextStartIndex - 1, -1, 3);
+    const rightContext = getContextChars(rebuiltPlainText, plainTextEndIndex, 1, 3);
+    
+    if (!kanjiToReadings.has(kanji)) {
+      kanjiToReadings.set(kanji, []);
+    }
+    
+    const readingsList = kanjiToReadings.get(kanji);
+    if (!readingsList.some(r => r.reading === reading && r.left === leftContext && r.right === rightContext)) {
+      readingsList.push({ reading, left: leftContext, right: rightContext });
     }
   }
   
-  console.log(`   📊 ${kanjiToReading.size}개 한자 매핑 발견`);
+  const totalReadings = Array.from(kanjiToReadings.values()).flat().length;
+  console.log(`   📊 ${kanjiToReadings.size}개 한자 종류에 대해 ${totalReadings}개 매핑 발견`);
   
   // 매핑 샘플 출력
-  const samples = Array.from(kanjiToReading.entries()).slice(0, 15);
+  const samples = Array.from(kanjiToReadings.entries()).slice(0, 15);
   console.log('   🔍 매핑 샘플:');
-  samples.forEach(([kanji, reading]) => {
-    console.log(`      ${kanji} → ${reading}`);
+  samples.forEach(([kanji, readings]) => {
+    readings.forEach(r => {
+      console.log(`      '${r.left}' <${kanji}→${r.reading}> '${r.right}'`);
+    });
   });
   
-  return kanjiToReading;
+  return kanjiToReadings;
 }
 
 // 반복 기호가 포함된 한자를 확장하는 함수
@@ -147,108 +189,97 @@ function expandRepeatedKanji(text) {
 }
 
 // 3. 지능형 루비 생성 함수 (컨텍스트 기반 + 반복 기호 개선)
-function generateIntelligentRuby(text, kanjiToReading) {
+function generateIntelligentRuby(text, kanjiToReadings) {
   let result = '';
   let i = 0;
-  
+
+  const getContextChars = (txt, startIndex, direction, count) => {
+    let res = '';
+    let k = startIndex;
+    let charsFound = 0;
+    const ignoredChars = /[\s\p{P}ー「」『』、。]/u;
+
+    while (charsFound < count && k >= 0 && k < txt.length) {
+      const char = txt[k];
+      if (!ignoredChars.test(char)) {
+        res = (direction === 1) ? res + char : char + res;
+        charsFound++;
+      }
+      k += direction;
+    }
+    return res;
+  };
+
   while (i < text.length) {
     let matched = false;
-    
+
     // 가장 긴 한자 시퀀스부터 검사 (최대 8글자)
     for (let len = Math.min(8, text.length - i); len >= 1; len--) {
       const substring = text.substring(i, i + len);
-      
+
       // 한자 시퀀스인지 확인 (반복 기호 포함)
       if (!/^[一-龯々]+$/.test(substring)) continue;
-      
-      // 반복 기호가 포함된 경우 처리
-      let processedSubstring = substring;
-      let expandedSubstring = substring;
-      if (substring.includes('々')) {
-        expandedSubstring = expandRepeatedKanji(substring);
-        // 확장된 버전으로 매핑 확인
-        if (kanjiToReading.has(expandedSubstring)) {
-          const reading = kanjiToReading.get(expandedSubstring);
-          result += `<span class="ruby"><span class="rb">${substring}</span><span class="rt">${reading}</span></span>`;
-          i += len;
-          matched = true;
-          break;
+
+      const expandedSubstring = expandRepeatedKanji(substring);
+      const possibleReadings = kanjiToReadings.get(expandedSubstring) || kanjiToReadings.get(substring);
+
+      if (possibleReadings && possibleReadings.length > 0) {
+        let reading;
+        if (possibleReadings.length === 1) {
+          reading = possibleReadings[0].reading;
+        } else {
+          // 컨텍스트를 비교하여 최적의 발음 찾기
+          const currentLeftContext = getContextChars(text, i - 1, -1, 3);
+          const currentRightContext = getContextChars(text, i + len, 1, 3);
+
+          let bestMatch = { score: -1, reading: null };
+
+          for (const r of possibleReadings) {
+            let leftScore = 0;
+            if (r.left.length > 0 && currentLeftContext.length > 0) {
+              for (let k = 1; k <= Math.min(r.left.length, currentLeftContext.length); k++) {
+                if (r.left.slice(-k) === currentLeftContext.slice(-k)) {
+                  leftScore = k;
+                } else {
+                  break;
+                }
+              }
+            }
+
+            let rightScore = 0;
+            if (r.right.length > 0 && currentRightContext.length > 0) {
+              for (let k = 1; k <= Math.min(r.right.length, currentRightContext.length); k++) {
+                if (r.right.substring(0, k) === currentRightContext.substring(0, k)) {
+                  rightScore = k;
+                } else {
+                  break;
+                }
+              }
+            }
+            const totalScore = leftScore + rightScore;
+
+            if (totalScore > bestMatch.score) {
+              bestMatch = { score: totalScore, reading: r.reading };
+            }
+          }
+          
+          reading = bestMatch.reading ? bestMatch.reading : possibleReadings[0].reading;
         }
-      }
-      
-      // 컨텍스트 기반 우선순위 매핑 확인
-      const contextualReading = getContextualReading(text, i, processedSubstring, kanjiToReading);
-      if (contextualReading) {
-        result += `<span class="ruby"><span class="rb">${substring}</span><span class="rt">${contextualReading}</span></span>`;
-        i += len;
-        matched = true;
-        break;
-      }
-      
-      // 정확한 매핑이 있는지 확인
-      if (kanjiToReading.has(processedSubstring)) {
-        const reading = kanjiToReading.get(processedSubstring);
+        
         result += `<span class="ruby"><span class="rb">${substring}</span><span class="rt">${reading}</span></span>`;
         i += len;
         matched = true;
-        break;
+        break; 
       }
     }
-    
+
     if (!matched) {
       result += text[i];
       i++;
     }
   }
-  
-  return result;
-}
 
-// 컨텍스트 기반 읽기 결정 함수
-function getContextualReading(text, pos, kanji, kanjiToReading) {
-  // 특별한 컨텍스트 기반 규칙들
-  
-  // 冷 한자의 경우
-  if (kanji === '冷') {
-    // 다음 글자를 확인
-    const nextChar = text[pos + 1];
-    if (nextChar === 'め') {
-      // 冷めた, 冷める 등의 경우
-      return 'さ';
-    } else if (nextChar === 'た') {
-      // 冷たい의 경우
-      return 'つめ';
-    }
-  }
-  
-  // 方 한자의 경우
-  if (kanji === '方') {
-    // 앞 글자를 확인 (의 + 方 = 의 방향, 쪽)
-    const prevChar = text[pos - 1];
-    const prevTwoChars = text.substring(pos - 2, pos);
-    
-    if (prevChar === 'の' || prevTwoChars === 'この' || prevTwoChars === 'その' || prevTwoChars === 'あの') {
-      // 君の方, この方, その方, あの方 등의 경우
-      if (prevTwoChars === 'あの') {
-        // あの方 -> あのかた (그분)
-        return 'かた';
-      } else {
-        // 君の方, この方, その方 -> ほう (쪽, 방향)
-        return 'ほう';
-      }
-    }
-    
-    // 다음 글자를 확인
-    const nextChar = text[pos + 1];
-    if (nextChar === '法' || nextChar === '向' || nextChar === '面') {
-      // 方法, 方向, 方面 등의 경우
-      return 'ほう';
-    }
-  }
-  
-  // 다른 컨텍스트 규칙들을 여기에 추가 가능
-  
-  return null; // 특별한 컨텍스트 규칙이 없는 경우
+  return result;
 }
 
 // 4. 매칭 알고리즘 (songView.ejs와 동일)
@@ -436,7 +467,7 @@ async function main() {
     const utatenHtmlData = await extractUtatenData(utatenUrl);
     
     // 2. HTML 데이터 파싱하여 한자-히라가나 매핑 생성
-    const kanjiToReading = parseUtatenHTML(utatenHtmlData);
+    const kanjiToReadings = parseUtatenHTML(utatenHtmlData);
     
     // 3. JSON 파일 읽기
     console.log('\n📖 3단계: JSON 파일 읽기 중...');
@@ -458,7 +489,7 @@ async function main() {
         const lineText = line.T0;
         console.log(`   처리 중 (${lineIndex + 1}/${data.translatedLines.length}): "${lineText}"`);
         
-        let lineRubyHtml = generateIntelligentRuby(lineText, kanjiToReading);
+        let lineRubyHtml = generateIntelligentRuby(lineText, kanjiToReadings);
         rubyHtml.push(lineRubyHtml);
       }
     });

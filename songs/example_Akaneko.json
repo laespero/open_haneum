@@ -246,7 +246,7 @@
       "G0": "이 문장은 '茹で上がった麺'과 'ちゃちゃっちゃ'라는 두 부분으로 나뉩니다. '茹で上がった麺'은 '삶아진 면'을 의미하며, 'ちゃちゃっちゃ'는 '후다닥'이라는 의성어로 빠르게 무언가를 처리하는 모습을 나타냅니다. 전체적으로는 삶아진 면을 빠르게 처리하는 모습을 표현하고 있습니다.",
       "K0": "삶아진 면을 후다닥",
       "I0": "yudeagatta men wo chachaccha",
-      "R0": "유데아갓타 멘 오 차차챠",
+      "R0": "유데아갓타 멘 오 챠챳챠",
       "LI": [
         {
           "T1": "茹で上がった",
@@ -297,16 +297,16 @@
           "T1": "ちゃちゃっちゃ",
           "K1": "후다닥",
           "I1": "chachaccha",
-          "R1": "차차챠",
+          "R1": "챠챳챠",
           "E1": "무언가를 빠르게 처리하는 모습을 나타내는 의성어입니다.",
           "T2": "ちゃちゃっちゃ",
           "K2": "후다닥",
           "I2": "chachaccha",
-          "R2": "차차챠",
+          "R2": "챠챳챠",
           "XE": "ちゃちゃっちゃと料理を作った。",
           "XK": "후다닥 요리를 만들었다.",
           "XI": "chachaccha to ryouri wo tsukutta",
-          "XR": "차차챠 토 료리 오 츠쿳타"
+          "XR": "챠챳챠 토 료리 오 츠쿳타"
         }
       ],
       "O0": "茹で上がった麺をちゃちゃっちゃ"
@@ -889,22 +889,22 @@
       "G0": "이 문장은 미래에 대한 자신감을 표현하는 문장입니다. '明日も'는 '내일도', '頑張れる'는 '힘낼 수 있다', '気がする'는 '~같다', 'のだ'는 강조를 나타내는 종조사입니다. 전체적으로 내일도 열심히 할 수 있을 것 같다는 의미를 전달합니다.",
       "K0": "내일도 힘낼 수 있을 것 같아.",
       "I0": "ashita mo ganbareru ki ga suru no da",
-      "R0": "아시타 모 간바레루 키 가 스루 노 다",
+      "R0": "아스 모 간바레루 키 가 스루 노 다",
       "LI": [
         {
           "T1": "明日",
           "K1": "내일",
           "I1": "ashita",
-          "R1": "아시타",
+          "R1": "아스",
           "E1": "오늘의 다음 날을 의미하는 명사입니다.",
           "T2": "明日",
           "K2": "내일",
           "I2": "ashita",
-          "R2": "아시타",
+          "R2": "아스",
           "XE": "明日は晴れるかな？",
           "XK": "내일은 맑을까?",
           "XI": "ashita wa hareru kana",
-          "XR": "아시타 와 하레루 카나"
+          "XR": "아스 와 하레루 카나"
         },
         {
           "T1": "も",
@@ -1564,7 +1564,7 @@
       "T0": "この一杯に真心を込めて",
       "C0": "각자의 나날이 있어. 이 한 잔에 진심을 담아. 그런 모두에게 사랑받고 있어.",
       "G0": "이 문장은 'この一杯に' (이 한 잔에) + '真心を' (진심을) + '込めて' (담아)로 구성되어 있습니다. 'この一杯に'는 '이 한 잔에'라는 의미로, '真心を'은 '진심을'이라는 명사구이며, '込めて'는 '담다'의 연용형으로 '담아'라는 의미입니다. 전체적으로 '이 한 잔에 진심을 담아'라는 의미를 전달합니다.",
-      "K0": "이 한 잔에 진심을 담아.",
+      "K0": "이 한 그릇에 진심을 담아.",
       "I0": "kono ippai ni magokoro o komete",
       "R0": "코노 잇파이 니 마고코로 오 코메테",
       "LI": [
@@ -1585,12 +1585,12 @@
         },
         {
           "T1": "一杯",
-          "K1": "한 잔",
+          "K1": "한 그릇",
           "I1": "ippai",
           "R1": "잇파이",
           "E1": "액체를 담는 용기의 양을 나타내는 명사입니다.",
           "T2": "一杯",
-          "K2": "한 잔",
+          "K2": "한 그릇",
           "I2": "ippai",
           "R2": "잇파이",
           "XE": "一杯のコーヒーを飲む。",
@@ -2617,7 +2617,7 @@
       "G0": "이 문장은 두 개의 명사구로 이루어져 있습니다. 첫 번째 구는 'ラーメン好き'로, 'ラーメン'은 '라면', '好き'는 '좋아하는'을 의미합니다. 두 번째 구는 '働く猫好き'로, '働く'는 '일하는', '猫'는 '고양이', '好き'는 '좋아하는'을 의미합니다. 전체적으로 라면을 좋아하는 사람과 일하는 고양이를 좋아하는 사람을 나타내는 문장입니다.",
       "K0": "라면 좋아하는 사람, 일하는 고양이 좋아하는 사람",
       "I0": "rāmen suki hataraku neko suki",
-      "R0": "라아멘 스키 하타라쿠 네코 스키",
+      "R0": "라아멘 즈키 하타라쿠 네코 즈키",
       "LI": [
         {
           "T1": "ラーメン",
@@ -2638,9 +2638,9 @@
           "T1": "好き",
           "K1": "좋아하는",
           "I1": "suki",
-          "R1": "스키",
+          "R1": "즈키",
           "E1": "무엇을 좋아하는 상태를 나타내는 형용사입니다.",
-          "T2": "好き",
+          "T2": "すき",
           "K2": "좋아하는",
           "I2": "suki",
           "R2": "스키",
@@ -2683,9 +2683,9 @@
           "T1": "好き",
           "K1": "좋아하는",
           "I1": "suki",
-          "R1": "스키",
+          "R1": "즈키",
           "E1": "무엇을 좋아하는 상태를 나타내는 형용사입니다.",
-          "T2": "好き",
+          "T2": "すき",
           "K2": "좋아하는",
           "I2": "suki",
           "R2": "스키",
@@ -2703,22 +2703,22 @@
       "G0": "이 문장은 주어가 생략된 형태로, '내일도 힘낼 수 있을 것 같다'는 의미를 나타냅니다. '明日も'는 '내일도', '頑張れる'는 '힘낼 수 있다', '気がする'는 '~것 같다'를 의미합니다. 전체적으로 미래에 대한 긍정적인 기대를 표현하고 있습니다.",
       "K0": "내일도 힘낼 수 있을 것 같아.",
       "I0": "ashita mo ganbareru ki ga suru",
-      "R0": "아시타 모 간바레루 키 가 스루",
+      "R0": "아스 모 간바레루 키 가 스루",
       "LI": [
         {
           "T1": "明日",
           "K1": "내일",
           "I1": "ashita",
-          "R1": "아시타",
+          "R1": "아스",
           "E1": "오늘의 다음 날을 의미하는 명사입니다.",
           "T2": "明日",
           "K2": "내일",
           "I2": "ashita",
-          "R2": "아시타",
+          "R2": "아스",
           "XE": "明日は休みです。",
           "XK": "내일은 쉬는 날이야.",
           "XI": "ashita wa yasumi desu",
-          "XR": "아시타 와 야스미 데스"
+          "XR": "아스 와 야스미 데스"
         },
         {
           "T1": "も",
@@ -3092,22 +3092,22 @@
       "G0": "이 문장은 두 개의 명사구로 이루어져 있습니다. 첫 번째 명사구 '夏の暑さ'는 '여름의 더위'를 의미하며, 두 번째 명사구 '冬の木枯らしも'는 '겨울의 찬바람도'를 의미합니다. 'も'는 두 가지 상황을 나열하며, '또한'이라는 의미를 더합니다. 전체적으로 여름과 겨울의 대비를 나타내는 구문입니다.",
       "K0": "여름의 더위 겨울의 찬바람도",
       "I0": "natsu no atsusa fuyu no kogarashi mo",
-      "R0": "나쓰 노 아츠사 후유 노 코가라시 모",
+      "R0": "나츠 노 아츠사 후유 노 코가라시 모",
       "LI": [
         {
           "T1": "夏",
           "K1": "여름",
           "I1": "natsu",
-          "R1": "나쓰",
+          "R1": "나츠",
           "E1": "일년 중 가장 더운 계절을 나타내는 명사입니다.",
           "T2": "夏",
           "K2": "여름",
           "I2": "natsu",
-          "R2": "나쓰",
+          "R2": "나츠",
           "XE": "夏は海に行くのが好きです。",
           "XK": "여름에는 바다에 가는 것을 좋아합니다.",
           "XI": "natsu wa umi ni iku no ga suki desu",
-          "XR": "나쓰 와 우미 니 이쿠 노 가 스키 데스"
+          "XR": "나츠 와 우미 니 이쿠 노 가 스키 데스"
         },
         {
           "T1": "の",
@@ -3137,7 +3137,7 @@
           "XE": "夏の暑さに耐えられない。",
           "XK": "여름의 더위를 견딜 수 없다.",
           "XI": "natsu no atsusa ni taerarenai",
-          "XR": "나쓰 노 아츠사 니 타에라레나이"
+          "XR": "나츠 노 아츠사 니 타에 라레 나이"
         },
         {
           "T1": "冬",
@@ -3182,7 +3182,7 @@
           "XE": "木枯らしが吹き始めた。",
           "XK": "찬바람이 불기 시작했다.",
           "XI": "kogarashi ga fukihajimeta",
-          "XR": "코가라시 가 후키하지메타"
+          "XR": "코가라시 가 후키 하지메타"
         },
         {
           "T1": "も",
@@ -3204,5 +3204,5 @@
     }
   ],
   "failedLines": [],
-  "rubyData": "<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>からリラックス<br><span class=\"ruby\"><span class=\"rb\">茹</span><span class=\"rt\">ゆ</span></span>で<span class=\"ruby\"><span class=\"rb\">上</span><span class=\"rt\">あ</span></span>がった<span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span>をちゃちゃっちゃ<br>それぞれの<span class=\"ruby\"><span class=\"rb\">日</span><span class=\"rt\">ょう</span></span>々がある<br>こだわりの<span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span>に<span class=\"ruby\"><span class=\"rb\">絡</span><span class=\"rt\">から</span></span>め<br><span class=\"ruby\"><span class=\"rb\">虎</span><span class=\"rt\">とら</span></span><span class=\"ruby\"><span class=\"rb\">打</span><span class=\"rt\">う</span></span>ち<span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span> <span class=\"ruby\"><span class=\"rb\">盛</span><span class=\"rt\">も</span></span>り<span class=\"ruby\"><span class=\"rb\">付</span><span class=\"rt\">つ</span></span>けも<span class=\"ruby\"><span class=\"rb\">豪華</span><span class=\"rt\">ごうか</span></span><br><span class=\"ruby\"><span class=\"rb\">秘伝</span><span class=\"rt\">ひでん</span></span>のスープに<span class=\"ruby\"><span class=\"rb\">溶</span><span class=\"rt\">と</span></span>かして<br>そんな<span class=\"ruby\"><span class=\"rb\">店</span><span class=\"rt\">みせ</span></span>の<span class=\"ruby\"><span class=\"rb\">名</span><span class=\"rt\">な</span></span>は<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span><br>いつもの<span class=\"ruby\"><span class=\"rb\">時間</span><span class=\"rt\">じかん</span></span> この<span class=\"ruby\"><span class=\"rb\">角</span><span class=\"rt\">かど</span></span><span class=\"ruby\"><span class=\"rb\">曲</span><span class=\"rt\">ま</span></span>がれば<br>どちらの<span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>にもハマる<br><span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>も<span class=\"ruby\"><span class=\"rb\">頑張</span><span class=\"rt\">がんば</span></span>れる<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>がするのだ<br><span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>のうわさ <span class=\"ruby\"><span class=\"rb\">街</span><span class=\"rt\">まち</span></span>のざわめきも<br><span class=\"ruby\"><span class=\"rb\">接客</span><span class=\"rt\">せっきゃく</span></span><span class=\"ruby\"><span class=\"rb\">一</span><span class=\"rt\">いち</span></span><span class=\"ruby\"><span class=\"rb\">番</span><span class=\"rt\">ばん</span></span> <span class=\"ruby\"><span class=\"rb\">味</span><span class=\"rt\">あじ</span></span><span class=\"ruby\"><span class=\"rb\">二</span><span class=\"rt\">に</span></span><span class=\"ruby\"><span class=\"rb\">番</span><span class=\"rt\">ばん</span></span>で<br>そんなみんなに<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>されている<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>にすすめるよ<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span><br><span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>もお<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>も<span class=\"ruby\"><span class=\"rb\">満</span><span class=\"rt\">み</span></span>たして<br>また<span class=\"ruby\"><span class=\"rb\">明後日</span><span class=\"rt\">あさって</span></span>も<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">く</span></span>るしかないな<br>この<span class=\"ruby\"><span class=\"rb\">一杯</span><span class=\"rt\">いっぱい</span></span>に<span class=\"ruby\"><span class=\"rb\">真心</span><span class=\"rt\">まごころ</span></span>を<span class=\"ruby\"><span class=\"rb\">込</span><span class=\"rt\">こ</span></span>めて<br><span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span>が<span class=\"ruby\"><span class=\"rb\">躍</span><span class=\"rt\">おど</span></span>る スープが<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>いだす<br><span class=\"ruby\"><span class=\"rb\">人気</span><span class=\"rt\">にんき</span></span>の<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span>スペシャル<br>いい<span class=\"ruby\"><span class=\"rb\">香</span><span class=\"rt\">かお</span></span>りに<span class=\"ruby\"><span class=\"rb\">包</span><span class=\"rt\">つつ</span></span>まれる<br><span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>も<span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>も<span class=\"ruby\"><span class=\"rb\">虜</span><span class=\"rt\">とりこ</span></span>にするのだ...<br><span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>にも<span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>にも<br><span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>も<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>が<span class=\"ruby\"><span class=\"rb\">癒</span><span class=\"rt\">いや</span></span>されていく<br><span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>の<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>へのご<span class=\"ruby\"><span class=\"rb\">褒美</span><span class=\"rt\">ほうび</span></span><br><span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>たちが<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>り<span class=\"ruby\"><span class=\"rb\">盛</span><span class=\"rt\">も</span></span>りする<span class=\"ruby\"><span class=\"rb\">店</span><span class=\"rt\">みせ</span></span><br><span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>にでもある<span class=\"ruby\"><span class=\"rb\">大切</span><span class=\"rt\">たいせつ</span></span>な<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span><br><span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>たちのリズムに<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>わせ<br>ラーメン<span class=\"ruby\"><span class=\"rb\">好</span><span class=\"rt\">ず</span></span>き <span class=\"ruby\"><span class=\"rb\">働</span><span class=\"rt\">はたら</span></span>く<span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span><span class=\"ruby\"><span class=\"rb\">好</span><span class=\"rt\">ず</span></span>き<br><span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>も<span class=\"ruby\"><span class=\"rb\">頑張</span><span class=\"rt\">がんば</span></span>れる<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>がする<br>いつもの<span class=\"ruby\"><span class=\"rb\">店</span><span class=\"rt\">みせ</span></span> <span class=\"ruby\"><span class=\"rb\">暖簾</span><span class=\"rt\">のれん</span></span>をくぐれば<br>また<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>も<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">く</span></span>てしまいそうだ<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>も<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>に<span class=\"ruby\"><span class=\"rb\">入</span><span class=\"rt\">い</span></span>るよ<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span><br><span class=\"ruby\"><span class=\"rb\">夏</span><span class=\"rt\">なつ</span></span>の<span class=\"ruby\"><span class=\"rb\">暑</span><span class=\"rt\">あつ</span></span>さ <span class=\"ruby\"><span class=\"rb\">冬</span><span class=\"rt\">ふゆ</span></span>の<span class=\"ruby\"><span class=\"rb\">木枯</span><span class=\"rt\">こが</span></span>らしも"
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>からリラックス<br><span class=\"ruby\"><span class=\"rb\">茹</span><span class=\"rt\">ゆ</span></span>で<span class=\"ruby\"><span class=\"rb\">上</span><span class=\"rt\">あ</span></span>がった<span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span>をちゃちゃっちゃ<br>それぞれの<span class=\"ruby\"><span class=\"rb\">日々</span><span class=\"rt\">ひび</span></span>がある<br>こだわりの<span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span>に<span class=\"ruby\"><span class=\"rb\">絡</span><span class=\"rt\">から</span></span>め<br><span class=\"ruby\"><span class=\"rb\">虎</span><span class=\"rt\">とら</span></span><span class=\"ruby\"><span class=\"rb\">打</span><span class=\"rt\">う</span></span>ち<span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span> <span class=\"ruby\"><span class=\"rb\">盛</span><span class=\"rt\">も</span></span>り<span class=\"ruby\"><span class=\"rb\">付</span><span class=\"rt\">つ</span></span>けも<span class=\"ruby\"><span class=\"rb\">豪華</span><span class=\"rt\">ごうか</span></span><br><span class=\"ruby\"><span class=\"rb\">秘伝</span><span class=\"rt\">ひでん</span></span>のスープに<span class=\"ruby\"><span class=\"rb\">溶</span><span class=\"rt\">と</span></span>かして<br>そんな<span class=\"ruby\"><span class=\"rb\">店</span><span class=\"rt\">みせ</span></span>の<span class=\"ruby\"><span class=\"rb\">名</span><span class=\"rt\">な</span></span>は<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span><br>いつもの<span class=\"ruby\"><span class=\"rb\">時間</span><span class=\"rt\">じかん</span></span> この<span class=\"ruby\"><span class=\"rb\">角</span><span class=\"rt\">かど</span></span><span class=\"ruby\"><span class=\"rb\">曲</span><span class=\"rt\">ま</span></span>がれば<br>どちらの<span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>にもハマる<br><span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>も<span class=\"ruby\"><span class=\"rb\">頑張</span><span class=\"rt\">がんば</span></span>れる<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>がするのだ<br><span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>のうわさ <span class=\"ruby\"><span class=\"rb\">街</span><span class=\"rt\">まち</span></span>のざわめきも<br><span class=\"ruby\"><span class=\"rb\">接客</span><span class=\"rt\">せっきゃく</span></span><span class=\"ruby\"><span class=\"rb\">一</span><span class=\"rt\">いち</span></span><span class=\"ruby\"><span class=\"rb\">番</span><span class=\"rt\">ばん</span></span> <span class=\"ruby\"><span class=\"rb\">味</span><span class=\"rt\">あじ</span></span><span class=\"ruby\"><span class=\"rb\">二</span><span class=\"rt\">に</span></span><span class=\"ruby\"><span class=\"rb\">番</span><span class=\"rt\">ばん</span></span>で<br>そんなみんなに<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>されている<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>にすすめるよ<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span><br><span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>もお<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>も<span class=\"ruby\"><span class=\"rb\">満</span><span class=\"rt\">み</span></span>たして<br>また<span class=\"ruby\"><span class=\"rb\">明後日</span><span class=\"rt\">あさって</span></span>も<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">く</span></span>るしかないな<br>この<span class=\"ruby\"><span class=\"rb\">一杯</span><span class=\"rt\">いっぱい</span></span>に<span class=\"ruby\"><span class=\"rb\">真心</span><span class=\"rt\">まごころ</span></span>を<span class=\"ruby\"><span class=\"rb\">込</span><span class=\"rt\">こ</span></span>めて<br><span class=\"ruby\"><span class=\"rb\">麺</span><span class=\"rt\">めん</span></span>が<span class=\"ruby\"><span class=\"rb\">躍</span><span class=\"rt\">おど</span></span>る スープが<span class=\"ruby\"><span class=\"rb\">歌</span><span class=\"rt\">うた</span></span>いだす<br><span class=\"ruby\"><span class=\"rb\">人気</span><span class=\"rt\">にんき</span></span>の<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span>スペシャル<br>いい<span class=\"ruby\"><span class=\"rb\">香</span><span class=\"rt\">かお</span></span>りに<span class=\"ruby\"><span class=\"rb\">包</span><span class=\"rt\">つつ</span></span>まれる<br><span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>も<span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>も<span class=\"ruby\"><span class=\"rb\">虜</span><span class=\"rt\">とりこ</span></span>にするのだ...<br><span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>にも<span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>にも<br><span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>も<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>が<span class=\"ruby\"><span class=\"rb\">癒</span><span class=\"rt\">いや</span></span>されていく<br><span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>の<span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>へのご<span class=\"ruby\"><span class=\"rb\">褒美</span><span class=\"rt\">ほうび</span></span><br><span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>たちが<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>り<span class=\"ruby\"><span class=\"rb\">盛</span><span class=\"rt\">も</span></span>りする<span class=\"ruby\"><span class=\"rb\">店</span><span class=\"rt\">みせ</span></span><br><span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>にでもある<span class=\"ruby\"><span class=\"rb\">大切</span><span class=\"rt\">たいせつ</span></span>な<span class=\"ruby\"><span class=\"rb\">場所</span><span class=\"rt\">ばしょ</span></span><br><span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span>たちのリズムに<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>わせ<br>ラーメン<span class=\"ruby\"><span class=\"rb\">好</span><span class=\"rt\">ず</span></span>き <span class=\"ruby\"><span class=\"rb\">働</span><span class=\"rt\">はたら</span></span>く<span class=\"ruby\"><span class=\"rb\">猫</span><span class=\"rt\">ねこ</span></span><span class=\"ruby\"><span class=\"rb\">好</span><span class=\"rt\">ず</span></span>き<br><span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span>も<span class=\"ruby\"><span class=\"rb\">頑張</span><span class=\"rt\">がんば</span></span>れる<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>がする<br>いつもの<span class=\"ruby\"><span class=\"rb\">店</span><span class=\"rt\">みせ</span></span> <span class=\"ruby\"><span class=\"rb\">暖簾</span><span class=\"rt\">のれん</span></span>をくぐれば<br>また<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>も<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>てしまいそうだ<br><span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>も<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>に<span class=\"ruby\"><span class=\"rb\">入</span><span class=\"rt\">い</span></span>るよ<span class=\"ruby\"><span class=\"rb\">赤猫</span><span class=\"rt\">あかねこ</span></span><br><span class=\"ruby\"><span class=\"rb\">夏</span><span class=\"rt\">なつ</span></span>の<span class=\"ruby\"><span class=\"rb\">暑</span><span class=\"rt\">あつ</span></span>さ <span class=\"ruby\"><span class=\"rb\">冬</span><span class=\"rt\">ふゆ</span></span>の<span class=\"ruby\"><span class=\"rb\">木枯</span><span class=\"rt\">こが</span></span>らしも"
 }
