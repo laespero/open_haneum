@@ -57,7 +57,7 @@
     </script>
     <!-- 헤더 -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
                 <nav class="hidden md:flex items-center gap-6">
@@ -76,7 +76,7 @@
                     <h1 class="text-3xl font-bold text-gray-900"><%= song.name %></h1>
                     <p class="text-lg text-gray-500 mt-1"><%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %></p>
                     <div class="flex gap-2 text-sm text-gray-400 mt-2">
-                        <span><%= song.ori_name %></span> / <span><%= song.kor_name %></span> / <span><%= song.eng_name %></span>
+                        <span><%= song.ori_name %></span>
                     </div>
                     <% if (song.tags && song.tags.length > 0) { %>
                         <div class="flex flex-wrap gap-2 mt-4">
