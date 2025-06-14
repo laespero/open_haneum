@@ -9,9 +9,11 @@ If you have been given a ruby in HTML format as follows, put the result of the r
 형태소 분식 시에 조사를 빼먹지 않도록 주의해 주세요!
 
 [일본어 표기 세칙]
+
 -장음-
 기본 장음 규칙
 あ단 + あ, い단 + い, う단 + う, え단 + え, お단 + う, お단 + お, 작은 글자 ぁ, ぃ, ぅ, ぇ, ぉ로 표기된 장음 및 장음 부호(ー)를 써서 표기한 장음은 전음의 모음을 따라 표기합니다.
+
 원어	햅번식 로마자 표기	한글 표기
 放送	ほうそう	hōsō	호오소오
 融通	ゆうずう	yūzū	유우즈으
@@ -26,9 +28,9 @@ If you have been given a ruby in HTML format as follows, put the result of the r
 おおきい	ōkii	오오키이
 とおい	tōi	토오이
 こおろぎ さとみ	Kōrogi Satomi	코오로기 사토미
-おおおかやま	Ōokayama	오오오카야마
+おおおかやま	Ōokayama	오오 오카야마
 
-拗音(ゃ ゅ ょ) + 장음도 비슷한 규칙을 적용한다. ょ＋う → ㅛ오, ゅ＋う → ㅠ우.
+拗音(ゃ ゅ ょ) + 장음도 비슷한 규칙을 적용합니다. ょ＋う → ㅛ오, ゅ＋う → ㅠ우.
 状況	じょうきょう	jōkyō	죠오쿄오
 集中	しゅうちゅう	shūchū	슈우츄우
 
@@ -44,7 +46,8 @@ If you have been given a ruby in HTML format as follows, put the result of the r
 は와 へ가 조사로 쓰여 각각 ワ, エ로 발음될 경우, 각각 '와', '에'로 표기합니다.
 
 -촉음-
-촉음(っ)은 か행, さ행, た행, ぱ행 앞에서만 받침 ㅅ으로 표기하고, 다른 행이 뒤따를 때는 표기하지 않습니다. 앞 말 없이 촉음으로 바로 시작하는 경우와 ん 바로 뒤의 촉음도 따로 표기하지 않습니다.
+촉음(っ)은 일괄적으로 받침 ㅅ으로 표기합니다. (단, って, ‘떼’로 표기할 수 있습니다.)
+
 원어	햅번식 로마자 표기	한글 표기
 あっさり	assari	앗사리
 きっと	kitto	킷토
@@ -52,16 +55,17 @@ If you have been given a ruby in HTML format as follows, put the result of the r
 がっこう	gakkō	갓코오
 つっこみ	tsukkomi	츳코미
 だっしゅ	dasshu	닷슈
-ねっちゅう	netchū	넷추우
+ねっちゅう	netchū	넷츄우
 みっつ	mittsu	밋츠
-すっごい	suggoi	스고이
-っていうか	tte iu ka	테 이우 카
-がんって	gan tte	간 테
+すっごい	suggoi	슷고이
+っていうか	tte iu ka	떼 이우 카
+がんって	gan tte	간 떼
 
 -발음-
 발음(ん)은 원칙적으로 받침 ㄴ으로 표기합니다.
 단, 다음에 한해 예외적으로 ㅇ 받침으로 표기합니다.
 漫画, 団子, 林檎, 蜜柑
+
 원어	햅번식 로마자 표기	한글 표기
 がんばる	ganbaru	간바루
 かんこく	kankoku	칸코쿠
@@ -76,6 +80,7 @@ If you have been given a ruby in HTML format as follows, put the result of the r
 団子  だんご  dango	당고
 林檎  りんご  ringo	링고
 蜜柑  みかん  mikan	미캉
+
 
 "んだ"(のだ의 변형)는 단독으로 적을 때, 꼭 "은다"로 한글 발음을 적어주세요!
 "つ"는 "쓰"나 "쯔"가 아닌, "츠"로 한글 발음을 적어주세요!

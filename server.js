@@ -371,6 +371,7 @@ app.get('/songs', (req, res) => {
             return song.name?.toLowerCase().includes(lowerCaseQuery) ||
                 song.ori_name?.toLowerCase().includes(lowerCaseQuery) ||
                 song.kor_name?.toLowerCase().includes(lowerCaseQuery) ||
+                song.eng_name?.toLowerCase().includes(lowerCaseQuery) ||
                 artistMatch ||
                 (song.tags && song.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)));
         });
