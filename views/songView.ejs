@@ -619,7 +619,7 @@ function loadVideo(vid, isLoop) {
                         // app.ports.fromPlayer.send({ tag: "playerTime", data: parseInt(player.get_current_time() * 1000) });
                         try{
                             timeShift = 0.05;
-                            if(player.player_state === 1 && World.mode === "slide" && World.isShort && World.isSlideTimesVaild){
+                            if(player.player_state === 1 && World.mode === "slide" && World.isHeader && World.isSlideTimesVaild){
                                 let targetIdx = 0;
                                 for(let i=1; i<shortCutData.length; i++){
                                     if(shortCutData[i-1].endTime-timeShift < player.current_time && player.current_time <= shortCutData[i].endTime-timeShift) {
@@ -920,15 +920,17 @@ ${a}
             slideIdx : 0,
             isIpa : false,
             isExplHide : true, 
-            isShort : false,
+            isHeader : false,
             isSlideTimesVaild : false,
             isSimple : false,
-            isBlog : true
+            isBlog : true,
+            isYoutubePlayer : true
         };
                 
         document.addEventListener('keydown', (event) => {
             if(event.code==='Digit0') {
-                if(World.mode === "scroll") {                    
+                if(World.mode === "scroll") {    
+                    player.set_volume(100);                
                     set_mode("slide");
                 }
                 else {
@@ -941,15 +943,17 @@ ${a}
             else if(event.code==='Digit2'){
                 set_isExplHide(!World.isExplHide);
             }
-            else if(event.code==='Digit3'){
-                player.set_volume(100);
-                set_isShort(!World.isShort);
+            else if(event.code==='Digit3'){                
+                set_isHeader(!World.isHeader);
             }
             else if(event.code==='Digit4'){
                 set_isSimple(!World.isSimple);
             }
             else if(event.code==='Digit5'){
                 set_isBlog(!World.isBlog);
+            }
+            else if(event.code==='Digit6'){
+                set_isYoutubePlayer(!World.isYoutubePlayer);
             }
         });
 
@@ -965,7 +969,7 @@ ${a}
 
                 if (World.isBlog) 
                     len = blogData.length; 
-                else if (World.isShort) 
+                else if (World.isHeader) 
                     len = shortCutData.length;
                 else 
                     len = data.length;
@@ -982,10 +986,10 @@ ${a}
             document.body.style.zIndex = 1;
         }
 
-        function set_isShort_base(isShort){
-            World.isShort = isShort;
+        function set_isHeader_base(isHeader){
+            World.isHeader = isHeader;
             World.slideIdx = 0;
-            if(isShort){
+            if(isHeader){
                 if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "none";
                 if(document.querySelector("header")) document.querySelector("header").style.display = "none";
                 //document.querySelector("#printer").style.padding = "0";
@@ -998,8 +1002,8 @@ ${a}
             }
         }
 
-        function set_isShort(isShort){
-            set_isShort_base(isShort);
+        function set_isHeader(isHeader){
+            set_isHeader_base(isHeader);
             reRenderAll();
         }
 
@@ -1008,10 +1012,20 @@ ${a}
             World.isBlog = true;
             World.isExplHide = true;
             World.isIpa = false;
-            World.isShort = false;
+            World.isHeader = false;
             World.isSimple = false;
             reRenderAll();
         }  
+
+        function set_isYoutubePlayer(isYoutubePlayer){
+            World.isYoutubePlayer = isYoutubePlayer;
+            if(isYoutubePlayer){
+                if(document.getElementById("player")) document.getElementById("player").style.visibility = "visible";
+            }else{
+                if(document.getElementById("player")) document.getElementById("player").style.visibility = "hidden";
+            }
+        }     
+
         function set_isBlog(isBlog){
             World.isBlog = isBlog;
             reRenderAll();
@@ -1032,12 +1046,11 @@ ${a}
             if(mode === "slide") {                
                 World.isBlog = false;              
                 World.isExplHide = true;
-                set_isShort_base(true);
+                set_isHeader_base(true);
             }
             else if(mode === "scroll") {                           
-                World.isBlog = true;              
-                World.isExplHide = false;
-                set_isShort_base(false);
+                World.isBlog = true;     
+                set_isHeader_base(false);
             }
             reRenderAll();
         }
@@ -1046,7 +1059,7 @@ ${a}
             //console.log(player.current_time);
             //console.log(slideIdx);
 
-            if(World.isShort) {
+            if(World.isHeader) {
                 if(!(0 <= slideIdx&&slideIdx < shortCutData.length) ) return;                
             }
             else {
@@ -1067,7 +1080,7 @@ ${a}
 
         window.addEventListener("keydown", (event) => {
             if(event.code === "KeyA" || event.code === "KeyJ"){
-                if(World.isShort && World.isSlideTimesVaild) {
+                if(World.isHeader && World.isSlideTimesVaild) {
                     let sIdx = World.slideIdx;
                     set_slideIdx(sIdx-1);
                     if(sIdx <= 1) player.seek(0);
@@ -1075,20 +1088,20 @@ ${a}
                 }
                 else {
                     set_slideIdx(World.slideIdx-1);
-                    if(World.isShort) {
+                    if(World.isHeader) {
                         if(World.slideIdx===0) player.seek(0);
                         else player.seek(shortCutData[World.slideIdx-1].endTime);
                     }
                 }
             }
             else if(event.code === "KeyD" || event.code === "KeyL"){
-                if(World.isShort && World.isSlideTimesVaild) {
+                if(World.isHeader && World.isSlideTimesVaild) {
                     let sIdx = World.slideIdx;
                     set_slideIdx(sIdx+1);
                     player.seek(shortCutData[sIdx].endTime);
                 }
                 else {                
-                    if(World.isShort) shortCutData[World.slideIdx].endTime = player.current_time;
+                    if(World.isHeader) shortCutData[World.slideIdx].endTime = player.current_time;
                     set_slideIdx(World.slideIdx+1);
                 }
             }
@@ -1399,7 +1412,7 @@ ${a}
             if(World.isBlog){
                 currentData = blogData[currentIndex];
             }
-            else if(World.isShort) {
+            else if(World.isHeader) {
                 currentData = shortCutData[currentIndex];
             }
             else {
@@ -1412,7 +1425,7 @@ ${a}
             
             let len;
             if(World.isBlog) len = blogData.length;
-            else if(World.isShort) len = shortCutData.length;
+            else if(World.isHeader) len = shortCutData.length;
             else len = data.length;
 
             const format = (a,b) => `
@@ -1530,7 +1543,7 @@ ${a}
 
         function makeSimpleOne(currentIndex) {
             let currentData;
-            if(World.isShort) {
+            if(World.isHeader) {
                 currentData = shortCutData[currentIndex];
             }
             else {
@@ -1548,7 +1561,7 @@ ${a}
                 <div>${b}</div>
             </div>
             </div>
-            <div class="print-number">${(currentIndex+1)+"/"+(World.isShort? shortCutData.length : data.length)}</div>
+            <div class="print-number">${(currentIndex+1)+"/"+(World.isHeader? shortCutData.length : data.length)}</div>
         </div>   
             `;
 
