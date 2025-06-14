@@ -5,7 +5,7 @@
   "eng_name": "No Regret",
   "vid": "65F4aQNR_jQ",
   "artist": {
-    "ori_name": "Uru (원곡 wacci)",
+    "ori_name": "Uru",
     "kor_name": "",
     "eng_name": ""
   },
@@ -3471,6 +3471,7 @@
   ],
   "failedLines": [],
   "tags": [
-    "일본어"
+    "일본어",
+    "wacci 원곡"
   ]
 }

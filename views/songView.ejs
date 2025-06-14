@@ -928,7 +928,7 @@ ${a}
                 
         document.addEventListener('keydown', (event) => {
             if(event.code==='Digit0') {
-                if(World.mode === "scroll") {
+                if(World.mode === "scroll") {                    
                     set_mode("slide");
                 }
                 else {
@@ -982,7 +982,7 @@ ${a}
             document.body.style.zIndex = 1;
         }
 
-        function set_isShort(isShort){
+        function set_isShort_base(isShort){
             World.isShort = isShort;
             World.slideIdx = 0;
             if(isShort){
@@ -996,6 +996,10 @@ ${a}
                 if(document.querySelector("header")) document.querySelector("header").style.display = "block";
                 //document.querySelector("#printer").style = "";
             }
+        }
+
+        function set_isShort(isShort){
+            set_isShort_base(isShort);
             reRenderAll();
         }
 
@@ -1025,6 +1029,16 @@ ${a}
 
         function set_mode(mode){
             World.mode = mode;
+            if(mode === "slide") {                
+                World.isBlog = false;              
+                World.isExplHide = true;
+                set_isShort_base(true);
+            }
+            else if(mode === "scroll") {                           
+                World.isBlog = true;              
+                World.isExplHide = false;
+                set_isShort_base(false);
+            }
             reRenderAll();
         }
         
