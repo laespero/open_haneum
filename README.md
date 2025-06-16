@@ -39,11 +39,11 @@ https://haneum.site/ 에서 지금 바로 기능을 체험해보세요!
 
 ## 기술 스택
 
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js, Express.js, express-async-errors
 - **Frontend**: EJS (Embedded JavaScript)
 - **AI**: DeepSeek(OpenRouter를 통해 이용하는 것을 추천합니다.), Google Gemini API
 - **데이터 저장**: JSON 파일 기반
-- **기타**: CORS, Body-parser, Cheerio
+- **기타**: CORS
 
 ## 설치 방법
 

@@ -3400,7 +3400,7 @@
   ],
   "failedLines": [],
   "artist": {
-    "ori_name": "永彬 · 李晧轩",
+    "ori_name": "永彬",
     "kor_name": "영빈",
     "eng_name": "Ryan.B"
   },
@@ -3408,6 +3408,7 @@
   "kor_name": "그 무엇도",
   "eng_name": "What is that",
   "tags": [
-    "중국어"
+    "중국어",
+    "李晧轩"
   ]
 }

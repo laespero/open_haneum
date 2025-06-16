@@ -5,7 +5,7 @@
   "eng_name": "No Reason",
   "vid": "BJYKrL5pMfU",
   "artist": {
-    "ori_name": "永彬 & Effie",
+    "ori_name": "永彬",
     "kor_name": "영빈",
     "eng_name": "Ryan.B"
   },
@@ -2388,6 +2388,7 @@
   ],
   "failedLines": [],
   "tags": [
-    "중국어"
+    "중국어",
+    "Effie"
   ]
 }

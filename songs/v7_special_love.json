@@ -2320,7 +2320,7 @@
   ],
   "failedLines": [],
   "artist": {
-    "ori_name": "都智文, 永彬",
+    "ori_name": "永彬",
     "kor_name": "영빈",
     "eng_name": "Ryan.B"
   },
@@ -2328,6 +2328,7 @@
   "kor_name": "특별 관계",
   "eng_name": "Special love",
   "tags": [
-    "중국어"
+    "중국어",
+    "都智文"
   ]
 }

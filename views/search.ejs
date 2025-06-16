@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"<%= searchQuery %>" 검색 결과 - Haneum</title>
+    <title>
+    <% if (searchQuery && searchQuery.trim()) { %>
+        "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
+    <% } else { %>
+        전체 노래 목록
+    <% } %> - Haneum</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -47,7 +52,6 @@
         <!-- 결과 목록 -->
         <div class="space-y-4">
             <% songs.forEach(song => { %>
-                <% if (!song.tags || !song.tags.includes('개발용')) { %>
                     <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow cursor-pointer" onclick="location.href='/songs/<%= encodeURIComponent(song.name) %>'">
                         <div class="flex justify-between items-start">
                             <div class="flex-grow">
@@ -114,7 +118,6 @@
                             </div>
                         </div>
                     </div>
-                <% } %>
             <% }); %>
         </div>
 

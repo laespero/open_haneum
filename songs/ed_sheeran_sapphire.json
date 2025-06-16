@@ -2624,7 +2624,7 @@
       "T0": "You colour and fracture the light (badlan de lathan de suit banaye)",
       "C0": "Please translate the surrounding context (CX) into Korean.",
       "G0": "이 문장은 영어와 힌디어(또는 펀자브어)가 혼합된 구조입니다. 주어(You) + 동사(colour, fracture) + 목적어(the light)로 이루어진 영어 문장과, 괄호 안의 힌디어 구문이 결합되어 있습니다. 영어 부분은 '당신이 빛을 색칠하고 부수다'라는 의미를, 힌디어 부분은 '구름의 빛으로 옷을 만들다'라는 의미를 나타냅니다. 전체적으로 시적인 표현으로, 상대방의 아름다움을 빛에 비유하고 있습니다.",
-      "K0": "당신은 빛을 색칠하고 부수어요 (구름의 빛으로 옷을 만들다)",
+      "K0": "당신은 빛을 색칠하고 흩뿌리고 있어 (구름의 빛으로 옷을 만들다)",
       "I0": "ju ˈkʌlər ænd ˈfrækʧər ðə laɪt (bədlan de lathan de suit banaye)",
       "R0": "유 컬러 앤드 프랙쳐 더 라이트 (바들란 데 라탄 데 수이트 바나예)",
       "LI": [
@@ -2976,7 +2976,7 @@
       "T0": "You′re glowing, you colour and fracture the light",
       "C0": "당신은 빛나고, 빛을 색칠하고 부수고 있어. 당신은 빛나지 않을 수 없어.",
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 'You′re glowing'으로, 주어(You) + 동사구(are glowing)로 이루어져 있으며, 현재 진행형을 사용해 '빛나고 있다'는 의미를 나타냅니다. 두 번째 절은 'you colour and fracture the light'로, 주어(you) + 동사(colour, fracture) + 목적어(the light)로 구성되어 있습니다. 'colour'는 '색칠하다', 'fracture'는 '부수다'라는 의미로, 빛을 변형시키는 행위를 나타냅니다. 전체적으로 상대방이 빛을 내고, 빛을 변화시키는 모습을 표현합니다.",
-      "K0": "당신은 빛나고, 빛을 색칠하고 부수고 있어.",
+      "K0": "당신은 빛나고, 빛을 색칠하고 흩뿌리고 있어.",
       "I0": "jʊr ˈɡloʊɪŋ, ju ˈkʌlər ænd ˈfrækʧər ðə laɪt",
       "R0": "유어 글로잉, 유 컬러 앤드 프랙쳐 더 라이트",
       "LI": [

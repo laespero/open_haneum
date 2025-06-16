@@ -4284,7 +4284,7 @@
   ],
   "failedLines": [],
   "artist": {
-    "ori_name": "GIMS & DYSTINCT",
+    "ori_name": "GIMS",
     "kor_name": "",
     "eng_name": ""
   },
@@ -4293,6 +4293,7 @@
   "kor_name": "스파이더",
   "eng_name": "",
   "tags": [
-    "프랑스어"
+    "프랑스어",
+    "DYSTINCT"
   ]
 }

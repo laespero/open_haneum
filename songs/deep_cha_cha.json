@@ -5,7 +5,7 @@
   "eng_name": "Midnight Cha-Cha-Cha",
   "vid": "RdStbcX66L4",
   "artist": {
-    "ori_name": "邓典/刘至佳",
+    "ori_name": "邓典",
     "kor_name": "등전",
     "eng_name": ""
   },
@@ -1908,6 +1908,7 @@
   ],
   "failedLines": [],
   "tags": [
-    "중국어"
+    "중국어",
+    "刘至佳"
   ]
 }

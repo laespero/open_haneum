@@ -143,6 +143,29 @@ app.use('/', express.static('songs'));
 
 let songCache = [];  // 노래 데이터를 저장할 캐시
 
+/**
+ * 사용자 입력(title)을 기반으로 안전한 파일 경로를 생성합니다.
+ * 경로 순회 공격을 방지하기 위해 `path.basename`을 사용합니다.
+ * @param {string} title - 노래 제목.
+ * @returns {string} - 'songs' 디렉토리 내의 안전한 파일 경로.
+ * @throws {Error} - 제목이 유효하지 않은 경우 오류를 발생시킵니다.
+ */
+function getSafeSongPath(title) {
+    if (!title) {
+        const error = new Error('노래 제목이 필요합니다.');
+        error.status = 400; // Bad Request
+        throw error;
+    }
+    // basename은 경로의 마지막 부분만 반환하여 '..' 같은 상위 디렉토리 이동 문자를 제거합니다.
+    const safeTitle = path.basename(title);
+    if (safeTitle !== title) {
+        const error = new Error('잘못된 경로가 포함된 제목입니다.');
+        error.status = 400; // Bad Request
+        throw error;
+    }
+    return `songs/${safeTitle}.json`;
+}
+
 // 캐시 갱신 함수
 async function refreshSongCache() {
     try {
@@ -165,8 +188,58 @@ async function refreshSongCache() {
     }
 }
 
-// 서버 시작 시 캐시 로드
-refreshSongCache();
+// 서버 시작 시 캐시 로드, listen 전에 완료되도록 수정합니다.
+// refreshSongCache(); // 기존 방식
+
+/**
+ * 쿼리와 태그를 기반으로 노래를 검색하고 정렬하는 함수.
+ * @param {string} searchQuery - 검색어.
+ * @param {string[]} excludeTags - 검색에서 제외할 태그 배열.
+ * @returns {object[]} - 검색 및 정렬된 노래 객체의 배열.
+ */
+function searchSongs(searchQuery, excludeTags = []) {
+    const lowerCaseQuery = searchQuery.toLowerCase();
+
+    // 1. 태그를 기준으로 노래 필터링
+    let filteredByTag = songCache;
+    if (excludeTags.length > 0) {
+        filteredByTag = songCache.filter(song => 
+            !song.tags || !song.tags.some(tag => excludeTags.includes(tag))
+        );
+    }
+    
+    // '개발용' 태그 특별 처리
+    if (lowerCaseQuery === '개발용') {
+        return songCache.filter(song => song.tags && song.tags.includes('개발용'))
+            .sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+    }
+
+    // 2. 검색어로 필터링
+    let searchedSongs;
+    if (searchQuery) {
+        searchedSongs = filteredByTag.filter(song => {
+            const artistMatch = typeof song.artist === 'object' 
+                ? song.artist.ori_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.kor_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.eng_name?.toLowerCase().includes(lowerCaseQuery)
+                : song.artist?.toLowerCase().includes(lowerCaseQuery);
+
+            return song.name?.toLowerCase().includes(lowerCaseQuery) ||
+                song.ori_name?.toLowerCase().includes(lowerCaseQuery) ||
+                song.kor_name?.toLowerCase().includes(lowerCaseQuery) ||
+                song.eng_name?.toLowerCase().includes(lowerCaseQuery) ||
+                artistMatch ||
+                (song.tags && song.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)));
+        });
+    } else {
+        searchedSongs = filteredByTag;
+    }
+
+    // 3. 생성일 기준으로 내림차순 정렬
+    return searchedSongs.sort((a, b) => {
+        const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
+        const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
+        return dateB - dateA;
+    });
+}
 
 app.post('/add', async (req, res) => {
     let { title, ori_name, kor_name, eng_name, vid, artist_ori_name, artist_kor_name, artist_eng_name, text, tags } = req.body;
@@ -225,7 +298,8 @@ app.post('/add', async (req, res) => {
         songData.japanSongData = japanData;
     }
 
-    await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
+    const safePath = getSafeSongPath(title);
+    await fs.promises.writeFile(safePath, JSON.stringify(songData, null, 2));
     
     // 캐시를 효율적으로 업데이트 (전체 리프레시 대신)
     const existingSongIndex = songCache.findIndex(song => song.name === title);
@@ -243,7 +317,7 @@ app.post('/update-song-meta/:title', async (req, res) => {
     const { title } = req.params;
     const { artist_ori_name, artist_kor_name, artist_eng_name, vid, ori_name, kor_name, eng_name, tags } = req.body;
 
-    const filePath = `songs/${title}.json`;
+    const filePath = getSafeSongPath(title);
 
     const data = await fs.promises.readFile(filePath, 'utf8');
     const songData = JSON.parse(data);
@@ -284,8 +358,9 @@ app.post('/update-song-meta/:title', async (req, res) => {
 
 app.get('/songs/:title', async (req, res) => {
     const title = req.params.title;
+    const filePath = getSafeSongPath(title);
     try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
         
         // contextText와 translatedLines가 모두 존재하는 경우에만 정렬 시도
@@ -320,8 +395,9 @@ app.get('/songs/:title', async (req, res) => {
 
 app.get('/view/:title', async (req, res) => {
     const title = req.params.title;
+    const filePath = getSafeSongPath(title);
     try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
         res.render('songView', { song: songData, lang: lang });
     } catch (error) {
@@ -342,8 +418,9 @@ app.get('/songdetail/:title', (req, res) => {
 
 app.get('/detail/:title', async (req, res) => {
     const title = req.params.title;
+    const filePath = getSafeSongPath(title);
     try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
         res.render('songDetail', { song: songData });
     } catch (error) {
@@ -356,38 +433,13 @@ app.get('/detail/:title', async (req, res) => {
 
 app.get('/songs', (req, res) => {
     const searchQuery = req.query.q || '';
-    const lowerCaseQuery = searchQuery.toLowerCase();
-
-    // "개발용" 태그가 있는 노래를 제외한 리스트를 먼저 만듭니다.
-    let filteredSongs = songCache.filter(song => !song.tags || !song.tags.includes('개발용'));
-
-    // 검색어가 있는 경우 추가로 필터링합니다.
-    if (searchQuery) {
-        filteredSongs = filteredSongs.filter(song => {
-            const artistMatch = typeof song.artist === 'object' 
-                ? song.artist.ori_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.kor_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.eng_name?.toLowerCase().includes(lowerCaseQuery)
-                : song.artist?.toLowerCase().includes(lowerCaseQuery);
-
-            return song.name?.toLowerCase().includes(lowerCaseQuery) ||
-                song.ori_name?.toLowerCase().includes(lowerCaseQuery) ||
-                song.kor_name?.toLowerCase().includes(lowerCaseQuery) ||
-                song.eng_name?.toLowerCase().includes(lowerCaseQuery) ||
-                artistMatch ||
-                (song.tags && song.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)));
-        });
-    }
-
-    const sortedSongs = filteredSongs.sort((a, b) => {
-        const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
-        const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
-        return dateB - dateA;
-    });
-
+    const filteredSongs = searchSongs(searchQuery, ['개발용']);
+    
     const page = parseInt(req.query.page) || 1;
     const limit = 10;
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
-    const paginatedSongs = sortedSongs.slice(startIndex, endIndex);
+    const paginatedSongs = filteredSongs.slice(startIndex, endIndex);
     const totalPages = Math.ceil(filteredSongs.length / limit);
 
     res.render('search', {
@@ -401,8 +453,9 @@ app.get('/songs', (req, res) => {
 
 app.get('/edit/:title', async (req, res) => {
     const title = req.params.title;
+    const filePath = getSafeSongPath(title);
     try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
         res.render('edit', { song: songData });
     } catch (error) {
@@ -417,155 +470,150 @@ app.post('/translate/:title', async (req, res) => {
     const title = req.params.title;
     console.log(`시작 : [${title}]`);
 
-    try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
-        let songData = JSON.parse(data);
+    const filePath = getSafeSongPath(title);
+    const data = await fs.promises.readFile(filePath, 'utf8');
+    let songData = JSON.parse(data);
 
-        if (!Array.isArray(songData.p1)) {
-            console.error('songData.p1은 배열이어야 합니다:', songData.p1);
-            return res.status(400).send('잘못된 노래 데이터 형식');
-        }
+    if (!Array.isArray(songData.p1)) {
+        console.error('songData.p1은 배열이어야 합니다:', songData.p1);
+        const err = new Error('잘못된 노래 데이터 형식');
+        err.status = 400;
+        throw err;
+    }
 
-        const contextText = toContextObj(songData.p1);
-        songData.contextText = contextText;
+    const contextText = toContextObj(songData.p1);
+    songData.contextText = contextText;
 
-        let parsedTranslatedLines = [];
-        let failedLines = [];
+    let parsedTranslatedLines = [];
+    let failedLines = [];
 
-        const translationPromises = contextText.map(async (context) => {
-            try {
-                let alpha = "";
-                if(songData.japanSongData){
-                    const japanData = songData.japanSongData.find(x=>x.jp===context.T0);
-                    alpha += "\n\n";
-                    alpha += `한국어 번역 시, 다음 번역을 그대로 사용할 것. "${japanData.kr}"`;
-                    if(japanData.jp !== japanData.pr) alpha += `\n한글 발음을 적을 때, 다음을 그대로 사용할 것. "${japanData.pr}"`;
-                    console.log(alpha);
+    const translationPromises = contextText.map(async (context) => {
+        try {
+            let alpha = "";
+            if(songData.japanSongData){
+                const japanData = songData.japanSongData.find(x=>x.jp===context.T0);
+                alpha += "\n\n";
+                alpha += `한국어 번역 시, 다음 번역을 그대로 사용할 것. "${japanData.kr}"`;
+                if(japanData.jp !== japanData.pr) alpha += `\n한글 발음을 적을 때, 다음을 그대로 사용할 것. "${japanData.pr}"`;
+                console.log(alpha);
+            }
+
+            const requestBody = {
+                model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                max_tokens: 8192,
+                temperature:0.5,
+                messages: [
+                    { role: "system", content: MSG },
+                    { role: 'user', content: JSON.stringify(context)+alpha },
+                ],
+                response_format: { 
+                    type: "json_object" 
                 }
+            };
 
-                const requestBody = {
-                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
-                    max_tokens: 8192,
-                    temperature:0.5,
-                    messages: [
-                        { role: "system", content: MSG },
-                        { role: 'user', content: JSON.stringify(context)+alpha },
-                    ],
-                    response_format: { 
-                        type: "json_object" 
-                    }
+            if (!isUsingDeepSeekDirectly) {
+                requestBody.provider = {
+                    ignore: [
+                        'InferenceNet',
+                        'Together'
+                    ]
                 };
+            }
 
-                if (!isUsingDeepSeekDirectly) {
-                    requestBody.provider = {
-                        ignore: [
-                            'InferenceNet',
-                            'Together'
-                        ]
-                    };
-                }
+            const completion = await openai.chat.completions.create(requestBody);
 
-                const completion = await openai.chat.completions.create(requestBody);
-
-                const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
-                console.log(translatedLine.substring(0,100));
-                const parsedResult = JSON.parse(translatedLine);
-                if (parsedResult && parsedResult.K0) {
-                    parsedResult.O0 = context.T0;
-                    parsedTranslatedLines.push(parsedResult);
-                } else {
-                    failedLines.push(context);
-                }
-            } catch (error) {
-                console.error('번역 오류:', error);
+            const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+            console.log(translatedLine.substring(0,100));
+            const parsedResult = JSON.parse(translatedLine);
+            if (parsedResult && parsedResult.K0) {
+                parsedResult.O0 = context.T0;
+                parsedTranslatedLines.push(parsedResult);
+            } else {
                 failedLines.push(context);
             }
-        });
+        } catch (error) {
+            console.error('번역 오류:', error);
+            failedLines.push(context);
+        }
+    });
 
-        await Promise.all(translationPromises);
+    await Promise.all(translationPromises);
 
-        songData.translatedLines = parsedTranslatedLines;
-        songData.failedLines = failedLines;
+    songData.translatedLines = parsedTranslatedLines;
+    songData.failedLines = failedLines;
 
-        await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        console.log(`끝 : [${title}]`);
+    await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+    console.log(`끝 : [${title}]`);
 
-        res.render('songDetail', { song: songData });
-    } catch (error) {
-        console.error('번역 오류:', error);
-        res.send('번역 중 오류 발생');
-    }
+    res.render('songDetail', { song: songData });
 });
 
 
 app.post('/retry-translation/:title', async (req, res) => {
     const title = req.params.title;
+    const filePath = getSafeSongPath(title);
 
-    try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
-        let songData = JSON.parse(data);
+    const data = await fs.promises.readFile(filePath, 'utf8');
+    let songData = JSON.parse(data);
 
-        if (!Array.isArray(songData.failedLines) || songData.failedLines.length === 0) {
-            return res.send('실패한 번역 없음');
-        }
+    if (!Array.isArray(songData.failedLines) || songData.failedLines.length === 0) {
+        return res.send('실패한 번역 없음');
+    }
 
-        let parsedTranslatedLines = songData.translatedLines || [];
-        let failedLines = [];
+    let parsedTranslatedLines = songData.translatedLines || [];
+    let failedLines = [];
 
-        const translationPromises = songData.failedLines.map(async (context) => {
-            try {
-                const requestBody = {
-                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
-                    max_tokens: 8192,
-                    messages: [
-                        { role: "system", content: MSG },
-                        { role: 'user', content: JSON.stringify(context) },
-                    ],
-                    response_format: { 
-                        type: "json_object" 
-                    }
+    const translationPromises = songData.failedLines.map(async (context) => {
+        try {
+            const requestBody = {
+                model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                max_tokens: 8192,
+                messages: [
+                    { role: "system", content: MSG },
+                    { role: 'user', content: JSON.stringify(context) },
+                ],
+                response_format: { 
+                    type: "json_object" 
+                }
+            };
+
+            if (!isUsingDeepSeekDirectly) {
+                requestBody.provider = {
+                    ignore: [
+                        'InferenceNet'
+                    ]
                 };
+            }
 
-                if (!isUsingDeepSeekDirectly) {
-                    requestBody.provider = {
-                        ignore: [
-                            'InferenceNet'
-                        ]
-                    };
-                }
+            const completion = await openai.chat.completions.create(requestBody);
 
-                const completion = await openai.chat.completions.create(requestBody);
-
-                const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
-                const parsedResult = JSON.parse(translatedLine);
-                if (parsedResult && parsedResult.K0) {
-                    parsedResult.O0 = context.T0;
-                    parsedTranslatedLines.push(parsedResult);
-                } else {
-                    failedLines.push(context);
-                }
-            } catch (error) {
-                console.error('재번역 오류:', error);
+            const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+            const parsedResult = JSON.parse(translatedLine);
+            if (parsedResult && parsedResult.K0) {
+                parsedResult.O0 = context.T0;
+                parsedTranslatedLines.push(parsedResult);
+            } else {
                 failedLines.push(context);
             }
-        });
+        } catch (error) {
+            console.error('재번역 오류:', error);
+            failedLines.push(context);
+        }
+    });
 
-        await Promise.all(translationPromises);
+    await Promise.all(translationPromises);
 
-        songData.translatedLines = parsedTranslatedLines;
-        songData.failedLines = failedLines;
+    songData.translatedLines = parsedTranslatedLines;
+    songData.failedLines = failedLines;
 
-        await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
-        res.render('songDetail', { song: songData });
-    } catch (error) {
-        console.error('재번역 오류:', error);
-        res.send('재번역 중 오류 발생');
-    }
+    await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+    res.render('songDetail', { song: songData });
 });
 
 app.post('/retry-line/:title', async (req, res) => {
     const title = req.params.title;
-    const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+    const filePath = getSafeSongPath(title);
+    const data = await fs.promises.readFile(filePath, 'utf8');
     let songData = JSON.parse(data);
     
     const thatLine = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
@@ -608,17 +656,20 @@ app.post('/retry-line/:title', async (req, res) => {
         }
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
-        await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
+        await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
         res.redirect(`/detail/${title}`);
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
-        res.status(500).send('특정 라인 재번역 중 오류 발생');
+        error.status = 500;
+        error.message = '특정 라인 재번역 중 오류 발생';
+        throw error;
     }
 });
 
 app.post('/correct-with-message/:title', async (req, res) => {
     const title = req.params.title;
-    const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+    const filePath = getSafeSongPath(title);
+    const data = await fs.promises.readFile(filePath, 'utf8');
     let songData = JSON.parse(data);
     
     console.log(req.body.originalLine);
@@ -663,11 +714,13 @@ app.post('/correct-with-message/:title', async (req, res) => {
         }
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
-        await fs.promises.writeFile(`songs/${title}.json`, JSON.stringify(songData, null, 2));
+        await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
         res.redirect(`/detail/${title}`);
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
-        res.status(500).send('특정 라인 재번역 중 오류 발생');
+        error.status = 500;
+        error.message = '특정 라인 재번역 중 오류 발생';
+        throw error;
     }
 
 });
@@ -680,7 +733,7 @@ app.post('/update-line/:title', async (req, res) => {
         return res.status(400).send('필수 데이터가 누락되었습니다.');
     }
 
-    const filePath = `songs/${title}.json`;
+    const filePath = getSafeSongPath(title);
 
     try {
         const data = await fs.promises.readFile(filePath, 'utf8');
@@ -691,7 +744,9 @@ app.post('/update-line/:title', async (req, res) => {
             updatedLineData = JSON.parse(jsonContent);
         } catch (parseError) {
             console.error('수정된 JSON 파싱 오류:', parseError);
-            return res.status(400).send(`<h1>JSON 형식 오류</h1><p>제출된 JSON 형식이 올바르지 않습니다. 다시 확인해주세요.</p><a href="/detail/${title}">돌아가기</a>`);
+            const err = new Error(`<h1>JSON 형식 오류</h1><p>제출된 JSON 형식이 올바르지 않습니다. 다시 확인해주세요.</p><a href="/detail/${title}">돌아가기</a>`);
+            err.status = 400;
+            throw err;
         }
 
         const lineIndex = songData.translatedLines.findIndex(
@@ -720,17 +775,21 @@ app.post('/update-line/:title', async (req, res) => {
     } catch (error) {
         console.error('가사 라인 수동 업데이트 중 오류:', error);
         if (error.code === 'ENOENT') {
-            return res.status(404).send('노래 파일을 찾을 수 없습니다.');
+            const err = new Error('노래 파일을 찾을 수 없습니다.');
+            err.status = 404;
+            throw err;
         }
-        res.status(500).send('서버 오류가 발생했습니다.');
+        // 다른 에러는 그대로 전역 핸들러로 전달
+        throw error;
     }
 });
 
 app.get('/api/songs/:title/translated', async (req, res) => {
     const title = req.params.title;
+    const filePath = getSafeSongPath(title);
 
     try {
-        const data = await fs.promises.readFile(`songs/${title}.json`, 'utf8');
+        const data = await fs.promises.readFile(filePath, 'utf8');
         let songData = JSON.parse(data);
 
         if (Array.isArray(songData.translatedLines) && songData.translatedLines.length > 0) {
@@ -769,6 +828,10 @@ app.get('/api/songs/:title/translated', async (req, res) => {
         }
     } catch (error) {
         console.error('API 오류:', error);
+        // ENOENT (파일 없음) 오류도 404로 처리
+        if (error.code === 'ENOENT') {
+            return res.status(404).json({ error: '노래를 찾을 수 없습니다.' });
+        }
         res.status(500).json({
             error: '서버 오류'
         });
@@ -850,32 +913,8 @@ app.get('/api/search', (req, res) => {
     const limit = 30;
     
     try {
-        const allResults = songCache.filter(song => {
-            // "개발용" 태그가 있는 노래는 결과에서 제외합니다.
-            if (song.tags && song.tags.includes('개발용')) {
-                return false;
-            }
-
-            const searchFields = [
-                song.name?.toLowerCase(),
-                song.ori_name?.toLowerCase(),
-                song.kor_name?.toLowerCase(),
-                song.eng_name?.toLowerCase(),
-            ].filter(Boolean);
-
-            if (typeof song.artist === 'object') {
-                searchFields.push(song.artist.ori_name?.toLowerCase());
-                searchFields.push(song.artist.kor_name?.toLowerCase());
-                searchFields.push(song.artist.eng_name?.toLowerCase());
-            } else {
-                searchFields.push(song.artist?.toLowerCase());
-            }
-
-            const hasTagMatch = song.tags && song.tags.some(tag => tag.toLowerCase().includes(query));
-
-            return searchFields.some(field => field && field.includes(query)) || hasTagMatch;
-        });
-
+        const allResults = searchSongs(query, ['개발용']);
+        
         const totalPages = Math.ceil(allResults.length / limit);
         const startIndex = (page - 1) * limit;
         const endIndex = startIndex + limit;
@@ -896,17 +935,39 @@ app.get('/api/search', (req, res) => {
 app.use((err, req, res, next) => {
     console.error('====================================');
     console.error('전역 에러 핸들러가 에러를 포착했습니다:');
-    console.error(err.stack);
+    console.error('Request URL:', req.originalUrl);
+    console.error(err);
     console.error('====================================');
     
     if (res.headersSent) {
         return next(err);
     }
+
+    const statusCode = err.status || 500;
+    // HTML이 포함된 오류 메시지는 그대로 렌더링하고, 아닌 경우 일반 메시지 포맷 사용
+    const isHtmlMessage = /<[a-z][\s\S]*>/i.test(err.message);
+    const errorMessage = err.message || '서버에 예상치 못한 문제가 발생했습니다.';
+
+    // API 요청은 JSON으로 응답
+    if (req.originalUrl.startsWith('/api/')) {
+        return res.status(statusCode).json({ error: errorMessage });
+    }
     
-    res.status(500).send('<h1> 서버 오류 </h1><p> 죄송합니다, 서버에 예상치 못한 문제가 발생했습니다. </p>');
+    if (isHtmlMessage) {
+        return res.status(statusCode).send(errorMessage);
+    }
+
+    res.status(statusCode).send(`<h1>서버 오류</h1><p>죄송합니다, 예상치 못한 문제가 발생했습니다.</p><p><i>${errorMessage}</i></p><a href="javascript:history.back()">돌아가기</a>`);
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`서버 시작: http://localhost:${PORT}`);
-}); 
+
+async function startServer() {
+    // 서버가 요청을 받기 전에 캐시를 먼저 로드합니다.
+    await refreshSongCache();
+    app.listen(PORT, () => {
+        console.log(`서버 시작: http://localhost:${PORT}`);
+    });
+}
+
+startServer(); 
