@@ -142,6 +142,22 @@ app.use(express.static('public'));
 app.use('/', express.static('songs'));
 
 let songCache = [];  // 노래 데이터를 저장할 캐시
+let isCacheReady = false; // 캐시 준비 상태 플래그
+
+// 캐시 준비 상태 확인 미들웨어
+app.use((req, res, next) => {
+    if (isCacheReady) {
+        return next(); // 캐시가 준비되었으면 다음 라우트로 진행
+    }
+    
+    // /api/로 시작하는 요청에는 JSON으로 응답
+    if (req.originalUrl.startsWith('/api/')) {
+        return res.status(503).json({ error: '서버가 시작 중입니다. 잠시 후 다시 시도해주세요.' });
+    }
+    
+    // 그 외의 모든 요청에는 HTML 메시지를 보냄
+    res.status(503).send('<h1>서버 준비 중...</h1><p>데이터를 로딩하고 있습니다. 잠시 후 새로고침 해주세요.</p>');
+});
 
 /**
  * 사용자 입력(title)을 기반으로 안전한 파일 경로를 생성합니다.
@@ -182,9 +198,12 @@ async function refreshSongCache() {
             }
         });
         songCache = (await Promise.all(songPromises)).filter(song => song !== null); // null이 아닌 것만 필터링
-        console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했습니다.`);
+        isCacheReady = true; // 캐시 로딩 완료, 이제 서버는 모든 요청을 처리할 준비가 됨
+        console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했으며, 서버가 정상적으로 요청을 처리할 준비를 마쳤습니다.`);
     } catch (err) {
-        console.error('노래 데이터 로드 중 오류 발생:', err);
+        console.error('노래 데이터 로드 중 심각한 오류 발생:', err);
+        // 캐시 로딩은 핵심 기능이므로, 실패 시 프로세스를 종료하여 pm2 등이 재시작하도록 유도
+        process.exit(1);
     }
 }
 
@@ -962,11 +981,13 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 3000;
 
-async function startServer() {
+function startServer() {
     // 서버가 요청을 받기 전에 캐시를 먼저 로드합니다.
-    await refreshSongCache();
     app.listen(PORT, () => {
         console.log(`서버 시작: http://localhost:${PORT}`);
+        console.log('백그라운드에서 노래 캐시 로딩을 시작합니다...');
+        // await 없이 호출하여, 서버 시작을 지연시키지 않고 백그라운드에서 캐시를 로딩합니다.
+        refreshSongCache();
     });
 }
 

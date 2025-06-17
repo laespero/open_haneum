@@ -507,7 +507,9 @@
             font-size: 16px !important;
             margin: 12px;
         }
-    
+        #printer.no-padding{
+            padding: 0 !important;
+        }
     </style>
 </head>
 <!-- <body class="bg-white-100 text-gray-800 font-sans leading-relaxed">
@@ -992,13 +994,12 @@ ${a}
             if(isHeader){
                 if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "none";
                 if(document.querySelector("header")) document.querySelector("header").style.display = "none";
-                //document.querySelector("#printer").style.padding = "0";
-                
+                if(document.querySelector("#printer"))document.querySelector("#printer").classList.add("no-padding");                
             }
             else{
                 if(document.querySelector(".song-info-header")) document.querySelector(".song-info-header").style.display = "block";
                 if(document.querySelector("header")) document.querySelector("header").style.display = "block";
-                //document.querySelector("#printer").style = "";
+                if(document.querySelector("#printer")) document.querySelector("#printer").classList.remove("no-padding");
             }
         }
 
