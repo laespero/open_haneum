@@ -1230,9 +1230,7 @@ ${a}
         function updateDataFromServer() {
             const urlParams = new URLSearchParams(window.location.search);
             const myParam = urlParams.get('name');
-            //let server_url = 'http://localhost:3000/api/songs/love_frequency/translated'; 
-            //if(myParam)server_url = `http://localhost:3000/api/songs/${myParam}/translated`;
-            // let server_url = `/api/songs/<%= song.name %>/translated`;
+            
             let server_url = `/<%= song.name %>.json`;
             let vid = `<%= song.vid %>`;
             window.lang = `<%= lang %>`;
@@ -1248,30 +1246,10 @@ ${a}
                     return response.json();
                 })
                 .then(o => {
-                    //console.log(o.translatedLines);
-                    //console.log(o.translatedLines.filter(x=>x.G0==''));
                     rubyData = o.rubyData;
                     refineData(o);
                     data = o.translatedLines;
                     let isJP = data.map(x=>x.T0).join('').match(/[ぁ-ゔ]/);
-                    const strData = JSON.stringify(o.translatedLines);
-                    const foundIdx = strData.indexOf("풋");
-
-                    if(foundIdx>=0){
-                        console.log(strData.substring(foundIdx-100, foundIdx+100));
-                    }
-
-                    // data.forEach(x=>{
-                    //     const fail = x.LI.find(y=>!(y.T1&&y.K1&&y.I1&&y.R1&&y.E1&&y.T2&&y.K2&&y.I2&&y.R2&&y.XE&&y.XK&&y.XI&&y.XR));
-                    //     if(fail){
-                    //         console.log(fail);
-                    //     }else{
-                    //         if(isJP){
-                    //             x.R0 = replaceJP(x.R0);
-                    //             x.LI.forEach(y => {y.R1 = replaceJP(y.R1); y.R2 = replaceJP(y.R2); y.XR = replaceJP(y.XR);});                                
-                    //         }
-                    //     }
-                    // });
 
                     shortCutData = JSON.parse(JSON.stringify(data)).flatMap(x=> chunkArrayRebalanceShortLast(x.LI,4).map(li=>Object.assign(JSON.parse(JSON.stringify(x)), {LI : li})));
                     function compressArray(arr) {
