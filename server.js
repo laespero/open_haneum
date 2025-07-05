@@ -210,6 +210,12 @@ async function refreshSongCache() {
 // 서버 시작 시 캐시 로드, listen 전에 완료되도록 수정합니다.
 // refreshSongCache(); // 기존 방식
 
+// 공백 정규화 함수 - 전각 공백, 반각 공백 등을 모두 제거
+function normalizeSpaces(text) {
+    if (!text) return '';
+    return text.replace(/[\s\u3000\u00A0\u2000-\u200A\u2028\u2029\u202F\u205F]/g, '');
+}
+
 /**
  * 쿼리와 태그를 기반으로 노래를 검색하고 정렬하는 함수.
  * @param {string} searchQuery - 검색어.
@@ -218,6 +224,7 @@ async function refreshSongCache() {
  */
 function searchSongs(searchQuery, excludeTags = []) {
     const lowerCaseQuery = searchQuery.toLowerCase();
+    const normalizedQuery = normalizeSpaces(lowerCaseQuery);
 
     // 1. 태그를 기준으로 노래 필터링
     let filteredByTag = songCache;
@@ -238,15 +245,17 @@ function searchSongs(searchQuery, excludeTags = []) {
     if (searchQuery) {
         searchedSongs = filteredByTag.filter(song => {
             const artistMatch = typeof song.artist === 'object' 
-                ? song.artist.ori_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.kor_name?.toLowerCase().includes(lowerCaseQuery) || song.artist.eng_name?.toLowerCase().includes(lowerCaseQuery)
-                : song.artist?.toLowerCase().includes(lowerCaseQuery);
+                ? normalizeSpaces(song.artist.ori_name?.toLowerCase() || '').includes(normalizedQuery) || 
+                  normalizeSpaces(song.artist.kor_name?.toLowerCase() || '').includes(normalizedQuery) || 
+                  normalizeSpaces(song.artist.eng_name?.toLowerCase() || '').includes(normalizedQuery)
+                : normalizeSpaces(song.artist?.toLowerCase() || '').includes(normalizedQuery);
 
-            return song.name?.toLowerCase().includes(lowerCaseQuery) ||
-                song.ori_name?.toLowerCase().includes(lowerCaseQuery) ||
-                song.kor_name?.toLowerCase().includes(lowerCaseQuery) ||
-                song.eng_name?.toLowerCase().includes(lowerCaseQuery) ||
+            return normalizeSpaces(song.name?.toLowerCase() || '').includes(normalizedQuery) ||
+                normalizeSpaces(song.ori_name?.toLowerCase() || '').includes(normalizedQuery) ||
+                normalizeSpaces(song.kor_name?.toLowerCase() || '').includes(normalizedQuery) ||
+                normalizeSpaces(song.eng_name?.toLowerCase() || '').includes(normalizedQuery) ||
                 artistMatch ||
-                (song.tags && song.tags.some(tag => tag.toLowerCase().includes(lowerCaseQuery)));
+                (song.tags && song.tags.some(tag => normalizeSpaces(tag.toLowerCase()).includes(normalizedQuery)));
         });
     } else {
         searchedSongs = filteredByTag;

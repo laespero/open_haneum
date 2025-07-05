@@ -1,5 +1,1190 @@
 [
   {
+    "name": "Fujii_Kaze_Youth_Sickness",
+    "ori_name": "青春病",
+    "kor_name": "청춘병",
+    "eng_name": "Youth Sickness",
+    "artist": {
+      "ori_name": "藤井 風",
+      "kor_name": "후지이 카제",
+      "eng_name": "Fujii Kaze"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-07-05T15:12:19.136Z",
+    "filename": "Fujii_Kaze_Youth_Sickness.json"
+  },
+  {
+    "name": "Green_Apple_A_priori",
+    "ori_name": "ア・プリオリ",
+    "kor_name": "아 프리오리",
+    "eng_name": "A Priori",
+    "artist": {
+      "ori_name": "Mrs. GREEN APPLE",
+      "kor_name": "미세스 그린 애플",
+      "eng_name": "Mrs. GREEN APPLE"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-07-05T15:08:25.150Z",
+    "filename": "Green_Apple_A_priori.json"
+  },
+  {
+    "name": "Kenshi_Yonezu_Spinning_Globe",
+    "ori_name": "地球儀",
+    "kor_name": "지구본",
+    "eng_name": "Globe",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "Kenshi Yonezu"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-07-03T13:27:38.281Z",
+    "filename": "Kenshi_Yonezu_Spinning_Globe.json"
+  },
+  {
+    "name": "Permission_to_dance",
+    "ori_name": "Permission to dance",
+    "kor_name": "Permission to dance",
+    "eng_name": "Permission to dance",
+    "artist": {
+      "ori_name": "Bts",
+      "kor_name": "방탄소년단",
+      "eng_name": "Bts"
+    },
+    "tags": [
+      "영어"
+    ],
+    "createdAt": "2025-07-03T04:30:17.065Z",
+    "filename": "Permission_to_dance.json"
+  },
+  {
+    "name": "Higedan_Same_Blue",
+    "ori_name": "Same Blue",
+    "kor_name": "세임블루",
+    "eng_name": "Same Blue",
+    "artist": {
+      "ori_name": "Official髭男dism",
+      "kor_name": "오피셜히게단디즘",
+      "eng_name": "Official Hige Dandism"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-07-02T08:30:09.770Z",
+    "filename": "Higedan_Same_Blue.json"
+  },
+  {
+    "name": "Butter_Fly_Digimon",
+    "ori_name": "Butter-Fly",
+    "kor_name": "버터플라이",
+    "eng_name": "Butter-Fly",
+    "artist": {
+      "ori_name": "和田光司",
+      "kor_name": "와다 코우지",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-07-02T08:27:05.955Z",
+    "filename": "Butter_Fly_Digimon.json"
+  },
+  {
+    "name": "Take_Me_Home_Country_Roads",
+    "ori_name": "Take Me Home, Country Roads",
+    "kor_name": "고향으로 데려다 줘요, 컨트리 로드",
+    "eng_name": "Take Me Home, Country Roads",
+    "artist": {
+      "ori_name": "John Denver",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
+    "createdAt": "2025-07-02T06:48:19.636Z",
+    "filename": "Take_Me_Home_Country_Roads.json"
+  },
+  {
+    "name": "odoriko_vaundy",
+    "ori_name": "踊り子",
+    "kor_name": "무희",
+    "eng_name": "odoriko",
+    "artist": {
+      "ori_name": "vaundy",
+      "kor_name": "바운디",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-07-01T16:52:39.176Z",
+    "filename": "odoriko_vaundy.json"
+  },
+  {
+    "name": "Lauv_Steal_The_Show",
+    "ori_name": "Steal The Show",
+    "kor_name": "스틸 더 쇼",
+    "eng_name": "Steal The Show",
+    "artist": {
+      "ori_name": "Lauv",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
+    "createdAt": "2025-06-28T10:48:10.464Z",
+    "filename": "Lauv_Steal_The_Show.json"
+  },
+  {
+    "name": "Ed_Sheeran_Celestial",
+    "ori_name": "Celestial",
+    "kor_name": "천상의",
+    "eng_name": "Celestial",
+    "artist": {
+      "ori_name": "Ed Sheeran",
+      "kor_name": "에드 시런",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
+    "createdAt": "2025-06-28T10:46:53.597Z",
+    "filename": "Ed_Sheeran_Celestial.json"
+  },
+  {
+    "name": "asmi_Way_It_Goes",
+    "ori_name": "そんなもんね",
+    "kor_name": "그런 거지",
+    "eng_name": "That's The Way It Goes",
+    "artist": {
+      "ori_name": "asmi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-28T08:02:26.690Z",
+    "filename": "asmi_Way_It_Goes.json"
+  },
+  {
+    "name": "Aimyon_Naked_Heart",
+    "ori_name": "裸の心",
+    "kor_name": "벌거벗은 마음",
+    "eng_name": "Naked Heart",
+    "artist": {
+      "ori_name": "あいみょん",
+      "kor_name": "아이묭",
+      "eng_name": "Aimyon"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-28T07:59:20.984Z",
+    "filename": "Aimyon_Naked_Heart.json"
+  },
+  {
+    "name": "Frederic_Junky",
+    "ori_name": "ジャンキー",
+    "kor_name": "정키",
+    "eng_name": "Junky",
+    "artist": {
+      "ori_name": "フレデリック",
+      "kor_name": "프레데릭",
+      "eng_name": "Frederic"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-28T05:14:19.149Z",
+    "filename": "Frederic_Junky.json"
+  },
+  {
+    "name": "Rem_DOLLCHESTRA",
+    "ori_name": "レム",
+    "kor_name": "렘",
+    "eng_name": "Rem",
+    "artist": {
+      "ori_name": "DOLLCHESTRA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "러브 라이브"
+    ],
+    "createdAt": "2025-06-28T04:55:11.569Z",
+    "filename": "Rem_DOLLCHESTRA.json"
+  },
+  {
+    "name": "Cerise_Bouquet_Special_Thanks",
+    "ori_name": "Special Thanks",
+    "kor_name": "특별한 감사",
+    "eng_name": "Special Thanks",
+    "artist": {
+      "ori_name": "スリーズブーケ",
+      "kor_name": "",
+      "eng_name": "Cerise Bouquet"
+    },
+    "tags": [
+      "일본어",
+      "러브 라이브"
+    ],
+    "createdAt": "2025-06-28T04:28:06.195Z",
+    "filename": "Cerise_Bouquet_Special_Thanks.json"
+  },
+  {
+    "name": "DaiCE_FAKE_ME_OUT",
+    "ori_name": "FAKE ME FAKE ME OUT",
+    "kor_name": "FAKE ME FAKE ME OUT",
+    "eng_name": "FAKE ME FAKE ME OUT",
+    "artist": {
+      "ori_name": "ダイス",
+      "kor_name": "다이스",
+      "eng_name": "Da-iCE"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-28T04:21:22.860Z",
+    "filename": "DaiCE_FAKE_ME_OUT.json"
+  },
+  {
+    "name": "Kenshi_Yonezu_Travelers_Lantern",
+    "ori_name": "旅人電燈",
+    "kor_name": "나그네 전등",
+    "eng_name": "Traveler's Lantern",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "Kenshi Yonezu"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T10:26:28.722Z",
+    "filename": "Kenshi_Yonezu_Travelers_Lantern.json"
+  },
+  {
+    "name": "Kenshi_Yonezu_Neon_Sign",
+    "ori_name": "Neon Sign",
+    "kor_name": "네온사인",
+    "eng_name": "Neon Sign",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "Kenshi Yonezu"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T10:23:32.924Z",
+    "filename": "Kenshi_Yonezu_Neon_Sign.json"
+  },
+  {
+    "name": "Kenshi_Yonezu_Unbelievers",
+    "ori_name": "アンビリーバーズ",
+    "kor_name": "언빌리버즈",
+    "eng_name": "Unbelievers",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "Kenshi Yonezu"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T10:20:40.372Z",
+    "filename": "Kenshi_Yonezu_Unbelievers.json"
+  },
+  {
+    "name": "The_reason_I_wanted_to_die",
+    "ori_name": "僕が死のうと思ったのは",
+    "kor_name": "내가 죽으려고 생각한 것은",
+    "eng_name": "Boku Ga Shinou To Omottanowa",
+    "artist": {
+      "ori_name": "中島美嘉",
+      "kor_name": "나카시마 미카",
+      "eng_name": "Mika Nakashima"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T06:55:58.665Z",
+    "filename": "The_reason_I_wanted_to_die.json"
+  },
+  {
+    "name": "HigeDan_TATTOO",
+    "ori_name": "TATTOO",
+    "kor_name": "타투",
+    "eng_name": "Tattoo",
+    "artist": {
+      "ori_name": "Official髭男dism",
+      "kor_name": "오피셜히게단디즘",
+      "eng_name": "Official Hige Dandism"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T06:50:02.064Z",
+    "filename": "HigeDan_TATTOO.json"
+  },
+  {
+    "name": "RAIN_SEKAI_NO_OWARI",
+    "ori_name": "RAIN",
+    "kor_name": "RAIN",
+    "eng_name": "RAIN",
+    "artist": {
+      "ori_name": "世界の終わり",
+      "kor_name": "세카이노 오와리",
+      "eng_name": "SEKAI NO OWARI"
+    },
+    "tags": [
+      "일본어",
+      "애니메이션"
+    ],
+    "createdAt": "2025-06-27T05:45:13.165Z",
+    "filename": "RAIN_SEKAI_NO_OWARI.json"
+  },
+  {
+    "name": "The_Cruel_Angels_Thesis",
+    "ori_name": "残酷な天使のテーゼ",
+    "kor_name": "잔혹한 천사의 테제",
+    "eng_name": "The Cruel Angel's Thesis",
+    "artist": {
+      "ori_name": "高橋洋子",
+      "kor_name": "타카하시 요코",
+      "eng_name": "Yoko Takahashi"
+    },
+    "tags": [
+      "일본어",
+      "에반게리온"
+    ],
+    "createdAt": "2025-06-27T04:16:05.837Z",
+    "filename": "The_Cruel_Angels_Thesis.json"
+  },
+  {
+    "name": "GFRIEND_Falling_Light",
+    "ori_name": "天使の梯子",
+    "kor_name": "Fallin' Light",
+    "eng_name": "Fallin' Light",
+    "artist": {
+      "ori_name": "여자친구",
+      "kor_name": "여자친구",
+      "eng_name": "GFRIEND"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T04:12:41.247Z",
+    "filename": "GFRIEND_Falling_Light.json"
+  },
+  {
+    "name": "GFRIEND_Memoria",
+    "ori_name": "Memoria",
+    "kor_name": "메모리아",
+    "eng_name": "Memory",
+    "artist": {
+      "ori_name": "여자친구",
+      "kor_name": "여자친구",
+      "eng_name": "GFRIEND"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T04:02:28.037Z",
+    "filename": "GFRIEND_Memoria.json"
+  },
+  {
+    "name": "Azari_DNA",
+    "ori_name": "D/N/A",
+    "kor_name": "D/N/A",
+    "eng_name": "D/N/A",
+    "artist": {
+      "ori_name": "Azari",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T03:51:43.654Z",
+    "filename": "Azari_DNA.json"
+  },
+  {
+    "name": "Aimyon_You_Dont_Listen_Rock",
+    "ori_name": "君はロックを聴かない",
+    "kor_name": "너는 록을 듣지 않아",
+    "eng_name": "You Don't Listen to Rock",
+    "artist": {
+      "ori_name": "あいみょん",
+      "kor_name": "아이묭",
+      "eng_name": "Aimyon"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T03:48:36.679Z",
+    "filename": "Aimyon_You_Dont_Listen_Rock.json"
+  },
+  {
+    "name": "GIMS_You_Dont_See_It",
+    "ori_name": "Tu ne le vois pas",
+    "kor_name": "너는 그걸 보지 못해",
+    "eng_name": "You Don't See It",
+    "artist": {
+      "ori_name": "GIMS",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어"
+    ],
+    "createdAt": "2025-06-27T03:25:58.595Z",
+    "filename": "GIMS_You_Dont_See_It.json"
+  },
+  {
+    "name": "GIMS_Broken",
+    "ori_name": "Brisé",
+    "kor_name": "부서진",
+    "eng_name": "Broken",
+    "artist": {
+      "ori_name": "GIMS",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어"
+    ],
+    "createdAt": "2025-06-27T03:21:19.726Z",
+    "filename": "GIMS_Broken.json"
+  },
+  {
+    "name": "Wind_Flower_Snow_Moon",
+    "ori_name": "風花雪月",
+    "kor_name": "풍화설월",
+    "eng_name": "Wind, Flower, Snow, and Moon",
+    "artist": {
+      "ori_name": "紫堂宿、林斜陽",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
+    "createdAt": "2025-06-27T03:19:52.736Z",
+    "filename": "Wind_Flower_Snow_Moon.json"
+  },
+  {
+    "name": "Dateiga_sorrow_love",
+    "ori_name": "「哀、愛さ」",
+    "kor_name": "슬픔, 사랑아",
+    "eng_name": "Sorrow, My Love",
+    "artist": {
+      "ori_name": "だてぃが",
+      "kor_name": "",
+      "eng_name": "Dateiga"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T02:27:17.684Z",
+    "filename": "Dateiga_sorrow_love.json"
+  },
+  {
+    "name": "Chicken_Rice",
+    "ori_name": "チキンライス",
+    "kor_name": "치킨라이스",
+    "eng_name": "Chicken Rice",
+    "artist": {
+      "ori_name": "浜田雅功と槇原敬之",
+      "kor_name": "하마다 마사코, 마키하라 케이유키",
+      "eng_name": "Masatoshi Hamada and Noriyuki Makihara"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T00:57:40.927Z",
+    "filename": "Chicken_Rice.json"
+  },
+  {
+    "name": "Reira_Miso_Soup",
+    "ori_name": "味噌汁とバター",
+    "kor_name": "미소시루와 버터",
+    "eng_name": "Miso Soup and Butter",
+    "artist": {
+      "ori_name": "汐れいら",
+      "kor_name": "우시오 레이라",
+      "eng_name": "Ushio Reira"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T00:53:23.741Z",
+    "filename": "Reira_Miso_Soup.json"
+  },
+  {
+    "name": "DISH_holding_wrinkled_clouds",
+    "ori_name": "しわくちゃな雲を抱いて",
+    "kor_name": "구겨진 구름을 안고",
+    "eng_name": "Holding Wrinkled Clouds",
+    "artist": {
+      "ori_name": "DISH//",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T00:40:04.260Z",
+    "filename": "DISH_holding_wrinkled_clouds.json"
+  },
+  {
+    "name": "Kohmi_Hirose_promise",
+    "ori_name": "promise",
+    "kor_name": "약속",
+    "eng_name": "Promise",
+    "artist": {
+      "ori_name": "広瀬 香美",
+      "kor_name": "히로세 코미",
+      "eng_name": "Kohmi Hirose"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-27T00:27:50.501Z",
+    "filename": "Kohmi_Hirose_promise.json"
+  },
+  {
+    "name": "Bullets_Konaco-Kobashiri",
+    "ori_name": "Bullets",
+    "kor_name": "총알",
+    "eng_name": "Bullets",
+    "artist": {
+      "ori_name": "konoco × こばしり。",
+      "kor_name": "코노코, 코바시리",
+      "eng_name": "konoco, Kobashiri"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-26T23:26:15.393Z",
+    "filename": "Bullets_Konaco-Kobashiri.json"
+  },
+  {
+    "name": "Love_you_like_that",
+    "ori_name": "love you like that",
+    "kor_name": "너처럼 사랑해",
+    "eng_name": "Love You Like That",
+    "artist": {
+      "ori_name": "sam kim",
+      "kor_name": "샘킴",
+      "eng_name": "sam kim"
+    },
+    "tags": [
+      "영어",
+      "ost"
+    ],
+    "createdAt": "2025-06-26T05:51:38.717Z",
+    "filename": "Love_you_like_that.json"
+  },
+  {
+    "name": "We_will_Be_Aliright",
+    "ori_name": "大丈夫",
+    "kor_name": "괜찮아",
+    "eng_name": "We'll Be Alright",
+    "artist": {
+      "ori_name": "RADWIMPS",
+      "kor_name": "래드윔프스",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-25T15:04:12.463Z",
+    "filename": "We_will_Be_Aliright.json"
+  },
+  {
+    "name": "Returns",
+    "ori_name": "Returns",
+    "kor_name": "리턴즈",
+    "eng_name": "Returns",
+    "artist": {
+      "ori_name": "Poppin'Party",
+      "kor_name": "포핀파티",
+      "eng_name": "Poppin'Party"
+    },
+    "tags": [
+      "일본어",
+      "록"
+    ],
+    "createdAt": "2025-06-25T13:50:24.473Z",
+    "filename": "Returns.json"
+  },
+  {
+    "name": "The_White_Lounge-Live_Mrs_GREEN_APPLE",
+    "ori_name": "The White lounge - Live",
+    "kor_name": "화이트 라운지 - 라이브",
+    "eng_name": "The White Lounge - Live",
+    "artist": {
+      "ori_name": "Mrs. GREEN APPLE",
+      "kor_name": "미세스 그린 애플",
+      "eng_name": "Mrs. GREEN APPLE"
+    },
+    "tags": [
+      "일본어",
+      "더 화이트 라운지"
+    ],
+    "createdAt": "2025-06-25T00:01:00.485Z",
+    "filename": "The_White_Lounge-Live_Mrs_GREEN_APPLE.json"
+  },
+  {
+    "name": "Sunday_Sun",
+    "ori_name": "日曜日の太陽",
+    "kor_name": "일요일의 태양",
+    "eng_name": "Sunday's Sun",
+    "artist": {
+      "ori_name": "THE NEUTRAL",
+      "kor_name": "더 뉴트럴",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-22T14:38:40.411Z",
+    "filename": "Sunday_Sun.json"
+  },
+  {
+    "name": "Heaven_Mrs_GREEN_APPLE",
+    "ori_name": "天国",
+    "kor_name": "천국",
+    "eng_name": "Heaven",
+    "artist": {
+      "ori_name": "Mrs. GREEN APPLE",
+      "kor_name": "미세스 그린 애플",
+      "eng_name": "Mrs. GREEN APPLE"
+    },
+    "tags": [
+      "일본어",
+      "#진상을 말씀드리겠습니다"
+    ],
+    "createdAt": "2025-06-20T12:22:25.475Z",
+    "filename": "Heaven_Mrs_GREEN_APPLE.json"
+  },
+  {
+    "name": "H7EdMiImgBk",
+    "ori_name": "‘Til It’s over",
+    "kor_name": "‘Til It’s over",
+    "eng_name": "‘Til It’s over",
+    "artist": {
+      "ori_name": "Anderson Paak",
+      "kor_name": "앤더슨 팩",
+      "eng_name": "Anderson Paak"
+    },
+    "tags": [
+      "영어"
+    ],
+    "createdAt": "2025-06-20T12:14:52.883Z",
+    "filename": "H7EdMiImgBk.json"
+  },
+  {
+    "name": "zutomayo_cream",
+    "ori_name": "クリームで会いにいけますか",
+    "kor_name": "크림으로 만나러 갈 수 있나요",
+    "eng_name": "CREAM",
+    "artist": {
+      "ori_name": "ずっと真夜中でいいのに。",
+      "kor_name": "계속 한밤중이면 좋을 텐데",
+      "eng_name": "ZUTOMAYO"
+    },
+    "tags": [
+      "일본어",
+      "즛토마요"
+    ],
+    "createdAt": "2025-06-18T22:12:13.471Z",
+    "filename": "zutomayo_cream.json"
+  },
+  {
+    "name": "Yume_sakanaction_friendly",
+    "ori_name": "フレンドリー",
+    "kor_name": "프렌들리",
+    "eng_name": "Friendly",
+    "artist": {
+      "ori_name": "サカナクション",
+      "kor_name": "사카낙션",
+      "eng_name": "Sakanaction"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-17T04:51:56.335Z",
+    "filename": "Yume_sakanaction_friendly.json"
+  },
+  {
+    "name": "NecryTalkie_At_Summer_End",
+    "ori_name": "夏の暮れに",
+    "kor_name": "여름의 끝에",
+    "eng_name": "At summer's end",
+    "artist": {
+      "ori_name": "ネクライトーキー",
+      "kor_name": "네크라이토키",
+      "eng_name": "NecryTalkie"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-17T01:11:32.765Z",
+    "filename": "NecryTalkie_At_Summer_End.json"
+  },
+  {
+    "name": "Kakurenbo_PLAVE",
+    "ori_name": "かくれんぼ",
+    "kor_name": "숨바꼭질",
+    "eng_name": "Hide-and-Seek",
+    "artist": {
+      "ori_name": "PLAVE",
+      "kor_name": "플레이브",
+      "eng_name": "PLAVE"
+    },
+    "tags": [
+      "일본어",
+      "록",
+      "J-ROCK"
+    ],
+    "createdAt": "2025-06-16T05:34:54.197Z",
+    "filename": "Kakurenbo_PLAVE.json"
+  },
+  {
+    "name": "Haneum_Eine_Kleine",
+    "ori_name": "アイネクライネ",
+    "kor_name": "아이네 클라이네",
+    "eng_name": "Eine Kleine",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "Kenshi Yonezu"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-15T00:50:47.233Z",
+    "filename": "Haneum_Eine_Kleine.json"
+  },
+  {
+    "name": "Haneum_REmi_18dB",
+    "ori_name": "18dB",
+    "kor_name": "18dB",
+    "eng_name": "18dB",
+    "artist": {
+      "ori_name": "吴子健",
+      "kor_name": "",
+      "eng_name": "REmi"
+    },
+    "tags": [
+      "중국어",
+      "小蓝背心"
+    ],
+    "createdAt": "2025-06-14T16:18:48.915Z",
+    "filename": "Haneum_REmi_18dB.json"
+  },
+  {
+    "name": "Haneum_Peace_Sign",
+    "ori_name": "ピースサイン",
+    "kor_name": "피스 사인",
+    "eng_name": "Peace Sign",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "Kenshi Yonezu"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-14T05:47:45.374Z",
+    "filename": "Haneum_Peace_Sign.json"
+  },
+  {
+    "name": "Haneum_Pain_Give_Form",
+    "ori_name": "形",
+    "kor_name": "형태",
+    "eng_name": "Pain Give Form",
+    "artist": {
+      "ori_name": "ずっと真夜中でいいのに。",
+      "kor_name": "계속 한밤중이면 좋을 텐데",
+      "eng_name": "ZUTOMAYO"
+    },
+    "tags": [
+      "일본어",
+      "즛토마요"
+    ],
+    "createdAt": "2025-06-13T23:50:34.952Z",
+    "filename": "Haneum_Pain_Give_Form.json"
+  },
+  {
+    "name": "Haneum_Spr_Song_Yaxuan",
+    "ori_name": "spr.",
+    "kor_name": "spr.",
+    "eng_name": "spr.",
+    "artist": {
+      "ori_name": "宋亚轩",
+      "kor_name": "송야쉔",
+      "eng_name": "Song Yaxuan"
+    },
+    "tags": [
+      "중국어"
+    ],
+    "createdAt": "2025-06-13T22:45:17.661Z",
+    "filename": "Haneum_Spr_Song_Yaxuan.json"
+  },
+  {
+    "name": "GoodbyeSeeYouAgainSomeday",
+    "ori_name": "さよーならまたいつか！",
+    "kor_name": "안녕, 또 언젠가!",
+    "eng_name": "Goodbye, See You Again Someday!",
+    "artist": {
+      "ori_name": "米津玄師",
+      "kor_name": "요네즈 켄시",
+      "eng_name": "KENSHI YONEZU"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-13T16:11:50.704Z",
+    "filename": "GoodbyeSeeYouAgainSomeday.json"
+  },
+  {
+    "name": "miss_you_3000",
+    "ori_name": "想見你想見你想見你",
+    "kor_name": "보고 싶어, 보고 싶어, 보고 싶어",
+    "eng_name": "Miss You 3000",
+    "artist": {
+      "ori_name": "八三夭",
+      "kor_name": "팔삼요",
+      "eng_name": "831"
+    },
+    "tags": [
+      "중국어",
+      "상견니"
+    ],
+    "createdAt": "2025-06-12T21:19:49.567Z",
+    "filename": "miss_you_3000.json"
+  },
+  {
+    "name": "muque_carnival",
+    "ori_name": "カーニバル",
+    "kor_name": "카니발",
+    "eng_name": "Carnival",
+    "artist": {
+      "ori_name": "muque",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-12T17:42:51.632Z",
+    "filename": "muque_carnival.json"
+  },
+  {
+    "name": "ed_sheeran_sapphire",
+    "ori_name": "Sapphire",
+    "kor_name": "사파이어",
+    "eng_name": "Sapphire",
+    "artist": {
+      "ori_name": "Ed Sheeran",
+      "kor_name": "에드 시런",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어",
+      "펀자브어"
+    ],
+    "createdAt": "2025-06-12T13:45:58.259Z",
+    "filename": "ed_sheeran_sapphire.json"
+  },
+  {
+    "name": "gims_contact",
+    "ori_name": "CONTACT",
+    "kor_name": "콘택트",
+    "eng_name": "Contact",
+    "artist": {
+      "ori_name": "GIMS",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어"
+    ],
+    "createdAt": "2025-06-12T13:37:48.668Z",
+    "filename": "gims_contact.json"
+  },
+  {
+    "name": "Be_A_Flower",
+    "ori_name": "花になって",
+    "kor_name": "꽃이 되어",
+    "eng_name": "Be a flower",
+    "artist": {
+      "ori_name": "緑黄色社会",
+      "kor_name": "녹황색사회",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-11T16:32:45.645Z",
+    "filename": "Be_A_Flower.json"
+  },
+  {
+    "name": "That_Classmate",
+    "ori_name": "ウワサのあの子",
+    "kor_name": "소문의 그 아이",
+    "eng_name": "That Classmate",
+    "artist": {
+      "ori_name": "紫 今",
+      "kor_name": "무라사키 이마",
+      "eng_name": "Mulasaki Ima"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-11T04:43:28.846Z",
+    "filename": "That_Classmate.json"
+  },
+  {
+    "name": "shuhasu",
+    "ori_name": "周波数",
+    "kor_name": "주파수",
+    "eng_name": "Frequency",
+    "artist": {
+      "ori_name": "世界の終わり",
+      "kor_name": "세카이노 오와리",
+      "eng_name": " SEKAI NO OWARI"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-10T05:24:50.234Z",
+    "filename": "shuhasu.json"
+  },
+  {
+    "name": "Anger_Mark",
+    "ori_name": "怒りマーク",
+    "kor_name": "분노 마크",
+    "eng_name": "Anger Mark",
+    "artist": {
+      "ori_name": "超☆ヤンキース",
+      "kor_name": "초☆양키스",
+      "eng_name": "SUPER YANKEES"
+    },
+    "tags": [
+      "일본어",
+      "이라이라"
+    ],
+    "createdAt": "2025-06-09T16:49:21.341Z",
+    "filename": "Anger_Mark.json"
+  },
+  {
+    "name": "Turquoise",
+    "ori_name": "ターコイズ",
+    "kor_name": "터키석",
+    "eng_name": "Turquoise",
+    "artist": {
+      "ori_name": "世界の終わり",
+      "kor_name": "세카이노 오와리",
+      "eng_name": "SEKAI NO OWARI"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-09T10:18:09.427Z",
+    "filename": "Turquoise.json"
+  },
+  {
+    "name": "Maboroshi_No_Inochi",
+    "ori_name": "幻の命",
+    "kor_name": "환상의 생명",
+    "eng_name": "Phantom Life",
+    "artist": {
+      "ori_name": "世界の終わり",
+      "kor_name": "세카이노 오와리",
+      "eng_name": "SEKAI NO OWARI"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-09T08:29:03.183Z",
+    "filename": "Maboroshi_No_Inochi.json"
+  },
+  {
+    "name": "example_Acacia",
+    "ori_name": "Acacia",
+    "kor_name": "아카시아",
+    "eng_name": "Acacia",
+    "artist": {
+      "ori_name": "Bump of Chicken",
+      "kor_name": "범프 오브 치킨",
+      "eng_name": "Bump of Chicken"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-09T07:38:59.338Z",
+    "filename": "example_Acacia.json"
+  },
+  {
+    "name": "example_Your_World",
+    "ori_name": "君中心に揺れる世界は",
+    "kor_name": "너를 중심으로 흔들리는 세상은",
+    "eng_name": "The World Revolving Around You",
+    "artist": {
+      "ori_name": "マルシィ",
+      "kor_name": "Marcy",
+      "eng_name": "Marcy"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-08T21:30:51.711Z",
+    "filename": "example_Your_World.json"
+  },
+  {
+    "name": "want_to_be_your_lover",
+    "ori_name": "貴方の恋人になりたい",
+    "kor_name": "당신의 연인이 되고 싶어",
+    "eng_name": "I Want to Be Your Lover",
+    "artist": {
+      "ori_name": "チョーキューメイ",
+      "kor_name": "초큐메이",
+      "eng_name": "ChoQMay"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-08T15:24:26.159Z",
+    "filename": "want_to_be_your_lover.json"
+  },
+  {
+    "name": "example_PrinceShotoku",
+    "ori_name": "聖徳太子",
+    "kor_name": "쇼토쿠 태자",
+    "eng_name": "Prince Shotoku",
+    "artist": {
+      "ori_name": "水曜日のカンパネラ",
+      "kor_name": "수요일의 캄파넬라",
+      "eng_name": "Wednesday Campanella"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-08T10:28:07.012Z",
+    "filename": "example_PrinceShotoku.json"
+  },
+  {
+    "name": "Vaundy_Fukakouryoku",
+    "ori_name": "不可幸力",
+    "kor_name": "불가행력",
+    "eng_name": "Fukakouryoku",
+    "artist": {
+      "ori_name": "Vaundy",
+      "kor_name": "바운디",
+      "eng_name": "Vaundy"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-08T00:32:28.015Z",
+    "filename": "Vaundy_Fukakouryoku.json"
+  },
+  {
+    "name": "example_Akaneko",
+    "ori_name": "赤猫",
+    "kor_name": "붉은 고양이",
+    "eng_name": "Red Cat",
+    "artist": {
+      "ori_name": "水曜日のカンパネラ",
+      "kor_name": "수요일의 캄파넬라",
+      "eng_name": "Wednesday Campanella"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-07T22:29:24.762Z",
+    "filename": "example_Akaneko.json"
+  },
+  {
+    "name": "LeinaMedicine",
+    "ori_name": "medicine",
+    "kor_name": "메디슨",
+    "eng_name": "Medicine",
+    "artist": {
+      "ori_name": "Leina",
+      "kor_name": "레이나",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-07T21:40:19.084Z",
+    "filename": "LeinaMedicine.json"
+  },
+  {
+    "name": "example_Girl_in_the_mirror",
+    "ori_name": "Girl in the mirror",
+    "kor_name": "거울 속의 소녀",
+    "eng_name": "Girl in the mirror",
+    "artist": {
+      "ori_name": "chilldspot",
+      "kor_name": "칠드스팟",
+      "eng_name": "chilldspot"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-07T20:49:24.542Z",
+    "filename": "example_Girl_in_the_mirror.json"
+  },
+  {
+    "name": "LeinaUtatane",
+    "ori_name": "うたたね",
+    "kor_name": "선잠",
+    "eng_name": "utatane",
+    "artist": {
+      "ori_name": "Leina",
+      "kor_name": "레이나",
+      "eng_name": "Leina"
+    },
+    "tags": [
+      "일본어"
+    ],
+    "createdAt": "2025-06-07T00:12:13.983Z",
+    "filename": "LeinaUtatane.json"
+  },
+  {
+    "name": "TowerOfFlower",
+    "ori_name": "花の塔",
+    "kor_name": "꽃의 탑",
+    "eng_name": "Tower of Flower",
+    "artist": {
+      "ori_name": "さユり",
+      "kor_name": "사유리",
+      "eng_name": "SAYURI"
+    },
+    "tags": [
+      "일본어",
+      "리코리스 리코일"
+    ],
+    "createdAt": "2025-06-06T23:48:05.875Z",
+    "filename": "TowerOfFlower.json"
+  },
+  {
     "name": "lady_kenshi_yonezu",
     "ori_name": "LADY",
     "kor_name": "레이디",
@@ -9,7 +1194,9 @@
       "kor_name": "요네즈 켄시",
       "eng_name": "Kenshi Yonezu"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T20:27:33.083Z",
     "filename": "lady_kenshi_yonezu.json"
   },
@@ -18,7 +1205,14 @@
     "ori_name": "SHINY DAYS",
     "kor_name": "빛나는 날들",
     "eng_name": "Shiny Days",
-    "artist": "asaka",
+    "artist": {
+      "ori_name": "asaka",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T19:52:49.540Z",
     "filename": "asaka_ShinyDays.json"
   },
@@ -32,7 +1226,9 @@
       "kor_name": "",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T19:36:47.064Z",
     "filename": "guiano_IWillTellYouWhat.json"
   },
@@ -46,7 +1242,9 @@
       "kor_name": "미세스 그린 애플",
       "eng_name": "Mrs. GREEN APPLE"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T19:15:02.275Z",
     "filename": "Im_invincible.json"
   },
@@ -60,18 +1258,11 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T18:18:40.120Z",
     "filename": "ADOOverfitting.json"
-  },
-  {
-    "name": "UCZmKkbhtiw86Bff-OHIcUDg",
-    "ori_name": "うたたね",
-    "kor_name": "선잠",
-    "eng_name": "Nap",
-    "artist": "Leina",
-    "createdAt": "2025-06-06T14:33:09.094Z",
-    "filename": "UCZmKkbhtiw86Bff-OHIcUDg.json"
   },
   {
     "name": "example_ray",
@@ -80,10 +1271,12 @@
     "eng_name": "Ray",
     "artist": {
       "ori_name": "chilldspot",
-      "kor_name": "",
+      "kor_name": "칠드스팟",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T11:14:10.120Z",
     "filename": "example_ray.json"
   },
@@ -94,10 +1287,12 @@
     "eng_name": "Love and Sorrow",
     "artist": {
       "ori_name": "chilldspot",
-      "kor_name": "",
+      "kor_name": "칠드스팟",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-06T10:38:17.386Z",
     "filename": "example_Love_and_Sorrow.json"
   },
@@ -108,10 +1303,12 @@
     "eng_name": "Shower",
     "artist": {
       "ori_name": "chilldspot",
-      "kor_name": "",
+      "kor_name": "칠드스팟",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T21:43:53.071Z",
     "filename": "example_Shower.json"
   },
@@ -120,7 +1317,14 @@
     "ori_name": "まつり",
     "kor_name": "축제",
     "eng_name": "Festival",
-    "artist": "Fujii Kaze",
+    "artist": {
+      "ori_name": "Fujii Kaze",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T17:59:18.809Z",
     "filename": "MatsuriFujiiKaze.json"
   },
@@ -129,7 +1333,14 @@
     "ori_name": "Surges",
     "kor_name": "파도",
     "eng_name": "Waves",
-    "artist": "Orangestar",
+    "artist": {
+      "ori_name": "Orangestar",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T17:48:35.781Z",
     "filename": "SurgesOrangestar.json"
   },
@@ -138,7 +1349,14 @@
     "ori_name": "怪獣の花唄",
     "kor_name": "괴수의 꽃노래",
     "eng_name": "Kaiju Flower Song",
-    "artist": "Vaundy",
+    "artist": {
+      "ori_name": "Vaundy",
+      "kor_name": "바운디",
+      "eng_name": "Vaundy"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T16:29:31.676Z",
     "filename": "kaijuFlowerSong.json"
   },
@@ -147,16 +1365,31 @@
     "ori_name": "Soranin",
     "kor_name": "솔라닌",
     "eng_name": "Solanin",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-06-05T16:24:13.615Z",
     "filename": "deep_soranin.json"
   },
   {
     "name": "sayuri_mikazuki",
-    "ori_name": "Mikazuki",
+    "ori_name": "ミカヅキ",
     "kor_name": "초승달",
     "eng_name": "Crescent Moon",
-    "artist": "SAYURI",
+    "artist": {
+      "ori_name": "さユり",
+      "kor_name": "사유리",
+      "eng_name": "SAYURI"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T16:14:46.263Z",
     "filename": "sayuri_mikazuki.json"
   },
@@ -165,7 +1398,15 @@
     "ori_name": "それでは、また明日",
     "kor_name": "그럼, 내일 또 봐",
     "eng_name": "Well Then, See You Again Tomorrow",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-06-05T16:05:05.917Z",
     "filename": "deep_see_you_again.json"
   },
@@ -174,7 +1415,14 @@
     "ori_name": "Marunouchi Sadistic",
     "kor_name": "마루노우치 새디스틱",
     "eng_name": "Marunouchi Sadistic",
-    "artist": "椎名林檎",
+    "artist": {
+      "ori_name": "椎名林檎",
+      "kor_name": "시이나 링고",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T15:59:08.179Z",
     "filename": "marunouchi_sadistic.json"
   },
@@ -188,7 +1436,9 @@
       "kor_name": "오피셜히게단디즘",
       "eng_name": "Official Hige Dandism"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T15:31:16.799Z",
     "filename": "Ilove.json"
   },
@@ -202,7 +1452,9 @@
       "kor_name": "오피셜히게단디즘",
       "eng_name": "Official Hige Dandism"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T15:11:32.846Z",
     "filename": "Yesterday.json"
   },
@@ -216,16 +1468,26 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T14:55:55.229Z",
     "filename": "ADObaka.json"
   },
   {
     "name": "Dreams_and_Leaf_Cherry_Blossoms",
     "ori_name": "夢と葉桜",
-    "kor_name": "꿈과 잎 벚꽃",
+    "kor_name": "꿈과 벚나무",
     "eng_name": "Dream and Leaf Cherry Blossom",
-    "artist": "ヲタみん (원곡 : 青木月光 )",
+    "artist": {
+      "ori_name": "ヲタみん",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "青木月光"
+    ],
     "createdAt": "2025-06-05T14:44:32.775Z",
     "filename": "Dreams_and_Leaf_Cherry_Blossoms.json"
   },
@@ -234,7 +1496,14 @@
     "ori_name": "再会",
     "kor_name": "재회",
     "eng_name": "Reunion",
-    "artist": "LiSA and Uru",
+    "artist": {
+      "ori_name": "LiSA and Uru",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T12:07:53.713Z",
     "filename": "saikai.json"
   },
@@ -248,7 +1517,9 @@
       "kor_name": "요네즈 켄시",
       "eng_name": "Kenshi Yonezu"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T12:03:12.537Z",
     "filename": "Haiirotoao.json"
   },
@@ -257,7 +1528,14 @@
     "ori_name": "さよならだけが人生だ",
     "kor_name": "이별만이 인생이다",
     "eng_name": "Farewell is the Only Life",
-    "artist": " Kashitaro Ito",
+    "artist": {
+      "ori_name": " Kashitaro Ito",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T11:52:31.380Z",
     "filename": "Farewell_is_the_Only_Life.json"
   },
@@ -271,7 +1549,9 @@
       "kor_name": "로쿠데나시",
       "eng_name": "Rokudenashi"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T11:23:21.633Z",
     "filename": "The_Flame_of_Love.json"
   },
@@ -285,7 +1565,9 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T10:42:31.422Z",
     "filename": "ADO-0.json"
   },
@@ -299,7 +1581,9 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T10:28:49.157Z",
     "filename": "ADODomestic_De_Violence.json"
   },
@@ -308,7 +1592,14 @@
     "ori_name": "それがあなたの幸せとしても",
     "kor_name": "그것이 당신의 행복이라 해도",
     "eng_name": "Even If That Is Your Happiness",
-    "artist": "Heavenz",
+    "artist": {
+      "ori_name": "Heavenz",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T09:54:47.524Z",
     "filename": "Even_If_That_Is_Your_Happiness.json"
   },
@@ -319,10 +1610,12 @@
     "eng_name": "Yours",
     "artist": {
       "ori_name": "chilldspot",
-      "kor_name": "",
+      "kor_name": "칠드스팟",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T07:30:02.395Z",
     "filename": "example_Yours_.json"
   },
@@ -333,19 +1626,28 @@
     "eng_name": "Sailing Day",
     "artist": {
       "ori_name": "chilldspot",
-      "kor_name": "",
+      "kor_name": "칠드스팟",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T07:24:50.643Z",
     "filename": "example_Sailing_day.json"
   },
   {
     "name": "Shirushi",
     "ori_name": "シルシ",
-    "kor_name": "증거",
+    "kor_name": "증표",
     "eng_name": "Shirushi",
-    "artist": "LiSA",
+    "artist": {
+      "ori_name": "LiSA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-05T03:53:22.227Z",
     "filename": "Shirushi.json"
   },
@@ -354,7 +1656,14 @@
     "ori_name": "四季刻歌",
     "kor_name": "사계각가",
     "eng_name": "Song Engraved in Four Seasons",
-    "artist": "綿飴 feat. IA",
+    "artist": {
+      "ori_name": "綿飴 feat. IA",
+      "kor_name": "와타아메",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-04T21:56:28.198Z",
     "filename": "Shikitokiuta.json"
   },
@@ -363,7 +1672,15 @@
     "ori_name": "Rockn' Roll, Morning Light Falls on You",
     "kor_name": "록큰롤, 아침 햇살이 너에게 내린다",
     "eng_name": "Rockn' Roll, Morning Light Falls on You",
-    "artist": "결속 밴드 (아지캉 원곡)",
+    "artist": {
+      "ori_name": "結束バンド",
+      "kor_name": "결속 밴드",
+      "eng_name": "Kessoku Band"
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-06-04T15:53:22.890Z",
     "filename": "example_rockn_roll_morning.json"
   },
@@ -377,7 +1694,9 @@
       "kor_name": "로쿠데나시",
       "eng_name": "Rokudenashi"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-04T15:46:24.049Z",
     "filename": "example_voice_of_the_meteor.json"
   },
@@ -386,7 +1705,14 @@
     "ori_name": "Your trip",
     "kor_name": "너의 여행",
     "eng_name": "Your Trip",
-    "artist": "chilldspot",
+    "artist": {
+      "ori_name": "chilldspot",
+      "kor_name": "칠드스팟",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-04T09:52:55.074Z",
     "filename": "example_your_trip.json"
   },
@@ -395,7 +1721,14 @@
     "ori_name": "レイン",
     "kor_name": "레인",
     "eng_name": "Rain",
-    "artist": "SID",
+    "artist": {
+      "ori_name": "SID",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-04T06:56:15.494Z",
     "filename": "rain_sid.json"
   },
@@ -409,7 +1742,9 @@
       "kor_name": "요네즈 켄시",
       "eng_name": "Kenshi Yonezu"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-04T04:48:12.045Z",
     "filename": "deep_lemon.json"
   },
@@ -418,7 +1753,14 @@
     "ori_name": "W/X/Y",
     "kor_name": "W/X/Y",
     "eng_name": "W/X/Y",
-    "artist": "Tani Yuuki",
+    "artist": {
+      "ori_name": "Tani Yuuki",
+      "kor_name": "타니 유우키",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-03T06:06:45.896Z",
     "filename": "WXY.json"
   },
@@ -427,7 +1769,14 @@
     "ori_name": "Magic",
     "kor_name": "마법",
     "eng_name": "Magic",
-    "artist": "SEKAI NO OWARI",
+    "artist": {
+      "ori_name": "世界の終わり",
+      "kor_name": "세카이노 오와리",
+      "eng_name": "SEKAI NO OWARI"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-03T00:30:07.910Z",
     "filename": "sekaowa_magic.json"
   },
@@ -436,7 +1785,14 @@
     "ori_name": "しあわせになんてならないで",
     "kor_name": "행복해지지 말아줘",
     "eng_name": "Please Don't be Happy",
-    "artist": "Aiobahn",
+    "artist": {
+      "ori_name": "Aiobahn",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T18:51:05.567Z",
     "filename": "aiobahn_please_dont_be_happy.json"
   },
@@ -445,7 +1801,14 @@
     "ori_name": "虹",
     "kor_name": "무지개",
     "eng_name": "Niji",
-    "artist": "AAA",
+    "artist": {
+      "ori_name": "AAA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T14:32:25.357Z",
     "filename": "Niji.json"
   },
@@ -454,7 +1817,14 @@
     "ori_name": "おかえり",
     "kor_name": "오카에리",
     "eng_name": "Okaeri",
-    "artist": "Tani yuuki",
+    "artist": {
+      "ori_name": "Tani yuuki",
+      "kor_name": "타니 유우키",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T14:25:33.248Z",
     "filename": "Okareri.json"
   },
@@ -463,7 +1833,14 @@
     "ori_name": "ベルベットの時",
     "kor_name": "벨벳의 시",
     "eng_name": "Velvet",
-    "artist": "Backnumber",
+    "artist": {
+      "ori_name": "Backnumber",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T14:20:53.628Z",
     "filename": "Velvet.json"
   },
@@ -477,7 +1854,9 @@
       "kor_name": "노기자카46",
       "eng_name": "Nogizaka46"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T14:18:24.201Z",
     "filename": "Sayonaranoimi.json"
   },
@@ -486,7 +1865,14 @@
     "ori_name": "青いベンチ",
     "kor_name": "푸른 벤치",
     "eng_name": "Blue Bench",
-    "artist": "サスケ",
+    "artist": {
+      "ori_name": "サスケ",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T14:13:28.477Z",
     "filename": "Blue_bench.json"
   },
@@ -495,7 +1881,14 @@
     "ori_name": "新星",
     "kor_name": "신성",
     "eng_name": "Nova",
-    "artist": "yama",
+    "artist": {
+      "ori_name": "yama",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T13:48:26.040Z",
     "filename": "yama_nova.json"
   },
@@ -509,7 +1902,9 @@
       "kor_name": "로쿠데나시",
       "eng_name": "Rokudenashi"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T13:36:51.810Z",
     "filename": "deep_one_voice.json"
   },
@@ -518,7 +1913,14 @@
     "ori_name": "サマータイムレコード",
     "kor_name": "썸머 타임 레코드",
     "eng_name": "Summertime Record",
-    "artist": "じん",
+    "artist": {
+      "ori_name": "じん",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T12:29:53.524Z",
     "filename": "SummertimeRecord.json"
   },
@@ -532,7 +1934,9 @@
       "kor_name": "로쿠데나시",
       "eng_name": "Rokudenashi"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T08:47:40.308Z",
     "filename": "EphemeralBloom.json"
   },
@@ -541,7 +1945,14 @@
     "ori_name": "泥中に咲く",
     "kor_name": "진흙 속에서 피어나다",
     "eng_name": "Blooming in Mud",
-    "artist": "월피스카터",
+    "artist": {
+      "ori_name": "월피스카터",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T07:09:26.098Z",
     "filename": "BloomingInMud.json"
   },
@@ -555,7 +1966,9 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T06:42:35.415Z",
     "filename": "ADOhibana.json"
   },
@@ -564,7 +1977,14 @@
     "ori_name": "生きていたんだよな",
     "kor_name": "살아 있었던 거구나",
     "eng_name": "Ikiteitandayona",
-    "artist": " あいみょん",
+    "artist": {
+      "ori_name": " あいみょん",
+      "kor_name": "아이묭",
+      "eng_name": "Aimyon"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T06:06:03.087Z",
     "filename": "Ikiteitandayona.json"
   },
@@ -578,7 +1998,9 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-06-02T05:06:17.643Z",
     "filename": "ADORockstar.json"
   },
@@ -587,7 +2009,14 @@
     "ori_name": "La La La Love Song",
     "kor_name": "라라라 러브송",
     "eng_name": "La La La Love Song",
-    "artist": "久保田利伸",
+    "artist": {
+      "ori_name": "久保田利伸",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-30T04:54:35.442Z",
     "filename": "deep_lalala_love_song.json"
   },
@@ -596,7 +2025,14 @@
     "ori_name": "Koi",
     "kor_name": "사랑",
     "eng_name": "Love",
-    "artist": "androp",
+    "artist": {
+      "ori_name": "androp",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-30T04:22:08.981Z",
     "filename": "deep_androp_koi.json"
   },
@@ -605,7 +2041,14 @@
     "ori_name": "歌に形はないけれど",
     "kor_name": "노래에 형태는 없지만",
     "eng_name": "Though a Song Has No Form",
-    "artist": "doriko (HaNaTaN Cover)",
+    "artist": {
+      "ori_name": "doriko (HaNaTaN Cover)",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-30T03:38:07.512Z",
     "filename": "deep_song_has_no_form.json"
   },
@@ -614,7 +2057,14 @@
     "ori_name": "Let It Go",
     "kor_name": "다 잊어",
     "eng_name": "Let It Go",
-    "artist": "Idina Menzel",
+    "artist": {
+      "ori_name": "Idina Menzel",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-28T15:34:05.154Z",
     "filename": "example_let_it_go.json"
   },
@@ -623,7 +2073,14 @@
     "ori_name": "Let it be",
     "kor_name": "렛잇비",
     "eng_name": "Let it be",
-    "artist": "The Beatles",
+    "artist": {
+      "ori_name": "The Beatles",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-28T15:16:37.204Z",
     "filename": "deep_let_it_be.json"
   },
@@ -632,7 +2089,15 @@
     "ori_name": "別の人の彼女になったよ",
     "kor_name": "다른 사람의 여자친구가 되었어",
     "eng_name": "No Regret",
-    "artist": "Uru (원곡 wacci)",
+    "artist": {
+      "ori_name": "Uru",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "wacci"
+    ],
     "createdAt": "2025-05-28T11:52:38.035Z",
     "filename": "deep_no_regret.json"
   },
@@ -641,7 +2106,14 @@
     "ori_name": "ベテルギウス",
     "kor_name": "베텔기우스",
     "eng_name": "Betelgeuse",
-    "artist": "優里",
+    "artist": {
+      "ori_name": "優里",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-25T00:32:02.625Z",
     "filename": "deep_betelgeuse.json"
   },
@@ -650,7 +2122,14 @@
     "ori_name": "小さな恋のうた",
     "kor_name": "작은 사랑의 노래",
     "eng_name": "Small Song of Love",
-    "artist": "MONGOL800",
+    "artist": {
+      "ori_name": "MONGOL800",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-24T07:46:00.778Z",
     "filename": "deep_small_song_of_love.json"
   },
@@ -659,7 +2138,14 @@
     "ori_name": "音楽のように",
     "kor_name": "음악처럼",
     "eng_name": "Like Music",
-    "artist": "I Don't Like Mondays.",
+    "artist": {
+      "ori_name": "I Don't Like Mondays.",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-22T23:51:32.033Z",
     "filename": "deep_like_music.json"
   },
@@ -668,7 +2154,14 @@
     "ori_name": "Mad at Disney",
     "kor_name": "디즈니에 화가 나",
     "eng_name": "Mad at Disney",
-    "artist": "salem ilese",
+    "artist": {
+      "ori_name": "salem ilese",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-22T22:01:11.969Z",
     "filename": "deep_mad_at_disney.json"
   },
@@ -677,7 +2170,14 @@
     "ori_name": "Kung Fu Fighting Panda",
     "kor_name": "쿵푸 파이팅 팬더",
     "eng_name": "Kung Fu Fighting Panda",
-    "artist": "CeeLo Green",
+    "artist": {
+      "ori_name": "CeeLo Green",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-22T21:58:19.978Z",
     "filename": "deep_kung_fu_fighting_panda.json"
   },
@@ -691,7 +2191,9 @@
       "kor_name": "미세스 그린 애플",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-22T04:56:06.931Z",
     "filename": "deep_start_green_apple.json"
   },
@@ -700,7 +2202,14 @@
     "ori_name": "Don't Look Back In Anger",
     "kor_name": "분노에 차 뒤돌아보지 마",
     "eng_name": "Don't Look Back In Anger",
-    "artist": "Oasis",
+    "artist": {
+      "ori_name": "Oasis",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-21T00:57:13.912Z",
     "filename": "deep_dont_look_back_in_anger.json"
   },
@@ -709,7 +2218,14 @@
     "ori_name": "Past Lives",
     "kor_name": "전생들",
     "eng_name": "Past Lives",
-    "artist": "sapientdream",
+    "artist": {
+      "ori_name": "sapientdream",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-19T15:39:52.518Z",
     "filename": "deep_past_lives.json"
   },
@@ -723,7 +2239,9 @@
       "kor_name": "미세스 그린 애플",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-19T07:28:58.787Z",
     "filename": "deep_blue_and_summer.json"
   },
@@ -732,7 +2250,14 @@
     "ori_name": "さよならもう",
     "kor_name": "잘 가 이제",
     "eng_name": "Goodbye, already",
-    "artist": "MACO",
+    "artist": {
+      "ori_name": "MACO",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-19T06:00:35.083Z",
     "filename": "deep_goodbye_already.json"
   },
@@ -741,7 +2266,14 @@
     "ori_name": "フィラメント",
     "kor_name": "필라멘트",
     "eng_name": "Filament",
-    "artist": "Uru",
+    "artist": {
+      "ori_name": "Uru",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-18T18:19:35.263Z",
     "filename": "deep_filament.json"
   },
@@ -755,7 +2287,9 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-17T04:44:36.823Z",
     "filename": "deep_ado_value.json"
   },
@@ -764,34 +2298,30 @@
     "ori_name": "恋をしたのは",
     "kor_name": "사랑을 한 것은",
     "eng_name": "The reason I fell in love",
-    "artist": "aiko",
+    "artist": {
+      "ori_name": "aiko",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-16T09:28:26.851Z",
     "filename": "deep_reason_fell_in_love.json"
-  },
-  {
-    "name": "deep_wish_choi",
-    "ori_name": "바람",
-    "kor_name": "바람",
-    "eng_name": "Wish",
-    "artist": "최유리",
-    "createdAt": "2025-05-16T00:15:48.794Z",
-    "filename": "deep_wish_choi.json"
-  },
-  {
-    "name": "deep_lovely_kim",
-    "ori_name": "사랑스러워",
-    "kor_name": "사랑스러워",
-    "eng_name": "Lovely",
-    "artist": "김종국",
-    "createdAt": "2025-05-15T23:09:36.863Z",
-    "filename": "deep_lovely_kim.json"
   },
   {
     "name": "deep_bansanka",
     "ori_name": "晩餐歌",
     "kor_name": "만찬가",
     "eng_name": "The Banquet Song",
-    "artist": "tuki.",
+    "artist": {
+      "ori_name": "tuki.",
+      "kor_name": "츠키.",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-15T16:32:25.528Z",
     "filename": "deep_bansanka.json"
   },
@@ -800,7 +2330,14 @@
     "ori_name": "Anxiety",
     "kor_name": "불안",
     "eng_name": "Anxiety",
-    "artist": "Doechii",
+    "artist": {
+      "ori_name": "Doechii",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-15T06:30:37.968Z",
     "filename": "deep_anxiety.json"
   },
@@ -809,7 +2346,14 @@
     "ori_name": "Kung Fu Fighting",
     "kor_name": "쿵푸 파이팅",
     "eng_name": "Kung Fu Fighting",
-    "artist": "Carl Douglas",
+    "artist": {
+      "ori_name": "Carl Douglas",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-15T06:03:25.271Z",
     "filename": "deep_kung_fu_fighting.json"
   },
@@ -818,7 +2362,14 @@
     "ori_name": "The Less I Know The Better",
     "kor_name": "모르는 게 약",
     "eng_name": "The Less I Know The Better",
-    "artist": "Tame Impala",
+    "artist": {
+      "ori_name": "Tame Impala",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-05-15T05:41:13.574Z",
     "filename": "deep_less_know_better.json"
   },
@@ -827,7 +2378,14 @@
     "ori_name": "偽愛とハイボール",
     "kor_name": "가짜 사랑과 하이볼",
     "eng_name": "Fake Love and Highball",
-    "artist": "LET ME KNOW",
+    "artist": {
+      "ori_name": "LET ME KNOW",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-14T13:46:26.096Z",
     "filename": "deep_fake_love_highball.json"
   },
@@ -836,7 +2394,14 @@
     "ori_name": "青い珊瑚礁",
     "kor_name": "푸른 산호초",
     "eng_name": "Blue Coral Reef",
-    "artist": "松田聖子",
+    "artist": {
+      "ori_name": "松田聖子",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-13T19:50:44.163Z",
     "filename": "deep_blue_coral_reef.json"
   },
@@ -845,7 +2410,14 @@
     "ori_name": "拝啓、少年よ",
     "kor_name": "친애하는 소년이여",
     "eng_name": "Dear Boy",
-    "artist": "Hump Back",
+    "artist": {
+      "ori_name": "Hump Back",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-11T21:54:21.456Z",
     "filename": "deep_dear_boy.json"
   },
@@ -854,7 +2426,14 @@
     "ori_name": "君じゃなきゃダメみたい",
     "kor_name": "네가 아니면 안 될 것 같아",
     "eng_name": "It Has to Be You",
-    "artist": "オーイシマサヨシ",
+    "artist": {
+      "ori_name": "オーイシマサヨシ",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-10T08:53:08.725Z",
     "filename": "deep_has_to_be_you.json"
   },
@@ -863,7 +2442,14 @@
     "ori_name": "忘れられないの",
     "kor_name": "잊을 수 없어",
     "eng_name": "Unforgettable",
-    "artist": "サカナクション",
+    "artist": {
+      "ori_name": "サカナクション",
+      "kor_name": "사카낙션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-10T01:57:42.025Z",
     "filename": "deep_unforgettable.json"
   },
@@ -872,7 +2458,14 @@
     "ori_name": "지금부터",
     "kor_name": "지금부터",
     "eng_name": "Onward",
-    "artist": "Hebi",
+    "artist": {
+      "ori_name": "Hebi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-09T18:57:54.168Z",
     "filename": "deep_onward.json"
   },
@@ -881,7 +2474,14 @@
     "ori_name": "たばこ",
     "kor_name": "담배",
     "eng_name": "Cigarette",
-    "artist": "コレサワ",
+    "artist": {
+      "ori_name": "コレサワ",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-08T17:03:44.313Z",
     "filename": "deep_tabako.json"
   },
@@ -890,7 +2490,14 @@
     "ori_name": "Sad Sad Hot Latte",
     "kor_name": "슬픈 슬픈 뜨거운 라떼",
     "eng_name": "Sad Sad Hot Latte",
-    "artist": "ANMC",
+    "artist": {
+      "ori_name": "ANMC",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-07T22:08:21.969Z",
     "filename": "deep_sad_sad_hot_latte.json"
   },
@@ -899,7 +2506,14 @@
     "ori_name": "像是中了你的毒",
     "kor_name": "네 독에 중독된 것처럼",
     "eng_name": "Like I'm Addicted to Your Poison",
-    "artist": "Ginger",
+    "artist": {
+      "ori_name": "Ginger",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-05-05T19:43:43.367Z",
     "filename": "deep2_like_addicted_poison.json"
   },
@@ -908,34 +2522,30 @@
     "ori_name": "不心动挑战",
     "kor_name": "마음이 흔들리지 않는 도전",
     "eng_name": "Unmoved Challenge",
-    "artist": "王澳楠EVE",
+    "artist": {
+      "ori_name": "王澳楠EVE",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-05-05T19:27:43.385Z",
     "filename": "deep_unmoved_challenge.json"
-  },
-  {
-    "name": "deep_experiment_from_me_to_you",
-    "ori_name": "きみにとどけ",
-    "kor_name": "너에게 닿기를",
-    "eng_name": "From Me to You",
-    "artist": "タニザワトモフミ",
-    "createdAt": "2025-05-05T18:32:43.386Z",
-    "filename": "deep_experiment_from_me_to_you.json"
-  },
-  {
-    "name": "deep_experiment_brain",
-    "ori_name": "BRAIN",
-    "kor_name": "브레인",
-    "eng_name": "BRAIN",
-    "artist": "Kanaria",
-    "createdAt": "2025-05-05T17:59:49.447Z",
-    "filename": "deep_experiment_brain.json"
   },
   {
     "name": "deep_from_me_to_you",
     "ori_name": "きみにとどけ",
     "kor_name": "너에게 닿기를",
     "eng_name": "From Me to You",
-    "artist": "タニザワトモフミ",
+    "artist": {
+      "ori_name": "タニザワトモフミ",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-05T12:39:23.368Z",
     "filename": "deep_from_me_to_you.json"
   },
@@ -944,7 +2554,14 @@
     "ori_name": "君が望む世界",
     "kor_name": "네가 바라는 세계",
     "eng_name": "The World You Desire",
-    "artist": "緑黄色社会",
+    "artist": {
+      "ori_name": "緑黄色社会",
+      "kor_name": "녹황색사회",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-05T12:09:55.795Z",
     "filename": "deep_world_you_desire.json"
   },
@@ -953,7 +2570,14 @@
     "ori_name": "一途な女の子。",
     "kor_name": "한결같은 여자아이",
     "eng_name": "Single-Minded Girl",
-    "artist": "ユイカ",
+    "artist": {
+      "ori_name": "ユイカ",
+      "kor_name": "유이카",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-05T11:42:25.339Z",
     "filename": "deep_single_minded_girl.json"
   },
@@ -962,7 +2586,14 @@
     "ori_name": "BRAIN",
     "kor_name": "브레인",
     "eng_name": "BRAIN",
-    "artist": "Kanaria",
+    "artist": {
+      "ori_name": "Kanaria",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-05T05:43:10.191Z",
     "filename": "deep_brain.json"
   },
@@ -971,7 +2602,14 @@
     "ori_name": "DREAMER",
     "kor_name": "드리머",
     "eng_name": "Dreamer",
-    "artist": "幾田りら",
+    "artist": {
+      "ori_name": "幾田りら",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T11:03:54.827Z",
     "filename": "deep2_dreamer.json"
   },
@@ -980,7 +2618,14 @@
     "ori_name": "睨めっ娘",
     "kor_name": "눈싸움",
     "eng_name": "Niramekko",
-    "artist": "TOMONARI SORA",
+    "artist": {
+      "ori_name": "TOMONARI SORA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T10:31:39.080Z",
     "filename": "deep_niramekko.json"
   },
@@ -989,7 +2634,14 @@
     "ori_name": "純恋愛のインゴット",
     "kor_name": "순수한 사랑의 금괴",
     "eng_name": "Pure Love Ingot",
-    "artist": "tuki",
+    "artist": {
+      "ori_name": "tuki.",
+      "kor_name": "츠키.",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:49:02.015Z",
     "filename": "deep_pure_love_ingot.json"
   },
@@ -998,7 +2650,14 @@
     "ori_name": "ラストティーン",
     "kor_name": "라스트 틴",
     "eng_name": "Last Teenage Days",
-    "artist": "ユイカ",
+    "artist": {
+      "ori_name": "ユイカ",
+      "kor_name": "유이카",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:46:16.830Z",
     "filename": "deep_last_teen.json"
   },
@@ -1007,7 +2666,14 @@
     "ori_name": "忘れてください",
     "kor_name": "나를 잊어주세요",
     "eng_name": "Please Forget Me",
-    "artist": "ヨルシカ",
+    "artist": {
+      "ori_name": "ヨルシカ",
+      "kor_name": "요루시카",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:38:42.650Z",
     "filename": "deep_please_forget_me.json"
   },
@@ -1016,7 +2682,14 @@
     "ori_name": "未恋",
     "kor_name": "미연",
     "eng_name": "Prelove",
-    "artist": "チョーキューメイ",
+    "artist": {
+      "ori_name": "チョーキューメイ",
+      "kor_name": "초큐메이",
+      "eng_name": "ChoQMay"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:24:43.062Z",
     "filename": "deep_prelove.json"
   },
@@ -1025,7 +2698,14 @@
     "ori_name": "BOOK STORE",
     "kor_name": "서점",
     "eng_name": "Bookstore",
-    "artist": "くじら",
+    "artist": {
+      "ori_name": "くじら",
+      "kor_name": "쿠지라",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:22:21.401Z",
     "filename": "deep_bookstore.json"
   },
@@ -1034,7 +2714,14 @@
     "ori_name": "はいよろこんで",
     "kor_name": "네, 기꺼이",
     "eng_name": "Hai Yorokonde",
-    "artist": "こっちのけんと",
+    "artist": {
+      "ori_name": "こっちのけんと",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:20:31.643Z",
     "filename": "deep_yes_gladly.json"
   },
@@ -1043,7 +2730,14 @@
     "ori_name": "PLAYER 1",
     "kor_name": "플레이어 1",
     "eng_name": "Player 1",
-    "artist": "緑黄色社会",
+    "artist": {
+      "ori_name": "緑黄色社会",
+      "kor_name": "녹황색사회",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:13:42.586Z",
     "filename": "deep_player_one.json"
   },
@@ -1052,25 +2746,30 @@
     "ori_name": "ワタリドリ",
     "kor_name": "철새",
     "eng_name": "Wataridori",
-    "artist": "Alexandros",
+    "artist": {
+      "ori_name": "Alexandros",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T09:06:50.561Z",
     "filename": "deep2_wataridori.json"
-  },
-  {
-    "name": "deep_wataridori",
-    "ori_name": "ワタリドリ",
-    "kor_name": "철새",
-    "eng_name": "Wataridori",
-    "artist": "Alexandros",
-    "createdAt": "2025-05-04T09:03:05.867Z",
-    "filename": "deep_wataridori.json"
   },
   {
     "name": "deep_salad_bowl",
     "ori_name": "サラダボウル",
     "kor_name": "샐러드 볼",
     "eng_name": "Salad Bowl",
-    "artist": "Aooo",
+    "artist": {
+      "ori_name": "Aooo",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:53:05.358Z",
     "filename": "deep_salad_bowl.json"
   },
@@ -1079,7 +2778,14 @@
     "ori_name": "夜、眠るため",
     "kor_name": "밤, 잠들기 위해",
     "eng_name": "Night, to Fall Asleep",
-    "artist": "Guiano",
+    "artist": {
+      "ori_name": "Guiano",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:51:21.352Z",
     "filename": "deep_night_to_fall_asleep.json"
   },
@@ -1088,7 +2794,14 @@
     "ori_name": "DREAMER",
     "kor_name": "드리머",
     "eng_name": "Dreamer",
-    "artist": "幾田りら",
+    "artist": {
+      "ori_name": "幾田りら",
+      "kor_name": "이쿠타 리라",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:49:03.134Z",
     "filename": "deep_dreamer.json"
   },
@@ -1097,7 +2810,14 @@
     "ori_name": "Soyokaze",
     "kor_name": "산들바람",
     "eng_name": "Gentle Breeze",
-    "artist": "imase",
+    "artist": {
+      "ori_name": "imase",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:20:40.673Z",
     "filename": "deep_soyokaze.json"
   },
@@ -1106,7 +2826,14 @@
     "ori_name": "銃口をハートに向けて",
     "kor_name": "총구를 심장에 겨누고",
     "eng_name": "Point the Gun at Your Heart",
-    "artist": "noa",
+    "artist": {
+      "ori_name": "乃紫",
+      "kor_name": "노아",
+      "eng_name": "noa"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:18:36.814Z",
     "filename": "deep_gun_at_your_heart.json"
   },
@@ -1120,7 +2847,9 @@
       "kor_name": "아도",
       "eng_name": "Ado"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:09:38.735Z",
     "filename": "deep_bouquet_for_me.json"
   },
@@ -1129,7 +2858,14 @@
     "ori_name": "騙シ愛",
     "kor_name": "속이는 사랑",
     "eng_name": "Damashiai",
-    "artist": "tuki.",
+    "artist": {
+      "ori_name": "tuki.",
+      "kor_name": "츠키.",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-04T08:07:35.282Z",
     "filename": "deep_damashiai.json"
   },
@@ -1138,7 +2874,14 @@
     "ori_name": "dass liebe schön sein kann",
     "kor_name": "사랑은 아름다울 수 있어",
     "eng_name": "Love Can Be Beautiful",
-    "artist": "Revelle & Gregor Hägele",
+    "artist": {
+      "ori_name": "Revelle & Gregor Hägele",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "createdAt": "2025-05-02T23:01:44.227Z",
     "filename": "deep_love_can_be_beautiful.json"
   },
@@ -1147,7 +2890,14 @@
     "ori_name": "けっかおーらい",
     "kor_name": "결과 All Right",
     "eng_name": "Everything's Alright in the End",
-    "artist": "Kocchi no Kento",
+    "artist": {
+      "ori_name": "Kocchi no Kento",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-05-02T21:37:27.484Z",
     "filename": "deep_all_right.json"
   },
@@ -1156,7 +2906,14 @@
     "ori_name": "1000日間",
     "kor_name": "1000일 동안",
     "eng_name": "For 1000 Days",
-    "artist": "乃紫",
+    "artist": {
+      "ori_name": "乃紫",
+      "kor_name": "노아",
+      "eng_name": "noa"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-30T17:23:23.951Z",
     "filename": "deep_1000_days.json"
   },
@@ -1165,7 +2922,14 @@
     "ori_name": "Walking with you",
     "kor_name": "너와 함께 걷다",
     "eng_name": "Walking with you",
-    "artist": "Novelbright",
+    "artist": {
+      "ori_name": "Novelbright",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-30T09:50:45.091Z",
     "filename": "deep_walking_with_you.json"
   },
@@ -1174,25 +2938,31 @@
     "ori_name": "心臓を捧げよ！",
     "kor_name": "심장을 바쳐라!",
     "eng_name": "Dedicate Your Heart!",
-    "artist": "Linked Horizon",
+    "artist": {
+      "ori_name": "Linked Horizon",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-30T07:21:24.110Z",
     "filename": "deep_dedicate_heart.json"
-  },
-  {
-    "name": "qwen_bite_second",
-    "ori_name": "秒針を噛む",
-    "kor_name": "초침을 깨물다",
-    "eng_name": "Bite the Second Hand",
-    "artist": "ZUTOMAYO",
-    "createdAt": "2025-04-30T07:08:26.206Z",
-    "filename": "qwen_bite_second.json"
   },
   {
     "name": "deep_bite_second",
     "ori_name": "秒針を噛む",
     "kor_name": "초침을 깨물다",
     "eng_name": "Bite the Second Hand",
-    "artist": "ZUTOMAYO",
+    "artist": {
+      "ori_name": "ずっと真夜中でいいのに。",
+      "kor_name": "계속 한밤중이면 좋을텐데",
+      "eng_name": "ZUTOMAYO"
+    },
+    "tags": [
+      "일본어",
+      "즛토마요"
+    ],
     "createdAt": "2025-04-29T18:51:53.191Z",
     "filename": "deep_bite_second.json"
   },
@@ -1201,7 +2971,14 @@
     "ori_name": "Симпл Димпл Поп Ит Сквиш",
     "kor_name": "심플 딤플 팝 잇 스퀴시",
     "eng_name": "Simple Dimple Pop It Squish",
-    "artist": "Бэтси, М&A",
+    "artist": {
+      "ori_name": "Бэтси, М&A",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "러시아어"
+    ],
     "createdAt": "2025-04-29T15:43:25.550Z",
     "filename": "deep_simple_dimple_pop_it_squish.json"
   },
@@ -1210,7 +2987,15 @@
     "ori_name": "リライト",
     "kor_name": "리라이트",
     "eng_name": "Rewrite",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-04-28T01:49:54.878Z",
     "filename": "deep3_rewrite.json"
   },
@@ -1219,7 +3004,14 @@
     "ori_name": "星座になれたら",
     "kor_name": "별자리가 될 수 있다면",
     "eng_name": "If I could be a constellation",
-    "artist": "結束バンド",
+    "artist": {
+      "ori_name": "結束バンド",
+      "kor_name": "결속 밴드",
+      "eng_name": "kessoku band"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-27T22:29:55.889Z",
     "filename": "deep_be_constellation.json"
   },
@@ -1228,7 +3020,15 @@
     "ori_name": "ムスタング",
     "kor_name": "머스탱",
     "eng_name": "Mustang",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-04-26T03:59:45.027Z",
     "filename": "deep_mustang.json"
   },
@@ -1237,7 +3037,14 @@
     "ori_name": "24/7, 365",
     "kor_name": "24/7, 365",
     "eng_name": "24/7, 365",
-    "artist": "elijah woods",
+    "artist": {
+      "ori_name": "elijah woods",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-04-25T23:47:55.704Z",
     "filename": "deep_24_7_365.json"
   },
@@ -1246,25 +3053,30 @@
     "ori_name": "无垢",
     "kor_name": "무구",
     "eng_name": "Innocence",
-    "artist": "李浩玮",
+    "artist": {
+      "ori_name": "李浩玮",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-04-25T23:39:22.747Z",
     "filename": "deep_innocence.json"
-  },
-  {
-    "name": "deep_like_addicted_poison",
-    "ori_name": "像是中了你的毒",
-    "kor_name": "네 독에 중독된 것처럼",
-    "eng_name": "Like I'm Addicted to Your Poison",
-    "artist": "Ginger",
-    "createdAt": "2025-04-25T23:35:30.704Z",
-    "filename": "deep_like_addicted_poison.json"
   },
   {
     "name": "deep_new_treasure_island",
     "ori_name": "新宝島",
     "kor_name": "신 보물섬",
     "eng_name": "Shin Takarajima (New Treasure Island)",
-    "artist": "サカナクション",
+    "artist": {
+      "ori_name": "サカナクション",
+      "kor_name": "사카낙션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-25T23:23:24.886Z",
     "filename": "deep_new_treasure_island.json"
   },
@@ -1273,7 +3085,15 @@
     "ori_name": "遥か彼方",
     "kor_name": "머나먼 저편",
     "eng_name": "Far Away",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-04-25T23:15:05.546Z",
     "filename": "deep_haruka_kanata.json"
   },
@@ -1282,7 +3102,15 @@
     "ori_name": "Re:Re:",
     "kor_name": "Re:Re:",
     "eng_name": "Re:Re:",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-04-24T14:16:42.269Z",
     "filename": "deep_rere.json"
   },
@@ -1291,7 +3119,14 @@
     "ori_name": "High Hopes",
     "kor_name": "높은 기대",
     "eng_name": "High Hopes",
-    "artist": "Panic! At The Disco",
+    "artist": {
+      "ori_name": "Panic! At The Disco",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-04-22T05:05:28.190Z",
     "filename": "deep_high_hopes.json"
   },
@@ -1300,7 +3135,14 @@
     "ori_name": "Just the Two of Us",
     "kor_name": "우리 둘만",
     "eng_name": "Just the Two of Us",
-    "artist": "Grover Washington, Jr.",
+    "artist": {
+      "ori_name": "Grover Washington, Jr.",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-04-20T10:59:21.893Z",
     "filename": "deep_just_the_two_of_us.json"
   },
@@ -1309,7 +3151,14 @@
     "ori_name": "TWILIGHT!!!",
     "kor_name": "황혼!!!",
     "eng_name": "Twilight!!!",
-    "artist": "King Gnu",
+    "artist": {
+      "ori_name": "King Gnu",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-19T13:49:34.104Z",
     "filename": "deep_twilight.json"
   },
@@ -1318,7 +3167,14 @@
     "ori_name": "ナツメグ",
     "kor_name": "너트메그",
     "eng_name": "Nutmeg",
-    "artist": "PURPLE BUBBLE",
+    "artist": {
+      "ori_name": "PURPLE BUBBLE",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-18T14:55:57.123Z",
     "filename": "deep_nutmeg.json"
   },
@@ -1327,25 +3183,30 @@
     "ori_name": "Habit",
     "kor_name": "버릇",
     "eng_name": "Habit",
-    "artist": "SEKAI NO OWARI",
+    "artist": {
+      "ori_name": "世界の終わり",
+      "kor_name": "세카이노 오와리",
+      "eng_name": "SEKAI NO OWARI"
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-17T09:56:22.388Z",
     "filename": "deep_habit.json"
-  },
-  {
-    "name": "optimus_alpha",
-    "ori_name": "Habit",
-    "kor_name": "버릇",
-    "eng_name": "Habit",
-    "artist": "SEKAI NO OWARI",
-    "createdAt": "2025-04-17T09:07:19.593Z",
-    "filename": "optimus_alpha.json"
   },
   {
     "name": "optimus_flowers_glorious",
     "ori_name": "百花繚乱",
     "kor_name": "백화요란",
     "eng_name": "Hyakka Ryōran (Multitude of Flowers in Glorious Confusion)",
-    "artist": "幾田りら",
+    "artist": {
+      "ori_name": "幾田りら",
+      "kor_name": "이쿠타 리라",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-12T18:53:27.296Z",
     "filename": "optimus_flowers_glorious.json"
   },
@@ -1354,43 +3215,30 @@
     "ori_name": "自娱自乐",
     "kor_name": "자기 위안",
     "eng_name": "Self-Entertainment",
-    "artist": "金志文",
+    "artist": {
+      "ori_name": "金志文",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-04-12T18:40:31.293Z",
     "filename": "deep_self_entertainment.json"
-  },
-  {
-    "name": "optimus_bow_and_arrow",
-    "ori_name": "BOW AND ARROW",
-    "kor_name": "활과 화살",
-    "eng_name": "Bow and Arrow",
-    "artist": "米津玄師",
-    "createdAt": "2025-04-12T17:56:34.531Z",
-    "filename": "optimus_bow_and_arrow.json"
-  },
-  {
-    "name": "optimus_windmil",
-    "ori_name": "我们打着光脚在风车下跑，手上的狗尾巴草摇啊摇",
-    "kor_name": "우리는 풍차 아래에서 맨발로 뛰며, 손에 든 강아지풀을 흔들었어",
-    "eng_name": "We run barefoot under the windmill, the foxtail grass in our hands sways",
-    "artist": "等一下就回家",
-    "createdAt": "2025-04-12T17:47:44.718Z",
-    "filename": "optimus_windmil.json"
-  },
-  {
-    "name": "quasar_bow_and_arrow",
-    "ori_name": "BOW AND ARROW",
-    "kor_name": "활과 화살",
-    "eng_name": "Bow and Arrow",
-    "artist": "米津玄師",
-    "createdAt": "2025-04-10T12:53:15.090Z",
-    "filename": "quasar_bow_and_arrow.json"
   },
   {
     "name": "quasar_please_please",
     "ori_name": "拜托拜托",
     "kor_name": "제발 제발",
     "eng_name": "Please Please",
-    "artist": "王澳楠EVE",
+    "artist": {
+      "ori_name": "王澳楠EVE",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-04-08T18:55:22.983Z",
     "filename": "quasar_please_please.json"
   },
@@ -1399,18 +3247,16 @@
     "ori_name": "LA PLENA",
     "kor_name": "라 플레나",
     "eng_name": "La Plena",
-    "artist": "W Sound",
+    "artist": {
+      "ori_name": "W Sound",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "스페인어"
+    ],
     "createdAt": "2025-04-08T17:41:43.560Z",
     "filename": "quasar_la_plena.json"
-  },
-  {
-    "name": "llama_jumping_machine",
-    "ori_name": "跳楼机",
-    "kor_name": "자이로드롭",
-    "eng_name": "Jumping Machine",
-    "artist": "LBI",
-    "createdAt": "2025-04-06T15:42:19.599Z",
-    "filename": "llama_jumping_machine.json"
   },
   {
     "name": "deep_kusushiki",
@@ -1422,25 +3268,25 @@
       "kor_name": "미세스 그린 애플",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-05T14:03:10.983Z",
     "filename": "deep_kusushiki.json"
-  },
-  {
-    "name": "deep_please_please",
-    "ori_name": "拜托拜托",
-    "kor_name": "제발 제발",
-    "eng_name": "Please, Please",
-    "artist": "王澳楠EVE",
-    "createdAt": "2025-04-05T12:02:05.790Z",
-    "filename": "deep_please_please.json"
   },
   {
     "name": "deep_excessive_romance",
     "ori_name": "过分浪漫",
     "kor_name": "지나친 낭만",
     "eng_name": "Excessive Romance",
-    "artist": "ERIKA",
+    "artist": {
+      "ori_name": "ERIKA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-04-04T22:05:02.343Z",
     "filename": "deep_excessive_romance.json"
   },
@@ -1449,7 +3295,14 @@
     "ori_name": "イイじゃん",
     "kor_name": "좋잖아",
     "eng_name": "It's Alright",
-    "artist": "M!LK",
+    "artist": {
+      "ori_name": "M!LK",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-04-01T17:17:03.199Z",
     "filename": "deep_so_good.json"
   },
@@ -1458,7 +3311,14 @@
     "ori_name": "BOY",
     "kor_name": "소년",
     "eng_name": "Boy",
-    "artist": "King Gnu",
+    "artist": {
+      "ori_name": "King Gnu",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-31T17:18:32.364Z",
     "filename": "deep_boy_king_gnu.json"
   },
@@ -1467,25 +3327,30 @@
     "ori_name": "UNDEAD",
     "kor_name": "언데드",
     "eng_name": "Undead",
-    "artist": "YOASOBI",
+    "artist": {
+      "ori_name": "YOASOBI",
+      "kor_name": "요아소비",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-31T14:17:17.698Z",
     "filename": "deep_undead_expe2.json"
-  },
-  {
-    "name": "deep_undead",
-    "ori_name": "UNDEAD",
-    "kor_name": "언데드",
-    "eng_name": "Undead",
-    "artist": "YOASOBI",
-    "createdAt": "2025-03-31T06:37:07.220Z",
-    "filename": "deep_undead.json"
   },
   {
     "name": "deep_si_antes_te_hubiera",
     "ori_name": "Si Antes Te Hubiera Conocido",
     "kor_name": "널 더 일찍 알았더라면",
     "eng_name": "If I Had Met You Sooner",
-    "artist": "KAROL G",
+    "artist": {
+      "ori_name": "KAROL G",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "스페인어"
+    ],
     "createdAt": "2025-03-26T05:12:34.886Z",
     "filename": "deep_si_antes_te_hubiera.json"
   },
@@ -1499,7 +3364,9 @@
       "kor_name": "미세스 그린 애플",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-26T04:00:10.188Z",
     "filename": "deep_lilac.json"
   },
@@ -1508,7 +3375,14 @@
     "ori_name": "一点",
     "kor_name": "일점",
     "eng_name": "One Point",
-    "artist": "muyoi",
+    "artist": {
+      "ori_name": "muyoi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-26T03:33:44.396Z",
     "filename": "deep_one_point.json"
   },
@@ -1517,7 +3391,14 @@
     "ori_name": "怪獣",
     "kor_name": "괴수",
     "eng_name": "kaiju",
-    "artist": "サカナクション",
+    "artist": {
+      "ori_name": "サカナクション",
+      "kor_name": "사카낙션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-25T11:07:28.947Z",
     "filename": "deep_kaiju.json"
   },
@@ -1526,7 +3407,15 @@
     "ori_name": "君という花",
     "kor_name": "너라는 꽃",
     "eng_name": "A Flower Named You",
-    "artist": "ASIAN KUNG-FU GENERATION",
+    "artist": {
+      "ori_name": "ASIAN KUNG-FU GENERATION",
+      "kor_name": "아시안 쿵푸 제너레이션",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어",
+      "아지캉"
+    ],
     "createdAt": "2025-03-25T08:16:47.992Z",
     "filename": "deep_flower_named_you.json"
   },
@@ -1535,7 +3424,14 @@
     "ori_name": "Was mal war",
     "kor_name": "옛날 옛적에",
     "eng_name": "What once was",
-    "artist": "ELEHA",
+    "artist": {
+      "ori_name": "ELEHA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "createdAt": "2025-03-23T16:39:58.040Z",
     "filename": "deep_new_was_mal_war.json"
   },
@@ -1549,34 +3445,25 @@
       "kor_name": "미세스 그린 애플",
       "eng_name": ""
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-17T19:32:57.715Z",
     "filename": "experi_keserasera.json"
-  },
-  {
-    "name": "experi_bow_arrow",
-    "ori_name": "BOW AND ARROW",
-    "kor_name": "활과 화살",
-    "eng_name": "Bow and Arrow",
-    "artist": "米津玄師",
-    "createdAt": "2025-03-17T19:21:39.950Z",
-    "filename": "experi_bow_arrow.json"
-  },
-  {
-    "name": "experi_otonoke",
-    "ori_name": "オトノケ",
-    "kor_name": "오토노케",
-    "eng_name": "Otonoke",
-    "artist": "Creepy Nuts",
-    "createdAt": "2025-03-17T18:27:36.775Z",
-    "filename": "experi_otonoke.json"
   },
   {
     "name": "deep_human",
     "ori_name": "Human",
     "kor_name": "인간",
     "eng_name": "Human",
-    "artist": "Rag'n'Bone Man",
+    "artist": {
+      "ori_name": "Rag'n'Bone Man",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T14:25:52.882Z",
     "filename": "deep_human.json"
   },
@@ -1585,7 +3472,14 @@
     "ori_name": "Blinding Lights",
     "kor_name": "블라인딩 라이츠",
     "eng_name": "Blinding Lights",
-    "artist": "The Weeknd",
+    "artist": {
+      "ori_name": "The Weeknd",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:51:25.516Z",
     "filename": "deep_blinding_lights.json"
   },
@@ -1594,7 +3488,14 @@
     "ori_name": "THAT'S NOT HOW THIS WORKS",
     "kor_name": "그건 안 돼",
     "eng_name": "That's Not How This Works",
-    "artist": "CHARLIE PUTH",
+    "artist": {
+      "ori_name": "CHARLIE PUTH",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:49:53.808Z",
     "filename": "deep_not_how_works.json"
   },
@@ -1603,7 +3504,14 @@
     "ori_name": "Payphone",
     "kor_name": "페이폰",
     "eng_name": "Payphone",
-    "artist": "Maroon 5",
+    "artist": {
+      "ori_name": "Maroon 5",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:27:18.507Z",
     "filename": "deep_payphone.json"
   },
@@ -1612,7 +3520,14 @@
     "ori_name": "Kiss You",
     "kor_name": "너에게 키스해",
     "eng_name": "Kiss You",
-    "artist": "One Direction",
+    "artist": {
+      "ori_name": "One Direction",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:25:22.272Z",
     "filename": "deep_kiss_you.json"
   },
@@ -1621,7 +3536,14 @@
     "ori_name": "Shape of You",
     "kor_name": "너의 모습",
     "eng_name": "Shape of You",
-    "artist": "Ed Sheeran",
+    "artist": {
+      "ori_name": "Ed Sheeran",
+      "kor_name": "에드 시런",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:24:00.192Z",
     "filename": "deep_shape_of_you.json"
   },
@@ -1630,7 +3552,14 @@
     "ori_name": "STAY",
     "kor_name": "STAY",
     "eng_name": "STAY",
-    "artist": "The Kid LAROI, Justin Bieber",
+    "artist": {
+      "ori_name": "The Kid LAROI, Justin Bieber",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:22:59.466Z",
     "filename": "deep_laroi_stay.json"
   },
@@ -1639,7 +3568,14 @@
     "ori_name": "Want To Want Me",
     "kor_name": "원 투 원 미",
     "eng_name": "Want To Want Me",
-    "artist": "Jason Derulo",
+    "artist": {
+      "ori_name": "Jason Derulo",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:21:38.176Z",
     "filename": "deep_want_to_want.json"
   },
@@ -1648,7 +3584,14 @@
     "ori_name": "There's Nothing Holdin' Me Back",
     "kor_name": "날 막을 수 있는 건 없어",
     "eng_name": "There's Nothing Holdin' Me Back",
-    "artist": "Shawn Mendes",
+    "artist": {
+      "ori_name": "Shawn Mendes",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:20:19.372Z",
     "filename": "deep_nothing_holding_back.json"
   },
@@ -1657,7 +3600,14 @@
     "ori_name": "You Are The Reason",
     "kor_name": "너가 이유야",
     "eng_name": "You Are The Reason",
-    "artist": "Calum Scott",
+    "artist": {
+      "ori_name": "Calum Scott",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:10:44.676Z",
     "filename": "deep_you_are_reason.json"
   },
@@ -1666,16 +3616,30 @@
     "ori_name": "Do You Think About Me",
     "kor_name": "나에 대해 생각하니",
     "eng_name": "Do You Think About Me",
-    "artist": "Benjamin Ingrosso",
+    "artist": {
+      "ori_name": "Benjamin Ingrosso",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:08:31.077Z",
     "filename": "deep_do_you_think_about_me.json"
   },
   {
     "name": "deep_something_just_like_this",
     "ori_name": "Something Just Like This",
-    "kor_name": "이 정도면 충분해",
+    "kor_name": "Something Just Like This",
     "eng_name": "Something Just Like This",
-    "artist": "The Chainsmokers & Coldplay",
+    "artist": {
+      "ori_name": "The Chainsmokers & Coldplay",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:06:55.371Z",
     "filename": "deep_something_just_like_this.json"
   },
@@ -1684,7 +3648,14 @@
     "ori_name": "CAN'T STOP THE FEELING!",
     "kor_name": "캔트 스탑 더 필링!",
     "eng_name": "CAN'T STOP THE FEELING!",
-    "artist": "Justin Timberlake",
+    "artist": {
+      "ori_name": "Justin Timberlake",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T13:05:13.229Z",
     "filename": "deep_cant_stop_feeling.json"
   },
@@ -1693,7 +3664,14 @@
     "ori_name": "Price Tag",
     "kor_name": "가격표",
     "eng_name": "Price Tag",
-    "artist": "Jessie J",
+    "artist": {
+      "ori_name": "Jessie J",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T12:38:45.378Z",
     "filename": "deep_price_tag.json"
   },
@@ -1702,7 +3680,14 @@
     "ori_name": "Let Me Down Slow",
     "kor_name": "천천히 날 내려놔요",
     "eng_name": "Let Me Down Slow",
-    "artist": "New Hope Club",
+    "artist": {
+      "ori_name": "New Hope Club",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T12:36:49.106Z",
     "filename": "deep_let_me_down_slow.json"
   },
@@ -1711,7 +3696,14 @@
     "ori_name": "We Are Young",
     "kor_name": "우리는 젊다",
     "eng_name": "We Are Young",
-    "artist": "Fun.",
+    "artist": {
+      "ori_name": "Fun.",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T12:34:31.441Z",
     "filename": "deep_we_are_young.json"
   },
@@ -1720,7 +3712,14 @@
     "ori_name": "How To Love",
     "kor_name": "사랑하는 방법",
     "eng_name": "How To Love",
-    "artist": "Cash Cash",
+    "artist": {
+      "ori_name": "Cash Cash",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T12:32:36.155Z",
     "filename": "deep_how_to_love.json"
   },
@@ -1729,7 +3728,14 @@
     "ori_name": "I Really Want to Stay At Your House",
     "kor_name": "나는 정말 너의 집에 머물고 싶어",
     "eng_name": "I Really Want to Stay At Your House",
-    "artist": "Rosa Walton",
+    "artist": {
+      "ori_name": "Rosa Walton",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T12:30:15.852Z",
     "filename": "deep_really_want_to_stay.json"
   },
@@ -1738,7 +3744,14 @@
     "ori_name": "赐我",
     "kor_name": "나에게 주다",
     "eng_name": "Bestow Upon Me",
-    "artist": "小时姑娘",
+    "artist": {
+      "ori_name": "小时姑娘",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-13T06:56:40.819Z",
     "filename": "deep_bestow_me.json"
   },
@@ -1747,7 +3760,14 @@
     "ori_name": "不是不想出门而是刚好那天我追的番更新了",
     "kor_name": "밖에 나가고 싶지 않은 게 아니라 그날 내가 쫓던 애니가 업데이트됐기 때문이야",
     "eng_name": "It's not that I don't want to go out, it's just that the anime I was following was updated that day",
-    "artist": "等一下就回家",
+    "artist": {
+      "ori_name": "等一下就回家",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-13T06:45:57.318Z",
     "filename": "deep_anime_updated.json"
   },
@@ -1761,7 +3781,9 @@
       "kor_name": "요네즈 켄시",
       "eng_name": "Kenshi Yonezu"
     },
-    "tags": [],
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-13T05:58:12.654Z",
     "filename": "deep_bow_and_arrow.json"
   },
@@ -1770,7 +3792,14 @@
     "ori_name": "ABC",
     "kor_name": "에이비씨",
     "eng_name": "ABC",
-    "artist": "Polyphia",
+    "artist": {
+      "ori_name": "Polyphia",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T05:00:46.195Z",
     "filename": "deep_abc.json"
   },
@@ -1779,7 +3808,14 @@
     "ori_name": "让风告诉你",
     "kor_name": "바람에게 말해줘",
     "eng_name": "Let the Wind Tell You",
-    "artist": "等一下就回家",
+    "artist": {
+      "ori_name": "等一下就回家",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-13T04:21:01.085Z",
     "filename": "deep_let_wind_tell.json"
   },
@@ -1788,7 +3824,14 @@
     "ori_name": "pocket locket",
     "kor_name": "포켓 로켓",
     "eng_name": "Pocket Locket",
-    "artist": "Alaina Castillo",
+    "artist": {
+      "ori_name": "Alaina Castillo",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-03-13T03:20:33.757Z",
     "filename": "deep_pocket_locket.json"
   },
@@ -1797,7 +3840,14 @@
     "ori_name": "跳楼机",
     "kor_name": "자이로드롭",
     "eng_name": "Jumping Machine",
-    "artist": "LBI",
+    "artist": {
+      "ori_name": "利比",
+      "kor_name": "",
+      "eng_name": "LBI"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-09T09:53:42.619Z",
     "filename": "deep_jumping_machine.json"
   },
@@ -1806,7 +3856,14 @@
     "ori_name": "梦臆",
     "kor_name": "꿈의 지각",
     "eng_name": "Dream Perception",
-    "artist": "邹沛沛",
+    "artist": {
+      "ori_name": "邹沛沛",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-09T09:50:17.239Z",
     "filename": "deep_dream_perception.json"
   },
@@ -1815,7 +3872,14 @@
     "ori_name": "一切变得稀里糊涂",
     "kor_name": "모든 게 혼란스러워졌어",
     "eng_name": "Everything Became Confusing",
-    "artist": "等一下就回家",
+    "artist": {
+      "ori_name": "等一下就回家",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-07T19:42:57.504Z",
     "filename": "deep_everything_confusing.json"
   },
@@ -1824,7 +3888,14 @@
     "ori_name": "既白梨",
     "kor_name": "기백리",
     "eng_name": "Jibaili",
-    "artist": "30年前，50年后",
+    "artist": {
+      "ori_name": "30年前，50年后",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-07T19:20:07.421Z",
     "filename": "deep_jibaili.json"
   },
@@ -1833,7 +3904,14 @@
     "ori_name": "Kiss Kiss Shy Shy",
     "kor_name": "키스 키스 샤이 샤이",
     "eng_name": "Kiss Kiss Shy Shy",
-    "artist": "李要红RedLi",
+    "artist": {
+      "ori_name": "李要红RedLi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-06T07:28:03.718Z",
     "filename": "deep_kiss_shy.json"
   },
@@ -1842,7 +3920,14 @@
     "ori_name": "偷星星的人",
     "kor_name": "별을 훔치는 사람",
     "eng_name": "The Star Thief",
-    "artist": "yihuik苡慧",
+    "artist": {
+      "ori_name": "yihuik苡慧",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-06T00:55:35.956Z",
     "filename": "deep_star_theif.json"
   },
@@ -1851,7 +3936,14 @@
     "ori_name": "目及皆是你",
     "kor_name": "눈에 보이는 건 모두 너야",
     "eng_name": "Everything I See is You",
-    "artist": "小蓝背心",
+    "artist": {
+      "ori_name": "小蓝背心",
+      "kor_name": "소남배심",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T21:56:03.459Z",
     "filename": "deep_everything_is_you.json"
   },
@@ -1860,7 +3952,14 @@
     "ori_name": "想了妳６次",
     "kor_name": "널 생각한 6번",
     "eng_name": "Thought of You 6 Times",
-    "artist": "王ADEN",
+    "artist": {
+      "ori_name": "王ADEN",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T21:54:29.847Z",
     "filename": "deep_six_times.json"
   },
@@ -1869,7 +3968,14 @@
     "ori_name": "小鹿乱撞",
     "kor_name": "심장이 쿵",
     "eng_name": "Little Deer Bumping",
-    "artist": "永彬",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T21:42:43.922Z",
     "filename": "deep_deep_bump.json"
   },
@@ -1878,7 +3984,14 @@
     "ori_name": "capaz",
     "kor_name": "가능한",
     "eng_name": "Capable",
-    "artist": "Alleh & Yorghaki",
+    "artist": {
+      "ori_name": "Alleh & Yorghaki",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "스페인어"
+    ],
     "createdAt": "2025-03-05T21:22:33.452Z",
     "filename": "deep_capaz.json"
   },
@@ -1887,7 +4000,14 @@
     "ori_name": "提拉米苏",
     "kor_name": "티라미수",
     "eng_name": "Tiramisu",
-    "artist": "李思雨",
+    "artist": {
+      "ori_name": "李思雨",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T21:04:39.665Z",
     "filename": "deep_tiramisu.json"
   },
@@ -1896,7 +4016,14 @@
     "ori_name": "11",
     "kor_name": "11",
     "eng_name": "11",
-    "artist": "队长",
+    "artist": {
+      "ori_name": "队长",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T20:46:37.235Z",
     "filename": "deep_num_11.json"
   },
@@ -1905,7 +4032,14 @@
     "ori_name": "MAHBOUL ANA",
     "kor_name": "나는 미쳤다",
     "eng_name": "I'm Crazy",
-    "artist": "Lazaro",
+    "artist": {
+      "ori_name": "Lazaro",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "아랍어"
+    ],
     "createdAt": "2025-03-05T20:27:49.725Z",
     "filename": "deep_mahboul_ana.json"
   },
@@ -1914,7 +4048,14 @@
     "ori_name": "控制",
     "kor_name": "통제",
     "eng_name": "Control",
-    "artist": "163braces",
+    "artist": {
+      "ori_name": "163braces",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T19:42:56.203Z",
     "filename": "deep_control.json"
   },
@@ -1923,7 +4064,14 @@
     "ori_name": "Mach die Augen auf",
     "kor_name": "눈을 떠",
     "eng_name": "Open Your Eyes",
-    "artist": "CIVO",
+    "artist": {
+      "ori_name": "CIVO",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "createdAt": "2025-03-05T16:33:20.479Z",
     "filename": "deep_open_your_eyes.json"
   },
@@ -1932,25 +4080,30 @@
     "ori_name": "一線之隔",
     "kor_name": "일선의 간격",
     "eng_name": "A Thin Line",
-    "artist": "永彬Ryan.B",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T16:29:45.741Z",
     "filename": "deep_thin_line.json"
-  },
-  {
-    "name": "test_sky_song",
-    "ori_name": "空唄",
-    "kor_name": "빈 노래",
-    "eng_name": "Empty Song",
-    "artist": "Kentaro",
-    "createdAt": "2025-03-05T16:12:37.996Z",
-    "filename": "test_sky_song.json"
   },
   {
     "name": "deep_sky_song",
     "ori_name": "空唄",
     "kor_name": "하늘노래",
     "eng_name": "Sky Song",
-    "artist": "Kentaro",
+    "artist": {
+      "ori_name": "Kentaro",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-05T16:03:12.847Z",
     "filename": "deep_sky_song.json"
   },
@@ -1959,7 +4112,14 @@
     "ori_name": "summertime",
     "kor_name": "썸머타임",
     "eng_name": "Summertime",
-    "artist": "cinnamons, evening cinema",
+    "artist": {
+      "ori_name": "cinnamons, evening cinema",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-03-05T15:44:37.197Z",
     "filename": "deep_summertime.json"
   },
@@ -1968,7 +4128,14 @@
     "ori_name": "22秒",
     "kor_name": "22초",
     "eng_name": "22 Seconds",
-    "artist": "Aioz",
+    "artist": {
+      "ori_name": "Aioz",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T14:57:45.381Z",
     "filename": "deep_22_sec.json"
   },
@@ -1977,7 +4144,14 @@
     "ori_name": "狼人",
     "kor_name": "늑대인간",
     "eng_name": "Werewolf",
-    "artist": "于文文",
+    "artist": {
+      "ori_name": "于文文",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T14:55:46.191Z",
     "filename": "deep_werewolf.json"
   },
@@ -1986,7 +4160,14 @@
     "ori_name": "我要",
     "kor_name": "나는 원해",
     "eng_name": "I want",
-    "artist": "顾三十",
+    "artist": {
+      "ori_name": "顾三十",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T12:28:50.545Z",
     "filename": "deep_i_want.json"
   },
@@ -1995,7 +4176,14 @@
     "ori_name": "专属天使",
     "kor_name": "전속 천사",
     "eng_name": "Exclusive Angel",
-    "artist": "yihuik苡慧",
+    "artist": {
+      "ori_name": "yihuik苡慧",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-05T12:25:39.814Z",
     "filename": "deep_exclu_angel.json"
   },
@@ -2004,7 +4192,14 @@
     "ori_name": "巧克力",
     "kor_name": "초콜릿",
     "eng_name": "Chocolate",
-    "artist": "新乐尘符",
+    "artist": {
+      "ori_name": "新乐尘符",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-04T09:51:13.519Z",
     "filename": "deep_chocolate.json"
   },
@@ -2013,7 +4208,14 @@
     "ori_name": "怦然心动",
     "kor_name": "설레임",
     "eng_name": "Flipped",
-    "artist": "小蓝背心",
+    "artist": {
+      "ori_name": "小蓝背心",
+      "kor_name": "소남배심",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-04T05:09:37.158Z",
     "filename": "deep_flipped.json"
   },
@@ -2022,7 +4224,14 @@
     "ori_name": "携风予你",
     "kor_name": "바람을 너에게",
     "eng_name": "Bringing the Wind to You",
-    "artist": "小蓝背心",
+    "artist": {
+      "ori_name": "小蓝背心",
+      "kor_name": "소남배심",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-04T04:49:34.445Z",
     "filename": "deep_bring_wind.json"
   },
@@ -2031,7 +4240,14 @@
     "ori_name": "不落幕的夏天",
     "kor_name": "끝나지 않는 여름",
     "eng_name": "Endless Summer",
-    "artist": "小蓝背心",
+    "artist": {
+      "ori_name": "小蓝背心",
+      "kor_name": "소남배심",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-03T21:19:07.644Z",
     "filename": "deep_endless_summer.json"
   },
@@ -2040,25 +4256,30 @@
     "ori_name": "危险派对",
     "kor_name": "위험한 파티",
     "eng_name": "Dangerous Party",
-    "artist": "王以太",
+    "artist": {
+      "ori_name": "王以太",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-03T19:03:19.192Z",
     "filename": "deep_dangerous_party.json"
-  },
-  {
-    "name": "gemi_small_boat",
-    "ori_name": "小船",
-    "kor_name": "작은 배",
-    "eng_name": "Small Boat",
-    "artist": "163braces",
-    "createdAt": "2025-03-03T18:37:21.384Z",
-    "filename": "gemi_small_boat.json"
   },
   {
     "name": "deep_small_boat",
     "ori_name": "小船",
     "kor_name": "작은 배",
     "eng_name": "Small Boat",
-    "artist": "163braces",
+    "artist": {
+      "ori_name": "163braces",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-03-03T16:15:06.478Z",
     "filename": "deep_small_boat.json"
   },
@@ -2067,7 +4288,14 @@
     "ori_name": "不思议花园",
     "kor_name": "불가사의한 정원",
     "eng_name": "Mysterious Garden",
-    "artist": "吴子健REmi",
+    "artist": {
+      "ori_name": "吴子健",
+      "kor_name": "",
+      "eng_name": "REmi"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-18T11:10:13.983Z",
     "filename": "deep_mystery_garden.json"
   },
@@ -2076,7 +4304,14 @@
     "ori_name": "一笑江湖",
     "kor_name": "일소강호",
     "eng_name": "Yi Xiao Jiang Hu",
-    "artist": "姜姜",
+    "artist": {
+      "ori_name": "姜姜",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-18T09:46:29.530Z",
     "filename": "deep_jiang_hu.json"
   },
@@ -2085,7 +4320,14 @@
     "ori_name": "小情歌",
     "kor_name": "작은 사랑 노래",
     "eng_name": "Little Love Song",
-    "artist": "苏打绿(Sodagreen)",
+    "artist": {
+      "ori_name": "苏打绿",
+      "kor_name": "",
+      "eng_name": "Sodagreen"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-17T08:44:18.448Z",
     "filename": "deep_little_love_song.json"
   },
@@ -2094,7 +4336,14 @@
     "ori_name": "我的歌声里",
     "kor_name": "내 노래 속에",
     "eng_name": "In My Song",
-    "artist": "曲婉婷(Wanting)",
+    "artist": {
+      "ori_name": "曲婉婷(Wanting)",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T10:12:17.111Z",
     "filename": "deep_in_my_song.json"
   },
@@ -2103,7 +4352,14 @@
     "ori_name": "沉溺",
     "kor_name": "침몰",
     "eng_name": "Sink",
-    "artist": "邹沛沛, Pank",
+    "artist": {
+      "ori_name": "邹沛沛, Pank",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T09:48:04.351Z",
     "filename": "deep_sink.json"
   },
@@ -2112,7 +4368,14 @@
     "ori_name": "过季短袖",
     "kor_name": "시즌이 지난 반팔",
     "eng_name": "Out-of-Season Short Sleeve",
-    "artist": "廖俊涛",
+    "artist": {
+      "ori_name": "廖俊涛",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T09:32:32.904Z",
     "filename": "deep_out_season_short.json"
   },
@@ -2121,7 +4384,14 @@
     "ori_name": "我是一只鱼",
     "kor_name": "나는 한 마리 물고기",
     "eng_name": "I Am a Fish",
-    "artist": "Yihuik苡慧",
+    "artist": {
+      "ori_name": "Yihuik苡慧",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T09:25:59.442Z",
     "filename": "deep_fish.json"
   },
@@ -2130,7 +4400,14 @@
     "ori_name": "等风吹",
     "kor_name": "바람이 불기를 기다리다",
     "eng_name": "Waiting for the Wind to Blow",
-    "artist": "LBI利比",
+    "artist": {
+      "ori_name": "利比",
+      "kor_name": "",
+      "eng_name": "LBI"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T09:18:46.353Z",
     "filename": "deep_wait_wind_blow.json"
   },
@@ -2139,7 +4416,14 @@
     "ori_name": "听风吹",
     "kor_name": "바람소리를 들어봐",
     "eng_name": "Listen to the Wind",
-    "artist": "庄淇文29",
+    "artist": {
+      "ori_name": "庄淇文29",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T09:11:57.408Z",
     "filename": "deep_listen_wind.json"
   },
@@ -2148,7 +4432,14 @@
     "ori_name": "我们打着光脚在风车下跑，手上的狗尾巴草摇啊摇",
     "kor_name": "우리는 풍차 아래에서 맨발로 뛰며, 손에 든 강아지풀을 흔들었어",
     "eng_name": "We ran barefoot under the windmill, shaking the foxtails in our hands",
-    "artist": "等一下就回家",
+    "artist": {
+      "ori_name": "等一下就回家",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T08:58:04.652Z",
     "filename": "deep_windmill.json"
   },
@@ -2157,7 +4448,14 @@
     "ori_name": "等不来花开",
     "kor_name": "피어나지 못한 꽃",
     "eng_name": "Flower That Never Blooms",
-    "artist": "pro",
+    "artist": {
+      "ori_name": "pro",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T08:44:09.202Z",
     "filename": "deep_never_bloom.json"
   },
@@ -2166,7 +4464,14 @@
     "ori_name": "苦茶",
     "kor_name": "쓴 차",
     "eng_name": "Bitter Tea",
-    "artist": "yihuik苡慧, Aioz",
+    "artist": {
+      "ori_name": "yihuik苡慧, Aioz",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-16T08:23:47.294Z",
     "filename": "deep_bitter_tea.json"
   },
@@ -2175,7 +4480,14 @@
     "ori_name": "罗生门",
     "kor_name": "나생문",
     "eng_name": "Rashomon",
-    "artist": "梨冻紧",
+    "artist": {
+      "ori_name": "梨冻紧",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-14T04:37:47.196Z",
     "filename": "deep_rashomon.json"
   },
@@ -2184,7 +4496,14 @@
     "ori_name": "做自己的月亮",
     "kor_name": "자신의 달이 되라",
     "eng_name": "Be Your Own Moon",
-    "artist": "小蓝背心",
+    "artist": {
+      "ori_name": "小蓝背心",
+      "kor_name": "소남배심",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-14T03:59:21.718Z",
     "filename": "deep_own_moon.json"
   },
@@ -2193,7 +4512,14 @@
     "ori_name": "Dancing With Your Ghost",
     "kor_name": "너의 유령과 춤을",
     "eng_name": "Dancing With Your Ghost",
-    "artist": "Sasha Alex Sloan",
+    "artist": {
+      "ori_name": "Sasha Alex Sloan",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T03:46:40.110Z",
     "filename": "deep_dancing_ghost.json"
   },
@@ -2202,7 +4528,14 @@
     "ori_name": "Older",
     "kor_name": "나이 든",
     "eng_name": "Older",
-    "artist": "Sasha Alex Sloan",
+    "artist": {
+      "ori_name": "Sasha Alex Sloan",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T03:17:41.388Z",
     "filename": "deep_older.json"
   },
@@ -2211,7 +4544,14 @@
     "ori_name": "bad guy",
     "kor_name": "나쁜 녀석",
     "eng_name": "bad guy",
-    "artist": "Billie Eilish",
+    "artist": {
+      "ori_name": "Billie Eilish",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T03:15:41.368Z",
     "filename": "deep_bad_guy.json"
   },
@@ -2220,7 +4560,14 @@
     "ori_name": "Counting Stars",
     "kor_name": "별을 세다",
     "eng_name": "Counting Stars",
-    "artist": "OneRepublic",
+    "artist": {
+      "ori_name": "OneRepublic",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T03:10:51.429Z",
     "filename": "deep_counting_stars.json"
   },
@@ -2229,7 +4576,14 @@
     "ori_name": "abcdefu",
     "kor_name": "에이비씨디이에프유",
     "eng_name": "abcdefu",
-    "artist": "GAYLE",
+    "artist": {
+      "ori_name": "GAYLE",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T03:09:20.953Z",
     "filename": "deep_abcdefu.json"
   },
@@ -2238,7 +4592,14 @@
     "ori_name": "Honeybun",
     "kor_name": "허니번",
     "eng_name": "Honeybun",
-    "artist": "LeoStayTrill",
+    "artist": {
+      "ori_name": "LeoStayTrill",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T03:06:25.494Z",
     "filename": "deep_honeybun.json"
   },
@@ -2247,7 +4608,14 @@
     "ori_name": "Mary On A Cross",
     "kor_name": "십자가 위의 메리",
     "eng_name": "Mary On A Cross",
-    "artist": "Ghost",
+    "artist": {
+      "ori_name": "Ghost",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "createdAt": "2025-01-14T02:59:26.064Z",
     "filename": "deep_mary_on.json"
   },
@@ -2256,7 +4624,14 @@
     "ori_name": "早回身",
     "kor_name": "일찍 돌아오다",
     "eng_name": "Return Early",
-    "artist": "尘ah",
+    "artist": {
+      "ori_name": "尘ah",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-13T06:06:42.764Z",
     "filename": "deep_return_early.json"
   },
@@ -2265,7 +4640,14 @@
     "ori_name": "吹灭小山河",
     "kor_name": "작은 산하를 불어 끄다",
     "eng_name": "Blow Out the Small Mountains and Rivers",
-    "artist": "国风堂",
+    "artist": {
+      "ori_name": "国风堂",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-13T05:58:06.915Z",
     "filename": "deep_blow_small.json"
   },
@@ -2274,7 +4656,14 @@
     "ori_name": "晨雾",
     "kor_name": "새벽 안개",
     "eng_name": "Morning Mist",
-    "artist": "薛黛霏",
+    "artist": {
+      "ori_name": "薛黛霏",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-13T03:20:33.322Z",
     "filename": "deep_morning_mist.json"
   },
@@ -2283,7 +4672,14 @@
     "ori_name": "若即若離",
     "kor_name": "약간 떨어져 있는",
     "eng_name": "If It's Slightly Apart",
-    "artist": "K!ddingboi",
+    "artist": {
+      "ori_name": "K!ddingboi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-13T03:00:00.667Z",
     "filename": "deep_slightly_apart.json"
   },
@@ -2292,7 +4688,14 @@
     "ori_name": "全世界最Emo的暴雨",
     "kor_name": "전 세계에서 가장 Emo한 폭우",
     "eng_name": "The Most Emo Rainstorm in the World",
-    "artist": "制造热搜",
+    "artist": {
+      "ori_name": "制造热搜",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-13T02:54:28.877Z",
     "filename": "deep_emo.json"
   },
@@ -2301,7 +4704,14 @@
     "ori_name": "孩子气",
     "kor_name": "철없이",
     "eng_name": "Childish",
-    "artist": "邓典",
+    "artist": {
+      "ori_name": "邓典",
+      "kor_name": "등전",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-13T02:24:55.839Z",
     "filename": "deep_childish.json"
   },
@@ -2310,7 +4720,14 @@
     "ori_name": "夏日晚风",
     "kor_name": "여름밤 바람",
     "eng_name": "Summer Night Breeze",
-    "artist": "xxxmiracle, Aioz",
+    "artist": {
+      "ori_name": "xxxmiracle, Aioz",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-09T02:17:52.410Z",
     "filename": "deep_summer_breeze.json"
   },
@@ -2319,7 +4736,14 @@
     "ori_name": "PARALLEL",
     "kor_name": "평행",
     "eng_name": "Parallel",
-    "artist": "Liza",
+    "artist": {
+      "ori_name": "Liza",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "createdAt": "2025-01-09T01:39:17.755Z",
     "filename": "deep_parallel.json"
   },
@@ -2328,7 +4752,14 @@
     "ori_name": "月牙湾",
     "kor_name": "초승달 만",
     "eng_name": "Crescent Bay",
-    "artist": "等一下就回家",
+    "artist": {
+      "ori_name": "等一下就回家",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-09T01:04:11.333Z",
     "filename": "deep_crescent_bay.json"
   },
@@ -2337,7 +4768,14 @@
     "ori_name": "one percent",
     "kor_name": "1퍼센트",
     "eng_name": "One Percent",
-    "artist": "薛黛霏",
+    "artist": {
+      "ori_name": "薛黛霏",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-09T00:24:19.797Z",
     "filename": "deep_one_percent.json"
   },
@@ -2346,7 +4784,14 @@
     "ori_name": "那一刻心动",
     "kor_name": "그 순간의 설렘",
     "eng_name": "That Moment of Excitement",
-    "artist": "任子墨",
+    "artist": {
+      "ori_name": "任子墨",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-09T00:08:05.996Z",
     "filename": "deep_that_moment.json"
   },
@@ -2355,7 +4800,14 @@
     "ori_name": "无赖",
     "kor_name": "무뢰한",
     "eng_name": "Rogue",
-    "artist": "于翔北",
+    "artist": {
+      "ori_name": "于翔北",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-08T23:46:05.217Z",
     "filename": "deep_rogue.json"
   },
@@ -2364,7 +4816,14 @@
     "ori_name": "蓝色漩涡",
     "kor_name": "푸른 소용돌이",
     "eng_name": "Blue Vortex",
-    "artist": "薛黛霏",
+    "artist": {
+      "ori_name": "薛黛霏",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-08T23:31:42.844Z",
     "filename": "deep_blue_vortex.json"
   },
@@ -2373,7 +4832,14 @@
     "ori_name": "忽远忽近",
     "kor_name": "멀어졌다가 가까워졌다가",
     "eng_name": "Far Then Near",
-    "artist": "九姨太",
+    "artist": {
+      "ori_name": "九姨太",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-08T23:03:50.062Z",
     "filename": "deep_far_then_near.json"
   },
@@ -2382,7 +4848,14 @@
     "ori_name": "给我一杯马蒂尼",
     "kor_name": "나에게 마티니 한 잔을",
     "eng_name": "Give Me a Martini",
-    "artist": "薛黛霏 · 华云龙",
+    "artist": {
+      "ori_name": "薛黛霏 · 华云龙",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-07T08:41:40.352Z",
     "filename": "deep_martini.json"
   },
@@ -2391,7 +4864,14 @@
     "ori_name": "月光下的美丽与哀愁",
     "kor_name": "달빛 아래의 아름다움과 슬픔",
     "eng_name": "Beauty and Sorrow Under the Moonlight",
-    "artist": "于翔北",
+    "artist": {
+      "ori_name": "于翔北",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-07T08:26:16.664Z",
     "filename": "deep_sorrow.json"
   },
@@ -2400,7 +4880,14 @@
     "ori_name": "多巴胺",
     "kor_name": "도파민",
     "eng_name": "Dopamine",
-    "artist": "于翔北 · 薛黛霏",
+    "artist": {
+      "ori_name": "于翔北 · 薛黛霏",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-07T08:13:30.045Z",
     "filename": "deep_dopamine.json"
   },
@@ -2409,7 +4896,14 @@
     "ori_name": "回家",
     "kor_name": "집으로",
     "eng_name": "Going Home",
-    "artist": "曾嘉铭",
+    "artist": {
+      "ori_name": "曾嘉铭",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-07T07:52:35.726Z",
     "filename": "deep_going_home.json"
   },
@@ -2418,7 +4912,14 @@
     "ori_name": "程响世界这么大还是遇见你",
     "kor_name": "세상이 이렇게 넓은데도 너를 만났어",
     "eng_name": "The World Is So Big Yet I Met You",
-    "artist": "程响",
+    "artist": {
+      "ori_name": "程响",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T23:04:26.896Z",
     "filename": "deep_big_yet.json"
   },
@@ -2427,7 +4928,14 @@
     "ori_name": "漂洋过海来看你",
     "kor_name": "바다를 건너 당신을 보러 왔어요",
     "eng_name": "I came over the ocean to see you",
-    "artist": "劉明湘",
+    "artist": {
+      "ori_name": "劉明湘",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T22:47:40.782Z",
     "filename": "deep_over_ocean.json"
   },
@@ -2436,7 +4944,14 @@
     "ori_name": "飞鸟和蝉",
     "kor_name": "새와 매미",
     "eng_name": "Bird and Cicada",
-    "artist": "任然",
+    "artist": {
+      "ori_name": "任然",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T22:38:18.108Z",
     "filename": "deep_cicada.json"
   },
@@ -2445,7 +4960,14 @@
     "ori_name": "银河与星斗",
     "kor_name": "은하와 별",
     "eng_name": "Galaxy and Stars",
-    "artist": "yihuik苡慧",
+    "artist": {
+      "ori_name": "yihuik苡慧",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T22:29:10.297Z",
     "filename": "deep_galaxy.json"
   },
@@ -2454,7 +4976,14 @@
     "ori_name": "借口挽留",
     "kor_name": "변명하며 붙잡기",
     "eng_name": "Excuse to Stay",
-    "artist": "不是花火呀",
+    "artist": {
+      "ori_name": "不是花火呀",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T06:56:17.441Z",
     "filename": "deep_excuse_stay.json"
   },
@@ -2463,7 +4992,14 @@
     "ori_name": "Ta",
     "kor_name": "그(녀)",
     "eng_name": "Ta",
-    "artist": "不是花火呀",
+    "artist": {
+      "ori_name": "不是花火呀",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T06:10:35.115Z",
     "filename": "deep_ta.json"
   },
@@ -2472,7 +5008,14 @@
     "ori_name": "我多喜欢你，你会知道",
     "kor_name": "내가 널 얼마나 좋아하는지, 넌 알게 될 거야",
     "eng_name": "I Like You So Much, You’ll Know It ",
-    "artist": "王俊琪(왕쥔치)",
+    "artist": {
+      "ori_name": "王俊琪(왕쥔치)",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T04:17:51.452Z",
     "filename": "deep_so_much.json"
   },
@@ -2481,7 +5024,14 @@
     "ori_name": "再也没有",
     "kor_name": "다시는 없어",
     "eng_name": "Never Again",
-    "artist": "Ryan.B",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T03:55:57.252Z",
     "filename": "deep_never_again.json"
   },
@@ -2490,7 +5040,14 @@
     "ori_name": "学猫叫",
     "kor_name": "고양이 소리를 따라해 보자",
     "eng_name": "Learning to Meow",
-    "artist": "小潘潘 · 小峰峰",
+    "artist": {
+      "ori_name": "小潘潘 · 小峰峰",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-06T02:58:26.747Z",
     "filename": "deep_meow.json"
   },
@@ -2499,7 +5056,14 @@
     "ori_name": "甜蜜蜜",
     "kor_name": "첨밀밀",
     "eng_name": "Tian Mi Mi",
-    "artist": "邓丽君",
+    "artist": {
+      "ori_name": "邓丽君",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-05T22:37:59.141Z",
     "filename": "deep_tian_mi_mi.json"
   },
@@ -2508,25 +5072,30 @@
     "ori_name": "万有引力",
     "kor_name": "만유인력",
     "eng_name": "Universal Gravity",
-    "artist": "Fyy",
+    "artist": {
+      "ori_name": "Fyy",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-02T23:16:01.648Z",
     "filename": "deep2_gravitation.json"
-  },
-  {
-    "name": "deep_gravitation",
-    "ori_name": "万有引力",
-    "kor_name": "만유인력",
-    "eng_name": "Universal Gravitation",
-    "artist": "Fyy",
-    "createdAt": "2025-01-02T23:06:40.384Z",
-    "filename": "deep_gravitation.json"
   },
   {
     "name": "deep_little_sweet",
     "ori_name": "有点甜",
     "kor_name": "달콤해",
     "eng_name": "A Little Sweet",
-    "artist": "汪苏泷",
+    "artist": {
+      "ori_name": "汪苏泷",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-02T22:54:07.570Z",
     "filename": "deep_little_sweet.json"
   },
@@ -2535,7 +5104,14 @@
     "ori_name": "那些年",
     "kor_name": "그 해 우리",
     "eng_name": "Those Bygone Years",
-    "artist": "胡夏",
+    "artist": {
+      "ori_name": "胡夏",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-02T22:36:14.466Z",
     "filename": "deep_bygone.json"
   },
@@ -2544,7 +5120,14 @@
     "ori_name": "小幸運",
     "kor_name": "작은 행운",
     "eng_name": "A Little Happiness",
-    "artist": "田馥甄",
+    "artist": {
+      "ori_name": "田馥甄",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-02T22:22:17.366Z",
     "filename": "deep_little_happiness.json"
   },
@@ -2553,7 +5136,14 @@
     "ori_name": "非酋",
     "kor_name": "운이 없는 사람",
     "eng_name": "Non-Chief",
-    "artist": "薛明媛",
+    "artist": {
+      "ori_name": "薛明媛",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-02T22:05:24.378Z",
     "filename": "deep_non_cheif.json"
   },
@@ -2562,7 +5152,14 @@
     "ori_name": "老鼠爱大米",
     "kor_name": "생쥐는 쌀을 좋아해",
     "eng_name": "Mouse Loves Rice",
-    "artist": "Xiang Xiang",
+    "artist": {
+      "ori_name": "Xiang Xiang",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T23:34:47.246Z",
     "filename": " deep_mouse.json"
   },
@@ -2571,7 +5168,14 @@
     "ori_name": "白月光与朱砂痣",
     "kor_name": "백월광과 주사점",
     "eng_name": "White Moonlight and Cinnabar Mole",
-    "artist": "大籽",
+    "artist": {
+      "ori_name": "大籽",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T20:50:44.997Z",
     "filename": "deep_white_moonlight.json"
   },
@@ -2580,7 +5184,14 @@
     "ori_name": "不眠之夜",
     "kor_name": "잠 못 이루는 밤",
     "eng_name": "WHITE NIGHT",
-    "artist": "张杰",
+    "artist": {
+      "ori_name": "张杰",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T20:28:43.701Z",
     "filename": "deep_white_night.json"
   },
@@ -2589,7 +5200,14 @@
     "ori_name": "我期待的不是雪",
     "kor_name": "내가 기대한 건 눈이 아니야",
     "eng_name": "What I Expected Wasn't Snow",
-    "artist": "张妙格",
+    "artist": {
+      "ori_name": "张妙格",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T20:09:33.663Z",
     "filename": "deep_not_snow.json"
   },
@@ -2598,7 +5216,14 @@
     "ori_name": "消散对白",
     "kor_name": "사라지는 대화, 소산대백",
     "eng_name": "Fading Dialogue",
-    "artist": "丁禹兮",
+    "artist": {
+      "ori_name": "丁禹兮",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T19:50:45.898Z",
     "filename": "deep_fading_dialogue.json"
   },
@@ -2607,7 +5232,14 @@
     "ori_name": "见怪不怪",
     "kor_name": "아무렇지도 않게",
     "eng_name": "calm down",
-    "artist": "田园",
+    "artist": {
+      "ori_name": "田园",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T19:18:43.675Z",
     "filename": "deep_calm_down.json"
   },
@@ -2616,7 +5248,14 @@
     "ori_name": "路过你的风",
     "kor_name": "너를 지나가는 바람",
     "eng_name": "The Wind Passing By You",
-    "artist": "林怡婕 · Aech洪文豪",
+    "artist": {
+      "ori_name": "林怡婕 · Aech洪文豪",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T19:01:13.857Z",
     "filename": "deep_wind_pass.json"
   },
@@ -2625,7 +5264,14 @@
     "ori_name": "最后一页",
     "kor_name": "마지막 페이지",
     "eng_name": "Last Page",
-    "artist": "Sasablue",
+    "artist": {
+      "ori_name": "Sasablue",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T18:41:03.960Z",
     "filename": "deep_last_page.json"
   },
@@ -2634,7 +5280,14 @@
     "ori_name": "错都错了",
     "kor_name": "잘못했어",
     "eng_name": "It's Already Wrong",
-    "artist": "赵乃吉",
+    "artist": {
+      "ori_name": "赵乃吉",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2025-01-01T18:05:30.864Z",
     "filename": "deep_already_wrong.json"
   },
@@ -2643,7 +5296,14 @@
     "ori_name": "心跳的证明",
     "kor_name": "심장 박동의 증명",
     "eng_name": "Proof of Heartbeat",
-    "artist": "刘人语",
+    "artist": {
+      "ori_name": "刘人语",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-31T14:46:50.327Z",
     "filename": "deep_heartbeat.json"
   },
@@ -2652,7 +5312,14 @@
     "ori_name": "万里晴空",
     "kor_name": "만리 청공",
     "eng_name": "Clear Sky",
-    "artist": "山止川行 · 覆予",
+    "artist": {
+      "ori_name": "山止川行 · 覆予",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-31T14:34:50.357Z",
     "filename": "deep_clear_sky.json"
   },
@@ -2661,7 +5328,14 @@
     "ori_name": "海平面的星",
     "kor_name": "해수면의 별",
     "eng_name": "Stars on the Sea Level",
-    "artist": "Zkaaai, 红宇乐团",
+    "artist": {
+      "ori_name": "Zkaaai, 红宇乐团",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-31T14:27:27.593Z",
     "filename": "deep_sea_level.json"
   },
@@ -2670,7 +5344,14 @@
     "ori_name": "心意已决",
     "kor_name": "마음이 정해졌어",
     "eng_name": "My Mind is Made Up",
-    "artist": "杨胖雨",
+    "artist": {
+      "ori_name": "杨胖雨",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-31T01:04:35.930Z",
     "filename": "deep_made_up.json"
   },
@@ -2679,7 +5360,14 @@
     "ori_name": "肯定",
     "kor_name": "긍정",
     "eng_name": "Affirmation",
-    "artist": "RE-D",
+    "artist": {
+      "ori_name": "RE-D",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-31T00:53:50.399Z",
     "filename": "deep_ok.json"
   },
@@ -2688,7 +5376,14 @@
     "ori_name": "精卫",
     "kor_name": "정위",
     "eng_name": "Jingwei",
-    "artist": "30年前，50年后",
+    "artist": {
+      "ori_name": "30年前，50年后",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-31T00:14:31.123Z",
     "filename": "deep_jingwei.json"
   },
@@ -2697,7 +5392,14 @@
     "ori_name": "如果可以",
     "kor_name": "만약",
     "eng_name": "Red Scarf",
-    "artist": "韋禮安 WeiBird",
+    "artist": {
+      "ori_name": "韋禮安 WeiBird",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-30T19:42:24.601Z",
     "filename": "deep_red_scarf.json"
   },
@@ -2706,127 +5408,213 @@
     "ori_name": "向天再借五百年",
     "kor_name": "하늘에 다시 500년을 빌려",
     "eng_name": "Borrow Five Hundred More Years from Heaven",
-    "artist": "韩磊",
+    "artist": {
+      "ori_name": "韩磊",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-30T00:01:57.799Z",
     "filename": "deep_500year.json"
-  },
-  {
-    "name": "deep3_after_leave",
-    "ori_name": "我走后",
-    "kor_name": "내가 떠난 후",
-    "eng_name": "After I Left",
-    "artist": "En",
-    "createdAt": "2024-12-29T23:43:54.872Z",
-    "filename": "deep3_after_leave.json"
   },
   {
     "name": "deep2_after_leave",
     "ori_name": "我走后",
     "kor_name": "내가 떠난 후",
     "eng_name": "After I Leave",
-    "artist": "小咪",
+    "artist": {
+      "ori_name": "小咪",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "createdAt": "2024-12-29T22:58:31.521Z",
     "filename": "deep2_after_leave.json"
   },
   {
-    "name": "deep_after_leave",
-    "ori_name": "我走后",
-    "kor_name": "내가 떠난 후",
-    "eng_name": "After I Leave",
-    "artist": "小咪",
-    "createdAt": "2024-12-29T22:33:57.137Z",
-    "filename": "deep_after_leave.json"
-  },
-  {
     "name": "194_lander",
+    "ori_name": "194 Länder",
+    "kor_name": "194개국",
+    "eng_name": "194 countries",
+    "artist": {
+      "ori_name": "Mark Forster",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "194_lander.json"
   },
   {
-    "name": "ant_jiang",
-    "filename": "ant_jiang.json"
-  },
-  {
-    "name": "ant_jiang2",
-    "filename": "ant_jiang2.json"
-  },
-  {
     "name": "apt",
+    "ori_name": "APT.",
+    "kor_name": "",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "ROSÉ, Bruno Mars",
+      "kor_name": "로제, 브루노 마스",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "apt.json"
   },
   {
     "name": "astrologie",
+    "ori_name": "Astrologie",
+    "kor_name": "점성학",
+    "eng_name": "astrology",
+    "artist": {
+      "ori_name": "Gregor Hägele",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "astrologie.json"
   },
   {
-    "name": "bansanka",
-    "filename": "bansanka.json"
-  },
-  {
     "name": "becane",
+    "ori_name": "Bécane",
+    "kor_name": "바이크",
+    "eng_name": "Bike",
+    "artist": {
+      "ori_name": "Yamê",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어"
+    ],
     "filename": "becane.json"
   },
   {
     "name": "bella_donna",
+    "ori_name": "Bella Donna",
+    "kor_name": "Pretty Woman",
+    "eng_name": "아름다운 여성",
+    "artist": {
+      "ori_name": "Pietro Lombardi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "bella_donna.json"
   },
   {
     "name": "birds_of_a_feather",
+    "ori_name": "BIRDS OF A FEATHER",
+    "kor_name": "깃털이 같은 새들",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Billie Eilish",
+      "kor_name": "빌리 아일리시",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "birds_of_a_feather.json"
   },
   {
     "name": "bufuren",
+    "ori_name": "不负人间",
+    "kor_name": "세상을 저버리지 않고",
+    "eng_name": "Bu Fu Ren Jian",
+    "artist": {
+      "ori_name": "阿YueYue",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "bufuren.json"
   },
   {
     "name": "cha_cha_cha",
+    "ori_name": "Cha Cha Cha",
+    "kor_name": "",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Käärijä",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "핀란드어"
+    ],
     "filename": "cha_cha_cha.json"
-  },
-  {
-    "name": "deep10_otonoke",
-    "filename": "deep10_otonoke.json"
   },
   {
     "name": "deep2_no_reason",
     "ori_name": "No Reason",
     "kor_name": "이유 없이",
     "eng_name": "No Reason",
-    "artist": "Ryan.B & Effie",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어",
+      "Effie"
+    ],
     "filename": "deep2_no_reason.json"
   },
   {
-    "name": "deep2_otonoke",
-    "filename": "deep2_otonoke.json"
-  },
-  {
     "name": "deep2_super_idol",
+    "ori_name": "热爱105°c的你",
+    "kor_name": "105도의 너를 사랑해",
+    "eng_name": "Love you at 105°C",
+    "artist": {
+      "ori_name": "阿肆",
+      "kor_name": "",
+      "eng_name": "A Si"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "deep2_super_idol.json"
   },
   {
-    "name": "deep3_otonoke",
-    "filename": "deep3_otonoke.json"
-  },
-  {
-    "name": "deep4_otonoke",
-    "filename": "deep4_otonoke.json"
-  },
-  {
-    "name": "deep5_otonoke",
-    "filename": "deep5_otonoke.json"
-  },
-  {
-    "name": "deep_194_lander",
-    "filename": "deep_194_lander.json"
-  },
-  {
     "name": "deep_able",
+    "ori_name": "可能的吧",
+    "kor_name": "혹시",
+    "eng_name": "Possibly",
+    "artist": {
+      "ori_name": "Vicky宣宣",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "deep_able.json"
   },
   {
     "name": "deep_cha_cha",
     "ori_name": "午夜恰恰",
-    "kor_name": "자정 차차차",
+    "kor_name": "한밤중의 차차차",
     "eng_name": "Midnight Cha-Cha-Cha",
-    "artist": "邓典/刘至佳",
+    "artist": {
+      "ori_name": "邓典",
+      "kor_name": "등전",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어",
+      "刘至佳"
+    ],
     "filename": "deep_cha_cha.json"
   },
   {
@@ -2834,503 +5622,993 @@
     "ori_name": "Copacabana",
     "kor_name": "코파카바나",
     "eng_name": "Copacabana",
-    "artist": "Leon Machère",
+    "artist": {
+      "ori_name": "Leon Machère",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "deep_copacabana.json"
   },
   {
-    "name": "deep_jiang",
-    "filename": "deep_jiang.json"
-  },
-  {
-    "name": "deep_no_reason",
-    "filename": "deep_no_reason.json"
-  },
-  {
     "name": "deep_old_dream",
+    "ori_name": "旧梦一场",
+    "kor_name": "구몽일장",
+    "eng_name": "An old dream",
+    "artist": {
+      "ori_name": "阿悠悠",
+      "kor_name": "아유유",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "deep_old_dream.json"
   },
   {
     "name": "deep_oppo_reno",
+    "ori_name": "放個大招給你看",
+    "kor_name": "필살기를 너에게 보여줄게",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "deep_oppo_reno.json"
   },
   {
     "name": "deep_otonoke",
+    "ori_name": "オトノケ",
+    "kor_name": "오토노케",
+    "eng_name": "Otonoke",
+    "artist": {
+      "ori_name": "Creepy Nuts",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "일본어"
+    ],
     "filename": "deep_otonoke.json"
   },
   {
-    "name": "deep_super_idol",
-    "filename": "deep_super_idol.json"
-  },
-  {
-    "name": "deep_was_mal_war",
-    "filename": "deep_was_mal_war.json"
-  },
-  {
     "name": "deep_wunder",
+    "ori_name": "Wunder",
+    "kor_name": "궁금해",
+    "eng_name": "Wonder",
+    "artist": {
+      "ori_name": "AYLIVA x APACHE 207",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "deep_wunder.json"
   },
   {
     "name": "despacito",
+    "ori_name": "Despacito",
+    "kor_name": "데스파시토",
+    "eng_name": "Slowly",
+    "artist": {
+      "ori_name": "Luis Fonsi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "스페인어"
+    ],
     "filename": "despacito.json"
   },
   {
     "name": "eng_le_festin",
+    "ori_name": "Le Festin",
+    "kor_name": "잔치",
+    "eng_name": "The Feast",
+    "artist": {
+      "ori_name": "Camille, Michael Giacchino",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어"
+    ],
     "filename": "eng_le_festin.json"
   },
   {
-    "name": "expe_suneug",
-    "filename": "expe_suneug.json"
-  },
-  {
-    "name": "full_test_le_festin",
-    "filename": "full_test_le_festin.json"
-  },
-  {
     "name": "galti_se_mistake",
+    "ori_name": "Galti Se Mistake",
+    "kor_name": "실수로",
+    "eng_name": "mistake by mistake",
+    "artist": {
+      "ori_name": "Jagga Jasoos",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "힌디어"
+    ],
     "filename": "galti_se_mistake.json"
   },
   {
     "name": "green_color",
+    "ori_name": "綠色",
+    "kor_name": "녹색",
+    "eng_name": "Green Color",
+    "artist": {
+      "ori_name": "陳雪凝",
+      "kor_name": "진설응",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "green_color.json"
   },
   {
     "name": "grund_genug",
+    "ori_name": "Grund genug",
+    "kor_name": "충분한 이유",
+    "eng_name": "Reason enough",
+    "artist": {
+      "ori_name": "Madeline Juno",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "grund_genug.json"
   },
   {
     "name": "hai_phut",
+    "ori_name": "2 Phút Hơn",
+    "kor_name": "2분 더",
+    "eng_name": "2 Minutes More",
+    "artist": {
+      "ori_name": "Pháo",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "베트남어"
+    ],
     "filename": "hai_phut.json"
   },
   {
     "name": "heavy_is_the_crown",
+    "ori_name": "Heavy Is The Crown",
+    "kor_name": "무거운 왕관",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Linkin Park",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "heavy_is_the_crown.json"
   },
   {
     "name": "herzschlag",
+    "ori_name": "Herzschlag",
+    "kor_name": "심장 박동",
+    "eng_name": "Heartbeat",
+    "artist": {
+      "ori_name": "ELEHA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "herzschlag.json"
   },
   {
     "name": "herztausch",
+    "ori_name": "Herztausch",
+    "kor_name": "심장 교환",
+    "eng_name": "Heart exchange",
+    "artist": {
+      "ori_name": "Christoph Sakwerda",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "herztausch.json"
   },
   {
-    "name": "hoch",
-    "filename": "hoch.json"
-  },
-  {
     "name": "ich_dein_alles",
+    "ori_name": "Ich dein Alles, Du mein Nichts",
+    "kor_name": "나는 너의 전부이고, 너는 나의 아무것도 아니야",
+    "eng_name": "I am your everything, you are my nothing",
+    "artist": {
+      "ori_name": "Marie Bothmer",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "ich_dein_alles.json"
   },
   {
     "name": "insomnia_flight",
+    "ori_name": "失眠飞行",
+    "kor_name": "불면 비행",
+    "eng_name": "Insomnia flight",
+    "artist": {
+      "ori_name": "接个吻，开一枪",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "insomnia_flight.json"
   },
   {
-    "name": "ipa_le_festin",
-    "filename": "ipa_le_festin.json"
-  },
-  {
     "name": "je_ne_parle",
+    "ori_name": "Je ne parle pas français",
+    "kor_name": "나는 프랑스어를 할 줄 몰라요",
+    "eng_name": "I don't speak French",
+    "artist": {
+      "ori_name": "Namika",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어",
+      "프랑스어"
+    ],
     "filename": "je_ne_parle.json"
   },
   {
-    "name": "jiang_hu_yi_xiao",
-    "filename": "jiang_hu_yi_xiao.json"
-  },
-  {
     "name": "la_meme",
+    "ori_name": "La Même",
+    "kor_name": "같은",
+    "eng_name": "The same",
+    "artist": {
+      "ori_name": "GIMS",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어"
+    ],
     "filename": "la_meme.json"
   },
   {
-    "name": "le_festin",
-    "filename": "le_festin.json"
-  },
-  {
     "name": "leiser",
+    "ori_name": "Leiser",
+    "kor_name": "더 조용해",
+    "eng_name": "Quieter",
+    "artist": {
+      "ori_name": "LEA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "leiser.json"
   },
   {
     "name": "lm3allem",
+    "ori_name": "LM3ALLEM",
+    "kor_name": "선생님",
+    "eng_name": "master",
+    "artist": {
+      "ori_name": "Saad Lamjarred",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "아랍어"
+    ],
     "filename": "lm3allem.json"
   },
   {
     "name": "lose_control",
+    "ori_name": "Lose Control",
+    "kor_name": "통제력을 잃어",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Teddy Swims",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "lose_control.json"
   },
   {
     "name": "love_frequency",
+    "ori_name": "Love frequency",
+    "kor_name": "사랑의 빈도",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Sasablue",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "love_frequency.json"
   },
   {
     "name": "love_narrative",
+    "ori_name": "热恋情节",
+    "kor_name": "사랑 이야기",
+    "eng_name": "Love Story",
+    "artist": {
+      "ori_name": "吴子健",
+      "kor_name": "",
+      "eng_name": "Remi"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "love_narrative.json"
   },
   {
     "name": "mama_hat_gesagt",
+    "ori_name": "Mama hat gesagt",
+    "kor_name": "엄마가 말하기를",
+    "eng_name": "Mom said",
+    "artist": {
+      "ori_name": "SDP x Sido x Esther Graf",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "mama_hat_gesagt.json"
   },
   {
     "name": "mangzhong",
+    "ori_name": "芒种",
+    "kor_name": "망종",
+    "eng_name": "Grain in Ear",
+    "artist": {
+      "ori_name": "赵方婧",
+      "kor_name": "조방정",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "mangzhong.json"
   },
   {
     "name": "mashou_no_onna",
+    "ori_name": "魔性の女A",
+    "kor_name": "마성의 여자 A",
+    "eng_name": "femme fatale A",
+    "artist": {
+      "ori_name": "紫 今",
+      "kor_name": "무라사키 이마",
+      "eng_name": "Mulasaki Ima"
+    },
+    "tags": [
+      "일본어"
+    ],
     "filename": "mashou_no_onna.json"
   },
   {
     "name": "mian_wo",
+    "ori_name": "免我蹉跎苦",
+    "kor_name": "면아차타고",
+    "eng_name": "I won't waste my time",
+    "artist": {
+      "ori_name": "黄龄",
+      "kor_name": "황령",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "mian_wo.json"
   },
   {
-    "name": "midnight_chacha",
-    "filename": "midnight_chacha.json"
-  },
-  {
     "name": "mirror_mirror",
+    "ori_name": "Mirror Mirror",
+    "kor_name": "거울아 거울아",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "F.HERO x MILLI",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "태국어"
+    ],
     "filename": "mirror_mirror.json"
   },
   {
     "name": "moj_marmeladnyj",
+    "ori_name": "Мой мармеладный",
+    "kor_name": "내 마멀레이드",
+    "eng_name": "My Marmalade",
+    "artist": {
+      "ori_name": "КАТЯ ЛЕЛЬ",
+      "kor_name": "",
+      "eng_name": "Katya Lel"
+    },
+    "tags": [
+      "러시아어"
+    ],
     "filename": "moj_marmeladnyj.json"
   },
   {
     "name": "my_lovely_killer",
+    "ori_name": "初恋キラー",
+    "kor_name": "첫사랑 킬러",
+    "eng_name": "My lovely killer",
+    "artist": {
+      "ori_name": "乃紫",
+      "kor_name": "노아",
+      "eng_name": "noa"
+    },
+    "tags": [
+      "일본어"
+    ],
     "filename": "my_lovely_killer.json"
   },
   {
-    "name": "new_mangzhong",
-    "filename": "new_mangzhong.json"
-  },
-  {
     "name": "ni_shuo_zhe",
+    "ori_name": "天下的烏鴉一般黑",
+    "kor_name": "천하의 까마귀는 모두 검다",
+    "eng_name": "All crows in the world are black",
+    "artist": {
+      "ori_name": "小炎同學",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "ni_shuo_zhe.json"
   },
   {
     "name": "notion",
+    "ori_name": "Notion",
+    "kor_name": "관념",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "The Rare Occasions",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "notion.json"
   },
   {
-    "name": "oppo_reno",
-    "filename": "oppo_reno.json"
-  },
-  {
-    "name": "otonoke",
-    "filename": "otonoke.json"
-  },
-  {
     "name": "paracetamol",
+    "ori_name": "Paracetamol",
+    "kor_name": "해열제",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Gregor Hägele",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "paracetamol.json"
   },
   {
-    "name": "pop_it",
-    "filename": "pop_it.json"
-  },
-  {
-    "name": "pre_je_ne_parle",
-    "filename": "pre_je_ne_parle.json"
-  },
-  {
-    "name": "pre_mirror_mirror",
-    "filename": "pre_mirror_mirror.json"
-  },
-  {
     "name": "reflection",
+    "ori_name": "Reflection",
+    "kor_name": "비친 내 모습",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "reflection.json"
   },
   {
     "name": "see_tinh",
+    "ori_name": "SEE TÌNH",
+    "kor_name": "띵띵땅땅",
+    "eng_name": "SEE LOVE",
+    "artist": {
+      "ori_name": "Hoàng Thùy Linh",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "베트남어"
+    ],
     "filename": "see_tinh.json"
   },
   {
     "name": "senorita",
+    "ori_name": "Señorita",
+    "kor_name": "세뇨리따",
+    "eng_name": "Miss",
+    "artist": {
+      "ori_name": "Shawn Mendes, Camila Cabello",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "senorita.json"
   },
   {
-    "name": "si_antes_te",
-    "filename": "si_antes_te.json"
-  },
-  {
     "name": "soziale_batterie",
+    "ori_name": "Soziale Batterie",
+    "kor_name": "소셜 배터리",
+    "eng_name": "Social Battery",
+    "artist": {
+      "ori_name": "SOPHIA",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "soziale_batterie.json"
   },
   {
-    "name": "speed_jang2",
-    "filename": "speed_jang2.json"
-  },
-  {
-    "name": "speed_jang3",
-    "filename": "speed_jang3.json"
-  },
-  {
-    "name": "speed_jiang_hu",
-    "filename": "speed_jiang_hu.json"
-  },
-  {
-    "name": "speed_mama",
-    "filename": "speed_mama.json"
-  },
-  {
-    "name": "speed_mashou",
-    "filename": "speed_mashou.json"
-  },
-  {
-    "name": "speed_mirror_mirror",
-    "filename": "speed_mirror_mirror.json"
-  },
-  {
-    "name": "speed_was_mal_war",
-    "filename": "speed_was_mal_war.json"
-  },
-  {
     "name": "spider",
+    "ori_name": "SPIDER",
+    "kor_name": "스파이더",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "GIMS",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "프랑스어",
+      "DYSTINCT"
+    ],
     "filename": "spider.json"
   },
   {
-    "name": "test_le_festin",
-    "filename": "test_le_festin.json"
-  },
-  {
-    "name": "three_le_festin",
-    "filename": "three_le_festin.json"
-  },
-  {
-    "name": "three_mangzhong",
-    "filename": "three_mangzhong.json"
-  },
-  {
-    "name": "three_mashou",
-    "filename": "three_mashou.json"
-  },
-  {
-    "name": "three_soziale_batterie",
-    "filename": "three_soziale_batterie.json"
-  },
-  {
-    "name": "time_to_rise",
-    "filename": "time_to_rise.json"
-  },
-  {
     "name": "tinker_bell",
+    "ori_name": "Tinkerbell",
+    "kor_name": "팅커벨",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "NESS",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "tinker_bell.json"
   },
   {
     "name": "toca_toca",
+    "ori_name": "Toca Toca",
+    "kor_name": "토카토카",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "Fly Project",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "스페인어"
+    ],
     "filename": "toca_toca.json"
   },
   {
     "name": "touch",
+    "ori_name": "Touch",
+    "kor_name": "터치",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "KATSEYE",
+      "kor_name": "캣츠아이",
+      "eng_name": ""
+    },
+    "tags": [
+      "영어"
+    ],
     "filename": "touch.json"
   },
   {
-    "name": "tunak_tunak_tun",
-    "filename": "tunak_tunak_tun.json"
-  },
-  {
-    "name": "two_le_festin",
-    "filename": "two_le_festin.json"
-  },
-  {
-    "name": "v1_194",
-    "filename": "v1_194.json"
-  },
-  {
     "name": "v1_before_said",
+    "ori_name": "从前说",
+    "kor_name": "예전에 말했었지",
+    "eng_name": "Once upon a time",
+    "artist": {
+      "ori_name": "小阿七",
+      "kor_name": "소아칠",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v1_before_said.json"
   },
   {
-    "name": "v1_le_festin",
-    "filename": "v1_le_festin.json"
-  },
-  {
-    "name": "v1_mangzhong",
-    "filename": "v1_mangzhong.json"
-  },
-  {
-    "name": "v1_mian_wo",
-    "filename": "v1_mian_wo.json"
-  },
-  {
-    "name": "v1_old_dream",
-    "filename": "v1_old_dream.json"
-  },
-  {
     "name": "v1_one_way_flower",
+    "ori_name": "一路生花",
+    "kor_name": "일로생화",
+    "eng_name": "A road full of flowers",
+    "artist": {
+      "ori_name": "温奕心",
+      "kor_name": "온혁심",
+      "eng_name": "Yixin Wen"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v1_one_way_flower.json"
   },
   {
-    "name": "v1_spider",
-    "filename": "v1_spider.json"
-  },
-  {
     "name": "v1_time_to_rise",
+    "ori_name": "Time To Rise",
+    "kor_name": "일어날 시간",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "VannDa",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "크메르어"
+    ],
     "filename": "v1_time_to_rise.json"
   },
   {
     "name": "v1_vu_tru_co_anh",
+    "ori_name": "VŨ TRỤ CÓ ANH",
+    "kor_name": "유영 우주",
+    "eng_name": "THE UNIVERSE HAS YOU",
+    "artist": {
+      "ori_name": "Phương Mỹ Chi",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "베트남어"
+    ],
     "filename": "v1_vu_tru_co_anh.json"
   },
   {
     "name": "v1_xiao_cheng",
+    "ori_name": "小城夏天",
+    "kor_name": "소성하천",
+    "eng_name": "Summer in a small town",
+    "artist": {
+      "ori_name": "利比",
+      "kor_name": "",
+      "eng_name": "LBI"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v1_xiao_cheng.json"
   },
   {
     "name": "v2_boy",
+    "ori_name": "少年",
+    "kor_name": "소년",
+    "eng_name": "boy",
+    "artist": {
+      "ori_name": "梦然",
+      "kor_name": "몽연",
+      "eng_name": "Miya Wang"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v2_boy.json"
   },
   {
     "name": "v2_clear_sky",
+    "ori_name": "清空",
+    "kor_name": "비우기",
+    "eng_name": "Clear",
+    "artist": {
+      "ori_name": "苏星婕, 王忻辰",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v2_clear_sky.json"
   },
   {
     "name": "v2_fire_red",
+    "ori_name": "火红的萨日朗",
+    "kor_name": "붉은 백합",
+    "eng_name": "The fiery Sarilang",
+    "artist": {
+      "ori_name": "要不要买菜",
+      "kor_name": "반찬을 살까 말까",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v2_fire_red.json"
   },
   {
-    "name": "v2_jiang",
-    "filename": "v2_jiang.json"
-  },
-  {
-    "name": "v2_midnight",
-    "filename": "v2_midnight.json"
-  },
-  {
     "name": "v2_plain_life",
+    "ori_name": "我願意平凡的陪在你身旁",
+    "kor_name": "평범하게 네 곁에 있고 싶어",
+    "eng_name": "Stay by your side in an ordinary way",
+    "artist": {
+      "ori_name": "王七七",
+      "kor_name": "왕치치",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v2_plain_life.json"
   },
   {
-    "name": "v2_super_idol",
-    "filename": "v2_super_idol.json"
-  },
-  {
     "name": "v2_white_moon",
+    "ori_name": "白月光與硃砂痣",
+    "kor_name": "하얀달빛과 붉은점",
+    "eng_name": "White Moonlight and Crimson Mole",
+    "artist": {
+      "ori_name": "胖虎",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v2_white_moon.json"
   },
   {
-    "name": "v2_wunder",
-    "filename": "v2_wunder.json"
-  },
-  {
-    "name": "v2_wunder2",
-    "filename": "v2_wunder2.json"
-  },
-  {
-    "name": "v2_wunder3",
-    "filename": "v2_wunder3.json"
-  },
-  {
     "name": "v3_blush",
+    "ori_name": "脸红接收处",
+    "kor_name": "검홍접수처",
+    "eng_name": "Blush reception",
+    "artist": {
+      "ori_name": "PIggy",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v3_blush.json"
   },
   {
     "name": "v3_moment",
+    "ori_name": "瞬",
+    "kor_name": "순간",
+    "eng_name": "Moment",
+    "artist": {
+      "ori_name": "郑润泽",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v3_moment.json"
   },
   {
-    "name": "v3_mystery_garden",
-    "filename": "v3_mystery_garden.json"
-  },
-  {
     "name": "v3_youandme",
+    "ori_name": "妳和我",
+    "kor_name": "너랑 나",
+    "eng_name": "You & Me",
+    "artist": {
+      "ori_name": "齊翔 XIANG",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v3_youandme.json"
   },
   {
-    "name": "v4_mystery_garden",
-    "filename": "v4_mystery_garden.json"
-  },
-  {
-    "name": "v5_boy",
-    "filename": "v5_boy.json"
-  },
-  {
     "name": "v5_infatuate",
+    "ori_name": "神魂颠倒",
+    "kor_name": "신혼전도",
+    "eng_name": "Infatuated",
+    "artist": {
+      "ori_name": "邓典",
+      "kor_name": "등전",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v5_infatuate.json"
   },
   {
-    "name": "v5_mystery_garden",
-    "filename": "v5_mystery_garden.json"
-  },
-  {
     "name": "v6_looks_like",
+    "ori_name": "像极了",
+    "kor_name": "정말 닮았어",
+    "eng_name": "Just like",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v6_looks_like.json"
   },
   {
     "name": "v6_moon_light",
+    "ori_name": "月亮代表我的心",
+    "kor_name": "월량대표아적심",
+    "eng_name": "The Moon Represents My Heart",
+    "artist": {
+      "ori_name": "鄧麗君",
+      "kor_name": "등려군",
+      "eng_name": "Teresa Teng"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v6_moon_light.json"
   },
   {
     "name": "v6_must_leave",
+    "ori_name": "我只能离开",
+    "kor_name": "나는 떠날 수 밖에 없어",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "颜人中",
+      "kor_name": "안인중",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v6_must_leave.json"
   },
   {
-    "name": "v6_no_reason",
-    "filename": "v6_no_reason.json"
-  },
-  {
     "name": "v6_wanli",
+    "ori_name": "万里",
+    "kor_name": "완리",
+    "eng_name": "Wanli",
+    "artist": {
+      "ori_name": "혁오",
+      "kor_name": "혁오",
+      "eng_name": "HYUKOH"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v6_wanli.json"
   },
   {
-    "name": "v6_was_mal_war",
-    "filename": "v6_was_mal_war.json"
-  },
-  {
     "name": "v7_27do",
+    "ori_name": "27度",
+    "kor_name": "27도",
+    "eng_name": "twenty-seven degrees",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v7_27do.json"
   },
   {
-    "name": "v7_500year",
-    "filename": "v7_500year.json"
-  },
-  {
     "name": "v7_marry_me",
+    "ori_name": "Marry Me",
+    "kor_name": "결혼해줄래",
+    "eng_name": "",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v7_marry_me.json"
   },
   {
-    "name": "v7_otonoke",
-    "filename": "v7_otonoke.json"
-  },
-  {
     "name": "v7_own_light",
+    "ori_name": "做自己的光，不需要太亮",
+    "kor_name": "너만의 빛이 되렴, 너무 밝을 필요는 없어",
+    "eng_name": "Be your own light",
+    "artist": {
+      "ori_name": "善宇",
+      "kor_name": "선우",
+      "eng_name": ""
+    },
+    "tags": [
+      "중국어"
+    ],
     "filename": "v7_own_light.json"
   },
   {
     "name": "v7_so_what",
+    "ori_name": "那什么",
+    "kor_name": "그 무엇도",
+    "eng_name": "What is that",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어",
+      "李晧轩"
+    ],
     "filename": "v7_so_what.json"
   },
   {
     "name": "v7_special_love",
+    "ori_name": "特别关系",
+    "kor_name": "특별 관계",
+    "eng_name": "Special love",
+    "artist": {
+      "ori_name": "永彬",
+      "kor_name": "영빈",
+      "eng_name": "Ryan.B"
+    },
+    "tags": [
+      "중국어",
+      "都智文"
+    ],
     "filename": "v7_special_love.json"
   },
   {
-    "name": "v8_500year",
-    "filename": "v8_500year.json"
-  },
-  {
     "name": "valto_terma",
+    "ori_name": "Βαλ' Το Τέρμα",
+    "kor_name": "볼륨을 끝까지 올려",
+    "eng_name": "Put an End to It",
+    "artist": {
+      "ori_name": "Νίκος Οικονομόπουλος",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "그리스어"
+    ],
     "filename": "valto_terma.json"
   },
   {
-    "name": "viet_see_tinh",
-    "filename": "viet_see_tinh.json"
-  },
-  {
-    "name": "vu_tru_co_anh",
-    "filename": "vu_tru_co_anh.json"
-  },
-  {
-    "name": "w0R8LldQ_W0",
-    "filename": "w0R8LldQ_W0.json"
-  },
-  {
-    "name": "was_mal_war",
-    "filename": "was_mal_war.json"
-  },
-  {
     "name": "weisses_kleid",
+    "ori_name": "Weißes Kleid",
+    "kor_name": "하얀 드레스",
+    "eng_name": "White dress",
+    "artist": {
+      "ori_name": "KATI K",
+      "kor_name": "",
+      "eng_name": ""
+    },
+    "tags": [
+      "독일어"
+    ],
     "filename": "weisses_kleid.json"
-  },
-  {
-    "name": "wo_xing_shi",
-    "filename": "wo_xing_shi.json"
   }
 ]
