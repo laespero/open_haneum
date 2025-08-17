@@ -404,22 +404,22 @@
       "G0": "이 문장은 'もうすぐ'로 시작하여 '이제 곧'이라는 시간적 근접성을 나타냅니다. '大人ぶらずに'는 '어른스러워지지 않고'라는 의미로, 'ぶらずに'는 '~하지 않고'라는 부정의 의미를 가진 접속사입니다. 전체적으로 이제 곧 어른스러워지지 않고 아이의 무기도 사용할 수 있다는 의미를 전달합니다.",
       "K0": "이제 곧 어른스러워지지 않고",
       "I0": "mōsugu otonaburazu ni",
-      "R0": "모오스구 오토나부라즈 니",
+      "R0": "모오 스구 오토나 부라즈 니",
       "LI": [
         {
           "T1": "もうすぐ",
           "K1": "이제 곧",
           "I1": "mōsugu",
-          "R1": "모오스구",
+          "R1": "모오 스구",
           "E1": "'もうすぐ'는 '이제 곧'이라는 의미로, 시간적으로 가까운 미래를 나타냅니다.",
           "T2": "もうすぐ",
           "K2": "이제 곧",
           "I2": "mōsugu",
-          "R2": "모오스구",
+          "R2": "모오 스구",
           "XE": "もうすぐ夏休みだ。",
           "XK": "이제 곧 여름방학이야.",
           "XI": "mōsugu natsuyasumi da",
-          "XR": "모오스구 나츠야스미 다"
+          "XR": "모오 스구 나츠야스미 다"
         },
         {
           "T1": "大人",
@@ -1028,7 +1028,7 @@
       "G0": "이 문장은 '教えてあげなきゃならない'로 구성되어 있습니다. '教えて'는 '가르치다'라는 의미의 동사 '教える'의 연결형입니다. 'あげなきゃ'는 '~해 주지 않으면 안 된다'는 의미로, 'あげる'의 부정형 'あげない'와 'きゃ'가 결합된 형태입니다. 'ならない'는 '안 된다'는 의미의 부정 표현입니다. 전체적으로 '가르쳐 주지 않으면 안 된다'는 의미를 전달합니다.",
       "K0": "가르쳐 주지 않으면 안 돼.",
       "I0": "oshiete agenakya naranai",
-      "R0": "오시에테 아게나캬 나라나이",
+      "R0": "오시에테 아게나캬 나라 나이",
       "LI": [
         {
           "T1": "教えて",
@@ -1064,7 +1064,7 @@
           "T1": "ならない",
           "K1": "안 된다",
           "I1": "naranai",
-          "R1": "나라나이",
+          "R1": "나라 나이",
           "E1": "'안 된다'는 의미의 부정 표현입니다.",
           "T2": "なる",
           "K2": "되다",
@@ -1850,7 +1850,7 @@
       "G0": "이 문장은 조건문으로, 'もし'는 '만약'이라는 의미의 접속사입니다. '飛び出るんだったら'는 '飛び出る'라는 동사에 'んだ'라는 강조 표현과 'ったら'라는 조건형 접미사가 결합된 형태입니다. 전체적으로 '만약 뛰쳐나가는 거라면'이라는 의미를 나타냅니다.",
       "K0": "만약 뛰쳐나가는 거라면",
       "I0": "moshi tobiderundattara",
-      "R0": "모시 토비데룬닷타라",
+      "R0": "모시 토비 데룬닷 타라",
       "LI": [
         {
           "T1": "もし",
@@ -1871,12 +1871,12 @@
           "T1": "飛び出る",
           "K1": "뛰쳐나가다",
           "I1": "tobideru",
-          "R1": "토비데루",
+          "R1": "토비 데루",
           "E1": "갑자기 밖으로 나가거나 도망치는 행위를 나타내는 동사입니다.",
           "T2": "飛び出す",
           "K2": "뛰쳐나가다",
           "I2": "tobidasu",
-          "R2": "토비다스",
+          "R2": "토비 다스",
           "XE": "彼は怒って飛び出した。",
           "XK": "그는 화가 나서 뛰쳐나갔다.",
           "XI": "kare wa okotte tobidashita",
@@ -2063,7 +2063,7 @@
       "G0": "이 문장은 비교와 의무를 나타내는 표현입니다. 'それより'는 '그것보다', 'かっこよくなきゃいけない'는 '멋져야만 한다'는 의미로, 앞서 언급된 상황보다 더 나은 상태가 되어야 함을 강조합니다. 전체적으로 세상의 기준을 넘어서 더 나은 모습을 갖추어야 한다는 메시지를 전달합니다.",
       "K0": "그것보다 더 멋져야만 해.",
       "I0": "sore yori kakko yoku nakya ikenai",
-      "R0": "소레 요리 칵코 요쿠 나캬 이케나이",
+      "R0": "소레 요리 캇코 요쿠 나캬 이케 나이",
       "LI": [
         {
           "T1": "それ",
@@ -2099,31 +2099,31 @@
           "T1": "かっこよく",
           "K1": "멋지게",
           "I1": "kakko yoku",
-          "R1": "칵코 요쿠",
+          "R1": "캇코 요쿠",
           "E1": "'かっこいい'의 부사형으로, '멋지게'라는 의미입니다.",
           "T2": "かっこいい",
           "K2": "멋지다",
           "I2": "kakko ii",
-          "R2": "칵코 이이",
+          "R2": "캇코 이이",
           "XE": "彼はかっこよく踊った。",
           "XK": "그는 멋지게 춤췄다.",
           "XI": "kare wa kakko yoku odotta",
-          "XR": "카레 와 칵코 요쿠 오돗타"
+          "XR": "카레 와 캇코 요쿠 오돗타"
         },
         {
           "T1": "なきゃいけない",
           "K1": "~해야만 한다",
           "I1": "nakya ikenai",
-          "R1": "나캬 이케나이",
+          "R1": "나캬 이케 나이",
           "E1": "의무를 나타내는 표현으로, '~하지 않으면 안 된다'는 의미입니다.",
           "T2": "なければならない",
           "K2": "~해야만 한다",
           "I2": "nakereba naranai",
-          "R2": "나케레바 나라나이",
+          "R2": "나케레바 나라 나이",
           "XE": "勉強しなきゃいけない。",
           "XK": "공부해야만 해.",
           "XI": "benkyou shinakya ikenai",
-          "XR": "벤쿄우 시나캬 이케나이"
+          "XR": "벤쿄우 시나캬 이케 나이"
         }
       ],
       "O0": "それよりかっこよくなきゃいけない"
@@ -2392,7 +2392,7 @@
       "G0": "이 문장은 접속사 'だけど'로 시작하여 앞 문장과 대조되는 내용을 이어갑니다. '私も'는 '나도'라는 의미로, 화자 자신을 나타냅니다. 'ほんとは'는 '사실은'이라는 뜻으로, 진실된 감정을 드러내는 표현입니다. '寂しがりやで'는 '외로움을 많이 타는 사람이다'라는 의미로, 화자의 성격을 나타내는 부분입니다. 전체적으로 화자가 겉으로는 강한 척하지만 사실은 외로움을 많이 타는 성격임을 나타내는 문장입니다.",
       "K0": "하지만 나도 사실은 외로움을 많이 타는 사람이야.",
       "I0": "dakedo watashi mo honto wa sabishigariya de",
-      "R0": "다케도 와타시 모 혼토와 사비시가리야 데",
+      "R0": "다케도 와타시 모 혼토와 사비시 가리야 데",
       "LI": [
         {
           "T1": "だけど",
@@ -2458,16 +2458,16 @@
           "T1": "寂しがりや",
           "K1": "외로움을 많이 타는 사람",
           "I1": "sabishigariya",
-          "R1": "사비시가리야",
+          "R1": "사비시 가리야",
           "E1": "외로움을 쉽게 타는 성격을 가진 사람을 나타내는 표현입니다.",
           "T2": "寂しがりや",
           "K2": "외로움을 많이 타는 사람",
           "I2": "sabishigariya",
-          "R2": "사비시가리야",
+          "R2": "사비시 가리야",
           "XE": "彼は寂しがりやだ。",
           "XK": "그는 외로움을 많이 타는 사람이야.",
           "XI": "kare wa sabishigariya da",
-          "XR": "카레와 사비시가리야 다"
+          "XR": "카레와 사비시 가리야 다"
         },
         {
           "T1": "で",
@@ -2973,21 +2973,6 @@
           "XK": "학교에 가다.",
           "XI": "gakkō ni iku",
           "XR": "갓코오 니 이쿠"
-        },
-        {
-          "T1": "...!",
-          "K1": "...!",
-          "I1": "...!",
-          "R1": "...!",
-          "E1": "문장의 끝을 강조하는 기호입니다.",
-          "T2": "...!",
-          "K2": "...!",
-          "I2": "...!",
-          "R2": "...!",
-          "XE": "Wow...!",
-          "XK": "와우...!",
-          "XI": "wow...!",
-          "XR": "와우...!"
         }
       ],
       "O0": "Coolな 態度は Protectionに...!"
@@ -2998,7 +2983,7 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '誰も見たことのない顔'로, '아무도 본 적 없는 얼굴'을 의미합니다. 두 번째 절은 '誰かに見せるかもしれない'로, '누군가에게 보여줄지도 몰라'라는 의미입니다. 전체적으로 새로운 모습을 보여줄 가능성을 나타내는 문장입니다.",
       "K0": "아무도 본 적 없는 얼굴을 누군가에게 보여줄지도 몰라",
       "I0": "dare mo mita koto no nai kao dareka ni miseru kamoshirenai",
-      "R0": "다레 모 미타 코토 노 나이 카오 다레카 니 미세루 카모시레나이",
+      "R0": "다레 모 미타 코토 노 나이 카오 다레카 니 미세루 카모 시레 나이",
       "LI": [
         {
           "T1": "誰も",
@@ -3124,16 +3109,16 @@
           "T1": "かもしれない",
           "K1": "~일지도 몰라",
           "I1": "kamoshirenai",
-          "R1": "카모시레나이",
+          "R1": "카모 시레 나이",
           "E1": "불확실한 가능성을 나타내는 표현입니다.",
           "T2": "かもしれない",
           "K2": "~일지도 몰라",
           "I2": "kamoshirenai",
-          "R2": "카모시레나이",
+          "R2": "카모 시레 나이",
           "XE": "彼は来るかもしれない。",
           "XK": "그가 올지도 몰라.",
           "XI": "kare wa kuru kamoshirenai",
-          "XR": "카레 와 쿠루 카모시레나이"
+          "XR": "카레 와 쿠루 카모 시레 나이"
         }
       ],
       "O0": "誰も見たことのない顔 誰かに見せるかもしれない"
@@ -3270,5 +3255,6 @@
       "O0": "タバコの煙をかきわけ音にうもれて"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "rubyData": "エスケープ<br><span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>の<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>かっこつけてて<br>べルを<span class=\"ruby\"><span class=\"rb\">鳴</span><span class=\"rt\">な</span></span>らして<br><span class=\"ruby\"><span class=\"rb\">傷</span><span class=\"rt\">きず</span></span>をいやして<br>もうすぐ<span class=\"ruby\"><span class=\"rb\">大人</span><span class=\"rt\">おとな</span></span>ぶらずに<br><span class=\"ruby\"><span class=\"rb\">熱</span><span class=\"rt\">あつ</span></span>い<span class=\"ruby\"><span class=\"rb\">気持</span><span class=\"rt\">きも</span></span>ち <span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>に<br><span class=\"ruby\"><span class=\"rb\">前世</span><span class=\"rt\">ぜんせ</span></span>があったら<br>だけど<span class=\"ruby\"><span class=\"rb\">私</span><span class=\"rt\">わたし</span></span>もほんとは<span class=\"ruby\"><span class=\"rb\">凄</span><span class=\"rt\">すご</span></span>くないから<br>あの<span class=\"ruby\"><span class=\"rb\">子</span><span class=\"rt\">こ</span></span>やあいつ<br><span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>もため<span class=\"ruby\"><span class=\"rb\">息</span><span class=\"rt\">いき</span></span>の<span class=\"ruby\"><span class=\"rb\">続</span><span class=\"rt\">つづ</span></span>き<br><span class=\"ruby\"><span class=\"rb\">自分</span><span class=\"rt\">じぶん</span></span>だけで<span class=\"ruby\"><span class=\"rb\">精一杯</span><span class=\"rt\">せいいっぱい</span></span><br>いちばん <span class=\"ruby\"><span class=\"rb\">旬</span><span class=\"rt\">しゅん</span></span>なとき<br>Rhythm and blues<br><span class=\"ruby\"><span class=\"rb\">教</span><span class=\"rt\">おし</span></span>えてあげなきゃならない<br>それでもそれなりに<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>える<br>でも<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>はくる<br><span class=\"ruby\"><span class=\"rb\">歩</span><span class=\"rt\">ある</span></span>いてる<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span>に<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>か<br><span class=\"ruby\"><span class=\"rb\">昨日</span><span class=\"rt\">きのう</span></span>からずっとしてる<br><span class=\"ruby\"><span class=\"rb\">一人</span><span class=\"rt\">ひとり</span></span><span class=\"ruby\"><span class=\"rb\">街</span><span class=\"rt\">まち</span></span>をさまよってる<br>ただ<span class=\"ruby\"><span class=\"rb\">過</span><span class=\"rt\">す</span></span>ぎて<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">ゆ</span></span>くよで<br>Sweet, sweet 19 blues<br><span class=\"ruby\"><span class=\"rb\">寂</span><span class=\"rt\">さび</span></span>しさは<span class=\"ruby\"><span class=\"rb\">昔</span><span class=\"rt\">むかし</span></span>よりも<br>Sweet, sweet 19 dreams<br>いちばんとりえが<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>か<br><span class=\"ruby\"><span class=\"rb\">子供</span><span class=\"rt\">こども</span></span>の<span class=\"ruby\"><span class=\"rb\">武器</span><span class=\"rt\">ぶき</span></span>も<span class=\"ruby\"><span class=\"rb\">使</span><span class=\"rt\">つか</span></span>える<br>もし<span class=\"ruby\"><span class=\"rb\">飛</span><span class=\"rt\">と</span></span>び<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>るんだったら<br><span class=\"ruby\"><span class=\"rb\">真実味</span><span class=\"rt\">しんじつみ</span></span>おびてきたね<br>きっと<span class=\"ruby\"><span class=\"rb\">身</span><span class=\"rt\">み</span></span>について<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">ゆ</span></span>くもの<br>それよりかっこよくなきゃいけない<br>Change my life Change my life<br>まるで<span class=\"ruby\"><span class=\"rb\">毎日</span><span class=\"rt\">まいにち</span></span>の<span class=\"ruby\"><span class=\"rb\">様</span><span class=\"rt\">よう</span></span>なスタイル<br>(Sweet, sweet 19 blues) Sweet, sweet 19 blues<br>だけど<span class=\"ruby\"><span class=\"rb\">私</span><span class=\"rt\">わたし</span></span>もほんとは<span class=\"ruby\"><span class=\"rb\">寂</span><span class=\"rt\">さび</span></span>しがりやで<br><span class=\"ruby\"><span class=\"rb\">部屋</span><span class=\"rt\">へや</span></span>で<span class=\"ruby\"><span class=\"rb\">電話</span><span class=\"rt\">でんわ</span></span>を<span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>つよりも<br><span class=\"ruby\"><span class=\"rb\">絶対</span><span class=\"rt\">ぜったい</span></span>に maybe stray cats <span class=\"ruby\"><span class=\"rb\">路地裏</span><span class=\"rt\">ろじうら</span></span>の<br><span class=\"ruby\"><span class=\"rb\">昨日</span><span class=\"rt\">きのう</span></span>はあの<span class=\"ruby\"><span class=\"rb\">子</span><span class=\"rt\">こ</span></span>が<span class=\"ruby\"><span class=\"rb\">私</span><span class=\"rt\">わたし</span></span>の<br><span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あした</span></span>は<span class=\"ruby\"><span class=\"rb\">私</span><span class=\"rt\">わたし</span></span>があの<span class=\"ruby\"><span class=\"rb\">子</span><span class=\"rt\">こ</span></span>の<br>Coolな <span class=\"ruby\"><span class=\"rb\">態度</span><span class=\"rt\">たいど</span></span>は Protectionに...!<br><span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>も<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>たことのない<span class=\"ruby\"><span class=\"rb\">顔</span><span class=\"rt\">かお</span></span> <span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>かに<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>せるかもしれない<br>タバコの<span class=\"ruby\"><span class=\"rb\">煙</span><span class=\"rt\">けむり</span></span>をかきわけ<span class=\"ruby\"><span class=\"rb\">音</span><span class=\"rt\">おと</span></span>にうもれて"
 }

@@ -10,7 +10,8 @@
     "eng_name": "&team"
   },
   "tags": [
-    "캐이팝"
+    "일본어",
+    "케이팝"
   ],
   "text": "\r\n真夏の夜咲いた firework (firework, firework)\r\n高鳴る鼓動は止まらない\r\nどんな旅だろうといいんだ\r\nこの胸が叫び言う (hey)\r\n今すぐ君に会いたい\r\nあの空駆け抜ける\r\n色とりどりのflame\r\n君も見ているなら\r\nYou know that we feel the same\r\n共に走り出す\r\nOh 降り注ぐ光は\r\n願い込めた shooting star\r\nOh 君を探していた\r\nLight me up まるで magic\r\nYou and I 忘れない\r\n目と目が合った瞬間\r\nBang, bang 空に咲いたfirework\r\n不確かで漠然とした期待を\r\n確かにした 君との出会いが\r\n教えてくれた\r\n僕は一人じゃないと\r\nI know, in our love\r\nざわめく胸の理由 (hey)\r\nI know, in our life\r\n夏の夜が僕に落とした魔法\r\n湿りきった導火線\r\nもう一度 火を付ける\r\n君と僕が 「僕ら」へ\r\n変わっていく 今\r\n重なり合う声\r\nOh 夜に舞う花びら\r\n照らす君の姿\r\nOh 僕はただ見ていた\r\nLight me up まるで magic\r\nYou and I 忘れない\r\n君と出会った瞬間\r\nBang, bang 空に咲いたfirework\r\n会いたい no going back, back, back\r\n踏み出す running so fast, fast, fast\r\n後悔 なんてしたくない絶対\r\nTonight\r\nあの夜空に届けたい\r\n一人じゃ届かない\r\nでも僕らは手を伸ばす\r\nFirework (hey)\r\nOh 降り注ぐ光は\r\n願い込めた shooting star\r\nOh 君を探していた\r\nLight me up まるで magic\r\nYou and I 忘れない\r\n目と目が合った瞬間\r\nBang, bang 空に咲いたfirework\r\n\r\n",
   "createdAt": "2025-07-14T01:49:02.206Z",
@@ -384,22 +385,22 @@
       "G0": "이 문장은 일본어로, 주어(色とりどりのflame)로 구성되어 있습니다. '色とりどりの'는 '다양한 색깔의'를 의미하며, 'flame'은 '불꽃'을 뜻합니다. 전체적으로 다양한 색깔의 불꽃을 묘사하고 있습니다.",
       "K0": "다양한 색깔의 불꽃",
       "I0": "irotoridori no fureimu",
-      "R0": "이로토리도리 노 후레무",
+      "R0": "이로 토리 도리 노 후레무",
       "LI": [
         {
           "T1": "色とりどりの",
           "K1": "다양한 색깔의",
           "I1": "irotoridori no",
-          "R1": "이로토리도리 노",
+          "R1": "이로 토리 도리 노",
           "E1": "'다양한 색깔의'라는 의미의 형용사로, 다양한 색상이 섞여 있음을 나타냅니다.",
           "T2": "色とりどり",
           "K2": "다양한 색깔",
           "I2": "irotoridori",
-          "R2": "이로토리도리",
+          "R2": "이로 토리 도리",
           "XE": "色とりどりの花が咲いている。",
           "XK": "다양한 색깔의 꽃이 피어 있다.",
           "XI": "irotoridori no hana ga saite iru",
-          "XR": "이로토리도리 노 하나 가 사이테 이루"
+          "XR": "이로 토리 도리 노 하나 가 사이테 이루"
         },
         {
           "T1": "flame",
@@ -466,7 +467,7 @@
       "G0": "이 문장은 주어(一人) + 부정형(じゃ) + 동사(届かない)로 구성되어 있습니다. '一人'은 '혼자'를 의미하며, 'じゃ'는 부정을 나타내는 구어체 표현입니다. '届かない'은 '닿을 수 없다'라는 의미로, 전체적으로 혼자서는 목표를 이룰 수 없다는 의미를 전달합니다.",
       "K0": "혼자서는 닿을 수 없어.",
       "I0": "hitori ja todokanai",
-      "R0": "히토리 쟈 토도카나이",
+      "R0": "히토리 쟈 토도카 나이",
       "LI": [
         {
           "T1": "一人",
@@ -502,7 +503,7 @@
           "T1": "届かない",
           "K1": "닿을 수 없다",
           "I1": "todokanai",
-          "R1": "토도카나이",
+          "R1": "토도카 나이",
           "E1": "'닿다'라는 의미의 동사 '届く'의 부정형으로, '닿을 수 없다'라는 의미입니다.",
           "T2": "届く",
           "K2": "닿다",
@@ -511,7 +512,7 @@
           "XE": "声が届かない。",
           "XK": "목소리가 닿지 않아.",
           "XI": "koe ga todokanai",
-          "XR": "코에 가 토도카나이"
+          "XR": "코에 가 토도카 나이"
         }
       ],
       "O0": "一人じゃ届かない"
@@ -522,7 +523,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, '今すぐ'는 '지금 바로', '君に'는 '너를', '会いたい'는 '만나고 싶다'를 의미합니다. 전체적으로 강한 갈망을 표현하는 문장입니다.",
       "K0": "지금 바로 너를 만나고 싶어.",
       "I0": "ima sugu kimi ni aitai",
-      "R0": "이마 스구 키미 니 아이타이",
+      "R0": "이마 스구 키미 니 아이 타이",
       "LI": [
         {
           "T1": "今すぐ",
@@ -552,13 +553,13 @@
           "XE": "君に会いたい。",
           "XK": "너를 만나고 싶어.",
           "XI": "kimi ni aitai",
-          "XR": "키미 니 아이타이"
+          "XR": "키미 니 아이 타이"
         },
         {
           "T1": "会いたい",
           "K1": "만나고 싶다",
           "I1": "aitai",
-          "R1": "아이타이",
+          "R1": "아이 타이",
           "E1": "'만나고 싶다'라는 의미로, 강한 욕망을 나타내는 표현입니다.",
           "T2": "会う",
           "K2": "만나다",
@@ -567,7 +568,7 @@
           "XE": "友達に会いたい。",
           "XK": "친구를 만나고 싶어.",
           "XI": "tomodachi ni aitai",
-          "XR": "토모다치 니 아이타이"
+          "XR": "토모다치 니 아이 타이"
         }
       ],
       "O0": "今すぐ君に会いたい"
@@ -578,22 +579,22 @@
       "G0": "이 문장은 '湿りきった'라는 형용사와 '導火線'이라는 명사로 구성되어 있습니다. '湿りきった'는 '完全に湿った'라는 의미로, '導火線'은 '불을 옮기는 데 사용되는 줄'을 의미합니다. 전체적으로 '완전히 젖어버린 도화선'이라는 뜻으로, 어떤 상황이 완전히 망가졌거나 어려움에 처했음을 비유적으로 표현하고 있습니다.",
       "K0": "젖어버린 도화선",
       "I0": "shimirikitta dōkasen",
-      "R0": "시미리킷타 도오카센",
+      "R0": "시메리 킷타 도오카센",
       "LI": [
         {
           "T1": "湿りきった",
           "K1": "젖어버린",
           "I1": "shimirikitta",
-          "R1": "시미리킷타",
+          "R1": "시메리 킷타",
           "E1": "'湿る'(젖다)의 과거형으로, 완전히 젖어버린 상태를 나타냅니다.",
           "T2": "湿る",
           "K2": "젖다",
           "I2": "shimiru",
-          "R2": "시미루",
+          "R2": "시메루",
           "XE": "雨で服が湿りきった。",
           "XK": "비로 옷이 완전히 젖어버렸다.",
           "XI": "ame de fuku ga shimirikitta",
-          "XR": "아메 데 후쿠 가 시미리킷타"
+          "XR": "아메 데 후쿠 가 시메리 킷타"
         },
         {
           "T1": "導火線",
@@ -660,7 +661,7 @@
       "G0": "이 문장은 주어가 생략된 상태로, 'あの空'(저 하늘)을 목적어로 하고 '駆け抜ける'(달려 넘다)를 동사로 사용하고 있습니다. 전체적으로 저 하늘을 달려 넘고 싶은 강한 의지를 표현하고 있습니다.",
       "K0": "저 하늘을 달려 넘어",
       "I0": "ano sora kakenukeru",
-      "R0": "아노 소라 카케누케루",
+      "R0": "아노 소라 카케 누케루",
       "LI": [
         {
           "T1": "あの",
@@ -696,12 +697,12 @@
           "T1": "駆け抜ける",
           "K1": "달려 넘다",
           "I1": "kakenukeru",
-          "R1": "카케누케루",
+          "R1": "카케 누케루",
           "E1": "빠르게 달려서 어떤 장소를 지나쳐 나아가는 것을 의미하는 동사입니다.",
           "T2": "駆け抜ける",
           "K2": "달려 넘다",
           "I2": "kakenukeru",
-          "R2": "카케누케루",
+          "R2": "카케 누케루",
           "XE": "彼は森を駆け抜けた。",
           "XK": "그는 숲을 달려 넘었다.",
           "XI": "kare wa mori wo kakenuketa",
@@ -716,7 +717,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, 'あの夜空に'(그 밤하늘에) + '届けたい'(닿고 싶다)로 구성되어 있습니다. '届けたい'는 '닿다'라는 동사의 희망형으로, 무언가를 이루고 싶은 소망을 표현합니다. 전체적으로 밤하늘에 닿고 싶은 간절한 바람을 나타내는 문장입니다.",
       "K0": "그 밤하늘에 닿고 싶어.",
       "I0": "ano yozora ni todoketai",
-      "R0": "아노 요조라니 토도케타이",
+      "R0": "아노 요조라 니 토도케 타이",
       "LI": [
         {
           "T1": "あの",
@@ -746,7 +747,7 @@
           "XE": "夜空に星が輝いている。",
           "XK": "밤하늘에 별이 빛나고 있다.",
           "XI": "yozora ni hoshi ga kagayaite iru",
-          "XR": "요조라니 호시가 카가야이테 이루"
+          "XR": "요조라 니 호시가 카가야이테 이루"
         },
         {
           "T1": "に",
@@ -767,7 +768,7 @@
           "T1": "届けたい",
           "K1": "닿고 싶다",
           "I1": "todoketai",
-          "R1": "토도케타이",
+          "R1": "토도케 타이",
           "E1": "'届く'(닿다)의 희망형으로, 무언가를 이루고 싶은 소망을 표현합니다.",
           "T2": "届く",
           "K2": "닿다",
@@ -776,7 +777,7 @@
           "XE": "夢に届けたい。",
           "XK": "꿈에 닿고 싶다.",
           "XI": "yume ni todoketai",
-          "XR": "유메니 토도케타이"
+          "XR": "유메니 토도케 타이"
         }
       ],
       "O0": "あの夜空に届けたい"
@@ -787,37 +788,37 @@
       "G0": "이 문장은 주어가 생략된 상태로, '불확실하고 막연한 기대를'이라는 목적어를 나타냅니다. '不確かで'는 '불확실하고', '漠然とした'는 '막연한', '期待を'는 '기대를'을 의미합니다. 전체적으로 불확실하고 막연한 기대에 대해 이야기하고 있습니다.",
       "K0": "불확실하고 막연한 기대를",
       "I0": "fukakusade bokkantoshita kitai wo",
-      "R0": "후카쿠사데 보칸토시타 키타이 오",
+      "R0": "후타시카 데 바쿠젠 토 시타 키타이 오",
       "LI": [
         {
           "T1": "不確かで",
           "K1": "불확실하고",
           "I1": "fukakusade",
-          "R1": "후카쿠사데",
+          "R1": "후타시카 데",
           "E1": "'불확실하다'라는 의미의 형용사로, 어떤 것이 명확하지 않거나 확실하지 않음을 나타냅니다.",
           "T2": "不確か",
           "K2": "불확실",
           "I2": "fukakusa",
-          "R2": "후카쿠사",
+          "R2": "후타시카",
           "XE": "不確かな未来",
           "XK": "불확실한 미래",
           "XI": "fukakusa na mirai",
-          "XR": "후카쿠사 나 미라이"
+          "XR": "후타시카 나 미라이"
         },
         {
           "T1": "漠然とした",
           "K1": "막연한",
           "I1": "bokkantoshita",
-          "R1": "보칸토시타",
+          "R1": "바쿠젠 토 시타",
           "E1": "'막연하다'라는 의미의 형용사로, 어떤 것이 명확하지 않거나 구체적이지 않음을 나타냅니다.",
           "T2": "漠然",
           "K2": "막연",
           "I2": "bokkan",
-          "R2": "보칸",
+          "R2": "바쿠젠",
           "XE": "漠然とした不安",
           "XK": "막연한 불안",
           "XI": "bokkantoshita fuan",
-          "XR": "보칸토시타 후안"
+          "XR": "바쿠젠 토 시타 후안"
         },
         {
           "T1": "期待を",
@@ -1086,7 +1087,7 @@
       "G0": "이 문장은 두 부분으로 나뉘어 있습니다. 첫 부분 '後悔 なんてしたくない'는 '後悔' (후회)라는 명사와 'なんてしたくない' (하고 싶지 않다)라는 표현이 결합되어 '후회하고 싶지 않다'는 의미를 전달합니다. 두 번째 부분 '絶対'는 '절대'라는 의미로, 앞서 언급된 내용을 강조하는 역할을 합니다. 전체적으로 화자가 어떤 행동을 하면서도 절대 후회하지 않겠다는 결의를 나타내는 문장입니다.",
       "K0": "절대 후회하고 싶지 않아.",
       "I0": "kōkai nante shitakunai zettai",
-      "R0": "코오카이 난테 시타쿠나이 젯타이",
+      "R0": "코오카이 난테 시타쿠 나이 젯타이",
       "LI": [
         {
           "T1": "後悔",
@@ -1122,7 +1123,7 @@
           "T1": "したくない",
           "K1": "하고 싶지 않다",
           "I1": "shitakunai",
-          "R1": "시타쿠나이",
+          "R1": "시타쿠 나이",
           "E1": "'하다'라는 동사에 '~하고 싶지 않다'라는 의미를 더한 표현입니다.",
           "T2": "する",
           "K2": "하다",
@@ -1131,7 +1132,7 @@
           "XE": "勉強したくない。",
           "XK": "공부하고 싶지 않아.",
           "XI": "benkyō shitakunai",
-          "XR": "벙쿄오 시타쿠나이"
+          "XR": "벙쿄오 시타쿠 나이"
         },
         {
           "T1": "絶対",
@@ -1157,7 +1158,7 @@
       "G0": "이 문장은 감탄사 'Oh'로 시작하여, '降り注ぐ光は'(쏟아지는 빛은)이라는 주제어를 강조하고 있습니다. 전체적으로 '쏟아지는 빛'에 대한 감탄과 그 의미를 표현하는 문장입니다.",
       "K0": "오, 쏟아지는 빛은",
       "I0": "Oh furisosogu hikari wa",
-      "R0": "오 후리소소구 히카리 와",
+      "R0": "오 후리 소소구 히카리 와",
       "LI": [
         {
           "T1": "Oh",
@@ -1178,16 +1179,16 @@
           "T1": "降り注ぐ",
           "K1": "쏟아지는",
           "I1": "furisosogu",
-          "R1": "후리소소구",
+          "R1": "후리 소소구",
           "E1": "비나 빛이 쏟아지듯 내리는 것을 나타내는 동사입니다.",
           "T2": "降り注ぐ",
           "K2": "쏟아지는",
           "I2": "furisosogu",
-          "R2": "후리소소구",
+          "R2": "후리 소소구",
           "XE": "雨が降り注ぐ",
           "XK": "비가 쏟아진다",
           "XI": "ame ga furisosogu",
-          "XR": "아메 가 후리소소구"
+          "XR": "아메 가 후리 소소구"
         },
         {
           "T1": "光",
@@ -1225,69 +1226,100 @@
     {
       "T0": "Oh 君を探していた",
       "C0": "소원을 담은 shooting star Oh 너를 찾고 있었어 Light me up 마치 magic처럼",
-      "G0": "이 문장은 감탄사 'Oh'로 시작하여 화자의 감정을 표현하고 있습니다. '君を探していた'는 '너를 찾고 있었다'라는 의미로, 과거에 상대방을 찾고 있었음을 나타냅니다. 전체적으로 화자가 상대방을 찾고 있었던 과거의 상황을 표현하고 있습니다.",
-      "K0": "Oh 너를 찾고 있었어",
+      "G0": "이 문장은 감탄사 'Oh'로 시작하여 화자가 특정 대상을 찾고 있었음을 표현합니다. '君を探していた'은 '너를 찾고 있었다'라는 의미로, '君'은 '너', 'を'는 목적격 조사, '探していた'은 '찾고 있었다'를 나타냅니다. 전체적으로 화자가 소중한 대상을 찾고 있었던 상황을 나타내는 구문입니다.",
+      "K0": "Oh 너를 찾고 있었다.",
       "I0": "Oh kimi o sagashite ita",
       "R0": "오 키미 오 사가시테 이타",
       "LI": [
         {
           "T1": "Oh",
           "K1": "오",
-          "I1": "Oh",
+          "I1": "oʊ",
           "R1": "오",
-          "E1": "감탄사로, 놀람이나 감정을 표현할 때 사용됩니다.",
+          "E1": "놀람이나 감탄을 나타내는 감탄사입니다.",
           "T2": "Oh",
           "K2": "오",
-          "I2": "Oh",
+          "I2": "oʊ",
           "R2": "오",
-          "XE": "Oh, it's you!",
-          "XK": "오, 너였구나!",
-          "XI": "Oh, itsu yu!",
-          "XR": "오, 잇츠 유!"
+          "XE": "Oh, what a surprise!",
+          "XK": "오, 정말 놀랍다!",
+          "XI": "oʊ wʌt ə sɚˈpraɪz",
+          "XR": "오 왓 어 서프라이즈"
         },
         {
           "T1": "君",
-          "K1": "너는 어디에 있니?",
+          "K1": "너",
           "I1": "kimi",
           "R1": "키미",
-          "E1": "상대방을 부를 때 사용하는 친근한 호칭입니다.",
+          "E1": "대상에 대한 친근감을 나타내는 2인칭 대명사입니다.",
           "T2": "君",
           "K2": "너",
           "I2": "kimi",
           "R2": "키미",
           "XE": "君はどこにいるの？",
-          "XI": "kimi wa doko ni iru no?",
-          "XR": "키미 와 도코 니 이루 노?"
+          "XK": "너는 어디에 있니?",
+          "XI": "kimi wa doko ni iru no",
+          "XR": "키미 와 도코 니 이루 노"
         },
         {
           "T1": "を",
-          "K1": "를",
+          "K1": "~를",
           "I1": "o",
           "R1": "오",
-          "E1": "목적어를 나타내는 조사입니다.",
+          "E1": "목적격 조사로, 동사의 대상이 되는 대상을 나타냅니다.",
           "T2": "を",
-          "K2": "를",
+          "K2": "~를",
           "I2": "o",
           "R2": "오",
-          "XE": "本を読む",
-          "XK": "책을 읽다",
+          "XE": "本を読む。",
+          "XK": "책을 읽다.",
           "XI": "hon o yomu",
           "XR": "혼 오 요무"
         },
         {
-          "T1": "探していた",
-          "K1": "찾고 있었다",
-          "I1": "sagashite ita",
-          "R1": "사가시테 이타",
-          "E1": "과거에 어떤 것을 찾고 있었음을 나타내는 표현입니다.",
+          "T1": "探し",
+          "K1": "찾다",
+          "I1": "sagashi",
+          "R1": "사가시",
+          "E1": "무엇인가를 찾는 행위를 나타내는 동사 '探す'의 연용형입니다.",
           "T2": "探す",
           "K2": "찾다",
           "I2": "sagasu",
           "R2": "사가스",
-          "XE": "彼を探していた",
-          "XK": "그를 찾고 있었다",
-          "XI": "kare o sagashite ita",
-          "XR": "카레 오 사가시테 이타"
+          "XE": "鍵を探しています。",
+          "XK": "열쇠를 찾고 있어요.",
+          "XI": "kagi o sagashite imasu",
+          "XR": "카기 오 사가시테 이마스"
+        },
+        {
+          "T1": "て",
+          "K1": "~고",
+          "I1": "te",
+          "R1": "테",
+          "E1": "동사의 연용형에 붙어 동작의 진행이나 상태를 나타내는 조동사입니다.",
+          "T2": "て",
+          "K2": "~고",
+          "I2": "te",
+          "R2": "테",
+          "XE": "食べてください。",
+          "XK": "먹어 주세요.",
+          "XI": "tabete kudasai",
+          "XR": "타베테 쿠다사이"
+        },
+        {
+          "T1": "いた",
+          "K1": "~었다",
+          "I1": "ita",
+          "R1": "이타",
+          "E1": "과거의 상태나 행동을 나타내는 조동사 'いる'의 과거형입니다.",
+          "T2": "いる",
+          "K2": "~있다",
+          "I2": "iru",
+          "R2": "이루",
+          "XE": "ここにいたよ。",
+          "XK": "여기 있었어.",
+          "XI": "koko ni ita yo",
+          "XR": "코코 니 이타 요"
         }
       ],
       "O0": "Oh 君を探していた"
@@ -1369,7 +1401,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, '君と出会った瞬間'은 '너와 만난 순간'을 의미합니다. '君と'는 '너와', '出会った'는 '만났다', '瞬間'은 '순간'을 나타냅니다. 전체적으로 특정 순간을 강조하는 표현입니다.",
       "K0": "너와 만난 순간",
       "I0": "kimi to deatta shunkan",
-      "R0": "키미 토 데앗타 슝칸",
+      "R0": "키미 토 데앗타 슌칸",
       "LI": [
         {
           "T1": "君",
@@ -1420,16 +1452,16 @@
           "T1": "瞬間",
           "K1": "순간",
           "I1": "shunkan",
-          "R1": "슝칸",
+          "R1": "슌칸",
           "E1": "매우 짧은 시간을 의미하는 명사입니다.",
           "T2": "瞬間",
           "K2": "순간",
           "I2": "shunkan",
-          "R2": "슝칸",
+          "R2": "슌칸",
           "XE": "瞬間を見逃すな",
           "XK": "순간을 놓치지 마라",
           "XI": "shunkan o minogasu na",
-          "XR": "슝칸 오 미노가스 나"
+          "XR": "슌칸 오 미노가스 나"
         }
       ],
       "O0": "君と出会った瞬間"
@@ -1582,7 +1614,7 @@
       "G0": "이 문장은 영어와 일본어가 혼합된 형태입니다. 'You and I'는 영어로 '너와 나'를 의미하며, '忘れない'는 일본어로 '잊지 않을 거야'라는 뜻입니다. 전체적으로 '너와 나는 잊지 않을 거야'라는 의미를 담고 있습니다.",
       "K0": "너와 나는 잊지 않을 거야",
       "I0": "juː ænd aɪ wasurenai",
-      "R0": "유 앤드 아이 와스레나이",
+      "R0": "유 앤드 아이 와스레 나이",
       "LI": [
         {
           "T1": "You",
@@ -1633,7 +1665,7 @@
           "T1": "忘れない",
           "K1": "잊지 않을 거야",
           "I1": "wasurenai",
-          "R1": "와스레나이",
+          "R1": "와스레 나이",
           "E1": "일본어로 '잊지 않을 거야'라는 뜻입니다. 미래에 어떤 것을 기억할 것을 강조하는 표현입니다.",
           "T2": "忘れる",
           "K2": "잊다",
@@ -1642,7 +1674,7 @@
           "XE": "彼女のことは忘れない。",
           "XK": "그녀에 대한 건 잊지 않을 거야.",
           "XI": "kanojo no koto wa wasurenai.",
-          "XR": "카노조 노 코토 와 와스레나이."
+          "XR": "카노조 노 코토 와 와스레 나이."
         }
       ],
       "O0": "You and I 忘れない"
@@ -1825,7 +1857,7 @@
       "G0": "이 문장은 주어(この胸が) + 동사구(叫び言う)로 구성되어 있습니다. 'この胸が'는 '이 가슴이'를 의미하며, '叫び言う'는 '외치고 있다'는 뜻입니다. 문장 끝의 '(hey)'는 감탄사로 감정을 강조합니다. 전체적으로 강한 감정이나 열망을 표현하는 구문입니다.",
       "K0": "이 가슴이 외치고 있어 (hey)",
       "I0": "kono mune ga sakebi iu (hei)",
-      "R0": "코노 무네가 사케비 이우 (헤이)",
+      "R0": "코노 무네 가 사케비 이우 (헤이)",
       "LI": [
         {
           "T1": "この",
@@ -1846,7 +1878,7 @@
           "T1": "胸が",
           "K1": "가슴이",
           "I1": "mune ga",
-          "R1": "무네가",
+          "R1": "무네 가",
           "E1": "신체 부위인 '가슴'을 의미하며, 주어를 나타내는 조사 'が'가 붙어 있습니다.",
           "T2": "胸",
           "K2": "가슴",
@@ -1855,7 +1887,7 @@
           "XE": "胸がどきどきする。",
           "XK": "가슴이 두근두근해.",
           "XI": "mune ga dokidoki suru",
-          "XR": "무네가 도키도키 스루"
+          "XR": "무네 가 도키도키 스루"
         },
         {
           "T1": "叫び言う",
@@ -2169,7 +2201,7 @@
       "G0": "이 문장은 일본어로 되어 있으며, 'ざわめく胸の理由'라는 주제와 감탄사 '(hey)'로 구성되어 있습니다. 'ざわめく'는 '소란스럽다'라는 의미로, '胸'은 '가슴', '理由'는 '이유'를 의미합니다. 전체적으로 가슴이 소란스러운 이유에 대해 이야기하고 있습니다.",
       "K0": "소란스러운 가슴의 이유 (hey)",
       "I0": "zawameku mune no riyū (hey)",
-      "R0": "자와메쿠 무네 노 리유 (헤이)",
+      "R0": "자와메쿠 무네 노 리유우 (헤이)",
       "LI": [
         {
           "T1": "ざわめく",
@@ -2220,16 +2252,16 @@
           "T1": "理由",
           "K1": "이유",
           "I1": "riyū",
-          "R1": "리유",
+          "R1": "리유우",
           "E1": "어떤 일이 일어난 원인이나 근거를 나타냅니다.",
           "T2": "理由",
           "K2": "이유",
           "I2": "riyū",
-          "R2": "리유",
+          "R2": "리유우",
           "XE": "理由を教えてください。",
           "XK": "이유를 가르쳐 주세요.",
           "XI": "riyū o oshiete kudasai",
-          "XR": "리유 오 오시에테 쿠다사이"
+          "XR": "리유우 오 오시에테 쿠다사이"
         },
         {
           "T1": "hey",
@@ -2352,15 +2384,15 @@
     },
     {
       "T0": "Light me up まるで magic",
-      "C0": "오, 너를 찾고 있었어. Light me up 마치 마술처럼 You and I 잊지 않을 거야.",
-      "G0": "이 문장은 영어와 일본어가 혼합된 문장입니다. 'Light me up'은 영어로 '나를 밝혀줘'라는 의미이며, 'まるで magic'은 일본어로 '마치 마술처럼'이라는 뜻입니다. 영어 부분은 명령문 구조이고, 일본어 부분은 비유적 표현입니다.",
-      "K0": "나를 밝혀줘, 마치 마술처럼.",
+      "C0": "오, 너를 찾고 있었어. Light me up 마치 마법처럼. You and I 잊지 않을 거야.",
+      "G0": "이 문장은 영어와 일본어가 혼합된 문장입니다. 'Light me up'은 영어로 '나를 밝혀줘'라는 의미이며, 'まるで magic'은 일본어로 '마치 마법처럼'이라는 의미입니다. 전체적으로 누군가를 마법처럼 밝혀주는 감정을 표현하고 있습니다.",
+      "K0": "나를 밝혀줘, 마치 마법처럼.",
       "I0": "laɪt mi ʌp maɾɯde mædʒɪk",
       "R0": "라이트 미 업 마루데 매직",
       "LI": [
         {
           "T1": "Light",
-          "K1": "촛불을 밝혀줄래?",
+          "K1": "밝히다",
           "I1": "laɪt",
           "R1": "라이트",
           "E1": "빛을 내거나 밝게 만드는 것을 의미하는 동사입니다.",
@@ -2368,65 +2400,70 @@
           "K2": "빛",
           "I2": "laɪt",
           "R2": "라이트",
-          "XE": "Can you light the candle?",
-          "XI": "kæn ju laɪt ðə ˈkændl",
-          "XR": "캔 유 라이트 더 캔들"
+          "XE": "Please light the candle.",
+          "XK": "촛불을 밝혀줘.",
+          "XI": "pliːz laɪt ðə ˈkændl",
+          "XR": "플리즈 라이트 더 캔들"
         },
         {
           "T1": "me",
-          "K1": "나를 도와줄래?",
+          "K1": "나를",
           "I1": "mi",
           "R1": "미",
-          "E1": "1인칭 단수 목적격 대명사로, 말하는 사람 자신을 가리킵니다.",
+          "E1": "1인칭 단수 목적격 대명사로, '나를'이라는 의미입니다.",
           "T2": "me",
           "K2": "나를",
           "I2": "mi",
           "R2": "미",
           "XE": "Can you help me?",
+          "XK": "나를 도와줄래?",
           "XI": "kæn ju hɛlp mi",
           "XR": "캔 유 헬프 미"
         },
         {
           "T1": "up",
-          "K1": "하늘을 올려다봐.",
+          "K1": "위로",
           "I1": "ʌp",
           "R1": "업",
-          "E1": "위쪽 방향이나 상태를 나타내는 부사입니다.",
+          "E1": "위쪽 방향을 나타내는 부사입니다.",
           "T2": "up",
           "K2": "위로",
           "I2": "ʌp",
           "R2": "업",
           "XE": "Look up at the sky.",
+          "XK": "하늘을 올려다봐.",
           "XI": "lʊk ʌp æt ðə skaɪ",
           "XR": "룩 업 앳 더 스카이"
         },
         {
           "T1": "まるで",
-          "K1": "마치 꿈처럼.",
+          "K1": "마치",
           "I1": "maɾɯde",
           "R1": "마루데",
-          "E1": "비유적으로 어떤 상태나 상황을 나타낼 때 사용하는 부사입니다.",
+          "E1": "무언가를 비유할 때 사용하는 부사로, '마치'라는 의미입니다.",
           "T2": "まるで",
           "K2": "마치",
           "I2": "maɾɯde",
           "R2": "마루데",
           "XE": "まるで夢のようだ。",
+          "XK": "마치 꿈처럼.",
           "XI": "maɾɯde jɯme no joːda",
           "XR": "마루데 유메 노 요오다"
         },
         {
           "T1": "magic",
-          "K1": "마술 쇼는 정말 놀라웠어.",
+          "K1": "마법",
           "I1": "mædʒɪk",
           "R1": "매직",
-          "E1": "초자연적이거나 신비로운 힘을 나타내는 명사입니다.",
+          "E1": "초자연적인 힘을 사용하는 것을 의미하는 명사입니다.",
           "T2": "magic",
-          "K2": "마술",
+          "K2": "마법",
           "I2": "mædʒɪk",
           "R2": "매직",
-          "XE": "The magic show was amazing.",
-          "XI": "ðə ˈmædʒɪk ʃoʊ wəz əˈmeɪzɪŋ",
-          "XR": "더 매직 쇼 워즈 어메이징"
+          "XE": "She believes in magic.",
+          "XK": "그녀는 마법을 믿어.",
+          "XI": "ʃi bɪˈliːvz ɪn ˈmædʒɪk",
+          "XR": "시 빌리브즈 인 매직"
         }
       ],
       "O0": "Light me up まるで magic"
@@ -2437,22 +2474,22 @@
       "G0": "이 문장은 '夏の夜' (여름 밤)이 주어이고, '僕に' (나에게)가 간접 목적어, '落とした' (떨어뜨린)이 동사, '魔法' (마법)이 목적어인 문장입니다. 전체적으로 여름 밤이 나에게 마법을 걸었다는 의미를 담고 있습니다.",
       "K0": "여름 밤이 나에게 건네준 마법",
       "I0": "natsu no yoru ga boku ni otoshita mahō",
-      "R0": "나쯔 노 요루 가 보쿠 니 오토시타 마호오",
+      "R0": "나츠 노 요루 가 보쿠 니 오토시타 마호오",
       "LI": [
         {
           "T1": "夏の夜",
           "K1": "여름 밤",
           "I1": "natsu no yoru",
-          "R1": "나쯔 노 요루",
+          "R1": "나츠 노 요루",
           "E1": "여름의 밤을 의미하는 명사구입니다.",
           "T2": "夏の夜",
           "K2": "여름 밤",
           "I2": "natsu no yoru",
-          "R2": "나쯔 노 요루",
+          "R2": "나츠 노 요루",
           "XE": "夏の夜は涼しいです。",
           "XK": "여름 밤은 시원합니다.",
           "XI": "natsu no yoru wa suzushii desu",
-          "XR": "나쯔 노 요루 와 스즈시이 데스"
+          "XR": "나츠 노 요루 와 스즈시이 데스"
         },
         {
           "T1": "が",
@@ -2639,7 +2676,7 @@
       "G0": "이 문장은 주어가 생략된 형태로, '目と目が合った'(눈이 마주친)라는 동사구와 '瞬間'(순간)이라는 명사로 구성되어 있습니다. '目と目が合った'는 '눈과 눈이 마주치다'라는 의미로, 두 사람이 서로를 바라보는 순간을 나타냅니다. '瞬間'은 매우 짧은 시간을 의미하며, 여기서는 그 순간의 중요성을 강조하고 있습니다.",
       "K0": "눈이 마주친 순간",
       "I0": "me to me ga atta shunkan",
-      "R0": "메 토 메 가 앗타 슝칸",
+      "R0": "메 토 메 가 앗타 슌칸",
       "LI": [
         {
           "T1": "目",
@@ -2720,16 +2757,16 @@
           "T1": "瞬間",
           "K1": "순간",
           "I1": "shunkan",
-          "R1": "슝칸",
+          "R1": "슌칸",
           "E1": "매우 짧은 시간을 나타내는 명사입니다.",
           "T2": "瞬間",
           "K2": "순간",
           "I2": "shunkan",
-          "R2": "슝칸",
+          "R2": "슌칸",
           "XE": "瞬間を逃さないで。",
           "XK": "순간을 놓치지 마세요.",
           "XI": "shunkan o nogasanai de",
-          "XR": "슝칸 오 노가사나이 데"
+          "XR": "슌칸 오 노가사나이 데"
         }
       ],
       "O0": "目と目が合った瞬間"
@@ -2740,13 +2777,13 @@
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '確かにした'로, '확실하게 했다'라는 의미를 나타냅니다. 두 번째 절은 '君との出会いが'로, '너와의 만남이'라는 주어를 나타냅니다. 전체적으로 불확실한 기대를 확실하게 해준 만남에 대한 감정을 표현하고 있습니다.",
       "K0": "확실하게 해준 너와의 만남이",
       "I0": "tashika ni shita kimi to no deai ga",
-      "R0": "타시카니 시타 키미토노 데아이가",
+      "R0": "타시카 니 시타 키미토노 데아이 가",
       "LI": [
         {
           "T1": "確かに",
           "K1": "확실하게",
           "I1": "tashika ni",
-          "R1": "타시카니",
+          "R1": "타시카 니",
           "E1": "어떤 사실이나 상태가 확실함을 나타내는 부사입니다.",
           "T2": "確か",
           "K2": "확실한",
@@ -2755,7 +2792,7 @@
           "XE": "確かに彼は来るだろう。",
           "XK": "확실히 그는 올 거야.",
           "XI": "tashika ni kare wa kuru darou",
-          "XR": "타시카니 카레와 쿠루 다로우"
+          "XR": "타시카 니 카레와 쿠루 다로우"
         },
         {
           "T1": "した",
@@ -2841,13 +2878,13 @@
       "G0": "이 문장은 일본어와 영어가 혼합된 문장입니다. '会いたい'는 일본어로 '만나고 싶다'는 뜻이며, 주어가 생략된 형태입니다. 'no going back, back, back'은 영어로 '돌아갈 수 없다'는 의미를 반복하여 강조하고 있습니다. 전체적으로 누군가를 만나고 싶은 강렬한 감정과 결코 돌아갈 수 없다는 의지를 표현하고 있습니다.",
       "K0": "만나고 싶어, 돌아갈 수 없다, 돌아갈 수 없다, 돌아갈 수 없다",
       "I0": "aɪtaɪ noʊ ˈɡoʊɪŋ bæk, bæk, bæk",
-      "R0": "아이타이 노 고잉 백, 백, 백",
+      "R0": "아이 타이 노 고잉 백, 백, 백",
       "LI": [
         {
           "T1": "会いたい",
           "K1": "만나고 싶다",
           "I1": "aɪtaɪ",
-          "R1": "아이타이",
+          "R1": "아이 타이",
           "E1": "일본어로 '만나고 싶다'는 뜻의 표현입니다. 주어가 생략되어 있으며, 강한 감정을 나타냅니다.",
           "T2": "会う",
           "K2": "만나다",
@@ -2856,7 +2893,7 @@
           "XE": "友達に会いたい。",
           "XK": "친구를 만나고 싶어.",
           "XI": "tomodachi ni aɪtaɪ",
-          "XR": "토모다치 니 아이타이"
+          "XR": "토모다치 니 아이 타이"
         },
         {
           "T1": "no",
@@ -2942,7 +2979,7 @@
       "G0": "이 문장은 감탄사 'Bang, bang'으로 시작하여 강한 감정을 표현하고 있습니다. '空に咲いた'는 '하늘에 피어난'이라는 의미로, 'firework'는 '불꽃놀이'를 뜻합니다. 전체적으로 하늘에 펼쳐진 불꽃놀이의 장면을 묘사하고 있습니다.",
       "K0": "빵, 빵 하늘에 피어난 불꽃놀이",
       "I0": "Bang, bang sora ni saita firework",
-      "R0": "방, 방 소라 니 사이타 파이어워크",
+      "R0": "뱅, 뱅 소라 니 사이타 파이어워크",
       "LI": [
         {
           "T1": "Bang",
@@ -3043,22 +3080,22 @@
       "G0": "이 문장은 일본어와 영어가 혼합된 문장입니다. '踏み出す'는 일본어로 '앞으로 나아가다'라는 의미의 동사이며, 'running so fast, fast, fast'는 영어로 '너무 빨리 달리다'를 의미합니다. 일본어와 영어가 자연스럽게 어우러져 역동적인 느낌을 줍니다.",
       "K0": "앞으로 나아가 너무 빨리 달려, 달려, 달려.",
       "I0": "fumidasu ranningu soo fasuto, fasuto, fasuto",
-      "R0": "후미다스 란닝 소오 패스트, 패스트, 패스트",
+      "R0": "후미 다스 란닝 소오 패스트, 패스트, 패스트",
       "LI": [
         {
           "T1": "踏み出す",
           "K1": "앞으로 나아가다",
           "I1": "fumidasu",
-          "R1": "후미다스",
+          "R1": "후미 다스",
           "E1": "일본어 동사로, '발을 내딛다' 또는 '앞으로 나아가다'라는 의미입니다. 새로운 시작이나 도전을 의미할 때 자주 사용됩니다.",
           "T2": "踏み出す",
           "K2": "앞으로 나아가다",
           "I2": "fumidasu",
-          "R2": "후미다스",
+          "R2": "후미 다스",
           "XE": "新しい一歩を踏み出す。",
           "XK": "새로운 한 걸음을 내딛다.",
           "XI": "atarashii ippo wo fumidasu",
-          "XR": "아타라시이 잇포 오 후미다스"
+          "XR": "아타라시이 잇포 오 후미 다스"
         },
         {
           "T1": "running",
@@ -3326,5 +3363,6 @@
       "O0": "照らす君の姿"
     }
   ],
-  "failedLines": []
+  "failedLines": [],
+  "rubyData": "<span class=\"ruby\"><span class=\"rb\">真夏</span><span class=\"rt\">まなつ</span></span>の<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span><span class=\"ruby\"><span class=\"rb\">咲</span><span class=\"rt\">さ</span></span>いた firework (firework, firework)<br>\n<span class=\"ruby\"><span class=\"rb\">高鳴</span><span class=\"rt\">たかな</span></span>る<span class=\"ruby\"><span class=\"rb\">鼓動</span><span class=\"rt\">こどう</span></span>は<span class=\"ruby\"><span class=\"rb\">止</span><span class=\"rt\">と</span></span>まらない<br>\nどんな<span class=\"ruby\"><span class=\"rb\">旅</span><span class=\"rt\">たび</span></span>だろうといいんだ<br>\nこの<span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>が<span class=\"ruby\"><span class=\"rb\">叫</span><span class=\"rt\">さけ</span></span>び<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>う (hey)<br>\n<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>すぐ<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>に<span class=\"ruby\"><span class=\"rb\">会</span><span class=\"rt\">あ</span></span>いたい<br>\nあの<span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span><span class=\"ruby\"><span class=\"rb\">駆</span><span class=\"rt\">か</span></span>け<span class=\"ruby\"><span class=\"rb\">抜</span><span class=\"rt\">ぬ</span></span>ける<br>\n<span class=\"ruby\"><span class=\"rb\">色</span><span class=\"rt\">いろ</span></span>とりどりのflame<br>\n<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>も<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>ているなら<br>\nYou know that we feel the same<br>\n<span class=\"ruby\"><span class=\"rb\">共</span><span class=\"rt\">とも</span></span>に<span class=\"ruby\"><span class=\"rb\">走</span><span class=\"rt\">はし</span></span>り<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">だ</span></span>す<br>\n<br>\nOh <span class=\"ruby\"><span class=\"rb\">降</span><span class=\"rt\">ふ</span></span>り<span class=\"ruby\"><span class=\"rb\">注</span><span class=\"rt\">そそ</span></span>ぐ<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span>は<br>\n<span class=\"ruby\"><span class=\"rb\">願</span><span class=\"rt\">ねが</span></span>い<span class=\"ruby\"><span class=\"rb\">込</span><span class=\"rt\">こ</span></span>めた shooting star<br>\nOh <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>を<span class=\"ruby\"><span class=\"rb\">探</span><span class=\"rt\">さが</span></span>していた<br>\nLight me up まるで magic<br>\nYou and I <span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れない<br>\n<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>と<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>が<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>った<span class=\"ruby\"><span class=\"rb\">瞬間</span><span class=\"rt\">しゅんかん</span></span><br>\nBang, bang <span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>に<span class=\"ruby\"><span class=\"rb\">咲</span><span class=\"rt\">さ</span></span>いたfirework<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">不確</span><span class=\"rt\">ふたし</span></span>かで<span class=\"ruby\"><span class=\"rb\">漠然</span><span class=\"rt\">ばくぜん</span></span>とした<span class=\"ruby\"><span class=\"rb\">期待</span><span class=\"rt\">きたい</span></span>を<br>\n<span class=\"ruby\"><span class=\"rb\">確</span><span class=\"rt\">たし</span></span>かにした <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>との<span class=\"ruby\"><span class=\"rb\">出会</span><span class=\"rt\">であ</span></span>いが<br>\n<span class=\"ruby\"><span class=\"rb\">教</span><span class=\"rt\">おし</span></span>えてくれた<br>\n<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>は<span class=\"ruby\"><span class=\"rb\">一人</span><span class=\"rt\">ひとり</span></span>じゃないと<br>\nI know, in our love<br>\nざわめく<span class=\"ruby\"><span class=\"rb\">胸</span><span class=\"rt\">むね</span></span>の<span class=\"ruby\"><span class=\"rb\">理由</span><span class=\"rt\">りゆう</span></span> (hey)<br>\nI know, in our life<br>\n<span class=\"ruby\"><span class=\"rb\">夏</span><span class=\"rt\">なつ</span></span>の<span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span>が<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>に<span class=\"ruby\"><span class=\"rb\">落</span><span class=\"rt\">お</span></span>とした<span class=\"ruby\"><span class=\"rb\">魔法</span><span class=\"rt\">まほう</span></span><br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">湿</span><span class=\"rt\">しめ</span></span>りきった<span class=\"ruby\"><span class=\"rb\">導火線</span><span class=\"rt\">どうかせん</span></span><br>\nもう<span class=\"ruby\"><span class=\"rb\">一度</span><span class=\"rt\">いちど</span></span> <span class=\"ruby\"><span class=\"rb\">火</span><span class=\"rt\">ひ</span></span>を<span class=\"ruby\"><span class=\"rb\">付</span><span class=\"rt\">つ</span></span>ける<br>\n<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>と<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>が 「<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>ら」へ<br>\n<span class=\"ruby\"><span class=\"rb\">変</span><span class=\"rt\">か</span></span>わっていく <span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span><br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">重</span><span class=\"rt\">かさ</span></span>なり<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>う<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span><br>\nOh <span class=\"ruby\"><span class=\"rb\">夜</span><span class=\"rt\">よる</span></span>に<span class=\"ruby\"><span class=\"rb\">舞</span><span class=\"rt\">ま</span></span>う<span class=\"ruby\"><span class=\"rb\">花</span><span class=\"rt\">はな</span></span>びら<br>\n<span class=\"ruby\"><span class=\"rb\">照</span><span class=\"rt\">て</span></span>らす<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>の<span class=\"ruby\"><span class=\"rb\">姿</span><span class=\"rt\">すがた</span></span><br>\nOh <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>はただ<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>ていた<br>\nLight me up まるで magic<br>\nYou and I <span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れない<br>\n<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>と<span class=\"ruby\"><span class=\"rb\">出会</span><span class=\"rt\">であ</span></span>った<span class=\"ruby\"><span class=\"rb\">瞬間</span><span class=\"rt\">しゅんかん</span></span><br>\nBang, bang <span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>に<span class=\"ruby\"><span class=\"rb\">咲</span><span class=\"rt\">さ</span></span>いたfirework<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">会</span><span class=\"rt\">あ</span></span>いたい no going back, back, back<br>\n<span class=\"ruby\"><span class=\"rb\">踏</span><span class=\"rt\">ふ</span></span>み<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">だ</span></span>す running so fast, fast, fast<br>\n<span class=\"ruby\"><span class=\"rb\">後悔</span><span class=\"rt\">こうかい</span></span> なんてしたくない<span class=\"ruby\"><span class=\"rb\">絶対</span><span class=\"rt\">ぜったい</span></span><br>\nTonight<br>\nあの<span class=\"ruby\"><span class=\"rb\">夜空</span><span class=\"rt\">よぞら</span></span>に<span class=\"ruby\"><span class=\"rb\">届</span><span class=\"rt\">とど</span></span>けたい<br>\n<span class=\"ruby\"><span class=\"rb\">一人</span><span class=\"rt\">ひとり</span></span>じゃ<span class=\"ruby\"><span class=\"rb\">届</span><span class=\"rt\">とど</span></span>かない<br>\nでも<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>らは<span class=\"ruby\"><span class=\"rb\">手</span><span class=\"rt\">て</span></span>を<span class=\"ruby\"><span class=\"rb\">伸</span><span class=\"rt\">の</span></span>ばす<br>\nFirework (hey)<br>\n<br>\nOh <span class=\"ruby\"><span class=\"rb\">降</span><span class=\"rt\">ふ</span></span>り<span class=\"ruby\"><span class=\"rb\">注</span><span class=\"rt\">そそ</span></span>ぐ<span class=\"ruby\"><span class=\"rb\">光</span><span class=\"rt\">ひかり</span></span>は<br>\n<span class=\"ruby\"><span class=\"rb\">願</span><span class=\"rt\">ねが</span></span>い<span class=\"ruby\"><span class=\"rb\">込</span><span class=\"rt\">こ</span></span>めた shooting star<br>\nOh <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>を<span class=\"ruby\"><span class=\"rb\">探</span><span class=\"rt\">さが</span></span>していた<br>\nLight me up まるで magic<br>\nYou and I <span class=\"ruby\"><span class=\"rb\">忘</span><span class=\"rt\">わす</span></span>れない<br>\n<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>と<span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>が<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>った<span class=\"ruby\"><span class=\"rb\">瞬間</span><span class=\"rt\">しゅんかん</span></span><br>\nBang, bang <span class=\"ruby\"><span class=\"rb\">空</span><span class=\"rt\">そら</span></span>に<span class=\"ruby\"><span class=\"rb\">咲</span><span class=\"rt\">さ</span></span>いたfirework<br>"
 }
