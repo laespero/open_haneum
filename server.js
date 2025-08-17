@@ -143,6 +143,7 @@ app.use('/', express.static('songs'));
 
 let songCache = [];  // 노래 데이터를 저장할 캐시
 let isCacheReady = false; // 캐시 준비 상태 플래그
+let viewCounts = {};  // 조회수 데이터를 저장할 객체
 
 // 캐시 준비 상태 확인 미들웨어
 app.use((req, res, next) => {
@@ -180,6 +181,208 @@ function getSafeSongPath(title) {
         throw error;
     }
     return `songs/${safeTitle}.json`;
+}
+
+// 조회수 데이터 로드/저장 함수
+async function loadViewCounts() {
+    try {
+        const data = await fs.promises.readFile('viewCounts.json', 'utf8');
+        viewCounts = JSON.parse(data);
+        console.log('조회수 데이터를 로드했습니다.');
+    } catch (error) {
+        console.log('조회수 데이터 파일이 없어 새로 생성합니다.');
+        viewCounts = {};
+        await saveViewCounts();
+    }
+}
+
+async function saveViewCounts() {
+    try {
+        await fs.promises.writeFile('viewCounts.json', JSON.stringify(viewCounts, null, 2));
+    } catch (error) {
+        console.error('조회수 데이터 저장 중 오류:', error);
+    }
+}
+
+// 조회수 증가 함수 (분석 결과창 /view/:title 접근 시에만 카운트)
+function incrementViewCount(songName) {
+    if (!viewCounts[songName]) {
+        viewCounts[songName] = 0;
+    }
+    viewCounts[songName]++;
+    
+    // 비동기로 저장 (성능을 위해 await 하지 않음)
+    saveViewCounts().catch(err => {
+        console.error('조회수 저장 중 오류:', err);
+    });
+}
+
+// 인기 노래 조회 함수
+function getPopularSongs(limit = 10) {
+    return Object.entries(viewCounts)
+        .sort(([,a], [,b]) => b - a)
+        .slice(0, limit)
+        .map(([songName, views]) => {
+            const song = songCache.find(s => s.name === songName);
+            return song ? { ...song, views } : null;
+        })
+        .filter(song => song !== null)
+        .filter(song => !song.tags || !song.tags.includes('개발용')); // 개발용 제외
+}
+
+// 인기 아티스트 조회 함수
+function getPopularArtists(limit = 8) {
+    const artistViews = {};
+    
+    // 각 아티스트별 총 조회수 계산
+    Object.entries(viewCounts).forEach(([songName, views]) => {
+        const song = songCache.find(s => s.name === songName);
+        if (song && (!song.tags || !song.tags.includes('개발용'))) {
+            const artistName = typeof song.artist === 'object' 
+                ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name)
+                : song.artist;
+            
+            if (artistName) {
+                if (!artistViews[artistName]) {
+                    artistViews[artistName] = {
+                        name: artistName,
+                        totalViews: 0,
+                        songs: [],
+                        artist: song.artist
+                    };
+                }
+                artistViews[artistName].totalViews += views;
+                artistViews[artistName].songs.push({
+                    name: song.name,
+                    ori_name: song.ori_name,
+                    views: views
+                });
+            }
+        }
+    });
+    
+    return Object.values(artistViews)
+        .sort((a, b) => b.totalViews - a.totalViews)
+        .slice(0, limit);
+}
+
+// 언어별 노래 필터링 함수
+function filterSongsByLanguage(language, limit = 16) {
+    let filteredSongs = songCache.filter(song => !song.tags || !song.tags.includes('개발용'));
+    
+    if (language === 'all') {
+        // 전체: 개발용만 제외
+        return filteredSongs
+            .sort((a, b) => {
+                const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
+                const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
+                return dateB - dateA;
+            })
+            .slice(0, limit);
+    }
+    
+    if (language === 'english') {
+        filteredSongs = filteredSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('영어'))
+        );
+    } else if (language === 'japanese') {
+        filteredSongs = filteredSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('일본어'))
+        );
+    } else if (language === 'chinese') {
+        filteredSongs = filteredSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('중국어'))
+        );
+    } else if (language === 'other') {
+        // 기타: 영어, 일본어, 중국어가 아닌 모든 노래
+        filteredSongs = filteredSongs.filter(song => 
+            !song.tags || !song.tags.some(tag => 
+                tag.includes('영어') || tag.includes('일본어') || tag.includes('중국어')
+            )
+        );
+    }
+    
+    return filteredSongs
+        .sort((a, b) => {
+            const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
+            const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
+            return dateB - dateA;
+        })
+        .slice(0, limit);
+}
+
+// 언어별 인기 노래 필터링 함수
+function getPopularSongsByLanguage(language, limit = 10) {
+    let allPopularSongs = getPopularSongs(100); // 우선 많이 가져온 후 필터링
+    
+    if (language === 'all') {
+        return allPopularSongs.slice(0, limit);
+    }
+    
+    let filteredSongs = allPopularSongs;
+    
+    if (language === 'english') {
+        filteredSongs = allPopularSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('영어'))
+        );
+    } else if (language === 'japanese') {
+        filteredSongs = allPopularSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('일본어'))
+        );
+    } else if (language === 'chinese') {
+        filteredSongs = allPopularSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('중국어'))
+        );
+    } else if (language === 'other') {
+        filteredSongs = allPopularSongs.filter(song => 
+            !song.tags || !song.tags.some(tag => 
+                tag.includes('영어') || tag.includes('일본어') || tag.includes('중국어')
+            )
+        );
+    }
+    
+    return filteredSongs.slice(0, limit);
+}
+
+// 언어별 인기 아티스트 필터링 함수
+function getPopularArtistsByLanguage(language, limit = 10) {
+    if (language === 'all') {
+        return getPopularArtists(limit);
+    }
+    
+    const filteredSongs = filterSongsByLanguage(language, 1000); // 충분히 많은 수로 필터링
+    const artistViews = {};
+    
+    // 필터링된 노래들로 아티스트별 조회수 계산
+    filteredSongs.forEach(song => {
+        const views = viewCounts[song.name] || 0;
+        if (views > 0) {
+            const artistName = typeof song.artist === 'object' 
+                ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name)
+                : song.artist;
+            
+            if (artistName) {
+                if (!artistViews[artistName]) {
+                    artistViews[artistName] = {
+                        name: artistName,
+                        totalViews: 0,
+                        songs: [],
+                        artist: song.artist
+                    };
+                }
+                artistViews[artistName].totalViews += views;
+                artistViews[artistName].songs.push({
+                    name: song.name,
+                    ori_name: song.ori_name,
+                    views: views
+                });
+            }
+        }
+    });
+    
+    return Object.values(artistViews)
+        .sort((a, b) => b.totalViews - a.totalViews)
+        .slice(0, limit);
 }
 
 // 캐시 갱신 함수
@@ -391,6 +594,8 @@ app.get('/songs/:title', async (req, res) => {
         const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
         
+        // 조회수는 분석 결과창(/view/)에서만 카운트하므로 여기서는 제거
+        
         // contextText와 translatedLines가 모두 존재하는 경우에만 정렬 시도
         if (songData.contextText && songData.translatedLines) {
             try {
@@ -427,6 +632,10 @@ app.get('/view/:title', async (req, res) => {
     try {
         const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
+        
+        // 조회수 증가
+        incrementViewCount(title);
+        
         res.render('songView', { song: songData, lang: lang });
     } catch (error) {
         if (error.code === 'ENOENT') {
@@ -636,6 +845,111 @@ app.post('/retry-translation/:title', async (req, res) => {
 
     await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
     res.render('songDetail', { song: songData });
+});
+
+// 부분 재번역 라우트 (스키마 오류가 있는 라인들만)
+app.post('/retry-invalid-lines/:title', async (req, res) => {
+    const title = req.params.title;
+    const filePath = getSafeSongPath(title);
+
+    try {
+        const data = await fs.promises.readFile(filePath, 'utf8');
+        let songData = JSON.parse(data);
+
+        // contextText가 없으면 생성
+        if (!songData.contextText && songData.p1) {
+            songData.contextText = toContextObj(songData.p1);
+        }
+
+        // 스키마 오류가 있는 라인들 찾기
+        const invalidLines = getInvalidLines(songData);
+        
+        if (invalidLines.length === 0) {
+            return res.json({ success: true, message: '재번역할 오류 라인이 없습니다.' });
+        }
+
+        console.log(`[${title}] ${invalidLines.length}개의 오류 라인 부분 재번역 시작`);
+
+        let successCount = 0;
+        let failCount = 0;
+
+        // retry-translation 방식으로 오류 라인들만 재번역
+        const translationPromises = invalidLines.map(async (invalidLine) => {
+            try {
+                const requestBody = {
+                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                    max_tokens: 8192,
+                    temperature: 0.5,
+                    messages: [
+                        { role: "system", content: MSG },
+                        { role: 'user', content: JSON.stringify(invalidLine.context) },
+                    ],
+                    response_format: { 
+                        type: "json_object" 
+                    }
+                };
+
+                if (!isUsingDeepSeekDirectly) {
+                    requestBody.provider = {
+                        ignore: [
+                            'InferenceNet',
+                            'Together'
+                        ]
+                    };
+                }
+
+                const completion = await openai.chat.completions.create(requestBody);
+
+                const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+                const parsedResult = JSON.parse(translatedLine);
+                
+                if (parsedResult && parsedResult.K0) {
+                    parsedResult.O0 = invalidLine.context.T0;
+                    
+                    // 기존 translatedLines에서 해당 라인 교체
+                    songData.translatedLines[invalidLine.index] = parsedResult;
+                    successCount++;
+                    
+                    console.log(`[${title}] 라인 ${invalidLine.index} 재번역 성공`);
+                } else {
+                    failCount++;
+                    console.log(`[${title}] 라인 ${invalidLine.index} 재번역 실패 - 결과 없음`);
+                }
+                
+            } catch (error) {
+                console.error(`[${title}] 라인 ${invalidLine.index} 재번역 오류:`, error);
+                failCount++;
+            }
+        });
+
+        await Promise.all(translationPromises);
+
+        // 파일 저장
+        await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+        
+        // 캐시 업데이트
+        const songIndex = songCache.findIndex(song => song.name === title);
+        if (songIndex > -1) {
+            songCache[songIndex] = songData;
+        }
+
+        console.log(`[${title}] 부분 재번역 완료: 성공 ${successCount}개, 실패 ${failCount}개`);
+        
+        res.json({ 
+            success: true, 
+            message: `부분 재번역 완료: 성공 ${successCount}개, 실패 ${failCount}개`,
+            successCount,
+            failCount
+        });
+        
+    } catch (error) {
+        console.error(`[${title}] 부분 재번역 중 오류:`, error);
+        res.status(500).json({ 
+            success: false, 
+            message: '부분 재번역 중 오류가 발생했습니다.',
+            error: error.message 
+        });
+    }
 });
 
 app.post('/retry-line/:title', async (req, res) => {
@@ -896,6 +1210,166 @@ app.post('/auto-fill-names', async (req, res) => {
     }
 });
 
+/**
+ * 노래 데이터의 JSON 스키마가 유효한지 검증합니다.
+ * @param {object} songData - 검증할 노래 데이터 객체
+ * @returns {object} - { isValid: boolean, errors: string[] }
+ */
+function validateSongSchema(songData) {
+    const errors = [];
+
+    // 기본 필드 검증
+    if (!songData.name) {
+        errors.push('노래 제목(name)이 없습니다.');
+    }
+
+    // translatedLines 검증
+    if (!songData.translatedLines) {
+        errors.push('translatedLines 필드가 없습니다.');
+    } else if (!Array.isArray(songData.translatedLines)) {
+        errors.push('translatedLines가 배열이 아닙니다.');
+    } else if (songData.translatedLines.length === 0) {
+        errors.push('translatedLines가 비어있습니다.');
+    } else {
+        // 각 translatedLine 항목에 대해 상세한 스키마 검증
+        songData.translatedLines.forEach((line, index) => {
+            const lineErrors = validateLineSchema(line, index);
+            errors.push(...lineErrors);
+        });
+    }
+
+    return {
+        isValid: errors.length === 0,
+        errors: errors
+    };
+}
+
+/**
+ * 개별 translatedLine 항목의 스키마를 검증합니다.
+ * songDetail.ejs의 validateSchema 함수 기반
+ * @param {object} data - 검증할 라인 데이터
+ * @param {number} lineIndex - 라인 인덱스
+ * @returns {string[]} - 오류 메시지 배열
+ */
+function validateLineSchema(data, lineIndex) {
+    const errors = [];
+    const rootRequired = ["T0", "C0", "G0", "K0", "I0", "R0", "LI"];
+    const liRequired = [
+        "T1", "K1", "I1", "R1", "E1",
+        "T2", "K2", "I2", "R2",
+        "XE", "XK", "XI", "XR"
+    ];
+
+    if (typeof data !== 'object' || data === null) {
+        return [`translatedLines[${lineIndex}]: 항목은 객체여야 합니다.`];
+    }
+
+    // 최상위 필수 필드 검증
+    for (const key of rootRequired) {
+        if (!(key in data)) {
+            errors.push(`translatedLines[${lineIndex}]: 필수 필드 '${key}'가 없습니다.`);
+        }
+    }
+
+    // T0 특별 검증
+    if ('T0' in data && (typeof data.T0 !== 'string' || data.T0.length === 0)) {
+        errors.push(`translatedLines[${lineIndex}]: 'T0'는 비어 있지 않은 문자열이어야 합니다.`);
+    }
+
+    // 문자열 필드들 타입 검증
+    const stringKeys = ["C0", "G0", "K0", "I0", "R0"];
+    for (const key of stringKeys) {
+        if (key in data && typeof data[key] !== 'string') {
+            errors.push(`translatedLines[${lineIndex}]: '${key}'는 문자열이어야 합니다.`);
+        }
+    }
+
+    // LI 배열 검증
+    if (!('LI' in data) || !Array.isArray(data.LI)) {
+        errors.push(`translatedLines[${lineIndex}]: 'LI'는 배열이어야 합니다.`);
+    } else {
+        data.LI.forEach((item, liIndex) => {
+            if (typeof item !== 'object' || item === null) {
+                errors.push(`translatedLines[${lineIndex}].LI[${liIndex}]: 항목은 객체여야 합니다.`);
+                return;
+            }
+            
+            // LI 항목의 필수 필드들 검증
+            for (const key of liRequired) {
+                if (!(key in item)) {
+                    errors.push(`translatedLines[${lineIndex}].LI[${liIndex}]: 필수 필드 '${key}'가 없습니다.`);
+                } else if (typeof item[key] !== 'string') {
+                    errors.push(`translatedLines[${lineIndex}].LI[${liIndex}]: '${key}'는 문자열이어야 합니다.`);
+                }
+            }
+        });
+    }
+
+    return errors;
+}
+
+/**
+ * 특정 노래에서 스키마가 유효하지 않은 라인들을 찾습니다.
+ * @param {object} songData - 검증할 노래 데이터 객체
+ * @returns {object[]} - 유효하지 않은 라인들의 인덱스와 원본 텍스트 배열
+ */
+function getInvalidLines(songData) {
+    const invalidLines = [];
+    
+    if (!songData.translatedLines || !Array.isArray(songData.translatedLines)) {
+        return invalidLines;
+    }
+    
+    songData.translatedLines.forEach((line, index) => {
+        const lineErrors = validateLineSchema(line, index);
+        if (lineErrors.length > 0) {
+            // contextText에서 원본 텍스트 찾기
+            const originalContext = songData.contextText?.find(ctx => 
+                ctx.T0 === line.T0 || ctx.O0 === line.T0
+            );
+            
+            if (originalContext) {
+                invalidLines.push({
+                    index: index,
+                    context: originalContext,
+                    errors: lineErrors,
+                    line: line
+                });
+            }
+        }
+    });
+    
+    return invalidLines;
+}
+
+/**
+ * 전체 노래 캐시에서 스키마가 유효하지 않은 노래들을 찾습니다.
+ * @param {number} limit - 반환할 최대 노래 수 (기본값: 100)
+ * @returns {object[]} - 유효하지 않은 노래 객체들의 배열
+ */
+function getInvalidSongs(limit = 100) {
+    const invalidSongs = [];
+    
+    for (const song of songCache) {
+        if (invalidSongs.length >= limit) break;
+        
+        // '개발용' 태그가 있는 노래는 관리 대상에서 제외
+        if (song.tags && song.tags.includes('개발용')) {
+            continue;
+        }
+        
+        const validation = validateSongSchema(song);
+        if (!validation.isValid) {
+            invalidSongs.push({
+                song: song,
+                errors: validation.errors
+            });
+        }
+    }
+    
+    return invalidSongs;
+}
+
 function toContextObj(sentences) {
     if (!Array.isArray(sentences)) {
         console.error('toContextObj: sentences는 배열이어야 합니다.', sentences);
@@ -916,7 +1390,7 @@ function toContextObj(sentences) {
 
 // 루트 경로 라우트
 app.get('/', (req, res) => {
-    // 최근 추가된 노래 24개를 가져옵니다
+    // 최근 추가된 노래 16개를 가져옵니다
     const latestSongs = songCache
         .filter(song => !song.tags || !song.tags.includes('개발용'))
         .sort((a, b) => {
@@ -924,15 +1398,187 @@ app.get('/', (req, res) => {
             const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
             return dateB - dateA;
         })
-        .slice(0, 24);
+        .slice(0, 16);
+
+    // 인기 노래 10개를 가져옵니다
+    const popularSongs = getPopularSongs(10);
+    
+    // 인기 아티스트 8개를 가져옵니다
+    const popularArtists = getPopularArtists(8);
 
     res.render('landing', {
-        latestSongs
+        latestSongs,
+        popularSongs,
+        popularArtists
     });
 });
 
 app.get('/add-song', (req, res) => {
     res.render('addSong');
+});
+
+// 인기 노래 순위 페이지
+app.get('/popular/songs', (req, res) => {
+    const popularSongs = getPopularSongs(100); // 상위 100개 노래
+    
+    res.render('popularSongs', {
+        popularSongs: popularSongs
+    });
+});
+
+// 인기 아티스트 순위 페이지
+app.get('/popular/artists', (req, res) => {
+    const popularArtists = getPopularArtists(100); // 상위 100명 아티스트
+    
+    res.render('popularArtists', {
+        popularArtists: popularArtists
+    });
+});
+
+// 관리 페이지 라우트
+app.get('/admin', (req, res) => {
+    const invalidSongs = getInvalidSongs(100);
+    // '개발용' 태그가 있는 노래들을 제외한 총 노래 수 계산
+    const totalSongs = songCache.filter(song => 
+        !song.tags || !song.tags.includes('개발용')
+    ).length;
+    
+    res.render('admin', {
+        invalidSongs: invalidSongs,
+        totalSongs: totalSongs
+    });
+});
+
+// 전체 재번역 라우트
+app.post('/admin/retranslate-all', async (req, res) => {
+    try {
+        const invalidSongs = getInvalidSongs(100);
+        
+        if (invalidSongs.length === 0) {
+            return res.json({ success: true, message: '재번역할 노래가 없습니다.' });
+        }
+
+        console.log(`관리자 요청으로 ${invalidSongs.length}개 노래의 오류 부분만 부분 재번역을 시작합니다.`);
+        
+        // 각 노래를 순차적으로 부분 재번역 (너무 많은 동시 요청 방지)
+        let totalSuccessCount = 0;
+        let totalFailCount = 0;
+        let processedSongs = 0;
+        
+        for (const invalidSong of invalidSongs) {
+            try {
+                const songName = invalidSong.song.name;
+                const filePath = getSafeSongPath(songName);
+                
+                const data = await fs.promises.readFile(filePath, 'utf8');
+                let songData = JSON.parse(data);
+
+                // contextText가 없으면 생성
+                if (!songData.contextText && songData.p1) {
+                    songData.contextText = toContextObj(songData.p1);
+                }
+
+                // 스키마 오류가 있는 라인들 찾기
+                const invalidLines = getInvalidLines(songData);
+                
+                if (invalidLines.length === 0) {
+                    console.log(`[${songName}] 오류 라인이 없어 건너뜀`);
+                    processedSongs++;
+                    continue;
+                }
+
+                console.log(`[${songName}] ${invalidLines.length}개의 오류 라인 부분 재번역 시작`);
+
+                let successCount = 0;
+                let failCount = 0;
+
+                // retry-translation 방식으로 오류 라인들만 재번역
+                const translationPromises = invalidLines.map(async (invalidLine) => {
+                    try {
+                        const requestBody = {
+                            model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                            max_tokens: 8192,
+                            temperature: 0.5,
+                            messages: [
+                                { role: "system", content: MSG },
+                                { role: 'user', content: JSON.stringify(invalidLine.context) },
+                            ],
+                            response_format: { 
+                                type: "json_object" 
+                            }
+                        };
+
+                        if (!isUsingDeepSeekDirectly) {
+                            requestBody.provider = {
+                                ignore: [
+                                    'InferenceNet',
+                                    'Together'
+                                ]
+                            };
+                        }
+
+                        const completion = await openai.chat.completions.create(requestBody);
+
+                        const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+                        const parsedResult = JSON.parse(translatedLine);
+                        
+                        if (parsedResult && parsedResult.K0) {
+                            parsedResult.O0 = invalidLine.context.T0;
+                            
+                            // 기존 translatedLines에서 해당 라인 교체
+                            songData.translatedLines[invalidLine.index] = parsedResult;
+                            successCount++;
+                        } else {
+                            failCount++;
+                        }
+                        
+                    } catch (error) {
+                        console.error(`[${songName}] 라인 ${invalidLine.index} 재번역 오류:`, error);
+                        failCount++;
+                    }
+                });
+
+                await Promise.all(translationPromises);
+
+                // 파일 저장
+                await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+                
+                // 캐시 업데이트
+                const songIndex = songCache.findIndex(song => song.name === songName);
+                if (songIndex > -1) {
+                    songCache[songIndex] = songData;
+                }
+                
+                totalSuccessCount += successCount;
+                totalFailCount += failCount;
+                processedSongs++;
+                
+                console.log(`[${songName}] 부분 재번역 완료: 성공 ${successCount}개, 실패 ${failCount}개 (${processedSongs}/${invalidSongs.length})`);
+                
+                // API 호출 간격 조절 (과부하 방지)
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                
+            } catch (error) {
+                console.error(`[${invalidSong.song.name}] 부분 재번역 실패:`, error);
+                totalFailCount++;
+                processedSongs++;
+            }
+        }
+        
+        console.log(`관리자 부분 재번역 완료: 총 성공 ${totalSuccessCount}개, 실패 ${totalFailCount}개`);
+        
+        res.json({ 
+            success: true, 
+            message: `부분 재번역 완료: 성공 ${totalSuccessCount}개, 실패 ${totalFailCount}개 (${processedSongs}개 노래 처리)` 
+        });
+        
+    } catch (error) {
+        console.error('전체 재번역 중 오류:', error);
+        res.status(500).json({ 
+            success: false, 
+            error: '전체 재번역 중 오류가 발생했습니다.' 
+        });
+    }
 });
 
 app.get('/api/search', (req, res) => {
@@ -956,6 +1602,59 @@ app.get('/api/search', (req, res) => {
     } catch (err) {
         console.error('Error:', err);
         res.status(500).json({ error: 'Failed to search songs' });
+    }
+});
+
+// 언어별 필터링 API (메인 페이지용)
+app.get('/api/filter', (req, res) => {
+    const language = req.query.language || 'all';
+    
+    try {
+        // 언어별로 필터링된 데이터 가져오기
+        const latestSongs = filterSongsByLanguage(language, 16);
+        const popularSongs = getPopularSongsByLanguage(language, 10);
+        const popularArtists = getPopularArtistsByLanguage(language, 10);
+        
+        res.json({
+            latestSongs,
+            popularSongs,
+            popularArtists
+        });
+    } catch (err) {
+        console.error('언어 필터링 오류:', err);
+        res.status(500).json({ error: 'Failed to filter songs by language' });
+    }
+});
+
+// 인기 노래 순위 페이지용 언어 필터링 API
+app.get('/api/popular/songs', (req, res) => {
+    const language = req.query.language || 'all';
+    
+    try {
+        const popularSongs = getPopularSongsByLanguage(language, 100); // 100위까지 표시
+        
+        res.json({
+            popularSongs
+        });
+    } catch (err) {
+        console.error('인기 노래 언어 필터링 오류:', err);
+        res.status(500).json({ error: 'Failed to filter popular songs by language' });
+    }
+});
+
+// 인기 아티스트 순위 페이지용 언어 필터링 API
+app.get('/api/popular/artists', (req, res) => {
+    const language = req.query.language || 'all';
+    
+    try {
+        const popularArtists = getPopularArtistsByLanguage(language, 100); // 100위까지 표시
+        
+        res.json({
+            popularArtists
+        });
+    } catch (err) {
+        console.error('인기 아티스트 언어 필터링 오류:', err);
+        res.status(500).json({ error: 'Failed to filter popular artists by language' });
     }
 });
 
@@ -994,9 +1693,14 @@ function startServer() {
     // 서버가 요청을 받기 전에 캐시를 먼저 로드합니다.
     app.listen(PORT, () => {
         console.log(`서버 시작: http://localhost:${PORT}`);
-        console.log('백그라운드에서 노래 캐시 로딩을 시작합니다...');
+        console.log('백그라운드에서 노래 캐시 및 조회수 데이터 로딩을 시작합니다...');
         // await 없이 호출하여, 서버 시작을 지연시키지 않고 백그라운드에서 캐시를 로딩합니다.
-        refreshSongCache();
+        Promise.all([
+            refreshSongCache(),
+            loadViewCounts()
+        ]).catch(err => {
+            console.error('초기 데이터 로딩 중 오류:', err);
+        });
     });
 }
 

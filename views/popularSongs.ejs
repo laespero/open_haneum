@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인기 노래 순위 - 오픈 한음</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header class="bg-gradient-to-r from-orange-500 to-red-500 text-white text-center py-12 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-fire text-4xl mr-4"></i>
+                <h1 class="text-3xl md:text-4xl font-bold">인기 노래 순위</h1>
+            </div>
+            <p class="text-orange-100">조회수를 기준으로 한 실시간 인기 노래 차트</p>
+            
+            <div class="flex justify-center gap-4 mt-6">
+                <a href="/" class="bg-white text-orange-600 font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-home"></i> 메인으로
+                </a>
+                <a href="/popular/artists" class="bg-orange-400 hover:bg-orange-300 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-star"></i> 인기 아티스트
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-12 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <!-- 언어 필터 -->
+            <div class="mb-8">
+                <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800 flex items-center">
+                            <i class="fas fa-filter text-orange-600 mr-2"></i>
+                            언어별 필터
+                        </h3>
+                        <div class="text-xs text-gray-500">
+                            원하는 언어를 선택하세요
+                        </div>
+                    </div>
+                    <div class="flex justify-center lg:justify-start flex-wrap gap-3">
+                        <button onclick="filterByLanguage('all')" 
+                                class="language-filter active bg-orange-600 text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm hover:bg-orange-700 shadow-sm">
+                            전체
+                        </button>
+                        <button onclick="filterByLanguage('english')" 
+                                class="language-filter bg-gray-100 hover:bg-orange-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                            영어
+                        </button>
+                        <button onclick="filterByLanguage('japanese')" 
+                                class="language-filter bg-gray-100 hover:bg-orange-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                            일본어
+                        </button>
+                        <button onclick="filterByLanguage('chinese')" 
+                                class="language-filter bg-gray-100 hover:bg-orange-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                            중국어
+                        </button>
+                        <button onclick="filterByLanguage('other')" 
+                                class="language-filter bg-gray-100 hover:bg-orange-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                            기타
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 로딩 인디케이터 -->
+            <div id="loading" class="hidden text-center py-16">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-orange-600"></div>
+                <p class="mt-4 text-gray-600">데이터를 불러오는 중...</p>
+            </div>
+
+            <div id="main-content">
+                <% if (popularSongs && popularSongs.length > 0) { %>
+                <!-- 상위 3개 대형 카드 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <% popularSongs.slice(0, 3).forEach((song, index) => { %>
+                        <div class="relative bg-gradient-to-br <%= index === 0 ? 'from-yellow-400 to-orange-500' : index === 1 ? 'from-gray-300 to-gray-400' : 'from-orange-300 to-red-400' %> rounded-2xl p-6 text-white shadow-xl transform hover:scale-105 transition-all duration-300">
+                            <div class="absolute -top-4 -left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl font-bold <%= index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-500' : 'text-orange-500' %> shadow-lg">
+                                <%= index + 1 %>
+                            </div>
+                            <% if (index === 0) { %>
+                                <div class="text-center mb-3">
+                                    <i class="fas fa-crown text-3xl text-yellow-200"></i>
+                                </div>
+                            <% } %>
+                            <a href="/songs/<%= song.name %>" class="block">
+                                <h3 class="font-bold text-lg mb-2 line-clamp-2">
+                                    <%= song.ori_name || song.name %>
+                                </h3>
+                                <p class="text-sm opacity-90 mb-3">
+                                    <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %>
+                                </p>
+                                <% if (song.kor_name && song.kor_name !== song.ori_name) { %>
+                                    <p class="text-xs opacity-75 mb-3"><%= song.kor_name %></p>
+                                <% } %>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-eye mr-2"></i>
+                                        <span class="font-semibold"><%= song.views.toLocaleString() %></span>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs opacity-75">조회수</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <% }); %>
+                </div>
+
+                <!-- 4위 이하 목록 -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h2 class="text-xl font-bold text-gray-800">전체 순위</h2>
+                    </div>
+                    <div class="divide-y divide-gray-100">
+                        <% popularSongs.forEach((song, index) => { %>
+                            <div class="p-4 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-orange-400 to-red-400 flex items-center justify-center text-white font-bold">
+                                        <%= index + 1 %>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <a href="/songs/<%= song.name %>" class="block group">
+                                            <h3 class="font-semibold text-gray-800 group-hover:text-orange-600 transition-colors">
+                                                <%= song.ori_name || song.name %>
+                                            </h3>
+                                            <p class="text-sm text-gray-600">
+                                                <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %>
+                                            </p>
+                                            <% if (song.kor_name && song.kor_name !== song.ori_name) { %>
+                                                <p class="text-xs text-gray-500"><%= song.kor_name %></p>
+                                            <% } %>
+                                        </a>
+                                    </div>
+                                    <div class="flex-shrink-0 text-right">
+                                        <div class="text-lg font-bold text-orange-600">
+                                            <i class="fas fa-eye mr-1"></i>
+                                            <%= song.views.toLocaleString() %>
+                                        </div>
+                                        <div class="text-xs text-gray-500">조회수</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            <% } else { %>
+                <!-- 빈 상태 -->
+                <div class="text-center py-16">
+                    <div class="text-8xl mb-6">🎵</div>
+                    <h2 class="text-2xl font-bold text-gray-600 mb-4">아직 인기 노래가 없습니다</h2>
+                    <p class="text-gray-500 mb-8">노래를 듣고 첫 번째 인기 차트를 만들어보세요!</p>
+                    <a href="/" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                        <i class="fas fa-home"></i> 메인으로 돌아가기
+                    </a>
+                </div>
+            <% } %>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-gray-400 py-12 px-6 text-center">
+        <div class="container mx-auto max-w-6xl">
+            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
+        </div>
+    </footer>
+
+    <style>
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+
+    <script>
+        let currentLanguage = 'all';
+
+        // 언어 필터링 함수
+        async function filterByLanguage(language) {
+            if (currentLanguage === language) return;
+            
+            currentLanguage = language;
+            
+            // 버튼 상태 업데이트
+            updateFilterButtons(language);
+            
+            // 로딩 표시
+            showLoading();
+            
+            try {
+                // API 호출
+                const response = await fetch(`/api/popular/songs?language=${language}`);
+                const data = await response.json();
+                
+                // 콘텐츠 업데이트
+                updateMainContent(data.popularSongs);
+                
+            } catch (error) {
+                console.error('필터링 중 오류:', error);
+                alert('필터링 중 오류가 발생했습니다.');
+            } finally {
+                hideLoading();
+            }
+        }
+
+        // 필터 버튼 상태 업데이트
+        function updateFilterButtons(activeLanguage) {
+            const buttons = document.querySelectorAll('.language-filter');
+            buttons.forEach(button => {
+                button.classList.remove('active', 'bg-orange-600', 'text-white', 'hover:bg-orange-700');
+                button.classList.add('bg-gray-100', 'hover:bg-orange-600', 'text-gray-700', 'hover:text-white');
+            });
+            
+            const activeButton = document.querySelector(`[onclick="filterByLanguage('${activeLanguage}')"]`);
+            if (activeButton) {
+                activeButton.classList.remove('bg-gray-100', 'hover:bg-orange-600', 'text-gray-700', 'hover:text-white');
+                activeButton.classList.add('active', 'bg-orange-600', 'text-white', 'hover:bg-orange-700');
+            }
+        }
+
+        // 로딩 표시/숨김
+        function showLoading() {
+            document.getElementById('loading').classList.remove('hidden');
+            document.getElementById('main-content').style.opacity = '0.5';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('main-content').style.opacity = '1';
+        }
+
+        // 메인 콘텐츠 업데이트
+        function updateMainContent(popularSongs) {
+            const mainContent = document.getElementById('main-content');
+            
+            if (!popularSongs || popularSongs.length === 0) {
+                mainContent.innerHTML = `
+                    <div class="text-center py-16">
+                        <div class="text-8xl mb-6">🎵</div>
+                        <h2 class="text-2xl font-bold text-gray-600 mb-4">선택한 언어의 인기 노래가 없습니다</h2>
+                        <p class="text-gray-500 mb-8">다른 언어를 선택하거나 노래를 더 들어보세요!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            mainContent.innerHTML = `
+                <!-- 상위 3개 대형 카드 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    ${popularSongs.slice(0, 3).map((song, index) => `
+                        <div class="relative bg-gradient-to-br ${index === 0 ? 'from-yellow-400 to-orange-500' : index === 1 ? 'from-gray-300 to-gray-400' : 'from-orange-300 to-red-400'} rounded-2xl p-6 text-white shadow-xl transform hover:scale-105 transition-all duration-300">
+                            <div class="absolute -top-4 -left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl font-bold ${index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-500' : 'text-orange-500'} shadow-lg">
+                                ${index + 1}
+                            </div>
+                            ${index === 0 ? '<div class="text-center mb-3"><i class="fas fa-crown text-3xl text-yellow-200"></i></div>' : ''}
+                            <a href="/songs/${song.name}" class="block">
+                                <h3 class="font-bold text-lg mb-2 line-clamp-2">
+                                    ${song.ori_name || song.name}
+                                </h3>
+                                <p class="text-sm opacity-90 mb-3">
+                                    ${typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist}
+                                </p>
+                                ${song.kor_name && song.kor_name !== song.ori_name ? `<p class="text-xs opacity-75 mb-3">${song.kor_name}</p>` : ''}
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-eye mr-2"></i>
+                                        <span class="font-semibold">${song.views.toLocaleString()}</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <div class="text-xs opacity-75">조회수</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <!-- 4위 이하 목록 -->
+                <div class="bg-white rounded-xl shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h2 class="text-xl font-bold text-gray-800">전체 순위</h2>
+                    </div>
+                    <div class="divide-y divide-gray-100">
+                        ${popularSongs.map((song, index) => `
+                            <div class="p-4 hover:bg-gray-50 transition-colors duration-200">
+                                <div class="flex items-center space-x-4">
+                                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-orange-400 to-red-400 flex items-center justify-center text-white font-bold">
+                                        ${index + 1}
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <a href="/songs/${song.name}" class="block group">
+                                            <h3 class="font-semibold text-gray-800 group-hover:text-orange-600 transition-colors">
+                                                ${song.ori_name || song.name}
+                                            </h3>
+                                            <p class="text-sm text-gray-600">
+                                                ${typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist}
+                                            </p>
+                                            ${song.kor_name && song.kor_name !== song.ori_name ? `<p class="text-xs text-gray-500">${song.kor_name}</p>` : ''}
+                                        </a>
+                                    </div>
+                                    <div class="flex-shrink-0 text-right">
+                                        <div class="text-lg font-bold text-orange-600">
+                                            <i class="fas fa-eye mr-1"></i>
+                                            ${song.views.toLocaleString()}
+                                        </div>
+                                        <div class="text-xs text-gray-500">조회수</div>
+                                    </div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

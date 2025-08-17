@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리 페이지 - 오픈 한음</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header class="bg-red-600 text-white text-center py-8 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">관리 페이지</h1>
+            <p class="text-red-100">JSON 스키마가 유효하지 않은 가사 데이터 관리</p>
+            <p class="text-red-200 text-sm mt-2">* '개발용' 태그가 있는 노래는 관리 대상에서 제외됩니다.</p>
+            
+            <div class="flex justify-center gap-4 mt-6">
+                <a href="/" class="bg-white text-red-600 font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-home"></i> 메인으로
+                </a>
+                <% if (invalidSongs && invalidSongs.length > 0) { %>
+                    <button onclick="retranslateAll()" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                        <i class="fas fa-sync-alt"></i> 부분 재번역 (<%= invalidSongs.length %>개)
+                    </button>
+                <% } %>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-8 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <!-- 통계 정보 -->
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                <h2 class="text-xl font-semibold mb-4">통계 정보</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-600"><%= totalSongs %></div>
+                        <div class="text-sm text-gray-600">전체 노래</div>
+                    </div>
+                    <div class="text-center p-4 bg-red-50 rounded-lg">
+                        <div class="text-2xl font-bold text-red-600"><%= invalidSongs ? invalidSongs.length : 0 %></div>
+                        <div class="text-sm text-gray-600">유효하지 않은 노래</div>
+                    </div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <div class="text-2xl font-bold text-green-600"><%= totalSongs - (invalidSongs ? invalidSongs.length : 0) %></div>
+                        <div class="text-sm text-gray-600">유효한 노래</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 유효하지 않은 노래 목록 -->
+            <% if (invalidSongs && invalidSongs.length > 0) { %>
+                <div class="bg-white rounded-lg shadow-sm">
+                    <div class="p-6 border-b border-gray-200">
+                        <h2 class="text-xl font-semibold text-red-600">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            스키마가 유효하지 않은 노래 목록
+                        </h2>
+                        <p class="text-gray-600 mt-2">다음 노래들은 JSON 스키마가 유효하지 않아 재번역이 필요합니다.</p>
+                    </div>
+                    
+                    <div class="divide-y divide-gray-200">
+                        <% invalidSongs.forEach((invalidSong, index) => { %>
+                            <div class="p-6 hover:bg-gray-50">
+                                <div class="flex justify-between items-start mb-3">
+                                    <div>
+                                        <h3 class="font-semibold text-lg text-gray-800">
+                                            <%= invalidSong.song.ori_name || invalidSong.song.name %>
+                                        </h3>
+                                        <p class="text-gray-600">
+                                            <%= typeof invalidSong.song.artist === 'object' ? 
+                                                (invalidSong.song.artist.kor_name || invalidSong.song.artist.eng_name || invalidSong.song.artist.ori_name) : 
+                                                invalidSong.song.artist %>
+                                        </p>
+                                        <% if (invalidSong.song.kor_name) { %>
+                                            <p class="text-sm text-gray-500"><%= invalidSong.song.kor_name %></p>
+                                        <% } %>
+                                    </div>
+                                    <div class="flex gap-2">
+                                        <a href="/detail/<%= invalidSong.song.name %>" 
+                                           class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm transition duration-200">
+                                            <i class="fas fa-eye mr-1"></i> 상세보기
+                                        </a>
+                                        <button onclick="retranslateSingle('<%= invalidSong.song.name %>')"
+                                                class="bg-orange-500 hover:bg-orange-600 text-white px-3 py-1 rounded text-sm transition duration-200">
+                                            <i class="fas fa-sync-alt mr-1"></i> 부분 재번역
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- 오류 목록 -->
+                                <div class="bg-red-50 rounded-lg p-4">
+                                    <div class="text-sm font-medium text-red-800 mb-2">
+                                        <i class="fas fa-bug mr-1"></i> 발견된 오류:
+                                    </div>
+                                    <ul class="text-sm text-red-700 space-y-1">
+                                        <% invalidSong.errors.forEach(error => { %>
+                                            <li class="flex items-start">
+                                                <span class="text-red-500 mr-2">•</span>
+                                                <%= error %>
+                                            </li>
+                                        <% }); %>
+                                    </ul>
+                                </div>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            <% } else { %>
+                <!-- 모든 노래가 유효한 경우 -->
+                <div class="bg-white rounded-lg shadow-sm p-8 text-center">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-check-circle text-6xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">모든 노래가 유효합니다!</h2>
+                    <p class="text-gray-600">현재 스키마가 유효하지 않은 노래가 없습니다.</p>
+                </div>
+            <% } %>
+        </div>
+    </main>
+
+    <!-- 진행 상황 모달 -->
+    <div id="progressModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="mb-4">
+                    <i class="fas fa-spinner fa-spin text-4xl text-blue-600"></i>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">재번역 진행 중...</h3>
+                <p id="progressText" class="text-gray-600">번역을 시작하고 있습니다.</p>
+                <div class="mt-4">
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div id="progressBar" class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+                    </div>
+                    <div id="progressPercent" class="text-sm text-gray-500 mt-2">0%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function retranslateAll() {
+            if (!confirm('<%= invalidSongs ? invalidSongs.length : 0 %>개 노래의 스키마 오류 부분만 재번역하시겠습니까? (전체 가사가 아닌 문제 있는 부분만 재번역됩니다)')) {
+                return;
+            }
+            
+            showProgressModal();
+            
+            try {
+                const response = await fetch('/admin/retranslate-all', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                if (response.ok) {
+                    hideProgressModal();
+                    alert('부분 재번역이 완료되었습니다.');
+                    window.location.reload();
+                } else {
+                    hideProgressModal();
+                    alert('부분 재번역 중 오류가 발생했습니다.');
+                }
+            } catch (error) {
+                hideProgressModal();
+                alert('재번역 중 오류가 발생했습니다: ' + error.message);
+            }
+        }
+        
+        async function retranslateSingle(songName) {
+            if (!confirm(`"${songName}" 노래의 스키마 오류 부분만 재번역하시겠습니까? (전체 가사가 아닌 문제 있는 부분만 재번역됩니다)`)) {
+                return;
+            }
+            
+            showProgressModal();
+            
+            try {
+                const response = await fetch(`/retry-invalid-lines/${encodeURIComponent(songName)}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    hideProgressModal();
+                    alert(result.message || '부분 재번역이 완료되었습니다.');
+                    window.location.reload();
+                } else {
+                    hideProgressModal();
+                    alert('부분 재번역 중 오류가 발생했습니다.');
+                }
+            } catch (error) {
+                hideProgressModal();
+                alert('부분 재번역 중 오류가 발생했습니다: ' + error.message);
+            }
+        }
+        
+        function showProgressModal() {
+            document.getElementById('progressModal').classList.remove('hidden');
+        }
+        
+        function hideProgressModal() {
+            document.getElementById('progressModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

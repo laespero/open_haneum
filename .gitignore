@@ -10,6 +10,9 @@ package-lock.json
 .env.local
 .env.*.local
 
+# Application data
+viewCounts.json
+
 # IDE
 .idea/
 .vscode/
