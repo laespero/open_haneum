@@ -231,7 +231,7 @@ function getPopularSongs(limit = 10) {
 }
 
 // 인기 아티스트 조회 함수
-function getPopularArtists(limit = 8) {
+function getPopularArtists(limit = 10) {
     const artistViews = {};
     
     // 각 아티스트별 총 조회수 계산
@@ -879,7 +879,7 @@ app.post('/retry-invalid-lines/:title', async (req, res) => {
                 const requestBody = {
                     model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                     max_tokens: 8192,
-                    temperature: 0.5,
+                    temperature: 0.1,
                     messages: [
                         { role: "system", content: MSG },
                         { role: 'user', content: JSON.stringify(invalidLine.context) },
@@ -1317,28 +1317,74 @@ function getInvalidLines(songData) {
     const invalidLines = [];
     
     if (!songData.translatedLines || !Array.isArray(songData.translatedLines)) {
+        console.log('translatedLines가 없거나 배열이 아님');
         return invalidLines;
     }
     
     songData.translatedLines.forEach((line, index) => {
         const lineErrors = validateLineSchema(line, index);
         if (lineErrors.length > 0) {
+            console.log(`라인 ${index}에서 스키마 오류 발견:`, lineErrors);
+            
             // contextText에서 원본 텍스트 찾기
-            const originalContext = songData.contextText?.find(ctx => 
+            let originalContext = songData.contextText?.find(ctx => 
                 ctx.T0 === line.T0 || ctx.O0 === line.T0
             );
             
             if (originalContext) {
-                invalidLines.push({
-                    index: index,
-                    context: originalContext,
-                    errors: lineErrors,
-                    line: line
-                });
+                console.log(`라인 ${index}: contextText 매칭 성공`);
+            } else {
+                console.log(`라인 ${index}: contextText 매칭 실패 - T0: "${line.T0}"`);
+                console.log('사용 가능한 contextText:', songData.contextText?.map(ctx => ctx.T0).slice(0, 5));
+                
+                // contextText 매칭에 실패한 경우 대체 방법들 시도
+                
+                // 1. p1 배열에서 찾기
+                const targetText = line.T0 || line.O0;
+                let foundInP1 = null;
+                
+                if (songData.p1 && Array.isArray(songData.p1) && targetText) {
+                    foundInP1 = songData.p1.find(p1Line => 
+                        p1Line && (
+                            p1Line === targetText ||
+                            p1Line.trim() === targetText.trim() ||
+                            p1Line.toLowerCase() === targetText.toLowerCase()
+                        )
+                    );
+                }
+                
+                // 2. 원본 텍스트에서 찾기
+                let foundInText = null;
+                if (!foundInP1 && songData.text && targetText) {
+                    const textLines = songData.text.split('\n').map(line => line.trim()).filter(line => line);
+                    foundInText = textLines.find(textLine =>
+                        textLine === targetText ||
+                        textLine.toLowerCase() === targetText.toLowerCase()
+                    );
+                }
+                
+                // 찾은 텍스트로 context 생성
+                const contextText = foundInP1 || foundInText || targetText || `라인_${index}`;
+                
+                originalContext = {
+                    T0: contextText,
+                    // 추가 정보가 있으면 활용
+                    ...(line.O0 && { O0: line.O0 })
+                };
+                
+                console.log(`라인 ${index}: 대체 context 생성 - T0: "${originalContext.T0}" (출처: ${foundInP1 ? 'p1' : foundInText ? 'text' : 'fallback'})`);
             }
+            
+            invalidLines.push({
+                index: index,
+                context: originalContext,
+                errors: lineErrors,
+                line: line
+            });
         }
     });
     
+    console.log(`총 ${invalidLines.length}개의 오류 라인 발견`);
     return invalidLines;
 }
 
@@ -1403,8 +1449,8 @@ app.get('/', (req, res) => {
     // 인기 노래 10개를 가져옵니다
     const popularSongs = getPopularSongs(10);
     
-    // 인기 아티스트 8개를 가져옵니다
-    const popularArtists = getPopularArtists(8);
+    // 인기 아티스트 10개를 가져옵니다
+    const popularArtists = getPopularArtists(10);
 
     res.render('landing', {
         latestSongs,
@@ -1460,12 +1506,10 @@ app.post('/admin/retranslate-all', async (req, res) => {
 
         console.log(`관리자 요청으로 ${invalidSongs.length}개 노래의 오류 부분만 부분 재번역을 시작합니다.`);
         
-        // 각 노래를 순차적으로 부분 재번역 (너무 많은 동시 요청 방지)
-        let totalSuccessCount = 0;
-        let totalFailCount = 0;
-        let processedSongs = 0;
-        
-        for (const invalidSong of invalidSongs) {
+        // 모든 노래를 동시에 부분 재번역
+        const songRetranslationPromises = invalidSongs.map(async (invalidSong) => {
+            let songSuccessCount = 0;
+            let songFailCount = 0;
             try {
                 const songName = invalidSong.song.name;
                 const filePath = getSafeSongPath(songName);
@@ -1483,14 +1527,10 @@ app.post('/admin/retranslate-all', async (req, res) => {
                 
                 if (invalidLines.length === 0) {
                     console.log(`[${songName}] 오류 라인이 없어 건너뜀`);
-                    processedSongs++;
-                    continue;
+                    return { songName, successCount: 0, failCount: 0, skipped: true };
                 }
 
                 console.log(`[${songName}] ${invalidLines.length}개의 오류 라인 부분 재번역 시작`);
-
-                let successCount = 0;
-                let failCount = 0;
 
                 // retry-translation 방식으로 오류 라인들만 재번역
                 const translationPromises = invalidLines.map(async (invalidLine) => {
@@ -1498,7 +1538,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                         const requestBody = {
                             model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                             max_tokens: 8192,
-                            temperature: 0.5,
+                            temperature: 0.1,
                             messages: [
                                 { role: "system", content: MSG },
                                 { role: 'user', content: JSON.stringify(invalidLine.context) },
@@ -1527,14 +1567,14 @@ app.post('/admin/retranslate-all', async (req, res) => {
                             
                             // 기존 translatedLines에서 해당 라인 교체
                             songData.translatedLines[invalidLine.index] = parsedResult;
-                            successCount++;
+                            songSuccessCount++;
                         } else {
-                            failCount++;
+                            songFailCount++;
                         }
                         
                     } catch (error) {
                         console.error(`[${songName}] 라인 ${invalidLine.index} 재번역 오류:`, error);
-                        failCount++;
+                        songFailCount++;
                     }
                 });
 
@@ -1549,21 +1589,31 @@ app.post('/admin/retranslate-all', async (req, res) => {
                     songCache[songIndex] = songData;
                 }
                 
-                totalSuccessCount += successCount;
-                totalFailCount += failCount;
-                processedSongs++;
+                console.log(`[${songName}] 부분 재번역 완료: 성공 ${songSuccessCount}개, 실패 ${songFailCount}개`);
                 
-                console.log(`[${songName}] 부분 재번역 완료: 성공 ${successCount}개, 실패 ${failCount}개 (${processedSongs}/${invalidSongs.length})`);
-                
-                // API 호출 간격 조절 (과부하 방지)
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                return { songName, successCount: songSuccessCount, failCount: songFailCount, skipped: false };
                 
             } catch (error) {
                 console.error(`[${invalidSong.song.name}] 부분 재번역 실패:`, error);
-                totalFailCount++;
+                return { songName: invalidSong.song.name, successCount: 0, failCount: 1, skipped: false, error: error.message };
+            }
+        });
+
+        // 모든 노래 처리 완료 대기
+        const results = await Promise.all(songRetranslationPromises);
+        
+        // 결과 집계
+        let totalSuccessCount = 0;
+        let totalFailCount = 0;
+        let processedSongs = 0;
+        
+        results.forEach(result => {
+            totalSuccessCount += result.successCount;
+            totalFailCount += result.failCount;
+            if (!result.skipped) {
                 processedSongs++;
             }
-        }
+        });
         
         console.log(`관리자 부분 재번역 완료: 총 성공 ${totalSuccessCount}개, 실패 ${totalFailCount}개`);
         
