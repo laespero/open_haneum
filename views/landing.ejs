@@ -104,23 +104,23 @@
                         </div>
                         <div class="flex justify-start flex-wrap gap-3">
                             <button onclick="filterByLanguage('all')" 
-                                    class="language-filter active bg-blue-600 text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm hover:bg-blue-700 shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'all' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 전체
                             </button>
                             <button onclick="filterByLanguage('english')" 
-                                    class="language-filter bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'english' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 영어
                             </button>
                             <button onclick="filterByLanguage('japanese')" 
-                                    class="language-filter bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'japanese' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 일본어
                             </button>
                             <button onclick="filterByLanguage('chinese')" 
-                                    class="language-filter bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'chinese' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 중국어
                             </button>
                             <button onclick="filterByLanguage('other')" 
-                                    class="language-filter bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'other' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 기타
                             </button>
                         </div>
@@ -136,7 +136,7 @@
                                 <i class="fas fa-clock text-blue-600 mr-3"></i>
                                 최근 추가된 노래
                             </h2>
-                            <a href="/songs" class="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center">
+                            <a href="javascript:void(0)" onclick="goToSongsPage()" class="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center cursor-pointer">
                                 더보기 <i class="fas fa-arrow-right ml-1"></i>
                             </a>
                         </div>
@@ -215,7 +215,7 @@
                                     인기 노래
                                 </h2>
                                 <% if (popularSongs && popularSongs.length > 0) { %>
-                                    <a href="/popular/songs" class="text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center">
+                                    <a href="javascript:void(0)" onclick="goToPopularSongsPage()" class="text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center cursor-pointer">
                                         더보기 <i class="fas fa-arrow-right ml-1"></i>
                                     </a>
                                 <% } %>
@@ -261,7 +261,7 @@
                                     인기 아티스트
                                 </h2>
                                 <% if (popularArtists && popularArtists.length > 0) { %>
-                                    <a href="/popular/artists" class="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center">
+                                    <a href="javascript:void(0)" onclick="goToPopularArtistsPage()" class="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center cursor-pointer">
                                         더보기 <i class="fas fa-arrow-right ml-1"></i>
                                     </a>
                                 <% } %>
@@ -318,13 +318,105 @@
     </footer>
 
     <script>
-        let currentLanguage = 'all';
+        // 쿠키 유틸리티 함수들
+        function setCookie(name, value, days = 30) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+        
+        function getCookie(name) {
+            const nameEQ = name + '=';
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // URL 파라미터, 쿠키, 기본값 순으로 언어 설정 결정
+        function getInitialLanguage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const urlLanguage = urlParams.get('language');
+            const cookieLanguage = getCookie('preferredLanguage');
+            
+            return urlLanguage || cookieLanguage || 'all';
+        }
+        
+        let currentLanguage = getInitialLanguage();
+        
+        // 서버에서 렌더링된 언어 (서버에서 이미 필터링된 상태)
+        const serverLanguage = '<%= currentLanguage || "all" %>';
+
+        // 언어별 검색 쿼리 매핑
+        function getLanguageQuery(language) {
+            const languageMap = {
+                'english': '영어',
+                'japanese': '일본어',
+                'chinese': '중국어',
+                'other': '', // 기타는 특별한 쿼리 없이 전체에서 영어/일본어/중국어 제외
+                'all': ''
+            };
+            return languageMap[language] || '';
+        }
+
+        // 더보기 버튼 클릭 처리 (쿠키 기반)
+        function goToSongsPage() {
+            const savedLanguage = getCookie('preferredLanguage') || 'all';
+            const query = getLanguageQuery(savedLanguage);
+            if (query) {
+                window.location.href = `/songs?q=${encodeURIComponent(query)}`;
+            } else {
+                window.location.href = '/songs';
+            }
+        }
+
+        // 인기 노래 더보기 버튼 클릭 처리 (쿠키 기반)
+        function goToPopularSongsPage() {
+            const savedLanguage = getCookie('preferredLanguage') || 'all';
+            if (savedLanguage !== 'all') {
+                window.location.href = `/popular/songs?language=${savedLanguage}`;
+            } else {
+                window.location.href = '/popular/songs';
+            }
+        }
+
+        // 인기 아티스트 더보기 버튼 클릭 처리 (쿠키 기반)
+        function goToPopularArtistsPage() {
+            const savedLanguage = getCookie('preferredLanguage') || 'all';
+            if (savedLanguage !== 'all') {
+                window.location.href = `/popular/artists?language=${savedLanguage}`;
+            } else {
+                window.location.href = '/popular/artists';
+            }
+        }
+
+        // URL 업데이트 함수
+        function updateURL(language) {
+            const url = new URL(window.location);
+            if (language === 'all') {
+                url.searchParams.delete('language');
+            } else {
+                url.searchParams.set('language', language);
+            }
+            
+            // URL 업데이트 (페이지 리로드 없이)
+            window.history.replaceState({language: language}, '', url.toString());
+        }
 
         // 언어 필터링 함수
         async function filterByLanguage(language) {
             if (currentLanguage === language) return;
             
             currentLanguage = language;
+            
+            // 쿠키에 언어 설정 저장
+            setCookie('preferredLanguage', language);
+            
+            // URL 업데이트
+            updateURL(language);
             
             // 버튼 상태 업데이트
             updateFilterButtons(language);
@@ -374,6 +466,39 @@
             document.getElementById('main-content').style.opacity = '1';
         }
 
+        // 브라우저 뒤로/앞으로 가기 처리
+        window.addEventListener('popstate', function(event) {
+            const newLanguage = getInitialLanguage();
+            if (newLanguage !== currentLanguage) {
+                currentLanguage = newLanguage;
+                setCookie('preferredLanguage', newLanguage);
+                updateFilterButtons(newLanguage);
+                
+                if (newLanguage !== 'all') {
+                    filterByLanguage(newLanguage);
+                } else {
+                    // 전체로 돌아갈 때는 페이지 새로고침
+                    window.location.reload();
+                }
+            }
+        });
+
+        // 페이지 로드 시 초기화
+        window.addEventListener('DOMContentLoaded', function() {
+            // 쿠키에서 불러온 언어 설정으로 필터 버튼 상태 설정
+            updateFilterButtons(currentLanguage);
+            
+            // 서버에서 이미 올바른 언어로 렌더링된 경우 AJAX 호출 안함
+            if (currentLanguage !== serverLanguage) {
+                console.log(`언어 불일치 감지: 클라이언트(${currentLanguage}) vs 서버(${serverLanguage}) - AJAX 호출`);
+                filterByLanguage(currentLanguage);
+            } else if (currentLanguage !== 'all') {
+                // 서버와 클라이언트 언어가 같고, 'all'이 아닌 경우 URL만 업데이트
+                console.log(`언어 일치: ${currentLanguage} - URL만 업데이트`);
+                updateURL(currentLanguage);
+            }
+        });
+
         // 메인 콘텐츠 업데이트
         function updateMainContent(data) {
             const mainContent = document.getElementById('main-content');
@@ -385,7 +510,7 @@
                             <i class="fas fa-clock text-blue-600 mr-3"></i>
                             최근 추가된 노래
                         </h2>
-                        <a href="/songs" class="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center">
+                        <a href="javascript:void(0)" onclick="goToSongsPage()" class="text-blue-600 hover:text-blue-700 text-sm font-medium flex items-center cursor-pointer">
                             더보기 <i class="fas fa-arrow-right ml-1"></i>
                         </a>
                     </div>
@@ -456,7 +581,7 @@
                                 인기 노래
                             </h2>
                             ${data.popularSongs.length > 0 ? `
-                                <a href="/popular/songs" class="text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center">
+                                <a href="javascript:void(0)" onclick="goToPopularSongsPage()" class="text-orange-600 hover:text-orange-700 text-sm font-medium flex items-center cursor-pointer">
                                     더보기 <i class="fas fa-arrow-right ml-1"></i>
                                 </a>
                             ` : ''}
@@ -502,7 +627,7 @@
                                 인기 아티스트
                             </h2>
                             ${data.popularArtists.length > 0 ? `
-                                <a href="/popular/artists" class="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center">
+                                <a href="javascript:void(0)" onclick="goToPopularArtistsPage()" class="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center cursor-pointer">
                                     더보기 <i class="fas fa-arrow-right ml-1"></i>
                                 </a>
                             ` : ''}

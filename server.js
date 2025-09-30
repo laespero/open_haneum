@@ -145,6 +145,20 @@ let songCache = [];  // 노래 데이터를 저장할 캐시
 let isCacheReady = false; // 캐시 준비 상태 플래그
 let viewCounts = {};  // 조회수 데이터를 저장할 객체
 
+// 쿠키 파싱 유틸리티 함수
+function parseCookies(cookieHeader) {
+    const cookies = {};
+    if (cookieHeader) {
+        cookieHeader.split(';').forEach(cookie => {
+            const parts = cookie.split('=');
+            if (parts.length === 2) {
+                cookies[parts[0].trim()] = decodeURIComponent(parts[1].trim());
+            }
+        });
+    }
+    return cookies;
+}
+
 // 캐시 준비 상태 확인 미들웨어
 app.use((req, res, next) => {
     if (isCacheReady) {
@@ -1436,26 +1450,24 @@ function toContextObj(sentences) {
 
 // 루트 경로 라우트
 app.get('/', (req, res) => {
-    // 최근 추가된 노래 16개를 가져옵니다
-    const latestSongs = songCache
-        .filter(song => !song.tags || !song.tags.includes('개발용'))
-        .sort((a, b) => {
-            const dateA = a.createdAt ? new Date(a.createdAt) : new Date(0);
-            const dateB = b.createdAt ? new Date(b.createdAt) : new Date(0);
-            return dateB - dateA;
-        })
-        .slice(0, 16);
+    const cookies = parseCookies(req.headers.cookie);
+    const preferredLanguage = cookies.preferredLanguage || 'all';
+    const language = req.query.language || preferredLanguage;
 
-    // 인기 노래 10개를 가져옵니다
-    const popularSongs = getPopularSongs(10);
+    // 최근 추가된 노래 16개를 가져옵니다 (언어별)
+    const latestSongs = filterSongsByLanguage(language, 16);
+
+    // 인기 노래 10개를 가져옵니다 (언어별)
+    const popularSongs = getPopularSongsByLanguage(language, 10);
     
-    // 인기 아티스트 10개를 가져옵니다
-    const popularArtists = getPopularArtists(10);
+    // 인기 아티스트 10개를 가져옵니다 (언어별)
+    const popularArtists = getPopularArtistsByLanguage(language, 10);
 
     res.render('landing', {
         latestSongs,
         popularSongs,
-        popularArtists
+        popularArtists,
+        currentLanguage: language
     });
 });
 
@@ -1465,34 +1477,61 @@ app.get('/add-song', (req, res) => {
 
 // 인기 노래 순위 페이지
 app.get('/popular/songs', (req, res) => {
-    const popularSongs = getPopularSongs(100); // 상위 100개 노래
+    const cookies = parseCookies(req.headers.cookie);
+    const preferredLanguage = cookies.preferredLanguage || 'all';
+    const language = req.query.language || preferredLanguage;
+    const popularSongs = getPopularSongsByLanguage(language, 100); // 상위 100개 노래 (언어별)
     
     res.render('popularSongs', {
-        popularSongs: popularSongs
+        popularSongs: popularSongs,
+        currentLanguage: language
     });
 });
 
 // 인기 아티스트 순위 페이지
 app.get('/popular/artists', (req, res) => {
-    const popularArtists = getPopularArtists(100); // 상위 100명 아티스트
+    const cookies = parseCookies(req.headers.cookie);
+    const preferredLanguage = cookies.preferredLanguage || 'all';
+    const language = req.query.language || preferredLanguage;
+    const popularArtists = getPopularArtistsByLanguage(language, 100); // 상위 100명 아티스트 (언어별)
     
     res.render('popularArtists', {
-        popularArtists: popularArtists
+        popularArtists: popularArtists,
+        currentLanguage: language
     });
 });
 
 // 관리 페이지 라우트
-app.get('/admin', (req, res) => {
-    const invalidSongs = getInvalidSongs(100);
-    // '개발용' 태그가 있는 노래들을 제외한 총 노래 수 계산
-    const totalSongs = songCache.filter(song => 
-        !song.tags || !song.tags.includes('개발용')
-    ).length;
-    
-    res.render('admin', {
-        invalidSongs: invalidSongs,
-        totalSongs: totalSongs
-    });
+app.get('/admin', async (req, res) => {
+    try {
+        // admin 페이지 접근 시 songCache를 최신 파일 데이터로 갱신
+        console.log('admin 페이지 접근: songCache 최신화 시작...');
+        await refreshSongCache();
+        console.log('admin 페이지: songCache 최신화 완료');
+        
+        const invalidSongs = getInvalidSongs(100);
+        // '개발용' 태그가 있는 노래들을 제외한 총 노래 수 계산
+        const totalSongs = songCache.filter(song => 
+            !song.tags || !song.tags.includes('개발용')
+        ).length;
+        
+        res.render('admin', {
+            invalidSongs: invalidSongs,
+            totalSongs: totalSongs
+        });
+    } catch (error) {
+        console.error('admin 페이지 songCache 갱신 중 오류:', error);
+        // 오류가 발생하더라도 기존 캐시로 페이지 렌더링 시도
+        const invalidSongs = getInvalidSongs(100);
+        const totalSongs = songCache.filter(song => 
+            !song.tags || !song.tags.includes('개발용')
+        ).length;
+        
+        res.render('admin', {
+            invalidSongs: invalidSongs,
+            totalSongs: totalSongs
+        });
+    }
 });
 
 // 전체 재번역 라우트

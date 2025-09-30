@@ -25,7 +25,7 @@
                 <a href="/" class="bg-white text-purple-600 font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
                     <i class="fas fa-home"></i> 메인으로
                 </a>
-                <a href="/popular/songs" class="bg-purple-400 hover:bg-purple-300 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                <a href="javascript:void(0)" onclick="goToPopularSongs()" class="bg-purple-400 hover:bg-purple-300 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2 cursor-pointer">
                     <i class="fas fa-fire"></i> 인기 노래
                 </a>
             </div>
@@ -48,23 +48,23 @@
                     </div>
                     <div class="flex justify-center lg:justify-start flex-wrap gap-3">
                         <button onclick="filterByLanguage('all')" 
-                                class="language-filter active bg-purple-600 text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm hover:bg-purple-700 shadow-sm">
+                                class="language-filter <%= (currentLanguage || 'all') === 'all' ? 'active bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                             전체
                         </button>
                         <button onclick="filterByLanguage('english')" 
-                                class="language-filter bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                class="language-filter <%= (currentLanguage || 'all') === 'english' ? 'active bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                             영어
                         </button>
                         <button onclick="filterByLanguage('japanese')" 
-                                class="language-filter bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                class="language-filter <%= (currentLanguage || 'all') === 'japanese' ? 'active bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                             일본어
                         </button>
                         <button onclick="filterByLanguage('chinese')" 
-                                class="language-filter bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                class="language-filter <%= (currentLanguage || 'all') === 'chinese' ? 'active bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                             중국어
                         </button>
                         <button onclick="filterByLanguage('other')" 
-                                class="language-filter bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                class="language-filter <%= (currentLanguage || 'all') === 'other' ? 'active bg-purple-600 text-white hover:bg-purple-700' : 'bg-gray-100 hover:bg-purple-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                             기타
                         </button>
                     </div>
@@ -188,13 +188,96 @@
     </footer>
 
     <script>
-        let currentLanguage = 'all';
+        // 쿠키 유틸리티 함수들
+        function setCookie(name, value, days = 30) {
+            const expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
+        }
+        
+        function getCookie(name) {
+            const nameEQ = name + '=';
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // 쿠키 우선, URL 파라미터 차순, 기본값 순으로 언어 설정
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLanguage = urlParams.get('language') || 'all';
+        const cookieLanguage = getCookie('preferredLanguage') || 'all';
+        let currentLanguage = urlLanguage !== 'all' ? urlLanguage : cookieLanguage;
+        
+        // 서버에서 렌더링된 언어
+        const serverLanguage = '<%= currentLanguage || "all" %>';
+
+        // 인기 노래 페이지로 동적 이동
+        function goToPopularSongs() {
+            if (currentLanguage !== 'all') {
+                window.location.href = `/popular/songs?language=${currentLanguage}`;
+            } else {
+                window.location.href = '/popular/songs';
+            }
+        }
+        
+        // 브라우저 뒤로/앞으로 가기 처리
+        window.addEventListener('popstate', function(event) {
+            const urlParams = new URLSearchParams(window.location.search);
+            const newLanguage = urlParams.get('language') || 'all';
+            
+            if (newLanguage !== currentLanguage) {
+                currentLanguage = newLanguage;
+                setCookie('preferredLanguage', newLanguage);
+                updateFilterButtons(newLanguage);
+                
+                // API 호출 없이 페이지 새로고침으로 간단히 처리
+                window.location.reload();
+            }
+        });
+
+        // 페이지 로드 시 현재 언어에 맞게 버튼 상태 설정
+        window.onload = function() {
+            updateFilterButtons(currentLanguage);
+            
+            // 서버에서 이미 올바른 언어로 렌더링된 경우 AJAX 호출 안함
+            if (currentLanguage !== serverLanguage) {
+                console.log(`언어 불일치 감지: 클라이언트(${currentLanguage}) vs 서버(${serverLanguage}) - AJAX 호출`);
+                filterByLanguage(currentLanguage);
+            } else if (currentLanguage !== 'all' && !urlParams.get('language')) {
+                // 쿠키 언어와 서버 언어가 같지만 URL에 파라미터가 없는 경우 URL만 업데이트
+                console.log(`언어 일치하지만 URL 파라미터 없음: ${currentLanguage} - URL만 업데이트`);
+                updateURL(currentLanguage);
+            }
+        };
+
+        // URL 업데이트 함수
+        function updateURL(language) {
+            const url = new URL(window.location);
+            if (language === 'all') {
+                url.searchParams.delete('language');
+            } else {
+                url.searchParams.set('language', language);
+            }
+            
+            // URL 업데이트 (페이지 리로드 없이)
+            window.history.replaceState({language: language}, '', url.toString());
+        }
 
         // 언어 필터링 함수
         async function filterByLanguage(language) {
             if (currentLanguage === language) return;
             
             currentLanguage = language;
+            
+            // 쿠키에 언어 설정 저장
+            setCookie('preferredLanguage', language);
+            
+            // URL 업데이트
+            updateURL(language);
             
             // 버튼 상태 업데이트
             updateFilterButtons(language);
