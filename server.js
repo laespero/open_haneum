@@ -142,6 +142,7 @@ app.use(express.static('public'));
 app.use('/', express.static('songs'));
 
 let songCache = [];  // 노래 데이터를 저장할 캐시
+let songCacheMap = new Map();  // 노래 이름을 키로 하는 Map (빠른 검색용)
 let isCacheReady = false; // 캐시 준비 상태 플래그
 let viewCounts = {};  // 조회수 데이터를 저장할 객체
 
@@ -237,7 +238,7 @@ function getPopularSongs(limit = 10) {
         .sort(([,a], [,b]) => b - a)
         .slice(0, limit)
         .map(([songName, views]) => {
-            const song = songCache.find(s => s.name === songName);
+            const song = songCacheMap.get(songName); // Map으로 O(1) 검색
             return song ? { ...song, views } : null;
         })
         .filter(song => song !== null)
@@ -250,7 +251,7 @@ function getPopularArtists(limit = 10) {
     
     // 각 아티스트별 총 조회수 계산
     Object.entries(viewCounts).forEach(([songName, views]) => {
-        const song = songCache.find(s => s.name === songName);
+        const song = songCacheMap.get(songName); // Map으로 O(1) 검색
         if (song && (!song.tags || !song.tags.includes('개발용'))) {
             const artistName = typeof song.artist === 'object' 
                 ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name)
@@ -327,35 +328,44 @@ function filterSongsByLanguage(language, limit = 16) {
 
 // 언어별 인기 노래 필터링 함수
 function getPopularSongsByLanguage(language, limit = 10) {
-    let allPopularSongs = getPopularSongs(100); // 우선 많이 가져온 후 필터링
-    
     if (language === 'all') {
-        return allPopularSongs.slice(0, limit);
+        return getPopularSongs(limit);
     }
     
-    let filteredSongs = allPopularSongs;
+    // 전체 노래에서 언어별로 먼저 필터링
+    let filteredSongs = songCache.filter(song => 
+        !song.tags || !song.tags.includes('개발용')
+    );
     
     if (language === 'english') {
-        filteredSongs = allPopularSongs.filter(song => 
+        filteredSongs = filteredSongs.filter(song => 
             song.tags && song.tags.some(tag => tag.includes('영어'))
         );
     } else if (language === 'japanese') {
-        filteredSongs = allPopularSongs.filter(song => 
+        filteredSongs = filteredSongs.filter(song => 
             song.tags && song.tags.some(tag => tag.includes('일본어'))
         );
     } else if (language === 'chinese') {
-        filteredSongs = allPopularSongs.filter(song => 
+        filteredSongs = filteredSongs.filter(song => 
             song.tags && song.tags.some(tag => tag.includes('중국어'))
         );
     } else if (language === 'other') {
-        filteredSongs = allPopularSongs.filter(song => 
+        filteredSongs = filteredSongs.filter(song => 
             !song.tags || !song.tags.some(tag => 
                 tag.includes('영어') || tag.includes('일본어') || tag.includes('중국어')
             )
         );
     }
     
-    return filteredSongs.slice(0, limit);
+    // 필터링된 노래들을 조회수 순으로 정렬
+    return filteredSongs
+        .map(song => ({
+            ...song,
+            views: viewCounts[song.name] || 0
+        }))
+        .filter(song => song.views > 0) // 조회수가 있는 노래만
+        .sort((a, b) => b.views - a.views)
+        .slice(0, limit);
 }
 
 // 언어별 인기 아티스트 필터링 함수
@@ -364,7 +374,31 @@ function getPopularArtistsByLanguage(language, limit = 10) {
         return getPopularArtists(limit);
     }
     
-    const filteredSongs = filterSongsByLanguage(language, 1000); // 충분히 많은 수로 필터링
+    // 전체 노래에서 언어별로 먼저 필터링
+    let filteredSongs = songCache.filter(song => 
+        !song.tags || !song.tags.includes('개발용')
+    );
+    
+    if (language === 'english') {
+        filteredSongs = filteredSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('영어'))
+        );
+    } else if (language === 'japanese') {
+        filteredSongs = filteredSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('일본어'))
+        );
+    } else if (language === 'chinese') {
+        filteredSongs = filteredSongs.filter(song => 
+            song.tags && song.tags.some(tag => tag.includes('중국어'))
+        );
+    } else if (language === 'other') {
+        filteredSongs = filteredSongs.filter(song => 
+            !song.tags || !song.tags.some(tag => 
+                tag.includes('영어') || tag.includes('일본어') || tag.includes('중국어')
+            )
+        );
+    }
+    
     const artistViews = {};
     
     // 필터링된 노래들로 아티스트별 조회수 계산
@@ -415,6 +449,10 @@ async function refreshSongCache() {
             }
         });
         songCache = (await Promise.all(songPromises)).filter(song => song !== null); // null이 아닌 것만 필터링
+        
+        // Map 인덱스 생성 (빠른 검색을 위해)
+        songCacheMap = new Map(songCache.map(song => [song.name, song]));
+        
         isCacheReady = true; // 캐시 로딩 완료, 이제 서버는 모든 요청을 처리할 준비가 됨
         console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했으며, 서버가 정상적으로 요청을 처리할 준비를 마쳤습니다.`);
     } catch (err) {
@@ -553,6 +591,7 @@ app.post('/add', async (req, res) => {
     } else {
         songCache.unshift(songData); // 새 노래를 맨 앞에 추가
     }
+    songCacheMap.set(title, songData); // Map도 함께 업데이트
     console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
 
     res.render('songDetail', { song: songData });
@@ -591,6 +630,7 @@ app.post('/update-song-meta/:title', async (req, res) => {
     const songIndex = songCache.findIndex(song => song.name === title);
     if (songIndex > -1) {
         songCache[songIndex] = { ...songCache[songIndex], ...songData };
+        songCacheMap.set(title, songCache[songIndex]); // Map도 함께 업데이트
         console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
     } else {
         // 만약 캐시에 없다면 (이론상 발생하기 어려움), 전체 리프레시로 안전하게 처리
@@ -945,6 +985,7 @@ app.post('/retry-invalid-lines/:title', async (req, res) => {
         const songIndex = songCache.findIndex(song => song.name === title);
         if (songIndex > -1) {
             songCache[songIndex] = songData;
+            songCacheMap.set(title, songData); // Map도 함께 업데이트
         }
 
         console.log(`[${title}] 부분 재번역 완료: 성공 ${successCount}개, 실패 ${failCount}개`);
@@ -1123,6 +1164,7 @@ app.post('/update-line/:title', async (req, res) => {
         const songIndex = songCache.findIndex(song => song.name === title);
         if (songIndex > -1) {
             songCache[songIndex] = songData;
+            songCacheMap.set(title, songData); // Map도 함께 업데이트
             console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
         }
 
@@ -1626,6 +1668,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                 const songIndex = songCache.findIndex(song => song.name === songName);
                 if (songIndex > -1) {
                     songCache[songIndex] = songData;
+                    songCacheMap.set(songName, songData); // Map도 함께 업데이트
                 }
                 
                 console.log(`[${songName}] 부분 재번역 완료: 성공 ${songSuccessCount}개, 실패 ${songFailCount}개`);
