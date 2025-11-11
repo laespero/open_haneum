@@ -65,6 +65,10 @@ let chatModel;
 // const chatModel = "google/gemini-2.5-pro-preview-03-25";
 // const chatModel = "deepseek-chat";
 
+const OPENROUTER_DEEPSEEK_CHAT = "deepseek/deepseek-v3.2-exp";
+const OPENROUTER_CHATGPT = "openai/chatgpt-4o-latest";
+const OPENROUTER_GEMINI = "google/gemini-2.5-flash-lite";
+
 let openai;
 let initializationLog = "";
 let isUsingDeepSeekDirectly = false; // DeepSeek 직접 사용 여부 플래그
@@ -88,7 +92,7 @@ if (API_PROVIDER_CHOICE === 'deepseek') {
             baseURL: 'https://openrouter.ai/api/v1',
             apiKey: process.env.OPENROUTER_API_KEY
         });
-        chatModel = "deepseek/deepseek-chat";
+        chatModel = OPENROUTER_DEEPSEEK_CHAT;
         isUsingDeepSeekDirectly = false;
     } else {
         initializationLog = "⚠️ 경고: API_PROVIDER_CHOICE='openrouter'으로 설정되었으나 OPENROUTER_API_KEY가 없습니다. API 기능이 제한됩니다.";
@@ -112,13 +116,15 @@ if (API_PROVIDER_CHOICE === 'deepseek') {
             baseURL: 'https://openrouter.ai/api/v1',
             apiKey: process.env.OPENROUTER_API_KEY
         });
-        chatModel = "deepseek/deepseek-chat";
+        chatModel = OPENROUTER_DEEPSEEK_CHAT;
         isUsingDeepSeekDirectly = false;
     } else {
         initializationLog += "⚠️ 경고: 사용 가능한 API 키가 없습니다. .env 파일에 키를 설정해주세요. API 기능이 제한됩니다.";
         isUsingDeepSeekDirectly = false; // 추가: API 사용 불가 시 false
     }
 }
+
+console.log("[chatModel] : ", chatModel);   
 
 if (!openai || !openai.chat) { // openai 객체가 제대로 초기화되지 않은 경우
     openai = {
@@ -1078,7 +1084,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
 
     try {
         const requestBody = {
-            model: isUsingDeepSeekDirectly ? "deepseek-chat" : 'openai/gpt-4o',
+            model: isUsingDeepSeekDirectly ? "deepseek-chat" : OPENROUTER_CHATGPT,
             max_tokens: 8192,
             temperature: 0.2,
             messages: [
@@ -1241,7 +1247,7 @@ app.post('/auto-fill-names', async (req, res) => {
     
     try {
         const completion = await openai.chat.completions.create({
-            model: isUsingDeepSeekDirectly ? "deepseek-chat" : "google/gemini-2.0-flash-001",
+            model: isUsingDeepSeekDirectly ? "deepseek-chat" : OPENROUTER_GEMINI,
             messages: [
                 {
                     role: "system",
