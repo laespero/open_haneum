@@ -469,18 +469,30 @@ function getPopularArtistsByLanguage(language, limit = 10) {
 async function refreshSongCache() {
     try {
         const files = (await fs.promises.readdir('songs')).filter(file => path.extname(file).toLowerCase() === '.json');
-        const songPromises = files.map(async file => {
-            const filePath = `songs/${file}`;
-            try {
-                const data = await fs.promises.readFile(filePath, 'utf8');
-                const songData = JSON.parse(data);
-                return songData;
-            } catch (parseErr) {
-                console.error(`'${filePath}' 파일 처리 중 오류 발생:`, parseErr);
-                return null; // 오류 발생 시 null 반환
-            }
-        });
-        songCache = (await Promise.all(songPromises)).filter(song => song !== null); // null이 아닌 것만 필터링
+        
+        // 파일 오픈 제한(EMFILE) 방지를 위해 배치 처리
+        const BATCH_SIZE = 50;
+        let newSongCache = [];
+        
+        for (let i = 0; i < files.length; i += BATCH_SIZE) {
+            const batch = files.slice(i, i + BATCH_SIZE);
+            const songPromises = batch.map(async file => {
+                const filePath = `songs/${file}`;
+                try {
+                    const data = await fs.promises.readFile(filePath, 'utf8');
+                    const songData = JSON.parse(data);
+                    return songData;
+                } catch (parseErr) {
+                    console.error(`'${filePath}' 파일 처리 중 오류 발생:`, parseErr);
+                    return null; // 오류 발생 시 null 반환
+                }
+            });
+            
+            const batchResults = await Promise.all(songPromises);
+            newSongCache.push(...batchResults.filter(song => song !== null));
+        }
+        
+        songCache = newSongCache;
         
         // Map 인덱스 생성 (빠른 검색을 위해)
         songCacheMap = new Map(songCache.map(song => [song.name, song]));
@@ -489,8 +501,8 @@ async function refreshSongCache() {
         console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했으며, 서버가 정상적으로 요청을 처리할 준비를 마쳤습니다.`);
     } catch (err) {
         console.error('노래 데이터 로드 중 심각한 오류 발생:', err);
-        // 캐시 로딩은 핵심 기능이므로, 실패 시 프로세스를 종료하여 pm2 등이 재시작하도록 유도
-        process.exit(1);
+        // 캐시 리로딩 실패 시 서버를 종료하지 않고 에러를 던짐
+        throw err;
     }
 }
 
@@ -1234,6 +1246,7 @@ app.post('/retry-translation/:title', async (req, res) => {
             }
 
             const completion = await openai.chat.completions.create(requestBody);
+            const translatedLine = completion.choices[0].message.content;
 
             const parsedResult = JSON.parse(translatedLine);
             if (parsedResult && parsedResult.K0) {
