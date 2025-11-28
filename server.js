@@ -66,7 +66,7 @@ let chatModel;
 // const chatModel = "deepseek-chat";
 
 const OPENROUTER_DEEPSEEK_CHAT = "deepseek/deepseek-v3.2-exp";
-const OPENROUTER_CHATGPT = "openai/chatgpt-4o-latest";
+const OPENROUTER_CHATGPT = "openai/gpt-5.1-chat";
 const OPENROUTER_GEMINI = "google/gemini-2.5-flash-lite";
 
 let openai;
@@ -139,8 +139,8 @@ if (!openai || !openai.chat) { // openai 객체가 제대로 초기화되지 않
 }
 console.log(initializationLog);
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 app.set('view engine', 'ejs');
 
 // 정적 파일 제공 설정
@@ -150,6 +150,7 @@ app.use('/', express.static('songs'));
 let songCache = [];  // 노래 데이터를 저장할 캐시
 let songCacheMap = new Map();  // 노래 이름을 키로 하는 Map (빠른 검색용)
 let isCacheReady = false; // 캐시 준비 상태 플래그
+let lastCacheReloadTime = 0; // 마지막 캐시 리로딩 시간
 let viewCounts = {};  // 조회수 데이터를 저장할 객체
 
 // 쿠키 파싱 유틸리티 함수
@@ -222,6 +223,31 @@ async function saveViewCounts() {
         await fs.promises.writeFile('viewCounts.json', JSON.stringify(viewCounts, null, 2));
     } catch (error) {
         console.error('조회수 데이터 저장 중 오류:', error);
+    }
+}
+
+// viewCounts와 songCache 동기화 함수
+async function syncViewCountsWithSongs() {
+    let updated = false;
+    let addedCount = 0;
+    
+    if (!songCache || songCache.length === 0) return;
+
+    songCache.forEach(song => {
+        // 개발용 태그가 아닌 노래에 대해서만
+        if (!song.tags || !song.tags.includes('개발용')) {
+            // viewCounts에 해당 곡이 없으면 1로 초기화
+            if (viewCounts[song.name] === undefined) {
+                viewCounts[song.name] = 1;
+                updated = true;
+                addedCount++;
+            }
+        }
+    });
+    
+    if (updated) {
+        console.log(`viewCounts에 누락된 곡 ${addedCount}개를 추가했습니다.`);
+        await saveViewCounts();
     }
 }
 
@@ -367,7 +393,7 @@ function getPopularSongsByLanguage(language, limit = 10) {
     return filteredSongs
         .map(song => ({
             ...song,
-            views: viewCounts[song.name] || 0
+            views: viewCounts[song.name] || 1
         }))
         .filter(song => song.views > 0) // 조회수가 있는 노래만
         .sort((a, b) => b.views - a.views)
@@ -409,7 +435,7 @@ function getPopularArtistsByLanguage(language, limit = 10) {
     
     // 필터링된 노래들로 아티스트별 조회수 계산
     filteredSongs.forEach(song => {
-        const views = viewCounts[song.name] || 0;
+        const views = viewCounts[song.name] || 1;
         if (views > 0) {
             const artistName = typeof song.artist === 'object' 
                 ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name)
@@ -530,6 +556,125 @@ function searchSongs(searchQuery, excludeTags = []) {
     });
 }
 
+/**
+ * Utaten의 ruby_html을 파싱하여 깨끗한 텍스트(Kanji)를 추출합니다. (LLM 전송용)
+ * @param {string} html - Utaten ruby_html 문자열
+ * @returns {string} - 정제된 텍스트
+ */
+function cleanUtatenHtml(html) {
+    if (!html) return "";
+    
+    // 1. <span class="rt">...</span> (읽는 법) 제거
+    let text = html.replace(/<span class="rt">.*?<\/span>/g, '');
+    
+    // 2. <br/>, <br>을 개행 문자로 변경
+    text = text.replace(/<br\s*\/?>/gi, '\n');
+    
+    // 3. 나머지 모든 HTML 태그 제거
+    text = text.replace(/<[^>]*>/g, '');
+    
+    // 4. HTML 엔티티 디코딩
+    text = text.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+    
+    // 5. 트림
+    return text.trim();
+}
+
+/**
+ * 노래 번역 프로세스를 처리하는 핵심 함수
+ * @param {string} title - 노래 제목
+ * @returns {Promise<object>} - 업데이트된 노래 데이터
+ */
+async function processTranslation(title) {
+    console.log(`[processTranslation] 시작 : [${title}]`);
+
+    const filePath = getSafeSongPath(title);
+    const data = await fs.promises.readFile(filePath, 'utf8');
+    let songData = JSON.parse(data);
+
+    if (!Array.isArray(songData.p1)) {
+        console.error('songData.p1은 배열이어야 합니다:', songData.p1);
+        const err = new Error('잘못된 노래 데이터 형식');
+        err.status = 400;
+        throw err;
+    }
+
+    const contextText = toContextObj(songData.p1);
+    songData.contextText = contextText;
+
+    let parsedTranslatedLines = [];
+    let failedLines = [];
+
+    const translationPromises = contextText.map(async (context) => {
+        try {
+            let alpha = "";
+            if(songData.japanSongData){
+                const japanData = songData.japanSongData.find(x=>x.jp===context.T0);
+                if (japanData) {
+                    alpha += "\n\n";
+                    alpha += `한국어 번역 시, 다음 번역을 그대로 사용할 것. "${japanData.kr}"`;
+                    if(japanData.jp !== japanData.pr) alpha += `\n한글 발음을 적을 때, 다음을 그대로 사용할 것. "${japanData.pr}"`;
+                }
+            }
+
+            // LLM에 보낼 때는 태그를 제거한 깨끗한 텍스트를 사용
+            const cleanContext = {
+                ...context,
+                T0: cleanUtatenHtml(context.T0),
+                C0: cleanUtatenHtml(context.C0)
+            };
+
+            const requestBody = {
+                model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                max_tokens: 8192,
+                temperature:0.5,
+                messages: [
+                    { role: "system", content: MSG },
+                    { role: 'user', content: JSON.stringify(cleanContext)+alpha },
+                ],
+                response_format: { 
+                    type: "json_object" 
+                }
+            };
+
+            if (!isUsingDeepSeekDirectly) {
+                requestBody.provider = {
+                    ignore: [
+                        'InferenceNet',
+                        'Together'
+                    ]
+                };
+            }
+
+            const completion = await openai.chat.completions.create(requestBody);
+
+            const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+            const parsedResult = JSON.parse(translatedLine);
+            
+            if (parsedResult && parsedResult.K0) {
+                // 저장할 때는 원본(태그 포함) T0를 O0에 저장 (기존 O0가 있으면 유지)
+                parsedResult.O0 = parsedResult.O0 || context.T0;
+                parsedTranslatedLines.push(parsedResult);
+            } else {
+                failedLines.push(context);
+            }
+        } catch (error) {
+            console.error('번역 오류:', error);
+            failedLines.push(context);
+        }
+    });
+
+    await Promise.all(translationPromises);
+
+    songData.translatedLines = parsedTranslatedLines;
+    songData.failedLines = failedLines;
+
+    await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+    console.log(`[processTranslation] 끝 : [${title}]`);
+    
+    return songData;
+}
+
 app.post('/add', async (req, res) => {
     let { title, ori_name, kor_name, eng_name, vid, artist_ori_name, artist_kor_name, artist_eng_name, text, tags } = req.body;
     let isJapanSong = false;
@@ -603,6 +748,200 @@ app.post('/add', async (req, res) => {
     res.render('songDetail', { song: songData });
 });
 
+// 대량 임포트 페이지 렌더링
+app.get('/bulk-import', (req, res) => {
+    res.render('bulkImport');
+});
+
+// Utaten 데이터 대량 임포트 및 분석 처리
+app.post('/bulk-import-utaten', async (req, res) => {
+    // 요청 타임아웃 방지 (대량 처리 시 시간 소요)
+    req.setTimeout(0); 
+
+    const { songs, prefix, tags, concurrency } = req.body;
+    if (!songs || !Array.isArray(songs)) {
+        return res.status(400).send('잘못된 데이터 형식입니다.');
+    }
+
+    // 동시 처리 개수 설정 (기본값 1)
+    const batchSize = parseInt(concurrency) || 1;
+
+    // 태그 처리
+    const commonTags = tags ? tags.split(',').map(tag => tag.trim()).filter(tag => tag) : [];
+    // 기본 태그에 사용자 입력 태그 추가
+    const finalTags = ['UtatenImport', ...commonTags];
+
+    // Streaming response headers 설정
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.setHeader('Transfer-Encoding', 'chunked');
+
+    res.write(`총 ${songs.length}개의 노래 처리를 시작합니다.\n`);
+    if (prefix) res.write(`파일명 접두어: "${prefix}"\n`);
+    if (commonTags.length > 0) res.write(`적용 태그: ${commonTags.join(', ')}\n`);
+    res.write(`동시 처리 개수: ${batchSize}\n`);
+    
+    console.log(`[Bulk Import] 총 ${songs.length}개 노래 처리 시작 (Prefix: ${prefix || 'None'}, Tags: ${commonTags.join(', ')}, Concurrency: ${batchSize})`);
+
+    // 노래 하나를 처리하는 함수
+    const processSong = async (item, index) => {
+        const oriTitle = item.title;
+        const artist = item.artist;
+        const youtubeUrl = item.youtube_url;
+        // ruby_html이 null이나 undefined인 경우 빈 문자열로 처리
+        const rubyHtml = (item.ruby_html || '').replace(/<br\s*\/?>/gi, '<br>');
+
+        // ruby_html이 없으면 스킵
+        if (!rubyHtml || rubyHtml.trim() === '') {
+            res.write(`\n[${index+1}/${songs.length}] "${oriTitle}" 스킵 (가사 데이터 없음)\n`);
+            return;
+        }
+
+        try {
+            res.write(`\n[${index+1}/${songs.length}] "${oriTitle}" (${artist}) 처리 시작...\n`);
+            
+            // 1. 제목 번역 (한글/영문)
+            let korName = '';
+            let engName = '';
+            
+            try {
+                const nameCompletion = await openai.chat.completions.create({
+                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : OPENROUTER_GEMINI, 
+                    messages: [
+                        {
+                            role: "system",
+                            content: `Given a song title in its original language, provide the Korean and English translations. Respond in JSON format: {"kor_name": "Korean translation", "eng_name": "English translation"}`
+                        },
+                        {
+                            role: "user",
+                            content: `Original title: ${oriTitle}`
+                        }
+                    ],
+                    response_format: { type: "json_object" }
+                });
+                
+                const nameResult = JSON.parse(nameCompletion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim());
+                korName = nameResult.kor_name || '';
+                engName = nameResult.eng_name || '';
+                res.write(`  - [${index+1}] 제목 번역: ${korName} / ${engName}\n`);
+            } catch (nameErr) {
+                console.error(`제목 번역 실패 (${oriTitle}):`, nameErr);
+                res.write(`  - [${index+1}] ⚠️ 제목 번역 실패 (기본값 사용)\n`);
+                engName = oriTitle; // 실패 시 원어 제목 사용
+            }
+
+            // 2. 파일명 생성
+            let safeFileName = engName.trim()
+                .replace(/\s+/g, '_')       
+                .replace(/[^a-zA-Z0-9_\-]/g, ''); 
+            
+            if (safeFileName.length < 2) {
+                 safeFileName = oriTitle.trim()
+                    .replace(/\s+/g, '_')
+                    .replace(/[^a-zA-Z0-9_\-]/g, '') || 'unknown_song';
+            }
+
+            if (prefix) {
+                const safePrefix = prefix.trim()
+                    .replace(/\s+/g, '_')
+                    .replace(/[^a-zA-Z0-9_\-]/g, '');
+                if (safePrefix) {
+                    safeFileName = `${safePrefix}_${safeFileName}`;
+                }
+            }
+            
+            const finalTitle = safeFileName; 
+
+            // 3. 데이터 준비
+            let vid = '';
+            try {
+                if (youtubeUrl) {
+                    const urlObj = new URL(youtubeUrl);
+                    vid = urlObj.searchParams.get('v') || '';
+                }
+            } catch (e) {
+                console.warn(`Invalid YouTube URL for ${oriTitle}: ${youtubeUrl}`);
+            }
+            
+            const text = rubyHtml;
+            
+            let trimedTextArr;
+            if(text.includes("<br") || text.includes("<BR")) {
+                trimedTextArr = text
+                    .replace(/\r/g, '')
+                    .replace(/\n/g, '')
+                    .split(/<br\s*\/?>/i) 
+                    .map(line => line.trim())
+                    .filter(x => x !== '');
+            } else {
+                trimedTextArr = text
+                    .replace(/\r/g, '')
+                    .split("\n")
+                    .map(line => line.trim())
+                    .filter(x => x !== '');
+            }
+            
+            const uniqueLines = [...new Set(trimedTextArr)];
+
+            const artistObj = {
+                ori_name: artist,
+                kor_name: '',
+                eng_name: ''
+            };
+
+            const songData = {
+                name: finalTitle, 
+                ori_name: oriTitle, 
+                kor_name: korName,
+                eng_name: engName,
+                vid: vid,
+                artist: artistObj,
+                tags: finalTags,
+                text: text.replaceAll("  ", " "),
+                createdAt: new Date().toISOString(),
+                p1: uniqueLines
+            };
+
+            // 4. 파일 저장
+            const safePath = `songs/${finalTitle}.json`;
+            await fs.promises.writeFile(safePath, JSON.stringify(songData, null, 2));
+            
+            // 캐시 업데이트
+            const existingSongIndex = songCache.findIndex(song => song.name === finalTitle);
+            if (existingSongIndex > -1) {
+                songCache[existingSongIndex] = songData;
+            } else {
+                songCache.unshift(songData);
+            }
+            songCacheMap.set(finalTitle, songData);
+
+            res.write(`  - [${index+1}] 기본 데이터 저장 완료. AI 분석 시작...\n`);
+
+            // 5. 분석 실행
+            await processTranslation(finalTitle);
+            
+            res.write(`  - [${index+1}] 분석 완료.\n`);
+
+        } catch (err) {
+            console.error(`[Bulk Import] Error processing ${oriTitle}:`, err);
+            res.write(`  - [${index+1}] ❌ 오류 발생: ${err.message}\n`);
+        }
+    };
+
+    // 배치 처리 실행
+    for (let i = 0; i < songs.length; i += batchSize) {
+        const batch = songs.slice(i, i + batchSize);
+        res.write(`\n--- 배치 시작 (${i + 1} ~ ${Math.min(i + batchSize, songs.length)}) ---\n`);
+        
+        // 현재 배치의 모든 작업을 병렬로 실행
+        // map의 두 번째 인자는 배열 내의 인덱스이므로, 전체 인덱스(i + idx)를 계산해서 전달
+        const promises = batch.map((item, idx) => processSong(item, i + idx));
+        await Promise.all(promises);
+    }
+
+    res.write(`\n=== 모든 작업이 완료되었습니다 ===\n`);
+    res.end();
+});
+
 app.post('/update-song-meta/:title', async (req, res) => {
     const { title } = req.params;
     const { artist_ori_name, artist_kor_name, artist_eng_name, vid, ori_name, kor_name, eng_name, tags } = req.body;
@@ -662,10 +1001,21 @@ app.get('/songs/:title', async (req, res) => {
                 // contextText의 순서를 기준으로 translatedLines 정렬
                 const sortedTranslatedLines = songData.contextText
                     .map(context => {
-                        // T0 또는 O0와 일치하는 번역된 라인 찾기
-                        const translatedLine = songData.translatedLines.find(
+                        // 1. T0 또는 O0와 정확히 일치하는 번역된 라인 찾기
+                        let translatedLine = songData.translatedLines.find(
                             line => line.T0 === context.T0 || line.O0 === context.T0
                         );
+
+                        // 2. 매칭 실패 시, 태그를 제거하고 텍스트 내용만으로 매칭 시도 (Robust matching)
+                        if (!translatedLine) {
+                            const cleanContextT0 = cleanUtatenHtml(context.T0).trim();
+                            translatedLine = songData.translatedLines.find(line => {
+                                const cleanLineT0 = cleanUtatenHtml(line.T0).trim();
+                                const cleanLineO0 = line.O0 ? cleanUtatenHtml(line.O0).trim() : '';
+                                return cleanLineT0 === cleanContextT0 || cleanLineO0 === cleanContextT0;
+                            });
+                        }
+
                         return translatedLine || { T0: context.T0, K0: "번역 없음" };
                     })
                     .filter(line => line); // null이나 undefined 제거
@@ -823,7 +1173,7 @@ app.post('/translate/:title', async (req, res) => {
             console.log(translatedLine.substring(0,100));
             const parsedResult = JSON.parse(translatedLine);
             if (parsedResult && parsedResult.K0) {
-                parsedResult.O0 = context.T0;
+                parsedResult.O0 = parsedResult.O0 || context.T0;
                 parsedTranslatedLines.push(parsedResult);
             } else {
                 failedLines.push(context);
@@ -844,6 +1194,7 @@ app.post('/translate/:title', async (req, res) => {
 
     res.render('songDetail', { song: songData });
 });
+
 
 
 app.post('/retry-translation/:title', async (req, res) => {
@@ -884,10 +1235,9 @@ app.post('/retry-translation/:title', async (req, res) => {
 
             const completion = await openai.chat.completions.create(requestBody);
 
-            const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
             const parsedResult = JSON.parse(translatedLine);
             if (parsedResult && parsedResult.K0) {
-                parsedResult.O0 = context.T0;
+                parsedResult.O0 = parsedResult.O0 || context.T0;
                 parsedTranslatedLines.push(parsedResult);
             } else {
                 failedLines.push(context);
@@ -1048,7 +1398,7 @@ app.post('/retry-line/:title', async (req, res) => {
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
-        parsedResult.O0 = thatLine.T0;
+        parsedResult.O0 = parsedResult.O0 || thatLine.T0;
         const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
@@ -1106,7 +1456,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
-        parsedResult.O0 = thatLine.T0;
+        parsedResult.O0 = parsedResult.O0 || thatLine.T0;
         const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
@@ -1211,7 +1561,22 @@ app.get('/api/songs/:title/translated', async (req, res) => {
                 .filter(x => x !== '');
             
             const result = trimedTextArr.map(x=> {
-                const found = songData.translatedLines.find(y => y.T0.trim().toLowerCase() === x.trim().toLowerCase());
+                // 1. 정확한 매칭 시도
+                let found = songData.translatedLines.find(y => 
+                    y.T0.trim().toLowerCase() === x.trim().toLowerCase() ||
+                    (y.O0 && y.O0.trim().toLowerCase() === x.trim().toLowerCase())
+                );
+
+                // 2. 매칭 실패 시, 태그를 제거하고 텍스트 내용만으로 매칭 시도 (Robust matching)
+                if (!found) {
+                    const cleanX = cleanUtatenHtml(x).trim().toLowerCase();
+                    found = songData.translatedLines.find(y => {
+                        const cleanY = cleanUtatenHtml(y.T0).trim().toLowerCase();
+                        const cleanO0 = y.O0 ? cleanUtatenHtml(y.O0).trim().toLowerCase() : '';
+                        return cleanY === cleanX || cleanO0 === cleanX;
+                    });
+                }
+
                 if(found) {
                     return found;
                 }
@@ -1552,10 +1917,7 @@ app.get('/popular/artists', (req, res) => {
 // 관리 페이지 라우트
 app.get('/admin', async (req, res) => {
     try {
-        // admin 페이지 접근 시 songCache를 최신 파일 데이터로 갱신
-        console.log('admin 페이지 접근: songCache 최신화 시작...');
-        await refreshSongCache();
-        console.log('admin 페이지: songCache 최신화 완료');
+        // admin 페이지 접근 시 songCache 자동 갱신 제거 (사용자 요청 시에만 갱신)
         
         const invalidSongs = getInvalidSongs(100);
         // '개발용' 태그가 있는 노래들을 제외한 총 노래 수 계산
@@ -1568,16 +1930,37 @@ app.get('/admin', async (req, res) => {
             totalSongs: totalSongs
         });
     } catch (error) {
-        console.error('admin 페이지 songCache 갱신 중 오류:', error);
-        // 오류가 발생하더라도 기존 캐시로 페이지 렌더링 시도
-        const invalidSongs = getInvalidSongs(100);
-        const totalSongs = songCache.filter(song => 
-            !song.tags || !song.tags.includes('개발용')
-        ).length;
+        console.error('admin 페이지 렌더링 중 오류:', error);
+        res.status(500).send('관리 페이지 로딩 중 오류가 발생했습니다.');
+    }
+});
+
+// 캐시 수동 갱신 라우트
+app.post('/admin/reload-cache', async (req, res) => {
+    const now = Date.now();
+    // 1초에 1번까지만 허용 (1000ms 제한)
+    if (now - lastCacheReloadTime < 1000) {
+        return res.status(429).json({ 
+            success: false, 
+            message: '요청이 너무 빠릅니다. 잠시 후 다시 시도해주세요.' 
+        });
+    }
+    
+    lastCacheReloadTime = now;
+    
+    try {
+        console.log('관리자 요청으로 캐시 갱신 시작...');
+        await refreshSongCache();
+        // 캐시 갱신 후 조회수 데이터 동기화
+        await syncViewCountsWithSongs();
         
-        res.render('admin', {
-            invalidSongs: invalidSongs,
-            totalSongs: totalSongs
+        console.log('캐시 갱신 완료');
+        res.json({ success: true, message: '노래 데이터가 새로고침되었습니다.' });
+    } catch (error) {
+        console.error('캐시 갱신 중 오류:', error);
+        res.status(500).json({ 
+            success: false, 
+            message: '캐시 갱신 중 오류가 발생했습니다.' 
         });
     }
 });
@@ -1650,7 +2033,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                         const parsedResult = JSON.parse(translatedLine);
                         
                         if (parsedResult && parsedResult.K0) {
-                            parsedResult.O0 = invalidLine.context.T0;
+                            parsedResult.O0 = parsedResult.O0 || invalidLine.context.T0;
                             
                             // 기존 translatedLines에서 해당 라인 교체
                             songData.translatedLines[invalidLine.index] = parsedResult;
@@ -1836,7 +2219,10 @@ function startServer() {
         Promise.all([
             refreshSongCache(),
             loadViewCounts()
-        ]).catch(err => {
+        ]).then(() => {
+            // 초기 로딩 완료 후 동기화 실행
+            return syncViewCountsWithSongs();
+        }).catch(err => {
             console.error('초기 데이터 로딩 중 오류:', err);
         });
     });

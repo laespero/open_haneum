@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utaten 데이터 대량 임포트 - 오픈 한음</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header class="text-white text-center py-12 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Utaten JSON 대량 임포트 & 분석</h1>
+            <p class="text-blue-100">Utaten JSON 파일을 드래그하여 노래를 추가하고 자동으로 분석을 시작합니다.</p>
+            <div class="mt-6">
+                <a href="/" class="inline-block bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-2 rounded-full transition duration-300 backdrop-blur-sm">
+                    <i class="fas fa-arrow-left mr-2"></i> 메인으로 돌아가기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto max-w-4xl px-6 py-12">
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+            
+            <!-- 설정 영역 -->
+            <div class="mb-8 bg-blue-50 p-6 rounded-xl border border-blue-100">
+                <label for="prefix-input" class="block text-sm font-medium text-gray-700 mb-2">
+                    <i class="fas fa-tag mr-1 text-blue-500"></i> 파일명 접두어 (Prefix)
+                </label>
+                <div class="flex items-center">
+                    <input type="text" id="prefix-input" placeholder="예: Vaundy (선택사항)" 
+                           class="flex-grow border-gray-300 rounded-l-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3 border">
+                    <div class="bg-gray-100 px-4 py-3 border border-l-0 border-gray-300 rounded-r-lg text-gray-500 text-sm">
+                        _노래제목.json
+                    </div>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">
+                    * 입력 시 파일명이 <code>접두어_영어제목.json</code> 형식으로 저장됩니다. (공백은 언더바로 치환)
+                </p>
+                
+                <label for="tags-input" class="block text-sm font-medium text-gray-700 mt-4 mb-2">
+                    <i class="fas fa-tags mr-1 text-blue-500"></i> 태그 (Tags)
+                </label>
+                <input type="text" id="tags-input" placeholder="예: J-Pop, Vaundy, 2024 (콤마로 구분)" 
+                       class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3 border">
+                <p class="text-xs text-gray-500 mt-2">
+                    * 모든 노래에 공통으로 적용될 태그입니다.
+                </p>
+
+                <label for="concurrency-input" class="block text-sm font-medium text-gray-700 mt-4 mb-2">
+                    <i class="fas fa-tachometer-alt mr-1 text-blue-500"></i> 동시 처리 개수 (Concurrency)
+                </label>
+                <input type="number" id="concurrency-input" value="1" min="1" max="10"
+                       class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 p-3 border">
+                <p class="text-xs text-gray-500 mt-2">
+                    * 한 번에 처리할 노래의 개수입니다. (높을수록 빠르지만 API 제한에 걸릴 수 있습니다. 권장: 1~5)
+                </p>
+            </div>
+
+            <!-- 업로드 영역 -->
+            <div id="drop-zone" class="border-2 border-dashed border-blue-300 rounded-xl p-12 text-center cursor-pointer hover:bg-blue-50 transition-colors duration-300 mb-8 group">
+                <i class="fas fa-cloud-upload-alt text-5xl text-blue-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">여기에 JSON 파일을 드래그하세요</h3>
+                <p class="text-gray-500 text-sm mb-4">또는 클릭하여 파일을 선택하세요 (utaten_artist_songs_fast.json)</p>
+                <input type="file" id="file-input" class="hidden" accept=".json">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium transition duration-300">
+                    파일 선택
+                </button>
+            </div>
+
+            <!-- 진행 상태 및 로그 -->
+            <div id="log-container" class="hidden">
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="font-semibold text-gray-800 flex items-center">
+                        <i class="fas fa-terminal text-gray-600 mr-2"></i> 처리 로그
+                    </h3>
+                    <span id="status-badge" class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full animate-pulse">
+                        처리 중...
+                    </span>
+                </div>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm h-96 overflow-y-auto shadow-inner" id="log-output"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const dropZone = document.getElementById('drop-zone');
+        const fileInput = document.getElementById('file-input');
+        const logContainer = document.getElementById('log-container');
+        const logOutput = document.getElementById('log-output');
+        const statusBadge = document.getElementById('status-badge');
+
+        // 드래그 앤 드롭 이벤트 핸들러
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, highlight, false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, unhighlight, false);
+        });
+
+        function highlight(e) {
+            dropZone.classList.add('bg-blue-50', 'border-blue-500');
+        }
+
+        function unhighlight(e) {
+            dropZone.classList.remove('bg-blue-50', 'border-blue-500');
+        }
+
+        dropZone.addEventListener('drop', handleDrop, false);
+        dropZone.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            handleFiles(files);
+        }
+
+        function handleFiles(files) {
+            if (files.length === 0) return;
+            const file = files[0];
+            
+            if (file.type !== 'application/json' && !file.name.endsWith('.json')) {
+                alert('JSON 파일만 업로드 가능합니다.');
+                return;
+            }
+
+            readFile(file);
+        }
+
+        function readFile(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const jsonData = JSON.parse(e.target.result);
+                    uploadData(jsonData);
+                } catch (err) {
+                    alert('JSON 파일 파싱 중 오류가 발생했습니다: ' + err.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        async function uploadData(data) {
+            // UI 초기화
+            logContainer.classList.remove('hidden');
+            dropZone.classList.add('opacity-50', 'pointer-events-none');
+            const prefixInput = document.getElementById('prefix-input');
+            const tagsInput = document.getElementById('tags-input');
+            const concurrencyInput = document.getElementById('concurrency-input');
+            
+            prefixInput.disabled = true; 
+            tagsInput.disabled = true;
+            concurrencyInput.disabled = true;
+            
+            logOutput.innerHTML = '> 데이터 전송 중...\n';
+            
+            // 데이터 형식이 배열인지 확인
+            let songs = Array.isArray(data) ? data : (data.songs || []);
+            if (songs.length === 0) {
+                logOutput.innerHTML += '> ❌ 처리할 노래 데이터가 없습니다.\n';
+                resetUI();
+                return;
+            }
+
+            const prefix = prefixInput.value.trim();
+            const tags = tagsInput.value.trim();
+            const concurrency = parseInt(concurrencyInput.value) || 1;
+
+            if (prefix) {
+                logOutput.innerHTML += `> 접두어 적용: "${prefix}"\n`;
+            }
+            if (tags) {
+                logOutput.innerHTML += `> 태그 적용: "${tags}"\n`;
+            }
+            logOutput.innerHTML += `> 동시 처리: ${concurrency}곡\n`;
+
+            try {
+                const response = await fetch('/bulk-import-utaten', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ 
+                        songs: songs,
+                        prefix: prefix,
+                        tags: tags,
+                        concurrency: concurrency
+                    })
+                });
+
+                // Streaming response 처리
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+                    
+                    const chunk = decoder.decode(value, { stream: true });
+                    logOutput.innerHTML += chunk;
+                    logOutput.scrollTop = logOutput.scrollHeight;
+                }
+
+                // 완료 상태 업데이트
+                statusBadge.className = 'bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full';
+                statusBadge.textContent = '완료';
+                logOutput.innerHTML += '\n> ✅ 모든 처리가 완료되었습니다.';
+
+            } catch (error) {
+                logOutput.innerHTML += `\n> ❌ 네트워크 또는 서버 오류: ${error.message}`;
+                statusBadge.className = 'bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full';
+                statusBadge.textContent = '오류';
+            } finally {
+                dropZone.classList.remove('opacity-50', 'pointer-events-none');
+            }
+        }
+
+        function resetUI() {
+            dropZone.classList.remove('opacity-50', 'pointer-events-none');
+            
+            document.getElementById('prefix-input').disabled = false;
+            document.getElementById('tags-input').disabled = false;
+            document.getElementById('concurrency-input').disabled = false;
+            
+            statusBadge.className = 'bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full';
+            statusBadge.textContent = '대기 중';
+        }
+    </script>
+</body>
+</html>

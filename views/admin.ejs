@@ -23,6 +23,9 @@
                 <a href="/" class="bg-white text-red-600 font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
                     <i class="fas fa-home"></i> 메인으로
                 </a>
+                <button onclick="reloadCache()" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-redo-alt"></i> 데이터 새로고침
+                </button>
                 <% if (invalidSongs && invalidSongs.length > 0) { %>
                     <button onclick="retranslateAll()" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
                         <i class="fas fa-sync-alt"></i> 부분 재번역 (<%= invalidSongs.length %>개)
@@ -144,6 +147,36 @@
     </div>
 
     <script>
+        async function reloadCache() {
+            const btn = event.currentTarget;
+            const originalContent = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 갱신 중...';
+            
+            try {
+                const response = await fetch('/admin/reload-cache', {
+                    method: 'POST'
+                });
+                const result = await response.json();
+                
+                if (response.ok) {
+                    alert(result.message);
+                    window.location.reload();
+                } else {
+                    if (response.status === 429) {
+                        alert(result.message); // 너무 빠른 요청 경고
+                    } else {
+                        alert('오류: ' + result.message);
+                    }
+                }
+            } catch (error) {
+                alert('요청 중 오류가 발생했습니다: ' + error.message);
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = originalContent;
+            }
+        }
+
         async function retranslateAll() {
             if (!confirm('<%= invalidSongs ? invalidSongs.length : 0 %>개 노래의 스키마 오류 부분만 재번역하시겠습니까? (전체 가사가 아닌 문제 있는 부분만 재번역됩니다)')) {
                 return;
