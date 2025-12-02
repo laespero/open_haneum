@@ -3,6 +3,7 @@ import fs from 'fs';
 import OpenAI from 'openai'; 
 import cors from 'cors';
 import path from "path";
+import puppeteer from 'puppeteer';
 import { KR_MSG } from './messages.js';  // MSG import 추가
 import { JP_MSG } from './jp_messages.js';
 import 'dotenv/config';
@@ -1650,6 +1651,449 @@ app.post('/auto-fill-names', async (req, res) => {
     }
 });
 
+// Puppeteer를 사용한 YouTube VID 검색 함수
+async function findYoutubeVid(artist, title) {
+    let browser = null;
+    try {
+        // 브라우저 실행 옵션 최적화
+        browser = await puppeteer.launch({
+            headless: "new",
+            args: [
+                '--no-sandbox', 
+                '--disable-setuid-sandbox', 
+                '--disable-dev-shm-usage',
+                '--disable-accelerated-2d-canvas',
+                '--disable-gpu'
+            ]
+        });
+        const page = await browser.newPage();
+        
+        // 리소스 로드 최적화 (이미지, 폰트 등 차단)
+        await page.setRequestInterception(true);
+        page.on('request', (req) => {
+            if (['image', 'stylesheet', 'font', 'media'].includes(req.resourceType())) {
+                req.abort();
+            } else {
+                req.continue();
+            }
+        });
+        
+        // User Agent 설정
+        await page.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+        
+        const query = encodeURIComponent(`${artist} ${title}`);
+        const searchUrl = `https://www.youtube.com/results?search_query=${query}`;
+        
+        await page.goto(searchUrl, { waitUntil: 'networkidle2', timeout: 60000 });
+        
+        // 비디오 링크 셀렉터 대기
+        const videoSelector = 'a#video-title';
+        try {
+            await page.waitForSelector(videoSelector, { timeout: 10000 });
+        } catch (e) {
+            console.log('Selector wait timeout, searching in DOM...');
+        }
+        
+        // 첫 번째 비디오의 href 속성 가져오기
+        const href = await page.$eval(videoSelector, el => el.href).catch(() => null);
+        
+        if (href) {
+            const urlObj = new URL(href);
+            const vid = urlObj.searchParams.get('v');
+            return vid;
+        }
+        
+        return null;
+    } catch (error) {
+        console.error('YouTube search error:', error);
+        return null;
+    } finally {
+        if (browser) {
+            await browser.close();
+        }
+    }
+}
+
+// 태그 통계 집계 함수
+function getTagStats() {
+    const tagStats = {};
+    
+    songCache.forEach(song => {
+        if (song.tags && Array.isArray(song.tags)) {
+            song.tags.forEach(tag => {
+                tagStats[tag] = (tagStats[tag] || 0) + 1;
+            });
+        }
+    });
+    
+    // 카운트 기준 내림차순 정렬
+    return Object.entries(tagStats)
+        .sort(([, a], [, b]) => b - a)
+        .map(([tag, count]) => ({ tag, count }));
+}
+
+// 관리자 - 태그 관리 페이지
+app.get('/admin/tags', (req, res) => {
+    try {
+        const tags = getTagStats();
+        res.render('adminTags', { tags });
+    } catch (error) {
+        console.error('태그 관리 페이지 오류:', error);
+        res.status(500).send('서버 오류가 발생했습니다.');
+    }
+});
+
+// 관리자 - 태그 일괄 변경 API
+app.post('/admin/tags/replace', async (req, res) => {
+    const { oldTag, newTag } = req.body;
+    
+    if (!oldTag || !newTag) {
+        return res.status(400).json({ success: false, message: '변경 전/후 태그가 모두 필요합니다.' });
+    }
+    
+    if (oldTag === newTag) {
+        return res.status(400).json({ success: false, message: '변경 전과 후의 태그가 같습니다.' });
+    }
+    
+    try {
+        let updatedCount = 0;
+        const updatePromises = [];
+        
+        // 캐시된 모든 노래 순회
+        for (let i = 0; i < songCache.length; i++) {
+            const song = songCache[i];
+            
+            if (song.tags && song.tags.includes(oldTag)) {
+                // 태그 변경
+                const newTags = song.tags.map(t => t === oldTag ? newTag : t);
+                
+                // 중복 제거 (이미 newTag가 있었을 경우)
+                song.tags = [...new Set(newTags)];
+                
+                // 파일 저장 작업 추가
+                const filePath = getSafeSongPath(song.name);
+                
+                // 클로저로 song 객체와 filePath 캡처
+                updatePromises.push((async (s, path) => {
+                    await fs.promises.writeFile(path, JSON.stringify(s, null, 2));
+                    return true;
+                })(song, filePath));
+                
+                updatedCount++;
+            }
+        }
+        
+        if (updatedCount === 0) {
+            return res.json({ success: true, message: '해당 태그를 가진 노래가 없습니다.', count: 0 });
+        }
+        
+        // 병렬로 파일 저장 실행
+        await Promise.all(updatePromises);
+        
+        // 캐시 맵 업데이트 (참조형이라 songCache 수정 시 자동 반영되지만, 명시적 갱신이 안전할 수 있음)
+        songCache.forEach(song => songCacheMap.set(song.name, song));
+        
+        console.log(`태그 일괄 변경 완료: "${oldTag}" -> "${newTag}" (${updatedCount}곡)`);
+        
+        res.json({ 
+            success: true, 
+            message: `${updatedCount}개의 노래에서 태그가 변경되었습니다.`, 
+            count: updatedCount 
+        });
+        
+    } catch (error) {
+        console.error('태그 일괄 변경 중 오류:', error);
+        res.status(500).json({ success: false, message: '태그 변경 중 서버 오류가 발생했습니다.' });
+    }
+});
+
+// 아티스트 통계 집계 함수
+function getArtistStats() {
+    const artistStats = {};
+    
+    songCache.forEach(song => {
+        // 아티스트 정보 추출 (문자열 또는 객체)
+        let oriName = "";
+        let korName = "";
+        let engName = "";
+        
+        if (typeof song.artist === 'object') {
+            oriName = song.artist.ori_name || "";
+            korName = song.artist.kor_name || "";
+            engName = song.artist.eng_name || "";
+            
+            // ori_name이 없으면 name 필드 사용 시도
+            if (!oriName && song.artist.name) oriName = song.artist.name;
+        } else {
+            oriName = song.artist || "";
+        }
+        
+        if (!oriName) return; // 원어명이 없으면 건너뜀
+        
+        if (!artistStats[oriName]) {
+            artistStats[oriName] = {
+                ori_name: oriName,
+                kor_name: korName,
+                eng_name: engName,
+                count: 0
+            };
+        } else {
+            // 이미 있는 경우, kor_name/eng_name이 비어있으면 채워넣기 시도
+            if (!artistStats[oriName].kor_name && korName) artistStats[oriName].kor_name = korName;
+            if (!artistStats[oriName].eng_name && engName) artistStats[oriName].eng_name = engName;
+        }
+        
+        artistStats[oriName].count++;
+    });
+    
+    // 카운트 기준 내림차순 정렬
+    return Object.values(artistStats)
+        .sort((a, b) => b.count - a.count);
+}
+
+// 관리자 - 아티스트 관리 페이지
+app.get('/admin/artists', (req, res) => {
+    try {
+        const artists = getArtistStats();
+        res.render('adminArtists', { artists });
+    } catch (error) {
+        console.error('아티스트 관리 페이지 오류:', error);
+        res.status(500).send('서버 오류가 발생했습니다.');
+    }
+});
+
+// 관리자 - 아티스트 정보 일괄 수정 API
+app.post('/admin/artists/update', async (req, res) => {
+    const { targetOriName, newKorName, newEngName } = req.body;
+    
+    if (!targetOriName) {
+        return res.status(400).json({ success: false, message: '대상 아티스트(원어명)가 필요합니다.' });
+    }
+    
+    try {
+        let updatedCount = 0;
+        const updatePromises = [];
+        
+        // 캐시된 모든 노래 순회
+        for (let i = 0; i < songCache.length; i++) {
+            const song = songCache[i];
+            let isMatch = false;
+            
+            // 아티스트 매칭 확인
+            if (typeof song.artist === 'object') {
+                if ((song.artist.ori_name === targetOriName) || (song.artist.name === targetOriName)) {
+                    isMatch = true;
+                }
+            } else if (song.artist === targetOriName) {
+                isMatch = true;
+            }
+            
+            if (isMatch) {
+                // 아티스트 정보 업데이트 (항상 객체 형태로 변환)
+                if (typeof song.artist !== 'object') {
+                    song.artist = {
+                        ori_name: targetOriName,
+                        kor_name: newKorName || "",
+                        eng_name: newEngName || ""
+                    };
+                } else {
+                    song.artist.ori_name = targetOriName; // 원어명도 통일성을 위해 덮어쓰기 가능
+                    song.artist.kor_name = newKorName || song.artist.kor_name || "";
+                    song.artist.eng_name = newEngName || song.artist.eng_name || "";
+                }
+                
+                // 파일 저장 작업 추가
+                const filePath = getSafeSongPath(song.name);
+                
+                updatePromises.push((async (s, path) => {
+                    await fs.promises.writeFile(path, JSON.stringify(s, null, 2));
+                    return true;
+                })(song, filePath));
+                
+                updatedCount++;
+            }
+        }
+        
+        if (updatedCount === 0) {
+            return res.json({ success: true, message: '해당 아티스트의 노래를 찾을 수 없습니다.', count: 0 });
+        }
+        
+        // 병렬로 파일 저장 실행
+        await Promise.all(updatePromises);
+        
+        // 캐시 맵 업데이트
+        songCache.forEach(song => songCacheMap.set(song.name, song));
+        
+        console.log(`아티스트 정보 일괄 수정 완료: "${targetOriName}" (${updatedCount}곡)`);
+        
+        res.json({ 
+            success: true, 
+            message: `${updatedCount}개의 노래에서 아티스트 정보가 수정되었습니다.`, 
+            count: updatedCount 
+        });
+        
+    } catch (error) {
+        console.error('아티스트 정보 수정 중 오류:', error);
+        res.status(500).json({ success: false, message: '아티스트 정보 수정 중 서버 오류가 발생했습니다.' });
+    }
+});
+
+// 관리자 - 자동 VID 추출 페이지
+app.get('/admin/auto-vid', async (req, res) => {
+    try {
+        // 1. VID가 없는 노래 필터링
+        const songsMissingVid = songCache.filter(song => {
+            return (!song.vid || song.vid.trim() === "") && (!song.tags || !song.tags.includes('개발용'));
+        }).map(song => ({
+            artist: typeof song.artist === 'object' ? (song.artist.ori_name || song.artist.name) : song.artist,
+            title: song.ori_name || song.name,
+            filename: song.name,
+            vid: song.vid
+        }));
+        
+        // 2. VID가 있는 노래들 (유효성 검사용) - 개발용 제외
+        const songsWithVid = songCache.filter(song => {
+            return (song.vid && song.vid.trim() !== "") && (!song.tags || !song.tags.includes('개발용'));
+        }).map(song => ({
+            filename: song.name,
+            vid: song.vid
+        }));
+        
+        res.render('autoVid', { 
+            songs: songsMissingVid,
+            songsWithVid: songsWithVid 
+        });
+    } catch (error) {
+        console.error('Auto VID page error:', error);
+        res.status(500).send('Server Error');
+    }
+});
+
+// API - 특정 노래의 VID 강제 재검색 및 교체 (에러 발생 시 사용)
+app.post('/api/songs/refresh-vid', async (req, res) => {
+    const { filename, oldVid } = req.body;
+    
+    if (!filename) {
+        return res.status(400).json({ success: false, message: 'Filename required' });
+    }
+    
+    try {
+        // 1. 파일 읽기
+        const filePath = getSafeSongPath(filename);
+        const data = await fs.promises.readFile(filePath, 'utf8');
+        const songData = JSON.parse(data);
+        
+        // 2. 검색 정보 추출
+        const artistName = typeof songData.artist === 'object' ? 
+            (songData.artist.ori_name || songData.artist.name || "") : 
+            (songData.artist || "");
+        const titleName = songData.ori_name || songData.name || "";
+        
+        if (!artistName && !titleName) {
+             return res.json({ success: false, message: 'Artist or Title missing' });
+        }
+
+        // 3. Puppeteer 검색
+        // 기존과 동일한 검색어라도, YouTube 검색 결과가 바뀌었을 수 있고
+        // Puppeteer 로직을 개선하여 '비디오만' 필터링하거나 다른 결과를 가져오도록 할 수 있음.
+        // 여기서는 단순 재검색을 수행하되, 만약 검색된 결과가 oldVid와 같다면
+        // (삭제된 영상이 여전히 검색 상위에 뜰 수도 있으므로) 주의가 필요함.
+        // 하지만 일단 재검색 시도.
+        
+        console.log(`Refetching VID for: ${artistName} - ${titleName} (Old: ${oldVid})`);
+        
+        // TODO: Puppeteer 검색 시 oldVid를 제외하고 찾거나, 
+        // 검색 결과 목록 중 재생 가능한 것을 찾는 로직이 추가되면 좋음.
+        // 현재는 findYoutubeVid가 첫 번째 결과만 가져오므로, 
+        // 검색어가 동일하면 같은 결과가 나올 확률이 높음.
+        // 개선안: 검색어에 'official' 등을 추가하거나, 검색 로직을 수정해야 함.
+        // 여기서는 일단 'official audio'나 'mv' 등을 붙여서 검색 시도해볼 수 있음.
+        
+        let vid = await findYoutubeVid(artistName, titleName);
+        
+        // 만약 찾은 VID가 에러난 VID와 같다면, 검색어를 조금 바꿔서 재시도
+        if (vid === oldVid) {
+            console.log('Same VID found, retrying with modified query...');
+            vid = await findYoutubeVid(artistName, titleName + " official");
+        }
+        
+        if (vid && vid !== oldVid) {
+            // 4. 저장
+            songData.vid = vid;
+            await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+            
+            // 캐시 업데이트
+            const songIndex = songCache.findIndex(s => s.name === filename);
+            if (songIndex > -1) {
+                songCache[songIndex] = songData;
+                songCacheMap.set(filename, songData);
+            }
+            
+            console.log(`Refreshed VID: ${oldVid} -> ${vid}`);
+            return res.json({ success: true, vid, oldVid });
+        } else {
+            console.log('New VID not found or same as old one');
+            return res.json({ success: false, message: 'New VID not found', sameVid: vid === oldVid });
+        }
+    } catch (error) {
+        console.error('Refresh VID error:', error);
+        return res.status(500).json({ success: false, message: error.message });
+    }
+});
+
+// API - 특정 노래의 VID 추출 및 저장
+app.post('/api/songs/fetch-vid', async (req, res) => {
+    const { filename } = req.body;
+    
+    if (!filename) {
+        return res.status(400).json({ success: false, message: 'Filename required' });
+    }
+    
+    try {
+        // 1. 파일 읽기
+        const filePath = getSafeSongPath(filename);
+        const data = await fs.promises.readFile(filePath, 'utf8');
+        const songData = JSON.parse(data);
+        
+        // 2. 검색 정보 추출 (아티스트 + 제목)
+        const artistName = typeof songData.artist === 'object' ? 
+            (songData.artist.ori_name || songData.artist.name || "") : 
+            (songData.artist || "");
+            
+        const titleName = songData.ori_name || songData.name || "";
+        
+        if (!artistName && !titleName) {
+             return res.json({ success: false, message: 'Artist or Title missing' });
+        }
+
+        // 3. Puppeteer 검색
+        console.log(`Searching VID for: ${artistName} - ${titleName}`);
+        const vid = await findYoutubeVid(artistName, titleName);
+        
+        if (vid) {
+            // 4. 저장
+            songData.vid = vid;
+            await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+            
+            // 캐시 업데이트
+            const songIndex = songCache.findIndex(s => s.name === filename);
+            if (songIndex > -1) {
+                songCache[songIndex] = songData;
+                songCacheMap.set(filename, songData);
+            }
+            
+            console.log(`Found and saved VID: ${vid}`);
+            return res.json({ success: true, vid });
+        } else {
+            console.log('VID not found');
+            return res.json({ success: false, message: 'VID not found' });
+        }
+    } catch (error) {
+        console.error('Fetch VID error:', error);
+        return res.status(500).json({ success: false, message: error.message });
+    }
+});
+
 /**
  * 노래 데이터의 JSON 스키마가 유효한지 검증합니다.
  * @param {object} songData - 검증할 노래 데이터 객체
@@ -1722,6 +2166,11 @@ function validateLineSchema(data, lineIndex) {
         if (key in data && typeof data[key] !== 'string') {
             errors.push(`translatedLines[${lineIndex}]: '${key}'는 문자열이어야 합니다.`);
         }
+    }
+
+    // K0(한국어 번역) 내용 유효성 검증 ("데이터 없음" 또는 빈 문자열 체크)
+    if ('K0' in data && (data.K0 === "데이터 없음" || (typeof data.K0 === 'string' && data.K0.trim() === ""))) {
+        errors.push(`translatedLines[${lineIndex}]: 'K0' 데이터가 누락되었습니다(빈 값 또는 '데이터 없음').`);
     }
 
     // LI 배열 검증
@@ -1845,6 +2294,15 @@ function getInvalidSongs(limit = 100) {
         }
         
         const validation = validateSongSchema(song);
+        
+        // failedLines 체크
+        let failedLinesError = false;
+        if (Array.isArray(song.failedLines) && song.failedLines.length > 0) {
+            validation.errors.push(`번역 실패한 문장이 ${song.failedLines.length}개 있습니다.`);
+            validation.isValid = false;
+            failedLinesError = true;
+        }
+
         if (!validation.isValid) {
             invalidSongs.push({
                 song: song,
@@ -2008,60 +2466,108 @@ app.post('/admin/retranslate-all', async (req, res) => {
                 // 스키마 오류가 있는 라인들 찾기
                 const invalidLines = getInvalidLines(songData);
                 
-                if (invalidLines.length === 0) {
-                    console.log(`[${songName}] 오류 라인이 없어 건너뜀`);
+                // failedLines 확인
+                const failedLines = Array.isArray(songData.failedLines) ? songData.failedLines : [];
+                
+                if (invalidLines.length === 0 && failedLines.length === 0) {
+                    console.log(`[${songName}] 오류 라인 및 실패한 문장이 없어 건너뜀`);
                     return { songName, successCount: 0, failCount: 0, skipped: true };
                 }
 
-                console.log(`[${songName}] ${invalidLines.length}개의 오류 라인 부분 재번역 시작`);
+                console.log(`[${songName}] 오류/실패 재번역 시작: 스키마 오류 ${invalidLines.length}개, 실패 문장 ${failedLines.length}개`);
 
-                // retry-translation 방식으로 오류 라인들만 재번역
-                const translationPromises = invalidLines.map(async (invalidLine) => {
-                    try {
-                        const requestBody = {
-                            model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
-                            max_tokens: 8192,
-                            temperature: 0.1,
-                            messages: [
-                                { role: "system", content: MSG },
-                                { role: 'user', content: JSON.stringify(invalidLine.context) },
-                            ],
-                            response_format: { 
-                                type: "json_object" 
-                            }
-                        };
+                // 번역 작업 프라미스 배열
+                const translationPromises = [];
 
-                        if (!isUsingDeepSeekDirectly) {
-                            requestBody.provider = {
-                                ignore: [
-                                    'InferenceNet',
-                                    'Together'
-                                ]
+                // 1. 스키마 오류 라인 재번역 작업 생성
+                invalidLines.forEach((invalidLine) => {
+                    translationPromises.push(async () => {
+                        try {
+                            const requestBody = {
+                                model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                                max_tokens: 8192,
+                                temperature: 0.1,
+                                messages: [
+                                    { role: "system", content: MSG },
+                                    { role: 'user', content: JSON.stringify(invalidLine.context) },
+                                ],
+                                response_format: { type: "json_object" }
                             };
-                        }
 
-                        const completion = await openai.chat.completions.create(requestBody);
+                            if (!isUsingDeepSeekDirectly) {
+                                requestBody.provider = { ignore: ['InferenceNet', 'Together'] };
+                            }
 
-                        const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
-                        const parsedResult = JSON.parse(translatedLine);
-                        
-                        if (parsedResult && parsedResult.K0) {
-                            parsedResult.O0 = parsedResult.O0 || invalidLine.context.T0;
+                            const completion = await openai.chat.completions.create(requestBody);
+                            const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+                            const parsedResult = JSON.parse(translatedLine);
                             
-                            // 기존 translatedLines에서 해당 라인 교체
-                            songData.translatedLines[invalidLine.index] = parsedResult;
-                            songSuccessCount++;
-                        } else {
+                            if (parsedResult && parsedResult.K0) {
+                                parsedResult.O0 = parsedResult.O0 || invalidLine.context.T0;
+                                songData.translatedLines[invalidLine.index] = parsedResult;
+                                songSuccessCount++;
+                            } else {
+                                songFailCount++;
+                            }
+                        } catch (error) {
+                            console.error(`[${songName}] 라인 ${invalidLine.index} 재번역 오류:`, error);
                             songFailCount++;
                         }
-                        
-                    } catch (error) {
-                        console.error(`[${songName}] 라인 ${invalidLine.index} 재번역 오류:`, error);
-                        songFailCount++;
-                    }
+                    });
                 });
 
-                await Promise.all(translationPromises);
+                // 2. failedLines 재번역 작업 생성
+                if (failedLines.length > 0) {
+                    // 재시도할 failedLines 목록 복사
+                    const failedLinesToRetry = [...failedLines];
+                    // songData의 failedLines는 재번역 성공 여부에 따라 다시 채워짐 (초기화)
+                    // 하지만 병렬 처리 중 데이터 정합성을 위해, 일단 성공한 것만 translatedLines에 추가하고
+                    // 실패한 것은 그대로 두거나 다시 추가해야 함.
+                    // 여기서는 songData.failedLines를 비우고 실패 시 다시 추가하는 방식을 사용
+                    songData.failedLines = []; 
+                    
+                    failedLinesToRetry.forEach((contextObj) => {
+                        translationPromises.push(async () => {
+                            try {
+                                const requestBody = {
+                                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                                    max_tokens: 8192,
+                                    temperature: 0.1,
+                                    messages: [
+                                        { role: "system", content: MSG },
+                                        { role: 'user', content: JSON.stringify(contextObj) },
+                                    ],
+                                    response_format: { type: "json_object" }
+                                };
+
+                                if (!isUsingDeepSeekDirectly) {
+                                    requestBody.provider = { ignore: ['InferenceNet', 'Together'] };
+                                }
+
+                                const completion = await openai.chat.completions.create(requestBody);
+                                const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+                                const parsedResult = JSON.parse(translatedLine);
+                                
+                                if (parsedResult && parsedResult.K0) {
+                                    parsedResult.O0 = parsedResult.O0 || contextObj.T0;
+                                    // 성공 시 translatedLines에 추가
+                                    songData.translatedLines.push(parsedResult);
+                                    songSuccessCount++;
+                                } else {
+                                    // 실패 시 다시 failedLines에 추가
+                                    songData.failedLines.push(contextObj);
+                                    songFailCount++;
+                                }
+                            } catch (error) {
+                                console.error(`[${songName}] 실패한 문장 재번역 오류:`, error);
+                                songData.failedLines.push(contextObj); // 에러 시 다시 추가
+                                songFailCount++;
+                            }
+                        });
+                    });
+                }
+
+                await Promise.all(translationPromises.map(p => p()));
 
                 // 파일 저장
                 await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));

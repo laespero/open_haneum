@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동 VID 관리 - 오픈 한음</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <!-- 헤더 -->
+    <header class="bg-indigo-600 text-white text-center py-8 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">VID 자동 관리</h1>
+            <p class="text-indigo-100">VID가 없는 노래를 채우거나, 재생 불가능한 VID를 찾아 교체합니다.</p>
+            
+            <div class="flex justify-center gap-4 mt-6">
+                <a href="/" class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-home"></i> 메인으로
+                </a>
+                <a href="/admin" class="bg-indigo-500 hover:bg-indigo-400 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-cog"></i> 관리자 페이지
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-8 px-6">
+        <div class="container mx-auto max-w-6xl">
+            
+            <!-- 탭 메뉴 -->
+            <div class="flex border-b border-gray-200 mb-6">
+                <button onclick="switchTab('missing')" id="tab-missing-btn" class="py-4 px-6 font-semibold text-indigo-600 border-b-2 border-indigo-600 focus:outline-none">
+                    누락된 VID 채우기 (<%= songs.length %>)
+                </button>
+                <button onclick="switchTab('invalid')" id="tab-invalid-btn" class="py-4 px-6 font-semibold text-gray-500 hover:text-indigo-600 focus:outline-none">
+                    잘못된 VID 검사 및 교체 (<%= songsWithVid.length %>)
+                </button>
+            </div>
+
+            <!-- 탭 1: 누락된 VID 채우기 -->
+            <div id="tab-missing" class="tab-content">
+                <!-- 통계 및 컨트롤 -->
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-2">대상 노래 목록</h2>
+                            <p class="text-gray-600">총 <span class="font-bold text-indigo-600" id="totalCount"><%= songs.length %></span>곡의 VID가 누락되었습니다.</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button id="startAllBtn" onclick="startAutoFill()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2" <%= songs.length === 0 ? 'disabled' : '' %>>
+                                <i class="fas fa-play"></i> 전체 자동 실행
+                            </button>
+                            <button id="stopBtn" onclick="stopAutoFill()" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2 hidden">
+                                <i class="fas fa-stop"></i> 중지
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- 진행률 바 -->
+                    <div class="mt-6 hidden" id="progressContainer">
+                        <div class="flex justify-between text-sm text-gray-600 mb-1">
+                            <span id="progressStatus">처리 중...</span>
+                            <span id="progressText">0 / <%= songs.length %></span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="progressBar" class="bg-blue-600 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 노래 목록 테이블 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead class="bg-gray-50 border-b border-gray-200">
+                                <tr>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">상태</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">아티스트</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">제목</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">파일명</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">결과 (VID)</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">액션</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200" id="songTableBody">
+                                <% if (songs.length === 0) { %>
+                                    <tr>
+                                        <td colspan="6" class="px-6 py-12 text-center text-gray-500">
+                                            <i class="fas fa-check-circle text-4xl text-green-500 mb-3 block"></i>
+                                            모든 노래에 VID가 등록되어 있습니다.
+                                        </td>
+                                    </tr>
+                                <% } else { %>
+                                    <% songs.forEach((song, index) => { %>
+                                        <tr id="row-<%= index %>" class="hover:bg-gray-50 transition-colors">
+                                            <td class="px-6 py-4">
+                                                <span class="status-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                                    대기
+                                                </span>
+                                            </td>
+                                            <td class="px-6 py-4 text-gray-800 font-medium"><%= song.artist %></td>
+                                            <td class="px-6 py-4 text-gray-800"><%= song.title %></td>
+                                            <td class="px-6 py-4 text-gray-500 text-sm font-mono"><%= song.filename %></td>
+                                            <td class="px-6 py-4 text-sm font-mono text-blue-600 result-vid">-</td>
+                                            <td class="px-6 py-4">
+                                                <button onclick="processSingle('<%= index %>', '<%= song.filename %>')" class="action-btn text-indigo-600 hover:text-indigo-900 font-medium text-sm">
+                                                    <i class="fas fa-search"></i> 찾기
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    <% }); %>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 탭 2: 잘못된 VID 검사 및 교체 -->
+            <div id="tab-invalid" class="tab-content hidden">
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                        <div>
+                            <h2 class="text-xl font-semibold mb-2">VID 유효성 검사</h2>
+                            <p class="text-gray-600">총 <span class="font-bold text-indigo-600"><%= songsWithVid.length %></span>곡의 영상을 순차적으로 로드하여 재생 가능한지 확인합니다.</p>
+                            <p class="text-sm text-yellow-600 mt-1"><i class="fas fa-exclamation-triangle"></i> 브라우저에서 백그라운드로 재생을 시도하므로 시간이 걸릴 수 있습니다.</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button id="startCheckBtn" onclick="startValidation()" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2">
+                                <i class="fas fa-stethoscope"></i> 검사 및 자동 교체 시작
+                            </button>
+                            <button id="stopCheckBtn" onclick="stopValidation()" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2 hidden">
+                                <i class="fas fa-stop"></i> 중지
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 진행률 바 -->
+                    <div class="mt-6 hidden" id="checkProgressContainer">
+                        <div class="flex justify-between text-sm text-gray-600 mb-1">
+                            <span id="checkStatus">검사 준비 중...</span>
+                            <span id="checkProgressText">0 / <%= songsWithVid.length %></span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3">
+                            <div id="checkProgressBar" class="bg-purple-600 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 로그 영역 -->
+                    <div id="validationLog" class="mt-6 h-64 overflow-y-auto bg-gray-900 text-gray-300 p-4 rounded-lg font-mono text-sm hidden">
+                        <!-- 로그 메시지가 여기에 추가됨 -->
+                    </div>
+                </div>
+                
+                <!-- 숨겨진 플레이어 컨테이너 -->
+                <div id="player-container" class="absolute top-0 left-0 w-1 h-1 opacity-0 pointer-events-none overflow-hidden">
+                    <div id="player"></div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+    <script>
+        // --- 공통 변수 및 함수 ---
+        let isRunning = false;
+        let shouldStop = false;
+        
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(`tab-${tabName}`).classList.remove('hidden');
+            
+            const btnMissing = document.getElementById('tab-missing-btn');
+            const btnInvalid = document.getElementById('tab-invalid-btn');
+            
+            if (tabName === 'missing') {
+                btnMissing.classList.add('text-indigo-600', 'border-b-2', 'border-indigo-600');
+                btnMissing.classList.remove('text-gray-500');
+                btnInvalid.classList.remove('text-indigo-600', 'border-b-2', 'border-indigo-600');
+                btnInvalid.classList.add('text-gray-500');
+            } else {
+                btnInvalid.classList.add('text-indigo-600', 'border-b-2', 'border-indigo-600');
+                btnInvalid.classList.remove('text-gray-500');
+                btnMissing.classList.remove('text-indigo-600', 'border-b-2', 'border-indigo-600');
+                btnMissing.classList.add('text-gray-500');
+            }
+        }
+
+        // --- 탭 1: 누락된 VID 채우기 로직 ---
+        const songs = <%- JSON.stringify(songs) %>;
+        
+        async function processSingle(index, filename) {
+            const row = document.getElementById(`row-${index}`);
+            const statusBadge = row.querySelector('.status-badge');
+            const resultCell = row.querySelector('.result-vid');
+            const actionBtn = row.querySelector('.action-btn');
+            
+            statusBadge.className = 'status-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800';
+            statusBadge.innerHTML = '<i class="fas fa-spinner fa-spin mr-1"></i> 처리 중';
+            actionBtn.disabled = true;
+            actionBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            
+            try {
+                const response = await fetch('/api/songs/fetch-vid', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filename })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success && result.vid) {
+                    statusBadge.className = 'status-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800';
+                    statusBadge.innerHTML = '<i class="fas fa-check mr-1"></i> 성공';
+                    resultCell.innerHTML = `<a href="https://youtu.be/${result.vid}" target="_blank" class="hover:underline">${result.vid}</a>`;
+                    resultCell.classList.add('font-bold');
+                    actionBtn.innerHTML = '<i class="fas fa-check"></i> 완료';
+                    return true;
+                } else {
+                    statusBadge.className = 'status-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800';
+                    statusBadge.innerHTML = '<i class="fas fa-times mr-1"></i> 실패';
+                    resultCell.textContent = result.message || '찾지 못함';
+                    actionBtn.disabled = false;
+                    actionBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                    actionBtn.innerHTML = '<i class="fas fa-redo"></i> 재시도';
+                    return false;
+                }
+            } catch (error) {
+                statusBadge.className = 'status-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800';
+                statusBadge.innerHTML = '<i class="fas fa-exclamation-triangle mr-1"></i> 에러';
+                actionBtn.disabled = false;
+                actionBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                return false;
+            }
+        }
+
+        async function startAutoFill() {
+            if (isRunning) return;
+            isRunning = true;
+            shouldStop = false;
+            
+            document.getElementById('startAllBtn').classList.add('hidden');
+            document.getElementById('stopBtn').classList.remove('hidden');
+            document.getElementById('progressContainer').classList.remove('hidden');
+            
+            const total = songs.length;
+            let processed = 0;
+            
+            for (let i = 0; i < total; i++) {
+                if (shouldStop) break;
+                const row = document.getElementById(`row-${i}`);
+                if (row.querySelector('.status-badge').innerText.includes('성공')) {
+                    processed++;
+                    updateProgress(processed, total);
+                    continue;
+                }
+                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                await processSingle(i, songs[i].filename);
+                processed++;
+                updateProgress(processed, total);
+                await new Promise(r => setTimeout(r, 1000));
+            }
+            finishAutoFill();
+        }
+        
+        function stopAutoFill() { shouldStop = true; }
+        function updateProgress(current, total) {
+            const percent = Math.round((current / total) * 100);
+            document.getElementById('progressBar').style.width = `${percent}%`;
+            document.getElementById('progressText').textContent = `${current} / ${total}`;
+        }
+        function finishAutoFill() {
+            isRunning = false;
+            shouldStop = false;
+            document.getElementById('startAllBtn').classList.remove('hidden');
+            document.getElementById('stopBtn').classList.add('hidden');
+            if (confirm('작업 완료. 새로고침 하시겠습니까?')) window.location.reload();
+        }
+
+        // --- 탭 2: VID 유효성 검사 로직 ---
+        const songsWithVid = <%- JSON.stringify(songsWithVid) %>;
+        let player;
+        let validationQueue = [];
+        let currentValidationIndex = 0;
+        let validationResolve = null; // 현재 검사 중인 Promise의 resolve 함수
+        let validationTimeout = null;
+        
+        // YouTube API Ready
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '200',
+                width: '200',
+                videoId: '',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange,
+                    'onError': onPlayerError
+                }
+            });
+        }
+        
+        function onPlayerReady(event) {
+            event.target.mute(); // 자동 재생을 위해 음소거
+            console.log('Player Ready');
+        }
+
+        function onPlayerStateChange(event) {
+            // PLAYING(1) or BUFFERING(3) -> 성공으로 간주
+            if (event.data === YT.PlayerState.PLAYING || event.data === YT.PlayerState.BUFFERING) {
+                if (validationResolve) {
+                    clearTimeout(validationTimeout);
+                    validationResolve({ success: true });
+                    validationResolve = null;
+                }
+            }
+        }
+        
+        function onPlayerError(event) {
+            // 에러 발생 시 (삭제됨, 비공개 등)
+            console.log('Player Error:', event.data);
+            if (validationResolve) {
+                clearTimeout(validationTimeout);
+                validationResolve({ success: false, error: event.data });
+                validationResolve = null;
+            }
+        }
+        
+        function addLog(message, type = 'info') {
+            const logDiv = document.getElementById('validationLog');
+            const p = document.createElement('div');
+            p.className = 'mb-1 ' + (type === 'error' ? 'text-red-400' : type === 'success' ? 'text-green-400' : 'text-gray-300');
+            
+            // 타임스탬프
+            const time = new Date().toLocaleTimeString();
+            p.textContent = `[${time}] ${message}`;
+            
+            logDiv.appendChild(p);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+        
+        async function startValidation() {
+            if (isRunning) return;
+            isRunning = true;
+            shouldStop = false;
+            
+            document.getElementById('startCheckBtn').classList.add('hidden');
+            document.getElementById('stopCheckBtn').classList.remove('hidden');
+            document.getElementById('checkProgressContainer').classList.remove('hidden');
+            document.getElementById('validationLog').classList.remove('hidden');
+            
+            addLog('검사 시작...', 'info');
+            
+            const total = songsWithVid.length;
+            let processed = 0;
+            let errorCount = 0;
+            let fixedCount = 0;
+            
+            for (let i = 0; i < total; i++) {
+                if (shouldStop) break;
+                
+                const song = songsWithVid[i];
+                const percent = Math.round(((i + 1) / total) * 100);
+                document.getElementById('checkProgressBar').style.width = `${percent}%`;
+                document.getElementById('checkProgressText').textContent = `${i + 1} / ${total}`;
+                document.getElementById('checkStatus').textContent = `검사 중: ${song.filename} (${song.vid})`;
+                
+                // 영상 검사 수행
+                const result = await checkVideo(song.vid);
+                
+                if (!result.success) {
+                    errorCount++;
+                    addLog(`[오류 감지] ${song.filename} (VID: ${song.vid}, Error: ${result.error})`, 'error');
+                    
+                    // 자동 교체 시도
+                    addLog(`>> 자동 교체 시도 중...`, 'info');
+                    try {
+                        const response = await fetch('/api/songs/refresh-vid', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ filename: song.filename, oldVid: song.vid })
+                        });
+                        
+                        const refreshResult = await response.json();
+                        if (refreshResult.success) {
+                            fixedCount++;
+                            addLog(`>> 교체 성공: ${refreshResult.oldVid} -> ${refreshResult.vid}`, 'success');
+                        } else {
+                            addLog(`>> 교체 실패: ${refreshResult.message}`, 'error');
+                        }
+                    } catch (e) {
+                        addLog(`>> 서버 통신 오류`, 'error');
+                    }
+                    
+                    // 교체 작업 딜레이
+                    await new Promise(r => setTimeout(r, 2000));
+                } else {
+                    // addLog(`${song.filename}: 정상`, 'success');
+                    // 정상인 경우는 로그가 너무 많아지므로 생략하거나 간략히 표시 가능
+                }
+                
+                processed++;
+                // 짧은 대기 (브라우저 부하 방지)
+                await new Promise(r => setTimeout(r, 500));
+            }
+            
+            isRunning = false;
+            shouldStop = false;
+            document.getElementById('startCheckBtn').classList.remove('hidden');
+            document.getElementById('stopCheckBtn').classList.add('hidden');
+            document.getElementById('checkStatus').textContent = '완료';
+            
+            addLog(`검사 완료. 총 ${processed}곡 검사, ${errorCount}개 오류, ${fixedCount}개 수정됨.`, 'info');
+            alert('검사가 완료되었습니다.');
+        }
+        
+        function stopValidation() { shouldStop = true; }
+        
+        // 개별 비디오 검사 Promise 래퍼
+        function checkVideo(vid) {
+            return new Promise((resolve) => {
+                validationResolve = resolve;
+                
+                if (player && player.loadVideoById) {
+                    player.loadVideoById({ videoId: vid });
+                    // 3초 내에 재생/버퍼링 상태가 안 되면 타임아웃 (성공으로 간주하거나 실패로 간주? 여기선 성공으로 간주하되, onError가 확실한 경우만 잡음)
+                    // 하지만 로딩이 오래 걸릴 수 있으므로 5초 정도 대기
+                    validationTimeout = setTimeout(() => {
+                         // 타임아웃 시: 일단 에러 이벤트가 안 떴으니 성공으로 간주? 
+                         // 혹은 '재생 불가'로 의심?
+                         // 안전하게는: 에러 이벤트가 발생하지 않았으면 넘어감.
+                         resolve({ success: true, message: 'Timeout (no error)' });
+                         validationResolve = null;
+                    }, 4000); 
+                } else {
+                    resolve({ success: true, message: 'Player not ready' }); // 플레이어 문제면 패스
+                }
+            });
+        }
+    </script>
+</body>
+</html>

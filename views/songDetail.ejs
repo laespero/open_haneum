@@ -358,6 +358,38 @@
             }
         });
 
+        // 유튜브 URL에서 영상 ID 추출 로직 (add-song 기능과 동일)
+        const vidInput = document.getElementById('vid');
+        if (vidInput) {
+            vidInput.addEventListener('input', function() {
+                const url = this.value;
+                let videoId = '';
+                const mobileRegex = /youtu\.be\/([^\?&\/]{11})/;
+                const mobileMatch = url.match(mobileRegex);
+                if (mobileMatch && mobileMatch[1]) {
+                    videoId = mobileMatch[1];
+                } else {
+                    const webRegex = /watch\?v=([^\?&\/]{11})/;
+                    const webMatch = url.match(webRegex);
+                    if (webMatch && webMatch[1]) {
+                        videoId = webMatch[1];
+                    } else if (url.length === 11 && /^[a-zA-Z0-9_-]+$/.test(url)) {
+                        videoId = url;
+                    }
+                }
+                if (videoId) {
+                    this.value = videoId;
+                    this.setCustomValidity(''); 
+                } else {
+                    if (url.trim() !== '') {
+                        this.setCustomValidity('유효한 유튜브 URL 형식이 아니거나, 11자리 영상 ID를 입력해주세요.');
+                    } else {
+                        this.setCustomValidity('');
+                    }
+                }
+            });
+        }
+
         // JSON 수정 모달 제어
         const jsonEditModal = document.getElementById('json-edit-modal');
         let jsonEditor = null; // CodeMirror 인스턴스를 담을 변수

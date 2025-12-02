@@ -99,7 +99,6 @@
             font-size: 18px;
             width: 100%;
             text-align: center;
-            transition: color 0.5s ease;
         }
 
         #sentence-view{
@@ -110,7 +109,6 @@
             margin-top: 10px;
             margin-bottom: 10px;
             page-break-inside: avoid;
-            cursor: pointer;
         }
 
         .header {
@@ -176,7 +174,6 @@
             margin: 0px;
             font-size: 21px;
             font-weight: 400;
-            transition: color 0.5s ease;
         }
         .class-sentence-view h3 {
             margin: 0px;
@@ -609,12 +606,12 @@ function loadVideo(vid, isLoop) {
 
                     },
                     'yt_error': function onPlayerError(e) {
-                        // if(player._retryCount === undefined) player._retryCount = 0;
-                        // player._retryCount++;
-                        // if(player._retryCount > 5) return;
+                        if(player._retryCount === undefined) player._retryCount = 0;
+                        player._retryCount++;
+                        if(player._retryCount > 5) return;
 
-                        // player.load_video(vid, true);
-                        // player.play();
+                        player.load_video(vid, true);
+                        player.play();
                     },
                     'api_change': function (event) {
                         player.set_api('captions', 'track', {});
@@ -623,7 +620,6 @@ function loadVideo(vid, isLoop) {
                     'time_change': function(){
                         // app.ports.fromPlayer.send({ tag: "playerTime", data: parseInt(player.get_current_time() * 1000) });
                         try{
-                            highlightCurrentLyrics();
                             timeShift = 0.05;
                             if(player.player_state === 1 && World.mode === "slide" && World.isHeader && World.isSlideTimesVaild){
                                 let targetIdx = 0;
@@ -1231,99 +1227,6 @@ ${a}
         }
 
 
-        var parsedSrtData = [];
-        var parsedSrtEndData = [];
-
-        function parseSRT(srtContent) {
-            if (!srtContent) return [];
-            const pattern = /(\d{2}):(\d{2}):(\d{2}),(\d{3}) -->/g;
-            const result = [];
-            let match;
-            while ((match = pattern.exec(srtContent)) !== null) {
-                const startTime = parseInt(match[1]) * 3600 + parseInt(match[2]) * 60 + parseInt(match[3]) + parseInt(match[4]) / 1000;
-                result.push(startTime);
-            }
-            return result;
-        }
-        
-        function parseSRTEnd(srtContent) {
-            if (!srtContent) return [];
-            const pattern = /--> (\d{2}):(\d{2}):(\d{2}),(\d{3})/g;
-            const result = [];
-            let match;
-            while ((match = pattern.exec(srtContent)) !== null) {
-                const endTime = parseInt(match[1]) * 3600 + parseInt(match[2]) * 60 + parseInt(match[3]) + parseInt(match[4]) / 1000;
-                result.push(endTime);
-            }
-            return result;
-        }
-
-        function seekToSrt(index) {
-            if(!World.isBlog) return;
-            
-            if (parsedSrtData && parsedSrtData.length > index) {
-                const time = parsedSrtData[index];
-                if (time !== undefined && typeof player !== 'undefined') {
-                    player.seek(time-0.2, true);
-                    player.play();
-                }
-            }
-        }
-        
-        function highlightCurrentLyrics() {
-            if (!World.isBlog || typeof player === 'undefined' || !parsedSrtData.length || !parsedSrtEndData.length) return;
-            
-            const currentTime = player.get_current_time();
-            
-            const sentenceViews = document.querySelectorAll('.class-sentence-view');
-            const numberViews = document.querySelectorAll('.print-number');
-            
-            // 모든 요소 순회
-            for (let i = 0; i < parsedSrtData.length; i++) {
-                if (i >= sentenceViews.length) break;
-                
-                const start = parsedSrtData[i];
-                const end = parsedSrtEndData[i];
-                const sView = sentenceViews[i];
-                const h2View = sView.querySelector('h2');
-                const nView = numberViews[i];
-                
-                if (!h2View) continue;
-
-                // 현재 시간이 자막 구간 안에 있을 때
-                if (currentTime >= start && currentTime <= end) {
-                    h2View.style.color = '#2481eb'; // 파란색 강조
-                    nView.style.color = '#2481eb';
-                } 
-                // 구간에서 벗어났을 때
-                else {
-                    let diff = 0;
-                    if (currentTime < start) diff = start - currentTime;
-                    else diff = currentTime - end;
-                    
-                    // 0~2초 사이: 점점 검정색으로
-                    if (diff < 0.5) {
-                        // 0 -> 2563eb (blue), 1 -> 000000 (black)
-                        // blue rgb: 37, 99, 235
-                        // black rgb: 0, 0, 0
-                        // ratio: 0(active) -> 1(inactive)
-                        const ratio = diff / 0.5;
-                        const r = Math.round(37 * (1 - ratio));
-                        const g = Math.round(99 * (1 - ratio));
-                        const b = Math.round(235 * (1 - ratio));
-                        
-                        const color = `rgb(${r}, ${g}, ${b})`;
-                        h2View.style.color = color;
-                        nView.style.color = color;
-                    } else {
-                        // 2초 이상 벗어나면 검정색
-                        h2View.style.color = '';
-                        nView.style.color = '';
-                    }
-                }
-            }
-        }
-
         function updateDataFromServer() {
             const urlParams = new URLSearchParams(window.location.search);
             const myParam = urlParams.get('name');
@@ -1363,9 +1266,6 @@ ${a}
                         return result;
                     }
 
-                    srt = o.srt;
-                    parsedSrtData = parseSRT(srt);
-                    parsedSrtEndData = parseSRTEnd(srt);
                     blogData = compressArray(data);
                     if(o.slideTimes && o.slideTimes.length === shortCutData.length) {
                         shortCutData.forEach((v,i)=> { v.endTime = o.slideTimes[i] });
@@ -1511,7 +1411,7 @@ ${a}
         <div class="print-container">
             ${namechip}
             <div class="content">
-            <div class="class-sentence-view" onclick="seekToSrt(${currentIndex})">${a}</div>
+            <div class="class-sentence-view">${a}</div>
             <table class="morpheme-table">
                 <thead>
                     <tr>
@@ -1522,7 +1422,7 @@ ${a}
                 <tbody>${b}</tbody>
             </table>
             </div>
-            <div class="print-number" style="cursor:pointer;" onclick="seekToSrt(${currentIndex})">${(currentIndex+1)+"/"+len}</div>
+            <div class="print-number">${(currentIndex+1)+"/"+len}</div>
         </div>   
             `;
 
@@ -1640,7 +1540,7 @@ ${a}
                 <div>${b}</div>
             </div>
             </div>
-            <div class="print-number" style="cursor:pointer;" onclick="seekToSrt(${currentIndex})">${(currentIndex+1)+"/"+(World.isHeader? shortCutData.length : data.length)}</div>
+            <div class="print-number">${(currentIndex+1)+"/"+(World.isHeader? shortCutData.length : data.length)}</div>
         </div>   
             `;
 
