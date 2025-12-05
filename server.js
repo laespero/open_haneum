@@ -3,7 +3,6 @@ import fs from 'fs';
 import OpenAI from 'openai'; 
 import cors from 'cors';
 import path from "path";
-import puppeteer from 'puppeteer';
 import { KR_MSG } from './messages.js';  // MSG import 추가
 import { JP_MSG } from './jp_messages.js';
 import 'dotenv/config';
@@ -66,7 +65,7 @@ let chatModel;
 // const chatModel = "google/gemini-2.5-pro-preview-03-25";
 // const chatModel = "deepseek-chat";
 
-const OPENROUTER_DEEPSEEK_CHAT = "deepseek/deepseek-v3.2-exp";
+const OPENROUTER_DEEPSEEK_CHAT = "deepseek/deepseek-v3.2";
 const OPENROUTER_CHATGPT = "openai/gpt-5.1-chat";
 const OPENROUTER_GEMINI = "google/gemini-2.5-flash-lite";
 
@@ -1653,6 +1652,15 @@ app.post('/auto-fill-names', async (req, res) => {
 
 // Puppeteer를 사용한 YouTube VID 검색 함수
 async function findYoutubeVid(artist, title) {
+    let puppeteer;
+    try {
+        // 동적으로 puppeteer 모듈 로드
+        puppeteer = (await import('puppeteer')).default;
+    } catch (error) {
+        console.warn('Puppeteer 모듈을 찾을 수 없습니다. YouTube 검색 기능을 건너뜁니다.');
+        return null;
+    }
+
     let browser = null;
     try {
         // 브라우저 실행 옵션 최적화
