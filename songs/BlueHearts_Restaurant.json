@@ -1,0 +1,664 @@
+{
+  "name": "BlueHearts_Restaurant",
+  "ori_name": "レストラン",
+  "kor_name": "레스토랑",
+  "eng_name": "Restaurant",
+  "vid": "-yVG07k6eNQ",
+  "artist": {
+    "ori_name": "THE BLUE HEARTS",
+    "kor_name": "블루 하츠",
+    "eng_name": ""
+  },
+  "tags": [
+    "일본어"
+  ],
+  "text": "レストラン レストラン<br>\r\nレストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい<br>\n<br>\r\nカツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ<br>\r\nお<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら<br>\n<span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち<br>\r\nレストラン<br>\r\nレストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい<br>\n<br>\r\nレストラン レストラン<br>\r\nレストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい<br>\n<br>\r\nカツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ<br>\r\nお<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で<br>\r\nひきにげされちゃうかも<br>\r\nみんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる<br>\n<br>\r\nカツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ<br>\r\nお<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら<br>\n<span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち<br>\r\nレストラン<br>\r\nレストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい<br>\n<br>\n<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で<br>\r\nひきにげされちゃうかも<br>\r\nみんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる<br>",
+  "createdAt": "2025-12-05T21:01:10.889Z",
+  "p1": [
+    "レストラン レストラン",
+    "レストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい",
+    "カツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ",
+    "お<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい",
+    "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら",
+    "<span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち",
+    "レストラン",
+    "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で",
+    "ひきにげされちゃうかも",
+    "みんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる"
+  ],
+  "contextText": [
+    {
+      "T0": "レストラン レストラン",
+      "C0": "レストラン レストラン レストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい"
+    },
+    {
+      "T0": "レストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい",
+      "C0": "レストラン レストラン レストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい カツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ"
+    },
+    {
+      "T0": "カツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ",
+      "C0": "レストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい カツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ お<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい"
+    },
+    {
+      "T0": "お<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい",
+      "C0": "カツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ お<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい <span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら"
+    },
+    {
+      "T0": "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら",
+      "C0": "お<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい <span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら <span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち"
+    },
+    {
+      "T0": "<span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら <span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち レストラン"
+    },
+    {
+      "T0": "レストラン",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち レストラン <span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で"
+    },
+    {
+      "T0": "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で",
+      "C0": "レストラン <span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で ひきにげされちゃうかも"
+    },
+    {
+      "T0": "ひきにげされちゃうかも",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で ひきにげされちゃうかも みんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる"
+    },
+    {
+      "T0": "みんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる",
+      "C0": "ひきにげされちゃうかも みんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "レストラン",
+      "C0": "버려져 버리겠지 우리들 레스토랑 내일 어느 교차로에서",
+      "G0": "이 문장은 단일 명사 'レストラン'으로 구성되어 있습니다. 일본어에서 'レストラン'은 외래어로 '레스토랑'을 의미하며, 문맥상 주어나 목적어로 사용될 수 있습니다. 여기서는 '우리들'과 함께 '레스토랑'이 버려질 운명에 처한 대상을 나타내고 있습니다.",
+      "K0": "레스토랑",
+      "I0": "resutoran",
+      "R0": "레스토랑",
+      "LI": [
+        {
+          "T1": "レストラン",
+          "K1": "레스토랑",
+          "I1": "resutoran",
+          "R1": "레스토랑",
+          "E1": "외래어로 '레스토랑'을 의미하는 명사입니다. 식사를 제공하는 장소를 가리킵니다.",
+          "T2": "レストラン",
+          "K2": "레스토랑",
+          "I2": "resutoran",
+          "R2": "레스토랑",
+          "XE": "レストランで食事をする。",
+          "XK": "레스토랑에서 식사를 한다.",
+          "XI": "resutoran de shokuji o suru",
+          "XR": "레스토랑 데 쇼쿠지 오 스루"
+        }
+      ],
+      "O0": "レストラン"
+    },
+    {
+      "T0": "レストラン レストラン",
+      "C0": "레스토랑 레스토랑 레스토랑에 가고 싶어",
+      "G0": "이 문장은 '레스토랑'이라는 단어가 두 번 반복되어 강조하는 구조입니다. 일본어에서 단어를 반복하는 것은 그 대상에 대한 강한 관심이나 감정을 표현하는 수사적 기법입니다. 여기서는 레스토랑에 대한 갈망이나 집착을 나타내는 것으로 해석할 수 있습니다.",
+      "K0": "레스토랑 레스토랑",
+      "I0": "resutoran resutoran",
+      "R0": "레스토랑 레스토랑",
+      "LI": [
+        {
+          "T1": "レストラン",
+          "K1": "레스토랑",
+          "I1": "resutoran",
+          "R1": "레스토랑",
+          "E1": "식당을 의미하는 외래어 명사로, 영어 'restaurant'에서 유래했습니다.",
+          "T2": "レストラン",
+          "K2": "레스토랑",
+          "I2": "resutoran",
+          "R2": "레스토랑",
+          "XE": "レストランで食事をする。",
+          "XK": "레스토랑에서 식사를 한다.",
+          "XI": "resutoran de shokuji o suru",
+          "XR": "레스토랑 데 쇼쿠지 오 스루"
+        },
+        {
+          "T1": "レストラン",
+          "K1": "레스토랑",
+          "I1": "resutoran",
+          "R1": "레스토랑",
+          "E1": "앞의 단어를 반복하여 레스토랑에 대한 강한 관심이나 갈망을 강조합니다.",
+          "T2": "レストラン",
+          "K2": "레스토랑",
+          "I2": "resutoran",
+          "R2": "레스토랑",
+          "XE": "レストラン レストランと叫んだ。",
+          "XK": "레스토랑 레스토랑이라고 외쳤다.",
+          "XI": "resutoran resutoran to sakenda",
+          "XR": "레스토랑 레스토랑 토 사켄다"
+        }
+      ],
+      "O0": "レストラン レストラン"
+    },
+    {
+      "T0": "お腹いっぱい",
+      "C0": "돈가스 덮밥, 샐러드, 냉두부, 배가 부르다. 내일 보건소가 오면",
+      "G0": "이 문장은 'お腹'과 'いっぱい'로 구성된 구문입니다. 'お腹'은 '배'를 의미하는 명사로, 'いっぱい'는 '가득 차다' 또는 '부르다'를 의미하는 형용사입니다. 두 단어가 결합되어 '배가 부르다'라는 상태를 나타냅니다. 전체적으로 음식을 먹어서 배가 가득 찬 상태를 표현하는 구문입니다.",
+      "K0": "배가 부르다.",
+      "I0": "onaka ippai",
+      "R0": "오나카 잇파이",
+      "LI": [
+        {
+          "T1": "お腹",
+          "K1": "배",
+          "I1": "onaka",
+          "R1": "오나카",
+          "E1": "'배'를 의미하는 명사로, 신체 부위 중 하나입니다.",
+          "T2": "お腹",
+          "K2": "배",
+          "I2": "onaka",
+          "R2": "오나카",
+          "XE": "お腹が空いた。",
+          "XK": "배가 고프다.",
+          "XI": "onaka ga suita",
+          "XR": "오나카 가 스이타"
+        },
+        {
+          "T1": "いっぱい",
+          "K1": "가득 차다",
+          "I1": "ippai",
+          "R1": "잇파이",
+          "E1": "'가득 차다' 또는 '부르다'를 의미하는 형용사로, 어떤 것이 꽉 찬 상태를 나타냅니다.",
+          "T2": "いっぱい",
+          "K2": "가득 차다",
+          "I2": "ippai",
+          "R2": "잇파이",
+          "XE": "コップに水がいっぱい入っている。",
+          "XK": "컵에 물이 가득 차 있다.",
+          "XI": "koppu ni mizu ga ippai haitteiru",
+          "XR": "콧푸 니 미즈 가 잇파이 하잇테이루"
+        }
+      ],
+      "O0": "お<span class=\"ruby\"><span class=\"rb\">腹</span><span class=\"rt\">なか</span></span>いっぱい"
+    },
+    {
+      "T0": "みんなが笑ってる",
+      "C0": "도망쳐 버릴지도 몰라. 모두가 웃고 있어.",
+      "G0": "이 문장은 주어(みんな) + 조사(が) + 동사(笑ってる)로 구성되어 있습니다. 'みんな'은 '모두'를 의미하며, 'が'는 주격 조사로 주어를 나타냅니다. '笑ってる'은 '웃고 있다'라는 의미로, '笑う'의 진행형인 '笑っている'이 구어체에서 줄어든 형태입니다. 전체적으로 '모두가 웃고 있다'라는 현재 진행 중인 상황을 표현합니다.",
+      "K0": "모두가 웃고 있어.",
+      "I0": "minna ga waratteru",
+      "R0": "민나 가 와랏테루",
+      "LI": [
+        {
+          "T1": "みんな",
+          "K1": "모두",
+          "I1": "minna",
+          "R1": "민나",
+          "E1": "여러 사람을 가리키는 명사로, '모두' 또는 '다들'을 의미합니다.",
+          "T2": "みんな",
+          "K2": "모두",
+          "I2": "minna",
+          "R2": "민나",
+          "XE": "みんなが集まった。",
+          "XK": "모두가 모였다.",
+          "XI": "minna ga atsumatta",
+          "XR": "민나 가 아츠맛타"
+        },
+        {
+          "T1": "が",
+          "K1": "~이/가",
+          "I1": "ga",
+          "R1": "가",
+          "E1": "주격 조사로, 문장에서 주어를 나타내는 역할을 합니다.",
+          "T2": "が",
+          "K2": "~이/가",
+          "I2": "ga",
+          "R2": "가",
+          "XE": "私が行く。",
+          "XK": "내가 간다.",
+          "XI": "watashi ga iku",
+          "XR": "와타시 가 이쿠"
+        },
+        {
+          "T1": "笑ってる",
+          "K1": "웃고 있어",
+          "I1": "waratteru",
+          "R1": "와랏테루",
+          "E1": "'웃다'라는 의미의 동사 '笑う'의 진행형 '笑っている'이 구어체에서 줄어든 형태로, 현재 진행 중인 동작을 나타냅니다.",
+          "T2": "笑う",
+          "K2": "웃다",
+          "I2": "warau",
+          "R2": "와라우",
+          "XE": "彼は笑っている。",
+          "XK": "그는 웃고 있어.",
+          "XI": "kare wa waratte iru",
+          "XR": "카레 와 와랏테 이루"
+        }
+      ],
+      "O0": "みんなが<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>ってる"
+    },
+    {
+      "T0": "カツ丼 サラダ 冷やっこ",
+      "C0": "레스토랑에 가고 싶어. 카츠동, 샐러드, 냉두부. 배가 부르다.",
+      "G0": "이 문장은 세 개의 명사구로 구성되어 있습니다. 'カツ丼'은 '돈가스 덮밥', 'サラダ'는 '샐러드', '冷やっこ'는 '냉두부'를 의미합니다. 각 명사는 나열되어 있으며, 전체적으로 음식 메뉴를 나열하는 구문입니다.",
+      "K0": "카츠동, 샐러드, 냉두부.",
+      "I0": "katsudon sarada hiyakko",
+      "R0": "카츠동 사라다 히얏코",
+      "LI": [
+        {
+          "T1": "カツ丼",
+          "K1": "카츠동",
+          "I1": "katsudon",
+          "R1": "카츠동",
+          "E1": "일본 요리로, 돈가스를 얹은 덮밥을 의미합니다.",
+          "T2": "カツ丼",
+          "K2": "카츠동",
+          "I2": "katsudon",
+          "R2": "카츠동",
+          "XE": "カツ丼を食べたい。",
+          "XK": "카츠동을 먹고 싶어.",
+          "XI": "katsudon o tabetai",
+          "XR": "카츠동 오 타베타이"
+        },
+        {
+          "T1": "サラダ",
+          "K1": "샐러드",
+          "I1": "sarada",
+          "R1": "사라다",
+          "E1": "야채나 과일 등을 섞어 만든 요리로, 샐러드를 의미합니다.",
+          "T2": "サラダ",
+          "K2": "샐러드",
+          "I2": "sarada",
+          "R2": "사라다",
+          "XE": "サラダを作る。",
+          "XK": "샐러드를 만든다.",
+          "XI": "sarada o tsukuru",
+          "XR": "사라다 오 쓰쿠루"
+        },
+        {
+          "T1": "冷やっこ",
+          "K1": "냉두부",
+          "I1": "hiyakko",
+          "R1": "히얏코",
+          "E1": "차가운 두부 요리로, 간장 등을 뿌려 먹는 일본 음식입니다.",
+          "T2": "冷やっこ",
+          "K2": "냉두부",
+          "I2": "hiyakko",
+          "R2": "히얏코",
+          "XE": "冷やっこが好きだ。",
+          "XK": "냉두부를 좋아해.",
+          "XI": "hiyakko ga sukida",
+          "XR": "히얏코 가 스키다"
+        }
+      ],
+      "O0": "カツ<span class=\"ruby\"><span class=\"rb\">丼</span><span class=\"rt\">どん</span></span> サラダ <span class=\"ruby\"><span class=\"rb\">冷</span><span class=\"rt\">ひや</span></span>やっこ"
+    },
+    {
+      "T0": "ひきにげされちゃうかも",
+      "C0": "내일 어느 교차로에서 도망치게 될지도 몰라 모두가 웃고 있어",
+      "G0": "이 문장은 'ひきにげされちゃうかも'로 구성되어 있으며, 일본어의 구어체 표현입니다. 'ひきにげ'는 '도망치다'를 의미하는 동사 '逃げる(にげる)'에 접두사 'ひき'가 붙어 강조된 형태로, '도망치게 되다'라는 수동적 의미를 띱니다. 'されちゃう'는 'される(수동형)'와 'しまう(완료형)'가 결합된 구어체 축약형으로, '~되어 버리다'라는 뜻을 나타냅니다. 'かも'는 'かもしれない'의 축약형으로, 불확실한 추측을 표현합니다. 전체적으로 '도망치게 될지도 몰라'라는 의미로, 화자의 불안한 감정을 나타내는 문장입니다.",
+      "K0": "도망치게 될지도 몰라",
+      "I0": "hikinigesarechau kamo",
+      "R0": "히키니게사레챠우 카모",
+      "LI": [
+        {
+          "T1": "ひきにげ",
+          "K1": "도망치다",
+          "I1": "hikinige",
+          "R1": "히키니게",
+          "E1": "'도망치다'를 의미하는 동사 '逃げる(にげる)'에 접두사 'ひき'가 붙어 강조된 형태로, '도망치게 되다'라는 수동적 의미를 띱니다.",
+          "T2": "ひきにげる",
+          "K2": "도망치다",
+          "I2": "hikinigeru",
+          "R2": "히키니게루",
+          "XE": "彼はひきにげた。",
+          "XK": "그는 도망쳤다.",
+          "XI": "kare wa hikinigeta",
+          "XR": "카레 와 히키니게타"
+        },
+        {
+          "T1": "されちゃう",
+          "K1": "되어 버리다",
+          "I1": "sarechau",
+          "R1": "사레챠우",
+          "E1": "'される(수동형)'와 'しまう(완료형)'가 결합된 구어체 축약형으로, '~되어 버리다'라는 뜻을 나타냅니다.",
+          "T2": "される",
+          "K2": "되다",
+          "I2": "sareru",
+          "R2": "사레루",
+          "XE": "彼に笑われちゃう。",
+          "XK": "그에게 웃겨져 버린다.",
+          "XI": "kare ni warawarechau",
+          "XR": "카레 니 와라와레챠우"
+        },
+        {
+          "T1": "かも",
+          "K1": "~일지도 몰라",
+          "I1": "kamo",
+          "R1": "카모",
+          "E1": "'かもしれない'의 구어체 축약형으로, 불확실한 추측을 표현합니다.",
+          "T2": "かもしれない",
+          "K2": "~일지도 몰라",
+          "I2": "kamoshirenai",
+          "R2": "카모시레나이",
+          "XE": "雨が降るかも。",
+          "XK": "비가 올지도 몰라.",
+          "XI": "ame ga furu kamo",
+          "XR": "아메 가 후루 카모"
+        }
+      ],
+      "O0": "ひきにげされちゃうかも"
+    },
+    {
+      "T0": "レストランに行きたい",
+      "C0": "레스토랑 레스토랑 레스토랑에 가고 싶어요 돈까스 덮밥 샐러드 냉두부",
+      "G0": "이 문장은 주어(생략) + 목적어(レストランに) + 동사(行きたい)로 구성되어 있습니다. 'レストランに'는 '레스토랑에'라는 의미로, 목적지를 나타내는 조사 'に'가 붙어 있습니다. '行きたい'는 '가고 싶다'라는 의미로, 동사 '行く'의 연용형 '行き'에 희망을 나타내는 조동사 'たい'가 결합된 형태입니다. 전체적으로 화자가 레스토랑에 가고 싶다는 소망을 표현하고 있습니다.",
+      "K0": "레스토랑에 가고 싶어요.",
+      "I0": "resutoran ni ikitai",
+      "R0": "레스토랑 니 이키타이",
+      "LI": [
+        {
+          "T1": "レストラン",
+          "K1": "레스토랑",
+          "I1": "resutoran",
+          "R1": "레스토랑",
+          "E1": "식당을 의미하는 명사로, 외국어 'restaurant'에서 유래한 말입니다.",
+          "T2": "レストラン",
+          "K2": "레스토랑",
+          "I2": "resutoran",
+          "R2": "레스토랑",
+          "XE": "レストランで食事をします。",
+          "XK": "레스토랑에서 식사를 합니다.",
+          "XI": "resutoran de shokuji o shimasu",
+          "XR": "레스토랑 데 쇼쿠지 오 시마스"
+        },
+        {
+          "T1": "に",
+          "K1": "에",
+          "I1": "ni",
+          "R1": "니",
+          "E1": "목적지나 방향을 나타내는 조사입니다.",
+          "T2": "に",
+          "K2": "에",
+          "I2": "ni",
+          "R2": "니",
+          "XE": "学校に行きます。",
+          "XK": "학교에 갑니다.",
+          "XI": "gakkō ni ikimasu",
+          "XR": "갓코오 니 이키마스"
+        },
+        {
+          "T1": "行き",
+          "K1": "가",
+          "I1": "iki",
+          "R1": "이키",
+          "E1": "동사 '行く'의 연용형으로, 다른 어미와 결합할 때 사용되는 형태입니다.",
+          "T2": "行く",
+          "K2": "가다",
+          "I2": "iku",
+          "R2": "이쿠",
+          "XE": "駅に行きます。",
+          "XK": "역에 갑니다.",
+          "XI": "eki ni ikimasu",
+          "XR": "에키 니 이키마스"
+        },
+        {
+          "T1": "たい",
+          "K1": "싶다",
+          "I1": "tai",
+          "R1": "타이",
+          "E1": "희망을 나타내는 조동사로, 동사의 연용형 뒤에 붙어 '~하고 싶다'라는 의미를 만듭니다.",
+          "T2": "たい",
+          "K2": "싶다",
+          "I2": "tai",
+          "R2": "타이",
+          "XE": "食べたいです。",
+          "XK": "먹고 싶어요.",
+          "XI": "tabetai desu",
+          "XR": "타베타이 데스"
+        }
+      ],
+      "O0": "レストランに<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>きたい"
+    },
+    {
+      "T0": "明日 保健所が来たら",
+      "C0": "배가 부르네. 내일 보건소가 오면 버려지겠지. 우리들",
+      "G0": "이 문장은 시간을 나타내는 부사 '明日'로 시작하여, 주어 '保健所が'와 동사 '来たら'로 구성된 조건절입니다. '来たら'는 '오면'이라는 의미의 조건형으로, 전체적으로 '내일 보건소가 오면'이라는 조건을 나타냅니다. 이는 뒤에 오는 문장과 연결되어 어떤 결과를 예상하게 만드는 구조입니다.",
+      "K0": "내일 보건소가 오면",
+      "I0": "ashita hokensho ga kitara",
+      "R0": "아시타 호켄쇼 가 키타라",
+      "LI": [
+        {
+          "T1": "明日",
+          "K1": "내일",
+          "I1": "ashita",
+          "R1": "아시타",
+          "E1": "시간을 나타내는 명사로, '오늘의 다음 날'을 의미합니다.",
+          "T2": "明日",
+          "K2": "내일",
+          "I2": "ashita",
+          "R2": "아시타",
+          "XE": "明日は雨が降るそうです。",
+          "XK": "내일은 비가 온다고 해요.",
+          "XI": "ashita wa ame ga furu sō desu",
+          "XR": "아시타 와 아메 가 후루 소오 데스"
+        },
+        {
+          "T1": "保健所",
+          "K1": "보건소",
+          "I1": "hokensho",
+          "R1": "호켄쇼",
+          "E1": "공공 보건 서비스를 제공하는 기관을 의미하는 명사입니다.",
+          "T2": "保健所",
+          "K2": "보건소",
+          "I2": "hokensho",
+          "R2": "호켄쇼",
+          "XE": "保健所で健康診断を受けました。",
+          "XK": "보건소에서 건강검진을 받았어요.",
+          "XI": "hokensho de kenkō shindan o ukemashita",
+          "XR": "호켄쇼 데 켄코오 신단 오 우케마시타"
+        },
+        {
+          "T1": "が",
+          "K1": "~이/가",
+          "I1": "ga",
+          "R1": "가",
+          "E1": "주격 조사로, 문장에서 주어를 나타낼 때 사용합니다.",
+          "T2": "が",
+          "K2": "~이/가",
+          "I2": "ga",
+          "R2": "가",
+          "XE": "猫が寝ています。",
+          "XK": "고양이가 자고 있어요.",
+          "XI": "neko ga nete imasu",
+          "XR": "네코 가 네테 이마스"
+        },
+        {
+          "T1": "来たら",
+          "K1": "오면",
+          "I1": "kitara",
+          "R1": "키타라",
+          "E1": "동사 '来る(오다)'의 조건형으로, '~하면'이라는 가정이나 조건을 나타냅니다.",
+          "T2": "来る",
+          "K2": "오다",
+          "I2": "kuru",
+          "R2": "쿠루",
+          "XE": "友達が来たら、一緒に遊びます。",
+          "XK": "친구가 오면, 함께 놀아요.",
+          "XI": "tomodachi ga kitara, issho ni asobimasu",
+          "XR": "토모다치 가 키타라, 잇쇼 니 아소비마스"
+        }
+      ],
+      "O0": "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> <span class=\"ruby\"><span class=\"rb\">保健所</span><span class=\"rt\">ほけんじょ</span></span>が<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>たら"
+    },
+    {
+      "T0": "明日 どこかの交差点で",
+      "C0": "레스토랑 내일 어느 교차로에서 도망치게 될지도 몰라",
+      "G0": "이 문장은 시간을 나타내는 부사 '明日'와 장소를 나타내는 구 'どこかの交差点で'로 구성되어 있습니다. '明日'는 '내일'을 의미하며, 'どこかの交差点で'는 '어느 교차로에서'라는 의미로, 'どこか'는 '어느', 'の'는 소유격 조사, '交差点'는 '교차로', 'で'는 장소를 나타내는 조사입니다. 전체적으로 미래의 특정 장소에서 일어날 일을 예상하는 문장입니다.",
+      "K0": "내일 어느 교차로에서",
+      "I0": "ashita dokoka no kōsaten de",
+      "R0": "아시타 도코카 노 코오사텐 데",
+      "LI": [
+        {
+          "T1": "明日",
+          "K1": "내일",
+          "I1": "ashita",
+          "R1": "아시타",
+          "E1": "시간을 나타내는 명사로, 오늘의 다음 날을 의미합니다.",
+          "T2": "明日",
+          "K2": "내일",
+          "I2": "ashita",
+          "R2": "아시타",
+          "XE": "明日は雨が降るでしょう。",
+          "XK": "내일은 비가 올 거예요.",
+          "XI": "ashita wa ame ga furu deshō",
+          "XR": "아시타 와 아메 가 후루 데쇼오"
+        },
+        {
+          "T1": "どこか",
+          "K1": "어느",
+          "I1": "dokoka",
+          "R1": "도코카",
+          "E1": "불특정한 장소를 가리키는 대명사로, '어딘가' 또는 '어느'라는 의미입니다.",
+          "T2": "どこか",
+          "K2": "어느",
+          "I2": "dokoka",
+          "R2": "도코카",
+          "XE": "どこかで会ったことがあります。",
+          "XK": "어디선가 만난 적이 있어요.",
+          "XI": "dokoka de atta koto ga arimasu",
+          "XR": "도코카 데 앗타 코토 가 아리마스"
+        },
+        {
+          "T1": "の",
+          "K1": "의",
+          "I1": "no",
+          "R1": "노",
+          "E1": "소유격 조사로, 앞 단어와 뒤 단어의 관계를 연결하며 '~의'라는 의미를 나타냅니다.",
+          "T2": "の",
+          "K2": "의",
+          "I2": "no",
+          "R2": "노",
+          "XE": "私の本です。",
+          "XK": "제 책이에요.",
+          "XI": "watashi no hon desu",
+          "XR": "와타시 노 혼 데스"
+        },
+        {
+          "T1": "交差点",
+          "K1": "교차로",
+          "I1": "kōsaten",
+          "R1": "코오사텐",
+          "E1": "도로가 교차하는 지점을 의미하는 명사입니다.",
+          "T2": "交差点",
+          "K2": "교차로",
+          "I2": "kōsaten",
+          "R2": "코오사텐",
+          "XE": "交差点で信号を待ちます。",
+          "XK": "교차로에서 신호를 기다려요.",
+          "XI": "kōsaten de shingō o machimasu",
+          "XR": "코오사텐 데 신고오 오 마치마스"
+        },
+        {
+          "T1": "で",
+          "K1": "에서",
+          "I1": "de",
+          "R1": "데",
+          "E1": "장소를 나타내는 조사로, 행동이 일어나는 곳을 지정합니다.",
+          "T2": "で",
+          "K2": "에서",
+          "I2": "de",
+          "R2": "데",
+          "XE": "公園で遊びます。",
+          "XK": "공원에서 놀아요.",
+          "XI": "kōen de asobimasu",
+          "XR": "코오엔 데 아소비마스"
+        }
+      ],
+      "O0": "<span class=\"ruby\"><span class=\"rb\">明日</span><span class=\"rt\">あす</span></span> どこかの<span class=\"ruby\"><span class=\"rb\">交差点</span><span class=\"rt\">こうさてん</span></span>で"
+    },
+    {
+      "T0": "捨てられちゃうよね 僕たち",
+      "C0": "내일 보건소가 오면 버려져 버리겠지 우리들 레스토랑",
+      "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '捨てられちゃうよね'로, '捨てられ'는 '버려지다'라는 수동형 동사, 'ちゃう'는 '~해 버리다'라는 의미의 보조동사, 'よね'는 확인을 구하는 종조사입니다. 두 번째 절은 '僕たち'로, '僕'은 '나'를 의미하는 1인칭 대명사, 'たち'는 복수를 나타내는 접미사입니다. 전체적으로 화자와 상대방이 버려질 운명에 처해 있음을 표현하며, 이에 대한 확인과 공감을 구하는 어조입니다.",
+      "K0": "버려져 버리겠지 우리들",
+      "I0": "suterarechau yone bokutachi",
+      "R0": "스테라레챠우 요네 보쿠타치",
+      "LI": [
+        {
+          "T1": "捨てられ",
+          "K1": "버려지다",
+          "I1": "suterare",
+          "R1": "스테라레",
+          "E1": "'버리다'라는 의미의 동사 '捨てる'의 수동형 어간입니다. '~れる'가 붙어 수동의 의미를 나타냅니다.",
+          "T2": "捨てる",
+          "K2": "버리다",
+          "I2": "suteru",
+          "R2": "스테루",
+          "XE": "古い本が捨てられた。",
+          "XK": "오래된 책이 버려졌다.",
+          "XI": "furui hon ga suterareta",
+          "XR": "후루이 혼 가 스테라레타"
+        },
+        {
+          "T1": "ちゃう",
+          "K1": "~해 버리다",
+          "I1": "chau",
+          "R1": "챠우",
+          "E1": "'~てしまう'의 구어체 축약형으로, 동작의 완료나 의도하지 않은 결과를 나타내는 보조동사입니다.",
+          "T2": "しまう",
+          "K2": "~해 버리다",
+          "I2": "shimau",
+          "R2": "시마우",
+          "XE": "ケーキを食べちゃった。",
+          "XK": "케이크를 먹어 버렸다.",
+          "XI": "kēki o tabechatta",
+          "XR": "케에키 오 타베챳타"
+        },
+        {
+          "T1": "よね",
+          "K1": "~지, 그렇지",
+          "I1": "yone",
+          "R1": "요네",
+          "E1": "확인을 구하거나 공감을 나타내는 종조사입니다. 'よ'는 강조, 'ね'는 확인을 의미합니다.",
+          "T2": "よね",
+          "K2": "~지, 그렇지",
+          "I2": "yone",
+          "R2": "요네",
+          "XE": "今日は寒いよね。",
+          "XK": "오늘은 춥지.",
+          "XI": "kyō wa samui yone",
+          "XR": "쿄오 와 사무이 요네"
+        },
+        {
+          "T1": "僕",
+          "K1": "나",
+          "I1": "boku",
+          "R1": "보쿠",
+          "E1": "1인칭 대명사로, 주로 남성이 사용하며 겸손한 어감을 가집니다.",
+          "T2": "僕",
+          "K2": "나",
+          "I2": "boku",
+          "R2": "보쿠",
+          "XE": "僕は学生です。",
+          "XK": "나는 학생입니다.",
+          "XI": "boku wa gakusei desu",
+          "XR": "보쿠 와 가쿠세이 데스"
+        },
+        {
+          "T1": "たち",
+          "K1": "들",
+          "I1": "tachi",
+          "R1": "타치",
+          "E1": "명사나 대명사 뒤에 붙어 복수를 나타내는 접미사입니다.",
+          "T2": "たち",
+          "K2": "들",
+          "I2": "tachi",
+          "R2": "타치",
+          "XE": "子供たちが遊んでいる。",
+          "XK": "아이들이 놀고 있다.",
+          "XI": "kodomotachi ga asonde iru",
+          "XR": "코도모타치 가 아손데 이루"
+        }
+      ],
+      "O0": "<span class=\"ruby\"><span class=\"rb\">捨</span><span class=\"rt\">す</span></span>てられちゃうよね <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>たち"
+    }
+  ],
+  "failedLines": []
+}

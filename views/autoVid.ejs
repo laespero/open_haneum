@@ -10,8 +10,23 @@
     <link rel="manifest" href="/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        #player-wrapper {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 320px;
+            height: 180px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            z-index: 50;
+            background: #000;
+            border: 2px solid #fff;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed pb-24">
     <!-- 헤더 -->
     <header class="bg-indigo-600 text-white text-center py-8 px-6">
         <div class="container mx-auto max-w-6xl">
@@ -127,15 +142,18 @@
                     <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                         <div>
                             <h2 class="text-xl font-semibold mb-2">VID 유효성 검사</h2>
-                            <p class="text-gray-600">총 <span class="font-bold text-indigo-600"><%= songsWithVid.length %></span>곡의 영상을 순차적으로 로드하여 재생 가능한지 확인합니다.</p>
-                            <p class="text-sm text-yellow-600 mt-1"><i class="fas fa-exclamation-triangle"></i> 브라우저에서 백그라운드로 재생을 시도하므로 시간이 걸릴 수 있습니다.</p>
+                            <p class="text-gray-600">총 <span class="font-bold text-indigo-600"><%= songsWithVid.length %></span>곡의 영상을 검사합니다.</p>
+                            <p class="text-sm text-blue-600 mt-1"><i class="fas fa-info-circle"></i> 우측 하단 플레이어에서 로딩 과정을 확인할 수 있습니다.</p>
                         </div>
                         <div class="flex gap-3">
                             <button id="startCheckBtn" onclick="startValidation()" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2">
-                                <i class="fas fa-stethoscope"></i> 검사 및 자동 교체 시작
+                                <i class="fas fa-stethoscope"></i> 검사 시작
                             </button>
                             <button id="stopCheckBtn" onclick="stopValidation()" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2 hidden">
-                                <i class="fas fa-stop"></i> 중지
+                                <i class="fas fa-stop"></i> 검사 중지
+                            </button>
+                            <button id="autoFixAllBtn" onclick="fixAllFailed()" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition duration-300 ease-in-out flex items-center gap-2 hidden">
+                                <i class="fas fa-magic"></i> 실패 항목 전체 자동 수정
                             </button>
                         </div>
                     </div>
@@ -150,21 +168,61 @@
                             <div id="checkProgressBar" class="bg-purple-600 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
                         </div>
                     </div>
-                    
-                    <!-- 로그 영역 -->
-                    <div id="validationLog" class="mt-6 h-64 overflow-y-auto bg-gray-900 text-gray-300 p-4 rounded-lg font-mono text-sm hidden">
-                        <!-- 로그 메시지가 여기에 추가됨 -->
-                    </div>
                 </div>
                 
-                <!-- 숨겨진 플레이어 컨테이너 -->
-                <div id="player-container" class="absolute top-0 left-0 w-1 h-1 opacity-0 pointer-events-none overflow-hidden">
-                    <div id="player"></div>
+                <!-- VID 검사 목록 테이블 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead class="bg-gray-50 border-b border-gray-200">
+                                <tr>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">상태</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">파일명</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">현재 VID</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">메시지</th>
+                                    <th class="px-6 py-4 font-semibold text-gray-600">액션</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200" id="checkTableBody">
+                                <% if (songsWithVid.length === 0) { %>
+                                    <tr>
+                                        <td colspan="5" class="px-6 py-12 text-center text-gray-500">
+                                            <i class="fas fa-info-circle text-4xl text-gray-400 mb-3 block"></i>
+                                            검사할 VID가 없습니다.
+                                        </td>
+                                    </tr>
+                                <% } else { %>
+                                    <% songsWithVid.forEach((song, index) => { %>
+                                        <tr id="check-row-<%= index %>" class="hover:bg-gray-50 transition-colors">
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                <span class="check-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                                    대기
+                                                </span>
+                                            </td>
+                                            <td class="px-6 py-4 text-sm font-medium text-gray-900"><%= song.filename %></td>
+                                            <td class="px-6 py-4 text-sm font-mono text-gray-500 current-vid"><%= song.vid %></td>
+                                            <td class="px-6 py-4 text-sm text-gray-500 check-message">-</td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                <button onclick="fixVideo('<%= index %>', '<%= song.filename %>', '<%= song.vid %>')" class="fix-btn hidden text-blue-600 hover:text-blue-900 font-medium text-sm">
+                                                    <i class="fas fa-wrench"></i> 수정
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    <% }); %>
+                                <% } %>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             
         </div>
     </main>
+
+    <!-- Visible Player Container -->
+    <div id="player-wrapper">
+        <div id="player"></div>
+    </div>
 
     <!-- YouTube IFrame API -->
     <script src="https://www.youtube.com/iframe_api"></script>
@@ -288,17 +346,21 @@
         // --- 탭 2: VID 유효성 검사 로직 ---
         const songsWithVid = <%- JSON.stringify(songsWithVid) %>;
         let player;
-        let validationQueue = [];
-        let currentValidationIndex = 0;
-        let validationResolve = null; // 현재 검사 중인 Promise의 resolve 함수
-        let validationTimeout = null;
+        let validationResolve = null;
+        let currentCheckingVid = null;
+        let failedItems = []; // 실패한 아이템 인덱스 저장
         
         // YouTube API Ready
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
-                height: '200',
-                width: '200',
+                height: '100%',
+                width: '100%',
                 videoId: '',
+                playerVars: {
+                    'playsinline': 1,
+                    'autoplay': 1,
+                    'controls': 1
+                },
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange,
@@ -308,15 +370,16 @@
         }
         
         function onPlayerReady(event) {
-            event.target.mute(); // 자동 재생을 위해 음소거
             console.log('Player Ready');
+            // 자동 재생 시도
+            event.target.playVideo();
         }
 
         function onPlayerStateChange(event) {
-            // PLAYING(1) or BUFFERING(3) -> 성공으로 간주
-            if (event.data === YT.PlayerState.PLAYING || event.data === YT.PlayerState.BUFFERING) {
+            // PLAYING(1) -> 성공으로 간주
+            if (event.data === YT.PlayerState.PLAYING) {
                 if (validationResolve) {
-                    clearTimeout(validationTimeout);
+                    if (validationTimeout) clearTimeout(validationTimeout);
                     validationResolve({ success: true });
                     validationResolve = null;
                 }
@@ -324,125 +387,226 @@
         }
         
         function onPlayerError(event) {
-            // 에러 발생 시 (삭제됨, 비공개 등)
-            console.log('Player Error:', event.data);
-            if (validationResolve) {
-                clearTimeout(validationTimeout);
-                validationResolve({ success: false, error: event.data });
-                validationResolve = null;
+            console.log('Player Error Code:', event.data);
+            
+            // _retryCount 초기화 체크
+            if(player._retryCount === undefined) player._retryCount = 0;
+            player._retryCount++;
+            
+            console.log(`Retry count: ${player._retryCount} for VID: ${currentCheckingVid}`);
+
+            if(player._retryCount > 3) {
+                if (validationResolve) {
+                    if (validationTimeout) clearTimeout(validationTimeout);
+                    validationResolve({ success: false, error: event.data });
+                    validationResolve = null;
+                }
+                return;
             }
-        }
-        
-        function addLog(message, type = 'info') {
-            const logDiv = document.getElementById('validationLog');
-            const p = document.createElement('div');
-            p.className = 'mb-1 ' + (type === 'error' ? 'text-red-400' : type === 'success' ? 'text-green-400' : 'text-gray-300');
-            
-            // 타임스탬프
-            const time = new Date().toLocaleTimeString();
-            p.textContent = `[${time}] ${message}`;
-            
-            logDiv.appendChild(p);
-            logDiv.scrollTop = logDiv.scrollHeight;
+
+            // 재시도 로직
+            setTimeout(() => {
+                if (currentCheckingVid) {
+                    player.loadVideoById(currentCheckingVid);
+                }
+            }, 500); 
         }
         
         async function startValidation() {
             if (isRunning) return;
             isRunning = true;
             shouldStop = false;
+            failedItems = []; // 초기화
             
             document.getElementById('startCheckBtn').classList.add('hidden');
             document.getElementById('stopCheckBtn').classList.remove('hidden');
+            document.getElementById('autoFixAllBtn').classList.add('hidden');
             document.getElementById('checkProgressContainer').classList.remove('hidden');
-            document.getElementById('validationLog').classList.remove('hidden');
-            
-            addLog('검사 시작...', 'info');
             
             const total = songsWithVid.length;
             let processed = 0;
-            let errorCount = 0;
-            let fixedCount = 0;
             
-            for (let i = 0; i < total; i++) {
+            // 인덱스 배열 생성 및 셔플 (같은 채널 연속 접근 방지)
+            const indices = Array.from({ length: total }, (_, i) => i);
+            for (let i = indices.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [indices[i], indices[j]] = [indices[j], indices[i]];
+            }
+            
+            for (let k = 0; k < total; k++) {
                 if (shouldStop) break;
                 
+                const i = indices[k]; // 셔플된 인덱스 사용
                 const song = songsWithVid[i];
-                const percent = Math.round(((i + 1) / total) * 100);
-                document.getElementById('checkProgressBar').style.width = `${percent}%`;
-                document.getElementById('checkProgressText').textContent = `${i + 1} / ${total}`;
-                document.getElementById('checkStatus').textContent = `검사 중: ${song.filename} (${song.vid})`;
+                const row = document.getElementById(`check-row-${i}`);
+                const badge = row.querySelector('.check-badge');
+                const message = row.querySelector('.check-message');
+                const fixBtn = row.querySelector('.fix-btn');
                 
-                // 영상 검사 수행
+                row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // 상태 업데이트: 검사 중
+                badge.className = 'check-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800';
+                badge.innerHTML = '<i class="fas fa-spinner fa-spin mr-1"></i> 검사 중';
+                fixBtn.classList.add('hidden');
+                
+                // 검사 수행
                 const result = await checkVideo(song.vid);
                 
-                if (!result.success) {
-                    errorCount++;
-                    addLog(`[오류 감지] ${song.filename} (VID: ${song.vid}, Error: ${result.error})`, 'error');
-                    
-                    // 자동 교체 시도
-                    addLog(`>> 자동 교체 시도 중...`, 'info');
-                    try {
-                        const response = await fetch('/api/songs/refresh-vid', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ filename: song.filename, oldVid: song.vid })
-                        });
-                        
-                        const refreshResult = await response.json();
-                        if (refreshResult.success) {
-                            fixedCount++;
-                            addLog(`>> 교체 성공: ${refreshResult.oldVid} -> ${refreshResult.vid}`, 'success');
-                        } else {
-                            addLog(`>> 교체 실패: ${refreshResult.message}`, 'error');
-                        }
-                    } catch (e) {
-                        addLog(`>> 서버 통신 오류`, 'error');
-                    }
-                    
-                    // 교체 작업 딜레이
-                    await new Promise(r => setTimeout(r, 2000));
+                if (result.success) {
+                    badge.className = 'check-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800';
+                    badge.innerHTML = '<i class="fas fa-check mr-1"></i> 정상';
+                    message.textContent = '재생 가능';
                 } else {
-                    // addLog(`${song.filename}: 정상`, 'success');
-                    // 정상인 경우는 로그가 너무 많아지므로 생략하거나 간략히 표시 가능
+                    badge.className = 'check-badge inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800';
+                    badge.innerHTML = '<i class="fas fa-times mr-1"></i> 실패';
+                    message.textContent = `재생 불가 (Error: ${result.error})`;
+                    fixBtn.classList.remove('hidden');
+                    failedItems.push(i);
                 }
                 
                 processed++;
-                // 짧은 대기 (브라우저 부하 방지)
-                await new Promise(r => setTimeout(r, 500));
+                updateCheckProgress(processed, total);
+                
+                // 대기
+                await new Promise(r => setTimeout(r, 3000));
             }
             
-            isRunning = false;
-            shouldStop = false;
-            document.getElementById('startCheckBtn').classList.remove('hidden');
-            document.getElementById('stopCheckBtn').classList.add('hidden');
-            document.getElementById('checkStatus').textContent = '완료';
-            
-            addLog(`검사 완료. 총 ${processed}곡 검사, ${errorCount}개 오류, ${fixedCount}개 수정됨.`, 'info');
-            alert('검사가 완료되었습니다.');
+            finishValidation();
         }
         
         function stopValidation() { shouldStop = true; }
         
-        // 개별 비디오 검사 Promise 래퍼
+        function updateCheckProgress(current, total) {
+            const percent = Math.round((current / total) * 100);
+            document.getElementById('checkProgressBar').style.width = `${percent}%`;
+            document.getElementById('checkProgressText').textContent = `${current} / ${total}`;
+            if (currentCheckingVid) {
+                document.getElementById('checkStatus').textContent = `검사 중: ${currentCheckingVid}`;
+            }
+        }
+        
+        function finishValidation() {
+            isRunning = false;
+            shouldStop = false;
+            document.getElementById('startCheckBtn').classList.remove('hidden');
+            document.getElementById('stopCheckBtn').classList.add('hidden');
+            document.getElementById('checkStatus').textContent = '검사 완료';
+            
+            if (failedItems.length > 0) {
+                document.getElementById('autoFixAllBtn').classList.remove('hidden');
+                document.getElementById('autoFixAllBtn').innerHTML = `<i class="fas fa-magic"></i> 실패 항목(${failedItems.length}개) 전체 자동 수정`;
+            }
+            
+            alert('검사가 완료되었습니다.');
+        }
+        
+        let validationTimeout = null;
+
         function checkVideo(vid) {
             return new Promise((resolve) => {
-                validationResolve = resolve;
-                
-                if (player && player.loadVideoById) {
-                    player.loadVideoById({ videoId: vid });
-                    // 3초 내에 재생/버퍼링 상태가 안 되면 타임아웃 (성공으로 간주하거나 실패로 간주? 여기선 성공으로 간주하되, onError가 확실한 경우만 잡음)
-                    // 하지만 로딩이 오래 걸릴 수 있으므로 5초 정도 대기
-                    validationTimeout = setTimeout(() => {
-                         // 타임아웃 시: 일단 에러 이벤트가 안 떴으니 성공으로 간주? 
-                         // 혹은 '재생 불가'로 의심?
-                         // 안전하게는: 에러 이벤트가 발생하지 않았으면 넘어감.
-                         resolve({ success: true, message: 'Timeout (no error)' });
-                         validationResolve = null;
-                    }, 4000); 
-                } else {
-                    resolve({ success: true, message: 'Player not ready' }); // 플레이어 문제면 패스
+                if (!player || !player.loadVideoById) {
+                    resolve({ success: false, error: 'Player not ready' });
+                    return;
                 }
+                
+                validationResolve = resolve;
+                currentCheckingVid = vid;
+                
+                // 재시도 카운트 초기화
+                player._retryCount = 0;
+
+                // 기존 타임아웃 클리어
+                if (validationTimeout) clearTimeout(validationTimeout);
+                
+                player.loadVideoById(vid);
+                // 타임아웃 15초 (재시도 시간 고려)
+                validationTimeout = setTimeout(() => {
+                    if (validationResolve) {
+                        console.log('Validation Timeout');
+                        // 타임아웃은 재생이 시작되지 않았음을 의미하므로 실패로 처리
+                        validationResolve({ success: false, error: 'Timeout (Not Played)' });
+                        validationResolve = null;
+                    }
+                }, 15000);
             });
+        }
+
+        async function fixVideo(index, filename, oldVid) {
+            const row = document.getElementById(`check-row-${index}`);
+            const btn = row.querySelector('.fix-btn');
+            const message = row.querySelector('.check-message');
+            const vidCell = row.querySelector('.current-vid');
+            
+            const originalBtnContent = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 수정 중...';
+            
+            try {
+                const response = await fetch('/api/songs/refresh-vid', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ filename, oldVid })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    message.textContent = '수정 완료';
+                    message.classList.add('text-green-600', 'font-bold');
+                    vidCell.innerHTML = `<span class="line-through text-gray-400 mr-2">${oldVid}</span> <span class="text-blue-600 font-bold">${result.vid}</span>`;
+                    
+                    btn.innerHTML = '<i class="fas fa-check"></i> 완료';
+                    btn.classList.remove('text-blue-600', 'hover:text-blue-900');
+                    btn.classList.add('text-green-600', 'cursor-default');
+                    
+                    // 목록 데이터 업데이트
+                    songsWithVid[index].vid = result.vid;
+                    
+                    return true;
+                } else {
+                    message.textContent = `수정 실패: ${result.message}`;
+                    message.classList.add('text-red-600');
+                    btn.disabled = false;
+                    btn.innerHTML = originalBtnContent;
+                    return false;
+                }
+            } catch (error) {
+                console.error(error);
+                message.textContent = '서버 오류';
+                btn.disabled = false;
+                btn.innerHTML = originalBtnContent;
+                return false;
+            }
+        }
+
+        async function fixAllFailed() {
+            if (failedItems.length === 0) return;
+            
+            if (!confirm(`총 ${failedItems.length}개의 실패 항목을 자동으로 수정하시겠습니까? 시간이 소요될 수 있습니다.`)) return;
+            
+            const btn = document.getElementById('autoFixAllBtn');
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 자동 수정 진행 중...';
+            
+            let successCount = 0;
+            
+            for (const index of failedItems) {
+                const song = songsWithVid[index];
+                
+                document.getElementById(`check-row-${index}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                const success = await fixVideo(index, song.filename, song.vid);
+                if (success) successCount++;
+                
+                await new Promise(r => setTimeout(r, 1000));
+            }
+            
+            alert(`자동 수정 완료: ${successCount} / ${failedItems.length} 성공`);
+            btn.classList.add('hidden');
+            
+            // 실패 목록 초기화
+            failedItems = [];
         }
     </script>
 </body>

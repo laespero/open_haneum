@@ -1,0 +1,145 @@
+{
+  "name": "Radwimps_Bring_me_the_morning",
+  "ori_name": "Bring me the morning",
+  "kor_name": "아침을 나에게 가져다 줘",
+  "eng_name": "Bring me the morning",
+  "vid": "x1lsqYMU1WE",
+  "artist": {
+    "ori_name": "RADWIMPS",
+    "kor_name": "래드윔프스",
+    "eng_name": "RADWIMPS"
+  },
+  "tags": [
+    "일본어"
+  ],
+  "text": "<span class=\"ruby\"><span class=\"rb\">現在</span><span class=\"rt\">げんざい</span></span>、<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>を<span class=\"ruby\"><span class=\"rb\">調整中</span><span class=\"rt\">ちょうせいちゅう</span></span>です。<br>",
+  "createdAt": "2025-12-05T22:56:34.778Z",
+  "p1": [
+    "<span class=\"ruby\"><span class=\"rb\">現在</span><span class=\"rt\">げんざい</span></span>、<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>を<span class=\"ruby\"><span class=\"rb\">調整中</span><span class=\"rt\">ちょうせいちゅう</span></span>です。"
+  ],
+  "contextText": [
+    {
+      "T0": "<span class=\"ruby\"><span class=\"rb\">現在</span><span class=\"rt\">げんざい</span></span>、<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>を<span class=\"ruby\"><span class=\"rb\">調整中</span><span class=\"rt\">ちょうせいちゅう</span></span>です。",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">現在</span><span class=\"rt\">げんざい</span></span>、<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>を<span class=\"ruby\"><span class=\"rb\">調整中</span><span class=\"rt\">ちょうせいちゅう</span></span>です。"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "現在、歌詞の掲載を調整中です。",
+      "C0": "현재, 가사 게재를 조정 중입니다.",
+      "G0": "이 문장은 주어(現在) + 목적어(歌詞の掲載) + 동사구(を調整中です)로 구성되어 있습니다. '現在'는 '현재'를 의미하며, '歌詞の掲載'는 '가사 게재'를 나타내고, 'を調整中です'는 '를 조정 중입니다'라는 의미로, 현재 진행 중인 작업을 설명합니다. 전체적으로 가사 게재 작업이 현재 조정 중임을 알리는 문장입니다.",
+      "K0": "현재, 가사 게재를 조정 중입니다.",
+      "I0": "genzai, kashi no keisai o chōsei chū desu",
+      "R0": "겐자이, 카시 노 케이사이 오 초오세이 츄우 데스",
+      "LI": [
+        {
+          "T1": "現在",
+          "K1": "현재",
+          "I1": "genzai",
+          "R1": "겐자이",
+          "E1": "현재 시점을 나타내는 명사입니다.",
+          "T2": "現在",
+          "K2": "현재",
+          "I2": "genzai",
+          "R2": "겐자이",
+          "XE": "現在は午後三時です。",
+          "XK": "현재는 오후 세 시입니다.",
+          "XI": "genzai wa gogo sanji desu",
+          "XR": "겐자이 와 고고 산지 데스"
+        },
+        {
+          "T1": "歌詞",
+          "K1": "가사",
+          "I1": "kashi",
+          "R1": "카시",
+          "E1": "노래의 가사를 의미하는 명사입니다.",
+          "T2": "歌詞",
+          "K2": "가사",
+          "I2": "kashi",
+          "R2": "카시",
+          "XE": "この歌の歌詞は美しいです。",
+          "XK": "이 노래의 가사는 아름다워요.",
+          "XI": "kono uta no kashi wa utsukushii desu",
+          "XR": "코노 우타 노 카시 와 우츠쿠시이 데스"
+        },
+        {
+          "T1": "の",
+          "K1": "의",
+          "I1": "no",
+          "R1": "노",
+          "E1": "소유나 관계를 나타내는 조사입니다.",
+          "T2": "の",
+          "K2": "의",
+          "I2": "no",
+          "R2": "노",
+          "XE": "私の本です。",
+          "XK": "제 책입니다.",
+          "XI": "watashi no hon desu",
+          "XR": "와타시 노 혼 데스"
+        },
+        {
+          "T1": "掲載",
+          "K1": "게재",
+          "I1": "keisai",
+          "R1": "케이사이",
+          "E1": "신문이나 잡지 등에 글을 싣는 것을 의미하는 명사입니다.",
+          "T2": "掲載",
+          "K2": "게재",
+          "I2": "keisai",
+          "R2": "케이사이",
+          "XE": "記事を掲載する。",
+          "XK": "기사를 게재하다.",
+          "XI": "kiji o keisai suru",
+          "XR": "키지 오 케이사이 스루"
+        },
+        {
+          "T1": "を",
+          "K1": "를",
+          "I1": "o",
+          "R1": "오",
+          "E1": "목적어를 나타내는 조사입니다.",
+          "T2": "を",
+          "K2": "를",
+          "I2": "o",
+          "R2": "오",
+          "XE": "本を読む。",
+          "XK": "책을 읽다.",
+          "XI": "hon o yomu",
+          "XR": "혼 오 요무"
+        },
+        {
+          "T1": "調整中",
+          "K1": "조정 중",
+          "I1": "chōsei chū",
+          "R1": "초오세이 츄우",
+          "E1": "조정하는 중이라는 의미로, 현재 진행 중인 상태를 나타냅니다.",
+          "T2": "調整",
+          "K2": "조정",
+          "I2": "chōsei",
+          "R2": "초오세이",
+          "XE": "スケジュールを調整中です。",
+          "XK": "스케줄을 조정 중입니다.",
+          "XI": "sukejūru o chōsei chū desu",
+          "XR": "스케쥬루 오 초오세이 츄우 데스"
+        },
+        {
+          "T1": "です",
+          "K1": "입니다",
+          "I1": "desu",
+          "R1": "데스",
+          "E1": "정중한 표현을 나타내는 조동사입니다.",
+          "T2": "です",
+          "K2": "입니다",
+          "I2": "desu",
+          "R2": "데스",
+          "XE": "今日は晴れです。",
+          "XK": "오늘은 맑습니다.",
+          "XI": "kyō wa hare desu",
+          "XR": "쿄오 와 하레 데ス"
+        }
+      ],
+      "O0": "<span class=\"ruby\"><span class=\"rb\">現在</span><span class=\"rt\">げんざい</span></span>、<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>を<span class=\"ruby\"><span class=\"rb\">調整中</span><span class=\"rt\">ちょうせいちゅう</span></span>です。"
+    }
+  ],
+  "failedLines": []
+}

@@ -28,7 +28,7 @@ process.on('uncaughtException', (err) => {
 
 // 사용자가 API 제공자를 선택할 수 있는 변수
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
-const API_PROVIDER_CHOICE = 'openrouter'; 
+const API_PROVIDER_CHOICE = 'deepseek'; 
 
 console.log('OPENROUTER API Key:', process.env.OPENROUTER_API_KEY);
 console.log('DeepSeek API Key:', process.env.DEEPSEEK_API_KEY);
@@ -905,7 +905,7 @@ app.post('/bulk-import-utaten', async (req, res) => {
                 ori_name: oriTitle, 
                 kor_name: korName,
                 eng_name: engName,
-                vid: vid,
+                vid: "",
                 artist: artistObj,
                 tags: finalTags,
                 text: text.replaceAll("  ", " "),
@@ -939,16 +939,31 @@ app.post('/bulk-import-utaten', async (req, res) => {
         }
     };
 
-    // 배치 처리 실행
-    for (let i = 0; i < songs.length; i += batchSize) {
-        const batch = songs.slice(i, i + batchSize);
-        res.write(`\n--- 배치 시작 (${i + 1} ~ ${Math.min(i + batchSize, songs.length)}) ---\n`);
+    // 동시성 제어하며 처리 실행 (Sliding Window 방식)
+    const activePromises = new Set();
+
+    for (let i = 0; i < songs.length; i++) {
+        // 현재 실행 중인 작업이 설정된 동시 처리 개수보다 많거나 같으면, 하나가 끝날 때까지 대기
+        if (activePromises.size >= batchSize) {
+            await Promise.race(activePromises);
+        }
+
+        const song = songs[i];
         
-        // 현재 배치의 모든 작업을 병렬로 실행
-        // map의 두 번째 인자는 배열 내의 인덱스이므로, 전체 인덱스(i + idx)를 계산해서 전달
-        const promises = batch.map((item, idx) => processSong(item, i + idx));
-        await Promise.all(promises);
+        // 작업 시작 (에러 핸들링은 processSong 내부에서 처리됨)
+        const promise = processSong(song, i);
+        
+        // 작업이 끝나면 Set에서 제거하는 래퍼 프로미스
+        // processSong은 내부에서 try-catch로 에러를 처리하므로 항상 성공적으로 resolve된다고 가정
+        const wrapper = promise.then(() => {
+            activePromises.delete(wrapper);
+        });
+        
+        activePromises.add(wrapper);
     }
+    
+    // 남은 작업들이 완료될 때까지 대기
+    await Promise.all(activePromises);
 
     res.write(`\n=== 모든 작업이 완료되었습니다 ===\n`);
     res.end();

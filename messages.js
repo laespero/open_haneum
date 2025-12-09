@@ -5,6 +5,7 @@ If possible, it's preferable to write the "K1" elements within "LI" in such a wa
 If you have been given a ruby in HTML format as follows, put the result of the restoration to the original Text into the T0 entry.
 (Example Input)   <span class="ruby"><span class="rb">諦</span><span class="rt">あきら</span></span>めの<span class="ruby"><span class="rb">悪</span><span class="rt">わる</span></span>い<span class="ruby"><span class="rb">輩</span><span class="rt">やから</span></span>
 (Example T0)    諦めの悪い輩
+단, 한자어의 발음을 적을 때는 T0(발음을 제거한 문장)이 아닌, ruby HTML의 "rt"를 꼭 참고해서, 노래 가사가 소리 나는 대로 발음을 적어주세요!
 형태소 분석 시에 어간과 어근을 분리해서 처리하지 마세요!
 형태소 분식 시에 조사를 빼먹지 않도록 주의해 주세요!
 
