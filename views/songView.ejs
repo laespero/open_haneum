@@ -1454,9 +1454,9 @@ ${a}
                 const foundHanja = [];
                 const failHanja = [];
                 const hanjaRegex = /\p{Script=Han}/u;
-                let charList = [...new Set(morpheme.T1.split('').filter(char => hanjaRegex.test(char)))];                
+                let charList = [...new Set(morpheme.T1.normalize('NFKC').split('').filter(char => hanjaRegex.test(char)))];                
                 if(charList.length === 0){
-                    charList = [...new Set(morpheme.T2.split('').filter(char => hanjaRegex.test(char)))];  
+                    charList = [...new Set(morpheme.T2.normalize('NFKC').split('').filter(char => hanjaRegex.test(char)))];  
                 }
 
                 for(let i=0;i<charList.length;i++){

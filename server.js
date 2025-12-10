@@ -28,7 +28,7 @@ process.on('uncaughtException', (err) => {
 
 // 사용자가 API 제공자를 선택할 수 있는 변수
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
-const API_PROVIDER_CHOICE = 'deepseek'; 
+const API_PROVIDER_CHOICE = 'openrouter'; 
 
 console.log('OPENROUTER API Key:', process.env.OPENROUTER_API_KEY);
 console.log('DeepSeek API Key:', process.env.DEEPSEEK_API_KEY);

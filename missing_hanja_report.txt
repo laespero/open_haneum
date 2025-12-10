@@ -1,0 +1,5 @@
+Analysis Date: 12/10/2025, 1:49:21 PM
+Total scanned files: 1561
+Missing Hanja count: 1
+
+〇	Count: 1	Files: Tuki_guilty.json
