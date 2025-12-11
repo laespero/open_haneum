@@ -1348,7 +1348,7 @@
           "XR": "스코시 츠카레마시타"
         }
       ],
-      "O0": "だから親愛なる人よ そのあいだにほんの少し"
+      "O0": "だから<span class=\"ruby\"><span class=\"rb\">親愛</span><span class=\"rt\">しんあい</span></span>なる<span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>よ そのあいだにほんの<span class=\"ruby\"><span class=\"rb\">少</span><span class=\"rt\">すこ</span></span>し"
     },
     {
       "T0": "人を愛するってことを しっかりとつかまえるんだ",

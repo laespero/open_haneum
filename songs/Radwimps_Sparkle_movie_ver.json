@@ -2089,7 +2089,7 @@
           "XR": "소레 와 혼토오 다 요"
         }
       ],
-      "O0": "飛ばし読みでいいからこっからが僕だよ"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">飛</span><span class=\"rt\">と</span></span>ばし<span class=\"ruby\"><span class=\"rb\">読</span><span class=\"rt\">よ</span></span>みでいいからこっからが<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>だよ"
     },
     {
       "T0": "伸ばそうと届かない 場所で僕ら恋をする",

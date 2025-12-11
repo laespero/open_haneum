@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 퀄리티 검증 - 오픈 한음</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Tom Select (검색 가능한 드롭다운) -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <style>
+        /* Tom Select 커스텀 스타일 (Tailwind와 조화) */
+        .ts-control {
+            border-radius: 0.5rem;
+            padding: 0.5rem 0.75rem;
+            border-color: #d1d5db;
+        }
+        .ts-wrapper.focus .ts-control {
+            border-color: #6366f1; /* indigo-500 */
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        .ts-dropdown {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
+    <header class="bg-indigo-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <a href="/admin" class="text-2xl font-bold hover:text-indigo-100 transition">Haneum Admin</a>
+                <span class="bg-indigo-700 text-indigo-100 text-xs px-2 py-1 rounded">Quality Check</span>
+            </div>
+            <nav class="flex gap-4">
+                <a href="/admin" class="hover:text-indigo-200 transition">대시보드</a>
+                <a href="/" class="hover:text-indigo-200 transition">메인으로</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- 컨트롤 패널 -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">검증 컨트롤 패널</h2>
+            <div class="flex flex-col md:flex-row gap-4 items-end">
+                <div class="flex-grow w-full md:w-auto">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">검증할 노래 선택</label>
+                    <select id="songSelect" autocomplete="off" class="w-full">
+                        <option value="">노래를 검색하거나 선택하세요...</option>
+                        <% songs.forEach(song => { %>
+                            <option value="<%= song.name %>"><%= song.title %> (<%= song.name %>)</option>
+                        <% }); %>
+                    </select>
+                </div>
+                <div class="flex gap-2 w-full md:w-auto">
+                    <button id="btnValidateSingle" class="flex-1 md:flex-none bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition shadow-sm flex items-center justify-center gap-2">
+                        <i class="fas fa-check-circle"></i> 선택 노래 검증
+                    </button>
+                    <button id="btnValidateAll" class="flex-1 md:flex-none bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition shadow-sm flex items-center justify-center gap-2">
+                        <i class="fas fa-layer-group"></i> 전체 검증
+                    </button>
+                    <button id="btnStop" class="hidden flex-none bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg transition shadow-sm">
+                        <i class="fas fa-stop"></i> 중지
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 진행상황 (전체 검증 시 표시) -->
+            <div id="progressArea" class="hidden mt-6">
+                <div class="flex justify-between text-sm text-gray-600 mb-1">
+                    <span id="progressText">준비중...</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div id="progressBar" class="bg-purple-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 결과 영역 -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- 요약 카드 -->
+            <div class="lg:col-span-1 space-y-4">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="font-bold text-gray-700 mb-4">검증 현황</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-3 rounded-lg text-center">
+                            <div class="text-xs text-gray-500">검증된 곡</div>
+                            <div id="statTotal" class="text-2xl font-bold text-gray-800">0</div>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg text-center">
+                            <div class="text-xs text-green-600">Grade A</div>
+                            <div id="statA" class="text-2xl font-bold text-green-600">0</div>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-lg text-center">
+                            <div class="text-xs text-yellow-600">Grade B</div>
+                            <div id="statB" class="text-2xl font-bold text-yellow-600">0</div>
+                        </div>
+                        <div class="bg-red-50 p-3 rounded-lg text-center">
+                            <div class="text-xs text-red-600">Grade C</div>
+                            <div id="statC" class="text-2xl font-bold text-red-600">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 상세 리스트 -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-4 border-b bg-gray-50 flex justify-between items-center">
+                        <h3 class="font-bold text-gray-700">검증 결과 로그</h3>
+                        <button id="btnClearLog" class="text-xs text-gray-500 hover:text-red-500"><i class="fas fa-trash"></i> 초기화</button>
+                    </div>
+                    <div id="resultList" class="divide-y divide-gray-100 max-h-[600px] overflow-y-auto p-4 space-y-3">
+                        <!-- 결과 아이템이 여기에 추가됨 -->
+                        <div class="text-center text-gray-400 py-8 text-sm">
+                            검증을 시작하면 결과가 여기에 표시됩니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 상세 보기 모달 -->
+    <div id="detailModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex justify-center items-center z-50">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col m-4">
+            <div class="p-6 border-b flex justify-between items-center bg-gray-50 rounded-t-xl">
+                <div>
+                    <h3 id="modalTitle" class="text-xl font-bold text-gray-800">상세 결과</h3>
+                    <p id="modalSubtitle" class="text-sm text-gray-500">전체 라인 검증 내역</p>
+                </div>
+                <button id="btnCloseModal" class="text-gray-400 hover:text-gray-600 transition">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto flex-grow bg-gray-50">
+                <div id="modalContent" class="space-y-2">
+                    <!-- 상세 내용이 여기에 렌더링됨 -->
+                </div>
+            </div>
+            <div class="p-4 border-t bg-white rounded-b-xl flex justify-end">
+                <button id="btnModalOk" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition font-medium">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const songSelect = document.getElementById('songSelect');
+        const btnValidateSingle = document.getElementById('btnValidateSingle');
+        const btnValidateAll = document.getElementById('btnValidateAll');
+        const btnStop = document.getElementById('btnStop');
+        const resultList = document.getElementById('resultList');
+        const progressArea = document.getElementById('progressArea');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        const progressPercent = document.getElementById('progressPercent');
+        
+        // Tom Select 초기화 (검색 기능 활성화)
+        let tomSelectInstance;
+        document.addEventListener('DOMContentLoaded', () => {
+            tomSelectInstance = new TomSelect('#songSelect', {
+                create: false,
+                sortField: {
+                    field: "text",
+                    direction: "asc"
+                },
+                placeholder: "노래 제목 검색...",
+                maxOptions: 100 // 성능을 위해 표시 개수 제한
+            });
+        });
+
+        const detailModal = document.getElementById('detailModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalContent = document.getElementById('modalContent');
+        const btnCloseModal = document.getElementById('btnCloseModal');
+        const btnModalOk = document.getElementById('btnModalOk');
+
+        // 상태 변수 선언 (누락 복구)
+        const stats = { total: 0, A: 0, B: 0, C: 0 };
+        let isRunning = false;
+        let shouldStop = false;
+
+        function openDetailModal(data) {
+            modalTitle.textContent = `${data.songName} 검증 상세 결과`;
+            modalContent.innerHTML = ''; // 초기화
+
+            if (!data.details || data.details.length === 0) {
+                modalContent.innerHTML = '<div class="text-center text-gray-500 py-8">상세 내역이 없습니다.</div>';
+            } else {
+                // 테이블 헤더
+                const table = document.createElement('table');
+                table.className = 'min-w-full bg-white rounded-lg overflow-hidden shadow-sm';
+                table.innerHTML = `
+                    <thead class="bg-gray-100 border-b">
+                        <tr>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-16">Line</th>
+                            <th class="px-4 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-20">Grade</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200"></tbody>
+                `;
+                
+                const tbody = table.querySelector('tbody');
+                
+                data.details.forEach(item => {
+                    const tr = document.createElement('tr');
+                    const gradeColors = {
+                        'A': 'bg-green-50 text-green-700',
+                        'B': 'bg-yellow-50 text-yellow-700',
+                        'C': 'bg-red-50 text-red-700'
+                    };
+                    const colorClass = gradeColors[item.grade] || 'bg-gray-50 text-gray-700';
+                    
+                    tr.innerHTML = `
+                        <td class="px-4 py-3 text-sm text-gray-500 font-mono text-center border-r">${item.lineIndex}</td>
+                        <td class="px-4 py-3 text-center border-r ${colorClass} font-bold">${item.grade}</td>
+                        <td class="px-4 py-3 text-sm text-gray-700 whitespace-pre-wrap">${item.desc}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+                modalContent.appendChild(table);
+            }
+            
+            detailModal.classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            detailModal.classList.add('hidden');
+        }
+
+        btnCloseModal.addEventListener('click', closeDetailModal);
+        btnModalOk.addEventListener('click', closeDetailModal);
+        detailModal.addEventListener('click', (e) => {
+            if (e.target === detailModal) closeDetailModal();
+        });
+
+        function updateStats(grade) {
+            stats.total++;
+            if (stats[grade] !== undefined) stats[grade]++;
+            
+            document.getElementById('statTotal').textContent = stats.total;
+            document.getElementById('statA').textContent = stats.A;
+            document.getElementById('statB').textContent = stats.B;
+            document.getElementById('statC').textContent = stats.C;
+        }
+
+        function addResultItem(data) {
+            if (resultList.children.length === 1 && resultList.children[0].classList.contains('text-center')) {
+                resultList.innerHTML = '';
+            }
+
+            const gradeColors = {
+                'A': 'bg-green-100 text-green-800 border-green-200',
+                'B': 'bg-yellow-100 text-yellow-800 border-yellow-200',
+                'C': 'bg-red-100 text-red-800 border-red-200'
+            };
+
+            const colorClass = gradeColors[data.grade] || 'bg-gray-100 text-gray-800';
+            
+            const item = document.createElement('div');
+            item.className = 'bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition';
+            
+            // 상세 데이터(details)를 JSON 문자열로 저장 (버튼 클릭 시 사용)
+            // 주의: data.details가 너무 크면 data attribute에 넣기 부담스러울 수 있으나, 
+            // 현재 구조상으로는 전역 변수에 저장하거나 DOM에 저장해야 함.
+            // 여기서는 클로저를 활용해 버튼 이벤트 리스너에 직접 데이터를 바인딩합니다.
+
+            item.innerHTML = `
+                <div class="flex justify-between items-start mb-2">
+                    <div class="font-bold text-gray-800 flex items-center gap-2">
+                        <span class="text-sm bg-gray-100 px-2 py-0.5 rounded text-gray-600">${data.songName}</span>
+                        <a href="/song/${data.songName}" target="_blank" class="hover:text-blue-500"><i class="fas fa-external-link-alt text-xs"></i></a>
+                    </div>
+                    <span class="text-sm font-bold px-3 py-1 rounded-full border ${colorClass}">Grade ${data.grade}</span>
+                </div>
+                <p class="text-sm text-gray-600 bg-gray-50 p-3 rounded mt-2 mb-2 whitespace-pre-line">${data.desc}</p>
+                <div class="flex justify-end">
+                    <button class="btn-detail text-xs bg-indigo-50 text-indigo-600 hover:bg-indigo-100 px-3 py-1 rounded transition flex items-center gap-1">
+                        <i class="fas fa-list-ul"></i> 전체 로그 보기
+                    </button>
+                </div>
+            `;
+            
+            // 상세 보기 버튼 이벤트 연결
+            const btnDetail = item.querySelector('.btn-detail');
+            btnDetail.addEventListener('click', () => openDetailModal(data));
+
+            resultList.prepend(item);
+        }
+
+        async function validateSong(songName) {
+            try {
+                const response = await fetch('/admin/validate/check', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ songName })
+                });
+                
+                if (!response.ok) throw new Error('Network response was not ok');
+                
+                const data = await response.json();
+                updateStats(data.grade);
+                addResultItem(data);
+                return true;
+            } catch (error) {
+                console.error('Error:', error);
+                addResultItem({
+                    songName,
+                    grade: 'ERROR',
+                    desc: '검증 중 오류 발생: ' + error.message
+                });
+                return false;
+            }
+        }
+
+        btnValidateSingle.addEventListener('click', async () => {
+            if (isRunning) return;
+            const songName = songSelect.value;
+            const btnOriginalText = btnValidateSingle.innerHTML;
+            
+            btnValidateSingle.disabled = true;
+            btnValidateSingle.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 처리중...';
+            
+            await validateSong(songName);
+            
+            btnValidateSingle.disabled = false;
+            btnValidateSingle.innerHTML = btnOriginalText;
+        });
+
+        btnValidateAll.addEventListener('click', async () => {
+            if (isRunning) return;
+            
+            const options = Array.from(songSelect.options);
+            const total = options.length;
+            
+            isRunning = true;
+            shouldStop = false;
+            
+            btnValidateAll.classList.add('hidden');
+            btnStop.classList.remove('hidden');
+            btnValidateSingle.disabled = true;
+            progressArea.classList.remove('hidden');
+            
+            // 초기화
+            stats.total = 0; stats.A = 0; stats.B = 0; stats.C = 0;
+            document.getElementById('statTotal').textContent = 0;
+            
+            for (let i = 0; i < total; i++) {
+                if (shouldStop) break;
+                
+                const option = options[i];
+                const percent = Math.round(((i) / total) * 100);
+                
+                progressText.textContent = `검증 중 (${i + 1}/${total}): ${option.text}`;
+                progressBar.style.width = `${percent}%`;
+                progressPercent.textContent = `${percent}%`;
+                
+                await validateSong(option.value);
+                
+                // 스크롤을 맨 위로 유지하여 최신 결과 확인
+                // resultList.scrollTop = 0; 
+            }
+            
+            isRunning = false;
+            btnValidateAll.classList.remove('hidden');
+            btnStop.classList.add('hidden');
+            btnValidateSingle.disabled = false;
+            progressBar.style.width = '100%';
+            progressPercent.textContent = '100%';
+            progressText.textContent = '완료됨';
+        });
+
+        btnStop.addEventListener('click', () => {
+            shouldStop = true;
+            progressText.textContent = '중지 중...';
+            btnStop.disabled = true;
+        });
+        
+        document.getElementById('btnClearLog').addEventListener('click', () => {
+            resultList.innerHTML = '<div class="text-center text-gray-400 py-8 text-sm">검증을 시작하면 결과가 여기에 표시됩니다.</div>';
+            stats.total = 0; stats.A = 0; stats.B = 0; stats.C = 0;
+            ['statTotal', 'statA', 'statB', 'statC'].forEach(id => document.getElementById(id).textContent = '0');
+        });
+    </script>
+</body>
+</html>
+

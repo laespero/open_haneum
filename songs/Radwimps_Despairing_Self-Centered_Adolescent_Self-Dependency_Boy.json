@@ -1061,7 +1061,7 @@
           "XR": "이에 에 카에루"
         }
       ],
-      "O0": "枯れ果てる世界なんて見たくない 僕の心は君のもとへ"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">枯</span><span class=\"rt\">か</span></span>れ<span class=\"ruby\"><span class=\"rb\">果</span><span class=\"rt\">は</span></span>てる<span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>なんて<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>たくない <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>の<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>は<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>のもとへ"
     },
     {
       "T0": "必要以上に溢れてゆく人 減らされるのなら 僕も消されちゃうの?",
@@ -2113,7 +2113,7 @@
           "XR": "마도 오 아케타 마마 데 네타"
         }
       ],
-      "O0": "枯れ果てる世界なんて見たくない 僕の心は揺れたままで"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">枯</span><span class=\"rt\">か</span></span>れ<span class=\"ruby\"><span class=\"rb\">果</span><span class=\"rt\">は</span></span>てる<span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>なんて<span class=\"ruby\"><span class=\"rb\">見</span><span class=\"rt\">み</span></span>たくない <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>の<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>は<span class=\"ruby\"><span class=\"rb\">揺</span><span class=\"rt\">ゆ</span></span>れたままで"
     },
     {
       "T0": "誰のため? なんのため? 僕のため?",

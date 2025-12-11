@@ -4318,7 +4318,7 @@
           "XR": "나미다 가 데루 호도 우레시캇타"
         }
       ],
-      "O0": "そんなお前の父ちゃんと母ちゃんの 心と心くっつきそうなほど"
+      "O0": "そんなお<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>の<span class=\"ruby\"><span class=\"rb\">父</span><span class=\"rt\">とう</span></span>ちゃんと<span class=\"ruby\"><span class=\"rb\">母</span><span class=\"rt\">かあ</span></span>ちゃんの <span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>と<span class=\"ruby\"><span class=\"rb\">心</span><span class=\"rt\">こころ</span></span>くっつきそうなほど"
     },
     {
       "T0": "六星占術だろうと 大殺界だろうと 俺が木星人で君が火星人だろうと",

@@ -4250,7 +4250,7 @@
           "XR": "다이조오부 다 요"
         }
       ],
-      "O0": "あぁ 嘘が嫌いな君は がっかりの世界は今日で終わるよ"
+      "O0": "あぁ <span class=\"ruby\"><span class=\"rb\">嘘</span><span class=\"rt\">うそ</span></span>が<span class=\"ruby\"><span class=\"rb\">嫌</span><span class=\"rt\">きら</span></span>いな<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>は がっかりの<span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>は<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>で<span class=\"ruby\"><span class=\"rb\">終</span><span class=\"rt\">お</span></span>わるよ"
     },
     {
       "T0": "いつだって愛は必死さ 甘くなんてないのさ 甘いのは愛が見せる",

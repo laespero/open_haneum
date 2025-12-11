@@ -2721,7 +2721,7 @@
           "XR": "벤쿄오 스레바, 고오카쿠 스루"
         }
       ],
-      "O0": "もしもあの時僕が誘惑から命からがら逃げ切れば"
+      "O0": "もしもあの<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span><span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>が<span class=\"ruby\"><span class=\"rb\">誘</span><span class=\"rt\">ゆう</span></span><span class=\"ruby\"><span class=\"rb\">惑</span><span class=\"rt\">わく</span></span>から<span class=\"ruby\"><span class=\"rb\">命</span><span class=\"rt\">いのち</span></span>からがら<span class=\"ruby\"><span class=\"rb\">逃</span><span class=\"rt\">に</span></span>げ<span class=\"ruby\"><span class=\"rb\">切</span><span class=\"rt\">き</span></span>れば"
     },
     {
       "T0": "意外としっかりした君の事だ ちゃんと真面目なお人を捕まえた事だろう",

@@ -1901,7 +1901,7 @@
           "XR": "아메 나라 이카나이"
         }
       ],
-      "O0": "今日を笑って終えてくれたなら"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>を<span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>って<span class=\"ruby\"><span class=\"rb\">終</span><span class=\"rt\">お</span></span>えてくれたなら"
     },
     {
       "T0": "してもしなくてもいいんだよ",

@@ -4937,7 +4937,7 @@
           "XR": "츠카레타 케도, 간바루"
         }
       ],
-      "O0": "俺たちってただの人間って言われて終わりかもしんないけど"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">俺</span><span class=\"rt\">おれ</span></span>たちってただの<span class=\"ruby\"><span class=\"rb\">人間</span><span class=\"rt\">にんげん</span></span>って<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>われて<span class=\"ruby\"><span class=\"rb\">終</span><span class=\"rt\">お</span></span>わりかもしんないけど"
     },
     {
       "T0": "死んだ後の世界ってのを 僕は本当に信じたいよ",

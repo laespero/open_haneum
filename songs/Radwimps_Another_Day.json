@@ -5237,7 +5237,7 @@
           "XR": "카레 와 토츠젠 아라와레타"
         }
       ],
-      "O0": "書きなぐり続けて 10余年の日々が そしてその少女は 目の前に現れた"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">書</span><span class=\"rt\">か</span></span>きなぐり<span class=\"ruby\"><span class=\"rb\">続</span><span class=\"rt\">つづ</span></span>けて 10<span class=\"ruby\"><span class=\"rb\">余年</span><span class=\"rt\">よねん</span></span>の<span class=\"ruby\"><span class=\"rb\">日々</span><span class=\"rt\">ひび</span></span>が そしてその<span class=\"ruby\"><span class=\"rb\">少女</span><span class=\"rt\">しょうじょ</span></span>は <span class=\"ruby\"><span class=\"rb\">目</span><span class=\"rt\">め</span></span>の<span class=\"ruby\"><span class=\"rb\">前</span><span class=\"rt\">まえ</span></span>に<span class=\"ruby\"><span class=\"rb\">現</span><span class=\"rt\">あらわ</span></span>れた"
     }
   ],
   "failedLines": []

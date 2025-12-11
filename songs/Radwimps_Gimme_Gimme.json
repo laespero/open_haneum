@@ -1938,7 +1938,7 @@
           "XR": "코레 와 혼 데ス"
         }
       ],
-      "O0": "あの時の声は 僕の産声は"
+      "O0": "あの<span class=\"ruby\"><span class=\"rb\">時</span><span class=\"rt\">とき</span></span>の<span class=\"ruby\"><span class=\"rb\">声</span><span class=\"rt\">こえ</span></span>は <span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>の<span class=\"ruby\"><span class=\"rb\">産声</span><span class=\"rt\">うぶごえ</span></span>は"
     },
     {
       "T0": "喜んでたのか 悲しんでたのかはまだ…",

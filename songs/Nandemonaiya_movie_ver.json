@@ -1204,7 +1204,7 @@
           "XR": "잇쇼 니 이요오카"
         }
       ],
-      "O0": "もう少しだけ くっついていようか"
+      "O0": "もう<span class=\"ruby\"><span class=\"rb\">少</span><span class=\"rt\">すこ</span></span>しだけ くっついていようか"
     },
     {
       "T0": "やけに透き通っていたりしたんだ",
@@ -1788,7 +1788,7 @@
     },
     {
       "T0": "たった一つといつか 交換こしよう",
-      "O0": "たった一つといつか 交換こしよう",
+      "O0": "たった<span class=\"ruby\"><span class=\"rb\">一</span><span class=\"rt\">ひと</span></span>つといつか <span class=\"ruby\"><span class=\"rb\">交換</span><span class=\"rt\">こうかん</span></span>こしよう",
       "C0": "Please translate the surrounding context (CX) into Korean.",
       "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 'たった一つ'로, '단 하나'라는 의미를 나타냅니다. 두 번째 절은 'いつか 交換こしよう'로, '언젠가 교환하자'라는 의미를 나타냅니다. 전체적으로 단 하나의 것을 언젠가 교환하자는 제안을 표현하고 있습니다.",
       "K0": "단 하나의 것을 언젠가 교환하자.",
@@ -4127,7 +4127,7 @@
           "XR": "카레 와 텐시 노 요오 다"
         }
       ],
-      "O0": "君のいない 世界など 笑うことない サンタのよう"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>のいない <span class=\"ruby\"><span class=\"rb\">世界</span><span class=\"rt\">せかい</span></span>など <span class=\"ruby\"><span class=\"rb\">笑</span><span class=\"rt\">わら</span></span>うことない サンタのよう"
     },
     {
       "T0": "君のいない 世界にも 何かの意味はきっとあって",

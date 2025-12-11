@@ -28,7 +28,7 @@ process.on('uncaughtException', (err) => {
 
 // 사용자가 API 제공자를 선택할 수 있는 변수
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
-const API_PROVIDER_CHOICE = 'openrouter'; 
+const API_PROVIDER_CHOICE = 'deepseek'; 
 
 console.log('OPENROUTER API Key:', process.env.OPENROUTER_API_KEY);
 console.log('DeepSeek API Key:', process.env.DEEPSEEK_API_KEY);
@@ -664,8 +664,8 @@ async function processTranslation(title) {
             const parsedResult = JSON.parse(translatedLine);
             
             if (parsedResult && parsedResult.K0) {
-                // 저장할 때는 원본(태그 포함) T0를 O0에 저장 (기존 O0가 있으면 유지)
-                parsedResult.O0 = parsedResult.O0 || context.T0;
+                // 저장할 때는 원본(태그 포함) T0를 O0에 강제 저장 (LLM 응답 무시 및 소실 방지)
+                parsedResult.O0 = context.T0;
                 parsedTranslatedLines.push(parsedResult);
             } else {
                 failedLines.push(context);
@@ -1265,7 +1265,7 @@ app.post('/retry-translation/:title', async (req, res) => {
 
             const parsedResult = JSON.parse(translatedLine);
             if (parsedResult && parsedResult.K0) {
-                parsedResult.O0 = parsedResult.O0 || context.T0;
+                parsedResult.O0 = context.T0;
                 parsedTranslatedLines.push(parsedResult);
             } else {
                 failedLines.push(context);
@@ -1426,7 +1426,16 @@ app.post('/retry-line/:title', async (req, res) => {
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
-        parsedResult.O0 = parsedResult.O0 || thatLine.T0;
+
+        if (parsedResult.error) {
+             throw new Error(`AI 응답 에러: ${parsedResult.error}`);
+        }
+
+        if (!parsedResult.T0) {
+            throw new Error('AI 응답 데이터에 필수 필드(T0)가 누락되었습니다.');
+        }
+
+        parsedResult.O0 = thatLine.T0;
         const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
@@ -1442,7 +1451,8 @@ app.post('/retry-line/:title', async (req, res) => {
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         error.status = 500;
-        error.message = '특정 라인 재번역 중 오류 발생';
+        // 원본 에러 메시지를 포함하여 클라이언트에 전달
+        error.message = `특정 라인 재번역 중 오류 발생: ${error.message}`;
         throw error;
     }
 });
@@ -1484,7 +1494,16 @@ app.post('/correct-with-message/:title', async (req, res) => {
 
         const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
         const parsedResult = JSON.parse(translatedLine);
-        parsedResult.O0 = parsedResult.O0 || thatLine.T0;
+
+        if (parsedResult.error) {
+             throw new Error(`AI 응답 에러: ${parsedResult.error}`);
+        }
+
+        if (!parsedResult.T0) {
+            throw new Error('AI 응답 데이터에 필수 필드(T0)가 누락되었습니다.');
+        }
+
+        parsedResult.O0 = thatLine.T0;
         const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
@@ -1500,7 +1519,8 @@ app.post('/correct-with-message/:title', async (req, res) => {
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         error.status = 500;
-        error.message = '특정 라인 재번역 중 오류 발생';
+        // 원본 에러 메시지를 포함하여 클라이언트에 전달
+        error.message = `특정 라인 재번역 중 오류 발생: ${error.message}`;
         throw error;
     }
 
@@ -2429,6 +2449,129 @@ app.get('/admin', async (req, res) => {
     }
 });
 
+// 관리자 - 데이터 퀄리티 검증 페이지
+app.get('/admin/validate', (req, res) => {
+    try {
+        const songs = songCache.map(s => ({ 
+            name: s.name, 
+            title: s.kor_name || s.name 
+        })).sort((a, b) => a.title.localeCompare(b.title));
+        
+        res.render('validate', { songs });
+    } catch (error) {
+        console.error('검증 페이지 렌더링 오류:', error);
+        res.status(500).send('서버 오류가 발생했습니다.');
+    }
+});
+
+// 관리자 - 노래 데이터 검증 API
+app.post('/admin/validate/check', async (req, res) => {
+    const { songName } = req.body;
+    if (!songName) return res.status(400).json({ error: '노래 이름이 필요합니다.' });
+    
+    const song = songCacheMap.get(songName);
+    if (!song) return res.status(404).json({ error: '노래를 찾을 수 없습니다.' });
+    
+    if (!song.translatedLines || song.translatedLines.length === 0) {
+        return res.json({ grade: 'C', desc: '번역 데이터가 없습니다.', songName: song.kor_name || songName });
+    }
+    
+    // 전체 라인 개별 처리 (1라인당 1개 요청: 번역 검증만 수행)
+    const allLines = song.translatedLines;
+    console.log(`[${songName}] 전체 ${allLines.length}개 라인 개별 검증 시작 (번역 검증만 수행)`);
+
+    try {
+        const linePromises = allLines.map(async (line, idx) => {
+            const lineIndex = idx + 1;
+            const translationText = line.K0;
+
+            // 번역 검증 프롬프트
+            const transPrompt = `다음 노래 가사의 한국어 번역이 정확한지 평가하여 JSON으로 응답하세요.
+
+[가사 정보]
+원문: ${line.T0}
+한국어 번역: ${translationText}
+
+[평가 기준]
+A. 자연스럽고 정확함
+B. 의미는 통하나 어색함
+C. 오역
+
+[출력 JSON 형식]
+{ "grade": "A/B/C", "desc": "평가 사유" }`;
+
+            try {
+                // 번역 검증 API 호출
+                const transResult = await openai.chat.completions.create({
+                    messages: [
+                        { role: "system", content: "You are a Japanese-Korean translation validator. Output valid JSON only." },
+                        { role: "user", content: transPrompt }
+                    ],
+                    model: chatModel,
+                    response_format: { type: "json_object" }
+                });
+
+                const transData = JSON.parse(transResult.choices[0].message.content);
+
+                return {
+                    lineIndex,
+                    grade: transData.grade || 'B',
+                    desc: transData.desc || (transData.grade === 'A' ? "적절함" : "사유 없음")
+                };
+
+            } catch (e) {
+                console.error(`Line ${lineIndex} Error:`, e);
+                return {
+                    lineIndex,
+                    grade: 'B',
+                    desc: 'API 호출 오류: ' + e.message
+                };
+            }
+        });
+
+        // 모든 라인 병렬 실행 및 결과 정렬
+        const results = (await Promise.all(linePromises)).sort((a, b) => a.lineIndex - b.lineIndex);
+
+        // 결과 집계
+        let finalGrade = 'A';
+        let problemCount = 0;
+        let criticalCount = 0;
+        const problems = [];
+
+        results.forEach(r => {
+            if (r.grade === 'C') {
+                finalGrade = 'C';
+                criticalCount++;
+                problems.push(`[Line ${r.lineIndex}] (C) ${r.desc}`);
+            } else if (r.grade === 'B') {
+                if (finalGrade !== 'C') finalGrade = 'B';
+                problemCount++;
+                problems.push(`[Line ${r.lineIndex}] (B) ${r.desc}`);
+            }
+        });
+
+        let summaryDesc = "";
+        if (finalGrade === 'A') {
+            summaryDesc = "모든 라인이 적절하게 번역되었습니다.";
+        } else {
+            summaryDesc = `총 ${results.length}라인 중 C등급 ${criticalCount}개, B등급 ${problemCount}개 발견.\n`;
+            summaryDesc += "주요 문제:\n" + problems.slice(0, 3).join('\n');
+            if (problems.length > 3) summaryDesc += `\n...외 ${problems.length - 3}건`;
+        }
+        
+        res.json({
+            grade: finalGrade,
+            desc: summaryDesc,
+            songName: song.kor_name || songName,
+            details: results 
+        });
+        
+    } catch (error) {
+        console.error('검증 API 오류:', error);
+        res.status(500).json({ error: 'LLM 검증 중 오류가 발생했습니다.' });
+    }
+});
+
 // 캐시 수동 갱신 라우트
 app.post('/admin/reload-cache', async (req, res) => {
     const now = Date.now();
@@ -2526,7 +2669,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                             const parsedResult = JSON.parse(translatedLine);
                             
                             if (parsedResult && parsedResult.K0) {
-                                parsedResult.O0 = parsedResult.O0 || invalidLine.context.T0;
+                                parsedResult.O0 = invalidLine.context.T0;
                                 songData.translatedLines[invalidLine.index] = parsedResult;
                                 songSuccessCount++;
                             } else {
@@ -2572,7 +2715,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                                 const parsedResult = JSON.parse(translatedLine);
                                 
                                 if (parsedResult && parsedResult.K0) {
-                                    parsedResult.O0 = parsedResult.O0 || contextObj.T0;
+                                    parsedResult.O0 = contextObj.T0;
                                     // 성공 시 translatedLines에 추가
                                     songData.translatedLines.push(parsedResult);
                                     songSuccessCount++;

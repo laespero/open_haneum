@@ -1441,7 +1441,7 @@
           "XR": "네코 가 이루"
         }
       ],
-      "O0": "恨んでる人がいる"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">恨</span><span class=\"rt\">うら</span></span>んでる<span class=\"ruby\"><span class=\"rb\">人</span><span class=\"rt\">ひと</span></span>がいる"
     },
     {
       "T0": "悲しいことは尽きないけど",

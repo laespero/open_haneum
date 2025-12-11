@@ -1669,7 +1669,7 @@
           "XR": "하루 노 코로"
         }
       ],
-      "O0": "美しく実る稲穂に 愛を知る 夢も終わる頃"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">美</span><span class=\"rt\">うつく</span></span>しく<span class=\"ruby\"><span class=\"rb\">実</span><span class=\"rt\">みの</span></span>る<span class=\"ruby\"><span class=\"rb\">稲穂</span><span class=\"rt\">いなほ</span></span>に <span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>を<span class=\"ruby\"><span class=\"rb\">知</span><span class=\"rt\">し</span></span>る <span class=\"ruby\"><span class=\"rb\">夢</span><span class=\"rt\">ゆめ</span></span>も<span class=\"ruby\"><span class=\"rb\">終</span><span class=\"rt\">お</span></span>わる<span class=\"ruby\"><span class=\"rb\">頃</span><span class=\"rt\">ころ</span></span>"
     },
     {
       "T0": "誰にも会えない気がしてた クジ引きだらけの街にいて",

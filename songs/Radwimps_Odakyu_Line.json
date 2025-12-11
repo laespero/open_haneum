@@ -2516,7 +2516,7 @@
           "XR": "다이죠오부 다 요"
         }
       ],
-      "O0": "いっそ今日はいつもと反対電車に乗り どこまでも行こうよ"
+      "O0": "いっそ<span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>はいつもと<span class=\"ruby\"><span class=\"rb\">反対</span><span class=\"rt\">はんたい</span></span><span class=\"ruby\"><span class=\"rb\">電車</span><span class=\"rt\">でんしゃ</span></span>に<span class=\"ruby\"><span class=\"rb\">乗</span><span class=\"rt\">の</span></span>り どこまでも<span class=\"ruby\"><span class=\"rb\">行</span><span class=\"rt\">い</span></span>こうよ"
     },
     {
       "T0": "日々 磨き続けた演技は もしかしたら自分を騙すためだったのかもなんて なんて",

@@ -1797,7 +1797,7 @@
           "XR": "도아 오 아케나"
         }
       ],
-      "O0": "待ってました お出ましだ ついに来た 出番だ 道あけな"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">待</span><span class=\"rt\">ま</span></span>ってました お<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>ましだ ついに<span class=\"ruby\"><span class=\"rb\">来</span><span class=\"rt\">き</span></span>た <span class=\"ruby\"><span class=\"rb\">出番</span><span class=\"rt\">でばん</span></span>だ <span class=\"ruby\"><span class=\"rb\">道</span><span class=\"rt\">みち</span></span>あけな"
     },
     {
       "T0": "違いなどないって? んなわけないって",

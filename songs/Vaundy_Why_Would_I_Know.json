@@ -3539,7 +3539,7 @@
           "XR": "아메 가 후루 다로오"
         }
       ],
-      "O0": "僕にはどうしてわかるんだろう"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>にはどうしてわかるんだろう"
     }
   ],
   "failedLines": []

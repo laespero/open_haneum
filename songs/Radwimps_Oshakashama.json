@@ -4611,7 +4611,7 @@
           "XR": "하야쿠 카에로오"
         }
       ],
-      "O0": "さぁ有耶しよう そんで無耶しよう 二つ合わさって有耶無耶にしよう"
+      "O0": "さぁ<span class=\"ruby\"><span class=\"rb\">有耶</span><span class=\"rt\">うや</span></span>しよう そんで<span class=\"ruby\"><span class=\"rb\">無耶</span><span class=\"rt\">むや</span></span>しよう <span class=\"ruby\"><span class=\"rb\">二</span><span class=\"rt\">ふた</span></span>つ<span class=\"ruby\"><span class=\"rb\">合</span><span class=\"rt\">あ</span></span>わさって<span class=\"ruby\"><span class=\"rb\">有耶無耶</span><span class=\"rt\">うやむや</span></span>にしよう"
     },
     {
       "T0": "もしもこの僕が神様ならば 全てを決めてもいいなら",

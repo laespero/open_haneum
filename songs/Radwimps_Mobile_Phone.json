@@ -3081,7 +3081,7 @@
           "XR": "카레 가 쿠루 코토 와 시라나캇타"
         }
       ],
-      "O0": "こんなものがなければ 今日も君はいないこと"
+      "O0": "こんなものがなければ <span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>も<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>はいないこと"
     },
     {
       "T0": "まるで僕の歴史を携帯しながら生きているような",

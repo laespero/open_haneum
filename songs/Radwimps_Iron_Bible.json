@@ -6119,7 +6119,7 @@
           "XR": "데에타 가 오오바아후로오 시타"
         }
       ],
-      "O0": "誰のものとも言えぬもの 名札もない宝物でこの世はオーバーフロー"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>のものとも<span class=\"ruby\"><span class=\"rb\">言</span><span class=\"rt\">い</span></span>えぬもの <span class=\"ruby\"><span class=\"rb\">名札</span><span class=\"rt\">なふだ</span></span>もない<span class=\"ruby\"><span class=\"rb\">宝物</span><span class=\"rt\">たからもの</span></span>でこの<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>はオーバーフロー"
     }
   ],
   "failedLines": []

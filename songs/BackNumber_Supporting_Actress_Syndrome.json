@@ -642,7 +642,7 @@
           "XR": "쿄오 와 아츠이 네"
         }
       ],
-      "O0": "愛していますと叫ぶ事も 時代遅れみたいだね"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">愛</span><span class=\"rt\">あい</span></span>していますと<span class=\"ruby\"><span class=\"rb\">叫</span><span class=\"rt\">さけ</span></span>ぶ<span class=\"ruby\"><span class=\"rb\">事</span><span class=\"rt\">こと</span></span>も <span class=\"ruby\"><span class=\"rb\">時代遅</span><span class=\"rt\">じだいおく</span></span>れみたいだね"
     },
     {
       "T0": "都合が良くって頭の悪い女を演じてあげる",

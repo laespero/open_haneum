@@ -4133,7 +4133,7 @@
           "XR": "다이죠부 다 요"
         }
       ],
-      "O0": "飛ばし読みでいいから ここからが僕だよ"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">飛</span><span class=\"rt\">と</span></span>ばし<span class=\"ruby\"><span class=\"rb\">読</span><span class=\"rt\">よ</span></span>みでいいから ここからが<span class=\"ruby\"><span class=\"rb\">僕</span><span class=\"rt\">ぼく</span></span>だよ"
     },
     {
       "T0": "「はじめまして」なんてさ 遥か彼方へと追いやって",
