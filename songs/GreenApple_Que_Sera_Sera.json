@@ -3148,7 +3148,7 @@
           "XR": "카레 노 세이 데 싯파이 시마시타"
         }
       ],
-      "O0": "何のせい?誰のせい?"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なに</span></span>のせい?<span class=\"ruby\"><span class=\"rb\">誰</span><span class=\"rt\">だれ</span></span>のせい?"
     },
     {
       "T0": "ちゃんと大切だと思えるから",

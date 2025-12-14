@@ -1749,7 +1749,7 @@
           "XR": "와타시 노 토모다치 데스"
         }
       ],
-      "O0": "怖がらないで 貴方は貴方の"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">怖</span><span class=\"rt\">こわ</span></span>がらないで <span class=\"ruby\"><span class=\"rb\">貴方</span><span class=\"rt\">あなた</span></span>は<span class=\"ruby\"><span class=\"rb\">貴方</span><span class=\"rt\">あなた</span></span>の"
     },
     {
       "T0": "言葉にするには勿体無いな",

@@ -1,0 +1,2619 @@
+import { KR_MSG } from './messages.js';
+
+export const messages = [
+  {
+    role: "system",
+    content: KR_MSG
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">駄目駄目駄目</span><span class=\"rt\">だめだめだめ</span></span>",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">駄目駄目駄目</span><span class=\"rt\">だめだめだめ</span></span> <span class=\"ruby\"><span class=\"rb\">脳</span><span class=\"rt\">のう</span></span>みその<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>から「やめろ<span class=\"ruby\"><span class=\"rb\">馬鹿</span><span class=\"rt\">ばか</span></span>」と<span class=\"ruby\"><span class=\"rb\">喚</span><span class=\"rt\">わめ</span></span>くモラリティ"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "貫いて",
+      "C0": "화살을 꽂아서 관통해 여기 약점",
+      "G0": "이 문장은 '貫いて'라는 동사 하나로 구성된 명령형 또는 권유형 문장입니다. '貫く(つらぬく)'의 연용형 '貫き(つらぬき)'가 음편되어 '貫いて'가 된 형태로, '~해서'라는 의미의 접속사 역할을 합니다. 전체적으로 '관통해서'라는 의미를 가지며, 앞뒤 문맥과 연결되어 완전한 문장을 이룹니다.",
+      "K0": "관통해서",
+      "I0": "tsuranuite",
+      "R0": "츠라누이테",
+      "LI": [
+        {
+          "T1": "貫いて",
+          "K1": "관통해서",
+          "I1": "tsuranuite",
+          "R1": "츠라누이테",
+          "E1": "'관통하다'라는 의미의 동사 '貫く(つらぬく)'의 연용형이 음편된 형태입니다.",
+          "T2": "貫く",
+          "K2": "관통하다",
+          "I2": "tsuranuku",
+          "R2": "츠라누쿠",
+          "XE": "矢が敵を貫いて通った。",
+          "XK": "화살이 적을 관통해서 지나갔다.",
+          "XI": "ya ga teki o tsuranuitetootta",
+          "XR": "야 가 테키 오 츠라누이테 토옷타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">脳</span><span class=\"rt\">のう</span></span>みその<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>から「やめろ<span class=\"ruby\"><span class=\"rb\">馬鹿</span><span class=\"rt\">ばか</span></span>」と<span class=\"ruby\"><span class=\"rb\">喚</span><span class=\"rt\">わめ</span></span>くモラリティ",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">駄目駄目駄目</span><span class=\"rt\">だめだめだめ</span></span> <span class=\"ruby\"><span class=\"rb\">脳</span><span class=\"rt\">のう</span></span>みその<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>から「やめろ<span class=\"ruby\"><span class=\"rb\">馬鹿</span><span class=\"rt\">ばか</span></span>」と<span class=\"ruby\"><span class=\"rb\">喚</span><span class=\"rt\">わめ</span></span>くモラリティ ダーリンベイビーダーリン"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "矢を刺して",
+      "C0": "말할 이유가 없네. 화살을 꽂아. 꿰뚫어.",
+      "G0": "이 문장은 목적어(矢を) + 동사(刺して)로 구성된 명령형 문장입니다. '矢を'는 '화살을'이라는 목적어를 나타내며, '刺して'는 '꽂아'라는 동사로, 상대방에게 화살을 꽂으라고 지시하는 의미입니다.",
+      "K0": "화살을 꽂아.",
+      "I0": "ya o sasite",
+      "R0": "야 오 사시테",
+      "LI": [
+        {
+          "T1": "矢",
+          "K1": "화살",
+          "I1": "ya",
+          "R1": "야",
+          "E1": "활에서 쏘는 무기를 의미하는 명사입니다.",
+          "T2": "矢",
+          "K2": "화살",
+          "I2": "ya",
+          "R2": "야",
+          "XE": "矢が的に当たった。",
+          "XK": "화살이 과녁에 맞았다.",
+          "XI": "ya ga mato ni atatta",
+          "XR": "야 가 마토 니 아탓타"
+        },
+        {
+          "T1": "を",
+          "K1": "~을",
+          "I1": "o",
+          "R1": "오",
+          "E1": "목적격 조사로, 동사의 대상이 되는 사물을 나타냅니다.",
+          "T2": "を",
+          "K2": "~을",
+          "I2": "o",
+          "R2": "오",
+          "XE": "本を読む。",
+          "XK": "책을 읽다.",
+          "XI": "hon o yomu",
+          "XR": "혼 오 요무"
+        },
+        {
+          "T1": "刺して",
+          "K1": "꽂아",
+          "I1": "sasite",
+          "R1": "사시테",
+          "E1": "'찌르다', '꽂다'라는 의미의 동사 '刺す'의 연용형(て형)으로, 명령이나 부탁의 의미를 담고 있습니다.",
+          "T2": "刺す",
+          "K2": "찌르다",
+          "I2": "sasu",
+          "R2": "사스",
+          "XE": "針を刺して縫う。",
+          "XK": "바늘을 꽂아 꿰매다.",
+          "XI": "hari o sasite nuu",
+          "XR": "하리 오 사시테 누우"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "ダーリンベイビーダーリン",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">脳</span><span class=\"rt\">のう</span></span>みその<span class=\"ruby\"><span class=\"rb\">中</span><span class=\"rt\">なか</span></span>から「やめろ<span class=\"ruby\"><span class=\"rb\">馬鹿</span><span class=\"rt\">ばか</span></span>」と<span class=\"ruby\"><span class=\"rb\">喚</span><span class=\"rt\">わめ</span></span>くモラリティ ダーリンベイビーダーリン <span class=\"ruby\"><span class=\"rb\">半端</span><span class=\"rt\">はんぱ</span></span>なくラブ！ときらめき<span class=\"ruby\"><span class=\"rb\">浮</span><span class=\"rt\">う</span></span>き<span class=\"ruby\"><span class=\"rb\">足立</span><span class=\"rt\">あしだ</span></span>つフィロソフィ"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "気づけば蕩尽",
+      "C0": "흩뿌리는 광란의 마음 깨닫고 보니 탕진 이 세상에 태어난 네가 나쁘다",
+      "G0": "이 문장은 두 개의 절로 구성되어 있습니다. 첫 번째 절은 '気づけば'로, '気づく(깨닫다)'의 가정형에 접속사 'ば(만약 ~하면)'가 결합된 형태로 '깨닫고 보면'이라는 의미입니다. 두 번째 절은 '蕩尽'으로, '재산을 모두 탕진하다'라는 의미를 가진 명사입니다. 전체적으로 갑자기 자신의 행동을 깨달았을 때 이미 모든 것을 탕진해버렸음을 나타내는 표현입니다.",
+      "K0": "깨닫고 보니 탕진",
+      "I0": "kizukeba tōjin",
+      "R0": "키즈케바 토오진",
+      "LI": [
+        {
+          "T1": "気づけば",
+          "K1": "깨닫고 보면",
+          "I1": "kizukeba",
+          "R1": "키즈케바",
+          "E1": "'気づく(깨닫다)' 동사의 가정형으로, 어떤 행동을 한 후에 그것을 깨달았을 때를 나타냅니다.",
+          "T2": "気づく",
+          "K2": "깨닫다",
+          "I2": "kizuku",
+          "R2": "키즈쿠",
+          "XE": "気づけばもう夜だった。",
+          "XK": "정신을 차려 보니 벌써 밤이었다.",
+          "XI": "kizukeba mō yoru datta",
+          "XR": "키즈케바 모오 요루 닷타"
+        },
+        {
+          "T1": "蕩尽",
+          "K1": "탕진",
+          "I1": "tōjin",
+          "R1": "토오진",
+          "E1": "재산이나 돈을 모두 써버리는 것을 의미하는 명사입니다.",
+          "T2": "蕩尽",
+          "K2": "탕진",
+          "I2": "tōjin",
+          "R2": "토오진",
+          "XE": "彼は財産を蕩尽した。",
+          "XK": "그는 재산을 탕진했다.",
+          "XI": "kare wa zaisan o tōjin shita",
+          "XR": "카레 와 자이산 오 토오진 시타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">半端</span><span class=\"rt\">はんぱ</span></span>なくラブ！ときらめき<span class=\"ruby\"><span class=\"rb\">浮</span><span class=\"rt\">う</span></span>き<span class=\"ruby\"><span class=\"rb\">足立</span><span class=\"rt\">あしだ</span></span>つフィロソフィ",
+      "C0": "ダーリンベイビーダーリン <span class=\"ruby\"><span class=\"rb\">半端</span><span class=\"rt\">はんぱ</span></span>なくラブ！ときらめき<span class=\"ruby\"><span class=\"rb\">浮</span><span class=\"rt\">う</span></span>き<span class=\"ruby\"><span class=\"rb\">足立</span><span class=\"rt\">あしだ</span></span>つフィロソフィ <span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>ぬほど<span class=\"ruby\"><span class=\"rb\">可愛</span><span class=\"rt\">かわい</span></span>い<span class=\"ruby\"><span class=\"rb\">上目遣</span><span class=\"rt\">うわめづか</span></span>い"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "アイリスアウト",
+      "C0": "경동맥에서 아이 러브 유가 뿜어져 나와, 아이리스 아웃. 도대체 이 감정을 어떻게 해야 할까?",
+      "G0": "이 문장은 일본어 외래어 표현으로, 'アイリスアウト'는 영어 'iris out'에서 온 영화 용어입니다. 이는 장면 전환 기법 중 하나로, 화면이 점점 원형으로 줄어들며 암전되는 효과를 의미합니다. 문맥상 감정의 폭발이나 절정 이후 장면이 전환되는 듯한 심리적 표현으로 사용되고 있습니다.",
+      "K0": "아이리스 아웃",
+      "I0": "airisu auto",
+      "R0": "아이리스 아웃",
+      "LI": [
+        {
+          "T1": "アイリス",
+          "K1": "아이리스",
+          "I1": "airisu",
+          "R1": "아이리스",
+          "E1": "영어 'iris'에서 온 외래어로, 원래는 눈의 홍채를 의미하지만, 영화 용어로는 화면 전환 기법 중 하나인 '아이리스 인/아웃'에서 사용됩니다.",
+          "T2": "アイリス",
+          "K2": "아이리스",
+          "I2": "airisu",
+          "R2": "아이리스",
+          "XE": "アイリスショットは古い映画でよく使われた。",
+          "XK": "아이리스 샷은 옛날 영화에서 자주 사용되었다.",
+          "XI": "airisu shotto wa furui eiga de yoku tsukawareta",
+          "XR": "아이리스 숏토 와 후루이 에이가 데 요쿠 츠카와레타"
+        },
+        {
+          "T1": "アウト",
+          "K1": "아웃",
+          "I1": "auto",
+          "R1": "아웃",
+          "E1": "영어 'out'에서 온 외래어로, 여기서는 '아이리스 아웃'이라는 복합어로 사용되어 장면이 암전되며 전환되는 효과를 의미합니다.",
+          "T2": "アウト",
+          "K2": "아웃",
+          "I2": "auto",
+          "R2": "아웃",
+          "XE": "試合でアウトになった。",
+          "XK": "경기에서 아웃되었다.",
+          "XI": "shiai de auto ni natta",
+          "XR": "시아이 데 아웃토 니 낫타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>ぬほど<span class=\"ruby\"><span class=\"rb\">可愛</span><span class=\"rt\">かわい</span></span>い<span class=\"ruby\"><span class=\"rb\">上目遣</span><span class=\"rt\">うわめづか</span></span>い",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">半端</span><span class=\"rt\">はんぱ</span></span>なくラブ！ときらめき<span class=\"ruby\"><span class=\"rb\">浮</span><span class=\"rt\">う</span></span>き<span class=\"ruby\"><span class=\"rb\">足立</span><span class=\"rt\">あしだ</span></span>つフィロソフィ <span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>ぬほど<span class=\"ruby\"><span class=\"rb\">可愛</span><span class=\"rt\">かわい</span></span>い<span class=\"ruby\"><span class=\"rb\">上目遣</span><span class=\"rt\">うわめづか</span></span>い なにがし<span class=\"ruby\"><span class=\"rb\">法</span><span class=\"rt\">ほう</span></span>に<span class=\"ruby\"><span class=\"rb\">触</span><span class=\"rt\">ふ</span></span>れるくらい"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "駄目駄目駄目",
+      "C0": "안 돼 안 돼 안 돼 뇌 속에서 '그만둬 바보'라고 외치는 도덕성",
+      "G0": "이 문장은 '駄目'(안 돼)가 세 번 반복되어 강한 부정이나 금지를 강조하고 있습니다. 일본어에서 '駄目'는 '안 된다', '불가능하다', '금지' 등의 의미를 가지며, 세 번 반복함으로써 절대적으로 허용되지 않는 상황을 표현합니다.",
+      "K0": "안 돼 안 돼 안 돼",
+      "I0": "dame dame dame",
+      "R0": "다메 다메 다메",
+      "LI": [
+        {
+          "T1": "駄目",
+          "K1": "안 돼",
+          "I1": "dame",
+          "R1": "다메",
+          "E1": "무언가가 불가능하거나 허용되지 않음을 나타내는 표현입니다. '하지 마', '그만둬', '불가능해' 등의 의미로 사용됩니다.",
+          "T2": "駄目",
+          "K2": "안 돼",
+          "I2": "dame",
+          "R2": "다메",
+          "XE": "それは駄目だ。",
+          "XK": "그것은 안 돼.",
+          "XI": "sore wa dame da",
+          "XR": "소레 와 다메 다"
+        },
+        {
+          "T1": "駄目",
+          "K1": "안 돼",
+          "I1": "dame",
+          "R1": "다메",
+          "E1": "두 번째 반복으로, 부정의 강도를 높입니다.",
+          "T2": "駄目",
+          "K2": "안 돼",
+          "I2": "dame",
+          "R2": "다메",
+          "XE": "そんなことしたら駄目だよ。",
+          "XK": "그런 일을 하면 안 돼.",
+          "XI": "sonna koto shitara dame da yo",
+          "XR": "손나 코토 시타라 다메 다 요"
+        },
+        {
+          "T1": "駄目",
+          "K1": "안 돼",
+          "I1": "dame",
+          "R1": "다메",
+          "E1": "세 번째 반복으로, 절대적인 금지나 불가능함을 강조합니다.",
+          "T2": "駄目",
+          "K2": "안 돼",
+          "I2": "dame",
+          "R2": "다메",
+          "XE": "行くのは駄目だ。",
+          "XK": "가는 것은 안 돼.",
+          "XI": "iku no wa dame da",
+          "XR": "이쿠 노 와 다메 다"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "なにがし<span class=\"ruby\"><span class=\"rb\">法</span><span class=\"rt\">ほう</span></span>に<span class=\"ruby\"><span class=\"rb\">触</span><span class=\"rt\">ふ</span></span>れるくらい",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>ぬほど<span class=\"ruby\"><span class=\"rb\">可愛</span><span class=\"rt\">かわい</span></span>い<span class=\"ruby\"><span class=\"rb\">上目遣</span><span class=\"rt\">うわめづか</span></span>い なにがし<span class=\"ruby\"><span class=\"rb\">法</span><span class=\"rt\">ほう</span></span>に<span class=\"ruby\"><span class=\"rb\">触</span><span class=\"rt\">ふ</span></span>れるくらい ばら<span class=\"ruby\"><span class=\"rb\">撒</span><span class=\"rt\">ま</span></span>く<span class=\"ruby\"><span class=\"rb\">乱心</span><span class=\"rt\">らんしん</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "デコにスティグマ",
+      "C0": "네가 미소로 던진 아바다 케다브라 이마에 낙인 사과할 필요도 없겠네",
+      "G0": "이 문장은 명사구로 구성되어 있습니다. 'デコ'는 '이마'를 의미하는 일본어 명사이며, 'に'는 위치를 나타내는 조사입니다. 'スティグマ'는 영어 'stigma'에서 차용한 외래어로 '낙인'이나 '상처'를 의미합니다. 전체적으로 '이마에 낙인'이라는 의미를 전달합니다.",
+      "K0": "이마에 낙인",
+      "I0": "deko ni sutiguma",
+      "R0": "데코 니 스티구마",
+      "LI": [
+        {
+          "T1": "デコ",
+          "K1": "이마",
+          "I1": "deko",
+          "R1": "데코",
+          "E1": "이마를 의미하는 일본어 명사로, 일상 회화에서 '이마'를 가볍게 부를 때 쓰이는 구어체 단어입니다.",
+          "T2": "デコ",
+          "K2": "이마",
+          "I2": "deko",
+          "R2": "데코",
+          "XE": "彼のデコが広い。",
+          "XK": "그의 이마가 넓다.",
+          "XI": "kare no deko ga hiroi",
+          "XR": "카레 노 데코 가 히로이"
+        },
+        {
+          "T1": "に",
+          "K1": "에",
+          "I1": "ni",
+          "R1": "니",
+          "E1": "위치나 방향을 나타내는 조사입니다.",
+          "T2": "に",
+          "K2": "에",
+          "I2": "ni",
+          "R2": "니",
+          "XE": "本は机の上にある。",
+          "XK": "책은 책상 위에 있다.",
+          "XI": "hon wa tsukue no ue ni aru",
+          "XR": "혼 와 츠쿠에 노 우에 니 아루"
+        },
+        {
+          "T1": "スティグマ",
+          "K1": "낙인",
+          "I1": "sutiguma",
+          "R1": "스티구마",
+          "E1": "영어 'stigma'에서 유래한 외래어로, 상처나 낙인을 의미합니다.",
+          "T2": "stigma",
+          "K2": "낙인",
+          "I2": "ˈstɪɡmə",
+          "R2": "스티그마",
+          "XE": "彼は社会のスティグマを背負っている。",
+          "XK": "그는 사회의 낙인을 짊어지고 있다.",
+          "XI": "kare wa shakai no sutiguma o seotte iru",
+          "XR": "카레 와 샤카이 노 스티구마 오 세옷테 이루"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "ばら<span class=\"ruby\"><span class=\"rb\">撒</span><span class=\"rt\">ま</span></span>く<span class=\"ruby\"><span class=\"rb\">乱心</span><span class=\"rt\">らんしん</span></span>",
+      "C0": "なにがし<span class=\"ruby\"><span class=\"rb\">法</span><span class=\"rt\">ほう</span></span>に<span class=\"ruby\"><span class=\"rb\">触</span><span class=\"rt\">ふ</span></span>れるくらい ばら<span class=\"ruby\"><span class=\"rb\">撒</span><span class=\"rt\">ま</span></span>く<span class=\"ruby\"><span class=\"rb\">乱心</span><span class=\"rt\">らんしん</span></span> <span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>づけば<span class=\"ruby\"><span class=\"rb\">蕩尽</span><span class=\"rt\">とうじん</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "やたらとしんどい恋煩い",
+      "C0": "이 세상에 태어난 네가 나빠. 지나치게 힘든 사랑의 병. 흩어져 버린 머리와 이 몸",
+      "G0": "이 문장은 'やたらとしんどい'라는 수식어와 '恋煩い'라는 명사로 구성되어 있습니다. 'やたらと'는 '지나치게', '과도하게'라는 의미의 부사이며, 'しんどい'는 '힘든', '지치는'이라는 의미의 형용사입니다. '恋煩い'는 '사랑의 병', '사랑 때문에 괴로워하는 상태'를 의미하는 명사입니다. 전체적으로 지나치게 힘들고 괴로운 사랑의 상태를 표현하고 있습니다.",
+      "K0": "지독하게 힘든 상사병",
+      "I0": "yatarato shindoi koiwazurai",
+      "R0": "야타라토 신도이 코이 와즈라이",
+      "LI": [
+        {
+          "T1": "やたらと",
+          "K1": "지나치게",
+          "I1": "yatarato",
+          "R1": "야타라토",
+          "E1": "정도가 지나치거나 과도함을 나타내는 부사입니다.",
+          "T2": "やたらと",
+          "K2": "지나치게",
+          "I2": "yatarato",
+          "R2": "야타라토",
+          "XE": "やたらと人が多い。",
+          "XK": "지나치게 사람이 많다.",
+          "XI": "yatarato hito ga ooi",
+          "XR": "야타라토 히토 가 오오이"
+        },
+        {
+          "T1": "しんどい",
+          "K1": "힘든",
+          "I1": "shindoi",
+          "R1": "신도이",
+          "E1": "피로하거나 지치는 상태를 나타내는 형용사입니다.",
+          "T2": "しんどい",
+          "K2": "힘든",
+          "I2": "shindoi",
+          "R2": "신도이",
+          "XE": "仕事がしんどい。",
+          "XK": "일이 힘들다.",
+          "XI": "shigoto ga shindoi",
+          "XR": "시고토 가 신도이"
+        },
+        {
+          "T1": "恋煩い",
+          "K1": "상사병",
+          "I1": "koiwazurai",
+          "R1": "코이 와즈라이",
+          "E1": "사랑 때문에 괴로워하거나 병들어 있는 상태를 의미하는 명사입니다.",
+          "T2": "恋煩い",
+          "K2": "상사병",
+          "I2": "koiwazurai",
+          "R2": "코이 와즈라이",
+          "XE": "彼は恋煩いで苦しんでいる。",
+          "XK": "그는 상사병으로 고통받고 있다.",
+          "XI": "kare wa koiwazurai de kurushindeiru",
+          "XR": "카레 와 코이 와즈라이 데 쿠루신데 이루"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>づけば<span class=\"ruby\"><span class=\"rb\">蕩尽</span><span class=\"rt\">とうじん</span></span>",
+      "C0": "ばら<span class=\"ruby\"><span class=\"rb\">撒</span><span class=\"rt\">ま</span></span>く<span class=\"ruby\"><span class=\"rb\">乱心</span><span class=\"rt\">らんしん</span></span> <span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>づけば<span class=\"ruby\"><span class=\"rb\">蕩尽</span><span class=\"rt\">とうじん</span></span> この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>に<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">う</span></span>まれた<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">悪</span><span class=\"rt\">わる</span></span>い"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "どうしようあばらの奥を",
+      "C0": "대체 어떻게 할까 이 마음을 어떻게 할까 갈비뼈 안쪽을 자라메가 녹아 토할 것 같아",
+      "G0": "이 문장은 감탄문으로, 'どうしよう'가 '어떻게 할까'라는 의미로 문장을 시작하며, 'あばらの奥を'가 '갈비뼈 안쪽을'이라는 의미로 이어집니다. 전체적으로 화자의 당황스러운 심정과 내면의 갈등을 표현하는 구조입니다.",
+      "K0": "어떻게 할까 갈비뼈 안쪽을",
+      "I0": "dō shiyō abara no oku o",
+      "R0": "도오 시요오 아바라 노 오쿠 오",
+      "LI": [
+        {
+          "T1": "どうしよう",
+          "K1": "어떻게 할까",
+          "I1": "dō shiyō",
+          "R1": "도오 시요오",
+          "E1": "어떻게 해야 할지 모르는 당황스러운 상황에서 사용하는 표현입니다.",
+          "T2": "どうしよう",
+          "K2": "어떻게 할까",
+          "I2": "dō shiyō",
+          "R2": "도오 시요오",
+          "XE": "どうしよう、財布を忘れた。",
+          "XK": "어떻게 할까, 지갑을 깜빡했어.",
+          "XI": "dō shiyō, saifu o wasureta",
+          "XR": "도오 시요오, 사이후 오 와스레타"
+        },
+        {
+          "T1": "あばら",
+          "K1": "갈비뼈",
+          "I1": "abara",
+          "R1": "아바라",
+          "E1": "가슴의 갈비뼈를 의미하는 명사입니다.",
+          "T2": "あばら",
+          "K2": "갈비뼈",
+          "I2": "abara",
+          "R2": "아바라",
+          "XE": "彼はあばらが折れた。",
+          "XK": "그는 갈비뼈가 부러졌다.",
+          "XI": "kare wa abara ga oreta",
+          "XR": "카레 와 아바라 가 오레타"
+        },
+        {
+          "T1": "の",
+          "K1": "~의",
+          "I1": "no",
+          "R1": "노",
+          "E1": "소유나 관계를 나타내는 조사입니다.",
+          "T2": "の",
+          "K2": "~의",
+          "I2": "no",
+          "R2": "노",
+          "XE": "私の本",
+          "XK": "나의 책",
+          "XI": "watashi no hon",
+          "XR": "와타시 노 혼"
+        },
+        {
+          "T1": "奥",
+          "K1": "안쪽",
+          "I1": "oku",
+          "R1": "오쿠",
+          "E1": "공간이나 사물의 내부 깊숙한 부분을 의미하는 명사입니다.",
+          "T2": "奥",
+          "K2": "안쪽",
+          "I2": "oku",
+          "R2": "오쿠",
+          "XE": "部屋の奥",
+          "XK": "방 안쪽",
+          "XI": "heya no oku",
+          "XR": "헤야 노 오쿠"
+        },
+        {
+          "T1": "を",
+          "K1": "~을",
+          "I1": "o",
+          "R1": "오",
+          "E1": "목적어를 나타내는 조사입니다.",
+          "T2": "を",
+          "K2": "~을",
+          "I2": "o",
+          "R2": "오",
+          "XE": "本を読む",
+          "XK": "책을 읽다",
+          "XI": "hon o yomu",
+          "XR": "혼 오 요무"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>に<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">う</span></span>まれた<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">悪</span><span class=\"rt\">わる</span></span>い",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">気</span><span class=\"rt\">き</span></span>づけば<span class=\"ruby\"><span class=\"rb\">蕩尽</span><span class=\"rt\">とうじん</span></span> この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>に<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">う</span></span>まれた<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">悪</span><span class=\"rt\">わる</span></span>い やたらとしんどい<span class=\"ruby\"><span class=\"rb\">恋煩</span><span class=\"rt\">こいわずら</span></span>い"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "死ぬほど可愛い上目遣い",
+      "C0": "완전 사랑스러워! 반짝이는 들뜬 발걸음의 철학. 죽을 만큼 귀여운 우와메 즈카이(올려다보는 눈빛), 무슨 법에라도 저촉될 정도야.",
+      "G0": "이 문장은 '죽을 만큼 귀여운 우와메 즈카이'라는 의미로, 감탄을 담은 표현입니다. '死ぬほど'는 '죽을 정도로'라는 의미의 관용구이며, 뒤에 오는 형용사 '可愛い'를 강조합니다. '上目遣い'는 고개를 숙이고 눈만 위로 올려 상대를 바라보는 귀여운 행동을 뜻하는 명사입니다. 전체적으로는 '죽을 만큼 귀여운 올려다보는 눈빛'이라는 뜻입니다.",
+      "K0": "죽을 만큼 귀여운 올려다보는 눈빛",
+      "I0": "shinu hodo kawaii uwamezukai",
+      "R0": "시누 호도 카와이이 우와메 즈카이",
+      "LI": [
+        {
+          "T1": "死ぬほど",
+          "K1": "죽을 만큼",
+          "I1": "shinu hodo",
+          "R1": "시누 호도",
+          "E1": "어떤 정도가 매우 심함을 나타내는 표현으로, '죽을 정도로'라는 의미입니다.",
+          "T2": "死ぬほど",
+          "K2": "죽을 만큼",
+          "I2": "shinu hodo",
+          "R2": "시누 호도",
+          "XE": "死ぬほどお腹がすいた。",
+          "XK": "배가 죽을 만큼 고파.",
+          "XI": "shinu hodo onaka ga suita",
+          "XR": "시누 호도 오나카 가 스이타"
+        },
+        {
+          "T1": "可愛い",
+          "K1": "귀여운",
+          "I1": "kawaii",
+          "R1": "카와이이",
+          "E1": "사람이나 사물의 외모나 행동이 사랑스럽고 예쁠 때 사용하는 형용사입니다.",
+          "T2": "可愛い",
+          "K2": "귀엽다",
+          "I2": "kawaii",
+          "R2": "카와이이",
+          "XE": "その猫はとても可愛い。",
+          "XK": "그 고양이는 정말 귀여워.",
+          "XI": "sono neko wa totemo kawaii",
+          "XR": "소노 네코 와 토테모 카와이이"
+        },
+        {
+          "T1": "上目遣い",
+          "K1": "올려다보는 눈빛",
+          "I1": "uwamezukai",
+          "R1": "우와메 즈카이",
+          "E1": "고개를 숙이고 눈동자만 위로 올려 상대를 바라보는 행동으로, 귀엽고 애교 있는 인상을 주는 표정입니다.",
+          "T2": "上目遣い",
+          "K2": "올려다보는 눈빛",
+          "I2": "uwamezukai",
+          "R2": "우와메 즈카이",
+          "XE": "彼女の上目遣いにドキッとした。",
+          "XK": "그녀의 올려다보는 눈빛에 심쿵했다.",
+          "XI": "kanojo no uwamezukai ni dokitto shita",
+          "XR": "카노죠 노 우와메 즈카이 니 도킷토 시타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "やたらとしんどい<span class=\"ruby\"><span class=\"rb\">恋煩</span><span class=\"rt\">こいわずら</span></span>い",
+      "C0": "この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>に<span class=\"ruby\"><span class=\"rb\">生</span><span class=\"rt\">う</span></span>まれた<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">悪</span><span class=\"rt\">わる</span></span>い やたらとしんどい<span class=\"ruby\"><span class=\"rb\">恋煩</span><span class=\"rt\">こいわずら</span></span>い バラバラんなる<span class=\"ruby\"><span class=\"rb\">頭</span><span class=\"rt\">あたま</span></span>とこの<span class=\"ruby\"><span class=\"rb\">身体</span><span class=\"rt\">しんたい</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "一体どうしようこの想いを",
+      "C0": "아이리스 아웃 대체 어떻게 해야 할까 이 마음을 어떻게 해야 할까 갈비뼈 깊숙이를",
+      "G0": "이 문장은 '대체 어떻게 해야 할까 이 마음을'이라는 의미로, '一体'(대체)라는 부사로 시작하여 강한 의문을 나타내고 있습니다. 'どうしよう'(어떻게 해야 할까)는 화자의 당혹감과 고민을 표현하며, 'この想いを'(이 마음을)은 구체적인 감정 대상을 지칭합니다. 전체적으로 해결책을 찾지 못한 채 고민하는 화자의 심정을 나타내는 의문문입니다.",
+      "K0": "대체 어떻게 해야 할까 이 마음을",
+      "I0": "ittai dōshiyou kono omoi o",
+      "R0": "잇타이 도오 시요오 코노 오모이 오",
+      "LI": [
+        {
+          "T1": "一体",
+          "K1": "대체",
+          "I1": "ittai",
+          "R1": "잇타이",
+          "E1": "강한 의문이나 놀람을 나타내는 부사로, '도대체', '과연' 등의 의미를 가집니다.",
+          "T2": "一体",
+          "K2": "대체",
+          "I2": "ittai",
+          "R2": "잇타이",
+          "XE": "一体どうしたんですか？",
+          "XK": "대체 어떻게 된 거예요?",
+          "XI": "ittai dōshita ndesu ka",
+          "XR": "잇타이 도오 시탄 데스 카"
+        },
+        {
+          "T1": "どうしよう",
+          "K1": "어떻게 해야 할까",
+          "I1": "dōshiyou",
+          "R1": "도오 시요오",
+          "E1": "'어떻게 해야 할까'라는 의미로, 막막하거나 당황스러울 때 사용하는 표현입니다.",
+          "T2": "どうする",
+          "K2": "어떻게 하다",
+          "I2": "dōsuru",
+          "R2": "도오스루",
+          "XE": "この問題、どうしよう？",
+          "XK": "이 문제, 어떻게 해야 할까?",
+          "XI": "kono mondai, dōshiyou",
+          "XR": "코노 몬다이, 도오 시요오"
+        },
+        {
+          "T1": "この",
+          "K1": "이",
+          "I1": "kono",
+          "R1": "코노",
+          "E1": "가까이 있는 대상을 가리키는 지시사입니다.",
+          "T2": "この",
+          "K2": "이",
+          "I2": "kono",
+          "R2": "코노",
+          "XE": "この本は面白い。",
+          "XK": "이 책은 재미있다.",
+          "XI": "kono hon wa omoshiroi",
+          "XR": "코노 혼 와 오모시로이"
+        },
+        {
+          "T1": "想い",
+          "K1": "마음",
+          "I1": "omoi",
+          "R1": "오모이",
+          "E1": "감정이나 생각을 의미하는 명사입니다.",
+          "T2": "想い",
+          "K2": "마음",
+          "I2": "omoi",
+          "R2": "오모이",
+          "XE": "彼への想いが強い。",
+          "XK": "그에 대한 마음이 강하다.",
+          "XI": "kare e no omoi ga tsuyoi",
+          "XR": "카레 에 노 오모이 가 츠요이"
+        },
+        {
+          "T1": "を",
+          "K1": "~을",
+          "I1": "o",
+          "R1": "오",
+          "E1": "목적격 조사로, 동사의 대상이 되는 것을 나타냅니다.",
+          "T2": "を",
+          "K2": "~을",
+          "I2": "o",
+          "R2": "오",
+          "XE": "本を読む。",
+          "XK": "책을 읽다.",
+          "XI": "hon o yomu",
+          "XR": "혼 오 요무"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "バラバラんなる<span class=\"ruby\"><span class=\"rb\">頭</span><span class=\"rt\">あたま</span></span>とこの<span class=\"ruby\"><span class=\"rb\">身体</span><span class=\"rt\">しんたい</span></span>",
+      "C0": "やたらとしんどい<span class=\"ruby\"><span class=\"rb\">恋煩</span><span class=\"rt\">こいわずら</span></span>い バラバラんなる<span class=\"ruby\"><span class=\"rb\">頭</span><span class=\"rt\">あたま</span></span>とこの<span class=\"ruby\"><span class=\"rb\">身体</span><span class=\"rt\">しんたい</span></span> <span class=\"ruby\"><span class=\"rb\">頸動脈</span><span class=\"rt\">けいどうみゃく</span></span>からアイラブユーが<span class=\"ruby\"><span class=\"rb\">噴</span><span class=\"rt\">ふ</span></span>き<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>て"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "バラバラんなる頭とこの身体",
+      "C0": "무척 지치는 사랑 병에 걸려 산산조각난 머리와 이 몸 목동맥에서 아이 러브 유가 분출되어",
+      "G0": "이 문장은 'バラバラんなる'이 '頭'을 수식하는 형용사적 역할을 하고, 'と'가 접속사로 '頭'과 'この身体'를 연결하는 구조입니다. 'バラバラんなる'은 '산산조각난'이라는 의미로 상태를 나타내며, '頭'은 '머리', 'この身体'는 '이 몸'을 의미합니다. 전체적으로 혼란스러운 정신 상태와 육체의 분열감을 표현하고 있습니다.",
+      "K0": "산산조각난 머리와 이 몸",
+      "I0": "barabaran naru atama to kono shintai",
+      "R0": "바라바란 나루 아타마 토 코노 신타이",
+      "LI": [
+        {
+          "T1": "バラバラんなる",
+          "K1": "산산조각난",
+          "I1": "barabaran naru",
+          "R1": "바라바란 나루",
+          "E1": "여러 조각으로 나뉘어 통일되지 못한 상태를 나타냅니다.",
+          "T2": "バラバラになる",
+          "K2": "산산조각이 나다",
+          "I2": "barabara ni naru",
+          "R2": "바라바라 니 나루",
+          "XE": "彼の考えはバラバラになった。",
+          "XK": "그의 생각은 산산조각났다.",
+          "XI": "kare no kangae wa barabara ni natta",
+          "XR": "카레 노 캉가에 와 바라바라 니 낫타"
+        },
+        {
+          "T1": "頭",
+          "K1": "머리",
+          "I1": "atama",
+          "R1": "아타마",
+          "E1": "신체 부위인 '머리'를 의미하며, 여기서는 정신이나 생각을 상징적으로 나타냅니다.",
+          "T2": "頭",
+          "K2": "머리",
+          "I2": "atama",
+          "R2": "아타마",
+          "XE": "頭が痛い。",
+          "XK": "머리가 아프다.",
+          "XI": "atama ga itai",
+          "XR": "아타마 가 이타이"
+        },
+        {
+          "T1": "と",
+          "K1": "와",
+          "I1": "to",
+          "R1": "토",
+          "E1": "명사와 명사를 연결하는 접속사로, '~와'라는 의미를 가집니다.",
+          "T2": "と",
+          "K2": "와",
+          "I2": "to",
+          "R2": "토",
+          "XE": "りんごとみかんを買った。",
+          "XK": "사과와 귤을 샀다.",
+          "XI": "ringo to mikan wo katta",
+          "XR": "링고 토 미칸 오 캇타"
+        },
+        {
+          "T1": "この",
+          "K1": "이",
+          "I1": "kono",
+          "R1": "코노",
+          "E1": "지시사로, 가까이 있는 대상을 가리키는 '이'라는 의미입니다.",
+          "T2": "この",
+          "K2": "이",
+          "I2": "kono",
+          "R2": "코노",
+          "XE": "この本は面白い。",
+          "XK": "이 책은 재미있다.",
+          "XI": "kono hon wa omoshiroi",
+          "XR": "코노 혼 와 오모시로이"
+        },
+        {
+          "T1": "身体",
+          "K1": "몸",
+          "I1": "shintai",
+          "R1": "신타이",
+          "E1": "신체를 의미하는 명사로, 사람의 육체를 나타냅니다.",
+          "T2": "身体",
+          "K2": "몸",
+          "I2": "shintai",
+          "R2": "신타이",
+          "XE": "身体を大切にしてください。",
+          "XK": "몸을 소중히 해주세요.",
+          "XI": "shintai wo taisetsu ni shite kudasai",
+          "XR": "신타이 오 타이세츠 니 시테 쿠다사이"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">頸動脈</span><span class=\"rt\">けいどうみゃく</span></span>からアイラブユーが<span class=\"ruby\"><span class=\"rb\">噴</span><span class=\"rt\">ふ</span></span>き<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>て",
+      "C0": "バラバラんなる<span class=\"ruby\"><span class=\"rb\">頭</span><span class=\"rt\">あたま</span></span>とこの<span class=\"ruby\"><span class=\"rb\">身体</span><span class=\"rt\">しんたい</span></span> <span class=\"ruby\"><span class=\"rb\">頸動脈</span><span class=\"rt\">けいどうみゃく</span></span>からアイラブユーが<span class=\"ruby\"><span class=\"rb\">噴</span><span class=\"rt\">ふ</span></span>き<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>て アイリスアウト"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "君だけルールは適用外",
+      "C0": "뒤집어도 이길 수 없어. 너에게만 규칙은 적용되지 않아. 네 개 모두 오셀로는 검은 색밖에 없어.",
+      "G0": "이 문장은 주어(君だけ) + 목적어(ルールは) + 술어(適用外)로 구성되어 있습니다. '君だけ'는 '너에게만'이라는 의미로, 'ルールは'는 '규칙은', '適用外'는 '적용되지 않음'을 나타냅니다. 전체적으로 특정 사람에게만 규칙이 적용되지 않는다는 의미를 전달합니다.",
+      "K0": "너에게만 규칙은 적용되지 않아.",
+      "I0": "kimi dake rūru wa tekiyōgai",
+      "R0": "키미 다케 루우루 와 테키요오 가이",
+      "LI": [
+        {
+          "T1": "君",
+          "K1": "너",
+          "I1": "kimi",
+          "R1": "키미",
+          "E1": "2인칭 단수 대명사로, 친구나 동료 등 친밀한 관계에서 사용하는 '너'를 의미합니다.",
+          "T2": "君",
+          "K2": "너",
+          "I2": "kimi",
+          "R2": "키미",
+          "XE": "君はどこに行くの？",
+          "XK": "너는 어디로 가는 거야?",
+          "XI": "kimi wa doko ni iku no",
+          "XR": "키미 와 도코 니 이쿠 노"
+        },
+        {
+          "T1": "だけ",
+          "K1": "만",
+          "I1": "dake",
+          "R1": "다케",
+          "E1": "한정을 나타내는 조사로, '~만', '오직 ~'이라는 의미입니다.",
+          "T2": "だけ",
+          "K2": "만",
+          "I2": "dake",
+          "R2": "다케",
+          "XE": "私だけが知っている。",
+          "XK": "나만이 알고 있어.",
+          "XI": "watashi dake ga shitte iru",
+          "XR": "와타시 다케 가 싯테 이루"
+        },
+        {
+          "T1": "ルール",
+          "K1": "규칙",
+          "I1": "rūru",
+          "R1": "루우루",
+          "E1": "영어 'rule'에서 유래한 외래어로, 규칙이나 법칙을 의미합니다.",
+          "T2": "ルール",
+          "K2": "규칙",
+          "I2": "rūru",
+          "R2": "루우루",
+          "XE": "このゲームのルールは何ですか？",
+          "XK": "이 게임의 규칙은 무엇인가요?",
+          "XI": "kono gēmu no rūru wa nan desu ka",
+          "XR": "코노 게이무 노 루우루 와 난 데스 카"
+        },
+        {
+          "T1": "は",
+          "K1": "은",
+          "I1": "wa",
+          "R1": "와",
+          "E1": "주제를 나타내는 조사로, 문장의 주제나 화제를 표시합니다.",
+          "T2": "は",
+          "K2": "은",
+          "I2": "wa",
+          "R2": "와",
+          "XE": "私は学生です。",
+          "XK": "나는 학생입니다.",
+          "XI": "watashi wa gakusei desu",
+          "XR": "와타시 와 가쿠세이 데스"
+        },
+        {
+          "T1": "適用外",
+          "K1": "적용되지 않음",
+          "I1": "tekiyōgai",
+          "R1": "테키요오 가이",
+          "E1": "규칙이나 법률 등이 적용되지 않는 상태를 의미하는 명사입니다.",
+          "T2": "適用外",
+          "K2": "적용되지 않음",
+          "I2": "tekiyōgai",
+          "R2": "테키요오 가이",
+          "XE": "このケースは適用外です。",
+          "XK": "이 경우는 적용되지 않습니다.",
+          "XI": "kono kēsu wa tekiyōgai desu",
+          "XR": "코노 케이스 와 테키요오 가이 데스"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "アイリスアウト",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">頸動脈</span><span class=\"rt\">けいどうみゃく</span></span>からアイラブユーが<span class=\"ruby\"><span class=\"rb\">噴</span><span class=\"rt\">ふ</span></span>き<span class=\"ruby\"><span class=\"rb\">出</span><span class=\"rt\">で</span></span>て アイリスアウト <span class=\"ruby\"><span class=\"rb\">一体</span><span class=\"rt\">いったい</span></span>どうしようこの<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>いを"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "瞳孔バチ開いて溺れ死にそう",
+      "C0": "자라메가 녹아서 게로가 될 것 같아. 눈동자가 팍 벌어져서 익사할 것 같아. 지금 이 세상에서 너만이 정답이야.",
+      "G0": "이 문장은 주어(瞳孔) + 부사구(バチ開いて) + 술어(溺れ死にそう)로 구성되어 있습니다. '瞳孔'은 '눈동자', 'バチ開いて'는 '팍 벌어져서', '溺れ死にそう'는 '익사할 것 같다'를 의미합니다. 전체적으로 극단적인 감정 상태를 표현하는 문장으로, 눈동자가 크게 벌어져 익사할 것 같은 강렬한 느낌을 전달합니다.",
+      "K0": "동공이 팍 열려서 익사할 것 같아.",
+      "I0": "dōkō batchi hiraite obore shinisō",
+      "R0": "도오코오 바치 히라이테 오보레 시니 소오",
+      "LI": [
+        {
+          "T1": "瞳孔",
+          "K1": "눈동자",
+          "I1": "dōkō",
+          "R1": "도오코오",
+          "E1": "눈의 검은 동공 부분을 의미하는 명사입니다.",
+          "T2": "瞳孔",
+          "K2": "눈동자",
+          "I2": "dōkō",
+          "R2": "도오코오",
+          "XE": "彼の瞳孔が大きく開いた。",
+          "XK": "그의 눈동자가 크게 열렸다.",
+          "XI": "kare no dōkō ga ōkiku hiraita",
+          "XR": "카레 노 도오코오 가 오오키쿠 히라이타"
+        },
+        {
+          "T1": "バチ",
+          "K1": "팍",
+          "I1": "batchi",
+          "R1": "바치",
+          "E1": "갑자기 크게 벌어지는 모습을 강조하는 부사입니다.",
+          "T2": "バチ",
+          "K2": "팍",
+          "I2": "batchi",
+          "R2": "바치",
+          "XE": "火花がバチっとなる。",
+          "XK": "불꽃이 파지직하고 튀다.",
+          "XI": "Hibana ga bachi tto naru",
+          "XR": "히바나 가 바치 또 나루"
+        },
+        {
+          "T1": "開いて",
+          "K1": "열려서",
+          "I1": "hiraite",
+          "R1": "히라이테",
+          "E1": "'열다'라는 의미의 동사 '開く'의 연결형입니다.",
+          "T2": "開く",
+          "K2": "열다",
+          "I2": "hiraku",
+          "R2": "히라쿠",
+          "XE": "花が開いている。",
+          "XK": "꽃이 피어 있다.",
+          "XI": "hana ga hiraite iru",
+          "XR": "하나 가 히라이테 이루"
+        },
+        {
+          "T1": "溺れ",
+          "K1": "익사해서",
+          "I1": "obore",
+          "R1": "오보레",
+          "E1": "'물에 빠지다', '익사하다'라는 의미의 동사 '溺れる'의 연결형입니다.",
+          "T2": "溺れる",
+          "K2": "익사하다",
+          "I2": "oboreru",
+          "R2": "오보레루",
+          "XE": "川で溺れた。",
+          "XK": "강물에 빠졌다.",
+          "XI": "kawa de oboreta",
+          "XR": "카와 데 오보레타"
+        },
+        {
+          "T1": "死にそう",
+          "K1": "죽을 것 같다",
+          "I1": "shinisō",
+          "R1": "시니 소오",
+          "E1": "'죽다'라는 의미의 동사 '死ぬ'의 추측형으로, 죽을 것 같은 상태를 표현합니다.",
+          "T2": "死ぬ",
+          "K2": "죽다",
+          "I2": "shinu",
+          "R2": "시누",
+          "XE": "疲れて死にそうだ。",
+          "XK": "피곤해서 죽을 것 같아.",
+          "XI": "tsukarete shinisō da",
+          "XR": "츠카레테 시니 소오 다"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">一体</span><span class=\"rt\">いったい</span></span>どうしようこの<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>いを",
+      "C0": "アイリスアウト <span class=\"ruby\"><span class=\"rb\">一体</span><span class=\"rt\">いったい</span></span>どうしようこの<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>いを どうしようあばらの<span class=\"ruby\"><span class=\"rb\">奥</span><span class=\"rt\">おく</span></span>を"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "ザラメが溶けてゲロになりそう",
+      "C0": "어쩌지, 갈비뼈 속에서 자라메가 녹아서 토할 것 같아. 동공이 번쩍 열리고 익사해서 죽을 것 같아.",
+      "G0": "이 문장은 주어(ザラメが) + 동사(溶けて) + 결과(ゲロになりそう)로 구성되어 있습니다. 'ザラメが'는 '자라메가'라는 의미로, 주어 역할을 합니다. '溶けて'는 '녹아서'라는 뜻의 동사 '溶ける'의 て형으로, 뒤 문장과 연결됩니다. 'ゲロになりそう'는 '토가 될 것 같다'는 의미로, 'ゲロ'는 속어로 '토', 'になる'는 '~이 되다', 'そう'는 '~할 것 같다'는 추측 표현입니다. 전체적으로 자라메가 녹아서 토할 것 같다는 불쾌한 신체 반응을 묘사하고 있습니다.",
+      "K0": "설탕이 녹아 토사물이 될 것 같아.",
+      "I0": "zɑɾɑme ɡa tokete ɡeɾo ni nɑɾisō",
+      "R0": "자라메 가 토케테 게로 니 나리 소오",
+      "LI": [
+        {
+          "T1": "ザラメ",
+          "K1": "굵은 설탕",
+          "I1": "zɑɾɑme",
+          "R1": "자라메",
+          "E1": "굵은 설탕, 즉 쌍당을 뜻하는 일본어입니다.",
+          "T2": "ザラメ",
+          "K2": "굵은 설탕",
+          "I2": "zɑɾɑme",
+          "R2": "자라메",
+          "XE": "ザラメをまぶしたドーナツが好き。",
+          "XK": "굵은 설탕을 묻힌 도넛을 좋아해.",
+          "XI": "zɑɾɑme o mabushita dōnatsu ga suki",
+          "XR": "자라메 오 마부시타 도오나츠 가 스키"
+        },
+        {
+          "T1": "が",
+          "K1": "~가",
+          "I1": "ɡa",
+          "R1": "가",
+          "E1": "주격 조사로, 앞에 오는 명사가 문장의 주어임을 나타냅니다.",
+          "T2": "が",
+          "K2": "~가",
+          "I2": "ɡa",
+          "R2": "가",
+          "XE": "猫が好きです。",
+          "XK": "고양이를 좋아해요.",
+          "XI": "neko ga suki desu",
+          "XR": "네코 가 스키데스"
+        },
+        {
+          "T1": "溶けて",
+          "K1": "녹아서",
+          "I1": "tokete",
+          "R1": "토케테",
+          "E1": "동사 '溶ける(とける)'의 て형으로, '녹다'라는 의미입니다. 뒤 문장과 연결되어 원인이나 상태의 연속을 나타냅니다.",
+          "T2": "溶ける",
+          "K2": "녹다",
+          "I2": "tokeru",
+          "R2": "토케루",
+          "XE": "氷が溶けて水になった。",
+          "XK": "얼음이 녹아서 물이 되었다.",
+          "XI": "kōri ga tokete mizu ni natta",
+          "XR": "코오리 가 토케테 미즈 니 낫타"
+        },
+        {
+          "T1": "ゲロ",
+          "K1": "토",
+          "I1": "ɡeɾo",
+          "R1": "게로",
+          "E1": "속어로 '토사물'을 의미합니다. 구토를 표현할 때 사용됩니다.",
+          "T2": "ゲロ",
+          "K2": "토",
+          "I2": "ɡeɾo",
+          "R2": "게로",
+          "XE": "ゲロを吐きそう。",
+          "XK": "토할 것 같아.",
+          "XI": "ɡeɾo o hakisō",
+          "XR": "게로 오 하키 소오"
+        },
+        {
+          "T1": "に",
+          "K1": "~로",
+          "I1": "ni",
+          "R1": "니",
+          "E1": "변화의 결과를 나타내는 조사로, '~이 되다'의 의미를 형성합니다.",
+          "T2": "に",
+          "K2": "~로",
+          "I2": "ni",
+          "R2": "니",
+          "XE": "水が氷に変わる。",
+          "XK": "물이 얼음으로 변한다.",
+          "XI": "mizu ga kōri ni kawaru",
+          "XR": "미즈 가 코오리 니 카와루"
+        },
+        {
+          "T1": "なりそう",
+          "K1": "~될 것 같아",
+          "I1": "nɑɾisō",
+          "R1": "나리 소오",
+          "E1": "동사 'なる(되다)'의 연용형 'なり'와 추측 표현 'そう'가 결합된 형태로, '~될 것 같다'는 의미입니다.",
+          "T2": "なる",
+          "K2": "되다",
+          "I2": "nɑɾu",
+          "R2": "나루",
+          "XE": "雨になりそうだ。",
+          "XK": "비가 올 것 같아.",
+          "XI": "ame ni nɑɾisō da",
+          "XR": "아메 니 나리 소오다"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "どうしようあばらの<span class=\"ruby\"><span class=\"rb\">奥</span><span class=\"rt\">おく</span></span>を",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">一体</span><span class=\"rt\">いったい</span></span>どうしようこの<span class=\"ruby\"><span class=\"rb\">想</span><span class=\"rt\">おも</span></span>いを どうしようあばらの<span class=\"ruby\"><span class=\"rb\">奥</span><span class=\"rt\">おく</span></span>を ザラメが<span class=\"ruby\"><span class=\"rb\">溶</span><span class=\"rt\">と</span></span>けてゲロになりそう"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "今この世で君だけ大正解",
+      "C0": "동공이 활짝 열려서 익사할 것 같아 지금 이 세상에서 너만이 완벽한 정답이야 뒤집어도 이길 수 없어",
+      "G0": "이 문장은 '今この世で君だけ大正解'로 구성되어 있습니다. '今'은 '지금', 'この世'는 '이 세상', 'で'는 '에서', '君'은 '너', 'だけ'는 '만', '大正解'는 '완벽한 정답'을 의미합니다. 전체적으로 '지금 이 세상에서 너만이 완벽한 정답이야'라는 의미로, 상대방을 매우 소중하게 여기는 감정을 표현하고 있습니다.",
+      "K0": "지금 이 세상에서 너만이 완벽한 정답이야.",
+      "I0": "ima kono yo de kimi dake daiseikai",
+      "R0": "이마 코노 요 데 키미 다케 다이 세이카이",
+      "LI": [
+        {
+          "T1": "今",
+          "K1": "지금",
+          "I1": "ima",
+          "R1": "이마",
+          "E1": "시간을 나타내는 명사로, 현재 시점을 의미합니다.",
+          "T2": "今",
+          "K2": "지금",
+          "I2": "ima",
+          "R2": "이마",
+          "XE": "今何時ですか？",
+          "XK": "지금 몇 시입니까?",
+          "XI": "ima nanji desu ka",
+          "XR": "이마 난지 데스 카"
+        },
+        {
+          "T1": "この",
+          "K1": "이",
+          "I1": "kono",
+          "R1": "코노",
+          "E1": "지시사로, 가까이 있는 대상을 가리킵니다.",
+          "T2": "この",
+          "K2": "이",
+          "I2": "kono",
+          "R2": "코노",
+          "XE": "この本は面白いです。",
+          "XK": "이 책은 재미있어요.",
+          "XI": "kono hon wa omoshiroi desu",
+          "XR": "코노 혼 와 오모시로이 데스"
+        },
+        {
+          "T1": "世",
+          "K1": "세상",
+          "I1": "yo",
+          "R1": "요",
+          "E1": "세계나 사회를 의미하는 명사입니다.",
+          "T2": "世",
+          "K2": "세상",
+          "I2": "yo",
+          "R2": "요",
+          "XE": "世の中は広いです。",
+          "XK": "세상은 넓어요.",
+          "XI": "yo no naka wa hiroi desu",
+          "XR": "요 노 나카 와 히로이 데스"
+        },
+        {
+          "T1": "で",
+          "K1": "에서",
+          "I1": "de",
+          "R1": "데",
+          "E1": "장소나 범위를 나타내는 조사입니다.",
+          "T2": "で",
+          "K2": "에서",
+          "I2": "de",
+          "R2": "데",
+          "XE": "学校で勉強します。",
+          "XK": "학교에서 공부합니다.",
+          "XI": "gakkō de benkyō shimasu",
+          "XR": "갓코오 데 벤쿄오 시마스"
+        },
+        {
+          "T1": "君",
+          "K1": "너",
+          "I1": "kimi",
+          "R1": "키미",
+          "E1": "상대방을 부를 때 사용하는 2인칭 대명사입니다.",
+          "T2": "君",
+          "K2": "너",
+          "I2": "kimi",
+          "R2": "키미",
+          "XE": "君は優しいですね。",
+          "XK": "당신은 친절하군요.",
+          "XI": "kimi wa yasashii desu ne",
+          "XR": "키미 와 야사시이 데스 네"
+        },
+        {
+          "T1": "だけ",
+          "K1": "만",
+          "I1": "dake",
+          "R1": "다케",
+          "E1": "한정을 나타내는 조사로, '오직 ~만'이라는 의미입니다.",
+          "T2": "だけ",
+          "K2": "만",
+          "I2": "dake",
+          "R2": "다케",
+          "XE": "あなただけが好きです。",
+          "XK": "당신만을 좋아해요.",
+          "XI": "anata dake ga suki desu",
+          "XR": "아나타 다케 가 스키 데스"
+        },
+        {
+          "T1": "大正解",
+          "K1": "완벽한 정답",
+          "I1": "daiseikai",
+          "R1": "다이 세이카이",
+          "E1": "'대정답'이라는 의미로, 완벽하게 맞는 답을 의미합니다.",
+          "T2": "大正解",
+          "K2": "완벽한 정답",
+          "I2": "daiseikai",
+          "R2": "다이 세이카이",
+          "XE": "その答えは大正解です。",
+          "XK": "그 답은 완벽한 정답입니다.",
+          "XI": "sono kotae wa daiseikai desu",
+          "XR": "소노 코타에 와 다이 세이카이 데스"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "ザラメが<span class=\"ruby\"><span class=\"rb\">溶</span><span class=\"rt\">と</span></span>けてゲロになりそう",
+      "C0": "どうしようあばらの<span class=\"ruby\"><span class=\"rb\">奥</span><span class=\"rt\">おく</span></span>を ザラメが<span class=\"ruby\"><span class=\"rb\">溶</span><span class=\"rt\">と</span></span>けてゲロになりそう <span class=\"ruby\"><span class=\"rb\">瞳孔</span><span class=\"rt\">どうこう</span></span>バチ<span class=\"ruby\"><span class=\"rb\">開</span><span class=\"rt\">ひら</span></span>いて<span class=\"ruby\"><span class=\"rb\">溺</span><span class=\"rt\">おぼ</span></span>れ<span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>にそう"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "四つともオセロは黒しかない",
+      "C0": "너만 규칙은 적용 대상이 아니야. 네 개 모두 오셀로는 검은색밖에 없어. 마음대로 괴롭히기",
+      "G0": "이 문장은 주어(四つともオセロ) + 서술어(は黒しかない)로 구성되어 있습니다. '四つとも'는 '네 개 모두', 'オセロ'는 '오셀로 게임', 'は'는 주격 조사, '黒しかない'는 '검은색밖에 없다'를 의미합니다. 전체적으로 오셀로 게임에서 모든 말이 검은색으로만 되어 있는 상황을 표현하고 있습니다.",
+      "K0": "네 개 모두 오셀로는 검은색밖에 없어.",
+      "I0": "yottsutomo osero wa kuro shika nai",
+      "R0": "욧츠 토모 오세로 와 쿠로 시카 나이",
+      "LI": [
+        {
+          "T1": "四つ",
+          "K1": "네 개",
+          "I1": "yottsu",
+          "R1": "욧츠",
+          "E1": "숫자 4를 의미하는 명사로, 물건의 개수를 셀 때 사용합니다.",
+          "T2": "四つ",
+          "K2": "네 개",
+          "I2": "yottsu",
+          "R2": "욧츠",
+          "XE": "四つのりんごがあります。",
+          "XK": "사과가 네 개 있어요.",
+          "XI": "yottsu no ringo ga arimasu",
+          "XR": "욧츠 노 링고 가 아리마스"
+        },
+        {
+          "T1": "とも",
+          "K1": "모두",
+          "I1": "tomo",
+          "R1": "토모",
+          "E1": "앞의 명사와 함께 사용되어 '모두', '전부'라는 의미를 나타내는 조사입니다.",
+          "T2": "とも",
+          "K2": "모두",
+          "I2": "tomo",
+          "R2": "토모",
+          "XE": "二人とも元気です。",
+          "XK": "두 사람 모두 건강해요.",
+          "XI": "futari tomo genki desu",
+          "XR": "후타리 토모 겐키 데스"
+        },
+        {
+          "T1": "オセロ",
+          "K1": "오셀로",
+          "I1": "osero",
+          "R1": "오세로",
+          "E1": "흑백 돌을 사용하는 보드게임의 이름입니다.",
+          "T2": "オセロ",
+          "K2": "오셀로",
+          "I2": "osero",
+          "R2": "오세로",
+          "XE": "オセロをしましょう。",
+          "XK": "오셀로를 합시다.",
+          "XI": "osero o shimashou",
+          "XR": "오세로 오 시마쇼오"
+        },
+        {
+          "T1": "は",
+          "K1": "는",
+          "I1": "wa",
+          "R1": "와",
+          "E1": "주격 조사로, 문장의 주어를 나타냅니다.",
+          "T2": "は",
+          "K2": "는",
+          "I2": "wa",
+          "R2": "와",
+          "XE": "これは本です。",
+          "XK": "이것은 책입니다.",
+          "XI": "kore wa hon desu",
+          "XR": "코레 와 혼 데스"
+        },
+        {
+          "T1": "黒",
+          "K1": "검은색",
+          "I1": "kuro",
+          "R1": "쿠로",
+          "E1": "색깔 중 검은색을 의미하는 명사입니다.",
+          "T2": "黒",
+          "K2": "검은색",
+          "I2": "kuro",
+          "R2": "쿠로",
+          "XE": "黒い猫がいます。",
+          "XK": "검은 고양이가 있어요.",
+          "XI": "kuroi neko ga imasu",
+          "XR": "쿠로이 네코 가 이마스"
+        },
+        {
+          "T1": "しか",
+          "K1": "밖에",
+          "I1": "shika",
+          "R1": "시카",
+          "E1": "부정 표현과 함께 사용되어 '~밖에 없다', '~만 있다'는 의미를 나타내는 조사입니다.",
+          "T2": "しか",
+          "K2": "밖에",
+          "I2": "shika",
+          "R2": "시카",
+          "XE": "水しかありません。",
+          "XK": "물밖에 없어요.",
+          "XI": "mizu shika arimasen",
+          "XR": "미즈 시카 아리마셍"
+        },
+        {
+          "T1": "ない",
+          "K1": "없다",
+          "I1": "nai",
+          "R1": "나이",
+          "E1": "부정을 나타내는 형용사로, '~이 없다'는 의미입니다.",
+          "T2": "ない",
+          "K2": "없다",
+          "I2": "nai",
+          "R2": "나이",
+          "XE": "お金がありません。",
+          "XK": "돈이 없어요.",
+          "XI": "okane ga arimasen",
+          "XR": "오카네 가 아리마셍"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">瞳孔</span><span class=\"rt\">どうこう</span></span>バチ<span class=\"ruby\"><span class=\"rb\">開</span><span class=\"rt\">ひら</span></span>いて<span class=\"ruby\"><span class=\"rb\">溺</span><span class=\"rt\">おぼ</span></span>れ<span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>にそう",
+      "C0": "ザラメが<span class=\"ruby\"><span class=\"rb\">溶</span><span class=\"rt\">と</span></span>けてゲロになりそう <span class=\"ruby\"><span class=\"rb\">瞳孔</span><span class=\"rt\">どうこう</span></span>バチ<span class=\"ruby\"><span class=\"rb\">開</span><span class=\"rt\">ひら</span></span>いて<span class=\"ruby\"><span class=\"rb\">溺</span><span class=\"rt\">おぼ</span></span>れ<span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>にそう <span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>で<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけ<span class=\"ruby\"><span class=\"rb\">大正解</span><span class=\"rt\">だいせいかい</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "今君と名付いてる全て欲しい",
+      "C0": "짝퉁이어도 좋아, 뭐든 좋아. 지금 너라고 이름 붙인 모든 것이 갖고 싶어.",
+      "G0": "이 문장은 화자가 '지금 너라고 이름 붙인 모든 것을 원한다'는 강한 소망을 표현하는 문장입니다. '今君と'는 '지금 너와', '名付いてる'는 '이름 붙이고 있는', '全て欲しい'는 '모든 것을 갖고 싶다'는 의미입니다. 전체적으로는 '지금 너라고 이름 붙인 모든 것을 원한다'는 의미로, 감정적으로 강한 집착이나 애정을 나타냅니다.",
+      "K0": "지금 너라고 이름 붙인 모든 걸 갖고 싶어.",
+      "I0": "Ima kimi to nadzuite ru subete hoshii",
+      "R0": "이마 키미 토 나즈이테루 스베테 호시이",
+      "LI": [
+        {
+          "T1": "今",
+          "K1": "지금",
+          "I1": "Ima",
+          "R1": "이마",
+          "E1": "현재 시점을 나타내는 단어로, '지금'이라는 뜻입니다.",
+          "T2": "今",
+          "K2": "지금",
+          "I2": "Ima",
+          "R2": "이마",
+          "XE": "今行くよ。",
+          "XK": "지금 갈게.",
+          "XI": "Ima iku yo.",
+          "XR": "이마 이쿠 요"
+        },
+        {
+          "T1": "君",
+          "K1": "너",
+          "I1": "Kimi",
+          "R1": "키미",
+          "E1": "친근하게 상대를 부를 때 사용하는 표현으로, '너'를 의미합니다.",
+          "T2": "君",
+          "K2": "너",
+          "I2": "Kimi",
+          "R2": "키미",
+          "XE": "君が好きだ。",
+          "XK": "너를 좋아해.",
+          "XI": "Kimi ga suki da.",
+          "XR": "키미 가 스키 다"
+        },
+        {
+          "T1": "と",
+          "K1": "~와",
+          "I1": "to",
+          "R1": "토",
+          "E1": "명사와 명사를 연결하여 '함께' 또는 '그리고'의 의미를 나타내는 조사입니다.",
+          "T2": "と",
+          "K2": "~와",
+          "I2": "to",
+          "R2": "토",
+          "XE": "友達と話す。",
+          "XK": "친구와 이야기하다.",
+          "XI": "Tomodachi to hanasu.",
+          "XR": "토모다치 토 하나스"
+        },
+        {
+          "T1": "名付いてる",
+          "K1": "이름 붙이고 있는",
+          "I1": "nadzuite ru",
+          "R1": "나즈이테루",
+          "E1": "무언가에 이름을 붙이고 있는 상태를 나타내는 표현입니다.",
+          "T2": "名付く",
+          "K2": "이름 붙이다",
+          "I2": "nadzuku",
+          "R2": "나즈쿠",
+          "XE": "この猫にタマと名付けた。",
+          "XK": "이 고양이에게 타마라고 이름 붙였다.",
+          "XI": "Kono neko ni Tama to nazuketa.",
+          "XR": "코노 네코 니 타마 토 나즈케타"
+        },
+        {
+          "T1": "全て",
+          "K1": "모든 것",
+          "I1": "subete",
+          "R1": "스베테",
+          "E1": "전체나 전부를 의미하는 단어입니다.",
+          "T2": "全て",
+          "K2": "모든 것",
+          "I2": "subete",
+          "R2": "스베테",
+          "XE": "全てがうまくいく。",
+          "XK": "모든 것이 잘 될 거야.",
+          "XI": "Subete ga umaku iku.",
+          "XR": "스베테 가 우마쿠 이쿠"
+        },
+        {
+          "T1": "欲しい",
+          "K1": "갖고 싶어",
+          "I1": "hoshii",
+          "R1": "호시이",
+          "E1": "무언가를 원하거나 가지고 싶을 때 사용하는 형용사입니다.",
+          "T2": "欲しい",
+          "K2": "갖고 싶다",
+          "I2": "hoshii",
+          "R2": "호시이",
+          "XE": "新しいスマホが欲しい。",
+          "XK": "새 스마트폰을 갖고 싶어.",
+          "XI": "Atarashii sumaho ga hoshii.",
+          "XR": "아타라시이 스마호 가 호시이"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>で<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけ<span class=\"ruby\"><span class=\"rb\">大正解</span><span class=\"rt\">だいせいかい</span></span>",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">瞳孔</span><span class=\"rt\">どうこう</span></span>バチ<span class=\"ruby\"><span class=\"rb\">開</span><span class=\"rt\">ひら</span></span>いて<span class=\"ruby\"><span class=\"rb\">溺</span><span class=\"rt\">おぼ</span></span>れ<span class=\"ruby\"><span class=\"rb\">死</span><span class=\"rt\">し</span></span>にそう <span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>で<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけ<span class=\"ruby\"><span class=\"rb\">大正解</span><span class=\"rt\">だいせいかい</span></span> ひっくり<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>っても<span class=\"ruby\"><span class=\"rb\">勝</span><span class=\"rt\">か</span></span>ちようない"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "ひっくり返っても勝ちようない",
+      "C0": "지금 이 세상에서 너만이 정답이야. 뒤집혀도 이길 수 없어. 너만은 규칙이 적용되지 않아.",
+      "G0": "이 문장은 조건절과 주절로 구성되어 있습니다. 'ひっくり返っても'는 '뒤집혀도'라는 의미의 조건절이며, '勝ちようない'는 '이길 방법이 없다'는 의미의 주절입니다. 전체적으로 어떤 상황이 벌어져도 이길 수 없다는 의미를 전달합니다.",
+      "K0": "뒤집어져도 이길 수 없어",
+      "I0": "hikkurikaette mo kachiyō nai",
+      "R0": "힛쿠리 카엣테 모 카치 요오 나이",
+      "LI": [
+        {
+          "T1": "ひっくり",
+          "K1": "뒤집혀",
+          "I1": "hikkuri",
+          "R1": "힛쿠리",
+          "E1": "무언가를 거꾸로 뒤집는 동작을 나타내는 말입니다.",
+          "T2": "ひっくり",
+          "K2": "뒤집히다",
+          "I2": "hikkuri",
+          "R2": "힛쿠리",
+          "XE": "ひっくり返すと中身が出る。",
+          "XK": "뒤집으면 내용물이 나온다.",
+          "XI": "hikkurikaesu to nakami ga deru",
+          "XR": "힛쿠리 카에스 토 나카미 가 데루"
+        },
+        {
+          "T1": "返って",
+          "K1": "돌아가도",
+          "I1": "kaette",
+          "R1": "카엣테",
+          "E1": "동사 '返る(かえる)'의 て형으로, '되돌아가다' 또는 '뒤집히다'는 뜻입니다.",
+          "T2": "返る",
+          "K2": "되돌아가다",
+          "I2": "kaeru",
+          "R2": "카에루",
+          "XE": "ボールが返ってきた。",
+          "XK": "공이 되돌아왔다.",
+          "XI": "bōru ga kaette kita",
+          "XR": "보오루 가 카엣테 키타"
+        },
+        {
+          "T1": "も",
+          "K1": "~도",
+          "I1": "mo",
+          "R1": "모",
+          "E1": "앞의 동작이나 상태가 조건이 되어도 결과가 변하지 않음을 나타냅니다.",
+          "T2": "も",
+          "K2": "~도",
+          "I2": "mo",
+          "R2": "모",
+          "XE": "雨でも行きます。",
+          "XK": "비가 와도 갑니다.",
+          "XI": "ame demo ikimasu",
+          "XR": "아메 데모 이키마스"
+        },
+        {
+          "T1": "勝ちよう",
+          "K1": "이길 방법",
+          "I1": "kachiyō",
+          "R1": "카치 요오",
+          "E1": "동사 '勝つ(이기다)'에 가능성을 나타내는 접미어 'よう'가 붙어 '이길 수 있는 방법'을 의미합니다.",
+          "T2": "勝ちよう",
+          "K2": "이길 방법",
+          "I2": "kachiyō",
+          "R2": "카치 요오",
+          "XE": "勝ちようがない試合だった。",
+          "XK": "이길 방법이 없는 경기였다.",
+          "XI": "kachiyō ga nai shiai datta",
+          "XR": "카치 요오 가 나이 시아이 닷타"
+        },
+        {
+          "T1": "ない",
+          "K1": "없다",
+          "I1": "nai",
+          "R1": "나이",
+          "E1": "부정형 표현으로, 앞의 '勝ちよう'를 부정하여 '이길 방법이 없다'는 의미를 만듭니다.",
+          "T2": "ない",
+          "K2": "없다",
+          "I2": "nai",
+          "R2": "나이",
+          "XE": "時間がない。",
+          "XK": "시간이 없다.",
+          "XI": "jikan ga nai",
+          "XR": "지칸 가 나이"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "ひっくり<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>っても<span class=\"ruby\"><span class=\"rb\">勝</span><span class=\"rt\">か</span></span>ちようない",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">今</span><span class=\"rt\">いま</span></span>この<span class=\"ruby\"><span class=\"rb\">世</span><span class=\"rt\">よ</span></span>で<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけ<span class=\"ruby\"><span class=\"rb\">大正解</span><span class=\"rt\">だいせいかい</span></span> ひっくり<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>っても<span class=\"ruby\"><span class=\"rb\">勝</span><span class=\"rt\">か</span></span>ちようない <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけルールは<span class=\"ruby\"><span class=\"rb\">適用外</span><span class=\"rt\">てきようがい</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "ここ弱点",
+      "C0": "꿰뚫어, 여기 약점, 가짜라도 좋아, 뭐든 좋아",
+      "G0": "이 문장은 'ここ'(여기)와 '弱点'(약점)으로 구성된 명사구입니다. 'ここ'는 장소를 지시하는 대명사로, '弱点'은 명사로 '약점'을 의미합니다. 전체적으로 '여기 약점'이라는 의미를 담고 있습니다.",
+      "K0": "여기 약점",
+      "I0": "koko jakuten",
+      "R0": "코코 쟈쿠텐",
+      "LI": [
+        {
+          "T1": "ここ",
+          "K1": "여기",
+          "I1": "koko",
+          "R1": "코코",
+          "E1": "화자와 가까운 장소를 가리키는 지시 대명사입니다.",
+          "T2": "ここ",
+          "K2": "여기",
+          "I2": "koko",
+          "R2": "코코",
+          "XE": "ここに来てください。",
+          "XK": "여기로 와 주세요.",
+          "XI": "koko ni kite kudasai",
+          "XR": "코코 니 키테 쿠다사이"
+        },
+        {
+          "T1": "弱点",
+          "K1": "약점",
+          "I1": "jakuten",
+          "R1": "쟈쿠텐",
+          "E1": "'약점' 또는 '취약점'을 의미하는 명사입니다.",
+          "T2": "弱点",
+          "K2": "약점",
+          "I2": "jakuten",
+          "R2": "쟈쿠텐",
+          "XE": "彼は弱点を克服した。",
+          "XK": "그는 약점을 극복했다.",
+          "XI": "kare wa jakuten o kokufuku shita",
+          "XR": "카레 와 쟈쿠텐 오 코쿠후쿠 시타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけルールは<span class=\"ruby\"><span class=\"rb\">適用外</span><span class=\"rt\">てきようがい</span></span>",
+      "C0": "ひっくり<span class=\"ruby\"><span class=\"rb\">返</span><span class=\"rt\">かえ</span></span>っても<span class=\"ruby\"><span class=\"rb\">勝</span><span class=\"rt\">か</span></span>ちようない <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけルールは<span class=\"ruby\"><span class=\"rb\">適用外</span><span class=\"rt\">てきようがい</span></span> <span class=\"ruby\"><span class=\"rb\">四</span><span class=\"rt\">よっ</span></span>つともオセロは<span class=\"ruby\"><span class=\"rb\">黒</span><span class=\"rt\">くろ</span></span>しかない"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "申し訳ねえな",
+      "C0": "이마에 낙인. 미안해. 화살을 꽂아서.",
+      "G0": "이 문장은 '申し訳ねえな'로 구성되어 있으며, 일본어의 구어적 표현입니다. '申し訳'는 '사과', '변명'을 의미하며, 'ねえな'는 'ないな'의 구어적 변형으로 부정을 나타냅니다. 전체적으로 '미안하다'는 의미를 가진 '申し訳ない'가 변형된 형태로, 친근한 관계에서 사용하는 사과 표현입니다.",
+      "K0": "면목 없네.",
+      "I0": "mōshiwake nē na",
+      "R0": "모오시 와케 네에 나",
+      "LI": [
+        {
+          "T1": "申し訳",
+          "K1": "사과",
+          "I1": "mōshiwake",
+          "R1": "모오시 와케",
+          "E1": "'사과', '변명'을 의미하는 명사입니다.",
+          "T2": "申し訳",
+          "K2": "사과",
+          "I2": "mōshiwake",
+          "R2": "모오시 와케",
+          "XE": "それは申し訳ないことだ。",
+          "XK": "그건 미안한 일이야.",
+          "XI": "sore wa mōshiwakenai koto da",
+          "XR": "소레 와 모오시 와케 나이 코토 다"
+        },
+        {
+          "T1": "ねえ",
+          "K1": "~없어",
+          "I1": "nē",
+          "R1": "네에",
+          "E1": "'없다'를 의미하는 'ない'의 구어적 변형입니다.",
+          "T2": "ない",
+          "K2": "~없다",
+          "I2": "nai",
+          "R2": "나이",
+          "XE": "金がねえ。",
+          "XK": "돈이 없어.",
+          "XI": "kane ga nē",
+          "XR": "카네 가 네에"
+        },
+        {
+          "T1": "な",
+          "K1": "~구나",
+          "I1": "na",
+          "R1": "나",
+          "E1": "자신의 생각을 나타내거나 감탄을 표현하는 종조사입니다.",
+          "T2": "な",
+          "K2": "~구나",
+          "I2": "na",
+          "R2": "나",
+          "XE": "いい天気だな。",
+          "XK": "좋은 날씨구나.",
+          "XI": "ii tenki da na",
+          "XR": "이이 텐키 다 나"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">四</span><span class=\"rt\">よっ</span></span>つともオセロは<span class=\"ruby\"><span class=\"rb\">黒</span><span class=\"rt\">くろ</span></span>しかない",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>だけルールは<span class=\"ruby\"><span class=\"rb\">適用外</span><span class=\"rt\">てきようがい</span></span> <span class=\"ruby\"><span class=\"rb\">四</span><span class=\"rt\">よっ</span></span>つともオセロは<span class=\"ruby\"><span class=\"rb\">黒</span><span class=\"rt\">くろ</span></span>しかない カツアゲ<span class=\"ruby\"><span class=\"rb\">放題</span><span class=\"rt\">ほうだい</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "パチモンでもいい何でもいい",
+      "C0": "여기가 약점이야. 가짜여도 괜찮아, 뭐든 괜찮아. 지금 너와 이름 붙인 모든 게 갖고 싶어.",
+      "G0": "이 문장은 두 개의 병렬된 구문으로 구성되어 있습니다. 'パチモンでもいい'는 '가짜여도 괜찮아'라는 의미이고, '何でもいい'는 '뭐든 괜찮아'라는 의미입니다. 두 문장은 'でもいい'라는 표현을 통해 조건을 허용하거나 수용하는 태도를 나타내며, 화자의 포용적인 감정을 강조합니다.",
+      "K0": "짝퉁이라도 좋아, 뭐든 좋아",
+      "I0": "pachimon demo ii nandemo ii",
+      "R0": "파치몬 데모 이이 난 데모 이이",
+      "LI": [
+        {
+          "T1": "パチモン",
+          "K1": "짝퉁",
+          "I1": "pachimon",
+          "R1": "파치몬",
+          "E1": "‘가짜 상품’이나 ‘짝퉁’을 의미하는 속어입니다. 진짜가 아닌 모조품을 가리킵니다.",
+          "T2": "パチモン",
+          "K2": "짝퉁",
+          "I2": "pachimon",
+          "R2": "파치몬",
+          "XE": "あれはパチモンだから気をつけて。",
+          "XK": "그건 짝퉁이니까 조심해.",
+          "XI": "are wa pachimon dakara ki o tsukete",
+          "XR": "아레 와 파치몬 다카라 키 오 츠케테"
+        },
+        {
+          "T1": "でも",
+          "K1": "~여도",
+          "I1": "demo",
+          "R1": "데모",
+          "E1": "앞에 오는 명사나 단어에 ‘~라도’, ‘~여도’라는 의미를 더하는 표현입니다.",
+          "T2": "でも",
+          "K2": "~여도",
+          "I2": "demo",
+          "R2": "데모",
+          "XE": "雨でも行きます。",
+          "XK": "비가 와도 갈 거예요.",
+          "XI": "ame demo ikimasu",
+          "XR": "아메 데모 이키마스"
+        },
+        {
+          "T1": "いい",
+          "K1": "괜찮아",
+          "I1": "ii",
+          "R1": "이이",
+          "E1": "‘좋다’, ‘괜찮다’는 의미의 형용사입니다. 상황에 따라 긍정적인 수용을 나타냅니다.",
+          "T2": "いい",
+          "K2": "좋다",
+          "I2": "ii",
+          "R2": "이이",
+          "XE": "この服、いいね！",
+          "XK": "이 옷, 괜찮네!",
+          "XI": "kono fuku, ii ne",
+          "XR": "코노 후쿠, 이이 네"
+        },
+        {
+          "T1": "何",
+          "K1": "무엇",
+          "I1": "nan",
+          "R1": "난",
+          "E1": "의문사로 ‘무엇’을 의미합니다. 여기서는 ‘무엇이든’이라는 의미로 사용됩니다.",
+          "T2": "何",
+          "K2": "무엇",
+          "I2": "nan",
+          "R2": "난",
+          "XE": "何が欲しい？",
+          "XK": "뭐가 갖고 싶어?",
+          "XI": "nani ga hoshii?",
+          "XR": "나니 가 호시이?"
+        },
+        {
+          "T1": "でも",
+          "K1": "~이든지",
+          "I1": "demo",
+          "R1": "데모",
+          "E1": "‘무엇이든지’, ‘누구든지’ 등에서 사용되는 표현으로, 선택의 폭을 넓히는 의미를 가집니다.",
+          "T2": "でも",
+          "K2": "~이든지",
+          "I2": "demo",
+          "R2": "데모",
+          "XE": "誰でもいいよ。",
+          "XK": "누구든 괜찮아.",
+          "XI": "dare demo ii yo",
+          "XR": "다레 데모 이이 요"
+        },
+        {
+          "T1": "いい",
+          "K1": "괜찮아",
+          "I1": "ii",
+          "R1": "이이",
+          "E1": "앞 문장과 마찬가지로, 허용이나 긍정을 나타내는 형용사입니다.",
+          "T2": "いい",
+          "K2": "좋다",
+          "I2": "ii",
+          "R2": "이이",
+          "XE": "それでもいいよ。",
+          "XK": "그것도 괜찮아.",
+          "XI": "sore demo ii yo",
+          "XR": "소레 데모 이이 요"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "カツアゲ<span class=\"ruby\"><span class=\"rb\">放題</span><span class=\"rt\">ほうだい</span></span>",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">四</span><span class=\"rt\">よっ</span></span>つともオセロは<span class=\"ruby\"><span class=\"rb\">黒</span><span class=\"rt\">くろ</span></span>しかない カツアゲ<span class=\"ruby\"><span class=\"rb\">放題</span><span class=\"rt\">ほうだい</span></span> <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">放</span><span class=\"rt\">はな</span></span>ったアバダケダブラ"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "半端なくラブ！ときらめき浮き足立つフィロソフィ",
+      "C0": "달링 베이비 달링, 완전한 사랑! 반짝이며 들뜬 철학, 죽을 만큼 귀여운 올려다보는 눈빛",
+      "G0": "이 문장은 감탄과 감정을 강조하는 표현으로 구성되어 있습니다. '半端なくラブ！'는 '엄청난 사랑!'이라는 의미로, '半端ない'의 부정형을 사용하여 강한 긍정을 나타냅니다. 'ときらめき'는 '반짝이며'라는 부사적 표현이고, '浮き足立つ'는 '들뜨다'는 뜻의 동사입니다. 마지막의 'フィロソフィ'는 '철학'이라는 의미의 외래어입니다. 전체적으로 감정이 고조된 상태에서 사랑에 들뜬 마음을 철학적으로 표현한 문장입니다.",
+      "K0": "장난 아니게 사랑해! 반짝이며 들뜬 철학",
+      "I0": "hanpa naku rabu! to kirameki uki ashidatsu firosofi",
+      "R0": "한파 나쿠 라부! 토 키라메키 우키 아시 다츠 피로소피",
+      "LI": [
+        {
+          "T1": "半端",
+          "K1": "어중간함",
+          "I1": "hanpa",
+          "R1": "한파",
+          "E1": "완전하지 않고 어중간하거나 애매한 상태를 나타냅니다.",
+          "T2": "半端",
+          "K2": "어중간함",
+          "I2": "hanpa",
+          "R2": "한파",
+          "XE": "半端な気持ちでは勝てない。",
+          "XK": "어중간한 마음으로는 이길 수 없어.",
+          "XI": "hanpa na kimochi de wa katenai",
+          "XR": "한파 나 키모치 데 와 카테나이"
+        },
+        {
+          "T1": "なく",
+          "K1": "~하지 않고",
+          "I1": "naku",
+          "R1": "나쿠",
+          "E1": "부정형으로, 앞의 단어를 부정하거나 강조할 때 사용됩니다.",
+          "T2": "ない",
+          "K2": "~없다",
+          "I2": "nai",
+          "R2": "나이",
+          "XE": "失敗なく成功した。",
+          "XK": "실패 없이 성공했다.",
+          "XI": "shippai naku seikō shita",
+          "XR": "싯파이 나쿠 세이코오 시타"
+        },
+        {
+          "T1": "ラブ",
+          "K1": "사랑",
+          "I1": "rabu",
+          "R1": "라부",
+          "E1": "영어 'love'에서 온 외래어로, 사랑을 의미합니다.",
+          "T2": "ラブ",
+          "K2": "사랑",
+          "I2": "rabu",
+          "R2": "라부",
+          "XE": "ラブストーリーが好き。",
+          "XK": "러브스토리를 좋아해.",
+          "XI": "rabusutōrī ga suki",
+          "XR": "라부 스토오리이 가 스키"
+        },
+        {
+          "T1": "と",
+          "K1": "~라고",
+          "I1": "to",
+          "R1": "토",
+          "E1": "인용을 나타내는 조사입니다.",
+          "T2": "と",
+          "K2": "~라고",
+          "I2": "to",
+          "R2": "토",
+          "XE": "彼は「行く」と言った。",
+          "XK": "그는 '간다'라고 말했다.",
+          "XI": "kare wa 'iku' to itta",
+          "XR": "카레 와 '이쿠' 토 잇타"
+        },
+        {
+          "T1": "きらめき",
+          "K1": "반짝임",
+          "I1": "kirameki",
+          "R1": "키라메키",
+          "E1": "빛나는 듯한 반짝임이나 눈부심을 나타내는 명사입니다.",
+          "T2": "きらめく",
+          "K2": "반짝이다",
+          "I2": "kirameku",
+          "R2": "키라메쿠",
+          "XE": "星のきらめきが美しい。",
+          "XK": "별의 반짝임이 아름답다.",
+          "XI": "hoshi no kirameki ga utsukushii",
+          "XR": "호시 노 키라메키 가 우츠쿠시이"
+        },
+        {
+          "T1": "浮き",
+          "K1": "들뜬",
+          "I1": "uki",
+          "R1": "우키",
+          "E1": "표면에 뜨거나 마음이 들뜬 상태를 나타냅니다.",
+          "T2": "浮く",
+          "K2": "뜨다",
+          "I2": "uku",
+          "R2": "우쿠",
+          "XE": "気持ちが浮き立つ。",
+          "XK": "마음이 들뜨다.",
+          "XI": "kimochi ga ukitatsu",
+          "XR": "키모치 가 우키타츠"
+        },
+        {
+          "T1": "足立つ",
+          "K1": "발이 들뜨다",
+          "I1": "ashidatsu",
+          "R1": "아시 다츠",
+          "E1": "‘浮き足立つ’는 흥분하거나 불안해서 마음이 들뜬 상태를 표현합니다.",
+          "T2": "足立つ",
+          "K2": "발이 들뜨다",
+          "I2": "ashidatsu",
+          "R2": "아시 다츠",
+          "XE": "彼は浮き足立っていた。",
+          "XK": "그는 들떠 있었다.",
+          "XI": "kare wa ukiashidatte ita",
+          "XR": "카레 와 우키 아시 닷테 이타"
+        },
+        {
+          "T1": "フィロソフィ",
+          "K1": "철학",
+          "I1": "firosofi",
+          "R1": "피로소피",
+          "E1": "영어 'philosophy'에서 온 외래어로, 철학을 의미합니다.",
+          "T2": "フィロソフィ",
+          "K2": "철학",
+          "I2": "firosofi",
+          "R2": "피로소피",
+          "XE": "彼のフィロソフィは独特だ。",
+          "XK": "그의 철학은 독특하다.",
+          "XI": "kare no firosofi wa dokutoku da",
+          "XR": "카레 노 피로소피 와 도쿠토쿠 다"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">放</span><span class=\"rt\">はな</span></span>ったアバダケダブラ",
+      "C0": "カツアゲ<span class=\"ruby\"><span class=\"rb\">放題</span><span class=\"rt\">ほうだい</span></span> <span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">放</span><span class=\"rt\">はな</span></span>ったアバダケダブラ デコにスティグマ"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "脳みその中から「やめろ馬鹿」と喚くモラリティ",
+      "C0": "안 돼 안 돼 안 돼 뇌 속에서 '그만둬 바보야'라고 외치는 모럴리티 달링 베이비 달링",
+      "G0": "이 문장은 주어(モラリティ) + 동사(喚く) + 인용문(「やめろ馬鹿」) + 장소 표현(脳みその中から)으로 구성되어 있습니다. '脳みその中から'는 '뇌 속에서'라는 의미로 장소를 나타내며, 「やめろ馬鹿」는 인용문으로 '그만둬 바보야'라는 뜻입니다. 'と'는 인용을 나타내는 조사이며, '喚く'는 '외치다'라는 동사입니다. 전체적으로 도덕성(모럴리티)이 뇌 속에서 외치는 모습을 표현하고 있습니다.",
+      "K0": "머리 속에서 '그만둬 바보야'라고 외치는 도덕성",
+      "I0": "nōmiso no naka kara 'yamero baka' to wameku morariti",
+      "R0": "노오 미소 노 나카 카라 '야메로 바카' 토 와메쿠 모라리티",
+      "LI": [
+        {
+          "T1": "脳みそ",
+          "K1": "뇌",
+          "I1": "nōmiso",
+          "R1": "노오 미소",
+          "E1": "뇌를 의미하는 속어입니다. '脳'는 '뇌', 'みそ'는 '된장'을 의미하지만 여기서는 비하적인 표현으로 사용됩니다.",
+          "T2": "脳みそ",
+          "K2": "뇌",
+          "I2": "nōmiso",
+          "R2": "노오 미소",
+          "XE": "脳みそが沸騰しそうだ。",
+          "XK": "머리가 끓어오를 것 같다.",
+          "XI": "nōmiso ga futtō shisō da",
+          "XR": "노오 미소 가 훗토오 시소오 다"
+        },
+        {
+          "T1": "の",
+          "K1": "~의",
+          "I1": "no",
+          "R1": "노",
+          "E1": "소유나 관계를 나타내는 조사입니다.",
+          "T2": "の",
+          "K2": "~의",
+          "I2": "no",
+          "R2": "노",
+          "XE": "私の本",
+          "XK": "나의 책",
+          "XI": "watashi no hon",
+          "XR": "와타시 노 혼"
+        },
+        {
+          "T1": "中",
+          "K1": "속",
+          "I1": "naka",
+          "R1": "나카",
+          "E1": "공간이나 장소의 내부를 나타내는 명사입니다.",
+          "T2": "中",
+          "K2": "속",
+          "I2": "naka",
+          "R2": "나카",
+          "XE": "箱の中に猫がいる。",
+          "XK": "상자 속에 고양이가 있다.",
+          "XI": "hako no naka ni neko ga iru",
+          "XR": "하코 노 나카 니 네코 가 이루"
+        },
+        {
+          "T1": "から",
+          "K1": "에서",
+          "I1": "kara",
+          "R1": "카라",
+          "E1": "출발점이나 원인을 나타내는 조사입니다.",
+          "T2": "から",
+          "K2": "에서",
+          "I2": "kara",
+          "R2": "카라",
+          "XE": "家から学校まで歩く。",
+          "XK": "집에서 학교까지 걸어간다.",
+          "XI": "ie kara gakkō made aruku",
+          "XR": "이에 카라 갓코오 마데 아루쿠"
+        },
+        {
+          "T1": "やめろ",
+          "K1": "그만둬",
+          "I1": "yamero",
+          "R1": "야메로",
+          "E1": "그만두라는 명령형 표현입니다.",
+          "T2": "やめる",
+          "K2": "그만두다",
+          "I2": "yameru",
+          "R2": "야메루",
+          "XE": "そんなことやめろ！",
+          "XK": "그런 짓 그만둬!",
+          "XI": "sonna koto yamero",
+          "XR": "손나 코토 야메로"
+        },
+        {
+          "T1": "馬鹿",
+          "K1": "바보",
+          "I1": "baka",
+          "R1": "바카",
+          "E1": "어리석은 사람이나 행동을 비하하는 말입니다.",
+          "T2": "馬鹿",
+          "K2": "바보",
+          "I2": "baka",
+          "R2": "바카",
+          "XE": "馬鹿なことをするな。",
+          "XK": "바보 같은 짓 하지 마.",
+          "XI": "baka na koto o suru na",
+          "XR": "바카 나 코토 오 스루 나"
+        },
+        {
+          "T1": "と",
+          "K1": "라고",
+          "I1": "to",
+          "R1": "토",
+          "E1": "인용을 나타내는 조사입니다.",
+          "T2": "と",
+          "K2": "라고",
+          "I2": "to",
+          "R2": "토",
+          "XE": "彼は「行く」と言った。",
+          "XK": "그는 '간다'라고 말했다.",
+          "XI": "kare wa 'iku' to itta",
+          "XR": "카레 와 '이쿠' 토 잇타"
+        },
+        {
+          "T1": "喚く",
+          "K1": "외치다",
+          "I1": "wameku",
+          "R1": "와메쿠",
+          "E1": "큰 소리로 외치거나 울부짖는 행위를 나타내는 동사입니다.",
+          "T2": "喚く",
+          "K2": "외치다",
+          "I2": "wameku",
+          "R2": "와메쿠",
+          "XE": "彼は怒りで喚いた。",
+          "XK": "그는 화가 나서 고함쳤다.",
+          "XI": "kare wa ikari de wameita",
+          "XR": "카레 와 이카리 데 와메이타"
+        },
+        {
+          "T1": "モラリティ",
+          "K1": "도덕성",
+          "I1": "morariti",
+          "R1": "모라리티",
+          "E1": "영어 'morality'에서 온 외래어로, 도덕성이나 윤리적 감각을 의미합니다.",
+          "T2": "モラリティ",
+          "K2": "도덕성",
+          "I2": "morariti",
+          "R2": "모라리티",
+          "XE": "モラリティが問われる。",
+          "XK": "도덕성이 문제된다.",
+          "XI": "morariti ga towareru",
+          "XR": "모라리티 가 토와레루"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "デコにスティグマ",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">君</span><span class=\"rt\">きみ</span></span>が<span class=\"ruby\"><span class=\"rb\">笑顔</span><span class=\"rt\">えがお</span></span>で<span class=\"ruby\"><span class=\"rb\">放</span><span class=\"rt\">はな</span></span>ったアバダケダブラ デコにスティグマ <span class=\"ruby\"><span class=\"rb\">申</span><span class=\"rt\">もう</span></span>し<span class=\"ruby\"><span class=\"rb\">訳</span><span class=\"rt\">わけ</span></span>ねえな"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "カツアゲ放題",
+      "C0": "오셀로 네 개 전부 다 검은색뿐이야. 삥 뜯기 무제한. 네가 웃는 얼굴로 날린 아바다케다브라.",
+      "G0": "이 문장은 명사구로 구성되어 있으며, 'カツアゲ'는 '삥 뜯기'를 의미하고, '放題'는 '~무제한'이라는 뜻입니다. 따라서 전체적으로 '삥 뜯기 무제한'이라는 의미의 표현으로, 과격하고 풍자적인 분위기를 전달합니다.",
+      "K0": "삥 뜯기 무제한",
+      "I0": "katsuage hōdai",
+      "R0": "카츠 아게 호오다이",
+      "LI": [
+        {
+          "T1": "カツアゲ",
+          "K1": "삥 뜯기",
+          "I1": "katsuage",
+          "R1": "카츠 아게",
+          "E1": "불량배가 약한 사람에게 돈이나 물건을 강제로 빼앗는 행위를 속되게 이르는 말입니다.",
+          "T2": "カツアゲ",
+          "K2": "삥 뜯기",
+          "I2": "katsuage",
+          "R2": "카츠 아게",
+          "XE": "あいつは中学生からカツアゲしていた。",
+          "XK": "그 녀석은 중학생에게서 삥을 뜯고 있었다.",
+          "XI": "aitsu wa chūgakusei kara katsuage shite ita",
+          "XR": "아이츠 와 츄우 가쿠세이 카라 카츠 아게 시테 이타"
+        },
+        {
+          "T1": "放題",
+          "K1": "무제한",
+          "I1": "hōdai",
+          "R1": "호오다이",
+          "E1": "하고 싶은 만큼 마음껏 할 수 있다는 의미로, '먹고 싶은 만큼 먹기'나 '사용 무제한' 등과 같이 사용됩니다.",
+          "T2": "放題",
+          "K2": "무제한",
+          "I2": "hōdai",
+          "R2": "호오다이",
+          "XE": "食べ放題のレストランに行った。",
+          "XK": "뷔페(무한 리필) 식당에 갔다.",
+          "XI": "tabehōdai no resutoran ni itta",
+          "XR": "타베 호오다이 노 레스토란 니 잇타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">申</span><span class=\"rt\">もう</span></span>し<span class=\"ruby\"><span class=\"rb\">訳</span><span class=\"rt\">わけ</span></span>ねえな",
+      "C0": "デコにスティグマ <span class=\"ruby\"><span class=\"rb\">申</span><span class=\"rt\">もう</span></span>し<span class=\"ruby\"><span class=\"rb\">訳</span><span class=\"rt\">わけ</span></span>ねえな <span class=\"ruby\"><span class=\"rb\">矢</span><span class=\"rt\">や</span></span>を<span class=\"ruby\"><span class=\"rb\">刺</span><span class=\"rt\">さ</span></span>して"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "ダーリンベイビーダーリン",
+      "C0": "뇌 속에서 '그만둬 바보'라고 외치는 도덕성 달링 베이비 달링 반반 없이 러브! 그리고 반짝임 떠오르는 철학",
+      "G0": "이 문장은 영어 단어 'ダーリン'(darling)과 'ベイビー'(baby)가 반복되어 사용된 감탄사적 표현입니다. 'ダーリン'이 두 번 반복되어 감정을 강조하고 있으며, 전체적으로 사랑하는 상대를 부르는 애칭을 반복하여 애정을 표현하고 있습니다.",
+      "K0": "달링 베이비 달링",
+      "I0": "dārin beibī dārin",
+      "R0": "다아린 베이비이 다아린",
+      "LI": [
+        {
+          "T1": "ダーリン",
+          "K1": "달링",
+          "I1": "dārin",
+          "R1": "다아린",
+          "E1": "사랑하는 사람을 부르는 애칭으로, '여보', '자기'와 같은 의미입니다.",
+          "T2": "ダーリン",
+          "K2": "달링",
+          "I2": "dārin",
+          "R2": "다아린",
+          "XE": "ダーリン、愛してるよ。",
+          "XK": "자기야, 사랑해.",
+          "XI": "dārin, aishiteru yo",
+          "XR": "다아린, 아이시테루 요"
+        },
+        {
+          "T1": "ベイビー",
+          "K1": "베이비",
+          "I1": "beibī",
+          "R1": "베이비이",
+          "E1": "사랑하는 사람을 부르는 애칭으로, '달링'과 유사한 의미입니다.",
+          "T2": "ベイビー",
+          "K2": "베이비",
+          "I2": "beibī",
+          "R2": "베이비이",
+          "XE": "ベイビー、元気？",
+          "XK": "베이비, 잘 지내?",
+          "XI": "beibī, genki",
+          "XR": "베이비이, 겐키"
+        },
+        {
+          "T1": "ダーリン",
+          "K1": "달링",
+          "I1": "dārin",
+          "R1": "다아린",
+          "E1": "앞의 애칭을 반복하여 감정을 더욱 강조하는 표현입니다.",
+          "T2": "ダーリン",
+          "K2": "달링",
+          "I2": "dārin",
+          "R2": "다아린",
+          "XE": "ダーリンダーリンと呼んで。",
+          "XK": "달링 달링이라고 불러줘.",
+          "XI": "dārin dārin to yonde",
+          "XR": "다아린 다아린 토 욘데"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">矢</span><span class=\"rt\">や</span></span>を<span class=\"ruby\"><span class=\"rb\">刺</span><span class=\"rt\">さ</span></span>して",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">申</span><span class=\"rt\">もう</span></span>し<span class=\"ruby\"><span class=\"rb\">訳</span><span class=\"rt\">わけ</span></span>ねえな <span class=\"ruby\"><span class=\"rb\">矢</span><span class=\"rt\">や</span></span>を<span class=\"ruby\"><span class=\"rb\">刺</span><span class=\"rt\">さ</span></span>して <span class=\"ruby\"><span class=\"rb\">貫</span><span class=\"rt\">つらぬ</span></span>いて"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "ばら撒く乱心",
+      "C0": "무언가 법에 저촉될 정도로, 미친 듯이 흩뿌리는 광기. 정신 차려보니 모든 걸 탕진했어.",
+      "G0": "이 문장은 동사 'ばら撒く(흩뿌리다)'와 명사 '乱心(미친 마음, 광기)'이 결합된 구조입니다. 'ばら撒く'는 '흩뿌리다'라는 의미의 동사이고, '乱心'은 '마음이 어지럽다'는 뜻의 명사로, 감정이나 정신 상태의 혼란을 나타냅니다. 전체적으로는 '광기를 흩뿌리다'라는 의미로, 감정의 폭발이나 통제되지 않는 상태를 표현합니다.",
+      "K0": "흩뿌리는 광기",
+      "I0": "baramaku ranshin",
+      "R0": "바라마쿠 란신",
+      "LI": [
+        {
+          "T1": "ばら撒く",
+          "K1": "흩뿌리다",
+          "I1": "baramaku",
+          "R1": "바라마쿠",
+          "E1": "물건이나 감정 등을 마구 흩어지게 뿌리는 것을 의미하는 동사입니다.",
+          "T2": "ばら撒く",
+          "K2": "흩뿌리다",
+          "I2": "baramaku",
+          "R2": "바라마쿠",
+          "XE": "彼はお金をばら撒いた。",
+          "XK": "그는 돈을 흩뿌렸다.",
+          "XI": "kare wa okane o baramaita",
+          "XR": "카레 와 오카네 오 바라마이타"
+        },
+        {
+          "T1": "乱心",
+          "K1": "광기",
+          "I1": "ranshin",
+          "R1": "란신",
+          "E1": "정신이 흐트러져 이성을 잃은 상태를 의미합니다.",
+          "T2": "乱心",
+          "K2": "광기",
+          "I2": "ranshin",
+          "R2": "란신",
+          "XE": "彼は乱心して叫んだ。",
+          "XK": "그는 광기에 사로잡혀 소리쳤다.",
+          "XI": "kare wa ranshin shite sakenda",
+          "XR": "카레 와 란신 시테 사켄다"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">貫</span><span class=\"rt\">つらぬ</span></span>いて",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">矢</span><span class=\"rt\">や</span></span>を<span class=\"ruby\"><span class=\"rb\">刺</span><span class=\"rt\">さ</span></span>して <span class=\"ruby\"><span class=\"rb\">貫</span><span class=\"rt\">つらぬ</span></span>いて ここ<span class=\"ruby\"><span class=\"rb\">弱点</span><span class=\"rt\">じゃくてん</span></span>"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "なにがし法に触れるくらい",
+      "C0": "죽을 만큼 귀여운 올려다보는 눈빛, 무슨무슨 법에 걸릴 정도로, 마구 뿌려대는 미친 마음",
+      "G0": "이 문장은 'なにがし法に触れるくらい'로 구성되어 있으며, 'くらい'는 정도를 나타내는 조사입니다. 'なにがし'는 구체적인 명칭을 밝히지 않고 '무슨무슨'이라고 뭉뚱그려 표현하는 말이며, '法に触れる'는 '법에 저촉되다'는 의미입니다. 전체적으로는 '무슨무슨 법에 저촉될 정도로'라는 의미로, 어떤 행위가 법에 걸릴 만큼 과도하다는 것을 강조하는 표현입니다.",
+      "K0": "무슨무슨 법에 걸릴 정도로",
+      "I0": "nanigashi hō ni fureru kurai",
+      "R0": "나니가시 호오 니 후레루 쿠라이",
+      "LI": [
+        {
+          "T1": "なにがし",
+          "K1": "무슨무슨",
+          "I1": "nanigashi",
+          "R1": "나니가시",
+          "E1": "구체적인 이름이나 내용을 밝히지 않고 뭉뚱그려 말할 때 쓰는 표현입니다. 예: '무슨무슨 법', '어떤 사람'.",
+          "T2": "なにがし",
+          "K2": "무슨무슨",
+          "I2": "nanigashi",
+          "R2": "나니가시",
+          "XE": "なにがし先生が来ました。",
+          "XK": "무슨무슨 선생님이 오셨습니다.",
+          "XI": "nanigashi sensei ga kimashita",
+          "XR": "나니가시 센세이 가 키마시타"
+        },
+        {
+          "T1": "法",
+          "K1": "법",
+          "I1": "hō",
+          "R1": "호오",
+          "E1": "국가나 사회의 규칙 또는 법률을 의미합니다.",
+          "T2": "法",
+          "K2": "법",
+          "I2": "hō",
+          "R2": "호오",
+          "XE": "日本の法を守る。",
+          "XK": "일본의 법을 지킨다.",
+          "XI": "Nihon no hō o mamoru",
+          "XR": "니혼 노 호오 오 마모루"
+        },
+        {
+          "T1": "に",
+          "K1": "~에",
+          "I1": "ni",
+          "R1": "니",
+          "E1": "장소, 시간, 대상 등을 나타내는 조사입니다. 여기서는 '법에'라는 의미로 사용됩니다.",
+          "T2": "に",
+          "K2": "~에",
+          "I2": "ni",
+          "R2": "니",
+          "XE": "学校に行く。",
+          "XK": "학교에 간다.",
+          "XI": "gakkō ni iku",
+          "XR": "갓코오 니 이쿠"
+        },
+        {
+          "T1": "触れる",
+          "K1": "닿다",
+          "I1": "fureru",
+          "R1": "후레루",
+          "E1": "물리적으로 닿는다는 의미 외에도, 규칙이나 법에 저촉된다는 의미로도 사용됩니다.",
+          "T2": "触れる",
+          "K2": "닿다",
+          "I2": "fureru",
+          "R2": "후레루",
+          "XE": "それは法律に触れる行為です。",
+          "XK": "그것은 법에 저촉되는 행위입니다.",
+          "XI": "sore wa hōritsu ni fureru kōi desu",
+          "XR": "소레 와 호오리츠 니 후레루 코오이 데스"
+        },
+        {
+          "T1": "くらい",
+          "K1": "~정도로",
+          "I1": "kurai",
+          "R1": "쿠라이",
+          "E1": "정도를 나타내는 조사로, '~할 정도로'라는 의미입니다.",
+          "T2": "くらい",
+          "K2": "~정도로",
+          "I2": "kurai",
+          "R2": "쿠라이",
+          "XE": "泣きたいくらい悲しい。",
+          "XK": "울고 싶을 정도로 슬프다.",
+          "XI": "nakitai kurai kanashii",
+          "XR": "나키 타이 쿠라이 카나시이"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "ここ<span class=\"ruby\"><span class=\"rb\">弱点</span><span class=\"rt\">じゃくてん</span></span>",
+      "C0": "<span class=\"ruby\"><span class=\"rb\">貫</span><span class=\"rt\">つらぬ</span></span>いて ここ<span class=\"ruby\"><span class=\"rb\">弱点</span><span class=\"rt\">じゃくてん</span></span> パチモンでもいい<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なん</span></span>でもいい"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "君が笑顔で放ったアバダケダブラ",
+      "C0": "카츠 아게 호다이 키미가 에가오데 하낫타 아바다케다부라 데코니 스티구마",
+      "G0": "이 문장은 주어(君) + 조사(が) + 명사구(笑顔) + 조사(で) + 동사(放った) + 명사(アバダケダブラ)로 구성되어 있습니다. '君が'는 '네가', '笑顔で'는 '미소로', '放った'는 '쏘았다', 'アバダケダブラ'는 주문 이름입니다. 전체적으로 상대방이 미소로 주문을 사용했음을 표현합니다.",
+      "K0": "네가 미소로 발사한 아바다 케다브라",
+      "I0": "kimi ga egao de hanatta abada kedabura",
+      "R0": "키미 가 에가오 데 하낫타 아바다 케다부라",
+      "LI": [
+        {
+          "T1": "君",
+          "K1": "너",
+          "I1": "kimi",
+          "R1": "키미",
+          "E1": "친근한 관계에서 상대방을 부를 때 사용하는 2인칭 대명사입니다.",
+          "T2": "君",
+          "K2": "너",
+          "I2": "kimi",
+          "R2": "키미",
+          "XE": "君は優しい人だ。",
+          "XK": "너는 친절한 사람이야.",
+          "XI": "kimi wa yasashii hito da",
+          "XR": "키미 와 야사시이 히토 다"
+        },
+        {
+          "T1": "が",
+          "K1": "~이/가",
+          "I1": "ga",
+          "R1": "가",
+          "E1": "주격 조사로, 문장의 주어를 나타냅니다.",
+          "T2": "が",
+          "K2": "~이/가",
+          "I2": "ga",
+          "R2": "가",
+          "XE": "私が行きます。",
+          "XK": "제가 갈게요.",
+          "XI": "watashi ga ikimasu",
+          "XR": "와타시 가 이키마스"
+        },
+        {
+          "T1": "笑顔",
+          "K1": "미소",
+          "I1": "egao",
+          "R1": "에가오",
+          "E1": "웃는 얼굴, 미소를 의미하는 명사입니다.",
+          "T2": "笑顔",
+          "K2": "미소",
+          "I2": "egao",
+          "R2": "에가오",
+          "XE": "彼女の笑顔が好きだ。",
+          "XK": "그녀의 미소가 좋아.",
+          "XI": "kanojo no egao ga suki da",
+          "XR": "카노죠 노 에가오 가 스키 다"
+        },
+        {
+          "T1": "で",
+          "K1": "~로",
+          "I1": "de",
+          "R1": "데",
+          "E1": "수단이나 방법을 나타내는 조사입니다.",
+          "T2": "で",
+          "K2": "~로",
+          "I2": "de",
+          "R2": "데",
+          "XE": "箸で食べる。",
+          "XK": "젓가락으로 먹는다.",
+          "XI": "hashi de taberu",
+          "XR": "하시 데 타베루"
+        },
+        {
+          "T1": "放った",
+          "K1": "쏘았다",
+          "I1": "hanatta",
+          "R1": "하낫타",
+          "E1": "무언가를 발사하거나 내보내는 행위를 나타내는 동사입니다.",
+          "T2": "放つ",
+          "K2": "쏘다",
+          "I2": "hanatsu",
+          "R2": "하나츠",
+          "XE": "彼は矢を放った。",
+          "XK": "그는 화살을 쐈다.",
+          "XI": "kare wa ya o hanatta",
+          "XR": "카레 와 야 오 하낫타"
+        },
+        {
+          "T1": "アバダケダブラ",
+          "K1": "아바다 케다브라",
+          "I1": "abada kedabura",
+          "R1": "아바다 케다부라",
+          "E1": "해리 포터 시리즈에 나오는 죽음을 부르는 저주 주문입니다.",
+          "T2": "アバダケダブラ",
+          "K2": "아바다 케다브라",
+          "I2": "abada kedabura",
+          "R2": "아바다 케다부라",
+          "XE": "アバダケダブラを唱える。",
+          "XK": "아바다 케다브라를 외치다.",
+          "XI": "abada kedabura o tonaeru",
+          "XR": "아바다 케다부라 오 토나에루"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "パチモンでもいい<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なん</span></span>でもいい",
+      "C0": "ここ<span class=\"ruby\"><span class=\"rb\">弱点</span><span class=\"rt\">じゃくてん</span></span> パチモンでもいい<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なん</span></span>でもいい <span class=\"ruby\"><span class=\"rb\">今君</span><span class=\"rt\">いまきみ</span></span>と<span class=\"ruby\"><span class=\"rb\">名付</span><span class=\"rt\">なづ</span></span>いてる<span class=\"ruby\"><span class=\"rb\">全</span><span class=\"rt\">すべ</span></span>て<span class=\"ruby\"><span class=\"rb\">欲</span><span class=\"rt\">ほ</span></span>しい"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "この世に生まれた君が悪い",
+      "C0": "기분이 나빠지면 탕진, 이 세상에 태어난 네가 나빠, 너무나 지친 연애 고통",
+      "G0": "이 문장은 '이 세상에 태어난 네가 나빠'라는 의미의 문장으로, 주어(君) + 동사(悪い)의 기본 구조를 가지고 있습니다. 'この世に生まれた'는 '이 세상에 태어난'이라는 수식어구로 '君'을 꾸며주고 있습니다. 전체적으로 상대방을 원망하는 어조의 문장입니다.",
+      "K0": "이 세상에 태어난 네가 나빠.",
+      "I0": "kono yo ni umareta kimi ga warui",
+      "R0": "코노 요 니 우마레타 키미 가 와루이",
+      "LI": [
+        {
+          "T1": "この",
+          "K1": "이",
+          "I1": "kono",
+          "R1": "코노",
+          "E1": "지시사로 '이'라는 의미를 나타내며, 명사 앞에 붙어서 그 대상을 가리킵니다.",
+          "T2": "この",
+          "K2": "이",
+          "I2": "kono",
+          "R2": "코노",
+          "XE": "この本は面白い。",
+          "XK": "이 책은 재미있다.",
+          "XI": "kono hon wa omoshiroi",
+          "XR": "코노 혼 와 오모시로이"
+        },
+        {
+          "T1": "世",
+          "K1": "세상",
+          "I1": "yo",
+          "R1": "요",
+          "E1": "'세상', '세계'를 의미하는 명사입니다.",
+          "T2": "世",
+          "K2": "세상",
+          "I2": "yo",
+          "R2": "요",
+          "XE": "世の中は広い。",
+          "XK": "세상은 넓다.",
+          "XI": "yo no naka wa hiroi",
+          "XR": "요 노 나카 와 히로이"
+        },
+        {
+          "T1": "に",
+          "K1": "에",
+          "I1": "ni",
+          "R1": "니",
+          "E1": "장소나 방향을 나타내는 조사입니다.",
+          "T2": "に",
+          "K2": "에",
+          "I2": "ni",
+          "R2": "니",
+          "XE": "東京に住む。",
+          "XK": "도쿄에 산다.",
+          "XI": "Tōkyō ni sumu",
+          "XR": "토오쿄오 니 스무"
+        },
+        {
+          "T1": "生まれた",
+          "K1": "태어난",
+          "I1": "umareta",
+          "R1": "우마레타",
+          "E1": "'태어나다'라는 의미의 동사 '生まれる'의 과거형으로, '태어났다'라는 의미입니다.",
+          "T2": "生まれる",
+          "K2": "태어나다",
+          "I2": "umareru",
+          "R2": "우마레루",
+          "XE": "赤ちゃんが生まれた。",
+          "XK": "아기가 태어났다.",
+          "XI": "akachan ga umareta",
+          "XR": "아카챤 가 우마레타"
+        },
+        {
+          "T1": "君",
+          "K1": "너",
+          "I1": "kimi",
+          "R1": "키미",
+          "E1": "2인칭 대명사로 '너', '당신'을 의미합니다.",
+          "T2": "君",
+          "K2": "너",
+          "I2": "kimi",
+          "R2": "키미",
+          "XE": "君のことが好きだ。",
+          "XK": "너를 좋아해.",
+          "XI": "kimi no koto ga suki da",
+          "XR": "키미 노 코토 가 스키 다"
+        },
+        {
+          "T1": "が",
+          "K1": "가",
+          "I1": "ga",
+          "R1": "가",
+          "E1": "주격 조사로 문장의 주어를 나타냅니다.",
+          "T2": "が",
+          "K2": "가",
+          "I2": "ga",
+          "R2": "가",
+          "XE": "私が行く。",
+          "XK": "내가 간다.",
+          "XI": "watashi ga iku",
+          "XR": "와타시 가 이쿠"
+        },
+        {
+          "T1": "悪い",
+          "K1": "나쁜",
+          "I1": "warui",
+          "R1": "와루이",
+          "E1": "'나쁘다', '악하다'라는 의미의 형용사입니다.",
+          "T2": "悪い",
+          "K2": "나쁜",
+          "I2": "warui",
+          "R2": "와루이",
+          "XE": "悪いことをした。",
+          "XK": "나쁜 일을 했다.",
+          "XI": "warui koto o shita",
+          "XR": "와루이 코토 오 시타"
+        }
+      ]
+    })
+  },
+  {
+    role: "user",
+    content: JSON.stringify({
+      "T0": "<span class=\"ruby\"><span class=\"rb\">今君</span><span class=\"rt\">いまきみ</span></span>と<span class=\"ruby\"><span class=\"rb\">名付</span><span class=\"rt\">なづ</span></span>いてる<span class=\"ruby\"><span class=\"rb\">全</span><span class=\"rt\">すべ</span></span>て<span class=\"ruby\"><span class=\"rb\">欲</span><span class=\"rt\">ほ</span></span>しい",
+      "C0": "パチモンでもいい<span class=\"ruby\"><span class=\"rb\">何</span><span class=\"rt\">なん</span></span>でもいい <span class=\"ruby\"><span class=\"rb\">今君</span><span class=\"rt\">いまきみ</span></span>と<span class=\"ruby\"><span class=\"rb\">名付</span><span class=\"rt\">なづ</span></span>いてる<span class=\"ruby\"><span class=\"rb\">全</span><span class=\"rt\">すべ</span></span>て<span class=\"ruby\"><span class=\"rb\">欲</span><span class=\"rt\">ほ</span></span>しい"
+    })
+  },
+  {
+    role: "assistant",
+    content: JSON.stringify({
+      "T0": "頸動脈からアイラブユーが噴き出て",
+      "C0": "산산조각난 머리와 이 몸. 경동맥에서 아이 러브 유가 분출되어 아이리스 아웃",
+      "G0": "이 문장은 주어(アイラブユー) + 조동사(が) + 동사(噴き出て)로 구성된 일본어 문장입니다. '頸動脈から'는 '경동맥에서'라는 의미로 장소를 나타내는 부사구입니다. 'アイラブユーが噴き出て'는 '아이 러브 유가 분출되어'라는 의미로, 감정이 극에 달해 목의 경동맥에서 'I love you'라는 말이 쏟아져 나오는 상황을 묘사하고 있습니다.",
+      "K0": "경동맥에서 아이 러브 유가 뿜어져 나와",
+      "I0": "keidōmyaku kara ai rabu yū ga fukidete",
+      "R0": "케이 도오먀쿠 카라 아이 라부 유우 가 후키 데테",
+      "LI": [
+        {
+          "T1": "頸動脈",
+          "K1": "경동맥",
+          "I1": "keidōmyaku",
+          "R1": "케이 도오먀쿠",
+          "E1": "목의 양쪽에 위치한 주요 동맥으로, 심장에서 뇌로 혈액을 공급하는 혈관입니다.",
+          "T2": "頸動脈",
+          "K2": "경동맥",
+          "I2": "keidōmyaku",
+          "R2": "케이 도오먀쿠",
+          "XE": "頸動脈の拍動を感じる。",
+          "XK": "경동맥의 맥박을 느낀다.",
+          "XI": "keidōmyaku no hakudō o kanjiru",
+          "XR": "케이 도오먀쿠 노 하쿠도오 오 칸지루"
+        },
+        {
+          "T1": "から",
+          "K1": "에서",
+          "I1": "kara",
+          "R1": "카라",
+          "E1": "장소나 시간의 시작점을 나타내는 조사입니다.",
+          "T2": "から",
+          "K2": "에서",
+          "I2": "kara",
+          "R2": "카라",
+          "XE": "東京から大阪まで",
+          "XK": "도쿄에서 오사카까지",
+          "XI": "tōkyō kara ōsaka made",
+          "XR": "토오쿄오 카라 오오사카 마데"
+        },
+        {
+          "T1": "アイラブユー",
+          "K1": "아이 러브 유",
+          "I1": "ai rabu yū",
+          "R1": "아이 라부 유우",
+          "E1": "영어 'I love you'의 일본어 발음 표기로, 사랑을 고백하는 표현입니다.",
+          "T2": "アイラブユー",
+          "K2": "아이 러브 유",
+          "I2": "ai rabu yū",
+          "R2": "아이 라부 유우",
+          "XE": "彼女にアイラブユーと言った。",
+          "XK": "그녀에게 아이 러브 유라고 말했다.",
+          "XI": "kanojo ni ai rabu yū to itta",
+          "XR": "카노죠 니 아이 라부 유우 토 잇타"
+        },
+        {
+          "T1": "が",
+          "K1": "~이/가",
+          "I1": "ga",
+          "R1": "가",
+          "E1": "주격 조사로 문장의 주어를 나타냅니다.",
+          "T2": "が",
+          "K2": "~이/가",
+          "I2": "ga",
+          "R2": "가",
+          "XE": "雨が降っている。",
+          "XK": "비가 내리고 있다.",
+          "XI": "ame ga futte iru",
+          "XR": "아메 가 훗테 이루"
+        },
+        {
+          "T1": "噴き出て",
+          "K1": "분출되어",
+          "I1": "fukidete",
+          "R1": "후키 데테",
+          "E1": "'분출하다'라는 의미의 동사 '噴き出す'의 연결형으로, 앞의 동작이 계속 이어짐을 나타냅니다.",
+          "T2": "噴き出る",
+          "K2": "분출하다",
+          "I2": "fuki deru",
+          "R2": "후키 데루",
+          "E2": "액체나 기체가 갑자기 세게 나오는 것을 의미합니다.",
+          "XE": "溶岩が噴き出ている。",
+          "XK": "용암이 분출하고 있다.",
+          "XI": "Yōgan ga fuki dete iru.",
+          "XR": "요오간 가 후키 데테 이루"
+        }
+      ]
+    })
+  }
+];

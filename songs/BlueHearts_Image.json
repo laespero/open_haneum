@@ -2199,7 +2199,7 @@
           "XR": "소라가 아오이"
         }
       ],
-      "O0": "針が棒になり 隠の芝生今日も青い"
+      "O0": "<span class=\"ruby\"><span class=\"rb\">針</span><span class=\"rt\">はり</span></span>が<span class=\"ruby\"><span class=\"rb\">棒</span><span class=\"rt\">ぼう</span></span>になり <span class=\"ruby\"><span class=\"rb\">隣</span><span class=\"rt\">となり</span></span>の<span class=\"ruby\"><span class=\"rb\">芝生</span><span class=\"rt\">しばふ</span></span><span class=\"ruby\"><span class=\"rb\">今日</span><span class=\"rt\">きょう</span></span>も<span class=\"ruby\"><span class=\"rb\">青</span><span class=\"rt\">あお</span></span>い"
     },
     {
       "T0": "お金があるときゃ そりゃあ酒でもおごってやるよ",
