@@ -1498,7 +1498,6 @@ app.post('/correct-with-message/:title', async (req, res) => {
     const data = await fs.promises.readFile(filePath, 'utf8');
     let songData = JSON.parse(data);
     
-    console.log(req.body.originalLine);
     const contextText = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
 
     if (!contextText) {
@@ -1517,6 +1516,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
             ],
             response_format: { type: "json_object" }
         };
+        console.log(req.body.correctionMessage);
 
         if (!isUsingDeepSeekDirectly) {
             requestBody.provider = {
@@ -2359,7 +2359,7 @@ function getInvalidLines(songData) {
             
             // contextText에서 원본 텍스트 찾기
             let originalContext = songData.contextText?.find(ctx => 
-                ctx.T0 === line.T0 || ctx.O0 === line.T0
+                ctx.T0 === line.T0 || ctx.T0 === line.O0
             );
             
             if (originalContext) {
@@ -2371,7 +2371,7 @@ function getInvalidLines(songData) {
                 // contextText 매칭에 실패한 경우 대체 방법들 시도
                 
                 // 1. p1 배열에서 찾기
-                const targetText = line.T0 || line.O0;
+                const targetText = line.O0 || line.T0;
                 let foundInP1 = null;
                 
                 if (songData.p1 && Array.isArray(songData.p1) && targetText) {
@@ -2394,8 +2394,13 @@ function getInvalidLines(songData) {
                     );
                 }
                 
+                if (!foundInP1 && !foundInText) {
+                    console.log(`라인 ${index}: 원본 텍스트(p1/text)를 찾을 수 없어 재번역 대상에서 제외함 (target: "${targetText}")`);
+                    return;
+                }
+
                 // 찾은 텍스트로 context 생성
-                const contextText = foundInP1 || foundInText || targetText || `라인_${index}`;
+                const contextText = foundInP1 || foundInText;
                 
                 originalContext = {
                     T0: contextText,
@@ -2403,7 +2408,7 @@ function getInvalidLines(songData) {
                     ...(line.O0 && { O0: line.O0 })
                 };
                 
-                console.log(`라인 ${index}: 대체 context 생성 - T0: "${originalContext.T0}" (출처: ${foundInP1 ? 'p1' : foundInText ? 'text' : 'fallback'})`);
+                console.log(`라인 ${index}: 대체 context 생성 - T0: "${originalContext.T0}" (출처: ${foundInP1 ? 'p1' : 'text'})`);
             }
             
             invalidLines.push({
