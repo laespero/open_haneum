@@ -1,24 +1,22 @@
 {
-  "name": "Vaundy_Trajectory",
-  "ori_name": "軌跡",
-  "kor_name": "궤적",
-  "eng_name": "Trajectory",
-  "artist": {
-    "ori_name": "Vaundy",
-    "kor_name": "바운디",
-    "eng_name": ""
-  },
-  "tags": [
-    "개발용",
-    "일본어"
-  ],
-  "createdAt": "2025-11-28T12:05:41.532Z",
-  "failedLines": [],
-  "validation": {
-    "isValid": false,
-    "errors": [
-      "translatedLines가 비어있습니다."
-    ]
-  },
-  "vid": ""
+    "name": "Vaundy_Trajectory",
+    "ori_name": "軌跡",
+    "kor_name": "궤적",
+    "eng_name": "Trajectory",
+    "vid": "",
+    "artist": {
+        "ori_name": "Vaundy",
+        "kor_name": "바운디",
+        "eng_name": ""
+    },
+    "tags": [
+        "개발용",
+        "UtatenImport"
+    ],
+    "text": "",
+    "createdAt": "2025-11-28T12:05:41.532Z",
+    "p1": [],
+    "contextText": [],
+    "translatedLines": [],
+    "failedLines": []
 }
