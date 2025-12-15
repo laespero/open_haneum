@@ -30,9 +30,6 @@ process.on('uncaughtException', (err) => {
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
 const API_PROVIDER_CHOICE = 'deepseek'; 
 
-console.log('OPENROUTER API Key:', process.env.OPENROUTER_API_KEY);
-console.log('DeepSeek API Key:', process.env.DEEPSEEK_API_KEY);
-
 if (!process.env.OPENROUTER_API_KEY && !process.env.DEEPSEEK_API_KEY) {
     console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY가 설정되지 않았습니다.');
     console.warn('\x1b[33m%s\x1b[0m', '노래 추가 및 번역 기능을 사용하려면 .env 파일에 OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY를 설정해주세요.');
@@ -147,7 +144,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use('/', express.static('songs'));
 
-let songCache = [];  // 노래 데이터를 저장할 캐시
+// 노래 메타데이터를 저장하는 메모리 캐시
+// [주의] 메모리 최적화를 위해 가사 데이터(p1, contextText, translatedLines 등)는 제외되고 축약된 정보만 저장됩니다.
+// 따라서 이 객체를 그대로 파일에 덮어쓰면 가사 데이터가 영구적으로 유실되므로, 
+// 파일 수정 작업 시에는 반드시 fs.readFile로 원본 파일을 읽어서 처리해야 합니다.
+let songCache = [];
 let songCacheMap = new Map();  // 노래 이름을 키로 하는 Map (빠른 검색용)
 let isCacheReady = false; // 캐시 준비 상태 플래그
 let lastCacheReloadTime = 0; // 마지막 캐시 리로딩 시간
@@ -1835,14 +1836,31 @@ app.post('/admin/tags/replace', async (req, res) => {
                 // 중복 제거 (이미 newTag가 있었을 경우)
                 song.tags = [...new Set(newTags)];
                 
-                // 파일 저장 작업 추가
+                // 파일 저장 작업 추가 (중요: songCache 데이터를 쓰지 않고, 파일을 읽어서 부분 수정해야 함)
                 const filePath = getSafeSongPath(song.name);
                 
-                // 클로저로 song 객체와 filePath 캡처
-                updatePromises.push((async (s, path) => {
-                    await fs.promises.writeFile(path, JSON.stringify(s, null, 2));
-                    return true;
-                })(song, filePath));
+                // 클로저로 filePath와 변경할 태그 정보 캡처
+                updatePromises.push((async (path, oTag, nTag) => {
+                    try {
+                        // 1. 원본 파일 읽기
+                        const fileData = await fs.promises.readFile(path, 'utf8');
+                        const fullSongData = JSON.parse(fileData);
+
+                        // 2. 원본 데이터에서 태그 수정
+                        if (fullSongData.tags && fullSongData.tags.includes(oTag)) {
+                            const updatedTags = fullSongData.tags.map(t => t === oTag ? nTag : t);
+                            fullSongData.tags = [...new Set(updatedTags)];
+                            
+                            // 3. 파일 저장 (가사 데이터 보존됨)
+                            await fs.promises.writeFile(path, JSON.stringify(fullSongData, null, 2));
+                            return true;
+                        }
+                        return false;
+                    } catch (err) {
+                        console.error(`파일 업데이트 실패 (${path}):`, err);
+                        return false;
+                    }
+                })(filePath, oldTag, newTag));
                 
                 updatedCount++;
             }
@@ -1967,13 +1985,50 @@ app.post('/admin/artists/update', async (req, res) => {
                     song.artist.eng_name = newEngName || song.artist.eng_name || "";
                 }
                 
-                // 파일 저장 작업 추가
+                // 파일 저장 작업 추가 (중요: songCache 데이터를 쓰지 않고, 파일을 읽어서 부분 수정해야 함)
                 const filePath = getSafeSongPath(song.name);
                 
-                updatePromises.push((async (s, path) => {
-                    await fs.promises.writeFile(path, JSON.stringify(s, null, 2));
-                    return true;
-                })(song, filePath));
+                // 클로저로 filePath와 변경할 아티스트 정보 캡처
+                updatePromises.push((async (path, tOri, nKor, nEng) => {
+                    try {
+                        // 1. 원본 파일 읽기
+                        const fileData = await fs.promises.readFile(path, 'utf8');
+                        const fullSongData = JSON.parse(fileData);
+
+                        // 2. 원본 데이터에서 아티스트 수정
+                        let isFileMatch = false;
+                        if (typeof fullSongData.artist === 'object') {
+                            // 원어명이나 이름이 매칭되는 경우
+                            if ((fullSongData.artist.ori_name === tOri) || (fullSongData.artist.name === tOri)) {
+                                isFileMatch = true;
+                            }
+                        } else if (fullSongData.artist === tOri) {
+                            isFileMatch = true;
+                        }
+
+                        if (isFileMatch) {
+                            if (typeof fullSongData.artist !== 'object') {
+                                fullSongData.artist = {
+                                    ori_name: tOri,
+                                    kor_name: nKor || "",
+                                    eng_name: nEng || ""
+                                };
+                            } else {
+                                fullSongData.artist.ori_name = tOri;
+                                fullSongData.artist.kor_name = nKor || fullSongData.artist.kor_name || "";
+                                fullSongData.artist.eng_name = nEng || fullSongData.artist.eng_name || "";
+                            }
+
+                            // 3. 파일 저장 (가사 데이터 보존됨)
+                            await fs.promises.writeFile(path, JSON.stringify(fullSongData, null, 2));
+                            return true;
+                        }
+                        return false;
+                    } catch (err) {
+                        console.error(`아티스트 업데이트 실패 (${path}):`, err);
+                        return false;
+                    }
+                })(filePath, targetOriName, newKorName, newEngName));
                 
                 updatedCount++;
             }
