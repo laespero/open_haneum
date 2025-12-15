@@ -481,7 +481,23 @@ async function refreshSongCache() {
                 try {
                     const data = await fs.promises.readFile(filePath, 'utf8');
                     const songData = JSON.parse(data);
-                    return songData;
+                    
+                    // 메모리 최적화: 전체 데이터 대신 메타데이터와 검증 결과만 저장
+                    // 중요: validateSongSchema 함수가 아래에 정의되어 있어야 함
+                    const validation = validateSongSchema(songData);
+                    
+                    return {
+                        name: songData.name,
+                        ori_name: songData.ori_name,
+                        kor_name: songData.kor_name,
+                        eng_name: songData.eng_name,
+                        artist: songData.artist,
+                        tags: songData.tags,
+                        createdAt: songData.createdAt,
+                        failedLines: songData.failedLines,
+                        validation: validation,
+                        vid: songData.vid
+                    };
                 } catch (parseErr) {
                     console.error(`'${filePath}' 파일 처리 중 오류 발생:`, parseErr);
                     return null; // 오류 발생 시 null 반환
@@ -2336,7 +2352,9 @@ function getInvalidSongs(limit = 100) {
             continue;
         }
         
-        const validation = validateSongSchema(song);
+        // 캐시 최적화 대응: 캐시된 validation 결과 사용 (없으면 기본값)
+        // 주의: 여기서 validateSongSchema(song)을 호출하면 translatedLines가 없어서 무조건 에러 발생함
+        const validation = song.validation ? JSON.parse(JSON.stringify(song.validation)) : { isValid: true, errors: [] };
         
         // failedLines 체크
         let failedLinesError = false;
@@ -2469,8 +2487,18 @@ app.post('/admin/validate/check', async (req, res) => {
     const { songName } = req.body;
     if (!songName) return res.status(400).json({ error: '노래 이름이 필요합니다.' });
     
-    const song = songCacheMap.get(songName);
-    if (!song) return res.status(404).json({ error: '노래를 찾을 수 없습니다.' });
+    const songMeta = songCacheMap.get(songName);
+    if (!songMeta) return res.status(404).json({ error: '노래를 찾을 수 없습니다.' });
+    
+    let song;
+    try {
+        const filePath = getSafeSongPath(songName);
+        const data = await fs.promises.readFile(filePath, 'utf8');
+        song = JSON.parse(data);
+    } catch (err) {
+        console.error('파일 읽기 오류:', err);
+        return res.status(500).json({ error: '노래 파일을 읽을 수 없습니다.' });
+    }
     
     if (!song.translatedLines || song.translatedLines.length === 0) {
         return res.json({ grade: 'C', desc: '번역 데이터가 없습니다.', songName: song.kor_name || songName });
