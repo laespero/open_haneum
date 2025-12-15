@@ -1360,11 +1360,17 @@ app.post('/retry-invalid-lines/:title', async (req, res) => {
                 if (parsedResult && parsedResult.K0) {
                     parsedResult.O0 = invalidLine.context.T0;
                     
-                    // 기존 translatedLines에서 해당 라인 교체
-                    songData.translatedLines[invalidLine.index] = parsedResult;
+                    if (invalidLine.isMissing) {
+                        // 누락된 번역인 경우 배열에 추가
+                        songData.translatedLines.push(parsedResult);
+                        console.log(`[${title}] 누락된 라인 재번역 및 추가 성공`);
+                    } else {
+                        // 기존 translatedLines에서 해당 라인 교체
+                        songData.translatedLines[invalidLine.index] = parsedResult;
+                        console.log(`[${title}] 라인 ${invalidLine.index} 재번역 성공`);
+                    }
+
                     successCount++;
-                    
-                    console.log(`[${title}] 라인 ${invalidLine.index} 재번역 성공`);
                 } else {
                     failCount++;
                     console.log(`[${title}] 라인 ${invalidLine.index} 재번역 실패 - 결과 없음`);
@@ -2179,6 +2185,34 @@ function validateSongSchema(songData) {
             const lineErrors = validateLineSchema(line, index);
             errors.push(...lineErrors);
         });
+
+        // contextText와 translatedLines 매칭 검증 (누락된 번역 확인)
+        if (songData.contextText && Array.isArray(songData.contextText)) {
+            let missingCount = 0;
+            songData.contextText.forEach(context => {
+                let translatedLine = songData.translatedLines.find(
+                    line => line.T0 === context.T0 || line.O0 === context.T0
+                );
+
+                if (!translatedLine) {
+                    // Robust matching
+                    const cleanContextT0 = cleanUtatenHtml(context.T0).trim();
+                    translatedLine = songData.translatedLines.find(line => {
+                        const cleanLineT0 = cleanUtatenHtml(line.T0).trim();
+                        const cleanLineO0 = line.O0 ? cleanUtatenHtml(line.O0).trim() : '';
+                        return cleanLineT0 === cleanContextT0 || cleanLineO0 === cleanContextT0;
+                    });
+                }
+
+                if (!translatedLine) {
+                    missingCount++;
+                }
+            });
+
+            if (missingCount > 0) {
+                errors.push(`번역 누락된 문장이 ${missingCount}개 있습니다.`);
+            }
+        }
     }
 
     return {
@@ -2331,6 +2365,35 @@ function getInvalidLines(songData) {
             });
         }
     });
+
+    // 누락된 번역 찾기
+    if (songData.contextText && Array.isArray(songData.contextText)) {
+        songData.contextText.forEach((context) => {
+            let translatedLine = songData.translatedLines.find(
+                line => line.T0 === context.T0 || line.O0 === context.T0
+            );
+
+            if (!translatedLine) {
+                const cleanContextT0 = cleanUtatenHtml(context.T0).trim();
+                translatedLine = songData.translatedLines.find(line => {
+                    const cleanLineT0 = cleanUtatenHtml(line.T0).trim();
+                    const cleanLineO0 = line.O0 ? cleanUtatenHtml(line.O0).trim() : '';
+                    return cleanLineT0 === cleanContextT0 || cleanLineO0 === cleanContextT0;
+                });
+            }
+
+            if (!translatedLine) {
+                console.log(`Missing translation found for context: ${context.T0}`);
+                invalidLines.push({
+                    index: -1,
+                    context: context,
+                    errors: ["Missing translation"],
+                    line: null,
+                    isMissing: true
+                });
+            }
+        });
+    }
     
     console.log(`총 ${invalidLines.length}개의 오류 라인 발견`);
     return invalidLines;
@@ -2698,7 +2761,11 @@ app.post('/admin/retranslate-all', async (req, res) => {
                             
                             if (parsedResult && parsedResult.K0) {
                                 parsedResult.O0 = invalidLine.context.T0;
-                                songData.translatedLines[invalidLine.index] = parsedResult;
+                                if (invalidLine.isMissing) {
+                                    songData.translatedLines.push(parsedResult);
+                                } else {
+                                    songData.translatedLines[invalidLine.index] = parsedResult;
+                                }
                                 songSuccessCount++;
                             } else {
                                 songFailCount++;
