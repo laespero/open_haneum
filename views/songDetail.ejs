@@ -88,11 +88,9 @@
                 </div>
                 <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
                     <% if (!song.translatedLines || song.translatedLines.length === 0) { %>
-                        <form action="/translate/<%= song.name %>" method="post" class="disable-on-submit">
-                            <button type="submit" data-processing-text="번역중..." class="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">
-                                <i class="fas fa-language"></i> 번역하기
-                            </button>
-                        </form>
+                        <button type="button" onclick="startTranslationStream('<%= song.name %>')" class="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition font-semibold">
+                            <i class="fas fa-language"></i> 번역하기
+                        </button>
                     <% } %>
                      <a href="/view/<%= song.name %>" class="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-semibold">
                         <i class="fas fa-eye"></i> 완성본 보기
@@ -108,7 +106,7 @@
         <div id="edit-modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center hidden z-50">
             <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
                 <h2 class="text-2xl font-bold mb-6">정보 수정</h2>
-                <form action="/update-song-meta/<%= song.name %>" method="post">
+                <form action="/update-song-meta/<%= song.name %>" method="post" class="disable-on-submit">
                     <div class="space-y-4">
                         <div>
                             <label for="ori_name" class="block text-sm font-medium text-gray-700">노래 원어명</label>
@@ -292,6 +290,21 @@
         </div>
     </main>
 
+    <!-- 로딩 오버레이 -->
+    <div id="loading-overlay" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex flex-col justify-center items-center z-[100] hidden transition-opacity duration-300 opacity-0">
+        <div class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center max-w-sm w-full mx-4">
+            <div class="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent mb-4"></div>
+            <h3 id="loading-title" class="text-xl font-bold text-gray-800 mb-2">처리중...</h3>
+            <p id="loading-message" class="text-gray-500 text-center text-sm mb-4">잠시만 기다려주세요. 시간이 걸릴 수 있습니다.</p>
+            
+            <!-- 프로그레스 바 컨테이너 (숨김 처리 상태로 시작) -->
+            <div id="progress-container" class="w-full bg-gray-200 rounded-full h-4 mb-2 hidden">
+                <div id="progress-bar" class="bg-blue-600 h-4 rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+            <p id="progress-text" class="text-xs text-gray-500 hidden">0%</p>
+        </div>
+    </div>
+
     <!-- CodeMirror JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
@@ -307,16 +320,132 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/addon/lint/json-lint.js"></script>    
     
     <script>
-        // 폼 제출 시 버튼 비활성화
+        // 로딩 오버레이 제어
+        const loadingOverlay = document.getElementById('loading-overlay');
+        const loadingTitle = document.getElementById('loading-title');
+        const loadingMessage = document.getElementById('loading-message');
+        const progressContainer = document.getElementById('progress-container');
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+
+        function showLoading(title, message, showProgress = false) {
+            if (loadingTitle) loadingTitle.textContent = title || '처리중...';
+            if (loadingMessage) loadingMessage.textContent = message || '잠시만 기다려주세요.';
+            
+            if (showProgress) {
+                if (progressContainer) progressContainer.classList.remove('hidden');
+                if (progressText) progressText.classList.remove('hidden');
+                updateProgress(0);
+            } else {
+                if (progressContainer) progressContainer.classList.add('hidden');
+                if (progressText) progressText.classList.add('hidden');
+            }
+
+            if (loadingOverlay) {
+                loadingOverlay.classList.remove('hidden');
+                // 약간의 딜레이 후 opacity 변경 (부드러운 효과)
+                setTimeout(() => {
+                    loadingOverlay.classList.remove('opacity-0');
+                }, 10);
+            }
+        }
+
+        function updateProgress(percent) {
+            if (progressBar) progressBar.style.width = `${percent}%`;
+            if (progressText) progressText.textContent = `${Math.round(percent)}%`;
+        }
+
+        function hideLoading() {
+            if (loadingOverlay) {
+                loadingOverlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    loadingOverlay.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        // SSE를 이용한 번역 스트리밍 처리
+        function startTranslationStream(songName) {
+            showLoading('번역 진행 중', 'AI가 가사를 번역하고 있습니다...', true);
+            
+            const eventSource = new EventSource(`/api/translate/stream/${encodeURIComponent(songName)}`);
+            
+            eventSource.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+                
+                if (data.type === 'progress') {
+                    updateProgress(data.percentage);
+                    if (loadingMessage) loadingMessage.textContent = `번역 중... (${data.current}/${data.total})`;
+                } else if (data.type === 'complete') {
+                    eventSource.close();
+                    loadingMessage.textContent = '번역 완료! 저장 중입니다...';
+                    updateProgress(100);
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 500);
+                } else if (data.type === 'error') {
+                    eventSource.close();
+                    hideLoading();
+                    alert('오류 발생: ' + data.message);
+                }
+            };
+
+            eventSource.onerror = function(err) {
+                console.error('SSE Error:', err);
+                eventSource.close();
+                hideLoading();
+                alert('서버 연결 중 오류가 발생했습니다.');
+            };
+        }
+
+        async function handleAjaxSubmit(form) {
+            const formData = new FormData(form);
+            const action = form.getAttribute('action');
+            const method = form.getAttribute('method') || 'POST';
+            const processingText = form.querySelector('button[type="submit"]')?.getAttribute('data-processing-text') || '처리중...';
+
+            // 로딩 표시
+            showLoading(processingText, 'AI가 열심히 작업하고 있습니다. 잠시만 기다려주세요.');
+
+            // 현재 스크롤 위치 저장 (새로고침 후 복원용)
+            sessionStorage.setItem('scrollpos', window.scrollY);
+
+            try {
+                const response = await fetch(action, {
+                    method: method,
+                    body: new URLSearchParams(formData), // x-www-form-urlencoded
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+
+                const contentType = response.headers.get("content-type");
+                
+                if (contentType && contentType.includes("application/json")) {
+                    const result = await response.json();
+                    if (result.success) {
+                        window.location.reload();
+                    } else {
+                        hideLoading();
+                        alert('오류: ' + (result.message || '알 수 없는 오류가 발생했습니다.'));
+                    }
+                } else {
+                    // JSON이 아니면 성공으로 간주하고 리로드 (기존 동작 호환)
+                    window.location.reload();
+                }
+            } catch (error) {
+                hideLoading();
+                console.error('AJAX Error:', error);
+                alert('통신 오류가 발생했습니다.');
+            }
+        }
+
+        // 폼 제출 시 AJAX 처리
         document.querySelectorAll('.disable-on-submit').forEach(form => {
             form.addEventListener('submit', function(event) {
-                const button = form.querySelector('button[type="submit"]');
-                if (button) {
-                    button.disabled = true;
-                    const processingText = button.getAttribute('data-processing-text') || '처리중...';
-                    button.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${processingText}`;
-                    button.classList.add('opacity-70', 'cursor-wait');
-                }
+                event.preventDefault();
+                handleAjaxSubmit(this);
             });
         });
 
@@ -535,25 +664,28 @@
             });
 
             jsonEditForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // 기본 제출 막기 (AJAX 처리 위함)
+
                 if (jsonEditor) {
                     const content = jsonEditor.getValue();
                     let data;
                     try {
                         data = JSON.parse(content);
                     } catch (e) {
-                        event.preventDefault(); // 폼 제출 중단
                         alert('JSON 문법 오류: ' + e.message);
                         return;
                     }
                     
                     const validationResult = validateSchema(data);
                     if (!validationResult.isValid) {
-                        event.preventDefault();
                         alert('JSON 스키마 오류. 수정한 내용이 스키마에 맞지 않습니다.\n\n오류 내용:\n' + validationResult.errors.join('\n'));
                         return;
                     }
                     
                     jsonEditor.save(); // 에디터의 내용을 textarea에 저장
+                    
+                    // AJAX로 제출
+                    handleAjaxSubmit(jsonEditForm);
                 }
             });
 

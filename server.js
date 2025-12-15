@@ -585,11 +585,7 @@ function searchSongs(searchQuery, excludeTags = []) {
     });
 }
 
-/**
- * Utaten의 ruby_html을 파싱하여 깨끗한 텍스트(Kanji)를 추출합니다. (LLM 전송용)
- * @param {string} html - Utaten ruby_html 문자열
- * @returns {string} - 정제된 텍스트
- */
+
 function cleanUtatenHtml(html) {
     if (!html) return "";
     
@@ -646,20 +642,14 @@ async function processTranslation(title) {
                 }
             }
 
-            // LLM에 보낼 때는 태그를 제거한 깨끗한 텍스트를 사용
-            const cleanContext = {
-                ...context,
-                T0: cleanUtatenHtml(context.T0),
-                C0: cleanUtatenHtml(context.C0)
-            };
-
+            context.C0 = cleanUtatenHtml(context.C0);
             const requestBody = {
                 model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                 max_tokens: 8192,
                 temperature:0.5,
                 messages: [
                     { role: "system", content: MSG },
-                    { role: 'user', content: JSON.stringify(cleanContext)+alpha },
+                    { role: 'user', content: JSON.stringify(context)+alpha },
                 ],
                 response_format: { 
                     type: "json_object" 
@@ -1027,7 +1017,7 @@ app.post('/update-song-meta/:title', async (req, res) => {
         console.log(`캐시에 없는 노래(${title})가 업데이트되어 전체 캐시를 갱신합니다.`);
     }
     
-    res.redirect(`/detail/${title}`);
+    res.json({ success: true, message: '정보가 수정되었습니다.' });
 });
 
 app.get('/songs/:title', async (req, res) => {
@@ -1049,16 +1039,6 @@ app.get('/songs/:title', async (req, res) => {
                         let translatedLine = songData.translatedLines.find(
                             line => line.T0 === context.T0 || line.O0 === context.T0
                         );
-
-                        // 2. 매칭 실패 시, 태그를 제거하고 텍스트 내용만으로 매칭 시도 (Robust matching)
-                        if (!translatedLine) {
-                            const cleanContextT0 = cleanUtatenHtml(context.T0).trim();
-                            translatedLine = songData.translatedLines.find(line => {
-                                const cleanLineT0 = cleanUtatenHtml(line.T0).trim();
-                                const cleanLineO0 = line.O0 ? cleanUtatenHtml(line.O0).trim() : '';
-                                return cleanLineT0 === cleanContextT0 || cleanLineO0 === cleanContextT0;
-                            });
-                        }
 
                         return translatedLine || { T0: context.T0, K0: "번역 없음" };
                     })
@@ -1157,86 +1137,115 @@ app.get('/edit/:title', async (req, res) => {
     }
 });
 
-app.post('/translate/:title', async (req, res) => {
+// SSE를 이용한 번역 스트리밍 엔드포인트
+app.get('/api/translate/stream/:title', async (req, res) => {
     const title = req.params.title;
-    console.log(`시작 : [${title}]`);
+    console.log(`[SSE] 번역 스트리밍 시작 : [${title}]`);
 
-    const filePath = getSafeSongPath(title);
-    const data = await fs.promises.readFile(filePath, 'utf8');
-    let songData = JSON.parse(data);
+    // SSE 헤더 설정
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    
+    // 연결 유지용 주석 전송 (타임아웃 방지)
+    res.write(': keep-alive\n\n');
 
-    if (!Array.isArray(songData.p1)) {
-        console.error('songData.p1은 배열이어야 합니다:', songData.p1);
-        const err = new Error('잘못된 노래 데이터 형식');
-        err.status = 400;
-        throw err;
-    }
+    try {
+        const filePath = getSafeSongPath(title);
+        const data = await fs.promises.readFile(filePath, 'utf8');
+        let songData = JSON.parse(data);
 
-    const contextText = toContextObj(songData.p1);
-    songData.contextText = contextText;
-
-    let parsedTranslatedLines = [];
-    let failedLines = [];
-
-    const translationPromises = contextText.map(async (context) => {
-        try {
-            let alpha = "";
-            if(songData.japanSongData){
-                const japanData = songData.japanSongData.find(x=>x.jp===context.T0);
-                alpha += "\n\n";
-                alpha += `한국어 번역 시, 다음 번역을 그대로 사용할 것. "${japanData.kr}"`;
-                if(japanData.jp !== japanData.pr) alpha += `\n한글 발음을 적을 때, 다음을 그대로 사용할 것. "${japanData.pr}"`;
-                console.log(alpha);
-            }
-
-            const requestBody = {
-                model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
-                max_tokens: 8192,
-                temperature:0.5,
-                messages: [
-                    { role: "system", content: MSG },
-                    { role: 'user', content: JSON.stringify(context)+alpha },
-                ],
-                response_format: { 
-                    type: "json_object" 
-                }
-            };
-
-            if (!isUsingDeepSeekDirectly) {
-                requestBody.provider = {
-                    ignore: [
-                        'InferenceNet',
-                        'Together'
-                    ]
-                };
-            }
-
-            const completion = await openai.chat.completions.create(requestBody);
-
-            const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
-            console.log(translatedLine.substring(0,100));
-            const parsedResult = JSON.parse(translatedLine);
-            if (parsedResult && parsedResult.K0) {
-                parsedResult.O0 = parsedResult.O0 || context.T0;
-                parsedTranslatedLines.push(parsedResult);
-            } else {
-                failedLines.push(context);
-            }
-        } catch (error) {
-            console.error('번역 오류:', error);
-            failedLines.push(context);
+        if (!Array.isArray(songData.p1)) {
+            throw new Error('잘못된 노래 데이터 형식: p1이 배열이 아닙니다.');
         }
-    });
 
-    await Promise.all(translationPromises);
+        const contextText = toContextObj(songData.p1);
+        songData.contextText = contextText;
 
-    songData.translatedLines = parsedTranslatedLines;
-    songData.failedLines = failedLines;
+        let parsedTranslatedLines = [];
+        let failedLines = [];
+        
+        const totalLines = contextText.length;
+        let completedLines = 0;
 
-    await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
-    console.log(`끝 : [${title}]`);
+        // 동시성 제어를 위한 Promise 배열 생성
+        // Promise.all로 실행하되, 각 Promise 완료 시점에 이벤트를 전송
+        const translationPromises = contextText.map(async (context) => {
+            try {
+                let alpha = "";
+                if(songData.japanSongData){
+                    const japanData = songData.japanSongData.find(x=>x.jp===context.T0);
+                    if (japanData) {
+                        alpha += "\n\n";
+                        alpha += `한국어 번역 시, 다음 번역을 그대로 사용할 것. "${japanData.kr}"`;
+                        if(japanData.jp !== japanData.pr) alpha += `\n한글 발음을 적을 때, 다음을 그대로 사용할 것. "${japanData.pr}"`;
+                    }
+                }
 
-    res.render('songDetail', { song: songData });
+                context.C0 = cleanUtatenHtml(context.C0);
+                const requestBody = {
+                    model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
+                    max_tokens: 8192,
+                    temperature: 0.5,
+                    messages: [
+                        { role: "system", content: MSG },
+                        { role: 'user', content: JSON.stringify(context)+alpha },
+                    ],
+                    response_format: { type: "json_object" }
+                };
+
+                if (!isUsingDeepSeekDirectly) {
+                    requestBody.provider = {
+                        ignore: ['InferenceNet', 'Together']
+                    };
+                }
+
+                const completion = await openai.chat.completions.create(requestBody);
+
+                const translatedLine = completion.choices[0].message.content.replaceAll("```json", "").replaceAll("```", "").trim();
+                const parsedResult = JSON.parse(translatedLine);
+                
+                if (parsedResult && parsedResult.K0) {
+                    parsedResult.O0 = parsedResult.O0 || context.T0;
+                    parsedTranslatedLines.push(parsedResult);
+                } else {
+                    failedLines.push(context);
+                }
+            } catch (error) {
+                console.error('번역 오류:', error);
+                failedLines.push(context);
+            } finally {
+                // 작업 완료 시 진행률 업데이트
+                completedLines++;
+                const percentage = (completedLines / totalLines) * 100;
+                res.write(`data: ${JSON.stringify({ type: 'progress', current: completedLines, total: totalLines, percentage: percentage })}\n\n`);
+            }
+        });
+
+        await Promise.all(translationPromises);
+
+        // 결과 저장
+        songData.translatedLines = parsedTranslatedLines;
+        songData.failedLines = failedLines;
+
+        await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
+        
+        // 캐시 업데이트
+        const songIndex = songCache.findIndex(song => song.name === title);
+        if (songIndex > -1) {
+            songCache[songIndex] = songData;
+            songCacheMap.set(title, songData);
+        }
+
+        console.log(`[SSE] 번역 완료 : [${title}]`);
+        res.write(`data: ${JSON.stringify({ type: 'complete' })}\n\n`);
+        res.end();
+
+    } catch (error) {
+        console.error('[SSE] 오류 발생:', error);
+        res.write(`data: ${JSON.stringify({ type: 'error', message: error.message })}\n\n`);
+        res.end();
+    }
 });
 
 
@@ -1257,6 +1266,8 @@ app.post('/retry-translation/:title', async (req, res) => {
 
     const translationPromises = songData.failedLines.map(async (context) => {
         try {
+
+            context.C0 = cleanUtatenHtml(context.C0);
             const requestBody = {
                 model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                 max_tokens: 8192,
@@ -1299,7 +1310,7 @@ app.post('/retry-translation/:title', async (req, res) => {
     songData.failedLines = failedLines;
 
     await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
-    res.render('songDetail', { song: songData });
+    res.json({ success: true, message: '재번역이 완료되었습니다.' });
 });
 
 // 부분 재번역 라우트 (스키마 오류가 있는 라인들만)
@@ -1420,20 +1431,21 @@ app.post('/retry-line/:title', async (req, res) => {
     const data = await fs.promises.readFile(filePath, 'utf8');
     let songData = JSON.parse(data);
     
-    const thatLine = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
+    const contextText = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
 
-    if (!thatLine) {
+    if (!contextText) {
         return res.status(400).send('원본 가사 없음');
     }
 
     try {
+        contextText.C0 = cleanUtatenHtml(contextText.C0);
         const requestBody = {
             model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
             max_tokens: 8192,
             temperature: 0.2,
             messages: [
                 { role: "system", content: MSG },
-                { role: 'user', content: JSON.stringify(thatLine) },
+                { role: 'user', content: JSON.stringify(contextText) },
             ],
             response_format: { type: "json_object" }
         };
@@ -1458,7 +1470,7 @@ app.post('/retry-line/:title', async (req, res) => {
             throw new Error('AI 응답 데이터에 필수 필드(T0)가 누락되었습니다.');
         }
 
-        parsedResult.O0 = thatLine.T0;
+        parsedResult.O0 = contextText.T0;
         const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
@@ -1470,7 +1482,7 @@ app.post('/retry-line/:title', async (req, res) => {
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
-        res.redirect(`/detail/${title}`);
+        res.json({ success: true, message: '라인 재번역이 완료되었습니다.' });
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         error.status = 500;
@@ -1487,20 +1499,21 @@ app.post('/correct-with-message/:title', async (req, res) => {
     let songData = JSON.parse(data);
     
     console.log(req.body.originalLine);
-    const thatLine = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
+    const contextText = songData.contextText.find(x=>x.T0?.trim() === req.body.originalLine?.trim() || x.O0?.trim() === req.body.originalLine?.trim());
 
-    if (!thatLine) {
+    if (!contextText) {
         return res.status(400).send('원본 가사 없음');
     }
 
     try {
+        contextText.C0 = cleanUtatenHtml(contextText.C0);
         const requestBody = {
             model: isUsingDeepSeekDirectly ? "deepseek-chat" : OPENROUTER_CHATGPT,
             max_tokens: 8192,
             temperature: 0.2,
             messages: [
                 { role: "system", content: MSG },
-                { role: 'user', content: JSON.stringify(thatLine) + "\n\n" + req.body.correctionMessage },
+                { role: 'user', content: JSON.stringify(contextText) + "\n\n" + req.body.correctionMessage },
             ],
             response_format: { type: "json_object" }
         };
@@ -1526,7 +1539,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
             throw new Error('AI 응답 데이터에 필수 필드(T0)가 누락되었습니다.');
         }
 
-        parsedResult.O0 = thatLine.T0;
+        parsedResult.O0 = contextText.T0;
         const foundIdx = songData.translatedLines.findIndex(t=>t.T0===req.body.originalLine||t.O0===parsedResult.O0);   
         
         if(foundIdx===-1){
@@ -1538,7 +1551,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
         songData.failedLines = songData.failedLines.filter(x=> !songData.translatedLines.some(y => y.T0 === x.T0));
 
         await fs.promises.writeFile(filePath, JSON.stringify(songData, null, 2));
-        res.redirect(`/detail/${title}`);
+        res.json({ success: true, message: '요청하신 내용으로 수정되었습니다.' });
     } catch (error) {
         console.error('특정 라인 재번역 오류:', error);
         error.status = 500;
@@ -1595,7 +1608,7 @@ app.post('/update-line/:title', async (req, res) => {
             console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
         }
 
-        res.redirect(`/detail/${title}`);
+        res.json({ success: true, message: '가사가 수정되었습니다.' });
 
     } catch (error) {
         console.error('가사 라인 수동 업데이트 중 오류:', error);
@@ -1637,16 +1650,6 @@ app.get('/api/songs/:title/translated', async (req, res) => {
                     y.T0.trim().toLowerCase() === x.trim().toLowerCase() ||
                     (y.O0 && y.O0.trim().toLowerCase() === x.trim().toLowerCase())
                 );
-
-                // 2. 매칭 실패 시, 태그를 제거하고 텍스트 내용만으로 매칭 시도 (Robust matching)
-                if (!found) {
-                    const cleanX = cleanUtatenHtml(x).trim().toLowerCase();
-                    found = songData.translatedLines.find(y => {
-                        const cleanY = cleanUtatenHtml(y.T0).trim().toLowerCase();
-                        const cleanO0 = y.O0 ? cleanUtatenHtml(y.O0).trim().toLowerCase() : '';
-                        return cleanY === cleanX || cleanO0 === cleanX;
-                    });
-                }
 
                 if(found) {
                     return found;
@@ -2249,15 +2252,6 @@ function validateSongSchema(songData) {
                     line => line.T0 === context.T0 || line.O0 === context.T0
                 );
 
-                if (!translatedLine) {
-                    // Robust matching
-                    const cleanContextT0 = cleanUtatenHtml(context.T0).trim();
-                    translatedLine = songData.translatedLines.find(line => {
-                        const cleanLineT0 = cleanUtatenHtml(line.T0).trim();
-                        const cleanLineO0 = line.O0 ? cleanUtatenHtml(line.O0).trim() : '';
-                        return cleanLineT0 === cleanContextT0 || cleanLineO0 === cleanContextT0;
-                    });
-                }
 
                 if (!translatedLine) {
                     missingCount++;
@@ -2428,14 +2422,6 @@ function getInvalidLines(songData) {
                 line => line.T0 === context.T0 || line.O0 === context.T0
             );
 
-            if (!translatedLine) {
-                const cleanContextT0 = cleanUtatenHtml(context.T0).trim();
-                translatedLine = songData.translatedLines.find(line => {
-                    const cleanLineT0 = cleanUtatenHtml(line.T0).trim();
-                    const cleanLineO0 = line.O0 ? cleanUtatenHtml(line.O0).trim() : '';
-                    return cleanLineT0 === cleanContextT0 || cleanLineO0 === cleanContextT0;
-                });
-            }
 
             if (!translatedLine) {
                 console.log(`Missing translation found for context: ${context.T0}`);
@@ -2795,6 +2781,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                 invalidLines.forEach((invalidLine) => {
                     translationPromises.push(async () => {
                         try {
+                            invalidLine.context.C0 = cleanUtatenHtml(invalidLine.context.C0);
                             const requestBody = {
                                 model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                                 max_tokens: 8192,
@@ -2842,16 +2829,17 @@ app.post('/admin/retranslate-all', async (req, res) => {
                     // 여기서는 songData.failedLines를 비우고 실패 시 다시 추가하는 방식을 사용
                     songData.failedLines = []; 
                     
-                    failedLinesToRetry.forEach((contextObj) => {
+                    failedLinesToRetry.forEach((contextText) => {
                         translationPromises.push(async () => {
                             try {
+                                contextText.C0 = cleanUtatenHtml(contextText.C0);
                                 const requestBody = {
                                     model: isUsingDeepSeekDirectly ? "deepseek-chat" : chatModel,
                                     max_tokens: 8192,
                                     temperature: 0.1,
                                     messages: [
                                         { role: "system", content: MSG },
-                                        { role: 'user', content: JSON.stringify(contextObj) },
+                                        { role: 'user', content: JSON.stringify(contextText) },
                                     ],
                                     response_format: { type: "json_object" }
                                 };
@@ -2865,18 +2853,18 @@ app.post('/admin/retranslate-all', async (req, res) => {
                                 const parsedResult = JSON.parse(translatedLine);
                                 
                                 if (parsedResult && parsedResult.K0) {
-                                    parsedResult.O0 = contextObj.T0;
+                                    parsedResult.O0 = contextText.T0;
                                     // 성공 시 translatedLines에 추가
                                     songData.translatedLines.push(parsedResult);
                                     songSuccessCount++;
                                 } else {
                                     // 실패 시 다시 failedLines에 추가
-                                    songData.failedLines.push(contextObj);
+                                    songData.failedLines.push(contextText);
                                     songFailCount++;
                                 }
                             } catch (error) {
                                 console.error(`[${songName}] 실패한 문장 재번역 오류:`, error);
-                                songData.failedLines.push(contextObj); // 에러 시 다시 추가
+                                songData.failedLines.push(contextText); // 에러 시 다시 추가
                                 songFailCount++;
                             }
                         });
