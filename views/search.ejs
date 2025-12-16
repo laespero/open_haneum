@@ -18,7 +18,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
     <!-- 헤더 -->
-    <header class="bg-white shadow-md sticky top-0 z-50">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto max-w-4xl px-5 py-3 flex items-center gap-4">
             <a href="/" class=" px-2 text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
             <form action="/songs" method="get" class="flex-grow min-w-0" id="searchForm">
@@ -35,18 +35,33 @@
 
     <!-- 메인 콘텐츠 -->
     <main class="container mx-auto max-w-4xl px-8 py-8 flex-grow">
-        <!-- 검색 정보 -->
-        <div class="mb-8">
-            <h1 class="text-2xl md:text-3xl font-semibold mb-2">
-                <% if (searchQuery && searchQuery.trim()) { %>
-                    "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
-                <% } else { %>
-                    전체 노래 목록
-                <% } %>
-            </h1>
-            <p class="text-gray-600">
-                총 <span class="font-bold"><%= totalResults %></span>개의 결과를 찾았습니다.
-            </p>
+        <!-- 검색 정보 및 인기 차트 바로가기 -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+            <!-- 좌측: 검색 결과 타이틀 -->
+            <div>
+                <h1 class="text-2xl md:text-3xl font-bold mb-2 text-gray-800">
+                    <% if (searchQuery && searchQuery.trim()) { %>
+                        "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
+                    <% } else { %>
+                        전체 노래 목록
+                    <% } %>
+                </h1>
+                <p class="text-gray-500 text-sm">
+                    총 <span class="font-bold text-gray-700"><%= totalResults %></span>개의 결과를 찾았습니다.
+                </p>
+            </div>
+
+            <!-- 우측: 인기 차트 바로가기 버튼 -->
+            <div class="flex gap-2">
+                <a href="/popular/songs" class="inline-flex items-center px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all shadow-sm group">
+                    <i class="fas fa-fire mr-2 text-red-500"></i>
+                    인기 노래
+                </a>
+                <a href="/popular/artists" class="inline-flex items-center px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-purple-300 hover:text-purple-600 hover:bg-purple-50 transition-all shadow-sm group">
+                    <i class="fas fa-crown mr-2 text-yellow-500"></i>
+                    인기 아티스트
+                </a>
+            </div>
         </div>
 
         <!-- 검색 결과가 0개일 때 노래 추가 권유 섹션 -->

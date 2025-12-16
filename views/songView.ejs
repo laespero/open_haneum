@@ -13,7 +13,7 @@
     <script src="https://www.youtube.com/iframe_api"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');
-        * {
+        #printer-wrapper *, .song-info-header * {
             font-family: "Noto Sans JP", sans-serif; /* 기본 폰트 설정 */
             font-weight: 400;
         }
@@ -336,9 +336,8 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             position: relative;
             margin-bottom: 60px;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
             border-radius: 0 0 1rem 1rem;
+            margin-top: 70px;
         }
 
         .song-info-content {
@@ -479,8 +478,8 @@
         }
 
         @media print {
-            header {
-                display: none;
+            header, #main-header {
+                display: none !important;
             }
 
             #player {
@@ -512,24 +511,53 @@
         }
     </style>
 </head>
-<!-- <body class="bg-white-100 text-gray-800 font-sans leading-relaxed">
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto max-w-6xl px-4 py-3 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-blue-600">Haneum</a>
-            <form action="/songs" method="get" class="w-full max-w-xl ml-8">
-                <div class="flex">
-                    <input type="search" name="q" placeholder="가사 검색..." 
-                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
+<body class="">
+    <!-- 헤더 -->
+    <header id="main-header" class="bg-white shadow-sm fixed w-full top-0 z-50 transition-transform duration-300 transform font-sans">
+        <div class="container mx-auto max-w-4xl px-5 py-3 flex items-center gap-4">
+            <a href="/" class=" px-2 text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
+            <form action="/songs" method="get" class="flex-grow min-w-0">
+                <div class="flex px-2">
+                    <input type="search" name="q" placeholder="노래 검색..." 
+                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0">
+                    <button type="submit" class="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
             </form>
         </div>
-    </header> -->
+    </header>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById('main-header');
+        const scrollThreshold = 10; // 스크롤 감지 임계값
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // 모바일 바운스 효과 등으로 인한 음수값 처리
+            if(scrollTop < 0) {
+                scrollTop = 0;
+            }
+
+            if (Math.abs(lastScrollTop - scrollTop) <= scrollThreshold) {
+                return;
+            }
+
+            if (scrollTop > lastScrollTop && scrollTop > 60) {
+                // 아래로 스크롤 시 헤더 숨김
+                header.classList.add('-translate-y-full');
+            } else {
+                // 위로 스크롤 시 헤더 보임
+                header.classList.remove('-translate-y-full');
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
 
     <% let searchQuery = locals.searchQuery || ''; %>
-    <div class="song-info-header">
+    <div class="song-info-header w-[calc(100%-3rem)] max-w-5xl mx-auto">
         <div class="song-info-content">
             <h1><a href="/songs/<%= song.name %>"><%= song.ori_name || song.name %></a></h1>
             
@@ -1288,7 +1316,7 @@ ${a}
             if(mode === "JP"){
                 const styleEle = document.createElement("style");
                 const classStyle = `
-                    *{
+                    #printer-wrapper *, .song-info-header * {
                       font-family: "Noto Sans JP", sans-serif;
                     }
                     .class-sentence-view h2 {
@@ -1309,7 +1337,7 @@ ${a}
             else if(mode === "SC"){
                 const styleEle = document.createElement("style");
                 const classStyle = `
-                    *{
+                    #printer-wrapper *, .song-info-header * {
                       font-family: "Noto Sans SC", sans-serif;
                     }
                     .class-sentence-view h2 {
@@ -1336,7 +1364,7 @@ ${a}
                         font-size: 22px;                        
                     }
 
-                    *{
+                    #printer-wrapper *, .song-info-header * {
                       font-family: "Noto Sans Display", sans-serif;
                     }               
                 `;                
