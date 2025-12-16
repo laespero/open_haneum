@@ -33,7 +33,7 @@
     </header>
 
     <main class="py-12 px-6">
-        <div class="container mx-auto max-w-5xl">
+        <div class="container mx-auto max-w-4xl">
             <!-- 언어 필터 -->
             <div class="mb-8">
                 <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
@@ -86,25 +86,20 @@
                             <div class="absolute -top-4 -left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl font-bold <%= index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-500' : 'text-purple-500' %> shadow-lg">
                                 <%= index + 1 %>
                             </div>
-                            <% if (index === 0) { %>
-                                <div class="text-center mb-3">
-                                    <i class="fas fa-crown text-3xl text-yellow-200"></i>
-                                </div>
-                            <% } %>
                             <a href="/songs?q=<%= encodeURIComponent(artist.name) %>" class="block">
                                 <h3 class="font-bold text-xl mb-3 text-center">
                                     <%= artist.name %>
                                 </h3>
                                 <div class="text-center space-y-2">
-                                    <div class="flex items-center justify-center">
-                                        <i class="fas fa-eye mr-2"></i>
-                                        <span class="text-lg font-semibold"><%= artist.totalViews.toLocaleString() %></span>
-                                    </div>
                                     <div class="text-sm opacity-90">
                                         총 <%= artist.songs.length %>곡
                                     </div>
                                     <div class="text-xs opacity-75">
                                         평균 <%= Math.round(artist.totalViews / artist.songs.length).toLocaleString() %> 조회수/곡
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <i class="fas fa-eye mr-2"></i>
+                                        <span class="text-lg font-semibold"><%= artist.totalViews.toLocaleString() %></span>
                                     </div>
                                 </div>
                             </a>
@@ -145,9 +140,9 @@
                                         <div class="mt-3">
                                             <div class="text-xs text-gray-500 mb-2">인기곡</div>
                                             <div class="flex flex-wrap gap-2">
-                                                <% artist.songs.sort((a, b) => b.views - a.views).slice(0, 3).forEach(song => { %>
+                                                <% artist.songs.sort((a, b) => b.views - a.views).slice(0, 10).forEach(song => { %>
                                                     <a href="/songs/<%= song.name %>" class="inline-block bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full transition-colors">
-                                                        <%= song.ori_name || song.name %> (<%= song.views.toLocaleString() %>)
+                                                        <%= song.kor_name || song.ori_name || song.name %>
                                                     </a>
                                                 <% }); %>
                                             </div>
@@ -350,21 +345,20 @@
                             <div class="absolute -top-4 -left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl font-bold ${index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-500' : 'text-purple-500'} shadow-lg">
                                 ${index + 1}
                             </div>
-                            ${index === 0 ? '<div class="text-center mb-3"><i class="fas fa-crown text-3xl text-yellow-200"></i></div>' : ''}
                             <a href="/songs?q=${encodeURIComponent(artist.name)}" class="block">
                                 <h3 class="font-bold text-xl mb-3 text-center">
                                     ${artist.name}
                                 </h3>
                                 <div class="text-center space-y-2">
-                                    <div class="flex items-center justify-center">
-                                        <i class="fas fa-eye mr-2"></i>
-                                        <span class="text-lg font-semibold">${artist.totalViews.toLocaleString()}</span>
-                                    </div>
                                     <div class="text-sm opacity-90">
                                         총 ${artist.songs.length}곡
                                     </div>
                                     <div class="text-xs opacity-75">
                                         평균 ${Math.round(artist.totalViews / artist.songs.length).toLocaleString()} 조회수/곡
+                                    </div>
+                                    <div class="flex items-center justify-center">
+                                        <i class="fas fa-eye mr-2"></i>
+                                        <span class="text-lg font-semibold">${artist.totalViews.toLocaleString()}</span>
                                     </div>
                                 </div>
                             </a>
@@ -405,9 +399,9 @@
                                         <div class="mt-3">
                                             <div class="text-xs text-gray-500 mb-2">인기곡</div>
                                             <div class="flex flex-wrap gap-2">
-                                                ${artist.songs.sort((a, b) => b.views - a.views).slice(0, 3).map(song => `
+                                                ${artist.songs.sort((a, b) => b.views - a.views).slice(0, 10).map(song => `
                                                     <a href="/songs/${song.name}" class="inline-block bg-purple-50 hover:bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded-full transition-colors">
-                                                        ${song.ori_name || song.name} (${song.views.toLocaleString()})
+                                                        ${song.kor_name || song.ori_name || song.name}
                                                     </a>
                                                 `).join('')}
                                             </div>

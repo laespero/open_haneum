@@ -86,21 +86,14 @@
                             <div class="absolute -top-4 -left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl font-bold <%= index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-500' : 'text-orange-500' %> shadow-lg">
                                 <%= index + 1 %>
                             </div>
-                            <% if (index === 0) { %>
-                                <div class="text-center mb-3">
-                                    <i class="fas fa-crown text-3xl text-yellow-200"></i>
-                                </div>
-                            <% } %>
                             <a href="/songs/<%= song.name %>" class="block">
+                                <p class="text-xs opacity-75 mt-2 mb-1"><%= song.kor_name %></p>
                                 <h3 class="font-bold text-lg mb-2 line-clamp-2">
                                     <%= song.ori_name || song.name %>
                                 </h3>
                                 <p class="text-sm opacity-90 mb-3">
                                     <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %>
                                 </p>
-                                <% if (song.kor_name && song.kor_name !== song.ori_name) { %>
-                                    <p class="text-xs opacity-75 mb-3"><%= song.kor_name %></p>
-                                <% } %>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <i class="fas fa-eye mr-2"></i>
@@ -129,15 +122,13 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <a href="/songs/<%= song.name %>" class="block group">
+                                            <p class="text-xs text-gray-500"><%= song.kor_name %></p>
                                             <h3 class="font-semibold text-gray-800 group-hover:text-orange-600 transition-colors">
                                                 <%= song.ori_name || song.name %>
                                             </h3>
                                             <p class="text-sm text-gray-600">
                                                 <%= typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist %>
                                             </p>
-                                            <% if (song.kor_name && song.kor_name !== song.ori_name) { %>
-                                                <p class="text-xs text-gray-500"><%= song.kor_name %></p>
-                                            <% } %>
                                         </a>
                                     </div>
                                     <div class="flex-shrink-0 text-right">
@@ -346,15 +337,14 @@
                             <div class="absolute -top-4 -left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl font-bold ${index === 0 ? 'text-yellow-500' : index === 1 ? 'text-gray-500' : 'text-orange-500'} shadow-lg">
                                 ${index + 1}
                             </div>
-                            ${index === 0 ? '<div class="text-center mb-3"><i class="fas fa-crown text-3xl text-yellow-200"></i></div>' : ''}
                             <a href="/songs/${song.name}" class="block">
+                                <p class="text-xs opacity-75 mt-2 mb-1">${song.kor_name}</p>
                                 <h3 class="font-bold text-lg mb-2 line-clamp-2">
                                     ${song.ori_name || song.name}
                                 </h3>
                                 <p class="text-sm opacity-90 mb-3">
                                     ${typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist}
                                 </p>
-                                ${song.kor_name && song.kor_name !== song.ori_name ? `<p class="text-xs opacity-75 mb-3">${song.kor_name}</p>` : ''}
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <i class="fas fa-eye mr-2"></i>
@@ -383,13 +373,13 @@
                                     </div>
                                     <div class="flex-1 min-w-0">
                                         <a href="/songs/${song.name}" class="block group">
+                                            <p class="text-xs text-gray-500">${song.kor_name}</p>
                                             <h3 class="font-semibold text-gray-800 group-hover:text-orange-600 transition-colors">
                                                 ${song.ori_name || song.name}
                                             </h3>
                                             <p class="text-sm text-gray-600">
                                                 ${typeof song.artist === 'object' ? (song.artist.kor_name || song.artist.eng_name || song.artist.ori_name) : song.artist}
                                             </p>
-                                            ${song.kor_name && song.kor_name !== song.ori_name ? `<p class="text-xs text-gray-500">${song.kor_name}</p>` : ''}
                                         </a>
                                     </div>
                                     <div class="flex-shrink-0 text-right">

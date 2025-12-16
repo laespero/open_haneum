@@ -303,6 +303,7 @@ function getPopularArtists(limit = 10) {
                 artistViews[artistName].songs.push({
                     name: song.name,
                     ori_name: song.ori_name,
+                    kor_name: song.kor_name,
                     views: views
                 });
             }
@@ -455,6 +456,7 @@ function getPopularArtistsByLanguage(language, limit = 10) {
                 artistViews[artistName].songs.push({
                     name: song.name,
                     ori_name: song.ori_name,
+                    kor_name: song.kor_name,
                     views: views
                 });
             }
