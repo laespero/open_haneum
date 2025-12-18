@@ -1,0 +1,161 @@
+{
+  "name": "Yorushika_July_13th",
+  "ori_name": "7/13",
+  "kor_name": "7월 13일",
+  "eng_name": "July 13th",
+  "vid": "a98mRH3dim0",
+  "artist": {
+    "ori_name": "ヨルシカ",
+    "kor_name": "요루시카",
+    "eng_name": "Yorushika"
+  },
+  "tags": [
+    "일본어",
+    "개발용"
+  ],
+  "text": "インストゥルメンタルのため<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>はありません。",
+  "createdAt": "2025-12-18T03:26:00.573Z",
+  "p1": [
+    "インストゥルメンタルのため<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>はありません。"
+  ],
+  "contextText": [
+    {
+      "T0": "インストゥルメンタルのため<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>はありません。",
+      "C0": "インストゥルメンタルのため歌詞の掲載はありません。"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "インストゥルメンタルのため歌詞の掲載はありません。",
+      "C0": "기악곡이므로 가사는 게재되어 있지 않습니다.",
+      "G0": "이 문장은 이유를 나타내는 'ため'를 사용하여 '기악곡이므로'라는 이유를 설명하고, '歌詞の掲載はありません'으로 '가사의 게재는 없습니다'라는 결론을 제시합니다. 전체적으로 기악곡이므로 가사가 게재되지 않음을 알리는 설명문입니다.",
+      "K0": "기악곡이므로 가사는 게재되어 있지 않습니다.",
+      "I0": "insutoorumentaru no tame kashi no keisai wa arimasen.",
+      "R0": "인스토오루멘타루 노 타메 카시 노 케이사이 와 아리마센.",
+      "LI": [
+        {
+          "T1": "インストゥルメンタル",
+          "K1": "기악곡",
+          "I1": "insutoorumentaru",
+          "R1": "인스토오루멘타루",
+          "E1": "악기만으로 연주되는 음악을 의미하는 명사입니다.",
+          "T2": "インストゥルメンタル",
+          "K2": "기악곡",
+          "I2": "insutoorumentaru",
+          "R2": "인스토오루멘타루",
+          "XE": "この曲はインストゥルメンタルです。",
+          "XK": "이 곡은 기악곡입니다.",
+          "XI": "kono kyoku wa insutoorumentaru desu.",
+          "XR": "코노 쿄쿠 와 인스토오루멘타루 데스."
+        },
+        {
+          "T1": "の",
+          "K1": "~의",
+          "I1": "no",
+          "R1": "노",
+          "E1": "소유나 관계를 나타내는 조사입니다.",
+          "T2": "の",
+          "K2": "~의",
+          "I2": "no",
+          "R2": "노",
+          "XE": "私の本",
+          "XK": "나의 책",
+          "XI": "watashi no hon",
+          "XR": "와타시 노 혼"
+        },
+        {
+          "T1": "ため",
+          "K1": "때문에",
+          "I1": "tame",
+          "R1": "타메",
+          "E1": "이유나 목적을 나타내는 명사입니다.",
+          "T2": "ため",
+          "K2": "때문에",
+          "I2": "tame",
+          "R2": "타메",
+          "XE": "雨のため試合は中止です。",
+          "XK": "비 때문에 경기는 중지입니다.",
+          "XI": "ame no tame shiai wa chuushi desu.",
+          "XR": "아메 노 타메 시아이 와 추우시 데스."
+        },
+        {
+          "T1": "歌詞",
+          "K1": "가사",
+          "I1": "kashi",
+          "R1": "카시",
+          "E1": "노래의 말을 의미하는 명사입니다.",
+          "T2": "歌詞",
+          "K2": "가사",
+          "I2": "kashi",
+          "R2": "카시",
+          "XE": "この歌の歌詞は美しい。",
+          "XK": "이 노래의 가사는 아름다워.",
+          "XI": "kono uta no kashi wa utsukushii.",
+          "XR": "코노 우타 노 카시 와 우츠쿠시이."
+        },
+        {
+          "T1": "の",
+          "K1": "~의",
+          "I1": "no",
+          "R1": "노",
+          "E1": "소유나 관계를 나타내는 조사입니다.",
+          "T2": "の",
+          "K2": "~의",
+          "I2": "no",
+          "R2": "노",
+          "XE": "学校の先生",
+          "XK": "학교의 선생님",
+          "XI": "gakkou no sensei",
+          "XR": "갓코오 노 센세이"
+        },
+        {
+          "T1": "掲載",
+          "K1": "게재",
+          "I1": "keisai",
+          "R1": "케이사이",
+          "E1": "책이나 잡지 등에 실리는 것을 의미하는 명사입니다.",
+          "T2": "掲載",
+          "K2": "게재",
+          "I2": "keisai",
+          "R2": "케이사이",
+          "XE": "新聞に記事が掲載された。",
+          "XK": "신문에 기사가 게재되었다.",
+          "XI": "shinbun ni kiji ga keisai sareta.",
+          "XR": "신분 니 키지 가 케이사이 사레타."
+        },
+        {
+          "T1": "は",
+          "K1": "~는",
+          "I1": "wa",
+          "R1": "와",
+          "E1": "주제를 나타내는 조사입니다.",
+          "T2": "は",
+          "K2": "~는",
+          "I2": "wa",
+          "R2": "와",
+          "XE": "私は学生です。",
+          "XK": "나는 학생입니다.",
+          "XI": "watashi wa gakusei desu.",
+          "XR": "와타시 와 가쿠세이 데스."
+        },
+        {
+          "T1": "ありません",
+          "K1": "없습니다",
+          "I1": "arimasen",
+          "R1": "아리마센",
+          "E1": "'있다'의 부정형으로, 존댓말 표현입니다.",
+          "T2": "ある",
+          "K2": "있다",
+          "I2": "aru",
+          "R2": "아루",
+          "XE": "ここに本はありません。",
+          "XK": "여기에 책은 없습니다.",
+          "XI": "koko ni hon wa arimasen.",
+          "XR": "코코 니 혼 와 아리마센."
+        }
+      ],
+      "O0": "インストゥルメンタルのため<span class=\"ruby\"><span class=\"rb\">歌詞</span><span class=\"rt\">かし</span></span>の<span class=\"ruby\"><span class=\"rb\">掲載</span><span class=\"rt\">けいさい</span></span>はありません。"
+    }
+  ],
+  "failedLines": []
+}
