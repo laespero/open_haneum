@@ -150,6 +150,7 @@ app.use('/', express.static('songs'));
 // 파일 수정 작업 시에는 반드시 fs.readFile로 원본 파일을 읽어서 처리해야 합니다.
 let songCache = [];
 let songCacheMap = new Map();  // 노래 이름을 키로 하는 Map (빠른 검색용)
+let songCacheKeyMap = new Map(); // 소문자 이름 -> 실제 이름 매핑 (대소문자 무시 검색용)
 let isCacheReady = false; // 캐시 준비 상태 플래그
 let lastCacheReloadTime = 0; // 마지막 캐시 리로딩 시간
 let viewCounts = {};  // 조회수 데이터를 저장할 객체
@@ -196,6 +197,12 @@ function getSafeSongPath(title) {
         error.status = 400; // Bad Request
         throw error;
     }
+
+    // 캐시가 준비되어 있고, 입력된 타이틀의 소문자 버전이 캐시에 있다면 그 실제 이름을 사용 (대소문자 자동 보정)
+    if (isCacheReady && songCacheKeyMap && songCacheKeyMap.has(title.toLowerCase())) {
+        title = songCacheKeyMap.get(title.toLowerCase());
+    }
+
     // basename은 경로의 마지막 부분만 반환하여 '..' 같은 상위 디렉토리 이동 문자를 제거합니다.
     const safeTitle = path.basename(title);
     if (safeTitle !== title) {
@@ -515,6 +522,8 @@ async function refreshSongCache() {
         
         // Map 인덱스 생성 (빠른 검색을 위해)
         songCacheMap = new Map(songCache.map(song => [song.name, song]));
+        // 소문자 키 맵 생성 (대소문자 무시 검색을 위해)
+        songCacheKeyMap = new Map(songCache.map(song => [song.name.toLowerCase(), song.name]));
         
         isCacheReady = true; // 캐시 로딩 완료, 이제 서버는 모든 요청을 처리할 준비가 됨
         console.log(`${songCache.length}개의 노래 데이터를 메모리에 로드했으며, 서버가 정상적으로 요청을 처리할 준비를 마쳤습니다.`);
@@ -764,6 +773,7 @@ app.post('/add', async (req, res) => {
         songCache.unshift(songData); // 새 노래를 맨 앞에 추가
     }
     songCacheMap.set(title, songData); // Map도 함께 업데이트
+    songCacheKeyMap.set(title.toLowerCase(), title); // KeyMap도 업데이트
     console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
 
     res.render('songDetail', { song: songData });
@@ -934,6 +944,7 @@ app.post('/bulk-import-utaten', async (req, res) => {
                 songCache.unshift(songData);
             }
             songCacheMap.set(finalTitle, songData);
+            songCacheKeyMap.set(finalTitle.toLowerCase(), finalTitle);
 
             res.write(`  - [${index+1}] 기본 데이터 저장 완료. AI 분석 시작...\n`);
 
@@ -1012,6 +1023,7 @@ app.post('/update-song-meta/:title', async (req, res) => {
     if (songIndex > -1) {
         songCache[songIndex] = { ...songCache[songIndex], ...songData };
         songCacheMap.set(title, songCache[songIndex]); // Map도 함께 업데이트
+        // KeyMap은 title이 바뀌지 않았으므로 업데이트 불필요 (만약 이름 변경 기능이 있다면 필요)
         console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
     } else {
         // 만약 캐시에 없다면 (이론상 발생하기 어려움), 전체 리프레시로 안전하게 처리
