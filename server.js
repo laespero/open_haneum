@@ -191,7 +191,7 @@ app.use((req, res, next) => {
  * @returns {string} - 'songs' 디렉토리 내의 안전한 파일 경로.
  * @throws {Error} - 제목이 유효하지 않은 경우 오류를 발생시킵니다.
  */
-function getSafeSongPath(title) {
+function getSafeSongPath(title, useCache = true) {
     if (!title) {
         const error = new Error('노래 제목이 필요합니다.');
         error.status = 400; // Bad Request
@@ -199,7 +199,8 @@ function getSafeSongPath(title) {
     }
 
     // 캐시가 준비되어 있고, 입력된 타이틀의 소문자 버전이 캐시에 있다면 그 실제 이름을 사용 (대소문자 자동 보정)
-    if (isCacheReady && songCacheKeyMap && songCacheKeyMap.has(title.toLowerCase())) {
+    // 단, useCache가 false이면 캐시를 무시하고 입력된 타이틀 그대로 사용 (파일 생성/이름 변경 시 사용)
+    if (useCache && isCacheReady && songCacheKeyMap && songCacheKeyMap.has(title.toLowerCase())) {
         title = songCacheKeyMap.get(title.toLowerCase());
     }
 
@@ -762,7 +763,28 @@ app.post('/add', async (req, res) => {
         songData.japanSongData = japanData;
     }
 
-    const safePath = getSafeSongPath(title);
+    // 캐시를 무시하고 입력된 title 그대로 경로 생성 (파일명을 name과 일치시키기 위함)
+    const safePath = getSafeSongPath(title, false);
+    
+    // 기존 파일이 존재하고 대소문자가 다른 경우 이름 변경 처리
+    // (macOS/Windows 등 대소문자 구분 없는 파일 시스템에서 덮어쓰기 시 원래 파일명 유지되는 문제 해결)
+    if (isCacheReady && songCacheKeyMap && songCacheKeyMap.has(title.toLowerCase())) {
+        const existingTitle = songCacheKeyMap.get(title.toLowerCase());
+        // 기존 이름과 새 이름이 다르면 (대소문자 차이)
+        if (existingTitle !== title) {
+            const oldPath = getSafeSongPath(existingTitle, false); // 기존 경로
+            try {
+                // 기존 파일이 실제로 존재하는지 확인 후 이름 변경
+                await fs.promises.access(oldPath);
+                await fs.promises.rename(oldPath, safePath);
+                console.log(`파일명을 변경했습니다: ${existingTitle} -> ${title}`);
+            } catch (err) {
+                // 파일이 없을 수 있음 (새로 생성하는 경우 등), 에러 로그만 남기고 진행
+                console.log(`기존 파일(${existingTitle}) 접근 실패 또는 이름 변경 실패 (새 파일로 생성됨): ${err.message}`);
+            }
+        }
+    }
+
     await fs.promises.writeFile(safePath, JSON.stringify(songData, null, 2));
     
     // 캐시를 효율적으로 업데이트 (전체 리프레시 대신)
