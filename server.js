@@ -214,6 +214,54 @@ function getSafeSongPath(title, useCache = true) {
     return `songs/${safeTitle}.json`;
 }
 
+/**
+ * songs 디렉토리의 모든 파일을 스캔하여 파일명과 내부 'name' 필드가 일치하도록 동기화합니다.
+ * Bulk Import 후 대소문자 차이 등으로 인한 불일치를 해결하기 위해 사용됩니다.
+ */
+async function syncAllSongNames() {
+    const songsDir = path.join(__dirname, 'songs');
+    console.log('[Sync] Starting to sync song names with filenames...');
+    
+    try {
+        const files = await fs.promises.readdir(songsDir);
+        let updatedCount = 0;
+        
+        for (const file of files) {
+             if (path.extname(file) !== '.json') continue;
+             
+             const filePath = path.join(songsDir, file);
+             const fileNameNoExt = path.basename(file, '.json');
+             
+             try {
+                 const content = await fs.promises.readFile(filePath, 'utf8');
+                 const data = JSON.parse(content);
+                 
+                 // 파일명과 내부 name이 다른 경우 (대소문자 포함)
+                 if (data.name !== fileNameNoExt) {
+                     // console.log(`[Sync] Updating name for ${file}: "${data.name}" -> "${fileNameNoExt}"`);
+                     data.name = fileNameNoExt;
+                     await fs.promises.writeFile(filePath, JSON.stringify(data, null, 2));
+                     updatedCount++;
+                 }
+             } catch (err) {
+                 console.error(`[Sync] Error processing file ${file}:`, err.message);
+             }
+        }
+        
+        if (updatedCount > 0) {
+            console.log(`[Sync] Completed. Updated ${updatedCount} files.`);
+            // 이름이 변경되었으므로 캐시 리프레시 필요
+            await refreshSongCache();
+        } else {
+            console.log('[Sync] Completed. No changes needed.');
+        }
+        
+        return updatedCount;
+    } catch (err) {
+        console.error('[Sync] Failed to read songs directory:', err);
+    }
+}
+
 // 조회수 데이터 로드/저장 함수
 async function loadViewCounts() {
     try {
@@ -1006,6 +1054,15 @@ app.post('/bulk-import-utaten', async (req, res) => {
     
     // 남은 작업들이 완료될 때까지 대기
     await Promise.all(activePromises);
+
+    // Bulk Import 후 이름 동기화 실행
+    res.write(`\n[System] 파일명과 내부 이름 동기화 검사 중...\n`);
+    const syncedCount = await syncAllSongNames();
+    if (syncedCount > 0) {
+        res.write(`[System] ${syncedCount}개의 파일 이름을 동기화했습니다.\n`);
+    } else {
+        res.write(`[System] 파일 이름 동기화 완료 (변경 사항 없음).\n`);
+    }
 
     res.write(`\n=== 모든 작업이 완료되었습니다 ===\n`);
     res.end();
