@@ -37,54 +37,6 @@ https://haneum.site/ 에서 지금 바로 기능을 체험해보세요!
 ### 독일어 가사 분석
 ![독일어 가사 예시](example_img/german_example.png)
 
-## 기술 스택
-
-- **Backend**: Node.js, Express.js, express-async-errors
-- **Frontend**: EJS (Embedded JavaScript)
-- **AI**: DeepSeek(OpenRouter를 통해 이용하는 것을 추천합니다.), Google Gemini API
-- **데이터 저장**: JSON 파일 기반
-- **기타**: CORS
-
-## 설치 방법
-
-1. 저장소 클론
-```bash
-git clone https://github.com/laespero/open-haneum.git
-cd open-haneum
-```
-
-2. 의존성 설치
-```bash
-npm install
-```
-
-3. 환경 변수 설정
-`.env` 파일을 생성하고 다음 내용을 추가: 
-(OpenRouter에서 api_key를 발급 받아서 입력해주세요.)
-```
-OPENROUTER_API_KEY=your_open_router_api_key
-```
-
-4. 서버 실행
-
-**개발 환경:**
-
-개발 중에는 코드가 변경될 때마다 서버를 자동으로 재시작해주는 `nodemon`을 사용하는 것이 편리합니다.
-
-```bash
-npm run dev
-```
-위 명령은 `nodemon server.js`를 실행합니다.
-
-**프로덕션 환경:**
-애플리케이션 시작:
-```bash
-npm start
-```
-위 명령은 `node server.js` 명령을 실행합니다.
-
-서버가 시작되면 웹 브라우저에서 `http://localhost:3000`로 접속하여 확인할 수 있습니다.
-
 ## 사용 방법
 
 1. 메인 페이지에서 "노래 추가하기" 버튼을 클릭하여 새 노래를 추가합니다.
@@ -111,6 +63,16 @@ npm start
 
 ### 분석 결과 보기 페이지
 ![분석 결과 보기 페이지](example_img/songview.png)
+
+### 인기 노래 (Popular Songs)
+가장 많이 조회된 노래들의 순위를 확인할 수 있는 페이지입니다. 조회수 기반으로 정렬된 목록을 제공합니다.
+
+![인기 노래](example_img/popular_songs.png)
+
+### 인기 아티스트 (Popular Artists)
+가장 많은 관심을 받은 아티스트들의 순위를 확인할 수 있는 페이지입니다. 아티스트별로 보유한 노래 수와 총 조회수를 기반으로 집계됩니다.
+
+![인기 아티스트](example_img/popular_artists.png)
 
 ### 번역 수정하기
 
@@ -155,6 +117,43 @@ AI에게 특정 지시를 내려 번역을 수정하게 하는 방법입니다.
 - `D` 또는 `L`: 다음 슬라이드
 - `S` 또는 `K`: 재생/일시정지
 
+## 기술 스택
+
+- **Backend**: Node.js, Express.js, express-async-errors
+- **Frontend**: EJS (Embedded JavaScript)
+- **AI**: DeepSeek(OpenRouter를 통해 이용하는 것을 추천합니다.), Google Gemini API
+- **데이터 저장**: JSON 파일 기반
+- **기타**: CORS
+
+## 설치 방법
+
+1. 저장소 클론
+```bash
+git clone https://github.com/laespero/open-haneum.git
+cd open-haneum
+```
+
+2. 의존성 설치
+```bash
+npm install
+```
+
+3. 환경 변수 설정
+`.env` 파일을 생성하고 다음 내용을 추가: 
+(OpenRouter에서 api_key를 발급 받아서 입력해주세요.)
+```
+OPENROUTER_API_KEY=your_open_router_api_key
+```
+
+4. 서버 실행
+
+애플리케이션 시작:
+```bash
+npm start
+```
+위 명령은 `node server.js` 명령을 실행합니다.
+
+서버가 시작되면 웹 브라우저에서 `http://localhost:3000`로 접속하여 확인할 수 있습니다.
 
 ## 프로젝트 구조
 

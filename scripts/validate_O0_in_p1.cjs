@@ -47,3 +47,4 @@ files.forEach(file => {
 console.log(`\nScan complete. Found ${errorCount} mismatches.`);
 
 
+
