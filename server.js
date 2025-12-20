@@ -63,7 +63,7 @@ let chatModel;
 // const chatModel = "deepseek-chat";
 
 const OPENROUTER_DEEPSEEK_CHAT = "deepseek/deepseek-v3.2";
-const OPENROUTER_CHATGPT = "openai/gpt-5.1-chat";
+const OPENROUTER_CHATGPT = "openai/gpt-5.2-chat";
 const OPENROUTER_GEMINI = "google/gemini-2.5-flash-lite";
 
 let openai;
@@ -219,7 +219,7 @@ function getSafeSongPath(title, useCache = true) {
  * Bulk Import 후 대소문자 차이 등으로 인한 불일치를 해결하기 위해 사용됩니다.
  */
 async function syncAllSongNames() {
-    const songsDir = path.join(__dirname, 'songs');
+    const songsDir = path.join(path.resolve(), 'songs');
     console.log('[Sync] Starting to sync song names with filenames...');
     
     try {
@@ -325,13 +325,13 @@ function incrementViewCount(songName) {
 function getPopularSongs(limit = 10) {
     return Object.entries(viewCounts)
         .sort(([,a], [,b]) => b - a)
-        .slice(0, limit)
         .map(([songName, views]) => {
             const song = songCacheMap.get(songName); // Map으로 O(1) 검색
             return song ? { ...song, views } : null;
         })
         .filter(song => song !== null)
-        .filter(song => !song.tags || !song.tags.includes('개발용')); // 개발용 제외
+        .filter(song => !song.tags || !song.tags.includes('개발용')) // 개발용 제외
+        .slice(0, limit);
 }
 
 // 인기 아티스트 조회 함수
@@ -1197,8 +1197,24 @@ app.get('/detail/:title', async (req, res) => {
 
 app.get('/songs', (req, res) => {
     const searchQuery = req.query.q || '';
-    const filteredSongs = searchSongs(searchQuery, ['개발용']);
+    const sort = req.query.sort || 'popular'; // 기본값 인기순
+    let filteredSongs = searchSongs(searchQuery, ['개발용']);
     
+    // 정렬 로직
+    if (sort === 'popular') {
+        filteredSongs.sort((a, b) => {
+            const viewsA = viewCounts[a.name] || 0;
+            const viewsB = viewCounts[b.name] || 0;
+            return viewsB - viewsA;
+        });
+    } else if (sort === 'latest') {
+        filteredSongs.sort((a, b) => {
+            const dateA = new Date(a.createdAt || 0);
+            const dateB = new Date(b.createdAt || 0);
+            return dateB - dateA;
+        });
+    }
+
     const page = parseInt(req.query.page) || 1;
     const limit = 10;
     const startIndex = (page - 1) * limit;
@@ -1211,7 +1227,8 @@ app.get('/songs', (req, res) => {
         currentPage: page,
         totalPages: totalPages,
         searchQuery: searchQuery,
-        totalResults: filteredSongs.length
+        totalResults: filteredSongs.length,
+        currentSort: sort
     });
 });
 
