@@ -845,8 +845,12 @@ app.post('/add', async (req, res) => {
     songCacheMap.set(title, songData); // Map도 함께 업데이트
     songCacheKeyMap.set(title.toLowerCase(), title); // KeyMap도 업데이트
     console.log(`메모리 캐시를 효율적으로 업데이트했습니다: ${title}`);
-
-    res.render('songDetail', { song: songData });
+    
+    // POST-Redirect-GET(PRG) 패턴 적용:
+    // POST /add 응답을 바로 렌더링하면 브라우저 주소창이 /add로 남아있고,
+    // 이후 번역 완료 시 reload() 등이 "폼 재전송"을 유발해 /add가 다시 실행될 수 있습니다.
+    // 303 See Other로 /detail/:title(GET)로 이동시켜 URL을 안정화합니다.
+    return res.redirect(303, `/detail/${encodeURIComponent(title)}`);
 });
 
 // 대량 임포트 페이지 렌더링
@@ -1253,12 +1257,45 @@ app.get('/api/translate/stream/:title', async (req, res) => {
     console.log(`[SSE] 번역 스트리밍 시작 : [${title}]`);
 
     // SSE 헤더 설정
-    res.setHeader('Content-Type', 'text/event-stream');
-    res.setHeader('Cache-Control', 'no-cache');
+    // NOTE: 실서버(특히 Nginx/Cloudflare 등 프록시) 환경에서는 응답 버퍼링/압축으로 인해
+    // SSE 이벤트가 "끝날 때까지" 클라이언트에 전달되지 않을 수 있습니다.
+    // 아래 헤더/flush/heartbeat는 이를 완화합니다.
+    res.setHeader('Content-Type', 'text/event-stream; charset=utf-8');
+    res.setHeader('Cache-Control', 'no-cache, no-transform'); // no-transform: 프록시/중간자 변형 방지
     res.setHeader('Connection', 'keep-alive');
+    res.setHeader('X-Accel-Buffering', 'no'); // Nginx buffering off 힌트
+    res.setHeader('Content-Encoding', 'none'); // 일부 환경에서 압축/변형 방지 힌트
     
-    // 연결 유지용 주석 전송 (타임아웃 방지)
-    res.write(': keep-alive\n\n');
+    // 소켓/요청 타임아웃 방지 (일부 호스팅에서 기본 타임아웃 존재)
+    try {
+        req.setTimeout(0);
+        req.socket?.setTimeout?.(0);
+        req.socket?.setNoDelay?.(true);
+    } catch {}
+
+    // 헤더 즉시 전송 (프록시 버퍼링 완화)
+    if (typeof res.flushHeaders === 'function') {
+        res.flushHeaders();
+    }
+
+    // 프록시 버퍼링을 깨기 위한 패딩(2KB+) 주석 + 초기 keep-alive
+    // (일부 프록시는 일정 바이트 이상 쌓이기 전까지 클라이언트로 전달하지 않습니다)
+    res.write(`: sse-open ${' '.repeat(2048)}\n\n`);
+
+    // heartbeat: 연결 유지 + 버퍼링 완화
+    const heartbeat = setInterval(() => {
+        try {
+            res.write(`: ping ${Date.now()}\n\n`);
+        } catch {}
+    }, 15000);
+
+    const cleanup = () => {
+        try { clearInterval(heartbeat); } catch {}
+    };
+
+    // 클라이언트가 탭을 닫거나 네트워크가 끊긴 경우
+    req.on('close', cleanup);
+    res.on('close', cleanup);
 
     try {
         const filePath = getSafeSongPath(title);
@@ -1349,11 +1386,13 @@ app.get('/api/translate/stream/:title', async (req, res) => {
 
         console.log(`[SSE] 번역 완료 : [${title}]`);
         res.write(`data: ${JSON.stringify({ type: 'complete' })}\n\n`);
+        cleanup();
         res.end();
 
     } catch (error) {
         console.error('[SSE] 오류 발생:', error);
         res.write(`data: ${JSON.stringify({ type: 'error', message: error.message })}\n\n`);
+        cleanup();
         res.end();
     }
 });
