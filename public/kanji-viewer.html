@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문서 드래그 → 첫 한자 획순</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./kanji-viewer.css" />
+  </head>
+  <body>
+    <main class="page readerPage">
+      <header class="header">
+        <div>
+          <h1 class="title">문서 드래그 → 첫 한자 획순</h1>
+          <p class="subtitle">
+            아래 문서에서 텍스트를 드래그로 선택하면, 선택된 문자열의 <strong>첫 번째 글자(한자/히라가나/가타카나)</strong> 획순 애니메이션이 화면 좌측 하단에 표시됩니다.
+          </p>
+        </div>
+      </header>
+
+      <section class="panel readerDoc">
+        <div class="label">문서(샘플)</div>
+        <article class="readerArticle">
+          <p>
+            예시 문장: JLPT 공부를 하면서 漢字를 익히는 가장 좋은 방법 중 하나는, 문맥 속에서 자주 보는 단어를 반복해서 읽는 것입니다.
+            예를 들어 <strong>水</strong>, <strong>人</strong>, <strong>書</strong> 같은 글자는 기본이죠.
+          </p>
+          <p>
+            여기서는 임의의 문서 내용처럼 보이도록 문단을 조금 더 넣었습니다. 드래그로 “내가 선택한 텍스트”에서 첫 한자만 인식합니다.
+            예: “書き順”을 선택하면 첫 한자(書)의 획순이 나옵니다.
+          </p>
+          <p>표시 가능한 글자가 없는 선택(예: “abc”, “123”)이거나 선택이 해제되면 패널은 자동으로 닫힙니다.</p>
+        </article>
+        <p class="muted readerTip">팁: 드래그 후 마우스를 놓거나(마우스업), 키보드로 선택 범위를 바꾸면(Shift+방향키) 자동 반영됩니다.</p>
+      </section>
+    </main>
+
+    <!-- 좌측 하단 고정 패널 -->
+    <aside id="rfPanel" class="readerFloating isHidden" aria-live="polite">
+      <div class="readerFloatingHeader">
+        <div class="readerFloatingTitle">한자 획순</div>
+        <div class="readerFloatingHeaderRight">
+          <div class="readerFloatingChar" id="rfChar">—</div>
+          <button class="readerClose" type="button" id="rfClose" aria-label="패널 닫기" title="닫기">×</button>
+        </div>
+      </div>
+      <div class="readerFloatingBody">
+        <div class="readerSvgWrap" id="rfSvgWrap" aria-hidden="true"></div>
+      </div>
+    </aside>
+
+    <script src="./kanji-viewer.js" defer></script>
+  </body>
+</html>
+
+

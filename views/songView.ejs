@@ -11,6 +11,13 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- 드래그 선택 → 첫 한자 획순 뷰어 -->
+    <link rel="stylesheet" href="/kanji-viewer.css" />
+    <script>
+        // 가사 영역(#printer) 안에서 드래그한 텍스트만 한자 뷰어가 반응하도록 제한
+        window.KANJI_VIEWER_ROOT_SELECTOR = "#printer";
+    </script>
+    <script src="/kanji-viewer.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&display=swap');
         #printer-wrapper *, .song-info-header * {
@@ -600,7 +607,6 @@
     </div>
     <script src="/hanja.js"></script>
     <script src="/youtube.js"></script>
-    </script>
     <script>
 
 
@@ -1302,8 +1308,15 @@ ${a}
 
                     set_mode("scroll");
 
+                    const isChinese = Array.isArray(o.tags) && o.tags.some(t => String(t).includes("중국어"));
+                    // 한자 뷰어 모드: 태그에 "중국어" 포함 시 cn, 아니면 jp
+                    window.KANJI_VIEWER_DEFAULT_MODE = isChinese ? "cn" : "jp";
+                    if (typeof window.setReaderMode === "function") {
+                        window.setReaderMode(window.KANJI_VIEWER_DEFAULT_MODE);
+                    }
+
                     if(isJP||lang==="jp") setFont("JP"); 
-                    else if(o.tags.includes("중국어")) setFont("SC"); 
+                    else if(isChinese) setFont("SC"); 
                     else setFont("EN"); 
 
                 })
@@ -1659,5 +1672,19 @@ ${a}
         return data.map(x=>x.T0).join('\n')
     }
     </script>
+    
+    <!-- 좌측 하단 고정 패널 (드래그한 텍스트의 첫 한자 획순) -->
+    <aside id="rfPanel" class="readerFloating isHidden" aria-live="polite">
+      <div class="readerFloatingHeader">
+        <div class="readerFloatingTitle">한자 획순</div>
+        <div class="readerFloatingHeaderRight">
+          <div class="readerFloatingChar" id="rfChar">—</div>
+          <button class="readerClose" type="button" id="rfClose" aria-label="패널 닫기" title="닫기">×</button>
+        </div>
+      </div>
+      <div class="readerFloatingBody">
+        <div class="readerSvgWrap" id="rfSvgWrap" aria-hidden="true"></div>
+      </div>
+    </aside>
 </body>
 </html>
