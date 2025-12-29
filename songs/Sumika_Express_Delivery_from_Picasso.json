@@ -1,0 +1,130 @@
+{
+  "name": "Sumika_Express_Delivery_from_Picasso",
+  "ori_name": "ピカソからの宅急便",
+  "kor_name": "피카소로부터의 택배",
+  "eng_name": "Express Delivery from Picasso",
+  "vid": "C7wfaP-snFI",
+  "artist": {
+    "ori_name": "sumika",
+    "kor_name": "스미카",
+    "eng_name": "sumika"
+  },
+  "tags": [
+    "일본어"
+  ],
+  "text": "<span class=\"ruby\"><span class=\"rb\">この曲はインストゥルメンタル曲です。</span><span class=\"rt\"> </span></span>",
+  "createdAt": "2025-12-29T04:50:48.496Z",
+  "p1": [
+    "<span class=\"ruby\"><span class=\"rb\">この曲はインストゥルメンタル曲です。</span><span class=\"rt\"> </span></span>"
+  ],
+  "contextText": [
+    {
+      "T0": "<span class=\"ruby\"><span class=\"rb\">この曲はインストゥルメンタル曲です。</span><span class=\"rt\"> </span></span>",
+      "C0": "この曲はインストゥルメンタル曲です。"
+    }
+  ],
+  "translatedLines": [
+    {
+      "T0": "この曲はインストゥルメンタル曲です。",
+      "C0": "이 곡은 인스트루멘탈 곡입니다.",
+      "G0": "이 문장은 주어(この曲) + 조사(は) + 술어(インストゥルメンタル曲です)로 구성되어 있습니다. 'この曲'은 '이 곡'을 의미하며, 'は'는 주제를 나타내는 조사입니다. 'インストゥルメンタル曲'은 '인스트루멘탈 곡'을 의미하고, 'です'는 정중한 표현을 나타내는 조동사입니다. 전체적으로 이 곡이 인스트루멘탈 곡임을 설명하는 문장입니다.",
+      "K0": "이 곡은 인스트루멘탈 곡입니다.",
+      "I0": "kono kyoku wa insutorumentaru kyoku desu",
+      "R0": "코노 큐쿠 와 인스토루멘타루 큐쿠 데스",
+      "LI": [
+        {
+          "T1": "この",
+          "K1": "이",
+          "I1": "kono",
+          "R1": "코노",
+          "E1": "가까이 있는 대상을 가리키는 지시사입니다.",
+          "T2": "この",
+          "K2": "이",
+          "I2": "kono",
+          "R2": "코노",
+          "XE": "この本は面白いです。",
+          "XK": "이 책은 재미있습니다.",
+          "XI": "kono hon wa omoshiroi desu",
+          "XR": "코노 혼 와 오모시로이 데스"
+        },
+        {
+          "T1": "曲",
+          "K1": "곡",
+          "I1": "kyoku",
+          "R1": "큐쿠",
+          "E1": "음악 작품을 의미하는 명사입니다.",
+          "T2": "曲",
+          "K2": "곡",
+          "I2": "kyoku",
+          "R2": "큐쿠",
+          "XE": "彼は新しい曲を作りました。",
+          "XK": "그는 새로운 곡을 만들었습니다.",
+          "XI": "kare wa atarashii kyoku o tsukurimashita",
+          "XR": "카레 와 아타라시이 큐쿠 오 츠쿠리마시타"
+        },
+        {
+          "T1": "は",
+          "K1": "은",
+          "I1": "wa",
+          "R1": "와",
+          "E1": "주제나 대조를 나타내는 조사입니다.",
+          "T2": "は",
+          "K2": "은",
+          "I2": "wa",
+          "R2": "와",
+          "XE": "私は学生です。",
+          "XK": "저는 학생입니다.",
+          "XI": "watashi wa gakusei desu",
+          "XR": "와타시 와 가쿠세이 데스"
+        },
+        {
+          "T1": "インストゥルメンタル",
+          "K1": "인스트루멘탈",
+          "I1": "insutorumentaru",
+          "R1": "인스토루멘타루",
+          "E1": "악기만으로 연주되는 음악을 의미하는 외래어입니다.",
+          "T2": "インストゥルメンタル",
+          "K2": "인스트루멘탈",
+          "I2": "insutorumentaru",
+          "R2": "인스토루멘타루",
+          "XE": "このバンドはインストゥルメンタル曲が多いです。",
+          "XK": "이 밴드는 인스트루멘탈 곡이 많습니다.",
+          "XI": "kono bando wa insutorumentaru kyoku ga ooi desu",
+          "XR": "코노 반도 와 인스토루멘타루 큐쿠 가 오오이 데스"
+        },
+        {
+          "T1": "曲",
+          "K1": "곡",
+          "I1": "kyoku",
+          "R1": "큐쿠",
+          "E1": "음악 작품을 의미하는 명사입니다.",
+          "T2": "曲",
+          "K2": "곡",
+          "I2": "kyoku",
+          "R2": "큐쿠",
+          "XE": "彼女は美しい曲を歌います。",
+          "XK": "그녀는 아름다운 곡을 부릅니다.",
+          "XI": "kanojo wa utsukushii kyoku o utaimasu",
+          "XR": "카노조 와 우츠쿠시이 큐쿠 오 우타이마스"
+        },
+        {
+          "T1": "です",
+          "K1": "입니다",
+          "I1": "desu",
+          "R1": "데스",
+          "E1": "정중한 표현을 나타내는 조동사입니다.",
+          "T2": "です",
+          "K2": "입니다",
+          "I2": "desu",
+          "R2": "데스",
+          "XE": "これは本です。",
+          "XK": "이것은 책입니다.",
+          "XI": "kore wa hon desu",
+          "XR": "코레 와 혼 데스"
+        }
+      ],
+      "O0": "<span class=\"ruby\"><span class=\"rb\">この曲はインストゥルメンタル曲です。</span><span class=\"rt\"> </span></span>"
+    }
+  ],
+  "failedLines": []
+}
