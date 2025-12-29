@@ -1,7 +1,7 @@
 {
   "name": "Yoasobi_Brave",
   "ori_name": "勇者",
-  "kor_name": "용자",
+  "kor_name": "용사",
   "eng_name": "Brave",
   "vid": "OIBODIPC_8Y",
   "artist": {
@@ -641,7 +641,7 @@
           "XE": "彼は走っている。",
           "XK": "그는 달리고 있어.",
           "XI": "kare wa hashitteiru",
-          "XR": "카레 와 핫싸테이루"
+          "XR": "카레 와 하싯테 이루"
         },
         {
           "T1": "いる",
