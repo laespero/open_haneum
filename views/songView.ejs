@@ -640,12 +640,14 @@ function loadVideo(vid, isLoop) {
 
                     },
                     'yt_error': function onPlayerError(e) {
-                        if(player._retryCount === undefined) player._retryCount = 0;
+                        /* retry 로직 주석처리
+                         if(player._retryCount === undefined) player._retryCount = 0;
                         player._retryCount++;
                         if(player._retryCount > 5) return;
 
                         player.load_video(vid, true);
-                        player.play();
+                        player.play(); 
+                        */
                     },
                     'api_change': function (event) {
                         player.set_api('captions', 'track', {});
