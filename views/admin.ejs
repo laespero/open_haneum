@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
-    <!-- 헤더 -->
-    <header class="bg-red-600 text-white text-center py-8 px-6">
+    <%- include('partials/header') %>
+    <!-- 페이지 타이틀 -->
+    <div class="bg-red-600 text-white text-center py-8 px-6">
         <div class="container mx-auto max-w-6xl">
             <h1 class="text-3xl md:text-4xl font-bold mb-4">관리 페이지</h1>
             <p class="text-red-100">JSON 스키마가 유효하지 않은 가사 데이터 관리</p>
@@ -26,6 +27,9 @@
                 <button onclick="reloadCache()" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
                     <i class="fas fa-redo-alt"></i> 데이터 새로고침
                 </button>
+                <a href="/admin/users" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
+                    <i class="fas fa-users"></i> 유저 관리
+                </a>
                 <% if (invalidSongs && invalidSongs.length > 0) { %>
                     <button onclick="retranslateAll()" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out inline-flex items-center justify-center gap-2">
                         <i class="fas fa-sync-alt"></i> 부분 재번역 (<%= invalidSongs.length %>개)
@@ -33,7 +37,7 @@
                 <% } %>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="py-8 px-6">
         <div class="container mx-auto max-w-6xl">

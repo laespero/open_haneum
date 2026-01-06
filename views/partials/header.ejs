@@ -1,0 +1,154 @@
+<header id="main-header" class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full top-0 z-50 transition-all duration-300">
+    <div class="container mx-auto max-w-7xl px-4 py-2.5 md:py-3.5">
+        <div class="flex items-center justify-between gap-4 md:gap-8">
+            <!-- Left: Logo -->
+            <div class="flex-shrink-0">
+                <a href="/" class="text-2xl md:text-2xl font-black text-blue-600 tracking-tighter hover:text-blue-700 transition-colors flex items-center gap-2">
+                    <span class="bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-lg shadow-sm">H</span>
+                    <span class="hidden sm:inline">Haneum</span>
+                </a>
+            </div>
+
+            <!-- Center: Search Bar (Desktop) -->
+            <div class="hidden md:flex flex-grow justify-center max-w-2xl">
+                <div class="w-full relative group">
+                    <form action="/songs" method="get">
+                        <input type="search" name="q" value="<%= locals.searchQuery || '' %>" placeholder="어떤 노래의 가사를 분석해볼까요?" 
+                               class="w-full pl-12 pr-4 py-2.5 bg-gray-100 border border-gray-100 rounded-2xl focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all text-sm font-medium">
+                        <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-blue-600 transition-colors">
+                            <i class="fas fa-search text-base"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right: Actions -->
+            <div class="flex items-center gap-2 md:gap-4">
+                <% if (locals.currentUser) { %>
+                    <!-- User Menu -->
+                    <div class="relative group">
+                        <!-- Desktop User Menu Button -->
+                        <button class="hidden md:flex items-center gap-3 pl-1.5 pr-4 py-1.5 bg-gray-50 border border-gray-100 rounded-full hover:bg-gray-100 hover:border-gray-200 transition-all focus:outline-none">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-sm">
+                                <i class="fas fa-user text-xs"></i>
+                            </div>
+                            <span class="text-sm font-bold text-gray-700"><%= locals.currentUser.username %></span>
+                            <i class="fas fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform"></i>
+                        </button>
+
+                        <!-- Mobile User Menu Button -->
+                        <button class="md:hidden w-10 h-10 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center border border-blue-100 active:scale-95 transition-transform">
+                            <i class="fas fa-user text-sm"></i>
+                        </button>
+                        
+                        <!-- Dropdown Menu -->
+                        <div class="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60] origin-top-right transform scale-95 group-hover:scale-100">
+                            <div class="px-4 py-3 mb-2 border-b border-gray-50">
+                                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-0.5">현재 계정</p>
+                                <p class="text-sm font-bold text-gray-900 truncate"><%= locals.currentUser.username %></p>
+                            </div>
+                            <a href="/me" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                                <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-500 flex items-center justify-center">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <span class="font-medium">내 학습 현황</span>
+                            </a>
+                            <a href="/me/history" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                                <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-500 flex items-center justify-center">
+                                    <i class="fas fa-history"></i>
+                                </div>
+                                <span class="font-medium">학습 기록</span>
+                            </a>
+                            <a href="/playlists" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                                <div class="w-8 h-8 rounded-lg bg-purple-50 text-purple-500 flex items-center justify-center">
+                                    <i class="fas fa-list-ul"></i>
+                                </div>
+                                <span class="font-medium">플레이리스트</span>
+                            </a>
+                            <a href="/me/likes" class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                                <div class="w-8 h-8 rounded-lg bg-pink-50 text-pink-500 flex items-center justify-center">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <span class="font-medium">좋아요한 곡</span>
+                            </a>
+                            <div class="my-2 border-t border-gray-50"></div>
+                            <form action="/logout" method="post">
+                                <button type="submit" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-red-500 hover:bg-red-50 transition-colors text-left">
+                                    <div class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                    <span class="font-medium">로그아웃</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                <% } else { %>
+                    <a href="/login" class="px-6 py-2.5 text-sm font-bold bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
+                        로그인
+                    </a>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- Mobile Search Bar (Only visible on mobile) -->
+        <div class="mt-3 md:hidden">
+            <div class="relative group">
+                <form action="/songs" method="get">
+                    <input type="search" name="q" value="<%= locals.searchQuery || '' %>" placeholder="노래 제목 또는 아티스트..." 
+                           class="w-full pl-11 pr-4 py-2.5 bg-gray-100 border border-gray-100 rounded-xl focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all text-sm">
+                    <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                        <i class="fas fa-search text-sm"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Spacer to prevent content from going under the fixed header -->
+<div id="header-spacer"></div>
+
+<%- include('modal') %>
+
+<script>
+    (function() {
+        const header = document.getElementById('main-header');
+        const spacer = document.getElementById('header-spacer');
+        let lastScrollTop = 0;
+        const scrollThreshold = 15;
+
+        function adjustSpacer() {
+            if (header && spacer) {
+                spacer.style.height = header.offsetHeight + 'px';
+            }
+        }
+
+        function handleScroll() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop < 0) scrollTop = 0;
+
+            if (Math.abs(lastScrollTop - scrollTop) <= scrollThreshold) return;
+
+            if (scrollTop > lastScrollTop && scrollTop > header.offsetHeight) {
+                header.classList.add('-translate-y-full', 'shadow-none');
+            } else {
+                header.classList.remove('-translate-y-full', 'shadow-none');
+            }
+            lastScrollTop = scrollTop;
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('resize', adjustSpacer);
+        
+        // Ensure spacer is correct on load
+        if (document.readyState === 'complete') {
+            adjustSpacer();
+        } else {
+            window.addEventListener('load', adjustSpacer);
+        }
+
+        // Watch for dynamic height changes (e.g. mobile search appearing)
+        const observer = new MutationObserver(adjustSpacer);
+        observer.observe(header, { attributes: true, childList: true, subtree: true });
+    })();
+</script>

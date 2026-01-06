@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= playlist.name %> - 플레이리스트</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+</head>
+<body class="bg-[#f8f9fa] text-gray-900 min-h-screen">
+    <%- include('partials/header') %>
+
+    <main class="container mx-auto max-w-5xl px-4 py-8 md:py-12">
+        <!-- Playlist Header -->
+        <div class="mb-12">
+            <nav class="flex items-center gap-2 text-sm text-gray-500 mb-6">
+                <a href="/" class="hover:text-blue-600 transition-colors">홈</a>
+                <i class="fas fa-chevron-right text-[10px]"></i>
+                <a href="/playlists" class="hover:text-blue-600 transition-colors">플레이리스트</a>
+                <i class="fas fa-chevron-right text-[10px]"></i>
+                <span class="text-gray-900 font-medium">플레이리스트 상세</span>
+            </nav>
+
+            <div class="bg-white rounded-[2rem] p-6 md:p-10 shadow-sm border border-gray-100 relative overflow-hidden group">
+                <!-- Background Decoration -->
+                <div class="absolute -top-12 -right-12 w-64 h-64 bg-blue-50/50 rounded-full blur-3xl group-hover:bg-blue-100/50 transition-colors duration-500"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+                    <div class="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-[1.5rem] flex items-center justify-center text-3xl shadow-xl shadow-blue-200">
+                        <i class="fas fa-list-ul"></i>
+                    </div>
+                    
+                    <div class="flex-grow">
+                        <div class="flex flex-wrap items-center gap-3 mb-2">
+                            <% if (playlist.is_public) { %>
+                                <span class="px-2.5 py-0.5 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-widest rounded-full border border-green-100">Public</span>
+                            <% } else { %>
+                                <span class="px-2.5 py-0.5 bg-gray-50 text-gray-500 text-[10px] font-bold uppercase tracking-widest rounded-full border border-gray-100">Private</span>
+                            <% } %>
+                            <span class="text-[10px] font-bold text-gray-400 flex items-center gap-1.5 uppercase tracking-widest">
+                                <i class="far fa-clock"></i>
+                                <%= new Date(playlist.created_at).toLocaleString('ko-KR', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }) %> 생성
+                            </span>
+                        </div>
+                        <h1 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight mb-2"><%= playlist.name %></h1>
+                        <p class="text-gray-500 text-base font-medium leading-relaxed max-w-2xl"><%= playlist.description || '이 플레이리스트에 대한 특별한 설명이 없습니다.' %></p>
+                    </div>
+
+                    <% if (isOwner) { %>
+                        <div class="flex gap-2">
+                            <button onclick="toggleEditModal()" class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all shadow-sm">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button onclick="deletePlaylist()" class="w-11 h-11 rounded-xl bg-red-50 text-red-500 flex items-center justify-center hover:bg-red-500 hover:text-white transition-all shadow-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+
+        <!-- Songs Section -->
+        <section class="space-y-6">
+            <div class="flex items-center justify-between px-4">
+                <h2 class="text-xl font-bold flex items-center gap-3 text-gray-900">
+                    수록된 곡들
+                    <span class="text-blue-600 bg-blue-50 px-3 py-1 rounded-full text-xs font-black"><%= songs.length %></span>
+                </h2>
+            </div>
+
+            <% if (songs.length === 0) { %>
+                <div class="bg-white rounded-[2rem] p-16 text-center border-2 border-dashed border-gray-100">
+                    <div class="w-16 h-16 bg-gray-50 text-gray-300 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <p class="text-gray-500 font-medium">아직 추가된 곡이 없습니다.</p>
+                </div>
+            <% } else { %>
+                <div id="song-list" class="grid grid-cols-1 gap-4">
+                    <% songs.forEach((item, index) => { %>
+                        <div class="group bg-white rounded-[1.5rem] shadow-sm hover:shadow-xl hover:shadow-blue-500/5 border border-gray-100 transition-all duration-300 transform hover:-translate-y-0.5 overflow-hidden" 
+                             data-name="<%= item.song.name %>">
+                            <div class="p-4 md:p-5 flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                                <!-- Number & Drag Handle -->
+                                <div class="flex-shrink-0 flex items-center gap-3">
+                                    <% if (isOwner) { %>
+                                        <div class="drag-handle cursor-grab active:cursor-grabbing p-2 text-gray-300 hover:text-blue-400 transition-colors">
+                                            <i class="fas fa-grip-vertical"></i>
+                                        </div>
+                                    <% } %>
+                                    <div class="w-10 h-10 bg-gray-50 text-gray-400 group-hover:bg-blue-50 group-hover:text-blue-600 rounded-xl flex items-center justify-center font-black text-sm transition-colors">
+                                        <span class="song-index"><%= index + 1 %></span>
+                                    </div>
+                                </div>
+
+                                <!-- Song Info -->
+                                <div class="flex-grow min-w-0 text-center md:text-left">
+                                    <a href="/songs/<%= item.song.name %>" class="block group/song">
+                                        <div class="space-y-0.5 mb-0.5">
+                                            <p class="text-xs text-blue-600 font-bold">
+                                                <%= item.song.kor_name || item.song.ori_name || '제목 정보 없음' %>
+                                            </p>
+                                        </div>
+
+                                        <div class="flex items-start justify-between mb-1.5">
+                                            <div class="flex-1">
+                                                <h3 class="font-black text-lg text-gray-800 group-hover/song:text-blue-600 transition-colors line-clamp-1 leading-tight">
+                                                    <%= item.song.ori_name || item.song.name %>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                                    <div class="flex flex-col md:flex-row md:items-center gap-3 mt-1.5">
+                                        <!-- Artist -->
+                                        <div class="flex items-center justify-center md:justify-start space-x-2">
+                                            <div class="w-5 h-5 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center shadow-sm">
+                                                <i class="fas fa-music text-white text-[8px]"></i>
+                                            </div>
+                                            <% 
+                                            let sArtistName = '아티스트 정보 없음';
+                                            let sArtistQuery = '';
+                                            if (item.song.artist) {
+                                                if (typeof item.song.artist === 'object') {
+                                                    sArtistName = item.song.artist.kor_name || item.song.artist.eng_name || item.song.artist.ori_name || '아티스트 정보 없음';
+                                                    sArtistQuery = item.song.artist.ori_name || item.song.artist.kor_name;
+                                                } else {
+                                                    sArtistName = item.song.artist;
+                                                    sArtistQuery = item.song.artist;
+                                                }
+                                            }
+                                            %>
+                                            <a href="/songs?q=<%= encodeURIComponent(sArtistQuery) %>" class="text-xs font-bold text-gray-500 hover:text-blue-600 transition-colors cursor-pointer">
+                                                <%= sArtistName %>
+                                            </a>
+                                        </div>
+
+                                        <!-- Date -->
+                                        <div class="flex items-center justify-center md:justify-start space-x-1.5 text-[9px] font-black text-gray-400 uppercase tracking-widest">
+                                            <i class="fas fa-clock"></i>
+                                            <span>
+                                                <%= new Date(item.added_at).toLocaleString('ko-KR', { month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' }) %> 추가됨
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Actions -->
+                                <div class="flex items-center gap-2">
+                                    <a href="/view/<%= item.song.name %>" class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all shadow-sm group/btn">
+                                        <i class="fas fa-play text-sm group-hover/btn:scale-110 transition-transform"></i>
+                                    </a>
+                                    <% if (isOwner) { %>
+                                        <button onclick="removeSong('<%= item.song.name %>')" class="w-11 h-11 rounded-xl bg-gray-50 text-gray-400 flex items-center justify-center hover:bg-red-50 hover:text-red-500 transition-all">
+                                            <i class="fas fa-times text-sm"></i>
+                                        </button>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            <% } %>
+        </section>
+    </main>
+
+    <% if (isOwner) { %>
+    <!-- Edit Playlist Modal -->
+    <div id="editModal" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity" onclick="toggleEditModal()"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md p-4">
+            <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center justify-between mb-8">
+                        <h2 class="text-2xl font-black text-gray-900">정보 수정</h2>
+                        <button onclick="toggleEditModal()" class="w-8 h-8 rounded-full bg-gray-50 text-gray-400 hover:text-gray-600 flex items-center justify-center">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <form id="editForm" onsubmit="updatePlaylist(event)" class="space-y-6">
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-gray-700 ml-1">이름</label>
+                            <input type="text" id="editName" name="name" value="<%= playlist.name %>" required 
+                                   class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-bold text-gray-700 ml-1">설명</label>
+                            <textarea id="editDescription" name="description" rows="3"
+                                      class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium resize-none"><%= playlist.description %></textarea>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <label class="relative inline-flex items-center cursor-pointer group">
+                                <input type="checkbox" id="editPublic" name="is_public" class="sr-only peer" <%= playlist.is_public ? 'checked' : '' %>>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                                <span class="ml-3 text-sm font-bold text-gray-600 group-hover:text-gray-900 transition-colors">공개로 설정</span>
+                            </label>
+                        </div>
+
+                        <div class="flex gap-3 pt-4">
+                            <button type="button" onclick="toggleEditModal()"
+                                    class="flex-1 py-4 bg-gray-100 text-gray-600 rounded-2xl font-bold hover:bg-gray-200 transition-all">
+                                취소
+                            </button>
+                            <button type="submit"
+                                    class="flex-1 py-4 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
+                                저장하기
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const songList = document.getElementById('song-list');
+            if (songList) {
+                new Sortable(songList, {
+                    handle: '.drag-handle',
+                    animation: 150,
+                    ghostClass: 'bg-blue-50',
+                    onEnd: async function() {
+                        const items = songList.querySelectorAll('[data-name]');
+                        const songNames = [];
+                        items.forEach((item, idx) => {
+                            const indexSpan = item.querySelector('.song-index');
+                            if (indexSpan) indexSpan.textContent = idx + 1;
+                            songNames.push(item.getAttribute('data-name'));
+                        });
+
+                        try {
+                            const res = await fetch(`/api/playlists/<%= playlist.id %>/reorder`, {
+                                method: 'PUT',
+                                headers: { 'Content-Type': 'application/json' },
+                                body: JSON.stringify({ songNames })
+                            });
+                            if (!res.ok) {
+                                haneumAlert('순서 저장에 실패했습니다.', { type: 'danger', onConfirm: () => window.location.reload() });
+                            }
+                        } catch (err) {
+                            console.error(err);
+                            haneumAlert('오류가 발생했습니다.', { type: 'danger', onConfirm: () => window.location.reload() });
+                        }
+                    }
+                });
+            }
+        });
+
+        function toggleEditModal() {
+            const modal = document.getElementById('editModal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        async function updatePlaylist(e) {
+            e.preventDefault();
+            const name = document.getElementById('editName').value.trim();
+            const description = document.getElementById('editDescription').value.trim();
+            const is_public = document.getElementById('editPublic').checked;
+
+            if (!name) {
+                haneumAlert('이름을 입력해주세요.', { type: 'info' });
+                return;
+            }
+
+            try {
+                const res = await fetch(`/api/playlists/<%= playlist.id %>`, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, description, is_public })
+                });
+
+                if (res.ok) {
+                    window.location.reload();
+                } else {
+                    const data = await res.json();
+                    haneumAlert(data.error || '수정에 실패했습니다.', { type: 'danger' });
+                }
+            } catch (err) {
+                console.error(err);
+                haneumAlert('오류가 발생했습니다.', { type: 'danger' });
+            }
+        }
+        async function removeSong(songName) {
+            haneumConfirm(`'${songName}' 곡을 플레이리스트에서 삭제할까요?`, async () => {
+                try {
+                    const res = await fetch(`/api/playlists/<%= playlist.id %>/songs`, {
+                        method: 'DELETE',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ songName })
+                    });
+                    if (res.ok) {
+                        window.location.reload();
+                    } else {
+                        haneumAlert('삭제에 실패했습니다.', { type: 'danger', icon: 'fa-times-circle' });
+                    }
+                } catch (err) {
+                    console.error(err);
+                    haneumAlert('오류가 발생했습니다.', { type: 'danger', icon: 'fa-exclamation-circle' });
+                }
+            });
+        }
+
+        async function deletePlaylist() {
+            haneumConfirm('이 플레이리스트를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.', async () => {
+                try {
+                    const res = await fetch(`/api/playlists/<%= playlist.id %>`, {
+                        method: 'DELETE'
+                    });
+                    if (res.ok) {
+                        window.location.href = '/playlists';
+                    } else {
+                        haneumAlert('삭제에 실패했습니다.', { type: 'danger', icon: 'fa-times-circle' });
+                    }
+                } catch (err) {
+                    console.error(err);
+                    haneumAlert('오류가 발생했습니다.', { type: 'danger', icon: 'fa-exclamation-circle' });
+                }
+            }, {
+                confirmText: '삭제하기',
+                type: 'danger'
+            });
+        }
+    </script>
+    <% } %>
+</body>
+</html>

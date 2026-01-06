@@ -37,8 +37,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
-    <!-- 헤더 -->
-    <header id="hero" class="text-white text-center py-24 md:py-32 px-6 bg-gradient-to-r from-blue-600 to-indigo-600">
+    <%- include('partials/header') %>
+    <!-- 히어로 섹션 -->
+    <section id="hero" class="text-white text-center py-20 md:py-24 px-6 bg-gradient-to-r from-blue-600 to-indigo-600">
         <div class="container mx-auto max-w-4xl">
             <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Haneum과 함께 어떤 외국어든 노래로 즐겁게 공부하세요.</h1>
             <form action="/songs" method="get" class="flex flex-col sm:flex-row justify-center max-w-xl mx-auto">
@@ -58,7 +59,7 @@
                 </a>
             </div>
         </div>
-    </header>
+    </section>
 
     <main>
         <!-- 주요 특징 섹션 -->

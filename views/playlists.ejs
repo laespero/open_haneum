@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플레이리스트 - Haneum</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-[#f8f9fa] text-gray-900 min-h-screen">
+    <%- include('partials/header') %>
+
+    <main class="container mx-auto max-w-6xl px-4 py-8 md:py-12">
+        <!-- Header Section -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div>
+                <nav class="flex items-center gap-2 text-sm text-gray-500 mb-3">
+                    <a href="/" class="hover:text-blue-600 transition-colors">홈</a>
+                    <i class="fas fa-chevron-right text-[10px]"></i>
+                    <span class="text-gray-900 font-medium">플레이리스트</span>
+                </nav>
+                <h1 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">
+                    내 플레이리스트 <span class="text-blue-600 ml-1"><%= playlists.length %></span>
+                </h1>
+                <p class="text-gray-500 mt-2 font-medium">좋아하는 곡들을 모아 나만의 학습 목록을 만들어보세요.</p>
+            </div>
+            
+            <div class="flex gap-2">
+                <a href="/songs?type=playlists" 
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-700 border border-gray-200 rounded-2xl font-bold hover:bg-gray-50 transition-all shadow-sm active:scale-95 group">
+                    <i class="fas fa-search group-hover:scale-110 transition-transform"></i>
+                    전체 플레이리스트
+                </a>
+                <% if (playlists.length < 100) { %>
+                    <button onclick="toggleNewPlaylistForm()" id="newPlaylistBtn"
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95 group">
+                        <i class="fas fa-plus group-hover:rotate-90 transition-transform"></i>
+                        새 플레이리스트
+                    </button>
+                <% } else { %>
+                    <button disabled
+                            class="inline-flex items-center gap-2 px-6 py-3 bg-gray-100 text-gray-400 border border-gray-200 rounded-2xl font-bold cursor-not-allowed shadow-sm">
+                        <i class="fas fa-exclamation-circle"></i>
+                        생성 한도 초과 (최대 100개)
+                    </button>
+                <% } %>
+            </div>
+        </div>
+
+        <!-- New Playlist Form (Hidden by default) -->
+        <section id="newPlaylistSection" class="hidden mb-12">
+            <div class="bg-white rounded-3xl shadow-xl shadow-gray-200/50 border border-gray-100 overflow-hidden">
+                <div class="p-6 md:p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-xl font-bold flex items-center gap-2">
+                            <i class="fas fa-magic text-blue-500"></i>
+                            새로운 영감의 시작
+                        </h2>
+                        <button onclick="toggleNewPlaylistForm()" class="text-gray-400 hover:text-gray-600">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+
+                    <% if (locals.error) { %>
+                        <div class="mb-6 bg-red-50 border border-red-100 text-red-600 px-4 py-3 rounded-xl text-sm flex items-center gap-2">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <%= error %>
+                        </div>
+                    <% } %>
+
+                    <form action="/playlists" method="post" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="block text-sm font-bold text-gray-700 ml-1">이름</label>
+                                <input type="text" name="name" required placeholder="예: JLPT N1 필수 곡 모음"
+                                       class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="block text-sm font-bold text-gray-700 ml-1">설명 (선택사항)</label>
+                                <input type="text" name="description" placeholder="이 플레이리스트에 대해 알려주세요."
+                                       class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-2">
+                            <label class="relative inline-flex items-center cursor-pointer group">
+                                <input type="checkbox" name="is_public" class="sr-only peer" checked>
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                                <span class="ml-3 text-sm font-bold text-gray-600 group-hover:text-gray-900 transition-colors">다른 사람들에게 공개</span>
+                            </label>
+
+                            <div class="flex gap-3">
+                                <button type="button" onclick="toggleNewPlaylistForm()"
+                                        class="px-6 py-3 bg-gray-100 text-gray-600 rounded-xl font-bold hover:bg-gray-200 transition-all">
+                                    취소
+                                </button>
+                                <button type="submit"
+                                        class="px-8 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                                    플레이리스트 생성
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Playlists Grid -->
+        <% if (playlists.length === 0) { %>
+            <div class="bg-white rounded-[2rem] border-2 border-dashed border-gray-200 p-12 md:p-20 text-center">
+                <div class="w-20 h-20 bg-blue-50 text-blue-500 rounded-3xl flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">아직 플레이리스트가 없어요</h3>
+                <p class="text-gray-500 mb-8 max-w-sm mx-auto font-medium">
+                    새로운 플레이리스트를 만들어 나만의 노래 컬렉션을 시작해보세요!
+                </p>
+                <button onclick="toggleNewPlaylistForm()"
+                        class="px-8 py-3 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                    첫 플레이리스트 만들기
+                </button>
+            </div>
+        <% } else { %>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <% playlists.forEach(pl => { %>
+                    <a href="/playlists/<%= pl.id %>" class="group block">
+                        <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl hover:shadow-blue-500/5 border border-gray-100 p-5 md:p-6 transition-all duration-300 transform hover:-translate-y-0.5 h-full flex flex-col">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600 rounded-xl flex items-center justify-center text-lg group-hover:scale-110 transition-transform duration-500">
+                                    <i class="fas fa-list-ul"></i>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <% if (pl.is_public) { %>
+                                        <span class="px-2 py-0.5 bg-green-50 text-green-600 text-[10px] font-bold uppercase tracking-wider rounded-md border border-green-100">공개</span>
+                                    <% } else { %>
+                                        <span class="px-2 py-0.5 bg-gray-50 text-gray-500 text-[10px] font-bold uppercase tracking-wider rounded-md border border-gray-100">비공개</span>
+                                    <% } %>
+                                </div>
+                            </div>
+                            
+                            <h3 class="text-lg font-black text-gray-900 mb-1.5 group-hover:text-blue-600 transition-colors line-clamp-1"><%= pl.name %></h3>
+                            <p class="text-gray-500 text-[13px] font-medium line-clamp-2 mb-4 flex-grow">
+                                <%= pl.description || '특별한 설명이 없는 비밀스러운 리스트입니다.' %>
+                            </p>
+                            
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-50 mt-auto">
+                                <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="far fa-calendar-alt"></i>
+                                        <%= new Date(pl.created_at).toLocaleString('ko-KR', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }) %>
+                                    </span>
+                                </div>
+                                <div class="w-7 h-7 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-2 group-hover:translate-x-0">
+                                    <i class="fas fa-arrow-right text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                <% }) %>
+            </div>
+        <% } %>
+    </main>
+
+    <script>
+        function toggleNewPlaylistForm() {
+            const section = document.getElementById('newPlaylistSection');
+            const btn = document.getElementById('newPlaylistBtn');
+            const isHidden = section.classList.contains('hidden');
+            
+            if (isHidden) {
+                section.classList.remove('hidden');
+                section.classList.add('animate-in', 'fade-in', 'slide-in-from-top-4', 'duration-300');
+                btn.classList.add('opacity-0', 'pointer-events-none');
+                window.scrollTo({
+                    top: section.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            } else {
+                section.classList.add('hidden');
+                btn.classList.remove('opacity-0', 'pointer-events-none');
+            }
+        }
+    </script>
+    
+    <style>
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slide-in-from-top-4 { from { transform: translateY(-1rem); } to { transform: translateY(0); } }
+        .animate-in { animation-duration: 300ms; animation-fill-mode: both; }
+        .fade-in { animation-name: fade-in; }
+        .slide-in-from-top-4 { animation-name: slide-in-from-top-4; }
+    </style>
+</body>
+</html>

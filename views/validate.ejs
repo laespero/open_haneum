@@ -30,18 +30,7 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
-    <header class="bg-indigo-600 text-white shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <a href="/admin" class="text-2xl font-bold hover:text-indigo-100 transition">Haneum Admin</a>
-                <span class="bg-indigo-700 text-indigo-100 text-xs px-2 py-1 rounded">Quality Check</span>
-            </div>
-            <nav class="flex gap-4">
-                <a href="/admin" class="hover:text-indigo-200 transition">대시보드</a>
-                <a href="/" class="hover:text-indigo-200 transition">메인으로</a>
-            </nav>
-        </div>
-    </header>
+    <%- include('partials/header') %>
 
     <main class="container mx-auto px-4 py-8 max-w-6xl">
         <!-- 컨트롤 패널 -->

@@ -1,0 +1,145 @@
+<!-- Global Modal Component -->
+<div id="global-modal" class="fixed inset-0 z-[1000] hidden">
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm transition-opacity" onclick="closeModal()"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-sm p-4">
+        <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-gray-100 transform transition-all scale-95 opacity-0 duration-200" id="modal-content">
+            <div class="p-8">
+                <!-- Icon Area -->
+                <div id="modal-icon-container" class="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6">
+                    <i id="modal-icon" class="fas fa-info-circle"></i>
+                </div>
+
+                <!-- Text Area -->
+                <div class="text-center mb-8">
+                    <h2 id="modal-title" class="text-xl font-black text-gray-900 mb-2">알림</h2>
+                    <p id="modal-message" class="text-gray-500 font-medium leading-relaxed mb-4"></p>
+                    <div id="modal-input-container" class="hidden">
+                        <input type="text" id="modal-input" class="w-full bg-gray-50 border border-gray-100 rounded-2xl px-5 py-3.5 focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all font-medium" placeholder="입력해주세요...">
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex gap-3">
+                    <button id="modal-cancel-btn" onclick="closeModal()" class="flex-1 py-4 bg-gray-100 text-gray-600 rounded-2xl font-bold hover:bg-gray-200 transition-all">
+                        취소
+                    </button>
+                    <button id="modal-confirm-btn" class="flex-1 py-4 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95">
+                        확인
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let modalCallback = null;
+
+    function showModal({ title = '알림', message = '', icon = 'fa-info-circle', type = 'info', confirmText = '확인', cancelText = '취소', showCancel = true, onConfirm = null, showInput = false, inputPlaceholder = '입력해주세요...', inputValue = '' }) {
+        const modal = document.getElementById('global-modal');
+        const content = document.getElementById('modal-content');
+        const titleEl = document.getElementById('modal-title');
+        const messageEl = document.getElementById('modal-message');
+        const iconEl = document.getElementById('modal-icon');
+        const iconContainer = document.getElementById('modal-icon-container');
+        const confirmBtn = document.getElementById('modal-confirm-btn');
+        const cancelBtn = document.getElementById('modal-cancel-btn');
+        const inputContainer = document.getElementById('modal-input-container');
+        const input = document.getElementById('modal-input');
+
+        titleEl.textContent = title;
+        messageEl.textContent = message;
+        confirmBtn.textContent = confirmText;
+        cancelBtn.textContent = cancelText;
+        
+        // Input handling
+        if (showInput) {
+            inputContainer.classList.remove('hidden');
+            input.placeholder = inputPlaceholder;
+            input.value = inputValue;
+            setTimeout(() => input.focus(), 100);
+        } else {
+            inputContainer.classList.add('hidden');
+        }
+
+        // Reset and set icon/colors
+        iconEl.className = `fas ${icon}`;
+        iconContainer.className = 'w-16 h-16 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-6 ';
+        confirmBtn.className = 'flex-1 py-4 rounded-2xl font-bold transition-all shadow-lg active:scale-95 ';
+
+        if (type === 'danger') {
+            iconContainer.classList.add('bg-red-50', 'text-red-500');
+            confirmBtn.classList.add('bg-red-500', 'text-white', 'hover:bg-red-600', 'shadow-red-200');
+        } else if (type === 'success') {
+            iconContainer.classList.add('bg-green-50', 'text-green-500');
+            confirmBtn.classList.add('bg-green-600', 'text-white', 'hover:bg-green-700', 'shadow-green-200');
+        } else {
+            iconContainer.classList.add('bg-blue-50', 'text-blue-500');
+            confirmBtn.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700', 'shadow-blue-200');
+        }
+
+        cancelBtn.style.display = showCancel ? 'block' : 'none';
+        
+        modalCallback = onConfirm;
+        confirmBtn.onclick = () => {
+            const val = showInput ? input.value : null;
+            if (modalCallback) modalCallback(val);
+            closeModal();
+        };
+
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+            content.classList.remove('scale-95', 'opacity-0');
+            content.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('global-modal');
+        const content = document.getElementById('modal-content');
+        
+        content.classList.remove('scale-100', 'opacity-100');
+        content.classList.add('scale-95', 'opacity-0');
+        
+        setTimeout(() => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }, 200);
+    }
+
+    // Helper for confirm
+    window.haneumConfirm = (message, onConfirm, options = {}) => {
+        showModal({
+            message,
+            onConfirm,
+            type: options.type || 'danger',
+            icon: options.icon || 'fa-exclamation-triangle',
+            confirmText: options.confirmText || '확인',
+            ...options
+        });
+    };
+
+    // Helper for alert
+    window.haneumAlert = (message, options = {}) => {
+        showModal({
+            message,
+            showCancel: false,
+            ...options
+        });
+    };
+
+    // Helper for prompt
+    window.haneumPrompt = (message, onConfirm, options = {}) => {
+        showModal({
+            title: options.title || '입력',
+            message,
+            onConfirm,
+            showInput: true,
+            icon: options.icon || 'fa-edit',
+            confirmText: options.confirmText || '완료',
+            ...options
+        });
+    };
+</script>
+

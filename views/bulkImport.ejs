@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed">
-    <!-- 헤더 -->
-    <header class="text-white text-center py-12 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg">
+    <%- include('partials/header') %>
+    <!-- 페이지 타이틀 -->
+    <div class="text-white text-center py-12 px-6 bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg">
         <div class="container mx-auto max-w-4xl">
             <h1 class="text-3xl md:text-4xl font-bold mb-4">Utaten JSON 대량 임포트 & 분석</h1>
             <p class="text-blue-100">Utaten JSON 파일을 드래그하여 노래를 추가하고 자동으로 분석을 시작합니다.</p>
@@ -19,7 +20,7 @@
                 </a>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="container mx-auto max-w-4xl px-6 py-12">
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8">

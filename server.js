@@ -3,6 +3,10 @@ import fs from 'fs';
 import OpenAI from 'openai'; 
 import cors from 'cors';
 import path from "path";
+import mysql from 'mysql2/promise';
+import session from 'express-session';
+import MySQLStore from 'express-mysql-session';
+import bcrypt from 'bcryptjs';
 import { KR_MSG } from './messages.js';  // MSG import 추가
 import { JP_MSG } from './jp_messages.js';
 import 'dotenv/config';
@@ -28,11 +32,19 @@ process.on('uncaughtException', (err) => {
 
 // 사용자가 API 제공자를 선택할 수 있는 변수
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
-const API_PROVIDER_CHOICE = 'deepseek'; 
+const API_PROVIDER_CHOICE = process.env.API_PROVIDER_CHOICE || 'auto'; 
 
 if (!process.env.OPENROUTER_API_KEY && !process.env.DEEPSEEK_API_KEY) {
     console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY가 설정되지 않았습니다.');
     console.warn('\x1b[33m%s\x1b[0m', '노래 추가 및 번역 기능을 사용하려면 .env 파일에 OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY를 설정해주세요.');
+}
+
+if (!process.env.DB_USER || !process.env.DB_PASSWORD || !process.env.DB_NAME) {
+    console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: 데이터베이스 설정(DB_USER, DB_PASSWORD, DB_NAME)이 .env 파일에 누락되었습니다.');
+}
+
+if (!process.env.SESSION_SECRET) {
+    console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: SESSION_SECRET이 .env 파일에 설정되지 않았습니다. 보안을 위해 반드시 설정이 필요합니다.');
 }
 
 let MSG = KR_MSG;
@@ -52,7 +64,48 @@ else {
 }
 
 const app = express();
-app.use(cors())
+app.use(cors());
+
+const isProd = process.env.NODE_ENV === 'production';
+const DB_CONFIG = {
+    host: process.env.DB_HOST || '127.0.0.1',
+    port: Number(process.env.DB_PORT || 3306),
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    charset: 'utf8mb4'
+};
+const pool = mysql.createPool({
+    ...DB_CONFIG,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0
+});
+const MySQLSessionStore = MySQLStore(session);
+const sessionStore = new MySQLSessionStore({
+    ...DB_CONFIG,
+    clearExpired: true,
+    checkExpirationInterval: 1000 * 60 * 15,
+    expiration: 1000 * 60 * 60 * 24 * 7
+}, pool);
+
+app.use(session({
+    key: 'haneum.sid',
+    secret: process.env.SESSION_SECRET,
+    store: sessionStore,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        httpOnly: true,
+        sameSite: 'lax',
+        secure: isProd,
+        maxAge: 1000 * 60 * 60 * 24 * 7
+    }
+}));
+app.use((req, res, next) => {
+    res.locals.currentUser = req.session.user || null;
+    next();
+});
 
 let chatModel;
 //const chatModel = "deepseek/deepseek-chat-v3-0324";
@@ -169,10 +222,26 @@ function parseCookies(cookieHeader) {
     return cookies;
 }
 
+function requireAuth(req, res, next) {
+    if (req.session?.user) {
+        return next();
+    }
+    if (req.originalUrl.startsWith('/api/')) {
+        return res.status(401).json({ error: '로그인이 필요합니다.' });
+    }
+    const nextUrl = encodeURIComponent(req.originalUrl);
+    return res.redirect(`/login?next=${nextUrl}`);
+}
+
 // 캐시 준비 상태 확인 미들웨어
 app.use((req, res, next) => {
     if (isCacheReady) {
         return next(); // 캐시가 준비되었으면 다음 라우트로 진행
+    }
+
+    const bypassPaths = ['/login', '/signup', '/logout', '/me', '/playlists', '/api/study', '/api/likes', '/api/playlists'];
+    if (bypassPaths.some(prefix => req.originalUrl.startsWith(prefix))) {
+        return next();
     }
     
     // /api/로 시작하는 요청에는 JSON으로 응답
@@ -319,6 +388,188 @@ function incrementViewCount(songName) {
     saveViewCounts().catch(err => {
         console.error('조회수 저장 중 오류:', err);
     });
+}
+
+async function initDb() {
+    const conn = await pool.getConnection();
+    try {
+        await conn.query(`
+            CREATE TABLE IF NOT EXISTS users (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                username VARCHAR(50) NOT NULL UNIQUE,
+                password_hash VARCHAR(255) NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            CREATE TABLE IF NOT EXISTS study_daily (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                song_name VARCHAR(191) NOT NULL,
+                study_date DATE NOT NULL,
+                seconds INT NOT NULL DEFAULT 0,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                UNIQUE KEY uniq_user_song_date (user_id, song_name, study_date),
+                INDEX idx_user_date (user_id, study_date),
+                CONSTRAINT fk_study_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+            ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            CREATE TABLE IF NOT EXISTS song_likes (
+                user_id INT NOT NULL,
+                song_name VARCHAR(191) NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                PRIMARY KEY (user_id, song_name),
+                CONSTRAINT fk_likes_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+            ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            CREATE TABLE IF NOT EXISTS playlists (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                user_id INT NOT NULL,
+                name VARCHAR(100) NOT NULL,
+                description VARCHAR(500) DEFAULT '',
+                is_public TINYINT(1) NOT NULL DEFAULT 1,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at DATETIME DEFAULT NULL,
+                INDEX idx_user (user_id),
+                CONSTRAINT fk_playlists_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+            ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            CREATE TABLE IF NOT EXISTS playlist_songs (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                playlist_id INT NOT NULL,
+                song_name VARCHAR(191) NOT NULL,
+                position INT NOT NULL DEFAULT 0,
+                added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE KEY uniq_playlist_song (playlist_id, song_name),
+                INDEX idx_playlist (playlist_id),
+                CONSTRAINT fk_playlist_songs_playlist FOREIGN KEY (playlist_id) REFERENCES playlists(id) ON DELETE CASCADE
+            ) DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+        `);
+        
+        // position 컬럼이 없는 경우 추가
+        const [columns] = await conn.query('SHOW COLUMNS FROM playlist_songs LIKE "position"');
+        if (columns.length === 0) {
+            await conn.query('ALTER TABLE playlist_songs ADD COLUMN position INT NOT NULL DEFAULT 0');
+        }
+        await conn.query(`
+            ALTER TABLE users DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            ALTER TABLE playlists DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            ALTER TABLE playlist_songs DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            ALTER TABLE study_daily DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            ALTER TABLE song_likes DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+        `);
+        await conn.query(`
+            ALTER TABLE study_daily MODIFY song_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+        `);
+        await conn.query(`
+            ALTER TABLE song_likes MODIFY song_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+        `);
+        await conn.query(`
+            ALTER TABLE playlist_songs MODIFY song_name VARCHAR(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL
+        `);
+    } finally {
+        conn.release();
+    }
+}
+
+function getLocalDateString(date = new Date()) {
+    const formatter = new Intl.DateTimeFormat('sv-SE');
+    return formatter.format(date);
+}
+
+function computeStreaks(dateStrings) {
+    if (!dateStrings || dateStrings.length === 0) {
+        return { current: 0, longest: 0 };
+    }
+    const sorted = [...new Set(dateStrings)].sort((a, b) => b.localeCompare(a));
+    let currentFromLatest = 1;
+    for (let i = 1; i < sorted.length; i++) {
+        const prev = new Date(`${sorted[i - 1]}T00:00:00`);
+        const cur = new Date(`${sorted[i]}T00:00:00`);
+        const diffDays = Math.round((prev - cur) / (1000 * 60 * 60 * 24));
+        if (diffDays === 1) {
+            currentFromLatest += 1;
+        } else {
+            break;
+        }
+    }
+
+    let longest = 1;
+    let chain = 1;
+    for (let i = 1; i < sorted.length; i++) {
+        const prev = new Date(`${sorted[i - 1]}T00:00:00`);
+        const cur = new Date(`${sorted[i]}T00:00:00`);
+        const diffDays = Math.round((prev - cur) / (1000 * 60 * 60 * 24));
+        if (diffDays === 1) {
+            chain += 1;
+        } else {
+            longest = Math.max(longest, chain);
+            chain = 1;
+        }
+    }
+    longest = Math.max(longest, chain);
+
+    const today = getLocalDateString(new Date());
+    const yesterday = getLocalDateString(new Date(Date.now() - 24 * 60 * 60 * 1000));
+    const latest = sorted[0];
+    const isActive = latest === today || latest === yesterday;
+    const current = isActive ? currentFromLatest : 0;
+
+    return { current, longest };
+}
+
+async function getStudySummary(userId) {
+    const today = getLocalDateString(new Date());
+    const [[totalRow]] = await pool.query(
+        'SELECT COALESCE(SUM(seconds), 0) AS totalSeconds FROM study_daily WHERE user_id = ?',
+        [userId]
+    );
+    const [[todayRow]] = await pool.query(
+        'SELECT COALESCE(SUM(seconds), 0) AS todaySeconds FROM study_daily WHERE user_id = ? AND study_date = ?',
+        [userId, today]
+    );
+    const [dateRows] = await pool.query(
+        'SELECT DISTINCT study_date FROM study_daily WHERE user_id = ? ORDER BY study_date DESC',
+        [userId]
+    );
+    const streaks = computeStreaks(dateRows.map(row => {
+        if (row.study_date instanceof Date) {
+            return getLocalDateString(row.study_date);
+        }
+        return row.study_date;
+    }));
+
+    return {
+        todaySeconds: Number(todayRow.todaySeconds || 0),
+        totalSeconds: Number(totalRow.totalSeconds || 0),
+        streakCurrent: streaks.current,
+        streakLongest: streaks.longest
+    };
+}
+
+async function ensureDefaultPlaylist(userId, username) {
+    const defaultName = `${username}의 Playlist`;
+    const [rows] = await pool.query(
+        'SELECT id FROM playlists WHERE user_id = ? AND name = ? LIMIT 1',
+        [userId, defaultName]
+    );
+    if (rows.length === 0) {
+        await pool.query(
+            'INSERT INTO playlists (user_id, name, description, is_public) VALUES (?, ?, ?, ?)',
+            [userId, defaultName, '기본 플레이리스트', 1]
+        );
+    }
 }
 
 // 인기 노래 조회 함수
@@ -537,16 +788,17 @@ async function refreshSongCache() {
             const batch = files.slice(i, i + BATCH_SIZE);
             const songPromises = batch.map(async file => {
                 const filePath = `songs/${file}`;
+                const filename = path.parse(file).name; // 확장자 제외 파일명
                 try {
                     const data = await fs.promises.readFile(filePath, 'utf8');
                     const songData = JSON.parse(data);
                     
                     // 메모리 최적화: 전체 데이터 대신 메타데이터와 검증 결과만 저장
-                    // 중요: validateSongSchema 함수가 아래에 정의되어 있어야 함
                     const validation = validateSongSchema(songData);
                     
                     return {
-                        name: songData.name,
+                        name: filename, // 파일명을 고유 ID로 사용
+                        internalName: songData.name,
                         ori_name: songData.ori_name,
                         kor_name: songData.kor_name,
                         eng_name: songData.eng_name,
@@ -559,7 +811,7 @@ async function refreshSongCache() {
                     };
                 } catch (parseErr) {
                     console.error(`'${filePath}' 파일 처리 중 오류 발생:`, parseErr);
-                    return null; // 오류 발생 시 null 반환
+                    return null;
                 }
             });
             
@@ -1117,12 +1369,603 @@ app.post('/update-song-meta/:title', async (req, res) => {
     res.json({ success: true, message: '정보가 수정되었습니다.' });
 });
 
+app.get('/signup', (req, res) => {
+    if (req.session.user) {
+        return res.redirect('/me');
+    }
+    res.render('signup', { error: null, next: req.query.next || '' });
+});
+
+app.post('/signup', async (req, res) => {
+    const username = String(req.body.username || '').trim();
+    const password = String(req.body.password || '');
+    const nextUrl = req.body.next || '';
+
+    if (username.length < 4 || username.length > 20) {
+        return res.status(400).render('signup', { error: '아이디는 4~20자여야 합니다.', next: nextUrl });
+    }
+    if (password.length < 8) {
+        return res.status(400).render('signup', { error: '비밀번호는 8자 이상이어야 합니다.', next: nextUrl });
+    }
+
+    const [existing] = await pool.query('SELECT id FROM users WHERE username = ?', [username]);
+    if (existing.length > 0) {
+        return res.status(409).render('signup', { error: '이미 사용 중인 아이디입니다.', next: nextUrl });
+    }
+
+    const passwordHash = await bcrypt.hash(password, 10);
+    const [result] = await pool.query(
+        'INSERT INTO users (username, password_hash) VALUES (?, ?)',
+        [username, passwordHash]
+    );
+
+    req.session.user = { id: result.insertId, username };
+    await ensureDefaultPlaylist(result.insertId, username);
+    res.redirect(nextUrl || '/me');
+});
+
+app.get('/login', (req, res) => {
+    if (req.session.user) {
+        return res.redirect('/me');
+    }
+    res.render('login', { error: null, next: req.query.next || '' });
+});
+
+app.post('/login', async (req, res) => {
+    const username = String(req.body.username || '').trim();
+    const password = String(req.body.password || '');
+    const nextUrl = req.body.next || '';
+
+    if (!username || !password) {
+        return res.status(400).render('login', { error: '아이디와 비밀번호를 입력해주세요.', next: nextUrl });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT id, username, password_hash FROM users WHERE username = ?',
+        [username]
+    );
+    if (rows.length === 0) {
+        return res.status(401).render('login', { error: '아이디 또는 비밀번호가 올바르지 않습니다.', next: nextUrl });
+    }
+
+    const user = rows[0];
+    const matched = await bcrypt.compare(password, user.password_hash);
+    if (!matched) {
+        return res.status(401).render('login', { error: '아이디 또는 비밀번호가 올바르지 않습니다.', next: nextUrl });
+    }
+
+    req.session.user = { id: user.id, username: user.username };
+    await ensureDefaultPlaylist(user.id, user.username);
+    res.redirect(nextUrl || '/me');
+});
+
+app.post('/logout', (req, res) => {
+    req.session.destroy(() => {
+        res.clearCookie('haneum.sid');
+        res.redirect('/');
+    });
+});
+
+app.get('/me', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    await ensureDefaultPlaylist(userId, req.session.user.username);
+    const summary = await getStudySummary(userId);
+    const [playlists] = await pool.query(
+        'SELECT * FROM playlists WHERE user_id = ? ORDER BY created_at DESC',
+        [userId]
+    );
+    const [likes] = await pool.query(
+        'SELECT song_name, created_at FROM song_likes WHERE user_id = ? ORDER BY created_at DESC LIMIT 50',
+        [userId]
+    );
+    const [recentStudyRows] = await pool.query(
+        'SELECT song_name, study_date, seconds FROM study_daily WHERE user_id = ? ORDER BY updated_at DESC LIMIT 10',
+        [userId]
+    );
+
+    const recentStudy = recentStudyRows.map(row => {
+        const queryName = row.song_name.trim();
+        const actualName = songCacheKeyMap.get(queryName.toLowerCase()) || queryName;
+        let songData = songCacheMap.get(actualName);
+        
+        if (!songData) {
+            // 마지막 수단: 캐시를 순회하며 매칭 시도
+            songData = songCache.find(s => 
+                s.name.toLowerCase() === queryName.toLowerCase() || 
+                (s.internalName && s.internalName.toLowerCase() === queryName.toLowerCase())
+            );
+        }
+
+        return {
+            ...row,
+            song: songData || { name: queryName, kor_name: '', ori_name: queryName }
+        };
+    });
+
+    const enrichedLikes = likes.map(row => {
+        const queryName = row.song_name.trim();
+        const actualName = songCacheKeyMap.get(queryName.toLowerCase()) || queryName;
+        let songData = songCacheMap.get(actualName);
+
+        if (!songData) {
+            songData = songCache.find(s => 
+                s.name.toLowerCase() === queryName.toLowerCase() || 
+                (s.internalName && s.internalName.toLowerCase() === queryName.toLowerCase())
+            );
+        }
+
+        return {
+            ...row,
+            song: songData || { name: queryName, kor_name: '', ori_name: queryName }
+        };
+    });
+
+    res.render('me', {
+        summary,
+        playlists,
+        likes: enrichedLikes,
+        recentStudy
+    });
+});
+
+app.get('/me/likes', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const page = parseInt(req.query.page) || 1;
+    const limit = 20; // 페이지당 항목 수
+    const offset = (page - 1) * limit;
+
+    // 전체 개수 조회
+    const [countRows] = await pool.query(
+        'SELECT COUNT(*) as total FROM song_likes WHERE user_id = ?',
+        [userId]
+    );
+    const totalLikes = countRows[0].total;
+    const totalPages = Math.ceil(totalLikes / limit);
+
+    // 페이지별 데이터 조회
+    const [likes] = await pool.query(
+        'SELECT song_name, created_at FROM song_likes WHERE user_id = ? ORDER BY created_at DESC LIMIT ? OFFSET ?',
+        [userId, limit, offset]
+    );
+
+    const enrichedLikes = likes.map(row => {
+        const queryName = row.song_name.trim();
+        const actualName = songCacheKeyMap.get(queryName.toLowerCase()) || queryName;
+        let songData = songCacheMap.get(actualName);
+
+        if (!songData) {
+            songData = songCache.find(s => 
+                s.name.toLowerCase() === queryName.toLowerCase() || 
+                (s.internalName && s.internalName.toLowerCase() === queryName.toLowerCase())
+            );
+        }
+
+        return {
+            ...row,
+            song: songData || { name: queryName, kor_name: '', ori_name: queryName }
+        };
+    });
+
+    res.render('myLikes', {
+        likes: enrichedLikes,
+        currentPage: page,
+        totalPages: totalPages,
+        totalLikes: totalLikes
+    });
+});
+
+app.get('/me/history', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const page = parseInt(req.query.page) || 1;
+    const limit = 20; // 페이지당 항목 수
+    const offset = (page - 1) * limit;
+
+    // 전체 개수 조회
+    const [countRows] = await pool.query(
+        'SELECT COUNT(*) as total FROM study_daily WHERE user_id = ?',
+        [userId]
+    );
+    const totalHistory = countRows[0].total;
+    const totalPages = Math.ceil(totalHistory / limit);
+
+    // 페이지별 데이터 조회
+    const [historyRows] = await pool.query(
+        'SELECT song_name, study_date, seconds FROM study_daily WHERE user_id = ? ORDER BY updated_at DESC LIMIT ? OFFSET ?',
+        [userId, limit, offset]
+    );
+
+    const enrichedHistory = historyRows.map(row => {
+        const queryName = row.song_name.trim();
+        const actualName = songCacheKeyMap.get(queryName.toLowerCase()) || queryName;
+        let songData = songCacheMap.get(actualName);
+        
+        if (!songData) {
+            songData = songCache.find(s => 
+                s.name.toLowerCase() === queryName.toLowerCase() || 
+                (s.internalName && s.internalName.toLowerCase() === queryName.toLowerCase())
+            );
+        }
+
+        return {
+            ...row,
+            song: songData || { name: queryName, kor_name: '', ori_name: queryName }
+        };
+    });
+
+    res.render('myHistory', {
+        history: enrichedHistory,
+        currentPage: page,
+        totalPages: totalPages,
+        totalHistory: totalHistory
+    });
+});
+
+app.post('/me/withdraw', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    try {
+        await pool.query('DELETE FROM users WHERE id = ?', [userId]);
+        req.session.destroy(() => {
+            res.clearCookie('haneum.sid');
+            res.json({ success: true, message: '회원 탈퇴가 완료되었습니다. 그동안 이용해주셔서 감사합니다.' });
+        });
+    } catch (error) {
+        console.error('회원 탈퇴 중 오류:', error);
+        res.status(500).json({ success: false, message: '회원 탈퇴 처리 중 오류가 발생했습니다.' });
+    }
+});
+
+app.get('/playlists', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    await ensureDefaultPlaylist(userId, req.session.user.username);
+    const [playlists] = await pool.query(
+        'SELECT * FROM playlists WHERE user_id = ? ORDER BY created_at DESC',
+        [userId]
+    );
+    res.render('playlists', { playlists, error: null });
+});
+
+app.post('/playlists', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const name = String(req.body.name || '').trim();
+    const description = String(req.body.description || '').trim();
+    const isPublic = req.body.is_public === 'on' ? 1 : 0;
+
+    const [playlists] = await pool.query(
+        'SELECT * FROM playlists WHERE user_id = ? ORDER BY created_at DESC',
+        [userId]
+    );
+
+    if (!name) {
+        return res.status(400).render('playlists', { playlists, error: '플레이리스트 이름이 필요합니다.' });
+    }
+
+    if (playlists.length >= 100) {
+        return res.status(400).render('playlists', { playlists, error: '플레이리스트는 최대 100개까지만 생성할 수 있습니다.' });
+    }
+
+    const [result] = await pool.query(
+        'INSERT INTO playlists (user_id, name, description, is_public) VALUES (?, ?, ?, ?)',
+        [userId, name, description, isPublic]
+    );
+    res.redirect(`/playlists/${result.insertId}`);
+});
+
+app.get('/playlists/:id', async (req, res) => {
+    const playlistId = Number(req.params.id);
+    if (!Number.isFinite(playlistId)) {
+        return res.status(400).send('잘못된 요청입니다.');
+    }
+
+    const [rows] = await pool.query('SELECT * FROM playlists WHERE id = ?', [playlistId]);
+    if (rows.length === 0) {
+        return res.status(404).send('플레이리스트를 찾을 수 없습니다.');
+    }
+
+    const playlist = rows[0];
+    const isOwner = req.session.user && req.session.user.id === playlist.user_id;
+    if (!playlist.is_public && !isOwner) {
+        return res.status(403).send('비공개 플레이리스트입니다.');
+    }
+
+    const [songRows] = await pool.query(
+        'SELECT song_name, added_at FROM playlist_songs WHERE playlist_id = ? ORDER BY position ASC, added_at DESC',
+        [playlistId]
+    );
+
+    const songs = songRows.map(row => {
+        const queryName = row.song_name.trim();
+        const actualName = songCacheKeyMap.get(queryName.toLowerCase()) || queryName;
+        let songData = songCacheMap.get(actualName);
+
+        if (!songData) {
+            songData = songCache.find(s => 
+                s.name.toLowerCase() === queryName.toLowerCase() || 
+                (s.internalName && s.internalName.toLowerCase() === queryName.toLowerCase())
+            );
+        }
+
+        return {
+            ...row,
+            song: songData || { name: queryName, kor_name: '', ori_name: queryName }
+        };
+    });
+
+    res.render('playlistDetail', {
+        playlist,
+        songs,
+        isOwner
+    });
+});
+
+app.get('/api/study/summary', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const summary = await getStudySummary(userId);
+    res.json(summary);
+});
+
+app.post('/api/study/track', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const songName = String(req.body.songName || '').trim();
+    const elapsed = Number(req.body.elapsedSeconds || 0);
+
+    if (!songName) {
+        return res.status(400).json({ error: 'songName이 필요합니다.' });
+    }
+
+    const safeSeconds = Number.isFinite(elapsed) ? Math.floor(Math.max(0, Math.min(elapsed, 3600))) : 0;
+    const studyDate = getLocalDateString(new Date());
+
+    await pool.query(
+        `
+        INSERT INTO study_daily (user_id, song_name, study_date, seconds)
+        VALUES (?, ?, ?, ?)
+        ON DUPLICATE KEY UPDATE
+            seconds = seconds + VALUES(seconds),
+            updated_at = CURRENT_TIMESTAMP
+        `,
+        [userId, songName, studyDate, safeSeconds]
+    );
+
+    res.json({ ok: true });
+});
+
+app.post('/api/likes/toggle', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const songName = String(req.body.songName || '').trim();
+    if (!songName) {
+        return res.status(400).json({ error: 'songName이 필요합니다.' });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT 1 FROM song_likes WHERE user_id = ? AND song_name = ?',
+        [userId, songName]
+    );
+    let liked = false;
+    if (rows.length > 0) {
+        await pool.query(
+            'DELETE FROM song_likes WHERE user_id = ? AND song_name = ?',
+            [userId, songName]
+        );
+    } else {
+        await pool.query(
+            'INSERT INTO song_likes (user_id, song_name) VALUES (?, ?)',
+            [userId, songName]
+        );
+        liked = true;
+    }
+
+    res.json({ liked });
+});
+
+app.get('/api/playlists', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    await ensureDefaultPlaylist(userId, req.session.user.username);
+    const [playlists] = await pool.query(
+        'SELECT id, name, description, is_public FROM playlists WHERE user_id = ? ORDER BY created_at DESC',
+        [userId]
+    );
+    res.json({ playlists });
+});
+
+app.post('/api/playlists', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const name = String(req.body.name || '').trim();
+    const description = String(req.body.description || '').trim();
+    const isPublic = req.body.is_public === false ? 0 : 1;
+
+    if (!name) {
+        return res.status(400).json({ error: '플레이리스트 이름이 필요합니다.' });
+    }
+
+    const [playlists] = await pool.query(
+        'SELECT id FROM playlists WHERE user_id = ?',
+        [userId]
+    );
+
+    if (playlists.length >= 100) {
+        return res.status(400).json({ error: '플레이리스트는 최대 100개까지만 생성할 수 있습니다.' });
+    }
+
+    const [result] = await pool.query(
+        'INSERT INTO playlists (user_id, name, description, is_public) VALUES (?, ?, ?, ?)',
+        [userId, name, description, isPublic]
+    );
+    res.json({ ok: true, id: result.insertId, name });
+});
+
+app.put('/api/playlists/:id', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const playlistId = Number(req.params.id);
+    const name = String(req.body.name || '').trim();
+    const description = String(req.body.description || '').trim();
+    const isPublic = req.body.is_public === false ? 0 : 1;
+
+    if (!Number.isFinite(playlistId) || !name) {
+        return res.status(400).json({ error: '잘못된 요청입니다.' });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT id FROM playlists WHERE id = ? AND user_id = ?',
+        [playlistId, userId]
+    );
+    if (rows.length === 0) {
+        return res.status(403).json({ error: '권한이 없습니다.' });
+    }
+
+    await pool.query(
+        'UPDATE playlists SET name = ?, description = ?, is_public = ? WHERE id = ?',
+        [name, description, isPublic, playlistId]
+    );
+    res.json({ ok: true });
+});
+
+app.delete('/api/playlists/:id', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const playlistId = Number(req.params.id);
+
+    if (!Number.isFinite(playlistId)) {
+        return res.status(400).json({ error: '잘못된 요청입니다.' });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT id FROM playlists WHERE id = ? AND user_id = ?',
+        [playlistId, userId]
+    );
+    if (rows.length === 0) {
+        return res.status(403).json({ error: '권한이 없습니다.' });
+    }
+
+    await pool.query('DELETE FROM playlists WHERE id = ?', [playlistId]);
+    res.json({ ok: true });
+});
+
+app.post('/api/playlists/:id/songs', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const playlistId = Number(req.params.id);
+    const songName = String(req.body.songName || '').trim();
+
+    if (!Number.isFinite(playlistId) || !songName) {
+        return res.status(400).json({ error: '잘못된 요청입니다.' });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT id FROM playlists WHERE id = ? AND user_id = ?',
+        [playlistId, userId]
+    );
+    if (rows.length === 0) {
+        return res.status(403).json({ error: '권한이 없습니다.' });
+    }
+
+    const [songCountRows] = await pool.query(
+        'SELECT COUNT(*) as count FROM playlist_songs WHERE playlist_id = ?',
+        [playlistId]
+    );
+    if (songCountRows[0].count >= 100) {
+        return res.status(400).json({ error: '플레이리스트에는 최대 100곡까지만 담을 수 있습니다.' });
+    }
+
+    const [[{ maxPos }]] = await pool.query(
+        'SELECT COALESCE(MAX(position), 0) as maxPos FROM playlist_songs WHERE playlist_id = ?',
+        [playlistId]
+    );
+
+    await pool.query(
+        'INSERT IGNORE INTO playlist_songs (playlist_id, song_name, position) VALUES (?, ?, ?)',
+        [playlistId, songName, maxPos + 1]
+    );
+    res.json({ ok: true });
+});
+
+app.delete('/api/playlists/:id/songs', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const playlistId = Number(req.params.id);
+    const songName = String(req.body.songName || '').trim();
+
+    if (!Number.isFinite(playlistId) || !songName) {
+        return res.status(400).json({ error: '잘못된 요청입니다.' });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT id FROM playlists WHERE id = ? AND user_id = ?',
+        [playlistId, userId]
+    );
+    if (rows.length === 0) {
+        return res.status(403).json({ error: '권한이 없습니다.' });
+    }
+
+    await pool.query(
+        'DELETE FROM playlist_songs WHERE playlist_id = ? AND song_name = ?',
+        [playlistId, songName]
+    );
+    res.json({ ok: true });
+});
+
+app.put('/api/playlists/:id/reorder', requireAuth, async (req, res) => {
+    const userId = req.session.user.id;
+    const playlistId = Number(req.params.id);
+    const { songNames } = req.body; // Array of song names in the new order
+
+    if (!Number.isFinite(playlistId) || !Array.isArray(songNames)) {
+        return res.status(400).json({ error: '잘못된 요청입니다.' });
+    }
+
+    const [rows] = await pool.query(
+        'SELECT id FROM playlists WHERE id = ? AND user_id = ?',
+        [playlistId, userId]
+    );
+    if (rows.length === 0) {
+        return res.status(403).json({ error: '권한이 없습니다.' });
+    }
+
+    // Update position for each song in a transaction
+    const conn = await pool.getConnection();
+    try {
+        await conn.beginTransaction();
+        for (let i = 0; i < songNames.length; i++) {
+            await conn.query(
+                'UPDATE playlist_songs SET position = ? WHERE playlist_id = ? AND song_name = ?',
+                [i, playlistId, songNames[i]]
+            );
+        }
+        await conn.commit();
+        res.json({ ok: true });
+    } catch (err) {
+        await conn.rollback();
+        console.error(err);
+        res.status(500).json({ error: '서버 오류가 발생했습니다.' });
+    } finally {
+        conn.release();
+    }
+});
+
 app.get('/songs/:title', async (req, res) => {
     const title = req.params.title;
     const filePath = getSafeSongPath(title);
     try {
         const data = await fs.promises.readFile(filePath, 'utf8');
         const songData = JSON.parse(data);
+        let liked = false;
+        let playlists = [];
+        if (req.session.user) {
+            const userId = req.session.user.id;
+            await ensureDefaultPlaylist(userId, req.session.user.username);
+            const [likeRows] = await pool.query(
+                'SELECT 1 FROM song_likes WHERE user_id = ? AND song_name = ?',
+                [userId, songData.name]
+            );
+            liked = likeRows.length > 0;
+
+            const [playlistRows] = await pool.query(
+                `SELECT p.id, p.name, 
+                 CASE WHEN ps.song_name IS NOT NULL THEN 1 ELSE 0 END as is_in
+                 FROM playlists p
+                 LEFT JOIN playlist_songs ps ON p.id = ps.playlist_id AND ps.song_name = ?
+                 WHERE p.user_id = ? 
+                 ORDER BY p.created_at DESC`,
+                [songData.name, userId]
+            );
+            playlists = playlistRows;
+        }
         
         // 조회수는 분석 결과창(/view/)에서만 카운트하므로 여기서는 제거
         
@@ -1148,7 +1991,7 @@ app.get('/songs/:title', async (req, res) => {
             }
         }
         
-        res.render('lyrics', { song: songData });
+        res.render('lyrics', { song: songData, liked, playlists });
     } catch (error) {
         if (error.code === 'ENOENT') {
             return res.redirect('/');
@@ -1166,8 +2009,24 @@ app.get('/view/:title', async (req, res) => {
         
         // 조회수 증가
         incrementViewCount(title);
-        
-        res.render('songView', { song: songData, lang: lang });
+        let liked = false;
+        let playlists = [];
+        if (req.session.user) {
+            const userId = req.session.user.id;
+            await ensureDefaultPlaylist(userId, req.session.user.username);
+            const [likeRows] = await pool.query(
+                'SELECT 1 FROM song_likes WHERE user_id = ? AND song_name = ?',
+                [userId, songData.name]
+            );
+            liked = likeRows.length > 0;
+            const [playlistRows] = await pool.query(
+                'SELECT id, name FROM playlists WHERE user_id = ? ORDER BY created_at DESC',
+                [userId]
+            );
+            playlists = playlistRows;
+        }
+
+        res.render('songView', { song: songData, lang: lang, liked, playlists });
     } catch (error) {
         if (error.code === 'ENOENT') {
             return res.redirect('/');
@@ -1199,12 +2058,32 @@ app.get('/detail/:title', async (req, res) => {
     }
 });
 
-app.get('/songs', (req, res) => {
+app.get('/songs', async (req, res) => {
     const searchQuery = req.query.q || '';
-    const sort = req.query.sort || 'popular'; // 기본값 인기순
+    const sort = req.query.sort || 'popular';
+    const type = req.query.type || 'songs'; // 'songs' or 'playlists'
+    const page = parseInt(req.query.page) || 1;
+    const limit = 12; // 페이지당 항목 수
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+
     let filteredSongs = searchSongs(searchQuery, ['개발용']);
+    let filteredPlaylists = [];
     
-    // 정렬 로직
+    // 플레이리스트 검색 또는 전체 목록
+    const [playlistRows] = await pool.query(
+        `SELECT p.*, u.username as owner_name, 
+         (SELECT COUNT(*) FROM playlist_songs ps WHERE ps.playlist_id = p.id) as song_count
+         FROM playlists p
+         JOIN users u ON p.user_id = u.id
+         WHERE (p.name LIKE ? OR p.description LIKE ? OR ? = '') 
+         AND (p.is_public = 1 OR (p.user_id = ?))
+         ORDER BY p.created_at DESC`,
+        [`%${searchQuery}%`, `%${searchQuery}%`, searchQuery.trim(), req.session.user ? req.session.user.id : -1]
+    );
+    filteredPlaylists = playlistRows;
+
+    // 노래 정렬 로직
     if (sort === 'popular') {
         filteredSongs.sort((a, b) => {
             const viewsA = viewCounts[a.name] || 0;
@@ -1219,20 +2098,30 @@ app.get('/songs', (req, res) => {
         });
     }
 
-    const page = parseInt(req.query.page) || 1;
-    const limit = 10;
-    const startIndex = (page - 1) * limit;
-    const endIndex = startIndex + limit;
-    const paginatedSongs = filteredSongs.slice(startIndex, endIndex);
-    const totalPages = Math.ceil(filteredSongs.length / limit);
+    // 결과 데이터 가공
+    let paginatedResults = [];
+    let totalPages = 0;
+    let totalResultsCount = 0;
+
+    if (type === 'playlists') {
+        paginatedResults = filteredPlaylists.slice(startIndex, endIndex);
+        totalPages = Math.ceil(filteredPlaylists.length / limit);
+        totalResultsCount = filteredPlaylists.length;
+    } else {
+        paginatedResults = filteredSongs.slice(startIndex, endIndex);
+        totalPages = Math.ceil(filteredSongs.length / limit);
+        totalResultsCount = filteredSongs.length;
+    }
 
     res.render('search', {
-        songs: paginatedSongs,
+        results: paginatedResults,
+        songsCount: filteredSongs.length,
+        playlistsCount: filteredPlaylists.length,
         currentPage: page,
         totalPages: totalPages,
         searchQuery: searchQuery,
-        totalResults: filteredSongs.length,
-        currentSort: sort
+        currentSort: sort,
+        currentType: type
     });
 });
 
@@ -2725,6 +3614,17 @@ app.get('/admin', async (req, res) => {
     }
 });
 
+// 관리자 - 유저 목록 페이지
+app.get('/admin/users', async (req, res) => {
+    try {
+        const [users] = await pool.query('SELECT id, username, created_at FROM users ORDER BY created_at DESC');
+        res.render('adminUsers', { users });
+    } catch (error) {
+        console.error('admin/users 페이지 렌더링 중 오류:', error);
+        res.status(500).send('유저 목록 로딩 중 오류가 발생했습니다.');
+    }
+});
+
 // 관리자 - 데이터 퀄리티 검증 페이지
 app.get('/admin/validate', (req, res) => {
     try {
@@ -3187,7 +4087,14 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 3000;
 
-function startServer() {
+async function startServer() {
+    try {
+        await initDb();
+    } catch (err) {
+        console.error('DB 초기화 실패:', err);
+        process.exit(1);
+    }
+
     // 서버가 요청을 받기 전에 캐시를 먼저 로드합니다.
     app.listen(PORT, () => {
         console.log(`서버 시작: http://localhost:${PORT}`);
@@ -3205,4 +4112,4 @@ function startServer() {
     });
 }
 
-startServer(); 
+startServer();

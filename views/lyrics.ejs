@@ -12,21 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
-    <!-- 헤더 -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto max-w-4xl px-5 py-3 flex items-center gap-4">
-            <a href="/" class=" px-2 text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
-            <form action="/songs" method="get" class="flex-grow min-w-0">
-                <div class="flex px-2">
-                    <input type="search" name="q" placeholder="노래 검색..." 
-                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0">
-                    <button type="submit" class="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </header>
+    <%- include('partials/header') %>
 
     <main class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">
         <!-- 곡 정보 및 액션 버튼 -->
@@ -64,13 +50,80 @@
                 </div>
             </div>
 
-            <div class="mt-8 pt-8 border-t border-slate-100 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="/view/<%= song.name %>" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 text-white font-bold px-8 py-3 rounded-full hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-300">
-                    <i class="fas fa-eye fa-fw"></i>
-                    <span>분석 결과 보기</span>
+            <div class="mt-8 pt-8 border-t border-slate-100 flex flex-col md:flex-row items-center gap-4">
+                <a href="/view/<%= song.name %>" 
+                   class="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-blue-600 text-white font-bold px-8 py-4 rounded-2xl hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-95 group">
+                    <i class="fa-solid fa-graduation-cap text-lg group-hover:scale-110 transition-transform"></i>
+                    <span>학습하기</span>
                 </a>
-                <a href="/detail/<%= song.name %>" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-200 text-slate-700 font-semibold px-6 py-3 rounded-full hover:bg-slate-300 transition-colors">
-                    <i class="fas fa-edit fa-fw"></i>
+
+                <% if (locals.currentUser) { %>
+                    <div class="flex items-center gap-3 w-full md:w-auto">
+                        <button id="likeBtn" data-liked="<%= liked ? '1' : '0' %>"
+                                class="flex-grow md:flex-none inline-flex items-center justify-center gap-2 border-2 border-slate-100 text-slate-600 font-bold px-6 py-4 rounded-2xl hover:bg-pink-50 hover:border-pink-200 hover:text-pink-600 transition-all active:scale-95">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>좋아요</span>
+                        </button>
+
+                        <div class="relative group/playlist flex-grow md:flex-none">
+                            <button class="w-full inline-flex items-center justify-center gap-2 border-2 border-slate-100 text-slate-600 font-bold px-6 py-4 rounded-2xl hover:bg-purple-50 hover:border-purple-200 hover:text-purple-600 transition-all active:scale-95">
+                                <i class="fa-solid fa-list-ul"></i>
+                                <span>플레이리스트</span>
+                                <i class="fas fa-chevron-down text-[10px] text-gray-400 group-hover/playlist:rotate-180 transition-transform"></i>
+                            </button>
+                            
+                            <div class="absolute right-0 bottom-full mb-3 w-72 bg-white rounded-[2rem] shadow-2xl border border-gray-100 py-5 opacity-0 invisible group-hover/playlist:opacity-100 group-hover/playlist:visible transition-all duration-300 z-50 origin-bottom-right transform scale-95 group-hover/playlist:scale-100">
+                                <div class="px-6 pb-3 mb-3 border-b border-gray-50">
+                                    <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest">내 플레이리스트</p>
+                                </div>
+                                <div class="max-h-64 overflow-y-auto px-2 space-y-1" id="playlistList">
+                                    <% playlists.forEach(pl => { %>
+                                        <button onclick="togglePlaylistMembership('<%= pl.id %>', this)" 
+                                                data-in="<%= pl.is_in %>"
+                                                class="w-full text-left px-4 py-3 text-sm font-bold text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-xl transition-all flex items-center justify-between group/item">
+                                            <div class="flex items-center gap-3">
+                                                <div class="w-8 h-8 rounded-lg <%= pl.is_in ? 'bg-purple-100 text-purple-600' : 'bg-gray-50 text-gray-400' %> group-hover/item:bg-purple-100 group-hover/item:text-purple-600 flex items-center justify-center transition-colors">
+                                                    <i class="fas fa-music text-[10px]"></i>
+                                                </div>
+                                                <span class="truncate"><%= pl.name %></span>
+                                            </div>
+                                            <% if (pl.is_in) { %>
+                                                <i class="fas fa-check text-[10px] text-purple-600"></i>
+                                            <% } %>
+                                        </button>
+                                    <% }) %>
+                                </div>
+                                <div class="mt-4 pt-4 border-t border-gray-50 px-4 space-y-2">
+                                    <% if (playlists.length < 100) { %>
+                                        <button onclick="createNewPlaylist()" class="w-full text-left px-4 py-3 text-sm font-black text-blue-600 hover:bg-blue-50 rounded-xl transition-all flex items-center gap-3">
+                                            <div class="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                                                <i class="fas fa-plus text-[10px]"></i>
+                                            </div>
+                                            <span>새 플레이리스트 만들기</span>
+                                        </button>
+                                    <% } else { %>
+                                        <div class="px-4 py-3 text-[10px] font-bold text-red-400 bg-red-50 rounded-xl flex items-center gap-2">
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <span>플레이리스트 생성 한도(100개) 도달</span>
+                                        </div>
+                                    <% } %>
+                                    <a href="/playlists" class="block text-center py-2 text-[10px] font-black text-gray-400 hover:text-blue-600 transition-colors uppercase tracking-[0.2em]">
+                                        플레이리스트 관리 <i class="fas fa-external-link-alt ml-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } else { %>
+                    <a href="/login?next=<%= encodeURIComponent('/songs/' + song.name) %>"
+                       class="w-full md:w-auto inline-flex items-center justify-center gap-3 border-2 border-slate-100 text-slate-500 font-bold px-8 py-4 rounded-2xl hover:bg-slate-50 hover:border-slate-200 transition-all active:scale-95">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>로그인하고 저장</span>
+                    </a>
+                <% } %>
+
+                <a href="/detail/<%= song.name %>" class="w-full md:w-auto md:ml-auto inline-flex items-center justify-center gap-2 text-slate-400 font-bold px-6 py-4 rounded-2xl hover:bg-slate-50 hover:text-slate-600 transition-all">
+                    <i class="fas fa-edit"></i>
                     <span>번역 관리</span>
                 </a>
             </div>
@@ -125,5 +178,119 @@
             });
         });
     </script>
+    <% if (currentUser) { %>
+    <script>
+        const likeBtn = document.getElementById('likeBtn');
+        const updateLikeUi = (isLiked) => {
+            likeBtn.dataset.liked = isLiked ? '1' : '0';
+            likeBtn.classList.toggle('bg-pink-50', isLiked);
+            likeBtn.classList.toggle('border-pink-200', isLiked);
+            likeBtn.classList.toggle('text-pink-600', isLiked);
+            likeBtn.classList.toggle('border-slate-100', !isLiked);
+            likeBtn.classList.toggle('text-slate-600', !isLiked);
+        };
+        updateLikeUi(likeBtn.dataset.liked === '1');
+        likeBtn.addEventListener('click', async () => {
+            const res = await fetch('/api/likes/toggle', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ songName: '<%= song.name %>' })
+            });
+            if (res.ok) {
+                const data = await res.json();
+                updateLikeUi(data.liked);
+            } else {
+                haneumAlert('좋아요 처리에 실패했습니다.', { type: 'danger' });
+            }
+        });
+
+        async function createNewPlaylist() {
+            haneumPrompt('새 플레이리스트의 이름을 입력해주세요.', async (name) => {
+                if (!name || !name.trim()) return;
+
+                try {
+                    const res = await fetch('/api/playlists', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name: name.trim() })
+                    });
+                    const data = await res.json();
+                    
+                    if (data.ok) {
+                        const list = document.getElementById('playlistList');
+                        const btn = document.createElement('button');
+                        btn.onclick = function() { togglePlaylistMembership(data.id, this); };
+                        btn.dataset.in = "0";
+                        btn.className = "w-full text-left px-4 py-3 text-sm font-bold text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-xl transition-all flex items-center justify-between group/item";
+                        btn.innerHTML = `
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-gray-50 text-gray-400 group-hover/item:bg-purple-100 group-hover/item:text-purple-600 flex items-center justify-center transition-colors">
+                                    <i class="fas fa-music text-[10px]"></i>
+                                </div>
+                                <span class="truncate">${data.name}</span>
+                            </div>
+                        `;
+                        list.insertBefore(btn, list.firstChild);
+                        
+                        // 바로 현재 곡 추가
+                        togglePlaylistMembership(data.id, btn);
+                    } else {
+                        haneumAlert(data.error || '플레이리스트 생성에 실패했습니다.', { type: 'danger' });
+                    }
+                } catch (err) {
+                    console.error(err);
+                    haneumAlert('오류가 발생했습니다.', { type: 'danger' });
+                }
+            }, {
+                title: '플레이리스트 생성',
+                inputPlaceholder: '예: 비오는 날 듣기 좋은 노래',
+                confirmText: '생성하기'
+            });
+        }
+
+        async function togglePlaylistMembership(playlistId, btn) {
+            const isIn = btn.dataset.in === "1";
+            const method = isIn ? 'DELETE' : 'POST';
+            
+            try {
+                const res = await fetch(`/api/playlists/${playlistId}/songs`, {
+                    method: method,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ songName: '<%= song.name %>' })
+                });
+
+                if (res.ok) {
+                    const newIn = !isIn;
+                    btn.dataset.in = newIn ? "1" : "0";
+                    
+                    // Update UI
+                    const iconContainer = btn.querySelector('.w-8.h-8');
+                    if (newIn) {
+                        iconContainer.classList.remove('bg-gray-50', 'text-gray-400');
+                        iconContainer.classList.add('bg-purple-100', 'text-purple-600');
+                        if (!btn.querySelector('.fa-check')) {
+                            const checkIcon = document.createElement('i');
+                            checkIcon.className = "fas fa-check text-[10px] text-purple-600";
+                            btn.appendChild(checkIcon);
+                        }
+                        haneumAlert('플레이리스트에 추가했습니다.', { type: 'success', icon: 'fa-check-circle' });
+                    } else {
+                        iconContainer.classList.remove('bg-purple-100', 'text-purple-600');
+                        iconContainer.classList.add('bg-gray-50', 'text-gray-400');
+                        const checkIcon = btn.querySelector('.fa-check');
+                        if (checkIcon) checkIcon.remove();
+                        haneumAlert('플레이리스트에서 삭제했습니다.', { type: 'info' });
+                    }
+                } else {
+                    const data = await res.json().catch(() => ({}));
+                    haneumAlert(data.error || (isIn ? '삭제에 실패했습니다.' : '추가에 실패했습니다.'), { type: 'danger' });
+                }
+            } catch (err) {
+                console.error(err);
+                haneumAlert('오류가 발생했습니다.', { type: 'danger' });
+            }
+        }
+    </script>
+    <% } %>
 </body>
 </html> 

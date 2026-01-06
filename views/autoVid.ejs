@@ -27,8 +27,9 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed pb-24">
-    <!-- 헤더 -->
-    <header class="bg-indigo-600 text-white text-center py-8 px-6">
+    <%- include('partials/header') %>
+    <!-- 페이지 타이틀 -->
+    <div class="bg-indigo-600 text-white text-center py-8 px-6">
         <div class="container mx-auto max-w-6xl">
             <h1 class="text-3xl md:text-4xl font-bold mb-4">VID 자동 관리</h1>
             <p class="text-indigo-100">VID가 없는 노래를 채우거나, 재생 불가능한 VID를 찾아 교체합니다.</p>
@@ -42,7 +43,7 @@
                 </a>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="py-8 px-6">
         <div class="container mx-auto max-w-6xl">

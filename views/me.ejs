@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 학습 현황 - Haneum</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-[#f8f9fa] text-gray-900 min-h-screen">
+    <% const formatSeconds = (sec) => { 
+        const h = Math.floor(sec / 3600);
+        const m = Math.floor((sec % 3600) / 60); 
+        const s = sec % 60; 
+        if (h > 0) return `${h}시간 ${m}분`;
+        return `${m}분 ${s}초`; 
+    }; %>
+    <%- include('partials/header') %>
+
+    <main class="container mx-auto max-w-6xl px-4 py-8 md:py-12">
+        <!-- Profile Header -->
+        <div class="mb-12">
+            <h1 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-2">
+                안녕하세요, <span class="text-blue-600"><%= currentUser.username %></span>님!
+            </h1>
+            <p class="text-gray-500 font-medium text-lg">오늘도 즐겁게 공부해 볼까요?</p>
+        </div>
+
+        <!-- Summary Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12">
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <div class="w-12 h-12 bg-orange-50 text-orange-500 rounded-2xl flex items-center justify-center mb-4">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <p class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">오늘 학습</p>
+                <p class="text-2xl font-black text-gray-900"><%= formatSeconds(summary.todaySeconds) %></p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <div class="w-12 h-12 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center mb-4">
+                    <i class="fas fa-history"></i>
+                </div>
+                <p class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">총 학습 시간</p>
+                <p class="text-2xl font-black text-gray-900"><%= formatSeconds(summary.totalSeconds) %></p>
+            </div>
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 p-6 md:p-8">
+                <div class="w-12 h-12 bg-pink-50 text-pink-500 rounded-2xl flex items-center justify-center mb-4">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <p class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1">연속 학습</p>
+                <p class="text-2xl font-black text-gray-900"><%= summary.streakCurrent %>일</p>
+                <p class="text-[10px] font-bold text-gray-400 mt-1">최고기록 <%= summary.streakLongest %>일</p>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-12">
+            <!-- Recent Activity -->
+            <div class="lg:col-span-2 space-y-8">
+                <section>
+                    <div class="flex items-center justify-between mb-6 px-4">
+                        <h2 class="text-xl font-bold flex items-center gap-3">
+                            <i class="fas fa-bolt text-yellow-500"></i>
+                            최근 학습 기록
+                        </h2>
+                        <a href="/me/history" class="text-xs font-black text-blue-600 hover:underline tracking-widest uppercase">모두보기</a>
+                    </div>
+                    
+                    <% if (recentStudy.length === 0) { %>
+                        <div class="bg-white rounded-[2rem] p-12 text-center border-2 border-dashed border-gray-100">
+                            <p class="text-gray-400 font-bold">아직 학습 기록이 없습니다.</p>
+                            <a href="/" class="text-blue-600 text-sm font-black mt-4 inline-block hover:underline">첫 노래 찾아보기 →</a>
+                        </div>
+                    <% } else { %>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 pb-12">
+                            <% recentStudy.forEach(row => { %>
+                                <div class="bg-white rounded-[2rem] shadow-sm hover:shadow-xl hover:shadow-blue-500/5 border border-gray-100 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group">
+                                    <div class="p-6">
+                                        <a href="/songs/<%= row.song.name %>" class="block">
+                                            <div class="space-y-2 mb-1">
+                                                <p class="text-sm text-blue-600 font-bold">
+                                                    <%= row.song.kor_name || row.song.ori_name || '제목 정보 없음' %>
+                                                </p>
+                                            </div>
+
+                                            <div class="flex items-start justify-between mb-3">
+                                                <div class="flex-1">
+                                                    <h3 class="font-black text-lg text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2 leading-tight">
+                                                        <%= row.song.ori_name || row.song.name %>
+                                                    </h3>
+                                                </div>
+                                                <div class="flex-shrink-0 ml-3">
+                                                    <div class="w-2 h-2 bg-blue-400 rounded-full opacity-60 group-hover:opacity-100 group-hover:scale-150 transition-all duration-300"></div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        
+                                        <div class="mt-2">
+                                            <div class="flex items-center space-x-2">
+                                                <div class="w-6 h-6 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center shadow-sm">
+                                                    <i class="fas fa-music text-white text-[10px]"></i>
+                                                </div>
+                                                <% 
+                                                let artistName = '아티스트 정보 없음';
+                                                let artistQuery = '';
+                                                if (row.song.artist) {
+                                                    if (typeof row.song.artist === 'object') {
+                                                        artistName = row.song.artist.kor_name || row.song.artist.eng_name || row.song.artist.ori_name || '아티스트 정보 없음';
+                                                        artistQuery = row.song.artist.ori_name || row.song.artist.kor_name;
+                                                    } else {
+                                                        artistName = row.song.artist;
+                                                        artistQuery = row.song.artist;
+                                                    }
+                                                }
+                                                %>
+                                                <a href="/songs?q=<%= encodeURIComponent(artistQuery) %>" class="text-sm text-gray-600 font-bold hover:text-blue-600 transition-colors cursor-pointer">
+                                                    <%= artistName %>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                        <a href="/view/<%= row.song.name %>">
+                                            <div class="mt-4 pt-3 border-t border-gray-50">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center space-x-1.5 text-[10px] font-black text-gray-400 uppercase tracking-widest">
+                                                        <i class="fas fa-clock"></i>
+                                                        <span>
+                                                            <%= (row.study_date instanceof Date) ? row.study_date.toLocaleString('ko-KR', { month: 'long', day: 'numeric' }) : row.study_date %>
+                                                            <span class="mx-1">·</span>
+                                                            <%= formatSeconds(row.seconds || 0) %> 학습
+                                                        </span>
+                                                    </div>
+                                                    <div class="flex items-center space-x-1 text-xs font-bold text-blue-500 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
+                                                        <span>분석하기</span>
+                                                        <i class="fas fa-arrow-right text-[10px]"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% } %>
+                </section>
+            </div>
+
+            <!-- Right Column: Playlists and Likes -->
+            <div class="space-y-12">
+                <!-- My Playlists -->
+                <section>
+                    <div class="flex items-center justify-between mb-6 px-4">
+                        <h2 class="text-xl font-bold">내 플레이리스트</h2>
+                        <a href="/playlists" class="text-xs font-black text-blue-600 hover:underline tracking-widest uppercase">모두보기</a>
+                    </div>
+                    
+                    <% if (playlists.length === 0) { %>
+                        <div class="bg-white rounded-3xl p-8 text-center border-2 border-dashed border-gray-100">
+                            <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">플레이리스트가 없습니다.</p>
+                        </div>
+                    <% } else { %>
+                        <div class="space-y-3">
+                            <% playlists.slice(0, 4).forEach(pl => { %>
+                                <a href="/playlists/<%= pl.id %>" class="group block bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:shadow-blue-500/5 transition-all">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-10 h-10 bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                            <i class="fas fa-list-ul text-xs"></i>
+                                        </div>
+                                        <div class="flex-grow min-w-0">
+                                            <p class="text-sm font-black text-gray-900 truncate"><%= pl.name %></p>
+                                            <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-0.5">
+                                                <%= pl.is_public ? 'Public' : 'Private' %>
+                                            </p>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-[10px] text-gray-200 group-hover:translate-x-1 group-hover:text-blue-600 transition-all"></i>
+                                    </div>
+                                </a>
+                            <% }) %>
+                        </div>
+                    <% } %>
+                </section>
+
+                <!-- Liked Songs -->
+                <section>
+                    <div class="flex items-center justify-between mb-6 px-4">
+                        <h2 class="text-xl font-bold">좋아요한 곡</h2>
+                        <a href="/me/likes" class="text-xs font-black text-blue-600 hover:underline tracking-widest uppercase">모두보기</a>
+                    </div>
+                    
+                    <% if (likes.length === 0) { %>
+                        <div class="bg-white rounded-3xl p-8 text-center border-2 border-dashed border-gray-100">
+                            <p class="text-xs font-bold text-gray-400 uppercase tracking-widest">아직 좋아요한 곡이 없습니다.</p>
+                        </div>
+                    <% } else { %>
+                        <div class="space-y-3">
+                            <% likes.slice(0, 5).forEach(like => { %>
+                                <div class="bg-white rounded-[1.5rem] border border-gray-100 p-4 hover:shadow-lg hover:shadow-pink-500/5 transition-all group">
+                                    <a href="/songs/<%= like.song.name %>" class="block">
+                                        <p class="text-[10px] text-pink-500 font-bold mb-0.5"><%= like.song.kor_name || like.song.ori_name || '제목 정보 없음' %></p>
+                                        <h4 class="text-sm font-black text-gray-800 line-clamp-1 group-hover:text-pink-600 transition-colors">
+                                            <%= like.song.ori_name || like.song.name %>
+                                        </h4>
+                                    </a>
+                                    <div class="flex items-center justify-between mt-3">
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-5 h-5 rounded-full bg-pink-50 text-pink-500 flex items-center justify-center">
+                                                <i class="fas fa-heart text-[8px]"></i>
+                                            </div>
+                                            <% 
+                                            let lArtistName = '아티스트 정보 없음';
+                                            let lArtistQuery = '';
+                                            if (like.song.artist) {
+                                                if (typeof like.song.artist === 'object') {
+                                                    lArtistName = like.song.artist.kor_name || like.song.artist.eng_name || like.song.artist.ori_name;
+                                                    lArtistQuery = like.song.artist.ori_name || like.song.artist.kor_name;
+                                                } else {
+                                                    lArtistName = like.song.artist;
+                                                    lArtistQuery = like.song.artist;
+                                                }
+                                            }
+                                            %>
+                                            <a href="/songs?q=<%= encodeURIComponent(lArtistQuery) %>" class="text-[10px] font-bold text-gray-500 hover:text-pink-600 transition-colors">
+                                                <%= lArtistName %>
+                                            </a>
+                                        </div>
+                                        <a href="/view/<%= like.song.name %>" class="w-7 h-7 rounded-lg bg-gray-50 text-gray-400 flex items-center justify-center hover:bg-pink-50 hover:text-pink-500 transition-colors">
+                                            <i class="fas fa-play text-[10px]"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% } %>
+                </section>
+            </div>
+        </div>
+
+        <!-- Danger Zone -->
+        <section class="mt-16 pt-8 border-t border-gray-100">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 px-4">
+                <div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1">계정 관리</h3>
+                    <p class="text-sm text-gray-500 font-medium">탈퇴 시 모든 학습 데이터와 플레이리스트가 영구히 삭제됩니다.</p>
+                </div>
+                <button onclick="confirmWithdraw()" class="px-6 py-3 bg-white border border-red-100 text-red-500 rounded-2xl text-sm font-bold hover:bg-red-50 transition-all active:scale-95">
+                    회원 탈퇴
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        async function confirmWithdraw() {
+            if (!confirm('정말로 탈퇴하시겠습니까?\n탈퇴 시 좋아요, 플레이리스트, 학습 기록 등 모든 데이터가 삭제되며 복구할 수 없습니다.')) {
+                return;
+            }
+
+            try {
+                const response = await fetch('/me/withdraw', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const result = await response.json();
+                if (result.success) {
+                    alert(result.message);
+                    window.location.href = '/';
+                } else {
+                    alert(result.message);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('요청 처리 중 오류가 발생했습니다.');
+            }
+        }
+    </script>
+</body>
+</html>

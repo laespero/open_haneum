@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - Haneum</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <%- include('partials/header') %>
+
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="w-full max-w-md">
+            <div class="bg-white rounded-3xl shadow-xl shadow-blue-100/50 border border-gray-100 overflow-hidden">
+                <div class="p-8 md:p-10">
+                    <div class="mb-10 text-center">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl mb-4">
+                            <i class="fas fa-unlock-alt text-2xl"></i>
+                        </div>
+                        <h1 class="text-2xl font-bold text-gray-900">다시 만나서 반가워요!</h1>
+                        <p class="text-gray-500 mt-2 text-sm">Haneum 계정으로 로그인하세요</p>
+                    </div>
+
+                    <% if (locals.error) { %>
+                        <div class="mb-6 bg-red-50 border border-red-100 text-red-600 px-4 py-3 rounded-xl text-sm flex items-center gap-3">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <%= error %>
+                        </div>
+                    <% } %>
+
+                    <form action="/login" method="post" class="space-y-5">
+                        <input type="hidden" name="next" value="<%= next %>">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5 ml-1">아이디</label>
+                            <div class="relative">
+                                <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                                    <i class="fas fa-user text-sm"></i>
+                                </div>
+                                <input type="text" name="username" required placeholder="아이디를 입력하세요"
+                                       class="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1.5 ml-1">비밀번호</label>
+                            <div class="relative">
+                                <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">
+                                    <i class="fas fa-lock text-sm"></i>
+                                </div>
+                                <input type="password" name="password" required placeholder="비밀번호를 입력하세요"
+                                       class="w-full pl-11 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all">
+                            </div>
+                        </div>
+                        
+                        <div class="pt-2">
+                            <button type="submit"
+                                    class="w-full bg-blue-600 text-white py-3.5 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98]">
+                                로그인하기
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="mt-8 pt-8 border-t border-gray-50 text-center">
+                        <p class="text-sm text-gray-500">
+                            아직 계정이 없으신가요? 
+                            <a href="/signup" class="text-blue-600 font-bold hover:text-blue-700 ml-1 underline underline-offset-4">회원가입하기</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <a href="/" class="text-sm text-gray-400 hover:text-gray-600 transition-colors">
+                    <i class="fas fa-arrow-left mr-2 text-xs"></i>메인 페이지로 돌아가기
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

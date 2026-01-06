@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://www.youtube.com/iframe_api"></script>
     <!-- 드래그 선택 → 첫 한자 획순 뷰어 -->
     <link rel="stylesheet" href="/kanji-viewer.css" />
@@ -29,61 +29,8 @@
             padding: 0;
         }
 
-        /* 헤더 스타일 추가 */
-        /* .header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        } */
-
-        .header-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-            text-decoration: none;
-        }
-
-        .header-search {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .header-search input {
-            padding: 8px 12px;
-            border: none;
-            border-radius: 4px;
-            width: 300px;
-            font-size: 14px;
-        }
-
-        .header-search button {
-            padding: 8px 16px;
-            background-color: white;
-            color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-
-        .header-search button:hover {
-            background-color: #f0f0f0;
-        }
-
         /* 기존 스타일 수정 */
         #printer-wrapper {
-            /* margin-top: 60px; 헤더 높이만큼 여백 추가 */
             display: flex;
             justify-content: center;
         }
@@ -344,7 +291,6 @@
             position: relative;
             margin-bottom: 60px;
             border-radius: 0 0 1rem 1rem;
-            margin-top: 70px;
         }
 
         .song-info-content {
@@ -518,55 +464,13 @@
         }
     </style>
 </head>
-<body class="">
-    <!-- 헤더 -->
-    <header id="main-header" class="bg-white shadow-sm fixed w-full top-0 z-50 transition-transform duration-300 transform font-sans">
-        <div class="container mx-auto max-w-4xl px-5 py-3 flex items-center gap-4">
-            <a href="/" class=" px-2 text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
-            <form action="/songs" method="get" class="flex-grow min-w-0">
-                <div class="flex px-2">
-                    <input type="search" name="q" placeholder="노래 검색..." 
-                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0">
-                    <button type="submit" class="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </header>
-
-    <script>
-        let lastScrollTop = 0;
-        const header = document.getElementById('main-header');
-        const scrollThreshold = 10; // 스크롤 감지 임계값
-
-        window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            // 모바일 바운스 효과 등으로 인한 음수값 처리
-            if(scrollTop < 0) {
-                scrollTop = 0;
-            }
-
-            if (Math.abs(lastScrollTop - scrollTop) <= scrollThreshold) {
-                return;
-            }
-
-            if (scrollTop > lastScrollTop && scrollTop > 60) {
-                // 아래로 스크롤 시 헤더 숨김
-                header.classList.add('-translate-y-full');
-            } else {
-                // 위로 스크롤 시 헤더 보임
-                header.classList.remove('-translate-y-full');
-            }
-            lastScrollTop = scrollTop;
-        });
-    </script>
+<body>
+    <%- include('partials/header') %>
 
     <% let searchQuery = locals.searchQuery || ''; %>
     <div class="song-info-header w-[calc(100%-3rem)] max-w-5xl mx-auto">
         <div class="song-info-content">
-            <h1><a href="/songs/<%= song.name %>"><%= song.ori_name || song.name %></a></h1>
+            <h1 class="mb-4"><a href="/songs/<%= song.name %>"><%= song.ori_name || song.name %></a></h1>
             
                 <% if (song.kor_name) { %>
                     <div class="song-info-item">한글 제목 : <%= song.kor_name %></div>
@@ -1674,7 +1578,7 @@ ${a}
         return data.map(x=>x.T0).join('\n')
     }
     </script>
-    
+
     <!-- 좌측 하단 고정 패널 (드래그한 텍스트의 첫 한자 획순) -->
     <aside id="rfPanel" class="readerFloating isHidden" aria-live="polite">
       <div class="readerFloatingHeader">
@@ -1688,5 +1592,75 @@ ${a}
         <div class="readerSvgWrap" id="rfSvgWrap" aria-hidden="true"></div>
       </div>
     </aside>
+    <script>
+        (function() {
+            <% if (locals.currentUser) { %>
+            let startTime = null;
+            let elapsedTotal = 0;
+            const songName = '<%= song.name %>';
+            const TRACK_INTERVAL = 30000; // 30초마다 서버로 전송
+
+            function sendStudyTrack(seconds, isInitial = false) {
+                if (!isInitial && seconds <= 0) return;
+                
+                // navigator.sendBeacon을 우선 사용 (비동기 및 페이지 종료 시 안전함)
+                const url = '/api/study/track';
+                const data = JSON.stringify({ songName, elapsedSeconds: seconds });
+                
+                if (navigator.sendBeacon) {
+                    navigator.sendBeacon(url, new Blob([data], { type: 'application/json' }));
+                } else {
+                    fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: data,
+                        keepalive: true
+                    }).catch(err => console.error('Tracking error:', err));
+                }
+            }
+
+            // 페이지 방문 즉시 기록 (0초로 전송하여 데이터 생성)
+            sendStudyTrack(0, true);
+
+            // 재생 상태 변화 감지를 위한 인터벌
+            setInterval(() => {
+                if (window.player && typeof player.get_player_state === 'function') {
+                    const state = player.get_player_state();
+                    // 1: 재생 중
+                    if (state === 1) {
+                        if (!startTime) startTime = Date.now();
+                    } else {
+                        if (startTime) {
+                            const now = Date.now();
+                            elapsedTotal += Math.floor((now - startTime) / 1000);
+                            startTime = null;
+                        }
+                    }
+                }
+
+                // 누적된 시간이 있고 인터벌이 지났다면 서버로 전송
+                if (elapsedTotal >= 10) { // 최소 10초 이상일 때만
+                    sendStudyTrack(elapsedTotal);
+                    elapsedTotal = 0;
+                }
+            }, 5000); // 5초마다 체크
+
+            // 페이지 종료 시 남은 시간 전송
+            window.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === 'hidden') {
+                    if (startTime) {
+                        const now = Date.now();
+                        elapsedTotal += Math.floor((now - startTime) / 1000);
+                        startTime = null;
+                    }
+                    if (elapsedTotal > 0) {
+                        sendStudyTrack(elapsedTotal);
+                        elapsedTotal = 0;
+                    }
+                }
+            });
+            <% } %>
+        })();
+    </script>
 </body>
 </html>

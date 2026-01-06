@@ -17,247 +17,260 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans leading-relaxed flex flex-col min-h-screen">
-    <!-- 헤더 -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto max-w-4xl px-5 py-3 flex items-center gap-4">
-            <a href="/" class=" px-2 text-2xl font-bold text-blue-600 flex-shrink-0">Haneum</a>
-            <form action="/songs" method="get" class="flex-grow min-w-0" id="searchForm">
-                <div class="flex px-2">
-                    <input type="search" name="q" id="searchInput" value="<%= searchQuery %>" placeholder="노래 검색..." 
-                           class="flex-grow px-4 py-2 border border-gray-300 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0">
-                    <button type="submit" class="bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-r-full hover:bg-blue-700 transition-colors">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </form>
-        </div>
-    </header>
+    <%- include('partials/header') %>
 
     <!-- 메인 콘텐츠 -->
-    <main class="container mx-auto max-w-4xl px-8 py-8 flex-grow">
-        <!-- 검색 정보 및 인기 차트 바로가기 -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
-            <!-- 좌측: 검색 결과 타이틀 -->
-            <div>
-                <h1 class="text-2xl md:text-3xl font-bold mb-2 text-gray-800">
+    <main class="container mx-auto max-w-5xl px-4 py-8 md:py-12 flex-grow">
+        <!-- 검색 정보 -->
+        <div class="mb-10">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6">
+                <h1 class="text-2xl md:text-4xl font-black text-gray-900 tracking-tight">
                     <% if (searchQuery && searchQuery.trim()) { %>
                         "<span class="text-blue-600"><%= searchQuery %></span>" 검색 결과
                     <% } else { %>
-                        전체 노래 목록
+                        전체 탐색
                     <% } %>
                 </h1>
-                <div class="flex items-center gap-4">
-                    <p class="text-gray-500 text-sm">
-                        총 <span class="font-bold text-gray-700"><%= totalResults %></span>개의 결과를 찾았습니다.
-                    </p>
-                    
-                    <!-- 정렬 옵션 -->
-                    <div class="flex items-center gap-2 text-sm">
-                        <span class="text-gray-400">|</span>
-                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&sort=popular" 
-                           class="<%= (!locals.currentSort || currentSort === 'popular') ? 'font-bold text-blue-600' : 'text-gray-500 hover:text-gray-700' %>">
+
+                <div class="flex flex-wrap items-center gap-2">
+                    <!-- 인기 차트 바로가기 -->
+                    <a href="/popular/songs" class="inline-flex items-center px-4 py-2.5 bg-white border border-gray-100 rounded-2xl text-sm font-bold text-gray-600 hover:border-blue-300 hover:text-blue-600 transition-all shadow-sm group">
+                        <i class="fas fa-fire mr-2 text-red-500 group-hover:scale-110 transition-transform"></i>
+                        인기 노래
+                    </a>
+                    <a href="/popular/artists" class="inline-flex items-center px-4 py-2.5 bg-white border border-gray-100 rounded-2xl text-sm font-bold text-gray-600 hover:border-purple-300 hover:text-purple-600 transition-all shadow-sm group">
+                        <i class="fas fa-crown mr-2 text-yellow-500 group-hover:scale-110 transition-transform"></i>
+                        인기 아티스트
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 검색 타입 탭 -->
+            <div class="flex items-center gap-1 bg-gray-50 p-1 rounded-2xl w-fit border border-gray-100 mb-8">
+                <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=songs&sort=<%= currentSort %>" 
+                   class="px-6 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 <%= currentType === 'songs' ? 'bg-white text-blue-600 shadow-sm border border-gray-100' : 'text-gray-400 hover:text-gray-600' %>">
+                    <i class="fas fa-music text-[10px]"></i>
+                    노래
+                    <span class="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded-full"><%= songsCount %></span>
+                </a>
+                <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=playlists&sort=<%= currentSort %>" 
+                   class="px-6 py-2.5 rounded-xl text-sm font-bold transition-all flex items-center gap-2 <%= currentType === 'playlists' ? 'bg-white text-purple-600 shadow-sm border border-gray-100' : 'text-gray-400 hover:text-gray-600' %>">
+                    <i class="fas fa-list-ul text-[10px]"></i>
+                    플레이리스트
+                    <span class="text-[10px] bg-purple-50 text-purple-600 px-1.5 py-0.5 rounded-full"><%= playlistsCount %></span>
+                </a>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <p class="text-gray-500 text-sm font-medium">
+                    총 <span class="font-bold text-gray-900"><%= currentType === 'songs' ? songsCount : playlistsCount %></span>개의 결과
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-2">
+                    <% if (currentType === 'songs') { %>
+                    <div class="flex items-center gap-2 bg-white px-3 py-1.5 rounded-xl border border-gray-100 shadow-sm ml-0 md:ml-2">
+                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=songs&sort=popular" 
+                           class="<%= currentSort === 'popular' ? 'text-blue-600 font-bold' : 'text-gray-400 hover:text-gray-600' %> transition-colors">
                             인기순
                         </a>
-                        <span class="text-gray-300">·</span>
-                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&sort=latest" 
-                           class="<%= (locals.currentSort === 'latest') ? 'font-bold text-blue-600' : 'text-gray-500 hover:text-gray-700' %>">
+                        <span class="text-gray-200">·</span>
+                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=songs&sort=latest" 
+                           class="<%= currentSort === 'latest' ? 'text-blue-600 font-bold' : 'text-gray-400 hover:text-gray-600' %> transition-colors">
                             최신순
                         </a>
                     </div>
+                    <% } %>
                 </div>
-            </div>
-
-            <!-- 우측: 인기 차트 바로가기 버튼 -->
-            <div class="flex gap-2">
-                <a href="/popular/songs" class="inline-flex items-center px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50 transition-all shadow-sm group">
-                    <i class="fas fa-fire mr-2 text-red-500"></i>
-                    인기 노래
-                </a>
-                <a href="/popular/artists" class="inline-flex items-center px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-purple-300 hover:text-purple-600 hover:bg-purple-50 transition-all shadow-sm group">
-                    <i class="fas fa-crown mr-2 text-yellow-500"></i>
-                    인기 아티스트
-                </a>
             </div>
         </div>
 
-        <!-- 검색 결과가 0개일 때 노래 추가 권유 섹션 -->
-        <% if (totalResults === 0 && searchQuery && searchQuery.trim()) { %>
-            <div class="text-center py-16">
-                <div class="max-w-md mx-auto">
-                    <div class="text-6xl text-gray-300 mb-6">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-3">
-                        "<span class="text-blue-600"><%= searchQuery %></span>"에 대한 검색 결과가 없습니다
-                    </h3>
-                    <p class="text-gray-500 mb-8 leading-relaxed">
-                        찾으시는 노래가 없나요?<br>
+        <% if (results.length === 0) { %>
+            <!-- 결과가 없을 때 -->
+            <div class="text-center py-16 md:py-24 bg-white rounded-[3rem] border border-gray-100 shadow-sm px-6">
+                <div class="w-20 h-20 bg-gray-50 text-gray-300 rounded-3xl flex items-center justify-center text-3xl mx-auto mb-6">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 class="text-xl md:text-2xl font-black text-gray-900 mb-3">
+                    <% if (searchQuery && searchQuery.trim()) { %>
+                        "<span class="text-blue-600"><%= searchQuery %></span>"에 대한 결과를 찾을 수 없습니다
+                    <% } else { %>
+                        등록된 데이터가 없습니다
+                    <% } %>
+                </h3>
+                <p class="text-gray-500 mb-10 font-medium leading-relaxed">
+                    찾으시는 <%= currentType === 'songs' ? '노래가' : '플레이리스트가' %> 없나요?<br class="hidden sm:block">
+                    <% if (currentType === 'songs') { %>
                         직접 노래를 추가해서 Haneum 커뮤니티에 기여해보세요!
-                    </p>
-                    
-                    <!-- 노래 추가 권유 버튼들 -->
-                    <div class="space-y-4">
-                        <a href="/add-song" 
-                           class="inline-flex items-center justify-center w-full px-6 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                            <i class="fas fa-plus mr-3"></i>
+                    <% } else { %>
+                        나만의 플레이리스트를 직접 만들어보세요!
+                    <% } %>
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+                    <% if (currentType === 'songs') { %>
+                        <a href="/add-song" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">
+                            <i class="fas fa-plus"></i>
                             노래 추가하기
                         </a>
-                        
-                        <div class="text-sm text-gray-400 my-4">또는</div>
-                        
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            <a href="/songs" 
-                               class="inline-flex items-center justify-center px-4 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
-                                <i class="fas fa-list mr-2"></i>
-                                전체 노래 보기
-                            </a>
-                            <a href="/" 
-                               class="inline-flex items-center justify-center px-4 py-3 bg-indigo-100 text-indigo-700 font-medium rounded-lg hover:bg-indigo-200 transition-colors">
-                                <i class="fas fa-home mr-2"></i>
-                                홈으로 돌아가기
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- 추가 팁 -->
-                    <div class="mt-8 p-4 bg-blue-50 rounded-lg text-left">
-                        <h4 class="font-semibold text-blue-800 mb-2 flex items-center">
-                            <i class="fas fa-lightbulb mr-2"></i>
-                            검색 팁
-                        </h4>
-                        <ul class="text-sm text-blue-700 space-y-1">
-                            <li>• 다른 언어로 된 제목으로 검색해보세요</li>
-                            <li>• 아티스트 이름으로 검색해보세요</li>
-                            <li>• 띄어쓰기를 줄이거나 늘려보세요</li>
-                        </ul>
-                    </div>
+                        <a href="/songs?type=songs" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-100 text-gray-600 rounded-2xl font-bold hover:bg-gray-200 transition-all">
+                            <i class="fas fa-list"></i>
+                            전체 노래 탐색
+                        </a>
+                    <% } else { %>
+                        <a href="/playlists" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-purple-600 text-white rounded-2xl font-bold hover:bg-purple-700 transition-all shadow-lg shadow-purple-200">
+                            <i class="fas fa-plus"></i>
+                            플레이리스트 만들기
+                        </a>
+                        <a href="/songs?type=playlists" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-100 text-gray-600 rounded-2xl font-bold hover:bg-gray-200 transition-all">
+                            <i class="fas fa-list"></i>
+                            전체 플레이리스트 탐색
+                        </a>
+                    <% } %>
                 </div>
-            </div>
-        <% } else if (totalResults === 0) { %>
-            <!-- 전체 검색에서 결과가 없을 때 -->
-            <div class="text-center py-16">
-                <div class="text-6xl text-gray-300 mb-6">
-                    <i class="fas fa-music"></i>
+
+                <% if (searchQuery && searchQuery.trim()) { %>
+                <div class="mt-12 p-6 bg-blue-50/50 rounded-[2rem] text-left max-w-lg mx-auto">
+                    <h4 class="font-bold text-blue-800 mb-3 flex items-center gap-2">
+                        <i class="fas fa-lightbulb"></i>
+                        검색 팁
+                    </h4>
+                    <ul class="text-sm text-blue-700 space-y-2 font-medium">
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400">•</span>
+                            <span>아티스트 이름이나 다른 언어 제목으로 검색해 보세요.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-blue-400">•</span>
+                            <span>검색어가 정확한지 확인해 보세요.</span>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-700 mb-3">
-                    아직 등록된 노래가 없습니다
-                </h3>
-                <p class="text-gray-500 mb-8">
-                    첫 번째 노래를 추가해보세요!
-                </p>
-                <a href="/add-song" 
-                   class="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                    <i class="fas fa-plus mr-3"></i>
-                    노래 추가하기
-                </a>
+                <% } %>
             </div>
         <% } else { %>
-            <!-- 결과 목록 -->
-            <div class="space-y-4">
-                <% songs.forEach(song => { %>
-                        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow cursor-pointer" onclick="location.href='/songs/<%= encodeURIComponent(song.name) %>'">
-                            <div class="flex justify-between items-start">
-                                <div class="flex-grow">
-                                    <h2 class="text-xl font-semibold mb-1 hover:text-blue-600">
+            <% if (currentType === 'playlists') { %>
+                <!-- 플레이리스트 결과 그리드 -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <% results.forEach(pl => { %>
+                        <a href="/playlists/<%= pl.id %>" class="group block bg-white rounded-3xl p-6 border border-gray-100 hover:shadow-xl hover:shadow-purple-500/5 transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-start justify-between mb-6">
+                                <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-500">
+                                    <i class="fas fa-list-ul"></i>
+                                </div>
+                                <% if (!pl.is_public) { %>
+                                    <span class="px-2.5 py-1 bg-gray-50 text-gray-400 text-[10px] font-bold uppercase tracking-wider rounded-lg border border-gray-100">Private</span>
+                                <% } %>
+                            </div>
+                            <h3 class="text-lg font-black text-gray-900 mb-2 group-hover:text-purple-600 transition-colors line-clamp-1"><%= pl.name %></h3>
+                            <p class="text-gray-500 text-sm font-medium line-clamp-2 mb-6 h-10">
+                                <%= pl.description || '특별한 설명이 없는 리스트입니다.' %>
+                            </p>
+                            <div class="flex items-center justify-between pt-6 border-t border-gray-50 mt-auto">
+                                <div class="flex items-center gap-3 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fas fa-user-circle"></i>
+                                        <%= pl.owner_name %>
+                                    </span>
+                                    <span class="flex items-center gap-1.5">
+                                        <i class="fas fa-music"></i>
+                                        <%= pl.song_count %>곡
+                                    </span>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-purple-50 text-purple-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-2 group-hover:translate-x-0">
+                                    <i class="fas fa-arrow-right text-sm"></i>
+                                </div>
+                            </div>
+                        </a>
+                    <% }) %>
+                </div>
+            <% } else { %>
+                <!-- 노래 결과 목록 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <% results.forEach(song => { %>
+                        <div class="bg-white p-6 rounded-[2rem] shadow-sm border border-gray-100 hover:shadow-xl hover:shadow-blue-500/5 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer group" onclick="location.href='/songs/<%= encodeURIComponent(song.name) %>'">
+                            <div class="flex justify-between items-start gap-4">
+                                <div class="flex-grow min-w-0">
+                                    <div class="mb-1">
+                                        <% if (song.kor_name) { %>
+                                            <span class="text-xs font-bold text-blue-600"><%= song.kor_name %></span>
+                                        <% } %>
+                                    </div>
+                                    <h2 class="text-xl font-black text-gray-900 group-hover:text-blue-600 transition-colors leading-tight mb-2 truncate">
                                         <%= song.ori_name || song.name %>
                                     </h2>
-                                    <%
-                                    const mainName = song.ori_name || song.name;
-                                    const subNames = [];
-                                    if (song.kor_name) {
-                                        subNames.push(song.kor_name);
-                                    }
-                                    if (song.eng_name && song.eng_name !== mainName) {
-                                        subNames.push(song.eng_name);
-                                    }
                                     
-                                    if (subNames.length > 0) {
-                                    %>
-                                        <p class="text-gray-500 text-sm mb-2"><%= subNames.join(' / ') %></p>
-                                    <%
-                                    }
-                                    %>
-                                    
-                                    <% 
-                                    let artistDisplayName;
-                                    let artistSearchQuery;
-                                    if (typeof song.artist === 'object' && song.artist) {
-                                        const names = [];
-                                        if (song.artist.ori_name) {
-                                            names.push(song.artist.ori_name);
+                                    <div class="flex flex-wrap items-center gap-4">
+                                        <% 
+                                        let artistDisplayName;
+                                        let artistSearchQuery;
+                                        if (typeof song.artist === 'object' && song.artist) {
+                                            artistDisplayName = song.artist.kor_name || song.artist.eng_name || song.artist.ori_name;
+                                            artistSearchQuery = song.artist.ori_name || song.artist.kor_name;
+                                        } else {
+                                            artistDisplayName = song.artist;
+                                            artistSearchQuery = song.artist;
                                         }
-                                        if (song.artist.kor_name && !names.includes(song.artist.kor_name)) {
-                                            names.push(song.artist.kor_name);
-                                        }
-                                        if (song.artist.eng_name && !names.includes(song.artist.eng_name)) {
-                                            names.push(song.artist.eng_name);
-                                        }
-                                        artistDisplayName = names.join(' / ');
-                                        artistSearchQuery = song.artist.ori_name || artistDisplayName;
-                                    } else {
-                                        artistDisplayName = song.artist;
-                                        artistSearchQuery = song.artist;
-                                    }
-                                    %>
-                                    <p class="mt-2 text-blue-600 text-sm">
-                                        <a href="/songs?q=<%= encodeURIComponent(artistSearchQuery) %>" onclick="event.stopPropagation()" class="hover:underline transition-colors"><%= artistDisplayName %></a>
-                                    </p>
-                                    <% if (song.tags && song.tags.length > 0) { %>
-                                        <div class="flex flex-wrap gap-2 mt-3">
-                                            <% song.tags.forEach(tag => { %>
-                                                <a href="/songs?q=<%= encodeURIComponent(tag) %>" onclick="event.stopPropagation()" class="bg-blue-50 text-blue-600 text-xs font-semibold px-2 py-0.5 rounded-full hover:bg-blue-200 transition-colors"><%= tag %></a>
-                                            <% }); %>
+                                        %>
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-6 h-6 rounded-full bg-blue-50 text-blue-500 flex items-center justify-center text-[10px]">
+                                                <i class="fas fa-music"></i>
+                                            </div>
+                                            <a href="/songs?q=<%= encodeURIComponent(artistSearchQuery) %>" onclick="event.stopPropagation()" class="text-sm font-bold text-gray-600 hover:text-blue-600 transition-colors truncate max-w-[150px]"><%= artistDisplayName %></a>
                                         </div>
-                                    <% } %>
-                                    <% if (song.createdAt) { %>
-                                    <p class="text-xs text-gray-400 mt-2">
-                                        <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
-                                            year: 'numeric',
-                                            month: 'long',
-                                            day: 'numeric'
-                                        }) %>
-                                    </p>
-                                    <% } %>
+
+                                        <% if (song.createdAt) { %>
+                                            <div class="flex items-center gap-1.5 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                                                <i class="far fa-calendar-alt"></i>
+                                                <%= new Date(song.createdAt).toLocaleDateString('ko-KR', {
+                                                    year: 'numeric',
+                                                    month: '2-digit',
+                                                    day: '2-digit'
+                                                }) %>
+                                            </div>
+                                        <% } %>
+                                    </div>
+                                </div>
+                                <div class="w-12 h-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all shadow-sm">
+                                    <i class="fas fa-play text-sm"></i>
                                 </div>
                             </div>
                         </div>
-                <% }); %>
-            </div>
-        <% } %>
+                    <% }); %>
+                </div>
+            <% } %>
 
-        <!-- 페이지네이션 -->
-        <% if (totalPages > 1) { %>
-            <div class="mt-8 flex justify-center space-x-2">
-                <% if (currentPage > 1) { %>
-                    <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&page=1&sort=<%= locals.currentSort || 'popular' %>" 
-                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
-                        처음
-                    </a>
-                <% } %>
-                
-                <% 
-                let startPage = Math.max(1, currentPage - 2);
-                let endPage = Math.min(totalPages, startPage + 4);
-                
-                if (endPage - startPage < 4) {
-                    startPage = Math.max(1, endPage - 4);
-                }
-                
-                for (let i = startPage; i <= endPage; i++) { 
-                %>
-                    <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&page=<%= i %>&sort=<%= locals.currentSort || 'popular' %>" 
-                       class="px-4 py-2 border rounded-md <%= i === currentPage ? 'bg-blue-600 text-white' : 'hover:bg-gray-100' %>">
-                        <%= i %>
-                    </a>
-                <% } %>
+            <!-- 페이지네이션 -->
+            <% if (totalPages > 1) { %>
+                <div class="mt-16 flex justify-center items-center gap-2">
+                    <% if (currentPage > 1) { %>
+                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=<%= currentType %>&sort=<%= currentSort %>&page=1" 
+                           class="px-4 py-2 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-500 hover:border-blue-300 hover:text-blue-600 transition-all shadow-sm">
+                            처음
+                        </a>
+                    <% } %>
+                    
+                    <% 
+                    let startPage = Math.max(1, currentPage - 2);
+                    let endPage = Math.min(totalPages, startPage + 4);
+                    if (endPage - startPage < 4) startPage = Math.max(1, endPage - 4);
+                    
+                    for (let i = startPage; i <= endPage; i++) { 
+                        if (i < 1) continue;
+                    %>
+                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=<%= currentType %>&sort=<%= currentSort %>&page=<%= i %>" 
+                           class="w-10 h-10 flex items-center justify-center rounded-xl border transition-all font-bold <%= i === currentPage ? 'bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-200' : 'bg-white border-gray-100 text-gray-500 hover:border-blue-300 hover:text-blue-600' %>">
+                            <%= i %>
+                        </a>
+                    <% } %>
 
-                <% if (currentPage < totalPages) { %>
-                    <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&page=<%= totalPages %>&sort=<%= locals.currentSort || 'popular' %>" 
-                       class="px-4 py-2 border rounded-md hover:bg-gray-100">
-                        마지막
-                    </a>
-                <% } %>
-            </div>
+                    <% if (currentPage < totalPages) { %>
+                        <a href="/songs?q=<%= encodeURIComponent(searchQuery) %>&type=<%= currentType %>&sort=<%= currentSort %>&page=<%= totalPages %>" 
+                           class="px-4 py-2 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-500 hover:border-blue-300 hover:text-blue-600 transition-all shadow-sm">
+                            마지막
+                        </a>
+                    <% } %>
+                </div>
+            <% } %>
         <% } %>
     </main>
 

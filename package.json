@@ -21,11 +21,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "express-async-errors": "^3.1.1",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.16.0",
     "openai": "^4.63.0"
   },
   "devDependencies": {
