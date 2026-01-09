@@ -105,23 +105,23 @@
                         </div>
                         <div class="flex justify-start flex-wrap gap-3">
                             <button onclick="filterByLanguage('all')" 
-                                    class="language-filter <%= (currentLanguage || 'all') === 'all' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'all' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-blue-600' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 전체
                             </button>
                             <button onclick="filterByLanguage('english')" 
-                                    class="language-filter <%= (currentLanguage || 'all') === 'english' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'english' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-blue-600' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 영어
                             </button>
                             <button onclick="filterByLanguage('japanese')" 
-                                    class="language-filter <%= (currentLanguage || 'all') === 'japanese' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'japanese' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-blue-600' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 일본어
                             </button>
                             <button onclick="filterByLanguage('chinese')" 
-                                    class="language-filter <%= (currentLanguage || 'all') === 'chinese' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'chinese' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-blue-600' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 중국어
                             </button>
                             <button onclick="filterByLanguage('other')" 
-                                    class="language-filter <%= (currentLanguage || 'all') === 'other' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
+                                    class="language-filter <%= (currentLanguage || 'all') === 'other' ? 'active bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-100 hover:bg-blue-50 text-gray-700 hover:text-blue-600' %> font-semibold px-5 py-2.5 rounded-full transition duration-300 ease-in-out text-sm shadow-sm">
                                 기타
                             </button>
                         </div>
@@ -306,21 +306,7 @@
         </section>
     </main>
 
-    <!-- 푸터 -->
-    <footer class="bg-gray-800 text-gray-400 py-12 px-6 text-center">
-        <div class="container mx-auto max-w-6xl">
-            <!-- <nav class="mb-6">
-                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                    <li><a href="/about" class="hover:text-white transition duration-200">About Haneum</a></li>
-                    <li><a href="/contact" class="hover:text-white transition duration-200">문의하기</a></li>
-                    <li><a href="/privacy" class="hover:text-white transition duration-200">개인정보처리방침</a></li>
-                    <li><a href="/terms" class="hover:text-white transition duration-200">이용약관</a></li>
-                    <li><a href="/copyright" class="hover:text-white transition duration-200">저작권 안내</a></li>
-                </ul>
-            </nav> -->
-            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
-        </div>
-    </footer>
+    <%- include('partials/footer') %>
 
     <script>
         // 쿠키 유틸리티 함수들
@@ -450,12 +436,12 @@
             const buttons = document.querySelectorAll('.language-filter');
             buttons.forEach(button => {
                 button.classList.remove('active', 'bg-blue-600', 'text-white', 'hover:bg-blue-700');
-                button.classList.add('bg-gray-100', 'hover:bg-blue-600', 'text-gray-700', 'hover:text-white');
+                button.classList.add('bg-gray-100', 'hover:bg-blue-50', 'text-gray-700', 'hover:text-blue-600');
             });
             
             const activeButton = document.querySelector(`[onclick="filterByLanguage('${activeLanguage}')"]`);
             if (activeButton) {
-                activeButton.classList.remove('bg-gray-100', 'hover:bg-blue-600', 'text-gray-700', 'hover:text-white');
+                activeButton.classList.remove('bg-gray-100', 'hover:bg-blue-50', 'text-gray-700', 'hover:text-blue-600');
                 activeButton.classList.add('active', 'bg-blue-600', 'text-white', 'hover:bg-blue-700');
             }
         }

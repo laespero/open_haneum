@@ -80,9 +80,9 @@
                                     <% playlists.forEach(pl => { %>
                                         <button onclick="togglePlaylistMembership('<%= pl.id %>', this)" 
                                                 data-in="<%= pl.is_in %>"
-                                                class="w-full text-left px-4 py-3 text-sm font-bold text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-xl transition-all flex items-center justify-between group/item">
+                                                class="w-full text-left px-4 py-3 text-sm font-bold text-gray-700 hover:bg-purple-50/50 hover:text-purple-600 rounded-xl transition-all flex items-center justify-between group/item">
                                             <div class="flex items-center gap-3">
-                                                <div class="w-8 h-8 rounded-lg <%= pl.is_in ? 'bg-purple-100 text-purple-600' : 'bg-gray-50 text-gray-400' %> group-hover/item:bg-purple-100 group-hover/item:text-purple-600 flex items-center justify-center transition-colors">
+                                                <div class="w-8 h-8 rounded-lg <%= pl.is_in ? 'bg-purple-600 text-white' : 'bg-gray-50 text-gray-400' %> group-hover/item:bg-purple-100 group-hover/item:text-purple-600 transition-colors flex items-center justify-center">
                                                     <i class="fas fa-music text-[10px]"></i>
                                                 </div>
                                                 <span class="truncate"><%= pl.name %></span>
@@ -165,6 +165,8 @@
             <i class="fas fa-arrow-left fa-fw mr-1"></i> <%= typeof song.artist === 'object' ? song.artist.ori_name : song.artist %>의 다른 곡 보기
         </a>
     </footer>
+
+    <%- include('partials/footer') %>
     <script>
         document.querySelectorAll('.disable-on-submit').forEach(form => {
             form.addEventListener('submit', function(event) {
@@ -183,11 +185,13 @@
         const likeBtn = document.getElementById('likeBtn');
         const updateLikeUi = (isLiked) => {
             likeBtn.dataset.liked = isLiked ? '1' : '0';
-            likeBtn.classList.toggle('bg-pink-50', isLiked);
-            likeBtn.classList.toggle('border-pink-200', isLiked);
-            likeBtn.classList.toggle('text-pink-600', isLiked);
-            likeBtn.classList.toggle('border-slate-100', !isLiked);
-            likeBtn.classList.toggle('text-slate-600', !isLiked);
+            if (isLiked) {
+                likeBtn.classList.add('bg-pink-600', 'border-pink-600', 'text-white', 'shadow-lg', 'shadow-pink-100');
+                likeBtn.classList.remove('bg-white', 'border-slate-100', 'text-slate-600', 'hover:bg-pink-50', 'hover:border-pink-200', 'hover:text-pink-600');
+            } else {
+                likeBtn.classList.remove('bg-pink-600', 'border-pink-600', 'text-white', 'shadow-lg', 'shadow-pink-100');
+                likeBtn.classList.add('bg-white', 'border-slate-100', 'text-slate-600', 'hover:bg-pink-50', 'hover:border-pink-200', 'hover:text-pink-600');
+            }
         };
         updateLikeUi(likeBtn.dataset.liked === '1');
         likeBtn.addEventListener('click', async () => {
@@ -221,7 +225,7 @@
                         const btn = document.createElement('button');
                         btn.onclick = function() { togglePlaylistMembership(data.id, this); };
                         btn.dataset.in = "0";
-                        btn.className = "w-full text-left px-4 py-3 text-sm font-bold text-gray-700 hover:bg-purple-50 hover:text-purple-600 rounded-xl transition-all flex items-center justify-between group/item";
+                        btn.className = "w-full text-left px-4 py-3 text-sm font-bold text-gray-700 hover:bg-purple-50/50 hover:text-purple-600 rounded-xl transition-all flex items-center justify-between group/item";
                         btn.innerHTML = `
                             <div class="flex items-center gap-3">
                                 <div class="w-8 h-8 rounded-lg bg-gray-50 text-gray-400 group-hover/item:bg-purple-100 group-hover/item:text-purple-600 flex items-center justify-center transition-colors">
@@ -266,8 +270,8 @@
                     // Update UI
                     const iconContainer = btn.querySelector('.w-8.h-8');
                     if (newIn) {
-                        iconContainer.classList.remove('bg-gray-50', 'text-gray-400');
-                        iconContainer.classList.add('bg-purple-100', 'text-purple-600');
+                        iconContainer.classList.remove('bg-gray-50', 'text-gray-400', 'bg-purple-100', 'text-purple-600');
+                        iconContainer.classList.add('bg-purple-600', 'text-white');
                         if (!btn.querySelector('.fa-check')) {
                             const checkIcon = document.createElement('i');
                             checkIcon.className = "fas fa-check text-[10px] text-purple-600";
@@ -275,7 +279,7 @@
                         }
                         haneumAlert('플레이리스트에 추가했습니다.', { type: 'success', icon: 'fa-check-circle' });
                     } else {
-                        iconContainer.classList.remove('bg-purple-100', 'text-purple-600');
+                        iconContainer.classList.remove('bg-purple-600', 'text-white', 'bg-purple-100', 'text-purple-600');
                         iconContainer.classList.add('bg-gray-50', 'text-gray-400');
                         const checkIcon = btn.querySelector('.fa-check');
                         if (checkIcon) checkIcon.remove();

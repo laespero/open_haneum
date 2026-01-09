@@ -34,18 +34,27 @@ process.on('uncaughtException', (err) => {
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
 const API_PROVIDER_CHOICE = process.env.API_PROVIDER_CHOICE || 'auto'; 
 
+const isProd = process.env.NODE_ENV === 'production';
+
+// 현재 환경에 따른 DB 설정 선택
+const dbPrefix = isProd ? 'PROD_' : 'DEV_';
+
 if (!process.env.OPENROUTER_API_KEY && !process.env.DEEPSEEK_API_KEY) {
     console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY가 설정되지 않았습니다.');
     console.warn('\x1b[33m%s\x1b[0m', '노래 추가 및 번역 기능을 사용하려면 .env 파일에 OPENROUTER_API_KEY 또는 DEEPSEEK_API_KEY를 설정해주세요.');
 }
 
-if (!process.env.DB_USER || !process.env.DB_PASSWORD || !process.env.DB_NAME) {
-    console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: 데이터베이스 설정(DB_USER, DB_PASSWORD, DB_NAME)이 .env 파일에 누락되었습니다.');
+const requiredDbVars = [`${dbPrefix}DB_USER`, `${dbPrefix}DB_PASSWORD`, `${dbPrefix}DB_NAME`];
+const missingDbVars = requiredDbVars.filter(v => !process.env[v]);
+
+if (missingDbVars.length > 0) {
+    console.warn('\x1b[31m%s\x1b[0m', `⚠️ 경고: 현재 환경(${process.env.NODE_ENV || 'development'})에 필요한 데이터베이스 설정(${missingDbVars.join(', ')})이 .env 파일에 누락되었습니다.`);
 }
 
 if (!process.env.SESSION_SECRET) {
     console.warn('\x1b[31m%s\x1b[0m', '⚠️ 경고: SESSION_SECRET이 .env 파일에 설정되지 않았습니다. 보안을 위해 반드시 설정이 필요합니다.');
 }
+
 
 let MSG = KR_MSG;
 let lang = "kr";
@@ -64,15 +73,15 @@ else {
 }
 
 const app = express();
+app.set('trust proxy', 1);
 app.use(cors());
 
-const isProd = process.env.NODE_ENV === 'production';
 const DB_CONFIG = {
-    host: process.env.DB_HOST || '127.0.0.1',
-    port: Number(process.env.DB_PORT || 3306),
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    host: process.env[`${dbPrefix}DB_HOST`] || '127.0.0.1',
+    port: Number(process.env[`${dbPrefix}DB_PORT`] || 3306),
+    user: process.env[`${dbPrefix}DB_USER`],
+    password: process.env[`${dbPrefix}DB_PASSWORD`],
+    database: process.env[`${dbPrefix}DB_NAME`],
     charset: 'utf8mb4'
 };
 const pool = mysql.createPool({
@@ -2078,6 +2087,7 @@ app.get('/songs', async (req, res) => {
          JOIN users u ON p.user_id = u.id
          WHERE (p.name LIKE ? OR p.description LIKE ? OR ? = '') 
          AND (p.is_public = 1 OR (p.user_id = ?))
+         HAVING song_count > 0
          ORDER BY p.created_at DESC`,
         [`%${searchQuery}%`, `%${searchQuery}%`, searchQuery.trim(), req.session.user ? req.session.user.id : -1]
     );

@@ -274,21 +274,7 @@
         <% } %>
     </main>
 
-    <!-- 푸터 -->
-    <footer class="bg-gray-800 text-gray-400 py-8 px-6 text-center mt-12">
-        <div class="container mx-auto max-w-6xl">
-            <!-- <nav class="mb-6">
-                <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                    <li><a href="/about" class="hover:text-white transition duration-200">About Haneum</a></li>
-                    <li><a href="/contact" class="hover:text-white transition duration-200">문의하기</a></li>
-                    <li><a href="/privacy" class="hover:text-white transition duration-200">개인정보처리방침</a></li>
-                    <li><a href="/terms" class="hover:text-white transition duration-200">이용약관</a></li>
-                    <li><a href="/copyright" class="hover:text-white transition duration-200">저작권 안내</a></li>
-                </ul>
-            </nav> -->
-            <p class="notice text-xs text-gray-500 mt-2 max-w-xl mx-auto">본 사이트의 가사 정보는 교육 및 비상업적 용도로 제공되며, 저작권은 해당 저작권자에게 있습니다.</p>
-        </div>
-    </footer>
+    <%- include('partials/footer') %>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const searchForm = document.getElementById('searchForm');
