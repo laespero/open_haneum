@@ -1326,7 +1326,7 @@
   "BackNumber_Happy_Birthday": 1,
   "BackNumber_Happy_End": 6,
   "BackNumber_Hero_Suit": 2,
-  "BackNumber_Heroine": 108,
+  "BackNumber_Heroine": 109,
   "BackNumber_Hey_Brother": 1,
   "BackNumber_High_School_Girl": 1,
   "BackNumber_Horizon": 3,
@@ -3269,5 +3269,8 @@
   "Sumika_Words_and_Heart": 1,
   "Sumika_rem": 2,
   "Sumika_s_--": 3,
-  "deep_mouse": 1
+  "deep_mouse": 1,
+  "repeater_single_minded_girl": 1,
+  "Repeater_BackNumber_Heroine": 1,
+  "Repeater_HALCALI_Otsukare_Summer": 1
 }

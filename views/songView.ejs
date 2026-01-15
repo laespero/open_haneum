@@ -1595,15 +1595,13 @@ ${a}
     <script>
         (function() {
             <% if (locals.currentUser) { %>
-            let startTime = null;
+            let startTime = Date.now();
             let elapsedTotal = 0;
             const songName = '<%= song.name %>';
-            const TRACK_INTERVAL = 30000; // 30초마다 서버로 전송
 
             function sendStudyTrack(seconds, isInitial = false) {
                 if (!isInitial && seconds <= 0) return;
                 
-                // navigator.sendBeacon을 우선 사용 (비동기 및 페이지 종료 시 안전함)
                 const url = '/api/study/track';
                 const data = JSON.stringify({ songName, elapsedSeconds: seconds });
                 
@@ -1622,30 +1620,22 @@ ${a}
             // 페이지 방문 즉시 기록 (0초로 전송하여 데이터 생성)
             sendStudyTrack(0, true);
 
-            // 재생 상태 변화 감지를 위한 인터벌
+            // 5초마다 공부 시간 계산 및 전송 체크
             setInterval(() => {
-                if (window.player && typeof player.get_player_state === 'function') {
-                    const state = player.get_player_state();
-                    // 1: 재생 중
-                    if (state === 1) {
-                        if (!startTime) startTime = Date.now();
-                    } else {
-                        if (startTime) {
+                if (document.visibilityState === 'visible' && startTime) {
                             const now = Date.now();
                             elapsedTotal += Math.floor((now - startTime) / 1000);
-                            startTime = null;
-                        }
-                    }
+                    startTime = now;
                 }
 
-                // 누적된 시간이 있고 인터벌이 지났다면 서버로 전송
-                if (elapsedTotal >= 10) { // 최소 10초 이상일 때만
+                // 누적된 시간이 10초 이상이면 서버로 전송
+                if (elapsedTotal >= 10) {
                     sendStudyTrack(elapsedTotal);
                     elapsedTotal = 0;
                 }
-            }, 5000); // 5초마다 체크
+            }, 5000);
 
-            // 페이지 종료 시 남은 시간 전송
+            // 페이지 가시성 변화 감지 (백그라운드 전환 시 시간 합산 및 전송)
             window.addEventListener('visibilitychange', () => {
                 if (document.visibilityState === 'hidden') {
                     if (startTime) {
@@ -1657,9 +1647,12 @@ ${a}
                         sendStudyTrack(elapsedTotal);
                         elapsedTotal = 0;
                     }
+                } else if (document.visibilityState === 'visible') {
+                    startTime = Date.now();
                 }
             });
             <% } %>
         })();
+    </script>
 </body>
 </html>

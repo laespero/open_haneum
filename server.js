@@ -34,6 +34,18 @@ process.on('uncaughtException', (err) => {
 // 'deepseek', 'openrouter', 또는 'auto' (기본값) 중 하나로 설정하세요.
 const API_PROVIDER_CHOICE = process.env.API_PROVIDER_CHOICE || 'auto'; 
 
+// 프롬프트 반복 횟수 (1=기존, 2=두 번 반복)
+const PROMPT_REPEAT_COUNT = Number(process.env.PROMPT_REPEAT_COUNT || 1);
+const PROMPT_REPEAT = PROMPT_REPEAT_COUNT === 2 ? 2 : 1;
+
+console.log(`[PROMPT_REPEAT] : ${PROMPT_REPEAT}`);
+
+function buildRepeatedPrompt(content) {
+    const promptText = String(content);
+    if (PROMPT_REPEAT === 1) return promptText;
+    return `${promptText}\n\n${promptText}`;
+}
+
 const isProd = process.env.NODE_ENV === 'production';
 
 // 현재 환경에 따른 DB 설정 선택
@@ -970,7 +982,7 @@ async function processTranslation(title) {
                 temperature:0.5,
                 messages: [
                     { role: "system", content: MSG },
-                    { role: 'user', content: JSON.stringify(context)+alpha },
+                    { role: 'user', content: buildRepeatedPrompt(JSON.stringify(context) + alpha) },
                 ],
                 response_format: { 
                     type: "json_object" 
@@ -1179,7 +1191,7 @@ app.post('/bulk-import-utaten', async (req, res) => {
                         },
                         {
                             role: "user",
-                            content: `Original title: ${oriTitle}`
+                            content: buildRepeatedPrompt(`Original title: ${oriTitle}`)
                         }
                     ],
                     response_format: { type: "json_object" }
@@ -2235,7 +2247,7 @@ app.get('/api/translate/stream/:title', async (req, res) => {
                     temperature: 0.5,
                     messages: [
                         { role: "system", content: MSG },
-                        { role: 'user', content: JSON.stringify(context)+alpha },
+                        { role: 'user', content: buildRepeatedPrompt(JSON.stringify(context) + alpha) },
                     ],
                     response_format: { type: "json_object" }
                 };
@@ -2321,7 +2333,7 @@ app.post('/retry-translation/:title', async (req, res) => {
                 max_tokens: 8192,
                 messages: [
                     { role: "system", content: MSG },
-                    { role: 'user', content: JSON.stringify(context) },
+                    { role: 'user', content: buildRepeatedPrompt(JSON.stringify(context)) },
                 ],
                 response_format: { 
                     type: "json_object" 
@@ -2396,7 +2408,7 @@ app.post('/retry-invalid-lines/:title', async (req, res) => {
                     temperature: 0.1,
                     messages: [
                         { role: "system", content: MSG },
-                        { role: 'user', content: JSON.stringify(invalidLine.context) },
+                        { role: 'user', content: buildRepeatedPrompt(JSON.stringify(invalidLine.context)) },
                     ],
                     response_format: { 
                         type: "json_object" 
@@ -2493,7 +2505,7 @@ app.post('/retry-line/:title', async (req, res) => {
             temperature: 0.2,
             messages: [
                 { role: "system", content: MSG },
-                { role: 'user', content: JSON.stringify(contextText) },
+                { role: 'user', content: buildRepeatedPrompt(JSON.stringify(contextText)) },
             ],
             response_format: { type: "json_object" }
         };
@@ -2560,7 +2572,7 @@ app.post('/correct-with-message/:title', async (req, res) => {
             temperature: 0.2,
             messages: [
                 { role: "system", content: MSG },
-                { role: 'user', content: JSON.stringify(contextText) + "\n\n" + req.body.correctionMessage },
+                { role: 'user', content: buildRepeatedPrompt(JSON.stringify(contextText) + "\n\n" + req.body.correctionMessage) },
             ],
             response_format: { type: "json_object" }
         };
@@ -2742,7 +2754,7 @@ app.post('/auto-fill-names', async (req, res) => {
                 },
                 {
                     role: "user",
-                    content: `Original title: ${oriName}`
+                    content: buildRepeatedPrompt(`Original title: ${oriName}`)
                 }
             ],
             response_format: { type: "json_object" }
@@ -3701,7 +3713,7 @@ C. 오역
                 const transResult = await openai.chat.completions.create({
                     messages: [
                         { role: "system", content: "You are a Japanese-Korean translation validator. Output valid JSON only." },
-                        { role: "user", content: transPrompt }
+                        { role: "user", content: buildRepeatedPrompt(transPrompt) }
                     ],
                     model: chatModel,
                     response_format: { type: "json_object" }
@@ -3852,7 +3864,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                                 temperature: 0.1,
                                 messages: [
                                     { role: "system", content: MSG },
-                                    { role: 'user', content: JSON.stringify(invalidLine.context) },
+                                    { role: 'user', content: buildRepeatedPrompt(JSON.stringify(invalidLine.context)) },
                                 ],
                                 response_format: { type: "json_object" }
                             };
@@ -3903,7 +3915,7 @@ app.post('/admin/retranslate-all', async (req, res) => {
                                     temperature: 0.1,
                                     messages: [
                                         { role: "system", content: MSG },
-                                        { role: 'user', content: JSON.stringify(contextText) },
+                                        { role: 'user', content: buildRepeatedPrompt(JSON.stringify(contextText)) },
                                     ],
                                     response_format: { type: "json_object" }
                                 };
